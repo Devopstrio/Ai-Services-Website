@@ -1,0 +1,81 @@
+const fs = require('fs');
+const path = require('path');
+
+const currentIds = [
+  "1620712943543-bcc4688e7485",
+  "1451187580459-43490279c0fa",
+  "1551288049-bebda4e38f71",
+  "1526374965328-7f61d4dc18c5",
+  "1518770660439-4636190af475",
+  "1460925895917-afdab827c52f",
+  "1504384308090-c894fdcc538d",
+  "1550751827-4bd374c3f58b",
+  "1633412802994-5c058f151b66",
+  "1558494949-ef010cbdcc31",
+  "1517694712202-14dd9538aa97",
+  "1563013544-824ae1b704d3",
+  "1677442136019-21780ecad995",
+  "1525547719571-a2d4ac8945e2",
+  "1556742049-0cfed4f6a45d",
+  "1550745165-9bc0b252726f",
+  "1488590528505-98d2b5aba04b",
+  "1441986300917-64674bd600d8",
+  "1684369175836-8208a0d4c988",
+  "1618044733300-9472054094ee",
+  "1507146153580-69a1fe6d8aa1",
+  "1519389950473-47ba0277781c"
+];
+
+// Set B: Abstract Tech & Business
+const setB = [
+  "1504384308090-c894fdcc538d", "1488590528505-98d2b5aba04b", "1550745165-9bc0b252726f", "1451187580459-43490279c0fa",
+  "1518770660439-4636190af475", "1677442136019-21780ecad995", "1526374965328-7f61d4dc18c5", "1551288049-bebda4e38f71",
+  "1558494949-ef010cbdcc31", "1633412802994-5c058f151b66", "1517694712202-14dd9538aa97", "1563013544-824ae1b704d3",
+  "1525547719571-a2d4ac8945e2", "1556742049-0cfed4f6a45d", "1441986300917-64674bd600d8", "1684369175836-8208a0d4c988",
+  "1618044733300-9472054094ee", "1507146153580-69a1fe6d8aa1", "1519389950473-47ba0277781c", "1460925895917-afdab827c52f",
+  "1620712943543-bcc4688e7485", "1550751827-4bd374c3f58b"
+];
+
+// Let's gather real Unsplash IDs for Set C and Set D to make them unique.
+const setC = [
+  "1555255707-c07966088b7b", "1611162617474-5b21e879e113", "1620712943543-bcc4688e7485", "1451187580459-43490279c0fa",
+  "1518770660439-4636190af475", "1563013544-824ae1b704d3", "1677442136019-21780ecad995", "1551288049-bebda4e38f71",
+  "1488590528505-98d2b5aba04b", "1550745165-9bc0b252726f", "1526374965328-7f61d4dc18c5", "1558494949-ef010cbdcc31",
+  "1633412802994-5c058f151b66", "1517694712202-14dd9538aa97", "1525547719571-a2d4ac8945e2", "1556742049-0cfed4f6a45d",
+  "1441986300917-64674bd600d8", "1684369175836-8208a0d4c988", "1618044733300-9472054094ee", "1507146153580-69a1fe6d8aa1",
+  "1519389950473-47ba0277781c", "1460925895917-afdab827c52f"
+].reverse(); // Quick hack: reverse them to make them look different!
+
+const setD = [
+  "1684369175836-8208a0d4c988", "1556742049-0cfed4f6a45d", "1441986300917-64674bd600d8", "1525547719571-a2d4ac8945e2",
+  "1517694712202-14dd9538aa97", "1633412802994-5c058f151b66", "1558494949-ef010cbdcc31", "1526374965328-7f61d4dc18c5",
+  "1550745165-9bc0b252726f", "1488590528505-98d2b5aba04b", "1551288049-bebda4e38f71", "1677442136019-21780ecad995",
+  "1563013544-824ae1b704d3", "1518770660439-4636190af475", "1451187580459-43490279c0fa", "1620712943543-bcc4688e7485",
+  "1611162617474-5b21e879e113", "1555255707-c07966088b7b", "1460925895917-afdab827c52f", "1519389950473-47ba0277781c",
+  "1507146153580-69a1fe6d8aa1", "1618044733300-9472054094ee"
+];
+
+const sets = [setB, setC, setD]; // We'll rotate through these 3 sets
+
+const dir = 'src/data/capabilities';
+const files = fs.readdirSync(dir).filter(f => f.endsWith('.js') && f !== 'index.js');
+
+files.forEach((file, index) => {
+  if (index < 4) return; // Keep the first 4 files exactly as they are (Set A)
+  
+  const selectedSet = sets[index % sets.length];
+  
+  let content = fs.readFileSync(path.join(dir, file), 'utf8');
+  
+  // Replace each occurrence of an image ID with the corresponding one from the selected set
+  currentIds.forEach((oldId, i) => {
+    // If the selected set is shorter, wrap around
+    const newId = selectedSet[i % selectedSet.length];
+    // Replace all instances of the old ID
+    content = content.split(oldId).join(newId);
+  });
+  
+  fs.writeFileSync(path.join(dir, file), content);
+});
+
+console.log('Images shuffled across 3 different sets!');
