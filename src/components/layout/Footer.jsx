@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 
@@ -14,7 +14,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="w-full bg-[#030303] text-zinc-400 pt-20 sm:pt-24 pb-6 relative font-sans mt-28 sm:mt-36 text-left">
+    <footer className="w-full bg-[#030303] text-zinc-400 pt-24 sm:pt-28 pb-8 relative font-sans mt-32 sm:mt-40 text-left">
       {/* Premium Dual-Line White Top Border */}
       <div className="absolute top-0 inset-x-0 flex flex-col items-center z-10 pointer-events-none">
         <div className="relative w-full flex justify-center opacity-90">
@@ -25,20 +25,22 @@ export function Footer() {
       </div>
 
       {/* Background Glows for visual depth */}
-      <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-[radial-gradient(circle_at_center,rgba(225,29,72,0.015),transparent_70%)] pointer-events-none z-0 overflow-hidden" />
-      <div className="absolute top-0 left-[20%] w-[350px] h-[350px] bg-[radial-gradient(circle_at_center,rgba(225,29,72,0.01),transparent_70%)] pointer-events-none z-0 overflow-hidden" />
+      <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-[radial-gradient(circle_at_center,rgba(225,29,72,0.02),transparent_70%)] pointer-events-none z-0 overflow-hidden" />
+      <div className="absolute top-0 left-[20%] w-[350px] h-[350px] bg-[radial-gradient(circle_at_center,rgba(225,29,72,0.015),transparent_70%)] pointer-events-none z-0 overflow-hidden" />
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 lg:px-16 relative z-10">
+      <div className="max-w-[1480px] mx-auto px-6 sm:px-10 md:px-14 lg:px-16 relative z-10">
 
         {/* Floating Newsletter Card (Half outside top border / Half inside footer) */}
-        <div className="max-w-5xl mx-auto w-full bg-white rounded-2xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 -mt-20 sm:-mt-24 md:-mt-28 mb-16 sm:mb-20 shadow-[0_25px_50px_rgba(0,0,0,0.6)] relative z-20 border border-zinc-200/50">
+        <div className="max-w-5xl mx-auto w-full bg-white rounded-2xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 -mt-24 sm:-mt-28 md:-mt-32 mb-16 sm:mb-20 shadow-[0_25px_50px_rgba(0,0,0,0.6)] relative z-20 border border-zinc-200/50">
           <div className="flex-1 text-left">
-            <h3 className="text-xl sm:text-2xl font-bold text-black mb-2 tracking-tight leading-tight">Subscribe Newsletter</h3>
-            <p className="text-zinc-600 text-xs sm:text-sm font-medium max-w-md leading-relaxed">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-2 tracking-tight leading-tight">
+              Subscribe Newsletter
+            </h3>
+            <p className="text-zinc-600 text-xs sm:text-sm font-medium max-w-lg leading-relaxed">
               Get the latest insights on enterprise cloud transformations and technical engineering directly to your inbox.
             </p>
           </div>
-          <div className="w-full md:w-[400px] shrink-0">
+          <div className="w-full md:w-[420px] shrink-0">
             <form onSubmit={handleSubmit} className="flex relative w-full border border-zinc-200 rounded-xl bg-zinc-50 focus-within:border-rose-500 focus-within:shadow-[0_0_15px_rgba(225,29,72,0.15)] transition-all duration-300 p-1.5 shadow-sm">
               <input
                 type="email"
@@ -46,11 +48,11 @@ export function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
-                className="flex-grow bg-transparent px-3.5 py-2.5 text-xs sm:text-sm font-medium text-black focus:outline-none placeholder:text-zinc-400 min-w-0"
+                className="flex-grow bg-transparent px-4 py-2.5 text-xs sm:text-sm font-medium text-black focus:outline-none placeholder:text-zinc-400 min-w-0"
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase bg-black hover:bg-zinc-800 text-white transition-all duration-300 whitespace-nowrap cursor-pointer shadow-md"
+                className="inline-flex items-center justify-center px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase bg-black hover:bg-zinc-800 text-white transition-all duration-300 whitespace-nowrap cursor-pointer shadow-md"
                 aria-label="Subscribe"
               >
                 Get Started
@@ -59,29 +61,31 @@ export function Footer() {
           </div>
         </div>
 
-        {/* 6-Column Mega Menu (Strict Left-Aligned Content matching DevOpsTRIO Site) */}
+        {/* 6-Column Mega Menu (Full-width balanced spacing matching official site) */}
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1.1fr 1fr 1fr 1fr 1fr 1fr",
-            gap: "24px 32px",
-            marginBottom: "72px",
+            gridTemplateColumns: "1.2fr 1fr 1fr 1fr 1fr 1fr",
+            columnGap: "36px",
+            rowGap: "40px",
+            marginBottom: "80px",
             textAlign: "left",
+            width: "100%",
           }}
-          className="footer-columns-container"
+          className="footer-grid-wrap"
         >
 
           {/* Col 1: Brand Intro */}
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", textAlign: "center", paddingTop: "8px" }}>
-            <a href="https://devopstrio.co.uk/" className="flex flex-col items-center gap-3 group inline-flex mb-4">
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", textAlign: "left", paddingTop: "4px" }}>
+            <a href="https://devopstrio.co.uk/" className="flex flex-col items-start gap-3.5 group inline-flex mb-4">
               <img
                 src="https://devopstrio.co.uk/assets/logo/logo.png"
                 alt="Devopstrio logo"
-                style={{ width: "64px", height: "64px", objectFit: "contain", filter: "drop-shadow(0 0 15px rgba(255,255,255,0.15))" }}
+                style={{ width: "68px", height: "68px", objectFit: "contain", filter: "drop-shadow(0 0 16px rgba(255,255,255,0.18))" }}
                 loading="lazy"
               />
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
-                <span style={{ fontSize: "28px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "-0.02em", lineHeight: 1 }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", textAlign: "left" }}>
+                <span style={{ fontSize: "30px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "-0.02em", lineHeight: 1 }}>
                   Devopstrio
                 </span>
               </div>
@@ -90,10 +94,10 @@ export function Footer() {
 
           {/* Col 2: Services / Practice Areas */}
           <div style={{ textAlign: "left" }}>
-            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+            <h4 style={{ fontSize: "15px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "20px", fontFamily: '"DM Sans", sans-serif' }}>
               Core Expertise
             </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "13px", textAlign: "left" }}>
               <li><a href="https://devopstrio.co.uk/services/ai-data-innovation" style={navLinkStyle}>AI & Data Innovation</a></li>
               <li><a href="https://devopstrio.co.uk/services/cloud-services" style={navLinkStyle}>Cloud Services</a></li>
               <li><a href="https://devopstrio.co.uk/services/devops-automation" style={navLinkStyle}>DevOps & Automation</a></li>
@@ -107,10 +111,10 @@ export function Footer() {
 
           {/* Col 3: Industries */}
           <div style={{ textAlign: "left" }}>
-            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+            <h4 style={{ fontSize: "15px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "20px", fontFamily: '"DM Sans", sans-serif' }}>
               Industries
             </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "13px", textAlign: "left" }}>
               <li><a href="https://devopstrio.co.uk/industries/banking-finance" style={navLinkStyle}>Banking & Finance</a></li>
               <li><a href="https://devopstrio.co.uk/industries/healthcare-life-sciences" style={navLinkStyle}>Healthcare & Life Sciences</a></li>
               <li><a href="https://devopstrio.co.uk/industries/retail-ecommerce" style={navLinkStyle}>Retail & E-Commerce</a></li>
@@ -124,10 +128,10 @@ export function Footer() {
 
           {/* Col 4: Ecosystem */}
           <div style={{ textAlign: "left" }}>
-            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+            <h4 style={{ fontSize: "15px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "20px", fontFamily: '"DM Sans", sans-serif' }}>
               Ecosystem
             </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "13px", textAlign: "left" }}>
               <li><a href="https://devopstrio.co.uk/ecosystem/partnerships" style={navLinkStyle}>Strategic Partnerships</a></li>
               <li><a href="https://devopstrio.co.uk/ecosystem/innovation-labs" style={navLinkStyle}>R&D Innovation Labs</a></li>
               <li><a href="https://devopstrio.co.uk/ecosystem/platforms-solutions" style={navLinkStyle}>Platforms & Solutions</a></li>
@@ -141,10 +145,10 @@ export function Footer() {
 
           {/* Col 5: Insights & Events */}
           <div style={{ textAlign: "left" }}>
-            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+            <h4 style={{ fontSize: "15px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "20px", fontFamily: '"DM Sans", sans-serif' }}>
               Insights & Events
             </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "13px", textAlign: "left" }}>
               <li><a href="https://devopstrio.co.uk/insights/blogs" style={navLinkStyle}>Blogs</a></li>
               <li><a href="https://devopstrio.co.uk/insights/case-studies" style={navLinkStyle}>Case Studies</a></li>
               <li><a href="https://devopstrio.co.uk/insights/white-paper" style={navLinkStyle}>White Paper</a></li>
@@ -158,10 +162,10 @@ export function Footer() {
 
           {/* Col 6: Company */}
           <div style={{ textAlign: "left" }}>
-            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+            <h4 style={{ fontSize: "15px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "20px", fontFamily: '"DM Sans", sans-serif' }}>
               Company
             </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "13px", textAlign: "left" }}>
               <li><a href="https://devopstrio.co.uk/about/company-overview" style={navLinkStyle}>Company Overview</a></li>
               <li><a href="https://devopstrio.co.uk/about/our-culture-people" style={navLinkStyle}>Our Culture & People</a></li>
               <li><a href="https://devopstrio.co.uk/about/global-internship" style={navLinkStyle}>Global Internship</a></li>
@@ -175,7 +179,7 @@ export function Footer() {
 
         </div>
 
-        {/* BOTTOM ROW: Cookie Icon, Legal Links & Socials (Exact Image 2 Match) */}
+        {/* BOTTOM ROW: Cookie Icon, Legal Links & Socials (Exact Image Match) */}
         <div
           style={{
             display: "flex",
@@ -186,10 +190,11 @@ export function Footer() {
             borderTop: "1px solid rgba(255, 255, 255, 0.08)",
             marginBottom: "24px",
             gap: "20px",
+            width: "100%",
           }}
         >
           {/* Legal Links with Cookie Icon */}
-          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "14px", fontSize: "13px", fontWeight: 500, color: "#9CA3AF" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "16px", fontSize: "13.5px", fontWeight: 500, color: "#9CA3AF" }}>
             {/* Red Cookie Consent Icon Badge */}
             <div
               style={{
@@ -227,7 +232,7 @@ export function Footer() {
           </div>
 
           {/* Social Icons */}
-          <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "22px" }}>
             <a
               href="https://www.linkedin.com/company/devopstrioglobal/posts/?feedView=all"
               target="_blank"
@@ -235,7 +240,7 @@ export function Footer() {
               style={socialIconStyle}
               title="LinkedIn"
             >
-              <FaLinkedinIn size={15} />
+              <FaLinkedinIn size={16} />
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61579126233218"
@@ -244,7 +249,7 @@ export function Footer() {
               style={socialIconStyle}
               title="Facebook"
             >
-              <FaFacebookF size={14} />
+              <FaFacebookF size={15} />
             </a>
             <a
               href="https://www.instagram.com/devopstrio_offcl/"
@@ -253,7 +258,7 @@ export function Footer() {
               style={socialIconStyle}
               title="Instagram"
             >
-              <FaInstagram size={15} />
+              <FaInstagram size={16} />
             </a>
           </div>
         </div>
@@ -272,10 +277,10 @@ export function Footer() {
 
 const navLinkStyle = {
   color: "#D4D4D8",
-  fontSize: "14.5px",
+  fontSize: "15px",
   fontWeight: 400,
   textDecoration: "none",
-  lineHeight: 1.4,
+  lineHeight: 1.45,
   display: "inline-block",
   transition: "color 0.2s ease, transform 0.2s ease",
   textAlign: "left",
