@@ -107,3 +107,22 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* Footer Interaction & Glow Styles */
+.footer-nav-link:hover {
+  color: #FFFFFF !important;
+  transform: translateX(4px);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(225, 29, 72, 0.4);
+}
+
+.footer-legal-link:hover {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.footer-social-icon:hover {
+  color: #FFFFFF !important;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 16px rgba(225, 29, 72, 0.6));
+}
+
