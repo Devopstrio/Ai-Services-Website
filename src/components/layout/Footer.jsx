@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export function Footer() {
   const [email, setEmail] = useState("");
@@ -13,7 +14,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="w-full bg-[#030303] text-zinc-550 pt-20 sm:pt-24 pb-4 relative font-sans mt-24 sm:mt-32">
+    <footer className="w-full bg-[#030303] text-zinc-400 pt-20 sm:pt-24 pb-6 relative font-sans mt-28 sm:mt-36 text-left">
       {/* Premium Dual-Line White Top Border */}
       <div className="absolute top-0 inset-x-0 flex flex-col items-center z-10 pointer-events-none">
         <div className="relative w-full flex justify-center opacity-90">
@@ -30,10 +31,10 @@ export function Footer() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 lg:px-16 relative z-10">
 
         {/* Floating Newsletter Card (Half outside top border / Half inside footer) */}
-        <div className="max-w-5xl mx-auto w-full bg-white rounded-2xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 -mt-20 sm:-mt-24 md:-mt-28 mb-12 sm:mb-16 shadow-[0_25px_50px_rgba(0,0,0,0.6)] relative z-20 border border-zinc-200/50">
-          <div className="flex-1 text-center md:text-left">
+        <div className="max-w-5xl mx-auto w-full bg-white rounded-2xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 -mt-20 sm:-mt-24 md:-mt-28 mb-16 sm:mb-20 shadow-[0_25px_50px_rgba(0,0,0,0.6)] relative z-20 border border-zinc-200/50">
+          <div className="flex-1 text-left">
             <h3 className="text-xl sm:text-2xl font-bold text-black mb-2 tracking-tight leading-tight">Subscribe Newsletter</h3>
-            <p className="text-zinc-600 text-xs sm:text-sm font-medium max-w-md mx-auto md:mx-0 leading-relaxed">
+            <p className="text-zinc-600 text-xs sm:text-sm font-medium max-w-md leading-relaxed">
               Get the latest insights on enterprise cloud transformations and technical engineering directly to your inbox.
             </p>
           </div>
@@ -58,18 +59,29 @@ export function Footer() {
           </div>
         </div>
 
-        {/* 6-Column Mega Menu */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-12 mb-20">
+        {/* 6-Column Mega Menu (Strict Left-Aligned Content matching DevOpsTRIO Site) */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1.1fr 1fr 1fr 1fr 1fr 1fr",
+            gap: "24px 32px",
+            marginBottom: "72px",
+            textAlign: "left",
+          }}
+          className="footer-columns-container"
+        >
 
           {/* Col 1: Brand Intro */}
-          <div className="flex flex-col items-center text-center gap-0">
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", textAlign: "center", paddingTop: "8px" }}>
             <a href="https://devopstrio.co.uk/" className="flex flex-col items-center gap-3 group inline-flex mb-4">
-              <img src="https://devopstrio.co.uk/assets/logo/logo.png"
+              <img
+                src="https://devopstrio.co.uk/assets/logo/logo.png"
                 alt="Devopstrio logo"
-                className="w-16 h-16 object-contain transition-all duration-500 group-hover:scale-105 filter drop-shadow-[0_0_15px_rgba(255,255,255,0.15)]"
-                loading="lazy" />
-              <div className="flex flex-col items-center text-center">
-                <span className="text-3xl font-semibold text-white tracking-tight leading-none">
+                style={{ width: "64px", height: "64px", objectFit: "contain", filter: "drop-shadow(0 0 15px rgba(255,255,255,0.15))" }}
+                loading="lazy"
+              />
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+                <span style={{ fontSize: "28px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "-0.02em", lineHeight: 1 }}>
                   Devopstrio
                 </span>
               </div>
@@ -77,140 +89,178 @@ export function Footer() {
           </div>
 
           {/* Col 2: Services / Practice Areas */}
-          <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">Core Expertise</h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/services/ai-data-innovation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">AI & Data Innovation</a></li>
-              <li><a href="https://devopstrio.co.uk/services/cloud-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Cloud Services</a></li>
-              <li><a href="https://devopstrio.co.uk/services/devops-automation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">DevOps & Automation</a></li>
-              <li><a href="https://devopstrio.co.uk/services/cybersecurity" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Cybersecurity</a></li>
-              <li><a href="https://devopstrio.co.uk/services/software-development" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Software Development</a></li>
-              <li><a href="https://devopstrio.co.uk/services/digital-transformation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Digital Transformation</a></li>
-              <li><a href="https://devopstrio.co.uk/services/data-engineering" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Data Engineering</a></li>
-              <li><a href="https://devopstrio.co.uk/services/managed-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Managed Services</a></li>
+          <div style={{ textAlign: "left" }}>
+            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+              Core Expertise
+            </h4>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+              <li><a href="https://devopstrio.co.uk/services/ai-data-innovation" style={navLinkStyle}>AI & Data Innovation</a></li>
+              <li><a href="https://devopstrio.co.uk/services/cloud-services" style={navLinkStyle}>Cloud Services</a></li>
+              <li><a href="https://devopstrio.co.uk/services/devops-automation" style={navLinkStyle}>DevOps & Automation</a></li>
+              <li><a href="https://devopstrio.co.uk/services/cybersecurity" style={navLinkStyle}>Cybersecurity</a></li>
+              <li><a href="https://devopstrio.co.uk/services/software-development" style={navLinkStyle}>Software Development</a></li>
+              <li><a href="https://devopstrio.co.uk/services/digital-transformation" style={navLinkStyle}>Digital Transformation</a></li>
+              <li><a href="https://devopstrio.co.uk/services/data-engineering" style={navLinkStyle}>Data Engineering</a></li>
+              <li><a href="https://devopstrio.co.uk/services/managed-services" style={navLinkStyle}>Managed Services</a></li>
             </ul>
           </div>
 
           {/* Col 3: Industries */}
-          <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">Industries</h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/industries/banking-finance" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Banking & Finance</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/healthcare-life-sciences" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Healthcare & Life Sciences</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/retail-ecommerce" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Retail & E-Commerce</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/manufacturing" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Manufacturing</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/telecommunications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Telecommunications</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/media-entertainment" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Media & Entertainment</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/education" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Education</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/government-public-sector" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Government & Public Sector</a></li>
+          <div style={{ textAlign: "left" }}>
+            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+              Industries
+            </h4>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+              <li><a href="https://devopstrio.co.uk/industries/banking-finance" style={navLinkStyle}>Banking & Finance</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/healthcare-life-sciences" style={navLinkStyle}>Healthcare & Life Sciences</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/retail-ecommerce" style={navLinkStyle}>Retail & E-Commerce</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/manufacturing" style={navLinkStyle}>Manufacturing</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/telecommunications" style={navLinkStyle}>Telecommunications</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/media-entertainment" style={navLinkStyle}>Media & Entertainment</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/education" style={navLinkStyle}>Education</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/government-public-sector" style={navLinkStyle}>Government & Public Sector</a></li>
             </ul>
           </div>
 
           {/* Col 4: Ecosystem */}
-          <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">Ecosystem</h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/ecosystem/partnerships" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Strategic Partnerships</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/innovation-labs" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">R&D Innovation Labs</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/platforms-solutions" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Platforms & Solutions</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/technology-stack" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Technology Stack</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/global-delivery" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Delivery</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/engineering-excellence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Engineering Excellence</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/accelerators-frameworks" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Accelerators & Frameworks</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/landing-zone" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Landing Zone</a></li>
+          <div style={{ textAlign: "left" }}>
+            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+              Ecosystem
+            </h4>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+              <li><a href="https://devopstrio.co.uk/ecosystem/partnerships" style={navLinkStyle}>Strategic Partnerships</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/innovation-labs" style={navLinkStyle}>R&D Innovation Labs</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/platforms-solutions" style={navLinkStyle}>Platforms & Solutions</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/technology-stack" style={navLinkStyle}>Technology Stack</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/global-delivery" style={navLinkStyle}>Global Delivery</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/engineering-excellence" style={navLinkStyle}>Engineering Excellence</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/accelerators-frameworks" style={navLinkStyle}>Accelerators & Frameworks</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/landing-zone" style={navLinkStyle}>Landing Zone</a></li>
             </ul>
           </div>
 
           {/* Col 5: Insights & Events */}
-          <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">Insights & Events</h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/insights/blogs" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Blogs</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/case-studies" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Case Studies</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/white-paper" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">White Paper</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/awards-milestones" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Awards & Milestones</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/industry-events" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Industry Events</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/celebrations" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Celebrations</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/team-culture" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Team Culture</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/our-offerings" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Offerings</a></li>
+          <div style={{ textAlign: "left" }}>
+            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+              Insights & Events
+            </h4>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+              <li><a href="https://devopstrio.co.uk/insights/blogs" style={navLinkStyle}>Blogs</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/case-studies" style={navLinkStyle}>Case Studies</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/white-paper" style={navLinkStyle}>White Paper</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/awards-milestones" style={navLinkStyle}>Awards & Milestones</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/industry-events" style={navLinkStyle}>Industry Events</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/celebrations" style={navLinkStyle}>Celebrations</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/team-culture" style={navLinkStyle}>Team Culture</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/our-offerings" style={navLinkStyle}>Our Offerings</a></li>
             </ul>
           </div>
 
           {/* Col 6: Company */}
-          <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">Company</h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/about/company-overview" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Company Overview</a></li>
-              <li><a href="https://devopstrio.co.uk/about/our-culture-people" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Culture & People</a></li>
-              <li><a href="https://devopstrio.co.uk/about/global-internship" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Internship</a></li>
-              <li><a href="https://devopstrio.co.uk/about/global-presence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Presence</a></li>
-              <li><a href="https://devopstrio.co.uk/about/partnerships-certifications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Partnerships & Certifications</a></li>
-              <li><a href="https://devopstrio.co.uk/about/awards-recognition" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Awards & Recognition</a></li>
-              <li><a href="https://devopstrio.co.uk/about/sustainability-csr" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Sustainability & CSR</a></li>
-              <li><a href="https://devopstrio.co.uk/contact#contact-form" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Contact Us</a></li>
+          <div style={{ textAlign: "left" }}>
+            <h4 style={{ fontSize: "14px", fontWeight: 700, color: "#FFFFFF", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "18px", fontFamily: '"DM Sans", sans-serif' }}>
+              Company
+            </h4>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px", textAlign: "left" }}>
+              <li><a href="https://devopstrio.co.uk/about/company-overview" style={navLinkStyle}>Company Overview</a></li>
+              <li><a href="https://devopstrio.co.uk/about/our-culture-people" style={navLinkStyle}>Our Culture & People</a></li>
+              <li><a href="https://devopstrio.co.uk/about/global-internship" style={navLinkStyle}>Global Internship</a></li>
+              <li><a href="https://devopstrio.co.uk/about/global-presence" style={navLinkStyle}>Global Presence</a></li>
+              <li><a href="https://devopstrio.co.uk/about/partnerships-certifications" style={navLinkStyle}>Partnerships & Certifications</a></li>
+              <li><a href="https://devopstrio.co.uk/about/awards-recognition" style={navLinkStyle}>Awards & Recognition</a></li>
+              <li><a href="https://devopstrio.co.uk/about/sustainability-csr" style={navLinkStyle}>Sustainability & CSR</a></li>
+              <li><a href="https://devopstrio.co.uk/contact#contact-form" style={navLinkStyle}>Contact Us</a></li>
             </ul>
           </div>
 
         </div>
 
-        {/* BOTTOM ROW: Socials & Legal */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-6 w-full">
+        {/* BOTTOM ROW: Cookie Icon, Legal Links & Socials (Exact Image 2 Match) */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            alignItems: "center",
+            paddingTop: "24px",
+            borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+            marginBottom: "24px",
+            gap: "20px",
+          }}
+        >
+          {/* Legal Links with Cookie Icon */}
+          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "14px", fontSize: "13px", fontWeight: 500, color: "#9CA3AF" }}>
+            {/* Red Cookie Consent Icon Badge */}
+            <div
+              style={{
+                width: "28px",
+                height: "28px",
+                borderRadius: "50%",
+                backgroundColor: "#E11D48",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginRight: "4px",
+                boxShadow: "0 0 10px rgba(225,29,72,0.4)",
+              }}
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="white">
+                <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="1" fill="#E11D48" />
+                <circle cx="8" cy="9" r="1.5" fill="white" />
+                <circle cx="15" cy="10" r="1.5" fill="white" />
+                <circle cx="11" cy="15" r="1.5" fill="white" />
+                <circle cx="16" cy="16" r="1" fill="white" />
+              </svg>
+            </div>
 
-          {/* Legal Links */}
-          <div className="flex flex-wrap justify-center md:justify-start gap-x-5 gap-y-2 text-xs md:text-sm font-semibold tracking-wide text-zinc-400">
-            <a href="https://devopstrio.co.uk/disclaimer" className="hover:text-white transition-colors duration-300">Disclaimer</a>
-            <span className="text-zinc-800">•</span>
-            <a href="https://devopstrio.co.uk/privacy-policy" className="hover:text-white transition-colors duration-300">Privacy Policy</a>
-            <span className="text-zinc-800">•</span>
-            <a href="https://devopstrio.co.uk/terms-of-service" className="hover:text-white transition-colors duration-300">Terms of Service</a>
-            <span className="text-zinc-800">•</span>
-            <a href="https://devopstrio.co.uk/cookie-policy" className="hover:text-white transition-colors duration-300">Cookie Policy</a>
-            <span className="text-zinc-800">•</span>
-            <a href="https://devopstrio.co.uk/gdpr" className="hover:text-white transition-colors duration-300">GDPR Compliance</a>
-            <span className="text-zinc-800">•</span>
-            <a href="https://devopstrio.co.uk/sitemap" className="hover:text-white transition-colors duration-300">Sitemap</a>
+            <a href="https://devopstrio.co.uk/disclaimer" style={legalLinkStyle}>Disclaimer</a>
+            <span style={{ color: "#3F3F46" }}>•</span>
+            <a href="https://devopstrio.co.uk/privacy-policy" style={legalLinkStyle}>Privacy Policy</a>
+            <span style={{ color: "#3F3F46" }}>•</span>
+            <a href="https://devopstrio.co.uk/terms-of-service" style={legalLinkStyle}>Terms of Service</a>
+            <span style={{ color: "#3F3F46" }}>•</span>
+            <a href="https://devopstrio.co.uk/cookie-policy" style={legalLinkStyle}>Cookie Policy</a>
+            <span style={{ color: "#3F3F46" }}>•</span>
+            <a href="https://devopstrio.co.uk/gdpr" style={legalLinkStyle}>GDPR Compliance</a>
+            <span style={{ color: "#3F3F46" }}>•</span>
+            <a href="https://devopstrio.co.uk/sitemap" style={legalLinkStyle}>Sitemap</a>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 items-center">
+          {/* Social Icons */}
+          <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
             <a
               href="https://www.linkedin.com/company/devopstrioglobal/posts/?feedView=all"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
+              style={socialIconStyle}
               title="LinkedIn"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
-              </svg>
+              <FaLinkedinIn size={15} />
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61579126233218"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
+              style={socialIconStyle}
               title="Facebook"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 5.848 5.848 0 0 0-.742-.018c-1.384 0-1.884.582-1.884 1.986v1.989h3.766l-.587 3.667h-3.179v7.98H9.101z" />
-              </svg>
+              <FaFacebookF size={14} />
             </a>
             <a
               href="https://www.instagram.com/devopstrio_offcl/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
+              style={socialIconStyle}
               title="Instagram"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fillRule="evenodd" clipRule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-              </svg>
+              <FaInstagram size={15} />
             </a>
           </div>
         </div>
 
-        {/* Copyright - Moved to bottom */}
-        <div className="text-center">
-          <span className="text-xs text-zinc-500 font-medium tracking-wide">
+        {/* Copyright */}
+        <div style={{ textAlign: "center", marginTop: "16px" }}>
+          <span style={{ fontSize: "12px", color: "#71717A", fontWeight: 500 }}>
             Copyright © 2026 Devopstrio Limited. All rights reserved.
           </span>
         </div>
@@ -219,5 +269,31 @@ export function Footer() {
     </footer>
   );
 }
+
+const navLinkStyle = {
+  color: "#D4D4D8",
+  fontSize: "14.5px",
+  fontWeight: 400,
+  textDecoration: "none",
+  lineHeight: 1.4,
+  display: "inline-block",
+  transition: "color 0.2s ease, transform 0.2s ease",
+  textAlign: "left",
+};
+
+const legalLinkStyle = {
+  color: "#A1A1AA",
+  textDecoration: "none",
+  transition: "color 0.2s ease",
+};
+
+const socialIconStyle = {
+  color: "#A1A1AA",
+  textDecoration: "none",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  transition: "color 0.2s ease, transform 0.2s ease",
+};
 
 export default Footer;
