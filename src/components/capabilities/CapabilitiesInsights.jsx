@@ -8,7 +8,7 @@ import insight4 from "../../assets/fresh/agent_marketing_campaign.jpg";
 import insight5 from "../../assets/fresh/agent_procurement_vendor.jpg";
 import insight6 from "../../assets/fresh/agent_sales_outreach.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const ITEMS = [
   {

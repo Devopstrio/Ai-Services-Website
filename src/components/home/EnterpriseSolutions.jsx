@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 const ACCENT = "#E11D48";
 const COLORS = {
-  bg: "#000000",
-  cardBg: "#0B0B0B",
+  bg: "#030303",
+  cardBg: "#0A0A0A",
   white: "#FFFFFF",
   whiteDim: "rgba(255, 255, 255, 0.9)",
-  whiteFaint: "rgba(255,255,255,0.14)",
-  accentDim: "rgba(225,29,72,0.35)",
+  whiteFaint: "rgba(255, 255, 255, 0.12)",
+  accentDim: "rgba(225, 29, 72, 0.35)",
+  border: "rgba(39, 39, 42, 0.8)",
 };
 
 /* ---------------------------------------------------------------------- */

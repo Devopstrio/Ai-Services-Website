@@ -9,7 +9,7 @@ import { getIndustryImages } from "../../data/industries/industryImages";
  * Shows industry-specific benefit cards with images and descriptions
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 // Industry-specific data configurations
 const INDUSTRY_DATA = {

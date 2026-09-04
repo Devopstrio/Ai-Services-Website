@@ -9,7 +9,7 @@ import analystTabletImg from "../../assets/fresh/ai-powered-device-concept.jpg";
 import collaborationBundleImg from "../../assets/fresh/an9vuooimrqpn90whkub.webp";
 import innovationArImg from "../../assets/overview/innovation-ar.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const PRODUCTS = [
   {

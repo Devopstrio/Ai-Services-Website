@@ -14,7 +14,7 @@ import datacenterFirewallImg from "../../assets/fresh/dashboard_fintech_metrics.
 import cyberShieldImg from "../../assets/fresh/dashboard_supply_chain.jpg";
 import analystTabletImg from "../../assets/fresh/data-anlytics-ai-database-management-260nw-2489189257.webp";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

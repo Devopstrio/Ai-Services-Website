@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
  * Black theme, #E11D48 accent, white text, inline CSS only. Font: Geist
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const CAPABILITIES = [
   {
@@ -15,17 +15,17 @@ const CAPABILITIES = [
     tag: "Predictive Analytics",
     title: "Forecast demand before it happens",
     description:
-      "Predict patient load, infra strain, and resource gaps days ahead — not after the alert fires.",
+      "Predict enterprise load, infrastructure strain, and resource gaps days ahead — not after the alert fires.",
     href: "#predictive-analytics",
     img: "https://picsum.photos/seed/ai-cap-predictive/900/1100",
     size: "large",
   },
   {
     id: "b",
-    tag: "Natural Language Understanding",
-    title: "Turn clinical notes into structured signal",
+    tag: "Natural Language & LLMs",
+    title: "Turn enterprise documents into structured signal",
     description:
-      "Extract diagnoses, meds, and follow-ups from free-text notes in real time.",
+      "Extract insights, summaries, and action workflows from complex unstructured data in real time.",
     href: "#nlu",
     img: "https://picsum.photos/seed/ai-cap-nlu/900/650",
     size: "wide",
@@ -33,8 +33,8 @@ const CAPABILITIES = [
   {
     id: "c",
     tag: "Computer Vision",
-    title: "Automated imaging support",
-    description: "Flag anomalies in scans faster, without replacing clinical judgment.",
+    title: "Automated Visual Intelligence",
+    description: "Real-time edge detection, spatial inspection, and automated quality control.",
     href: "#computer-vision",
     img: "https://picsum.photos/seed/ai-cap-vision/700/700",
     size: "small",
@@ -42,18 +42,18 @@ const CAPABILITIES = [
   {
     id: "d",
     tag: "Anomaly Detection",
-    title: "Catch drift before it breaks",
-    description: "Real-time monitoring across pipelines, models, and infra.",
+    title: "Catch Drift Before Outages",
+    description: "Continuous real-time telemetry across multi-cloud pipelines and AI models.",
     href: "#anomaly-detection",
     img: "https://picsum.photos/seed/ai-cap-anomaly/700/700",
     size: "small",
   },
   {
     id: "e",
-    tag: "Automated Decisioning",
+    tag: "Autonomous Decisioning",
     title: "Rule-aware AI that recommends the next best action",
     description:
-      "Combine clinical rules, live data, and model output into a single, explainable recommendation — reviewed, not blind-trusted.",
+      "Combine governance policies, live telemetry, and foundation model outputs into explainable, audited enterprise decisions.",
     href: "#decisioning",
     img: "https://picsum.photos/seed/ai-cap-decision/1400/560",
     size: "banner",
@@ -64,11 +64,11 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "110px 5%",
-    backgroundColor: "#000000",
+    padding: "100px 5%",
+    backgroundColor: "#030303",
     fontFamily: FONT,
     boxSizing: "border-box",
-    marginTop: "-70px",
+    marginTop: "-40px",
   },
   intro: {
     maxWidth: "880px",
@@ -79,17 +79,17 @@ const styles = {
     display: "inline-flex",
     alignItems: "center",
     gap: "10px",
-    padding: "7px 15px",
+    padding: "6px 14px",
     borderRadius: "999px",
     border: "1px solid rgba(225, 29, 72, 0.35)",
-    backgroundColor: "rgba(225, 29, 72, 0.07)",
-    color: "#E11D48",
+    backgroundColor: "rgba(225, 29, 72, 0.08)",
+    color: "#F43F5E",
     fontFamily: FONT,
     fontSize: "12px",
     fontWeight: 600,
-    letterSpacing: "0.1em",
+    letterSpacing: "0.08em",
     textTransform: "uppercase",
-    marginBottom: "20px",
+    marginBottom: "18px",
   },
   dot: {
     width: "6px",
@@ -101,43 +101,45 @@ const styles = {
   heading: {
     fontFamily: FONT,
     color: "#FFFFFF",
-    fontSize: "clamp(1.8rem, 3.2vw, 2.6rem)",
-    fontWeight: 700,
-    lineHeight: 1.25,
-    letterSpacing: "-0.01em",
+    fontSize: "clamp(2rem, 3.8vw, 3rem)",
+    fontWeight: 600,
+    lineHeight: 1.15,
+    letterSpacing: "-0.025em",
     margin: 0,
   },
-  headingAccent: { color: "#E11D48" },
+  headingAccent: { color: "#F43F5E" },
   subtext: {
     marginTop: "16px",
-    color: "rgba(255,255,255,0.55)",
+    color: "#A1A1AA",
     fontSize: "15px",
-    lineHeight: 1.7,
+    lineHeight: 1.6,
   },
 
   grid: {
-    maxWidth: "1280px",
+    maxWidth: "1360px",
     margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "repeat(4, 1fr)",
-    gridTemplateRows: "260px 260px 220px",
+    gridTemplateRows: "270px 270px 230px",
     gridTemplateAreas: `
       "a a b b"
       "a a c d"
       "e e e e"
     `,
-    gap: "18px",
+    gap: "20px",
   },
 
   card: {
     position: "relative",
-    borderRadius: "20px",
+    borderRadius: "24px",
     overflow: "hidden",
-    border: "1px solid rgba(255,255,255,0.09)",
-    backgroundColor: "#0a0a0a",
+    border: "1px solid rgba(39, 39, 42, 0.8)",
+    backgroundColor: "#0A0A0A",
     cursor: "pointer",
     display: "block",
     textDecoration: "none",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
+    transition: "border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease",
   },
   cardImgWrap: {
     position: "absolute",

@@ -8,7 +8,7 @@ import insight4 from "../../assets/fresh/agent_meeting_intelligence.jpg";
 import insight5 from "../../assets/fresh/agent_qa_testing.jpg";
 import insight6 from "../../assets/fresh/agent_secops_incident_responder.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const ITEMS = [
   {

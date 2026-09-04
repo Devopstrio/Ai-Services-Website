@@ -7,7 +7,7 @@ import CapabilitiesCards from "./CapabilitiesCards";
 import CapabilitiesManaged from "./CapabilitiesManaged";
 import CapabilitiesInsights from "./CapabilitiesInsights";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

@@ -8,7 +8,7 @@ import governanceImg from "../../assets/fresh/dashboard_executive_kpi.jpg";
 import partnershipsImg from "../../assets/fresh/executive_boardroom_ai.jpg";
 import securityImg from "../../assets/fresh/lead_developer_mentor.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const CARDS = [
   {

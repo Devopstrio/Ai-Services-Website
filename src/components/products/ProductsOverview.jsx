@@ -6,7 +6,7 @@ import ProductsEcosystem from "./ProductsEcosystem";
 
 import productHeroImg from "../../assets/fresh/augmented_reality_simulation.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

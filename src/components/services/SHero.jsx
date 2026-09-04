@@ -14,7 +14,7 @@ import ManagedService from "./ManagedService";
  * CSS only. Font: Geist
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

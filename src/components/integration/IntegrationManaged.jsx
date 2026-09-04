@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import datacenterFirewallImg from "../../assets/fresh/agent_support_triage.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

@@ -9,7 +9,7 @@ import outcome4 from "../../assets/fresh/cyber_digital_matrix.jpg";
 import outcome5 from "../../assets/fresh/cyber_threat_map.jpg";
 import outcome6 from "../../assets/fresh/dark_ai_neural_grid.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const OUTCOMES = [
   {

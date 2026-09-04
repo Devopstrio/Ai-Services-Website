@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
  * uploaded assets.
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const ALLIANCES = [
   {

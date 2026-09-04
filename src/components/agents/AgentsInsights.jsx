@@ -8,7 +8,7 @@ import insight4 from "../../assets/fresh/office-work-environment-stockcake.jpg";
 import insight5 from "../../assets/fresh/sales-growth-graph-on-laptop-screen-with-pointing-hand-illustrating-business-success-and-market-trend-photo.jpeg";
 import insight6 from "../../assets/fresh/1000294122.png";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const ITEMS = [
   {

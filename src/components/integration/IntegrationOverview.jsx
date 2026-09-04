@@ -7,7 +7,7 @@ import IntegrationCards from "./IntegrationCards";
 import IntegrationManaged from "./IntegrationManaged";
 import IntegrationInsights from "./IntegrationInsights";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

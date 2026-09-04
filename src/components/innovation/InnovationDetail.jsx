@@ -15,7 +15,7 @@ import {
   Activity
 } from "lucide-react";
 
-const FONT = '"Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 /* ─── Fade-up animation wrapper ─── */
 const FadeUp = ({ children, delay = 0, style = {} }) => (

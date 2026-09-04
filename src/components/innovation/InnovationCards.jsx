@@ -8,7 +8,7 @@ import strategyImg from "../../assets/fresh/quantum_laser_optics.jpg";
 import archImg from "../../assets/fresh/enterprise_innovation_hub.jpg";
 import deliveryImg from "../../assets/fresh/agent_cloud_infra.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const CARDS = [
   {

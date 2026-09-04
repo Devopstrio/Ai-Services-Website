@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ENTERPRISE_SOLUTIONS_DATA } from "../../data/solutions";
 import { ArrowRight, ArrowLeft, CheckCircle2 } from "lucide-react";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 export default function SolutionDetail() {
   const { solutionId } = useParams();

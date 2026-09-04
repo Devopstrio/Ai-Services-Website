@@ -36,7 +36,7 @@ import {
  * Black theme, #E11D48 accent, white text, inline CSS only. Font: Geist
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 // shared icon lookup — reused across industries so recurring categories
 // (AI and Data, Managed Services, etc.) stay visually consistent

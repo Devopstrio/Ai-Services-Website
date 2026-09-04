@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import agentGovernanceImg from "../../assets/fresh/luxurious-modern-office-space-with-important-reports-laptop-empty-desk-showcasing-important-data.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

@@ -2,24 +2,37 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 /**
- * Hero.jsx — DevOpsTRIO
- * Black theme, #E11D48 accent, white text, background video, inline CSS only.
- * Font: Geist
+ * Hero.jsx — DevOpsTRIO AI Services
+ * Enterprise Obsidian theme, #E11D48 neon accent, Inter typography, background motion video.
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {
     position: "relative",
     width: "100%",
-    minHeight: "100vh",
+    minHeight: "92vh",
+    maxHeight: "950px",
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
     overflow: "hidden",
-background:
-      "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
-          fontFamily: FONT,
+    backgroundColor: "#030303",
+    fontFamily: FONT,
+    paddingTop: "40px",
+    boxSizing: "border-box",
+  },
+  ambientGlow: {
+    position: "absolute",
+    top: "30%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "800px",
+    height: "500px",
+    background: "radial-gradient(ellipse at center, rgba(225,29,72,0.08) 0%, rgba(225,29,72,0.02) 50%, transparent 70%)",
+    pointerEvents: "none",
+    zIndex: 1,
   },
   video: {
     position: "absolute",
@@ -32,20 +45,20 @@ background:
     height: "auto",
     objectFit: "cover",
     zIndex: 0,
-    filter: "brightness(0.55) contrast(1.05)",
+    filter: "brightness(0.5) contrast(1.05)",
   },
   overlay: {
     position: "absolute",
     inset: 0,
     zIndex: 1,
     background:
-      "linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.85) 100%), linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 55%, rgba(0,0,0,0.7) 100%)",
+      "linear-gradient(180deg, rgba(3,3,3,0.75) 0%, rgba(3,3,3,0.4) 40%, rgba(3,3,3,0.92) 100%), linear-gradient(90deg, rgba(3,3,3,0.85) 0%, rgba(3,3,3,0.3) 50%, rgba(3,3,3,0.85) 100%)",
   },
   grain: {
     position: "absolute",
     inset: 0,
     zIndex: 2,
-    opacity: 0.04,
+    opacity: 0.03,
     pointerEvents: "none",
     backgroundImage:
       "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
@@ -54,18 +67,19 @@ background:
     position: "relative",
     zIndex: 3,
     width: "100%",
-    maxWidth: "1280px",
+    maxWidth: "1360px",
     margin: "0 auto",
-    padding: "0 5%",
+    padding: "0 6%",
     boxSizing: "border-box",
+    textAlign: "left",
   },
   headline: {
     color: "#FFFFFF",
     fontFamily: FONT,
-    fontSize: "clamp(2.2rem, 5vw, 4.2rem)",
-    lineHeight: 1.15,
-    fontWeight: 400,
-    letterSpacing: "-0.02em",
+    fontSize: "clamp(2.5rem, 5.2vw, 3.75rem)",
+    lineHeight: 1.05,
+    fontWeight: 600,
+    letterSpacing: "-0.03em",
     margin: 0,
   },
   headlineBold: {
@@ -73,7 +87,8 @@ background:
     fontWeight: 700,
     color: "#FFFFFF",
     display: "block",
-    marginTop: "14px",
+    marginTop: "16px",
+    letterSpacing: "-0.03em",
   },
   accent: {
     color: "#E11D48",
@@ -81,6 +96,7 @@ background:
   cursor: {
     color: "#E11D48",
     display: "inline-block",
+    fontWeight: 400,
   },
 };
 
@@ -132,6 +148,7 @@ export default function Hero() {
         <source src="/images/motion_loop_home.mp4" type="video/mp4" />
       </video>
 
+      <div style={styles.ambientGlow} />
       <div style={styles.overlay} />
       <div style={styles.grain} />
 

@@ -7,7 +7,7 @@ import challenge2 from "../../assets/fresh/automated_logistics_hub.jpg";
 import challenge3 from "../../assets/fresh/automotive_autonomous_driving.jpg";
 import challenge4 from "../../assets/fresh/bajaj_finance_bharti_airtel_partnership_financial__1737355875195_1770527459556.webp";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const CHALLENGES = [
   {

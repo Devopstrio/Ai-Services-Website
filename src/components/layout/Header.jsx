@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 
-const FONT = '"DM Sans", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 const ACCENT = "#E11D48";
-const BG = "#000000";
+const BG = "#030303";
 const PANEL_BG = "#0A0A0A";
 
 const LOGO_SRC = "https://devopstrio.co.uk/assets/logo/logo.png";
@@ -1101,8 +1101,6 @@ export default function Header() {
     };
   }, [navOpen]);
 
-
-
   return (
     <>
       <motion.header
@@ -1116,9 +1114,9 @@ export default function Header() {
           right: 0,
           zIndex: 50,
           fontFamily: FONT,
-          background: scrolled ? "rgba(0,0,0,0.75)" : "transparent",
-          backdropFilter: scrolled ? "blur(18px)" : "none",
-          borderBottom: scrolled ? "1px solid rgba(225,29,72,0.15)" : "1px solid transparent",
+          background: scrolled ? "rgba(3, 3, 3, 0.85)" : "rgba(3, 3, 3, 0.4)",
+          backdropFilter: "blur(14px)",
+          borderBottom: "1px solid rgba(24, 24, 27, 0.6)",
           transition: "background 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease",
         }}
       >
@@ -1126,8 +1124,8 @@ export default function Header() {
           style={{
             maxWidth: 1380,
             margin: "0 auto",
-            padding: "0 clamp(12px, 2vw, 24px)",
-            height: "clamp(64px, 8vh, 84px)",
+            padding: "0 clamp(12px, 2vw, 28px)",
+            height: "clamp(68px, 8vh, 82px)",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
@@ -1139,15 +1137,15 @@ export default function Header() {
             <motion.button
               aria-label="Open menu"
               onClick={() => setNavOpen(true)}
-              whileHover={{ scale: 1.06, backgroundColor: "rgba(225,29,72,0.15)" }}
+              whileHover={{ scale: 1.06, backgroundColor: "rgba(225,29,72,0.18)" }}
               whileTap={{ scale: 0.94 }}
               transition={{ duration: 0.25, ease: EASE }}
               style={{
-                width: "clamp(36px, 3vw, 44px)",
-                height: "clamp(36px, 3vw, 44px)",
+                width: "clamp(36px, 3vw, 42px)",
+                height: "clamp(36px, 3vw, 42px)",
                 borderRadius: "50%",
-                border: "1px solid rgba(255,255,255,0.15)",
-                backgroundColor: "rgba(255,255,255,0.04)",
+                border: "1px solid rgba(255,255,255,0.18)",
+                backgroundColor: "rgba(255,255,255,0.05)",
                 color: "#ffffff",
                 display: "flex",
                 alignItems: "center",
@@ -1156,7 +1154,7 @@ export default function Header() {
                 flexShrink: 0,
               }}
             >
-              <Menu size={clamp(16, 1.3, 19)} />
+              <Menu size={18} />
             </motion.button>
 
             <div
@@ -1164,7 +1162,7 @@ export default function Header() {
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: "clamp(6px, 0.8vw, 10px)",
+                gap: "clamp(8px, 1vw, 12px)",
                 textDecoration: "none",
                 cursor: "pointer",
               }}
@@ -1177,7 +1175,7 @@ export default function Header() {
                   whileHover={{ scale: 1.06 }}
                   transition={{ duration: 0.3, ease: EASE }}
                   style={{
-                    height: "clamp(28px, 3vw, 36px)",
+                    height: "clamp(32px, 3vw, 38px)",
                     width: "auto",
                     display: "block",
                   }}
@@ -1187,15 +1185,15 @@ export default function Header() {
                   whileHover={{ scale: 1.06 }}
                   transition={{ duration: 0.3, ease: EASE }}
                   style={{
-                    width: "clamp(32px, 3vw, 40px)",
-                    height: "clamp(32px, 3vw, 40px)",
+                    width: "clamp(34px, 3vw, 40px)",
+                    height: "clamp(34px, 3vw, 40px)",
                     borderRadius: 10,
                     background: ACCENT,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     color: "#ffffff",
-                    fontSize: "clamp(14px, 1.5vw, 18px)",
+                    fontSize: "18px",
                     fontWeight: 800,
                     boxShadow: `0 0 20px rgba(225,29,72,0.5)`,
                   }}
@@ -1205,10 +1203,11 @@ export default function Header() {
               )}
               <span
                 style={{
-                  fontSize: "clamp(16px, 1.8vw, 22px)",
-                  fontWeight: 750,
+                  fontSize: "clamp(18px, 1.8vw, 22px)",
+                  fontWeight: 700,
                   color: "#ffffff",
-                  letterSpacing: "-0.01em",
+                  letterSpacing: "-0.02em",
+                  fontFamily: FONT,
                 }}
               >
                 {BRAND_NAME}
@@ -1222,11 +1221,11 @@ export default function Header() {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "2px",
-              padding: "4px",
+              gap: "4px",
+              padding: "5px 6px",
               borderRadius: "999px",
-              backgroundColor: "rgba(255,255,255,0.05)",
-              border: "1px solid rgba(255,255,255,0.08)",
+              backgroundColor: "rgba(255,255,255,0.06)",
+              border: "1px solid rgba(255,255,255,0.10)",
             }}
           >
             {TOP_LINKS.map((link) => (
@@ -1234,7 +1233,7 @@ export default function Header() {
                 key={link.label}
                 href={link.route}
                 onClick={(e) => {
-                  if(link.action === "open_resources") {
+                  if (link.action === "open_resources") {
                     e.preventDefault();
                     setNavOpen(true);
                     setTimeout(() => window.dispatchEvent(new CustomEvent("open-resources-tab")), 20);
@@ -1243,23 +1242,25 @@ export default function Header() {
                 target={link.route.startsWith("http") ? "_blank" : undefined}
                 rel={link.route.startsWith("http") ? "noopener noreferrer" : undefined}
                 style={{
-                  padding: "clamp(6px, 0.6vw, 9px) clamp(10px, 1.2vw, 18px)",
+                  padding: "8px 18px",
                   borderRadius: "999px",
-                  fontSize: "clamp(12px, 1vw, 14.5px)",
-                  fontWeight: 500,
-                  color: "rgba(255,255,255,0.75)",
+                  fontSize: "clamp(15px, 1.15vw, 17px)",
+                  fontWeight: 600,
+                  letterSpacing: "0.3px",
+                  color: "rgba(255,255,255,0.9)",
                   textDecoration: "none",
                   whiteSpace: "nowrap",
                   cursor: "pointer",
                   display: "block",
                   border: "1px solid transparent",
                   backgroundColor: "transparent",
+                  fontFamily: FONT,
                 }}
                 whileHover={{
-                  backgroundColor: "rgba(225, 29, 72, 0.08)",
+                  backgroundColor: "rgba(225, 29, 72, 0.12)",
                   borderColor: "rgba(225, 29, 72, 0.4)",
                   color: "#ffffff",
-                  boxShadow: "0 4px 15px rgba(225, 29, 72, 0.15)",
+                  boxShadow: "0 4px 15px rgba(225, 29, 72, 0.2)",
                 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
@@ -1272,22 +1273,23 @@ export default function Header() {
           {/* Right action */}
           <motion.div
             onClick={() => (window.location.href = "https://devopstrio.co.uk/contact")}
-            whileHover={{ y: -2, boxShadow: "0 14px 30px -8px rgba(225,29,72,0.7)" }}
+            whileHover={{ y: -2, boxShadow: "0 12px 28px -6px rgba(225,29,72,0.8)" }}
             whileTap={{ y: 0, scale: 0.97 }}
             transition={{ duration: 0.25, ease: EASE }}
             style={{
-              fontSize: "clamp(11px, 0.9vw, 14px)",
+              fontSize: "13px",
               fontWeight: 700,
-              letterSpacing: "0.03em",
+              letterSpacing: "0.04em",
               color: "#ffffff",
               background: ACCENT,
-              padding: "clamp(8px, 0.8vw, 13px) clamp(14px, 1.5vw, 24px)",
+              padding: "10px 22px",
               borderRadius: 999,
               textDecoration: "none",
-              boxShadow: "0 8px 24px -6px rgba(225,29,72,0.5)",
+              boxShadow: "0 6px 20px -4px rgba(225,29,72,0.6)",
               whiteSpace: "nowrap",
               flexShrink: 0,
               cursor: "pointer",
+              fontFamily: FONT,
             }}
           >
             GET IN TOUCH
@@ -1303,13 +1305,7 @@ export default function Header() {
 
           @media (max-width: 768px) {
             header > div {
-              padding: 0 12px !important;
-            }
-          }
-
-          @media (max-width: 480px) {
-            header > div {
-              padding: 0 8px !important;
+              padding: 0 14px !important;
             }
           }
         `}</style>

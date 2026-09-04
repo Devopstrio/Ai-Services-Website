@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
  * Black theme, #E11D48 accent, white text, inline CSS only. Font: Geist
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const CARDS = [
   {
@@ -94,25 +94,25 @@ background:
   },
 
   card: {
-    position: "relative",
-    borderRadius: "18px",
-    backgroundColor: "#0c0c0c",
-    border: "1px solid rgba(255,255,255,0.10)",
+    backgroundColor: "#0A0A0A",
+    borderRadius: "24px",
+    border: "1px solid rgba(39, 39, 42, 0.8)",
     overflow: "hidden",
     cursor: "pointer",
     display: "flex",
     flexDirection: "column",
+    transition: "all 0.3s ease",
   },
 
   imageWrap: {
     position: "relative",
     overflow: "hidden",
-    margin: "10px",
-    borderRadius: "12px",
+    margin: "12px",
+    borderRadius: "16px",
   },
   cardImg: {
     width: "100%",
-    height: "260px",
+    height: "240px",
     objectFit: "cover",
     display: "block",
   },
@@ -120,21 +120,22 @@ background:
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.55) 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.75) 100%)",
   },
   badge: {
     position: "absolute",
     top: "14px",
     left: "14px",
-    padding: "8px 16px",
+    padding: "6px 14px",
     borderRadius: "999px",
-    backgroundColor: "rgba(0,0,0,0.6)",
-    backdropFilter: "blur(4px)",
-    color: "#FFFFFF",
+    backgroundColor: "rgba(0,0,0,0.75)",
+    backdropFilter: "blur(6px)",
+    border: "1px solid rgba(244, 63, 94, 0.25)",
+    color: "#F43F5E",
     fontFamily: FONT,
     fontSize: "11px",
-    fontWeight: 700,
-    letterSpacing: "0.06em",
+    fontWeight: 600,
+    letterSpacing: "0.08em",
   },
   iconCircle: {
     position: "absolute",

@@ -7,7 +7,7 @@ import InnovationCards from "./InnovationCards";
 import InnovationManaged from "./InnovationManaged";
 import InnovationInsights from "./InnovationInsights";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

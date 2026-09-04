@@ -8,7 +8,7 @@ import insight2 from "../../assets/fresh/agent_finance_reconciliation.jpg";
 import insight3 from "../../assets/fresh/clinical_ai_diagnostics.jpg";
 import insight4 from "../../assets/fresh/cloud-security-hub-hero.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const RESOURCES = [
   {

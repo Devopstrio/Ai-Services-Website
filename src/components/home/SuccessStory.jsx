@@ -7,16 +7,17 @@ import { ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
 /* ---------------------------------------------------------------------- */
 
 const COLORS = {
-  bg: "#000000",
-  panelBg: "#0B0B0B",
+  bg: "#030303",
+  panelBg: "#0A0A0A",
   white: "#FFFFFF",
   whiteDim: "rgba(255,255,255,0.62)",
   whiteFaint: "rgba(255,255,255,0.14)",
   accent: "#E11D48",
   accentDim: "rgba(225,29,72,0.35)",
+  border: "rgba(39, 39, 42, 0.8)",
 };
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 /* ---------------------------------------------------------------------- */
 /*  Data                                                                   */

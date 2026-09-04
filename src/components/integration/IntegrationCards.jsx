@@ -8,7 +8,7 @@ import strategyImg from "../../assets/fresh/integration_api_gateway.jpg";
 import archImg from "../../assets/fresh/integration_cloud_mesh.jpg";
 import deliveryImg from "../../assets/fresh/integration_event_streaming.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const CARDS = [
   {

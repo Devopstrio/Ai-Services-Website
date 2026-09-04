@@ -5,7 +5,7 @@ import { CAPABILITY_SERVICES_DATA } from "../../data/capabilities";
 
 import { ArrowRight, ArrowLeft, ChevronLeft, ChevronRight, Cpu, Users, Database } from "lucide-react";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const ArrowIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: "8px" }}>

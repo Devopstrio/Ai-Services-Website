@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
  * Font: Geist
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const PRODUCTS = [
   {

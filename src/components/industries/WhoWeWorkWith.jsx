@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
  * Shows industry-specific groups with icons, titles, and descriptions
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 // Industry-specific data configurations
 const INDUSTRY_DATA = {

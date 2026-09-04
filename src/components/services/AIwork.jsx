@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
  * Black theme, #E11D48 accent, white text, inline CSS only. Font: Geist
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const ITEMS = [
   {

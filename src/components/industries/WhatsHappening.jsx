@@ -18,7 +18,7 @@ const COLORS = {
   accentDim: "rgba(225,29,72,0.35)",
 };
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 /* ---------------------------------------------------------------------- */
 /*  Industry Data                                                         */

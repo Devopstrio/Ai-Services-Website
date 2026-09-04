@@ -7,7 +7,7 @@ import AgentsCards from "./AgentsCards";
 import AgentsManaged from "./AgentsManaged";
 import AgentsInsights from "./AgentsInsights";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

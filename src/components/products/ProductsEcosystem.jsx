@@ -6,7 +6,7 @@ import eco1 from "../../assets/fresh/agent_database_tuning.jpg";
 import eco2 from "../../assets/fresh/agent_finance_reconciliation.jpg";
 import eco3 from "../../assets/fresh/agent_legal_compliance.jpg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

@@ -8,14 +8,14 @@ import { motion } from "framer-motion";
  * Font: Geist
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {
     position: "relative",
     width: "100%",
     padding: "100px 5%",
-    backgroundColor: "#000000",
+    backgroundColor: "#030303",
     fontFamily: FONT,
     boxSizing: "border-box",
   },

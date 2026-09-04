@@ -1,57 +1,42 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #010000;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --color-bg-base: #030303;
+  --color-bg-black: #000000;
+  --color-surface-card: #0a0a0a;
+  --color-surface-elevated: #09090c;
+  --color-surface-glass: rgba(9, 9, 11, 0.3);
+  
+  --color-accent-rose: #e11d48;
+  --color-accent-rose-light: #f43f5e;
+  
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #d4d4d8;
+  --color-text-muted: #a1a1aa;
+  --color-text-deep-muted: #71717a;
+  
+  --color-border-subtle: rgba(39, 39, 42, 0.8);
+  --color-border-hover: rgba(244, 63, 94, 0.4);
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --font-sans: 'Inter', 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-editorial: 'DM Sans', system-ui, sans-serif;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  color-scheme: dark;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-base);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1324px) {
-    font-size: 16px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #000000;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
 }
 
 body {
   margin: 0;
+  padding: 0;
+  background-color: #030303;
+  color: #d4d4d8;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
 }
 
 #root {
@@ -64,51 +49,57 @@ body {
   box-sizing: border-box;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+/* Base Headings Defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.025em;
 }
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+  font-size: clamp(2.25rem, 5vw, 3.75rem); /* 36px to 60px */
+  line-height: 1.05;
+  letter-spacing: -0.025em;
 }
+
 h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+  font-size: clamp(1.875rem, 4vw, 3rem); /* 30px to 48px */
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
+
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem); /* 20px to 24px */
+  line-height: 1.33;
+  font-weight: 700;
+}
+
 p {
   margin: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030303;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
   border-radius: 4px;
-  color: var(--text-h);
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
 }
 
-/* Footer Interaction & Glow Styles */
+/* Interactive Card & Link Glow Styles */
 .footer-nav-link:hover {
   color: #FFFFFF !important;
   transform: translateX(4px);
@@ -126,3 +117,12 @@ code {
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 16px rgba(225, 29, 72, 0.6));
 }
 
+/* Standardized Glow Ambient Utilities */
+.ambient-glow-rose {
+  background: radial-gradient(ellipse at center, rgba(225, 29, 72, 0.08) 0%, rgba(225, 29, 72, 0.02) 50%, transparent 70%);
+  pointer-events: none;
+}
+
+.laser-top-border {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9), 0 0 50px rgba(255, 255, 255, 0.5), 0 0 80px rgba(225, 29, 72, 0.4);
+}

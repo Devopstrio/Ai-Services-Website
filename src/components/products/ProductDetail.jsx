@@ -18,7 +18,7 @@ import {
   ChevronRight
 } from "lucide-react";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 export default function ProductDetail() {
   const params = useParams();

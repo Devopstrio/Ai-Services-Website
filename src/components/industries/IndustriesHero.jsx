@@ -19,7 +19,7 @@ import WhatsHappening from "./WhatsHappening";
  * Shows industry-specific content based on route params
  */
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {

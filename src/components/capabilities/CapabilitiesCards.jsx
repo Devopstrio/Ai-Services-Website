@@ -8,7 +8,7 @@ import governanceImg from "../../assets/fresh/73bd7abeb45365336cdce7e9fff4b338.j
 import partnershipsImg from "../../assets/fresh/adobestock_1423685034.jpeg";
 import securityImg from "../../assets/fresh/adobestock_283199860-1-scaled.jpeg";
 
-const FONT = '"Geist", sans-serif';
+const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const CARDS = [
   {
