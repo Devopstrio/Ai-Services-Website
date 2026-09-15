@@ -27,7 +27,7 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "110px 5%",
+    padding: "110px 24px",
     background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
     fontFamily: FONT,
     boxSizing: "border-box",

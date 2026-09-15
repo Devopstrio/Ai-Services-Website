@@ -120,8 +120,8 @@ export default function IntegrationDetail() {
       {/* ═══════════════════════════════════════════════════════════════
           1. STICKY SUB-CATEGORY NAVIGATION BAR
       ═══════════════════════════════════════════════════════════════ */}
-      <div style={{ position: "sticky", top: "72px", zIndex: 40, backgroundColor: "rgba(4,4,7,0.92)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(255,255,255,0.06)", padding: "10px 5%" }}>
-        <div style={{ maxWidth: "1320px", margin: "0 auto", display: "flex", alignItems: "center", gap: "8px", overflowX: "auto", scrollbarWidth: "none" }} className="no-scrollbar">
+      <div style={{ position: "sticky", top: "72px", zIndex: 40, backgroundColor: "rgba(4,4,7,0.98)", borderBottom: "1px solid rgba(255,255,255,0.06)", padding: "10px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", display: "flex", alignItems: "center", gap: "8px", overflowX: "auto", scrollbarWidth: "none" }} className="no-scrollbar">
           <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#E11D48", textTransform: "uppercase", letterSpacing: "0.08em", marginRight: "12px", whiteSpace: "nowrap", display: "flex", alignItems: "center", gap: "6px" }}>
             <Share2 size={14} /> CONNECTORS:
           </span>
@@ -168,7 +168,7 @@ export default function IntegrationDetail() {
         {/* Ambient Center Glow */}
         <div style={{ position: "absolute", top: "18%", left: "50%", transform: "translateX(-50%)", width: "650px", height: "420px", background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, transparent 70%)", pointerEvents: "none" }} />
 
-        <div style={{ position: "relative", zIndex: 1, maxWidth: "1120px", margin: "0 auto", width: "100%", padding: "0 5%", textAlign: "center" }}>
+        <div style={{ position: "relative", zIndex: 1, maxWidth: "1120px", margin: "0 auto", width: "100%", padding: "0 24px", textAlign: "center" }}>
           <motion.div style={{ opacity: opacityText }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "6px 16px", backgroundColor: "rgba(225,29,72,0.14)", border: "1px solid rgba(225,29,72,0.35)", borderRadius: "999px", color: "#E11D48", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "24px" }}>
               <Share2 size={13} /> {data.hero.badge}
@@ -213,7 +213,7 @@ export default function IntegrationDetail() {
           3. ENTERPRISE CONNECTIVITY STRIP
       ═══════════════════════════════════════════════════════════════ */}
       {stats.length > 0 && (
-        <section style={{ position: "relative", zIndex: 10, marginTop: "-20px", padding: "0 5%" }}>
+        <section style={{ position: "relative", zIndex: 10, marginTop: "-20px", padding: "0 24px" }}>
           <div style={{ maxWidth: "1240px", margin: "0 auto", background: "linear-gradient(180deg, rgba(14,14,20,0.9) 0%, rgba(8,8,12,0.95) 100%)", backdropFilter: "blur(20px)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "20px", padding: "36px 28px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px", boxShadow: "0 20px 60px rgba(0,0,0,0.8)" }}>
             {stats.map((item, i) => (
               <FadeUp key={i} delay={i * 0.06}>
@@ -232,7 +232,7 @@ export default function IntegrationDetail() {
           4. PRE-BUILT CONNECTOR ECOSYSTEM GRID (Visual Cards)
       ═══════════════════════════════════════════════════════════════ */}
       <section id="connectors" style={{ padding: "140px 5% 100px 5%", backgroundColor: "#020203", position: "relative" }}>
-        <div style={{ maxWidth: "1320px", margin: "0 auto" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <FadeUp>
             <SectionHeading
               tag="PRE-BUILT CONNECTIVITY MESH"
@@ -242,9 +242,9 @@ export default function IntegrationDetail() {
             />
           </FadeUp>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(480px, 1fr))", gap: "32px" }} className="connectors-grid">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(480px, 1fr))", gap: "28px" }} className="connectors-grid">
             {connectors.map((conn, idx) => (
-              <FadeUp key={conn.id} delay={idx * 0.08}>
+              <FadeUp key={conn.id} delay={idx * 0.08} style={{ height: "100%", display: "flex" }}>
                 <div
                   className="connector-card"
                   style={{
@@ -254,22 +254,25 @@ export default function IntegrationDetail() {
                     overflow: "hidden",
                     display: "flex",
                     flexDirection: "column",
+                    width: "100%",
+                    height: "100%",
+                    boxSizing: "border-box",
                     boxShadow: "0 18px 50px rgba(0,0,0,0.7)",
                     transition: "all 0.3s ease"
                   }}
                 >
                   {/* Image Header */}
-                  <div style={{ position: "relative", width: "100%", height: "220px", overflow: "hidden" }}>
+                  <div style={{ position: "relative", width: "100%", height: "220px", overflow: "hidden", transform: "translateZ(0)", WebkitBackfaceVisibility: "hidden", isolation: "isolate" }}>
                     <img
                       src={conn.image}
                       alt={conn.name}
                       style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease" }}
                       className="conn-img"
                     />
-                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 30%, #09090E 100%)" }} />
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 35%, #09090E 100%)" }} />
 
                     {/* Category Tag */}
-                    <span style={{ position: "absolute", top: "16px", left: "16px", background: "rgba(0,0,0,0.85)", backdropFilter: "blur(8px)", border: "1px solid rgba(225,29,72,0.35)", borderRadius: "999px", padding: "5px 14px", color: "#E11D48", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.08em" }}>
+                    <span style={{ position: "absolute", top: "16px", left: "16px", background: "rgba(5,5,8,0.9)", border: "1px solid rgba(225,29,72,0.35)", borderRadius: "999px", padding: "5px 14px", color: "#E11D48", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.08em" }}>
                       {conn.category}
                     </span>
 
@@ -282,8 +285,8 @@ export default function IntegrationDetail() {
                   {/* Content */}
                   <div style={{ padding: "28px 32px 34px 32px", display: "flex", flexDirection: "column", justifyContent: "space-between", flexGrow: 1 }}>
                     <div>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
-                        <h3 style={{ fontSize: "1.35rem", fontWeight: 700, color: "#FFFFFF", margin: 0, lineHeight: 1.3 }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "12px", gap: "12px", flexWrap: "wrap" }}>
+                        <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#FFFFFF", margin: 0, lineHeight: 1.3 }}>
                           {conn.name}
                         </h3>
                         <span style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.45)", fontFamily: "monospace" }}>
@@ -296,7 +299,7 @@ export default function IntegrationDetail() {
                     </div>
 
                     {/* Sync Capabilities */}
-                    <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "18px", display: "flex", flexDirection: "column", gap: "10px" }}>
+                    <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "18px", marginTop: "auto", display: "flex", flexDirection: "column", gap: "10px" }}>
                       {conn.syncCapabilities.map((cap, i) => (
                         <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.88rem", color: "rgba(255,255,255,0.85)" }}>
                           <CheckCircle2 size={15} color="#E11D48" style={{ marginTop: "3px", flexShrink: 0 }} />
@@ -416,8 +419,6 @@ export default function IntegrationDetail() {
                       <div>
                         <a
                           href="https://devopstrio.co.uk/contact#contact-form"
-                          target="_blank"
-                          rel="noreferrer"
                           style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E11D48", color: "#FFFFFF", textDecoration: "none", fontSize: "0.88rem", fontWeight: 700, padding: "12px 24px", borderRadius: "8px", boxShadow: "0 4px 18px rgba(225,29,72,0.35)" }}
                         >
                           Deploy This Connector <ArrowRight size={15} />
@@ -450,7 +451,7 @@ export default function IntegrationDetail() {
       ═══════════════════════════════════════════════════════════════ */}
       {securityProtocols.length > 0 && (
         <section style={{ padding: "120px 5% 100px 5%", backgroundColor: "#020203" }}>
-          <div style={{ maxWidth: "1320px", margin: "0 auto" }}>
+          <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <FadeUp>
               <SectionHeading
                 tag="ENTERPRISE SECURITY & GOVERNANCE"
@@ -462,7 +463,7 @@ export default function IntegrationDetail() {
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
               {securityProtocols.map((sec, idx) => (
-                <FadeUp key={idx} delay={idx * 0.08}>
+                <FadeUp key={idx} delay={idx * 0.08} style={{ height: "100%", display: "flex" }}>
                   <div
                     className="sec-card"
                     style={{
@@ -473,6 +474,9 @@ export default function IntegrationDetail() {
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
+                      width: "100%",
+                      height: "100%",
+                      boxSizing: "border-box",
                       minHeight: "220px",
                       transition: "all 0.25s ease"
                     }}
@@ -550,8 +554,6 @@ export default function IntegrationDetail() {
             <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
               <a
                 href="https://devopstrio.co.uk/contact#contact-form"
-                target="_blank"
-                rel="noreferrer"
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E11D48", color: "#FFFFFF", textDecoration: "none", fontSize: "0.95rem", fontWeight: 700, padding: "15px 34px", borderRadius: "10px", boxShadow: "0 8px 32px rgba(225,29,72,0.5)", transition: "all 0.25s ease" }}
                 className="cta-primary-btn"
               >
@@ -559,8 +561,6 @@ export default function IntegrationDetail() {
               </a>
               <a
                 href="https://devopstrio.co.uk/contact#contact-form"
-                target="_blank"
-                rel="noreferrer"
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.14)", color: "#FFFFFF", textDecoration: "none", fontSize: "0.95rem", fontWeight: 600, padding: "15px 30px", borderRadius: "10px", transition: "all 0.25s ease" }}
                 className="cta-secondary-btn"
               >

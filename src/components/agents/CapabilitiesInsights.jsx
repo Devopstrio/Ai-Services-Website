@@ -60,8 +60,8 @@ const styles = {
     textAlign: "left",
   },
   headerRow: {
-    padding: "0 5%",
-    maxWidth: "1300px",
+    padding: "0 24px",
+    maxWidth: "1280px",
     margin: "0 auto 34px",
   },
   heading: {
@@ -94,7 +94,7 @@ const styles = {
   },
 
   scrollWrap: {
-    padding: "0 5%",
+    padding: "0 24px",
   },
   track: {
     display: "flex",
@@ -113,6 +113,11 @@ const styles = {
     borderRadius: "6px",
     overflow: "hidden",
     cursor: "pointer",
+  
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
 
   imgFace: {

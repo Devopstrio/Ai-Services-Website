@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --color-bg-base: #030303;
   --color-bg-black: #000000;
@@ -126,3 +128,51 @@ p {
 .laser-top-border {
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.9), 0 0 50px rgba(255, 255, 255, 0.5), 0 0 80px rgba(225, 29, 72, 0.4);
 }
+
+/* Custom Devopstrio Contact Button */
+.nav-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border: 1px solid #e11d48;
+  border-radius: 9999px;
+  transition: all 0.25s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  cursor: pointer;
+  color: #ffffff;
+  z-index: 1;
+  background-color: rgba(225, 29, 72, 0.05);
+}
+
+.nav-contact-btn:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(225, 29, 72, 0.25);
+  border-radius: 50%;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.nav-contact-btn:hover {
+  color: #ffffff;
+  border-color: #e11d48;
+  box-shadow: 0 0 20px rgba(225, 29, 72, 0.4);
+}
+
+.nav-contact-btn:hover:before {
+  top: -35%;
+  background-color: #e11d48;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+

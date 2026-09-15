@@ -48,7 +48,7 @@ const styles = {
     backgroundColor: "#160608",
     display: "flex",
     alignItems: "center",
-    padding: "80px 6%",
+    padding: "80px 24px",
     boxSizing: "border-box",
   },
   textColGlow: {
@@ -155,7 +155,7 @@ export default function InnovationInAction() {
         >
           <h2 style={styles.heading}>Want to Innovate with Us?</h2>
           <p style={styles.paragraph}>
-            No problem. At the <span style={styles.strong}>DevOpsTRIO Innovation Lab</span>, we
+            No problem. At the <span style={styles.strong}>Devopstrio Innovation Lab</span>, we
             thrive on solving the impossible. Whether you want to rapidly prototype a 
             novel Generative AI use case or co-author groundbreaking research, our 
             engineers are ready. We provide the sandbox, the talent, and the secure 

@@ -14,7 +14,7 @@ export const aiPrototypesData = {
     badge: "INNOVATION LAB // RAPID SANDBOX",
     subBadge: "FROM CONCEPT TO MVP IN 2 WEEKS",
     titleLight: "Accelerate Idea-to-Code Velocity with",
-    titleBold: "DevOpsTRIO AI Prototypes",
+    titleBold: "Devopstrio AI Prototypes",
     description: "De-risk capital investment and test radical enterprise AI use cases before broad commitment. We build high-fidelity interactive prototypes with live model inference in under 14 days.",
     bgImage: heroBg,
     liveBadge: "Active Sandbox v4.6"
@@ -127,21 +127,21 @@ export const aiPrototypesData = {
     {
       title: "Empirical Frameworks for Rapid Prototyping of Large Language Model Workflows",
       venue: "IEEE Software Enterprise AI 2025",
-      authors: "DevOpsTRIO Prototyping Division & Carnegie Mellon University",
+      authors: "Devopstrio Prototyping Division & Carnegie Mellon University",
       doi: "10.48550/arXiv.2507.03921",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Cost-Performance Tradeoffs in Quantized Enterprise Foundation Model Inference",
       venue: "SysML 2025 (Best Practice)",
-      authors: "DevOpsTRIO Systems Group & UC Berkeley",
+      authors: "Devopstrio Systems Group & UC Berkeley",
       doi: "10.48550/arXiv.2506.11029",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Air-Gapped Multi-Agent Sandbox Architecture for Regulated Financial Institutions",
       venue: "ACM FinTech Computing 2025",
-      authors: "DevOpsTRIO Security Lab & Imperial College London",
+      authors: "Devopstrio Security Lab & Imperial College London",
       doi: "10.48550/arXiv.2511.05432",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
@@ -150,7 +150,7 @@ export const aiPrototypesData = {
     partner: "Tier-1 Global Financial Services Institution",
     collaborationType: "Rapid Prototyping Sandbox",
     headline: "How a 14-Day AI Prototype Proved Commercial Viability for a \$40M Global Wealth Intelligence Platform",
-    quote: "DevOpsTRIO's AI Prototypes sandbox gave our executive board the confidence to greenlight our multi-million dollar AI transformation. They delivered a fully functional MVP with real customer telemetry in just 10 business days.",
+    quote: "Devopstrio's AI Prototypes sandbox gave our executive board the confidence to greenlight our multi-million dollar AI transformation. They delivered a fully functional MVP with real customer telemetry in just 10 business days.",
     author: "Head of Digital Innovation & Wealth Tech",
     organization: "Global Tier-1 Banking Leader",
     image: caseImg,

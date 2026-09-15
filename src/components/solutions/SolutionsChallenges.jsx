@@ -46,7 +46,7 @@ const CHALLENGES = [
 
 const styles = {
   section: {
-    padding: "130px 5%",
+    padding: "130px 24px",
     backgroundColor: "#050505",
     fontFamily: FONT,
     position: "relative",
@@ -55,7 +55,7 @@ const styles = {
   container: {
     position: "relative",
     zIndex: 2,
-    maxWidth: "1400px",
+    maxWidth: "1280px",
     margin: "0 auto",
   },
   header: {
@@ -90,6 +90,11 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     transition: "all 0.35s ease",
+  
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   imgWrap: {
     position: "relative",

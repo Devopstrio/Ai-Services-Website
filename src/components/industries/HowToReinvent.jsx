@@ -471,6 +471,11 @@ background:
     padding: "26px 24px 28px",
     boxSizing: "border-box",
     cursor: "pointer",
+  
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
 
   topRow: {

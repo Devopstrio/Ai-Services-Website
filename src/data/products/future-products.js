@@ -2,7 +2,7 @@ import heroBg from "../../assets/fresh/fthrxuelietnvkeiesnp.webp";
 import feat1Img from "../../assets/fresh/generated_image__agent_governance_framework_architecture_diagram.png";
 import feat2Img from "../../assets/fresh/robotic_assembly_precision.jpg";
 import feat3Img from "../../assets/fresh/global_operations_center.jpg";
-import feat4Img from "../../assets/fresh/happy-young-woman-sitting-floor-using-laptop-gray-wall_231208-11472.avif";
+import feat4Img from "../../assets/fresh/augmented_reality_simulation.jpg";
 import caseImg from "../../assets/fresh/hardware_security_module.jpg";
 
 export const futureproductsData = {
@@ -204,7 +204,7 @@ export const futureproductsData = {
     "client": "Global Aerospace & Defense Conglomerate",
     "industry": "Aerospace & Defense",
     "headline": "How Autonomous Satellite Constellation Telemetry Was Simulated with Zero Latency",
-    "quote": "The DevOpsTRIO Innovation Lab gave our engineering team a 5-year leap into the future. Their quantum-assisted tensor models solved orbital trajectory calculations we thought were impossible.",
+    "quote": "The Devopstrio Innovation Lab gave our engineering team a 5-year leap into the future. Their quantum-assisted tensor models solved orbital trajectory calculations we thought were impossible.",
     "author": "Chief Technology Officer",
     "company": "Leading Aerospace Prime",
     "image": "aerospace_telemetry_control.jpg",
@@ -227,7 +227,7 @@ export const futureproductsData = {
     "badge": "INNOVATION // NEXT-GEN R&D",
     "titleLight": "Building What Comes Next with",
     "titleBold": "Future Products",
-    "description": "Explore experimental prototypes and early-access platforms from the DevOpsTRIO Innovation Lab, including spatial intelligence, quantum neural networks, and physical AI robotics.",
+    "description": "Explore experimental prototypes and early-access platforms from the Devopstrio Innovation Lab, including spatial intelligence, quantum neural networks, and physical AI robotics.",
     "liveBadge": "v0.9 Experimental Lab",
     "bgImage": "heroBg"
   }

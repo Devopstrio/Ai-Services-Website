@@ -47,7 +47,7 @@ const styles = {
     backgroundColor: "#160608",
     display: "flex",
     alignItems: "center",
-    padding: "80px 6%",
+    padding: "80px 24px",
     boxSizing: "border-box",
   },
   textColGlow: {
@@ -159,13 +159,13 @@ export default function CapabilitiesInAction() {
         >
           <h2 style={styles.heading}>Want to See AI in Action?</h2>
           <p style={styles.paragraph}>
-            No problem. At <span style={styles.strong}>DevOpsTRIO</span>, we
+            No problem. At <span style={styles.strong}>Devopstrio</span>, we
             have a proven AI track record. Whether you're exploring your
             first enterprise AI use case or reimagining operations end-to-end,
             our AI services help you move faster, work smarter, and innovate
             responsibly. We build secure, enterprise-grade AI pipelines that 
             process massive data sets securely at scale. This is AI that works — 
-            engineered by DevOpsTRIO.
+            engineered by Devopstrio.
           </p>
 
           <motion.button

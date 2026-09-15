@@ -106,12 +106,12 @@ const PRODUCTS = [
 
 const styles = {
   section: {
-    padding: "100px 5%",
+    padding: "100px 24px",
     backgroundColor: "#000000",
     fontFamily: FONT
   },
   container: {
-    maxWidth: "1400px",
+    maxWidth: "1280px",
     margin: "0 auto",
   },
   header: {

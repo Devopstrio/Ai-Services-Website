@@ -14,7 +14,7 @@ export const procurementAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Strategic Spend Control with",
-    titleBold: "DevOpsTRIO Procurement Agent",
+    titleBold: "Devopstrio Procurement Agent",
     description: "Automate supplier onboarding, analyze RFP/RFQ vendor responses with neural risk scoring, negotiate pre-approved contract rate cards, and enforce corporate spend policy guardrails autonomously.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const procurementAgentData = {
   ],
   overview: {
     heading: "The Autonomous Digital Buyer for Modern Enterprises",
-    description: "Procurement teams are burdened by manual vendor negotiations, sprawling maverick spend, and lengthy RFQ evaluation cycles across siloed suppliers.\n\nThe DevOpsTRIO Procurement Agent deploys cognitive sub-agents that continuously audit supplier risk, compare market rate cards, draft standardized RFQ documents, and negotiate optimal contract terms within approved enterprise parameters.",
+    description: "Procurement teams are burdened by manual vendor negotiations, sprawling maverick spend, and lengthy RFQ evaluation cycles across siloed suppliers.\n\nThe Devopstrio Procurement Agent deploys cognitive sub-agents that continuously audit supplier risk, compare market rate cards, draft standardized RFQ documents, and negotiate optimal contract terms within approved enterprise parameters.",
     keyPoints: [
       "Autonomous RFQ generation and vendor response comparison matrices",
       "Dynamic price benchmarking against regional market indices and historical POs",
@@ -201,7 +201,7 @@ export const procurementAgentData = {
     client: "Global Logistics & Transportation Enterprise",
     industry: "Supply Chain & Logistics",
     headline: "How a Global Logistics Giant Unlocked $18.4M in Direct Sourcing Savings in 12 Months",
-    quote: "DevOpsTRIO Procurement Agent gave our buyers superhuman capabilities. We evaluate 5x more supplier bids and negotiate from a position of real-time data strength.",
+    quote: "Devopstrio Procurement Agent gave our buyers superhuman capabilities. We evaluate 5x more supplier bids and negotiate from a position of real-time data strength.",
     author: "Chief Procurement Officer",
     company: "Publicly Traded Freight Enterprise",
     image: caseImg,

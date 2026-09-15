@@ -86,7 +86,7 @@ export default function CapabilityDetail() {
           </motion.div>
         </motion.div>
 
-        <div style={{ position: "relative", zIndex: 2, width: "100%", maxWidth: "1400px", margin: "0 auto", padding: "0 5%", display: "flex", alignItems: "center" }}>
+        <div style={{ position: "relative", zIndex: 2, width: "100%", maxWidth: "1280px", margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center" }}>
           <div style={{ position: "absolute", left: "0", top: "10%", bottom: "10%", width: "1px", background: "linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 100%)" }} />
           <div style={{ maxWidth: "600px", paddingLeft: "clamp(20px, 4vw, 50px)" }}>
             <div style={{ display: "flex", gap: "8px", alignItems: "center", color: "rgba(255,255,255,0.5)", fontSize: "12px", letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 600, marginBottom: "24px" }}>
@@ -114,7 +114,7 @@ export default function CapabilityDetail() {
 
       {/* 2. TALL METRICS CARDS (Reference Image Style) */}
       <section style={{ backgroundColor: "#000", padding: "80px 5% 0 5%" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
           {data.metricsCards.map((metric, i) => (
              <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, delay: i * 0.1 }} style={{ position: "relative", height: "350px", borderRadius: "12px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)" }}>
                <img src={metric.image} alt="Metric" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.6 }} />
@@ -153,8 +153,8 @@ export default function CapabilityDetail() {
       </section>
 
       {/* 4. WHO WE WORK WITH (Bubbling Icons Section) */}
-      <section style={{ backgroundColor: "#000", padding: "120px 5%" }}>
-         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+      <section style={{ backgroundColor: "#000", padding: "120px 24px" }}>
+         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8 }} style={{ marginBottom: "60px" }}>
               <h2 style={{ fontSize: "clamp(2.5rem, 4vw, 3.2rem)", fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
                 <span style={{ fontWeight: 700 }}>{data.whoWeWorkWith.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.whoWeWorkWith.titleRed}</span>
@@ -180,8 +180,8 @@ export default function CapabilityDetail() {
       </section>
 
       {/* 5. HOW YOU BENEFIT (Image Box Overlay Cards) */}
-      <section style={{ backgroundColor: "#0b0b0b", padding: "120px 5%" }}>
-         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+      <section style={{ backgroundColor: "#0b0b0b", padding: "120px 24px" }}>
+         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8 }} style={{ marginBottom: "60px" }}>
               <h2 style={{ fontSize: "clamp(2.5rem, 4vw, 3.2rem)", fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
                 <span style={{ fontWeight: 700 }}>{data.benefits.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.benefits.titleRed}</span>
@@ -204,8 +204,8 @@ export default function CapabilityDetail() {
       </section>
 
       {/* 6. CORE CAPABILITIES CARDS SECTION (Beige Hover) */}
-      <section style={{ backgroundColor: "#000", padding: "120px 5%", display: "flex", justifyContent: "center" }}>
-        <div style={{ width: "100%", maxWidth: "1400px" }}>
+      <section style={{ backgroundColor: "#000", padding: "120px 24px", display: "flex", justifyContent: "center" }}>
+        <div style={{ width: "100%", maxWidth: "1280px" }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} style={{ marginBottom: "60px", textAlign: "center" }}>
             <h2 style={{ fontSize: "clamp(2.5rem, 4vw, 3.2rem)", fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
               <span style={{ fontWeight: 700 }}>{data.cards.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.cards.titleRed}</span>
@@ -262,8 +262,8 @@ export default function CapabilityDetail() {
       </section>
 
       {/* 7. INSIGHTS SECTION */}
-      <section style={{ backgroundColor: "#0b0b0b", padding: "120px 5%", display: "flex", justifyContent: "center" }}>
-        <div style={{ width: "100%", maxWidth: "1400px" }}>
+      <section style={{ backgroundColor: "#0b0b0b", padding: "120px 24px", display: "flex", justifyContent: "center" }}>
+        <div style={{ width: "100%", maxWidth: "1280px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "60px", borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "24px" }}>
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)", fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
               <span style={{ fontWeight: 700 }}>{data.insights.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.insights.titleRed}</span>

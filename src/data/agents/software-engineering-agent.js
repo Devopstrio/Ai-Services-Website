@@ -14,7 +14,7 @@ export const softwareEngineeringAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Ship Production Code Faster with",
-    titleBold: "DevOpsTRIO SWE Agent",
+    titleBold: "Devopstrio SWE Agent",
     description: "Autonomous software development agent that converts Jira user stories into tested GitHub pull requests, refactors legacy codebases, resolves API regressions, and enforces clean architecture standards with unit test coverage.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const softwareEngineeringAgentData = {
   ],
   overview: {
     heading: "The Autonomous Software Engineer for High-Velocity Product Teams",
-    description: "Engineering velocity is slowed down by routine boilerplate coding, slow PR code reviews, legacy code refactoring, and missing test coverage.\n\nThe DevOpsTRIO Software Engineering Agent operates as an embedded senior software developer in your GitHub and GitLab repos. It understands your entire codebase architecture, converts tickets into modular pull requests with full unit test coverage, and catches security vulnerabilities during code reviews before merging.",
+    description: "Engineering velocity is slowed down by routine boilerplate coding, slow PR code reviews, legacy code refactoring, and missing test coverage.\n\nThe Devopstrio Software Engineering Agent operates as an embedded senior software developer in your GitHub and GitLab repos. It understands your entire codebase architecture, converts tickets into modular pull requests with full unit test coverage, and catches security vulnerabilities during code reviews before merging.",
     keyPoints: [
       "Converts Jira and Linear issues into production-ready, modular pull requests",
       "Autonomous unit, integration, and E2E test generation with > 85% code coverage",
@@ -201,7 +201,7 @@ export const softwareEngineeringAgentData = {
     client: "FinTech Banking Platform",
     industry: "Financial Services",
     headline: "How a 300-Engineer FinTech Increased Sprint Velocity by 4.2x While Slashing Code Review Lag by 90%",
-    quote: "DevOpsTRIO SWE Agent is the most capable pair programmer our engineers have ever worked with. It handles the boilerplate and tests so our team can focus on complex business logic.",
+    quote: "Devopstrio SWE Agent is the most capable pair programmer our engineers have ever worked with. It handles the boilerplate and tests so our team can focus on complex business logic.",
     author: "Head of Engineering & Core Architecture",
     company: "Series D FinTech Unicorn",
     image: caseImg,

@@ -102,8 +102,8 @@ export default function InnovationDetail() {
       {/* ═══════════════════════════════════════════════════════════════
           1. STICKY SUB-SERVICE NAVIGATION BAR
       ═══════════════════════════════════════════════════════════════ */}
-      <div style={{ position: "sticky", top: "72px", zIndex: 40, backgroundColor: "rgba(4,4,7,0.9)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(255,255,255,0.06)", padding: "10px 5%" }}>
-        <div style={{ maxWidth: "1320px", margin: "0 auto", display: "flex", alignItems: "center", gap: "8px", overflowX: "auto", scrollbarWidth: "none" }} className="no-scrollbar">
+      <div style={{ position: "sticky", top: "72px", zIndex: 40, backgroundColor: "rgba(4,4,7,0.9)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(255,255,255,0.06)", padding: "10px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", display: "flex", alignItems: "center", gap: "8px", overflowX: "auto", scrollbarWidth: "none" }} className="no-scrollbar">
           <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "#E11D48", textTransform: "uppercase", letterSpacing: "0.08em", marginRight: "12px", whiteSpace: "nowrap", display: "flex", alignItems: "center", gap: "6px" }}>
             <FlaskConical size={14} /> LAB HUB:
           </span>
@@ -150,7 +150,7 @@ export default function InnovationDetail() {
         {/* Ambient Center Glow */}
         <div style={{ position: "absolute", top: "20%", left: "50%", transform: "translateX(-50%)", width: "600px", height: "400px", background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, transparent 70%)", pointerEvents: "none" }} />
 
-        <div style={{ position: "relative", zIndex: 1, maxWidth: "1080px", margin: "0 auto", width: "100%", padding: "0 5%", textAlign: "center" }}>
+        <div style={{ position: "relative", zIndex: 1, maxWidth: "1080px", margin: "0 auto", width: "100%", padding: "0 24px", textAlign: "center" }}>
           <motion.div style={{ opacity: opacityText }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "6px 16px", backgroundColor: "rgba(225,29,72,0.14)", border: "1px solid rgba(225,29,72,0.35)", borderRadius: "999px", color: "#E11D48", fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "24px" }}>
               <FlaskConical size={13} /> {data.hero.badge}
@@ -195,10 +195,10 @@ export default function InnovationDetail() {
           3. CLEAN IMPACT STATS STRIP
       ═══════════════════════════════════════════════════════════════ */}
       {stats.length > 0 && (
-        <section style={{ position: "relative", zIndex: 10, marginTop: "-20px", padding: "0 5%" }}>
+        <section style={{ position: "relative", zIndex: 10, marginTop: "-20px", padding: "0 24px" }}>
           <div style={{ maxWidth: "1240px", margin: "0 auto", background: "linear-gradient(180deg, rgba(14,14,20,0.9) 0%, rgba(8,8,12,0.95) 100%)", backdropFilter: "blur(20px)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "20px", padding: "36px 28px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px", boxShadow: "0 20px 60px rgba(0,0,0,0.8)" }}>
             {stats.map((item, i) => (
-              <FadeUp key={i} delay={i * 0.06}>
+              <FadeUp key={i} delay={i * 0.06} style={{ height: "100%", display: "flex" }}>
                 <div style={{ textAlign: "center", padding: "8px" }}>
                   <div style={{ fontSize: "clamp(2rem, 3vw, 2.6rem)", fontWeight: 800, color: "#FFFFFF", lineHeight: 1, marginBottom: "8px" }}>{item.value}</div>
                   <div style={{ fontSize: "0.88rem", color: "#E11D48", fontWeight: 700, marginBottom: "4px" }}>{item.label}</div>
@@ -214,7 +214,7 @@ export default function InnovationDetail() {
           4. CORE RESEARCH PILLARS (Large Image-Centric Showcase)
       ═══════════════════════════════════════════════════════════════ */}
       <section style={{ padding: "140px 5% 100px 5%", backgroundColor: "#020203", position: "relative" }}>
-        <div style={{ maxWidth: "1320px", margin: "0 auto" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <FadeUp>
             <SectionHeading
               tag="CORE RESEARCH PILLARS"
@@ -226,7 +226,7 @@ export default function InnovationDetail() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(520px, 1fr))", gap: "32px" }} className="pillars-grid">
             {pillars.map((pillar, idx) => (
-              <FadeUp key={pillar.id} delay={idx * 0.08}>
+              <FadeUp key={pillar.id} delay={idx * 0.08} style={{ height: "100%", display: "flex" }}>
                 <div
                   className="pillar-card"
                   style={{
@@ -241,7 +241,7 @@ export default function InnovationDetail() {
                   }}
                 >
                   {/* Large High-Definition Image */}
-                  <div style={{ position: "relative", width: "100%", height: "230px", overflow: "hidden" }}>
+                  <div style={{ position: "relative", width: "100%", height: "230px", overflow: "hidden", transform: "translateZ(0)", WebkitBackfaceVisibility: "hidden", isolation: "isolate" }}>
                     <img
                       src={pillar.image}
                       alt={pillar.title}
@@ -393,8 +393,6 @@ export default function InnovationDetail() {
                     <div>
                       <a
                         href="https://devopstrio.co.uk/contact#contact-form"
-                        target="_blank"
-                        rel="noreferrer"
                         style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E11D48", color: "#FFFFFF", textDecoration: "none", fontSize: "0.88rem", fontWeight: 700, padding: "12px 26px", borderRadius: "8px", boxShadow: "0 4px 18px rgba(225,29,72,0.35)" }}
                       >
                         Request Lab Sandbox Access <ArrowRight size={15} />
@@ -422,7 +420,7 @@ export default function InnovationDetail() {
       ═══════════════════════════════════════════════════════════════ */}
       {papers.length > 0 && (
         <section id="publications" style={{ padding: "130px 5% 100px 5%", backgroundColor: "#020203" }}>
-          <div style={{ maxWidth: "1320px", margin: "0 auto" }}>
+          <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <FadeUp>
               <SectionHeading
                 tag="PEER-REVIEWED RESEARCH"
@@ -434,7 +432,7 @@ export default function InnovationDetail() {
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))", gap: "28px" }}>
               {papers.map((paper, idx) => (
-                <FadeUp key={idx} delay={idx * 0.08}>
+                <FadeUp key={idx} delay={idx * 0.08} style={{ height: "100%", display: "flex" }}>
                   <div
                     className="paper-card-clean"
                     style={{
@@ -470,8 +468,6 @@ export default function InnovationDetail() {
                     <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "16px", marginTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                       <a
                         href={paper.downloadUrl}
-                        target="_blank"
-                        rel="noreferrer"
                         style={{ color: "#E11D48", textDecoration: "none", fontSize: "0.84rem", fontWeight: 700, display: "inline-flex", alignItems: "center", gap: "6px" }}
                       >
                         Read Paper <ExternalLink size={13} />
@@ -533,7 +529,7 @@ export default function InnovationDetail() {
         <FadeUp>
           <div style={{ maxWidth: "900px", margin: "0 auto", background: "radial-gradient(circle at center, rgba(225,29,72,0.18) 0%, rgba(12,12,16,0.96) 65%)", border: "1px solid rgba(225,29,72,0.3)", borderRadius: "28px", padding: "70px 40px", boxShadow: "0 30px 80px rgba(225,29,72,0.15)" }}>
             <h2 style={{ fontSize: "clamp(2rem, 3.4vw, 3rem)", fontWeight: 800, color: "#FFFFFF", margin: "0 0 16px 0", letterSpacing: "-0.02em" }}>
-              Pioneer with <span style={{ color: "#E11D48" }}>DevOpsTRIO AI Research</span>
+              Pioneer with <span style={{ color: "#E11D48" }}>Devopstrio AI Research</span>
             </h2>
             <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.65)", maxWidth: "560px", margin: "0 auto 34px auto", lineHeight: 1.7 }}>
               Collaborate with our research scientists on foundational AI breakthroughs, apply for academic PhD fellowships, or request compute grant allocations.
@@ -541,8 +537,6 @@ export default function InnovationDetail() {
             <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
               <a
                 href="https://devopstrio.co.uk/contact#contact-form"
-                target="_blank"
-                rel="noreferrer"
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E11D48", color: "#FFFFFF", textDecoration: "none", fontSize: "0.95rem", fontWeight: 700, padding: "15px 34px", borderRadius: "10px", boxShadow: "0 8px 32px rgba(225,29,72,0.5)", transition: "all 0.25s ease" }}
                 className="cta-primary-btn"
               >
@@ -550,8 +544,6 @@ export default function InnovationDetail() {
               </a>
               <a
                 href="https://devopstrio.co.uk/contact#contact-form"
-                target="_blank"
-                rel="noreferrer"
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.14)", color: "#FFFFFF", textDecoration: "none", fontSize: "0.95rem", fontWeight: 600, padding: "15px 30px", borderRadius: "10px", transition: "all 0.25s ease" }}
                 className="cta-secondary-btn"
               >

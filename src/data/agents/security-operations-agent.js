@@ -14,7 +14,7 @@ export const securityOperationsAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Sub-Second Threat Defense with",
-    titleBold: "DevOpsTRIO SOC Agent",
+    titleBold: "Devopstrio SOC Agent",
     description: "Autonomous cybersecurity agent that ingests millions of SIEM log events, detects zero-day lateral movement, isolates compromised endpoints, and auto-patches critical CVE vulnerabilities in real time with zero human latency.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const securityOperationsAgentData = {
   ],
   overview: {
     heading: "The Autonomous Digital SOC Analyst for Enterprise Cybersecurity",
-    description: "Enterprise Security Operations Centers (SOCs) are drowning in alert fatigue, processing over 50,000 security alarms a day with an average threat dwell time of 21 days.\n\nThe DevOpsTRIO Security Operations Agent operates as an autonomous tier-1 and tier-2 SOC analyst. It ingests telemetry across CrowdStrike, Splunk, AWS GuardDuty, and Okta, correlates signals against the MITRE ATT&CK framework, isolates infected hosts within 2 seconds, and drafts full incident response timelines automatically.",
+    description: "Enterprise Security Operations Centers (SOCs) are drowning in alert fatigue, processing over 50,000 security alarms a day with an average threat dwell time of 21 days.\n\nThe Devopstrio Security Operations Agent operates as an autonomous tier-1 and tier-2 SOC analyst. It ingests telemetry across CrowdStrike, Splunk, AWS GuardDuty, and Okta, correlates signals against the MITRE ATT&CK framework, isolates infected hosts within 2 seconds, and drafts full incident response timelines automatically.",
     keyPoints: [
       "Sub-second autonomous threat hunting and host isolation across enterprise endpoints",
       "Suppresses 99%+ of benign false-positive alarms using behavioral baseline embeddings",
@@ -201,7 +201,7 @@ export const securityOperationsAgentData = {
     client: "Global Financial Infrastructure Network",
     industry: "Banking & Financial Services",
     headline: "How a Global Payment Network Reduced Threat Dwell Time from 18 Days to Under 2 Seconds",
-    quote: "DevOpsTRIO SOC Agent gives our security team an unfair advantage. It investigates and neutralizes complex credential theft before human analysts can even open the ticket.",
+    quote: "Devopstrio SOC Agent gives our security team an unfair advantage. It investigates and neutralizes complex credential theft before human analysts can even open the ticket.",
     author: "Chief Information Security Officer (CISO)",
     company: "Publicly Traded Payment Giant",
     image: caseImg,

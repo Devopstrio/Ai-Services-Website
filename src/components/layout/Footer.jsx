@@ -6,7 +6,7 @@ export function Footer() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
-      alert("Thank you for subscribing to DevOpsTRIO Newsletter!");
+      alert("Thank you for subscribing to Devopstrio Newsletter!");
       setEmail("");
     }
   };
@@ -26,7 +26,7 @@ export function Footer() {
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-[radial-gradient(circle_at_center,rgba(225,29,72,0.015),transparent_70%)] pointer-events-none z-0 overflow-hidden" />
       <div className="absolute top-0 left-[20%] w-[350px] h-[350px] bg-[radial-gradient(circle_at_center,rgba(225,29,72,0.01),transparent_70%)] pointer-events-none z-0 overflow-hidden" />
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 lg:px-16 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Newsletter Floating Box */}
         <div className="max-w-5xl mx-auto w-full bg-white rounded-2xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 -mt-20 sm:-mt-24 md:-mt-28 mb-12 sm:mb-16 shadow-[0_25px_50px_rgba(0,0,0,0.6)] relative z-20 border border-zinc-200/50">
@@ -50,7 +50,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase bg-black hover:bg-zinc-800 text-white transition-all duration-300 whitespace-nowrap cursor-pointer shadow-md"
+                className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase bg-black hover:bg-zinc-800 text-white transition-all duration-300 cursor-pointer shadow-md"
                 aria-label="Subscribe"
               >
                 Get Started
@@ -66,11 +66,11 @@ export function Footer() {
           <div className="flex flex-col items-center text-center gap-0">
             <a href="https://devopstrio.co.uk/" className="flex flex-col items-center gap-3 group inline-flex mb-4">
               <img
-                src="https://devopstrio.co.uk/webp/assets/logo/logo.webp"
+                src="/images/downloaded/a228f16227_logo.webp"
                 alt="Devopstrio logo"
                 className="w-16 h-16 object-contain transition-all duration-500 group-hover:scale-105 filter drop-shadow-[0_0_15px_rgba(255,255,255,0.15)]"
                 loading="lazy"
-                onError={(e) => { e.currentTarget.src = "https://devopstrio.co.uk/assets/logo/logo.png"; }}
+                onError={(e) => { e.currentTarget.src = "/images/downloaded/3225cf5a28_logo.png"; }}
               />
               <div className="flex flex-col items-center text-center">
                 <span className="text-3xl font-semibold text-white tracking-tight leading-none">
@@ -82,86 +82,86 @@ export function Footer() {
 
           {/* Col 2: Core Expertise */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans whitespace-nowrap">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
               Core Expertise
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/services/ai-data-innovation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">AI & Data Innovation</a></li>
-              <li><a href="https://devopstrio.co.uk/services/cloud-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Cloud Services</a></li>
-              <li><a href="https://devopstrio.co.uk/services/devops-automation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">DevOps & Automation</a></li>
-              <li><a href="https://devopstrio.co.uk/services/cybersecurity" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Cybersecurity</a></li>
-              <li><a href="https://devopstrio.co.uk/services/software-development" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Software Development</a></li>
-              <li><a href="https://devopstrio.co.uk/services/digital-transformation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Digital Transformation</a></li>
-              <li><a href="https://devopstrio.co.uk/services/data-engineering" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Data Engineering</a></li>
-              <li><a href="https://devopstrio.co.uk/services/managed-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Managed Services</a></li>
+              <li><a href="https://devopstrio.co.uk/services/ai-data-innovation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">AI & Data Innovation</a></li>
+              <li><a href="https://devopstrio.co.uk/services/cloud-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Cloud Services</a></li>
+              <li><a href="https://devopstrio.co.uk/services/devops-automation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">DevOps & Automation</a></li>
+              <li><a href="https://devopstrio.co.uk/services/cybersecurity" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Cybersecurity</a></li>
+              <li><a href="https://devopstrio.co.uk/services/software-development" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Software Development</a></li>
+              <li><a href="https://devopstrio.co.uk/services/digital-transformation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Digital Transformation</a></li>
+              <li><a href="https://devopstrio.co.uk/services/data-engineering" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Data Engineering</a></li>
+              <li><a href="https://devopstrio.co.uk/services/managed-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Managed Services</a></li>
             </ul>
           </div>
 
           {/* Col 3: Industries */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans whitespace-nowrap">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
               Industries
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/industries/banking-finance" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Banking & Finance</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/healthcare-life-sciences" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Healthcare & Life Sciences</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/retail-ecommerce" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Retail & E-Commerce</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/manufacturing" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Manufacturing</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/telecommunications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Telecommunications</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/media-entertainment" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Media & Entertainment</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/education" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Education</a></li>
-              <li><a href="https://devopstrio.co.uk/industries/government-public-sector" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Government & Public Sector</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/banking-finance" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Banking & Finance</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/healthcare-life-sciences" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Healthcare & Life Sciences</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/retail-ecommerce" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Retail & E-Commerce</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/manufacturing" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Manufacturing</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/telecommunications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Telecommunications</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/media-entertainment" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Media & Entertainment</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/education" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Education</a></li>
+              <li><a href="https://devopstrio.co.uk/industries/government-public-sector" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Government & Public Sector</a></li>
             </ul>
           </div>
 
           {/* Col 4: Ecosystem */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans whitespace-nowrap">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
               Ecosystem
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/ecosystem/partnerships" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Strategic Partnerships</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/innovation-labs" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">R&D Innovation Labs</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/platforms-solutions" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Platforms & Solutions</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/technology-stack" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Technology Stack</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/global-delivery" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Global Delivery</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/engineering-excellence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Engineering Excellence</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/accelerators-frameworks" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Accelerators & Frameworks</a></li>
-              <li><a href="https://devopstrio.co.uk/ecosystem/landing-zone" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Landing Zone</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/partnerships" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Strategic Partnerships</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/innovation-labs" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">R&D Innovation Labs</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/platforms-solutions" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Platforms & Solutions</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/technology-stack" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Technology Stack</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/global-delivery" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Delivery</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/engineering-excellence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Engineering Excellence</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/accelerators-frameworks" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Accelerators & Frameworks</a></li>
+              <li><a href="https://devopstrio.co.uk/ecosystem/landing-zone" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Landing Zone</a></li>
             </ul>
           </div>
 
           {/* Col 5: Insights & Events */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans whitespace-nowrap">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
               Insights & Events
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/insights/blogs" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Blogs</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/case-studies" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Case Studies</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/white-paper" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">White Paper</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/awards-milestones" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Awards & Milestones</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/industry-events" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Industry Events</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/celebrations" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Celebrations</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/team-culture" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Team Culture</a></li>
-              <li><a href="https://devopstrio.co.uk/insights/our-offerings" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Our Offerings</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/blogs" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Blogs</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/case-studies" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Case Studies</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/white-paper" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">White Paper</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/awards-milestones" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Awards & Milestones</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/industry-events" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Industry Events</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/celebrations" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Celebrations</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/team-culture" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Team Culture</a></li>
+              <li><a href="https://devopstrio.co.uk/insights/our-offerings" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Offerings</a></li>
             </ul>
           </div>
 
           {/* Col 6: Company */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans whitespace-nowrap">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
               Company
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><a href="https://devopstrio.co.uk/about/company-overview" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Company Overview</a></li>
-              <li><a href="https://devopstrio.co.uk/about/our-culture-people" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Our Culture & People</a></li>
-              <li><a href="https://devopstrio.co.uk/about/global-internship" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Global Internship</a></li>
-              <li><a href="https://devopstrio.co.uk/about/global-presence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Global Presence</a></li>
-              <li><a href="https://devopstrio.co.uk/about/partnerships-certifications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Partnerships & Certifications</a></li>
-              <li><a href="https://devopstrio.co.uk/about/awards-recognition" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Awards & Recognition</a></li>
-              <li><a href="https://devopstrio.co.uk/about/sustainability-csr" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Sustainability & CSR</a></li>
-              <li><a href="https://devopstrio.co.uk/contact#contact-form" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300 whitespace-nowrap">Contact Us</a></li>
+              <li><a href="https://devopstrio.co.uk/about/company-overview" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Company Overview</a></li>
+              <li><a href="https://devopstrio.co.uk/about/our-culture-people" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Culture & People</a></li>
+              <li><a href="https://devopstrio.co.uk/about/global-internship" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Internship</a></li>
+              <li><a href="https://devopstrio.co.uk/about/global-presence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Presence</a></li>
+              <li><a href="https://devopstrio.co.uk/about/partnerships-certifications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Partnerships & Certifications</a></li>
+              <li><a href="https://devopstrio.co.uk/about/awards-recognition" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Awards & Recognition</a></li>
+              <li><a href="https://devopstrio.co.uk/about/sustainability-csr" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Sustainability & CSR</a></li>
+              <li><a href="https://devopstrio.co.uk/contact#contact-form" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Contact Us</a></li>
             </ul>
           </div>
 
@@ -187,8 +187,6 @@ export function Footer() {
           <div className="flex flex-wrap justify-center gap-6 items-center">
             <a
               href="https://www.linkedin.com/company/devopstrioglobal/posts/?feedView=all"
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
               title="LinkedIn"
             >
@@ -198,8 +196,6 @@ export function Footer() {
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61579126233218"
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
               title="Facebook"
             >
@@ -209,8 +205,6 @@ export function Footer() {
             </a>
             <a
               href="https://www.instagram.com/devopstrio_offcl/"
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
               title="Instagram"
             >

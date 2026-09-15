@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 /**
- * EnterpriseAIOverview.jsx — DevOpsTRIO
+ * EnterpriseAIOverview.jsx — Devopstrio
  * Left: sticky featured visual. Right: 2-col scrolling card grid.
  * Black theme, #E11D48 accent, white text, inline CSS only.
  * Font: Geist
@@ -14,7 +14,7 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "100px 5%",
+    padding: "100px 24px",
     backgroundColor: "#030303",
     fontFamily: FONT,
     boxSizing: "border-box",
@@ -245,49 +245,49 @@ const rightCards = [
     label: "Thought Leadership",
     tags: ["Healthcare", "GenAI"],
     title: "Beyond Automated Compliance",
-    img: "https://www.gft.com/.imaging/focalpoint/1600x1920/dam/jcr:7a75f4c3-d0b8-4b1c-b5c2-786ba8506d62/gft-image-mood-03.webp",
+    img: "/images/downloaded/b992b92391_gft-image-mood-03.webp",
   },
   {
     label: "Press Release",
     tags: ["Press Release", "2026"],
     title: "TRIO and Meridian Advance Sovereign AI for Health Systems",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-unveils-ai-first-value-framework.jpg",
+    img: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg",
   },
   {
     label: "Success Story",
     tags: ["Healthcare", "GenAI"],
     title: "Northbeam Accelerates Legacy Modernization",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-top-3-it-services-brand-globally2026.jpg",
+    img: "/images/downloaded/179ada9fcc_photo-1550745165-9bc0b252726f.jpg",
   },
   {
     label: "Blog",
     tags: ["Healthcare", "AI Modernization"],
     title: "The Hidden Cost of Legacy Pipelines",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-championsevolve.jpg",
+    img: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg",
   },
   {
     label: "Case Study",
     tags: ["DevOps", "GenAI"],
     title: "Cascade Health Cuts Release Time by 6x",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-accelerate-enterprise-adoption-generative-ai.jpg",
+    img: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg",
   },
   {
     label: "Research",
     tags: ["Enterprise AI"],
     title: "Where Enterprise AI Actually Pays Off",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-collaboration-accelerate-ai-value-journey.jpg",
+    img: "/images/downloaded/ed43542bb6_photo-1556742049-0cfed4f6a45d.jpg",
   },
   {
     label: "Webinar",
     tags: ["Compliance", "AI"],
     title: "Designing Compliance-Native AI Pipelines",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-crafting-intelligent-experiences-aster.jpg",
+    img: "/images/downloaded/1a772fb840_photo-1563013544-824ae1b704d3.jpg",
   },
   {
     label: "Press Release",
     tags: ["Healthcare", "2026"],
     title: "Ironframe Deploys TRIO Across 12 Facilities",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-crafting-intelligent-experiences-topaz.png",
+    img: "/images/downloaded/3dc0f69c72_photo-1550751827-4bd374c3f58b.jpg",
   },
 ];
 
@@ -387,7 +387,7 @@ export default function EnterpriseAIOverview() {
         </h2>
         <p style={styles.subtext}>
           Explore how healthcare and enterprise teams design, secure, and
-          scale AI pipelines with DevOpsTRIO — from first model to
+          scale AI pipelines with Devopstrio — from first model to
           full production.
         </p>
       </motion.div>
@@ -403,7 +403,7 @@ export default function EnterpriseAIOverview() {
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.img
-              src="https://www.gft.com/.imaging/focalpoint/1600x1920/dam/jcr:0e78c83e-9e06-49ce-b6bb-ca06015c2d8e/gft_platform-modernisation_web_a.webp"
+              src="/images/downloaded/5de46f79ad_img.webp"
               alt="Enterprise AI Overview"
               style={styles.leftImg}
               initial={{ scale: 1.08 }}

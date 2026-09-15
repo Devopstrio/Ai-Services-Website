@@ -1,11 +1,11 @@
 import img1 from '../../assets/fresh/microchip_wafer_lithography.jpg';
 import img2 from '../../assets/fresh/integration_microservices.jpg';
 import img3 from '../../assets/fresh/multimodal_ai_workbench.jpg';
-import img4 from '../../assets/fresh/multimodal_ai_workbench.jpg';
+import img4 from '../../assets/fresh/agent_finance_reconciliation.jpg';
 import img5 from '../../assets/fresh/innovation_neural_network.jpg';
-import img6 from '../../assets/fresh/innovation_neural_network.jpg';
+import img6 from '../../assets/fresh/agent_hr_workforce.jpg';
 import img7 from '../../assets/fresh/neural_connections_nodes.jpg';
-import img8 from '../../assets/fresh/multimodal_ai_workbench.jpg';
+import img8 from '../../assets/fresh/agent_knowledge_graph.jpg';
 
 const data = {
   id: 'retail-ai',
@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Omnichannel Retail Optimization & Predictive Commerce",
-    paragraph: "DevOpsTRIO transforms modern retail operations by bridging physical brick-and-mortar stores with digital e-commerce storefronts. Our retail AI models analyze regional buying trends, weather patterns, competitor price adjustments, and social sentiment to optimize inventory placement and markdown timing.\n\nFrom frictionless checkout and visual search to personalized product discovery feeds that boost Average Order Value (AOV), we help leading retail brands deliver high-margin, customer-centric shopping experiences.",
+    paragraph: "Devopstrio transforms modern retail operations by bridging physical brick-and-mortar stores with digital e-commerce storefronts. Our retail AI models analyze regional buying trends, weather patterns, competitor price adjustments, and social sentiment to optimize inventory placement and markdown timing.\n\nFrom frictionless checkout and visual search to personalized product discovery feeds that boost Average Order Value (AOV), we help leading retail brands deliver high-margin, customer-centric shopping experiences.",
     image: img2
   },
   benefitsBento: [

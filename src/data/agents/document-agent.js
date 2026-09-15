@@ -14,7 +14,7 @@ export const documentAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Touchless Document Ingestion with",
-    titleBold: "DevOpsTRIO Document Agent",
+    titleBold: "Devopstrio Document Agent",
     description: "Autonomous Intelligent Document Processing (IDP) agent that parses complex scanned PDFs, bills of lading, medical records, invoices, and structured forms into database records with 99.8% field extraction accuracy.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const documentAgentData = {
   ],
   overview: {
     heading: "The Autonomous Intelligent Document Processing Engine",
-    description: "Enterprise operations in logistics, insurance, healthcare, and finance are slowed down by thousands of scanned PDF documents requiring manual data entry.\n\nThe DevOpsTRIO Document Agent operates as an autonomous document understanding swarm. It ingests messy scans, multi-page tables, rotated images, and handwritten annotations, converting complex unstructured documents into validated JSON schemas and SQL records automatically.",
+    description: "Enterprise operations in logistics, insurance, healthcare, and finance are slowed down by thousands of scanned PDF documents requiring manual data entry.\n\nThe Devopstrio Document Agent operates as an autonomous document understanding swarm. It ingests messy scans, multi-page tables, rotated images, and handwritten annotations, converting complex unstructured documents into validated JSON schemas and SQL records automatically.",
     keyPoints: [
       "Sub-second multi-modal OCR extracting tables, key-value pairs, and handwriting with 99.8% precision",
       "Automated cross-validation against internal ERP databases and business logic rules",
@@ -201,7 +201,7 @@ export const documentAgentData = {
     client: "Global Logistics & Freight Conglomerate",
     industry: "Logistics & Supply Chain",
     headline: "How a Global Freight Giant Automated 1.4M Shipping Documents Annually with 99.8% Accuracy",
-    quote: "DevOpsTRIO Document Agent eliminated our shipping document processing backlog entirely. Containers now clear customs in minutes rather than days.",
+    quote: "Devopstrio Document Agent eliminated our shipping document processing backlog entirely. Containers now clear customs in minutes rather than days.",
     author: "Global Head of Digital Operations",
     company: "Publicly Traded Freight Group",
     image: caseImg,

@@ -14,7 +14,7 @@ export const salesAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "High-Velocity Pipeline with",
-    titleBold: "DevOpsTRIO Sales Agent",
+    titleBold: "Devopstrio Sales Agent",
     description: "Deploy autonomous sales swarms that detect buyer intent signals across 50+ data sources, synthesize hyper-personalized research outreach, coach reps on live calls, and execute CRM updates with zero friction.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const salesAgentData = {
   ],
   overview: {
     heading: "The Autonomous Revenue Engine for Enterprise Sales Teams",
-    description: "Modern enterprise sales reps spend over 65% of their working hours on manual prospecting, CRM data hygiene, and pre-call research instead of selling.\n\nThe DevOpsTRIO Sales Agent operates as a collaborative swarm of specialized cognitive agents. It continuously tracks account intent vectors, drafts personalized multi-touch sequences, and guides deals through closing stages autonomously.",
+    description: "Modern enterprise sales reps spend over 65% of their working hours on manual prospecting, CRM data hygiene, and pre-call research instead of selling.\n\nThe Devopstrio Sales Agent operates as a collaborative swarm of specialized cognitive agents. It continuously tracks account intent vectors, drafts personalized multi-touch sequences, and guides deals through closing stages autonomously.",
     keyPoints: [
       "Continuous buyer intent scoring across social, technographic & hiring signals",
       "Hyper-personalized 1:1 outreach grounded in account pain points and SEC filings",
@@ -160,7 +160,7 @@ export const salesAgentData = {
         agentsInvolved: ["Speech Listener", "Battlecard Retriever", "CRM Sync Agent"],
         planSteps: [
           { step: "Ingested live audio stream: Prospect mentioned Datadog price objection", time: "0.2s" },
-          { step: "Retrieved Datadog vs DevOpsTRIO comparative cost benchmark", time: "0.5s" },
+          { step: "Retrieved Datadog vs Devopstrio comparative cost benchmark", time: "0.5s" },
           { step: "Pushed silent screen battlecard to rep with 3 key negotiation pivots", time: "0.4s" },
           { step: "Extracted 4 next-step deliverables and assigned to Solutions Architect", time: "0.7s" }
         ],
@@ -202,7 +202,7 @@ export const salesAgentData = {
     client: "Global Cloud Security SaaS",
     industry: "Enterprise Software",
     headline: "How a 450-Rep Enterprise SaaS Accelerated Outbound Pipeline by 4.8x in 90 Days",
-    quote: "DevOpsTRIO Sales Agent gave our account executives their time back. Every rep now conducts discovery calls backed by instant intelligence.",
+    quote: "Devopstrio Sales Agent gave our account executives their time back. Every rep now conducts discovery calls backed by instant intelligence.",
     author: "Chief Revenue Officer",
     company: "Publicly Traded SaaS Leader",
     image: caseImg,

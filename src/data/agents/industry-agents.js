@@ -14,7 +14,7 @@ export const industryAgentsData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Vertical AI Intelligence with",
-    titleBold: "DevOpsTRIO Industry Agents",
+    titleBold: "Devopstrio Industry Agents",
     description: "Pre-trained vertical agent swarms equipped with deep regulatory, compliance, and operational ontologies for clinical healthcare diagnostics, algorithmic banking, 5G telecom network orchestration, and predictive industrial manufacturing.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const industryAgentsData = {
   ],
   overview: {
     heading: "The Domain-Specialized Cognitive Workforce for Regulated Industries",
-    description: "Generic AI models fail in regulated sectors because they lack deep industry vocabulary, compliance guardrails, and deterministic protocol interfaces.\n\nDevOpsTRIO Industry Agents are purpose-built vertical swarms pre-trained on domain ontologies. Whether calculating capital adequacy ratios for tier-1 banks, triaging clinical lab results under HIPAA, managing 5G slice QoS for telecom carriers, or predicting factory equipment maintenance, our industry agents deliver specialized precision out of the box.",
+    description: "Generic AI models fail in regulated sectors because they lack deep industry vocabulary, compliance guardrails, and deterministic protocol interfaces.\n\nDevopstrio Industry Agents are purpose-built vertical swarms pre-trained on domain ontologies. Whether calculating capital adequacy ratios for tier-1 banks, triaging clinical lab results under HIPAA, managing 5G slice QoS for telecom carriers, or predicting factory equipment maintenance, our industry agents deliver specialized precision out of the box.",
     keyPoints: [
       "Financial Services Swarms: Automated AML/KYC screening, algorithmic fraud detection & trade reconciliation",
       "Healthcare & Life Sciences Swarms: HIPAA-compliant clinical record synthesis & diagnostic triage",
@@ -201,7 +201,7 @@ export const industryAgentsData = {
     client: "Tier-1 Global Investment Bank & Healthcare Conglomerate",
     industry: "Multi-Industry Enterprise",
     headline: "How Global Enterprise Leaders in Banking, Healthcare, and Telecom Deployed Domain-Specialized AI Swarms with Zero Compliance Slips",
-    quote: "DevOpsTRIO Industry Agents understand our domain language on day one. They bridge the gap between complex regulatory mandates and automated high-velocity execution.",
+    quote: "Devopstrio Industry Agents understand our domain language on day one. They bridge the gap between complex regulatory mandates and automated high-velocity execution.",
     author: "Chief Technology & Innovation Officer",
     company: "Fortune 50 Enterprise Conglomerate",
     image: caseImg,

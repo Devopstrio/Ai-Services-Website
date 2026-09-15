@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 /**
- * ProductsShowcase.jsx — DevOpsTRIO
+ * ProductsShowcase.jsx — Devopstrio
  * Lightweight scrollspy showcase (IntersectionObserver, no scroll-loop math)
  * Left list underline fills when a product becomes active, right side swaps
  * text + image. Black theme, #E11D48 accent, white text, inline CSS only.
@@ -19,7 +19,7 @@ const PRODUCTS = [
     description:
       "CareSuite gives care teams a single, AI-assisted view of every patient — faster triage, cleaner records, better outcomes.",
     cta: "Explore CareSuite",
-    img: "https://picsum.photos/seed/caresuite-ai/900/700",
+    img: "/images/downloaded/1a772fb840_photo-1563013544-824ae1b704d3.jpg",
   },
   {
     label: "Campix",
@@ -28,7 +28,7 @@ const PRODUCTS = [
     description:
       "Campix automates admissions, attendance, and academic tracking so schools spend less time on paperwork and more on students.",
     cta: "Explore Campix",
-    img: "https://picsum.photos/seed/campix-ai/900/700",
+    img: "/images/downloaded/3dc0f69c72_photo-1550751827-4bd374c3f58b.jpg",
   },
   {
     label: "Prestivo",
@@ -37,7 +37,7 @@ const PRODUCTS = [
     description:
       "Prestivo personalizes storefronts, predicts demand, and automates fulfillment — built to grow with every product line.",
     cta: "Explore Prestivo",
-    img: "https://picsum.photos/seed/prestivo-ai/900/700",
+    img: "/images/downloaded/552d4f83c8_photo-1550751827-4bd374c3f58b.jpg",
   },
   {
     label: "eSigniva",
@@ -46,7 +46,7 @@ const PRODUCTS = [
     description:
       "eSigniva combines legally binding e-signatures with AI-based document verification, so every signed file is authentic and audit-ready.",
     cta: "Explore eSigniva",
-    img: "https://picsum.photos/seed/safesign-ai/900/700",
+    img: "/images/downloaded/82a6a8dd0f_photo-1558494949-ef010cbdcc31.jpg",
   },
   {
     label: "Humanex",
@@ -55,7 +55,7 @@ const PRODUCTS = [
     description:
       "Humanex screens, ranks, and shortlists candidates with AI — cutting time-to-hire while keeping every decision explainable.",
     cta: "Explore Humanex",
-    img: "https://picsum.photos/seed/humanex-ai/900/700",
+    img: "/images/downloaded/8e8681fb93_photo-1551288049-bebda4e38f71.jpg",
   },
   {
     label: "Homela",
@@ -64,7 +64,7 @@ const PRODUCTS = [
     description:
       "Homela matches tenants to homes using AI on budget, commute, and lifestyle fit — making the search faster for everyone involved.",
     cta: "Explore Homela",
-    img: "https://picsum.photos/seed/homela-ai/900/700",
+    img: "/images/downloaded/d5228a7004_photo-1558494949-ef010cbdcc31.jpg",
   },
   {
     label: "Brio",
@@ -73,7 +73,7 @@ const PRODUCTS = [
     description:
       "Brio pairs brands with the right creators using AI-driven audience and performance signals — no more guesswork campaigns.",
     cta: "Explore Brio",
-    img: "https://picsum.photos/seed/brio-ai/900/700",
+    img: "/images/downloaded/d820dc4e18_photo-1551288049-bebda4e38f71.jpg",
   },
   {
     label: "Justivon",
@@ -82,7 +82,7 @@ const PRODUCTS = [
     description:
       "Justivon organizes case files, tracks filings, and surfaces precedent with AI — built for solicitors and court workflows.",
     cta: "Explore Justivon",
-    img: "https://picsum.photos/seed/justivon-ai/900/700",
+    img: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg",
   },
 ];
 
@@ -138,7 +138,7 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    padding: "0 5%",
+    padding: "0 24px",
     boxSizing: "border-box",
   },
   listItem: {
@@ -190,7 +190,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     gap: "48px",
-    padding: "0 5%",
+    padding: "0 24px",
     boxSizing: "border-box",
   },
   textCol: {

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 /**
- * AICapabilities.jsx — DevOpsTRIO
+ * AICapabilities.jsx — Devopstrio
  * Asymmetric bento grid — 5 cards, image + overlay text, individual links.
  * Black theme, #E11D48 accent, white text, inline CSS only. Font: Geist
  */
@@ -17,7 +17,7 @@ const CAPABILITIES = [
     description:
       "Predict enterprise load, infrastructure strain, and resource gaps days ahead — not after the alert fires.",
     href: "#predictive-analytics",
-    img: "https://picsum.photos/seed/ai-cap-predictive/900/1100",
+    img: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg",
     size: "large",
   },
   {
@@ -27,7 +27,7 @@ const CAPABILITIES = [
     description:
       "Extract insights, summaries, and action workflows from complex unstructured data in real time.",
     href: "#nlu",
-    img: "https://picsum.photos/seed/ai-cap-nlu/900/650",
+    img: "/images/downloaded/179ada9fcc_photo-1550745165-9bc0b252726f.jpg",
     size: "wide",
   },
   {
@@ -36,7 +36,7 @@ const CAPABILITIES = [
     title: "Automated Visual Intelligence",
     description: "Real-time edge detection, spatial inspection, and automated quality control.",
     href: "#computer-vision",
-    img: "https://picsum.photos/seed/ai-cap-vision/700/700",
+    img: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg",
     size: "small",
   },
   {
@@ -45,7 +45,7 @@ const CAPABILITIES = [
     title: "Catch Drift Before Outages",
     description: "Continuous real-time telemetry across multi-cloud pipelines and AI models.",
     href: "#anomaly-detection",
-    img: "https://picsum.photos/seed/ai-cap-anomaly/700/700",
+    img: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg",
     size: "small",
   },
   {
@@ -55,7 +55,7 @@ const CAPABILITIES = [
     description:
       "Combine governance policies, live telemetry, and foundation model outputs into explainable, audited enterprise decisions.",
     href: "#decisioning",
-    img: "https://picsum.photos/seed/ai-cap-decision/1400/560",
+    img: "/images/downloaded/ed43542bb6_photo-1556742049-0cfed4f6a45d.jpg",
     size: "banner",
   },
 ];
@@ -64,7 +64,7 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "100px 5%",
+    padding: "100px 24px",
     backgroundColor: "#030303",
     fontFamily: FONT,
     boxSizing: "border-box",
@@ -116,7 +116,7 @@ const styles = {
   },
 
   grid: {
-    maxWidth: "1360px",
+    maxWidth: "1280px",
     margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "repeat(4, 1fr)",

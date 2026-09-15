@@ -14,7 +14,7 @@ export const meetingAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Zero-Friction Collaboration with",
-    titleBold: "DevOpsTRIO Meeting Agent",
+    titleBold: "Devopstrio Meeting Agent",
     description: "Autonomous meeting agent that joins Zoom, Microsoft Teams, and Google Meet sessions, transcribes multi-speaker discussions with 99.6% accuracy, extracts decisions, and pushes Jira tasks automatically with zero human effort.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const meetingAgentData = {
   ],
   overview: {
     heading: "The Autonomous Meeting Intelligence & Action Execution Engine",
-    description: "Teams spend hours in meetings every week, yet critical decisions and follow-ups are lost in fragmented personal notes and unrecorded discussions.\n\nThe DevOpsTRIO Meeting Agent attends video conferences as a silent intelligent participant. It understands domain jargon, differentiates between speakers, synthesizes concise executive summaries, and turns verbal commitments into assigned, tracked project deliverables.",
+    description: "Teams spend hours in meetings every week, yet critical decisions and follow-ups are lost in fragmented personal notes and unrecorded discussions.\n\nThe Devopstrio Meeting Agent attends video conferences as a silent intelligent participant. It understands domain jargon, differentiates between speakers, synthesizes concise executive summaries, and turns verbal commitments into assigned, tracked project deliverables.",
     keyPoints: [
       "24/7 autonomous bot attendance on Zoom, Google Meet, and Microsoft Teams",
       "Advanced multi-speaker diarization understanding technical and industry jargon",
@@ -201,7 +201,7 @@ export const meetingAgentData = {
     client: "Global Software Engineering Enterprise",
     industry: "Enterprise Technology",
     headline: "How an 800-Person Engineering Org Reclaimed 5+ Hours per Engineer Every Week with Automated Meeting Sync",
-    quote: "DevOpsTRIO Meeting Agent eliminated our post-meeting alignment overhead. Our engineers leave meetings knowing every action item is already tracked in Jira.",
+    quote: "Devopstrio Meeting Agent eliminated our post-meeting alignment overhead. Our engineers leave meetings knowing every action item is already tracked in Jira.",
     author: "VP of Engineering Operations",
     company: "Publicly Traded SaaS Enterprise",
     image: caseImg,

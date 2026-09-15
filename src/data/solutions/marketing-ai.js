@@ -5,7 +5,7 @@ import img4 from '../../assets/fresh/serviceman-server-hub-checking-documentatio
 import img5 from '../../assets/fresh/holographic_data_globe.jpg';
 import img6 from '../../assets/fresh/deep_learning_tensor.jpg';
 import img7 from '../../assets/fresh/innovation_neural_network.jpg';
-import img8 from '../../assets/fresh/holographic_data_globe.jpg';
+import img8 from '../../assets/fresh/agent_executive_assistant.jpg';
 
 const data = {
   id: 'marketing-ai',
@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Generative Content Engines & Predictive Acquisition",
-    paragraph: "DevOpsTRIO enables marketing teams to scale brand reach and customer lifetime value using foundational models tuned to your brand guidelines. We replace generic broadcast marketing with dynamic 1:1 personalization across web, email, paid media, and product touchpoints.\n\nOur systems ingest performance metrics in real-time, automatically adjusting creative assets, copy variants, and audience bid strategies to maximize Return on Ad Spend (ROAS) and lower Customer Acquisition Cost (CAC).",
+    paragraph: "Devopstrio enables marketing teams to scale brand reach and customer lifetime value using foundational models tuned to your brand guidelines. We replace generic broadcast marketing with dynamic 1:1 personalization across web, email, paid media, and product touchpoints.\n\nOur systems ingest performance metrics in real-time, automatically adjusting creative assets, copy variants, and audience bid strategies to maximize Return on Ad Spend (ROAS) and lower Customer Acquisition Cost (CAC).",
     image: img2
   },
   benefitsBento: [

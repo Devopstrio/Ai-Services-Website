@@ -14,7 +14,7 @@ export const databaseAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Sub-Millisecond Query Speeds with",
-    titleBold: "DevOpsTRIO Database Agent",
+    titleBold: "Devopstrio Database Agent",
     description: "Autonomous Database Administrator (DBA) agent that analyzes PostgreSQL, MySQL, MongoDB, and Snowflake query execution plans, eliminates slow table scans with zero-downtime indexing, and manages automated high-availability failovers.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const databaseAgentData = {
   ],
   overview: {
     heading: "The Autonomous Database Administrator for Mission-Critical Data",
-    description: "Database performance degradation, slow unindexed queries, connection pool exhaustion, and deadlock crashes directly destroy application user experience.\n\nThe DevOpsTRIO Database Agent functions as a 24/7 autonomous Principal DBA. It continuously analyzes EXPLAIN ANALYZE execution plans, identifies missing composite indexes, safely executes concurrent index builds without blocking writes, and balances connection pools dynamically.",
+    description: "Database performance degradation, slow unindexed queries, connection pool exhaustion, and deadlock crashes directly destroy application user experience.\n\nThe Devopstrio Database Agent functions as a 24/7 autonomous Principal DBA. It continuously analyzes EXPLAIN ANALYZE execution plans, identifies missing composite indexes, safely executes concurrent index builds without blocking writes, and balances connection pools dynamically.",
     keyPoints: [
       "24/7 autonomous SQL query profiling and automatic query rewrite recommendations",
       "Zero-downtime online index generation (CREATE INDEX CONCURRENTLY) with lock safety",
@@ -201,7 +201,7 @@ export const databaseAgentData = {
     client: "Global FinTech Exchange",
     industry: "Financial Services",
     headline: "How a High-Frequency FinTech Exchange Cut Database Query Latency by 82% and Saved $1.2M in Cloud IOPS",
-    quote: "DevOpsTRIO Database Agent resolved query bottlenecks our senior DBAs had spent weeks trying to debug. It delivers sub-millisecond database performance consistently.",
+    quote: "Devopstrio Database Agent resolved query bottlenecks our senior DBAs had spent weeks trying to debug. It delivers sub-millisecond database performance consistently.",
     author: "VP of Data Infrastructure",
     company: "Publicly Traded FinTech Platform",
     image: caseImg,

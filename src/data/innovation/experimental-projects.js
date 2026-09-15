@@ -14,7 +14,7 @@ export const experimentalProjectsData = {
     badge: "INNOVATION LAB // MOONSHOT LAB",
     subBadge: "HIGH-RISK HIGH-REWARD R&D",
     titleLight: "Incubating Radical Moonshots with",
-    titleBold: "DevOpsTRIO Experimental Projects",
+    titleBold: "Devopstrio Experimental Projects",
     description: "Our Moonshot Lab explores high-risk, high-reward frontiers — from embodied robotics manipulation and spatial neural rendering to brain-computer interfaces and quantum circuit synthesis.",
     bgImage: heroBg,
     liveBadge: "12 Active Moonshots"
@@ -127,21 +127,21 @@ export const experimentalProjectsData = {
     {
       title: "Visuomotor Foundation Models for High-Precision Industrial Robotics Manipulation",
       venue: "CoRL 2025 (Oral Presentation)",
-      authors: "DevOpsTRIO Robotics Lab & MIT CSAIL",
+      authors: "Devopstrio Robotics Lab & MIT CSAIL",
       doi: "10.48550/arXiv.2510.09112",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Neural Quantum Gate Synthesis via Deep Reinforcement Learning over Clifford Groups",
       venue: "Quantum Science & Tech 2025",
-      authors: "DevOpsTRIO Quantum Group & Oxford Quantum Institute",
+      authors: "Devopstrio Quantum Group & Oxford Quantum Institute",
       doi: "10.48550/arXiv.2509.04331",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Continuous 4D Gaussian Splatting for Dynamic Enterprise Digital Twins",
       venue: "SIGGRAPH Asia 2025 (Highlight)",
-      authors: "DevOpsTRIO Spatial Lab & Stanford University",
+      authors: "Devopstrio Spatial Lab & Stanford University",
       doi: "10.48550/arXiv.2512.01988",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }

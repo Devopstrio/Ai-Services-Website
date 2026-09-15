@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Citizen-Centric Public Services & Smart Governance",
-    paragraph: "DevOpsTRIO delivers mission-critical AI solutions for federal agencies, state governments, and municipal public sector organizations. We streamline complex citizen interactions—from permit applications and tax filing assistance to veterans' benefit claims processing.\n\nOur smart city infrastructure models optimize municipal traffic signal timing, monitor civil infrastructure health, and support disaster relief coordination—all deployed with strict FedRAMP High, IL5/IL6, and StateRAMP security compliance.",
+    paragraph: "Devopstrio delivers mission-critical AI solutions for federal agencies, state governments, and municipal public sector organizations. We streamline complex citizen interactions—from permit applications and tax filing assistance to veterans' benefit claims processing.\n\nOur smart city infrastructure models optimize municipal traffic signal timing, monitor civil infrastructure health, and support disaster relief coordination—all deployed with strict FedRAMP High, IL5/IL6, and StateRAMP security compliance.",
     image: img2
   },
   benefitsBento: [

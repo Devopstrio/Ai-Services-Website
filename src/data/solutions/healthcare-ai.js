@@ -1,11 +1,11 @@
 import img1 from '../../assets/fresh/man-using-laptop-tablet-analyze-260nw-2727872547.webp';
 import img2 from '../../assets/fresh/clinical_ai_diagnostics.jpg';
-import img3 from '../../assets/fresh/clinical_ai_diagnostics.jpg';
+import img3 from '../../assets/fresh/agent_automated_qa_pipeline.jpg';
 import img4 from '../../assets/solutions/7.jpg';
-import img5 from '../../assets/fresh/clinical_ai_diagnostics.jpg';
-import img6 from '../../assets/fresh/man-using-laptop-tablet-analyze-260nw-2727872547.webp';
+import img5 from '../../assets/fresh/agent_cloud_infra.jpg';
+import img6 from '../../assets/fresh/agent_code_refactoring.jpg';
 import img7 from '../../assets/fresh/innovation_bio_ai_lab.jpg';
-import img8 from '../../assets/fresh/innovation_bio_ai_lab.jpg';
+import img8 from '../../assets/fresh/agent_compliance_auditing.jpg';
 
 const data = {
   id: 'healthcare-ai',
@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Clinical Decision Support & Ambient Hospital Intelligence",
-    paragraph: "DevOpsTRIO helps hospitals, medical networks, and life sciences organizations deliver better patient outcomes while curbing physician burnout. Our ambient voice systems listen to doctor-patient consultations, automatically generating structured SOAP notes and billing codes directly into electronic health records (EHR).\n\nWith strict HIPAA, HITECH, and GDPR compliance, our deep learning imaging models assist radiologists in identifying early-stage nodules, micro-fractures, and anomalies in CT, MRI, and X-ray scans with remarkable precision.",
+    paragraph: "Devopstrio helps hospitals, medical networks, and life sciences organizations deliver better patient outcomes while curbing physician burnout. Our ambient voice systems listen to doctor-patient consultations, automatically generating structured SOAP notes and billing codes directly into electronic health records (EHR).\n\nWith strict HIPAA, HITECH, and GDPR compliance, our deep learning imaging models assist radiologists in identifying early-stage nodules, micro-fractures, and anomalies in CT, MRI, and X-ray scans with remarkable precision.",
     image: img2
   },
   benefitsBento: [

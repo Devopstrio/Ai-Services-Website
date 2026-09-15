@@ -14,7 +14,7 @@ export const knowledgeAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Unify Institutional Memory with",
-    titleBold: "DevOpsTRIO Knowledge Agent",
+    titleBold: "Devopstrio Knowledge Agent",
     description: "Autonomous knowledge retrieval agent that indexes enterprise repositories across SharePoint, Confluence, Jira, Google Drive, and Slack to deliver citation-backed answers with strict role-based access control.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const knowledgeAgentData = {
   ],
   overview: {
     heading: "The Autonomous Enterprise Search & Institutional Memory Engine",
-    description: "Enterprise knowledge is scattered across hundreds of disconnected tools, causing employees to spend 20% of their work week searching for information or recreating existing work.\n\nThe DevOpsTRIO Knowledge Agent acts as an autonomous collective brain for your company. It continuously indexes technical docs, PDFs, Slack conversations, and design specs, synthesizing direct, verifiable answers with exact source citations while strictly respecting user permission boundaries.",
+    description: "Enterprise knowledge is scattered across hundreds of disconnected tools, causing employees to spend 20% of their work week searching for information or recreating existing work.\n\nThe Devopstrio Knowledge Agent acts as an autonomous collective brain for your company. It continuously indexes technical docs, PDFs, Slack conversations, and design specs, synthesizing direct, verifiable answers with exact source citations while strictly respecting user permission boundaries.",
     keyPoints: [
       "Sub-second semantic search and question answering across SharePoint, Confluence, Google Drive & Slack",
       "100% citation grounding with direct clickable deep links to exact document paragraphs",
@@ -201,7 +201,7 @@ export const knowledgeAgentData = {
     client: "Global Management Consulting Enterprise",
     industry: "Professional Services",
     headline: "How a 15,000-Consultant Global Enterprise Saved 8.5 Hours per Consultant Every Week",
-    quote: "DevOpsTRIO Knowledge Agent transformed how our teams deliver client work. We find past case studies, financial models, and research in seconds rather than days.",
+    quote: "Devopstrio Knowledge Agent transformed how our teams deliver client work. We find past case studies, financial models, and research in seconds rather than days.",
     author: "Chief Knowledge Officer & Partner",
     company: "Global Tier-1 Consulting Firm",
     image: caseImg,

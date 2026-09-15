@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Intelligent Factory Automation & Predictive Asset Management",
-    paragraph: "DevOpsTRIO empowers manufacturing enterprises to maximize Overall Equipment Effectiveness (OEE) and eliminate unscheduled production downtime. By deploying high-performance computer vision models directly onto factory floor edge devices, we inspect manufactured goods at line speed with sub-millimeter precision.\n\nOur predictive maintenance algorithms ingest acoustic, thermal, and vibration sensor telemetry from turbines, robotic arms, and CNC machines to detect mechanical wear weeks before catastrophic equipment failure occurs.",
+    paragraph: "Devopstrio empowers manufacturing enterprises to maximize Overall Equipment Effectiveness (OEE) and eliminate unscheduled production downtime. By deploying high-performance computer vision models directly onto factory floor edge devices, we inspect manufactured goods at line speed with sub-millimeter precision.\n\nOur predictive maintenance algorithms ingest acoustic, thermal, and vibration sensor telemetry from turbines, robotic arms, and CNC machines to detect mechanical wear weeks before catastrophic equipment failure occurs.",
     image: img2
   },
   benefitsBento: [

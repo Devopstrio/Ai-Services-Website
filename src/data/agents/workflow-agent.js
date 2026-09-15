@@ -14,7 +14,7 @@ export const workflowAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Autonomous Operations with",
-    titleBold: "DevOpsTRIO Workflow Agent",
+    titleBold: "Devopstrio Workflow Agent",
     description: "Autonomous process orchestration agent that coordinates multi-step business transactions across Salesforce, SAP, Workday, ServiceNow, and cloud databases with built-in human verification gates and self-healing API connectors.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const workflowAgentData = {
   ],
   overview: {
     heading: "The Autonomous Digital Orchestrator for Enterprise Business Processes",
-    description: "Traditional enterprise automation platforms (Zapier, Workato, MuleSoft) rely on brittle static triggers that break whenever an API schema changes or an unexpected data type is encountered.\n\nThe DevOpsTRIO Workflow Agent acts as an intelligent process conductor. It understands end-to-end business goals, coordinates asynchronous actions across legacy and modern enterprise applications, handles errors intelligently, and routes critical checkpoints to human leaders for approval.",
+    description: "Traditional enterprise automation platforms (Zapier, Workato, MuleSoft) rely on brittle static triggers that break whenever an API schema changes or an unexpected data type is encountered.\n\nThe Devopstrio Workflow Agent acts as an intelligent process conductor. It understands end-to-end business goals, coordinates asynchronous actions across legacy and modern enterprise applications, handles errors intelligently, and routes critical checkpoints to human leaders for approval.",
     keyPoints: [
       "Autonomous orchestration of complex multi-step workflows across 100+ enterprise SaaS and ERP tools",
       "Self-healing API connectors that dynamically adapt to schema changes without breaking pipelines",
@@ -201,7 +201,7 @@ export const workflowAgentData = {
     client: "Global Telecommunications Giant",
     industry: "Telecommunications",
     headline: "How a Global Telecom Automated 180+ Enterprise Workflows Across 40 SaaS Tools with 98.5% Straight-Through Execution",
-    quote: "DevOpsTRIO Workflow Agent replaced hundreds of fragile point-to-point scripts. Our business processes now run seamlessly with built-in self-healing and instant human approvals.",
+    quote: "Devopstrio Workflow Agent replaced hundreds of fragile point-to-point scripts. Our business processes now run seamlessly with built-in self-healing and instant human approvals.",
     author: "VP of Enterprise Architecture",
     company: "Publicly Traded Telecom Provider",
     image: caseImg,

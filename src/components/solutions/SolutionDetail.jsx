@@ -45,7 +45,7 @@ export default function SolutionDetail() {
           <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.92) 100%), linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,1) 100%)" }} />
         </motion.div>
 
-        <motion.div style={{ position: "relative", zIndex: 1, textAlign: "left", maxWidth: "1200px", width: "100%", padding: "0 5%", opacity: opacityText }}>
+        <motion.div style={{ position: "relative", zIndex: 1, textAlign: "left", maxWidth: "1200px", width: "100%", padding: "0 24px", opacity: opacityText }}>
           <div style={{ display: "inline-block", padding: "6px 16px", backgroundColor: "rgba(225,29,72,0.15)", border: "1px solid rgba(225,29,72,0.3)", borderRadius: "999px", color: "#E11D48", fontSize: "0.85rem", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "24px" }}>
             {data.breadcrumbs.join(" / ")}
           </div>
@@ -68,8 +68,8 @@ export default function SolutionDetail() {
       </section>
 
       {/* 2. METRICS BANNER - Glassmorphism Strip */}
-      <section style={{ position: "relative", zIndex: 10, marginTop: "-40px", padding: "0 5%" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto", background: "rgba(20,20,20,0.7)", backdropFilter: "blur(20px)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "24px", padding: "30px 0", display: "flex", flexWrap: "wrap", justifyContent: "space-around", alignItems: "center", gap: "20px" }}>
+      <section style={{ position: "relative", zIndex: 10, marginTop: "-40px", padding: "0 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", background: "rgba(20,20,20,0.7)", backdropFilter: "blur(20px)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "24px", padding: "30px 0", display: "flex", flexWrap: "wrap", justifyContent: "space-around", alignItems: "center", gap: "20px" }}>
           {data.metricsBanner.map((metric, i) => (
             <div key={i} className="metric-card" style={{ textAlign: "center", flex: "1 1 200px", padding: "20px", borderRadius: "16px", border: "1px solid transparent", transition: "all 0.3s ease" }}>
               <div style={{ fontSize: "3.5rem", fontWeight: 700, color: "#fff", lineHeight: 1, marginBottom: "12px", textShadow: "0 0 20px rgba(255,255,255,0.2)" }}>{metric.value}</div>
@@ -88,7 +88,7 @@ export default function SolutionDetail() {
 
       {/* 3. OVERVIEW - Large Split Layout */}
       <section style={{ padding: "100px 5% 120px 5%" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8 }}>
             <h2 style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)", fontWeight: 300, color: "#fff", lineHeight: 1.1, marginBottom: "30px", letterSpacing: "-0.02em" }}>
               {restHeading} <span style={{ fontWeight: 700, color: "#E11D48" }}>{lastWord}</span>
@@ -96,7 +96,7 @@ export default function SolutionDetail() {
             <p style={{ fontSize: "1.15rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.8, marginBottom: "40px", whiteSpace: "pre-line" }}>
               {data.overview.paragraph}
             </p>
-            <a href="https://devopstrio.co.uk/contact#contact-form" target="_blank" rel="noreferrer" style={{ textDecoration: "none", backgroundColor: "#fff", color: "#000", border: "none", padding: "16px 36px", borderRadius: "999px", fontSize: "1rem", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "8px", cursor: "pointer" }}>
+            <a href="https://devopstrio.co.uk/contact#contact-form" style={{ textDecoration: "none", backgroundColor: "#fff", color: "#000", border: "none", padding: "16px 36px", borderRadius: "999px", fontSize: "1rem", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "8px", cursor: "pointer" }}>
               Book a Demo <ArrowRight size={18} />
             </a>
           </motion.div>
@@ -107,8 +107,8 @@ export default function SolutionDetail() {
       </section>
 
       {/* 4. BENEFITS BENTO BOX */}
-      <section style={{ padding: "80px 5%", backgroundColor: "#080808" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+      <section style={{ padding: "80px 24px", backgroundColor: "#080808" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "2.5rem", fontWeight: 300, textAlign: "center", marginBottom: "60px", color: "#fff" }}>
             Key <span style={{ fontWeight: 700, color: "#E11D48" }}>Outcomes</span>
           </h2>
@@ -134,7 +134,7 @@ export default function SolutionDetail() {
       </section>
 
       {/* 5. FEATURES ZIG-ZAG */}
-      <section style={{ padding: "120px 5%" }}>
+      <section style={{ padding: "120px 24px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "120px" }}>
           {data.featuresZigZag.map((feat, i) => {
             const isEven = i % 2 === 0;
@@ -155,8 +155,8 @@ export default function SolutionDetail() {
       </section>
 
       {/* 6. SUCCESS STORIES */}
-      <section style={{ padding: "100px 5%", backgroundColor: "#0a0a0a", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
+      <section style={{ padding: "100px 24px", backgroundColor: "#0a0a0a", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "2.5rem", fontWeight: 300, textAlign: "center", marginBottom: "60px", color: "#fff" }}>
             Proven <span style={{ fontWeight: 700, color: "#E11D48" }}>Results</span>
           </h2>

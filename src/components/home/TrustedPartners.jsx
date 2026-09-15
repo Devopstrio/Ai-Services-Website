@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 /**
- * TechnologyAlliances.jsx — DevOpsTRIO
+ * TechnologyAlliances.jsx — Devopstrio
  * "Through our Technology Alliances we Accelerate Digital Reinvention" —
  * 4x2 grid of white alliance cards (logo box + name + description) on a
  * black section background. Black theme, #E11D48 accent, Geist font,
@@ -68,7 +68,7 @@ background:
     marginTop: "-80px",
   },
   heading: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto 46px",
     fontFamily: FONT,
     color: "#FFFFFF",
@@ -80,7 +80,7 @@ background:
   headingAccent: { color: "#E11D48" },
 
   grid: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "repeat(4, 1fr)",
@@ -93,6 +93,11 @@ background:
     overflow: "hidden",
     boxShadow: "0 8px 24px rgba(0,0,0,0.35)",
     cursor: "pointer",
+  
+    display: "flex",
+    flexDirection: "column",
+    height: "100%",
+    justifyContent: "space-between",
   },
   logoBox: {
     height: "220px",
@@ -113,6 +118,11 @@ background:
   },
   textArea: {
     padding: "22px 22px 26px",
+  
+    flex: 1,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   name: {
     fontFamily: FONT,

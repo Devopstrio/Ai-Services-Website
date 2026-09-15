@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import card1Img from "../../assets/v1_covers/service_card1.jpg";
+import card2Img from "../../assets/v1_covers/service_card2.jpg";
+import card3Img from "../../assets/v1_covers/service_card3.jpg";
+import card4Img from "../../assets/v1_covers/service_card4.jpg";
+import card5Img from "../../assets/v1_covers/service_card5.jpg";
+import card6Img from "../../assets/v1_covers/service_card6.jpg";
+
+
+
 /**
  * PoweringAI.jsx — DevOpsTRIO
  * "Powering AI with Expertise and Trust" — 3x2 card grid.
@@ -18,7 +27,7 @@ const CARDS = [
     title: "AI in Practice",
     body: "Our AI-centric practices power our own delivery and help accelerate yours.",
     more: "We run every internal pipeline on the same AI tooling we ship to clients — so what you get has already been proven under real production load.",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/exploring-transformative-intersection.jpg",
+    img: card1Img,
     icon: "brief",
   },
   {
@@ -26,7 +35,7 @@ const CARDS = [
     title: "Industry-Proven Use Cases",
     body: "Ready-to-use AI assets, proven methodologies, and real-world experience across healthcare, insurance, and clinical operations.",
     more: "From triage automation to claims intelligence, our accelerators cut time-to-value from quarters to weeks.",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/ai-awards-2025.jpg",
+    img: card2Img,
     icon: "chart",
   },
   {
@@ -34,7 +43,7 @@ const CARDS = [
     title: "End-to-End AI Delivery",
     body: "From strategy and prototyping to deployment and scaling, we help you realize AI value across the full lifecycle.",
     more: "One team owns discovery through production support — no handoffs, no lost context between phases.",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/global-resource/24/banner/transformation-telenet-mob.jpg",
+    img: card3Img,
     icon: "rocket",
   },
   {
@@ -42,7 +51,7 @@ const CARDS = [
     title: "Responsible AI by Design",
     body: "Governance, explainability, and responsible AI principles embedded from the start so you can scale with confidence.",
     more: "Every model ships with audit trails, bias checks, and human-in-the-loop review points built in, not bolted on.",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/automation-framework.jpg",
+    img: card4Img,
     icon: "shield",
   },
   {
@@ -50,7 +59,7 @@ const CARDS = [
     title: "Innovation Through Partnerships",
     body: "Together with Microsoft, Google Cloud, AWS, and NVIDIA, we design and deliver AI solutions that keep healthcare ahead.",
     more: "Direct engineering access to hyperscaler roadmaps means your infrastructure never falls behind the platform.",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/global-resource/banner-images/extreme-automation-rpa-bots-mob.jpg",
+    img: card5Img,
     icon: "handshake",
   },
   {
@@ -58,7 +67,7 @@ const CARDS = [
     title: "Secure & Compliant AI",
     body: "HIPAA and SOC 2-aligned architectures built in from day one, so every model and pipeline stays audit-ready.",
     more: "Encryption, access control, and continuous compliance monitoring are default settings, not optional add-ons.",
-    img: "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/insights-quality-engineering.jpg",
+    img: card6Img,
     icon: "lock",
   },
 ];
@@ -67,7 +76,7 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "110px 5%",
+    padding: "110px 24px",
 background:
       "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
           fontFamily: FONT,
@@ -75,7 +84,7 @@ background:
     textAlign: "left",
   },
   heading: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto 50px",
     fontFamily: FONT,
     color: "#FFFFFF",
@@ -86,7 +95,7 @@ background:
   headingAccent: { color: "#E11D48" },
 
   grid: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
@@ -102,6 +111,9 @@ background:
     display: "flex",
     flexDirection: "column",
     transition: "all 0.3s ease",
+  
+    height: "100%",
+    justifyContent: "space-between",
   },
 
   imageWrap: {

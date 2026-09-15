@@ -14,7 +14,7 @@ export const technologyExplorationData = {
     badge: "INNOVATION LAB // TECH RADAR",
     subBadge: "HORIZON SCANNING (2026-2035)",
     titleLight: "Navigating the Next Decade with",
-    titleBold: "DevOpsTRIO Technology Exploration",
+    titleBold: "Devopstrio Technology Exploration",
     description: "Our Technology Exploration division acts as a forward radar for enterprise leadership, continuously evaluating breakthroughs in photonic tensor processing, post-quantum cryptography, and spatial neuromorphic computing.",
     bgImage: heroBg,
     liveBadge: "Radar Edition: 2026-Q3"
@@ -127,21 +127,21 @@ export const technologyExplorationData = {
     {
       title: "Co-Design of Photonic Silicon and Transformer Models for Sub-Picosecond Inference",
       venue: "Nature Electronics & Hardware 2025",
-      authors: "DevOpsTRIO Hardware Lab & UC Santa Barbara",
+      authors: "Devopstrio Hardware Lab & UC Santa Barbara",
       doi: "10.48550/arXiv.2510.14209",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Enterprise Migration Architectures for Post-Quantum Lattice Cryptography",
       venue: "IEEE Security & Privacy 2025",
-      authors: "DevOpsTRIO Cryptography Group & ETH Zurich",
+      authors: "Devopstrio Cryptography Group & ETH Zurich",
       doi: "10.48550/arXiv.2508.06912",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Asynchronous Spiking Neural Networks for Ultra-Low-Power Edge Anomaly Detection",
       venue: "IEEE Transactions on Neural Networks 2025",
-      authors: "DevOpsTRIO Neuromorphic Team & TU Munich",
+      authors: "Devopstrio Neuromorphic Team & TU Munich",
       doi: "10.48550/arXiv.2512.08831",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
@@ -149,8 +149,8 @@ export const technologyExplorationData = {
   caseStudy: {
     partner: "Global Telecommunications & Defense Infrastructure Operator",
     collaborationType: "Horizon Technology Assessment",
-    headline: "How DevOpsTRIO's Post-Quantum Tech Radar Protected Critical Satellite Communications Across 4 Continents",
-    quote: "DevOpsTRIO's technology exploration team gave us the 5-year cryptographic roadmap we needed. We upgraded our core satellite ground stations to post-quantum lattice security two years ahead of international mandate deadlines.",
+    headline: "How Devopstrio's Post-Quantum Tech Radar Protected Critical Satellite Communications Across 4 Continents",
+    quote: "Devopstrio's technology exploration team gave us the 5-year cryptographic roadmap we needed. We upgraded our core satellite ground stations to post-quantum lattice security two years ahead of international mandate deadlines.",
     author: "Chief Information Security Officer",
     organization: "Global Satellite Communications Leader",
     image: caseImg,

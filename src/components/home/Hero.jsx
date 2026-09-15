@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 /**
- * Hero.jsx — DevOpsTRIO AI Services
+ * Hero.jsx — Devopstrio AI Services
  * Enterprise Obsidian theme, #E11D48 neon accent, Inter typography, background motion video.
  */
 
@@ -67,9 +67,9 @@ const styles = {
     position: "relative",
     zIndex: 3,
     width: "100%",
-    maxWidth: "1360px",
+    maxWidth: "1280px",
     margin: "0 auto",
-    padding: "0 6%",
+    padding: "0 24px",
     boxSizing: "border-box",
     textAlign: "left",
   },

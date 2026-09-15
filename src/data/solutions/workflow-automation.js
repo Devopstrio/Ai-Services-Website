@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Cognitive Process Automation & Autonomous Operations",
-    paragraph: "DevOpsTRIO transitions enterprise business processes from brittle, rules-based RPA scripts to resilient, cognitive workflow agents. Our systems understand natural language instructions, navigate modern web and desktop interfaces, adapt to unexpected UI changes, and handle non-standard data exceptions autonomously.\n\nFrom automated vendor onboarding and contract lifecycle routing to complex cross-system inventory reconciliations, our workflow engines execute multi-step operations 24/7 with comprehensive audit logs and human-in-the-loop escalation boundaries.",
+    paragraph: "Devopstrio transitions enterprise business processes from brittle, rules-based RPA scripts to resilient, cognitive workflow agents. Our systems understand natural language instructions, navigate modern web and desktop interfaces, adapt to unexpected UI changes, and handle non-standard data exceptions autonomously.\n\nFrom automated vendor onboarding and contract lifecycle routing to complex cross-system inventory reconciliations, our workflow engines execute multi-step operations 24/7 with comprehensive audit logs and human-in-the-loop escalation boundaries.",
     image: img2
   },
   benefitsBento: [

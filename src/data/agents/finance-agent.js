@@ -14,7 +14,7 @@ export const financeAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Continuous Financial Control with",
-    titleBold: "DevOpsTRIO Finance Agent",
+    titleBold: "Devopstrio Finance Agent",
     description: "Automate accounts payable/receivable, eliminate month-end reconciliation backlogs, intercept invoice fraud in real time, and close corporate financial books in hours instead of weeks.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const financeAgentData = {
   ],
   overview: {
     heading: "The Autonomous Digital Controller for Enterprise Finance",
-    description: "Enterprise finance teams spend countless hours on manual data re-entry, matching PDF invoices to ERP purchase orders, and hunting down ledger discrepancies at month-end.\n\nThe DevOpsTRIO Finance Agent deploys specialized sub-agents that continuously ingest bank feeds, extract line-item invoice data, cross-reference goods receipts, and post audited journal entries into NetSuite, SAP, and QuickBooks automatically.",
+    description: "Enterprise finance teams spend countless hours on manual data re-entry, matching PDF invoices to ERP purchase orders, and hunting down ledger discrepancies at month-end.\n\nThe Devopstrio Finance Agent deploys specialized sub-agents that continuously ingest bank feeds, extract line-item invoice data, cross-reference goods receipts, and post audited journal entries into NetSuite, SAP, and QuickBooks automatically.",
     keyPoints: [
       "Autonomous 3-way matching across purchase orders, receiving slips, and invoices",
       "Real-time ledger reconciliation with automatic discrepancy classification",
@@ -201,7 +201,7 @@ export const financeAgentData = {
     client: "Publicly Traded Manufacturing Enterprise",
     industry: "Industrial Manufacturing",
     headline: "How a $3.2B Global Enterprise Automated 96% of Accounts Payable and Cut Month-End Close by 70%",
-    quote: "DevOpsTRIO Finance Agent gave our controller team unprecedented visibility. We went from frantic month-end spreadsheet firefighting to continuous automated reconciliation.",
+    quote: "Devopstrio Finance Agent gave our controller team unprecedented visibility. We went from frantic month-end spreadsheet firefighting to continuous automated reconciliation.",
     author: "VP of Financial Operations & Controller",
     company: "Global Fortune 1000 Manufacturer",
     image: caseImg,

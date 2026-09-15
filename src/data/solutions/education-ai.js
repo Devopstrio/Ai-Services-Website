@@ -1,9 +1,9 @@
 import img1 from '../../assets/fresh/multimodal_ai_workbench.jpg';
 import img2 from '../../assets/fresh/deep_learning_tensor.jpg';
 import img3 from '../../assets/fresh/dark_ai_neural_grid.jpg';
-import img4 from '../../assets/fresh/dark_ai_neural_grid.jpg';
+import img4 from '../../assets/fresh/2021_09_database-schema.jpg';
 import img5 from '../../assets/fresh/innovation_neural_network.jpg';
-import img6 from '../../assets/fresh/innovation_neural_network.jpg';
+import img6 from '../../assets/fresh/360_f_2084576255_smobjek0sl0e6ocwx64h4nnzs2qiblec.jpg';
 import img7 from '../../assets/fresh/neural_connections_nodes.jpg';
 import img8 from '../../assets/fresh/holographic_data_globe.jpg';
 
@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Adaptive Learning Ecosystems & Educational Intelligence",
-    paragraph: "DevOpsTRIO partners with universities, K-12 school districts, and EdTech platforms to build personalized educational experiences tailored to each student's unique learning pace. Our adaptive learning systems evaluate comprehension in real time, dynamically adjusting lesson difficulty and providing customized practice exercises.\n\nFor educators and administrators, our platform automates time-consuming grading workflows, identifies students at risk of academic drop-out early in the semester, and streamlines institutional administrative operations.",
+    paragraph: "Devopstrio partners with universities, K-12 school districts, and EdTech platforms to build personalized educational experiences tailored to each student's unique learning pace. Our adaptive learning systems evaluate comprehension in real time, dynamically adjusting lesson difficulty and providing customized practice exercises.\n\nFor educators and administrators, our platform automates time-consuming grading workflows, identifies students at risk of academic drop-out early in the semester, and streamlines institutional administrative operations.",
     image: img2
   },
   benefitsBento: [

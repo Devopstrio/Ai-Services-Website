@@ -14,7 +14,7 @@ export const productRoadmapData = {
     badge: "INNOVATION LAB // PRODUCT HORIZON",
     subBadge: "TRANSPARENT 2026-2027 ROADMAP",
     titleLight: "Engineering Tomorrow's Platform with",
-    titleBold: "DevOpsTRIO Product Roadmap",
+    titleBold: "Devopstrio Product Roadmap",
     description: "Explore our transparent quarterly product roadmap detailing upcoming foundation models, autonomous agent frameworks, and enterprise developer tooling releases.",
     bgImage: heroBg,
     liveBadge: "Roadmap: 2026-Q3 Active"
@@ -127,21 +127,21 @@ export const productRoadmapData = {
     {
       title: "Architectural Evolution of Enterprise AI Platforms: A 5-Year Retrospective and Roadmap",
       venue: "IEEE Computer Society Horizon 2025",
-      authors: "DevOpsTRIO Architecture Council & MIT CSAIL",
+      authors: "Devopstrio Architecture Council & MIT CSAIL",
       doi: "10.48550/arXiv.2508.11029",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "SwarmOS: Decentralized Fault-Tolerant Orchestration for Enterprise Cognitive Agents",
       venue: "ACM EuroSys Cloud Systems 2025",
-      authors: "DevOpsTRIO Distributed Systems Team",
+      authors: "Devopstrio Distributed Systems Team",
       doi: "10.48550/arXiv.2510.04891",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Formal Invariant Synthesis in Developer Tooling via Neuro-Symbolic Verification",
       venue: "ACM SIGPLAN PLDI 2025",
-      authors: "DevOpsTRIO Programming Languages Group & Oxford",
+      authors: "Devopstrio Programming Languages Group & Oxford",
       doi: "10.48550/arXiv.2512.03112",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
@@ -150,7 +150,7 @@ export const productRoadmapData = {
     partner: "Fortune 50 Enterprise Technology & Cloud Services Provider",
     collaborationType: "Early Roadmap Access Partner",
     headline: "How Early Access to SwarmOS v5.0 Accelerated Enterprise Customer Deployments by 400%",
-    quote: "DevOpsTRIO's transparent product roadmap gave our engineering organization the visibility we needed to plan our multi-cloud AI infrastructure two years ahead of competitors.",
+    quote: "Devopstrio's transparent product roadmap gave our engineering organization the visibility we needed to plan our multi-cloud AI infrastructure two years ahead of competitors.",
     author: "Senior Vice President of Engineering",
     organization: "Global Cloud & AI Infrastructure Leader",
     image: caseImg,

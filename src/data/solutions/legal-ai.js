@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Intelligent Contract Analytics & Autonomous Legal Due Diligence",
-    paragraph: "DevOpsTRIO equips leading law firms and corporate legal departments with secure legal AI trained on millions of case precedents, statutes, and commercial agreements. Our platform reads 500-page complex contracts in seconds, identifying risk terms, indemnification gaps, and non-compete clauses with pinpoint precision.\n\nBuilt with air-gapped security and strict attorney-client privilege isolation, our legal models ensure your firm's sensitive litigation files and proprietary M&A deal structures never leave your encrypted private tenant.",
+    paragraph: "Devopstrio equips leading law firms and corporate legal departments with secure legal AI trained on millions of case precedents, statutes, and commercial agreements. Our platform reads 500-page complex contracts in seconds, identifying risk terms, indemnification gaps, and non-compete clauses with pinpoint precision.\n\nBuilt with air-gapped security and strict attorney-client privilege isolation, our legal models ensure your firm's sensitive litigation files and proprietary M&A deal structures never leave your encrypted private tenant.",
     image: img2
   },
   benefitsBento: [

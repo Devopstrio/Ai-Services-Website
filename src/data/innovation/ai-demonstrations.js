@@ -14,7 +14,7 @@ export const aiDemonstrationsData = {
     badge: "INNOVATION LAB // LIVE DEMOS",
     subBadge: "INTERACTIVE RUNTIMES & BENCHMARKS",
     titleLight: "Experience the Future Live with",
-    titleBold: "DevOpsTRIO AI Demonstrations",
+    titleBold: "Devopstrio AI Demonstrations",
     description: "Interact directly with live foundation models, emergent multi-agent simulations, and autonomous coding swarms running on dedicated cloud GPU clusters.",
     bgImage: heroBg,
     liveBadge: "Live Cluster Online"
@@ -127,21 +127,21 @@ export const aiDemonstrationsData = {
     {
       title: "Design Principles for Real-Time Duplex Neural Audio Streaming Systems",
       venue: "ACM Multimedia Systems 2025",
-      authors: "DevOpsTRIO Multimodal Team & Stanford CCRMA",
+      authors: "Devopstrio Multimodal Team & Stanford CCRMA",
       doi: "10.48550/arXiv.2509.09812",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Interactive Visualization and Tracing of Distributed Multi-Agent Consensus",
       venue: "IEEE VIS Visual Analytics 2025",
-      authors: "DevOpsTRIO Visualization Group & MIT Media Lab",
+      authors: "Devopstrio Visualization Group & MIT Media Lab",
       doi: "10.48550/arXiv.2510.11429",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Zero-Shot Spatial 3D Video Inspection for High-Velocity Industrial Assembly",
       venue: "CVPR Industrial Vision 2025",
-      authors: "DevOpsTRIO Vision Lab & University of Oxford",
+      authors: "Devopstrio Vision Lab & University of Oxford",
       doi: "10.48550/arXiv.2511.03190",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
@@ -150,7 +150,7 @@ export const aiDemonstrationsData = {
     partner: "Global Automotive OEM & Industrial Manufacturing Leader",
     collaborationType: "Live Demonstration Pilot",
     headline: "How Live Video Defect Inspection Saved \$18.4M in Preventable Assembly Recalls in Year One",
-    quote: "Testing DevOpsTRIO's live computer vision demonstration on our actual stamping plant video feeds convinced our executive committee in 15 minutes. It detected micro-fissures that human inspectors missed.",
+    quote: "Testing Devopstrio's live computer vision demonstration on our actual stamping plant video feeds convinced our executive committee in 15 minutes. It detected micro-fissures that human inspectors missed.",
     author: "Global Head of Quality Assurance",
     organization: "Leading Global Automotive Manufacturer",
     image: caseImg,

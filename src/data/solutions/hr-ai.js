@@ -1,11 +1,11 @@
 import img1 from '../../assets/fresh/neural_connections_nodes.jpg';
-import img2 from '../../assets/fresh/neural_connections_nodes.jpg';
+import img2 from '../../assets/fresh/agent_database_optimizer.jpg';
 import img3 from '../../assets/fresh/multimodal_ai_workbench.jpg';
 import img4 from '../../assets/fresh/close-up-data-center-programmers-using-pc-visualize-ai-neural-networks.jpg';
 import img5 from '../../assets/fresh/agent_deep_market_research.jpg';
 import img6 from '../../assets/solutions/2.jpg';
-import img7 from '../../assets/fresh/close-up-data-center-programmers-using-pc-visualize-ai-neural-networks.jpg';
-import img8 from '../../assets/fresh/neural_connections_nodes.jpg';
+import img7 from '../../assets/fresh/agent_database_tuning.jpg';
+import img8 from '../../assets/fresh/agent_hr_workforce.jpg';
 
 const data = {
   id: 'hr-ai',
@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Intelligent Workforce Optimization & Talent Strategy",
-    paragraph: "DevOpsTRIO helps global enterprises, high-growth technology firms, and distributed organizations modernize talent management workflows through custom Artificial Intelligence. By integrating LLM-powered recruitment intelligence, real-time employee engagement analytics, and automated compliance tracking, we eliminate repetitive administrative overhead while helping leaders build high-retention, high-performance teams.\n\nFrom automated multi-channel candidate sourcing to predictive flight-risk modeling and personalized career progression paths, our secure on-premise and VPC deployments ensure full compliance with global privacy regulations and zero algorithmic bias.",
+    paragraph: "Devopstrio helps global enterprises, high-growth technology firms, and distributed organizations modernize talent management workflows through custom Artificial Intelligence. By integrating LLM-powered recruitment intelligence, real-time employee engagement analytics, and automated compliance tracking, we eliminate repetitive administrative overhead while helping leaders build high-retention, high-performance teams.\n\nFrom automated multi-channel candidate sourcing to predictive flight-risk modeling and personalized career progression paths, our secure on-premise and VPC deployments ensure full compliance with global privacy regulations and zero algorithmic bias.",
     image: img2
   },
   benefitsBento: [

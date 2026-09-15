@@ -14,7 +14,7 @@ const styles = {
     textAlign: "left",
   },
   heading: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto 40px",
     fontFamily: FONT,
     color: "#FFFFFF",
@@ -24,7 +24,7 @@ const styles = {
   },
 
   grid: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",

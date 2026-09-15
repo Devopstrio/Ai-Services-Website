@@ -23,49 +23,43 @@ const STORIES = [
     title: "Meet Devopstrio Atlas",
     description:
       "Meet Atlas, the expert agent that helps healthcare leaders unlock AI value across clinical operations. Don't automate alone.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/ai-mountain-01.jpg",
-    href: "/atlas",
+    image: "/assets/Home-page/ai-studio/webp/agentic-office.webp",
+    href: "https://devopstrio.co.uk/insights/case-studies",
   },
   {
     title: "Devopstrio Unveils AI-First Value Framework for Healthcare",
     description:
       "Uniquely positioned to capture the growing healthcare AI services opportunity, valued at over $60 billion.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-unveils-ai-first-value-framework.jpg",
-    href: "/unveils",
+    image: "/assets/Home-page/Servicescard/AI/webp/Ai-solutions.webp",
+    href: "https://devopstrio.co.uk/insights/blogs",
   },
   {
     title: "Compliance Automation Reaches 500+ Hospital Systems",
     description:
       "Our autonomous compliance auditor now protects over 500 hospital systems, cutting audit prep time from weeks to days.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-top-3-it-services-brand-globally2026.jpg",
-    href: "/comp",
+    image: "/assets/About-page/card/webp/about-inside-leadership-team_Governance-banner.webp",
+    href: "https://devopstrio.co.uk/insights/case-studies",
   },
   {
     title: "New Agent Marketplace Launches for Clinical Teams",
     description:
       "Deploy pre-built agents for patient intake, care coordination, and revenue cycle automation in minutes, not months.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-championsevolve.jpg",
-    href: "/launch",
+    image: "/assets/Home-page/Servicescard/AI/webp/AI-Agents.webp",
+    href: "https://devopstrio.co.uk/insights/blogs",
   },
   {
     title: "Real-Time Interoperability Across 40+ Facilities",
     description:
       "Devopstrio connects disparate clinical systems for a growing care network, enabling secure, real-time data exchange.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-accelerate-enterprise-adoption-generative-ai.jpg",
-    href: "/clinical",
+    image: "/assets/services/webp/usecase_integration.webp",
+    href: "https://devopstrio.co.uk/insights/case-studies",
   },
   {
     title: "99.99% Uptime for Patient-Facing Platforms",
     description:
       "Our observability suite keeps mission-critical healthcare infrastructure online around the clock, every day of the year.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-collaboration-accelerate-ai-value-journey.jpg",
-    href: "/patient",
+    image: "/assets/services/webp/bg-managed.webp",
+    href: "https://devopstrio.co.uk/insights/blogs",
   },
 ];
 
@@ -105,10 +99,9 @@ export default function TopStories() {
         width: "100%",
         backgroundColor: COLORS.bg,
         fontFamily: FONT,
-        padding: "90px 32px 100px",
+        padding: "90px 24px 100px",
         overflow: "hidden",
         marginTop: "-70px",
-        marginLeft: "1%",
         boxSizing: "border-box",
         textAlign: "left",
       }}

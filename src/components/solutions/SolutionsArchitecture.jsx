@@ -5,7 +5,7 @@ const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {
-    padding: "140px 5%",
+    padding: "140px 24px",
     backgroundColor: "#000000",
     fontFamily: FONT,
     display: "flex",

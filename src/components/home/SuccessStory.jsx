@@ -28,46 +28,41 @@ const STORIES = [
     tag: "Success Story",
     title: "Automation of Clinical Data Onboarding",
     description:
-      "The client is a leading regional hospital network. DevOpsTRIO helped automate the onboarding of multiple EHR data pipelines, cutting manual review time significantly.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/compensation-plan-management-mob.jpg",
-    href: "#",
+      "The client is a leading regional hospital network. Devopstrio helped automate the onboarding of multiple EHR data pipelines, cutting manual review time significantly.",
+    image: "/assets/services/webp/bg-ai.webp",
+    href: "https://devopstrio.co.uk/insights/case-studies",
   },
   {
     tag: "Success Story",
     title: "Compliance Auditing at Scale",
     description:
-      "A multi-state payer group partnered with DevOpsTRIO to build an autonomous compliance auditor, reducing audit prep time from weeks to days.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/asset-management-services-mob.jpg",
-    href: "#",
+      "A multi-state payer group partnered with Devopstrio to build an autonomous compliance auditor, reducing audit prep time from weeks to days.",
+    image: "/assets/services/webp/bg-cloud.webp",
+    href: "https://devopstrio.co.uk/insights/case-studies",
   },
   {
     tag: "Case Study",
     title: "Cutting Release Cycles by 68%",
     description:
-      "A national hospital system adopted DevOpsTRIO's Agent Platform to modernize legacy pipelines, shipping releases nearly 3x faster with full audit trails.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/l2-banner/admission-service-providers.jpg",
-    href: "#",
+      "A national hospital system adopted Devopstrio's Agent Platform to modernize legacy pipelines, shipping releases nearly 3x faster with full audit trails.",
+    image: "/assets/services/webp/bg-case-study.webp",
+    href: "https://devopstrio.co.uk/insights/case-studies",
   },
   {
     tag: "Success Story",
     title: "Real-Time Patient Data Interoperability",
     description:
-      "DevOpsTRIO connected disparate clinical systems for a growing care network, enabling real-time data exchange across 40+ facilities.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/digital-banking-services.jpg",
-    href: "#",
+      "Devopstrio connected disparate clinical systems for a growing care network, enabling real-time data exchange across 40+ facilities.",
+    image: "/assets/services/webp/bg-devops.webp",
+    href: "https://devopstrio.co.uk/insights/case-studies",
   },
   {
     tag: "Case Study",
     title: "24/7 Monitoring for Critical Infrastructure",
     description:
-      "A healthcare SaaS provider deployed DevOpsTRIO's observability suite to achieve 99.99% uptime across their patient-facing platforms.",
-    image:
-      "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/market-leader.jpg",
-    href: "#",
+      "A healthcare SaaS provider deployed Devopstrio's observability suite to achieve 99.99% uptime across their patient-facing platforms.",
+    image: "/assets/services/webp/bg-data.webp",
+    href: "https://devopstrio.co.uk/insights/case-studies",
   },
 ];
 
@@ -120,7 +115,7 @@ export default function ClientSuccessStories() {
         textAlign: "left",
       }}
     >
-      <div style={{ maxWidth: "1300px", margin: "0 auto" }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
         {/* Header */}
         <div
           style={{

@@ -23,13 +23,13 @@ import {
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 /* ─── Fade-up animation wrapper ─── */
-const FadeUp = ({ children, delay = 0, style = {} }) => (
+const FadeUp = ({ children, delay = 0, style = {}, className = "" }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-60px" }}
     transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
-    style={style}
+    className={className} style={{ height: "100%", display: "flex", flexDirection: "column", ...style }}
   >
     {children}
   </motion.div>
@@ -111,7 +111,7 @@ export default function AgentDetail() {
         {/* Ambient Top Glow */}
         <div style={{ position: "absolute", top: "10%", left: "50%", transform: "translateX(-50%)", width: "600px", height: "400px", background: "radial-gradient(circle, rgba(225,29,72,0.15) 0%, transparent 70%)", pointerEvents: "none", zIndex: 0 }} />
 
-        <div style={{ position: "relative", zIndex: 1, maxWidth: "1320px", margin: "0 auto", width: "100%", padding: "0 5%", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "60px", alignItems: "center" }}>
+        <div style={{ position: "relative", zIndex: 1, maxWidth: "1280px", margin: "0 auto", width: "100%", padding: "0 24px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "60px", alignItems: "center" }}>
 
           {/* Left — Text */}
           <motion.div style={{ opacity: opacityText }}>
@@ -143,8 +143,6 @@ export default function AgentDetail() {
               </Link>
               <a
                 href="https://devopstrio.co.uk/contact#contact-form"
-                target="_blank"
-                rel="noreferrer"
                 className="agent-demo-btn"
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#FFFFFF", color: "#0A0A0E", textDecoration: "none", fontSize: "0.95rem", fontWeight: 600, padding: "15px 30px", borderRadius: "10px", transition: "all 0.25s ease", boxShadow: "0 4px 20px rgba(255,255,255,0.15)" }}
               >
@@ -196,7 +194,7 @@ export default function AgentDetail() {
       {/* ═══════════════════════════════════════════════════════════════
           SECTION 2 — FLOATING METRICS STRIP
       ═══════════════════════════════════════════════════════════════ */}
-      <section style={{ position: "relative", zIndex: 10, marginTop: "-50px", padding: "0 5%" }}>
+      <section style={{ position: "relative", zIndex: 10, marginTop: "-50px", padding: "0 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", background: "linear-gradient(180deg, rgba(14,14,20,0.9) 0%, rgba(8,8,12,0.95) 100%)", backdropFilter: "blur(20px)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "22px", padding: "44px 36px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "24px", boxShadow: "0 20px 60px rgba(0,0,0,0.8), 0 0 30px rgba(225,29,72,0.08)" }}>
           {data.metrics.map((m, i) => (
             <FadeUp key={i} delay={i * 0.08}>
@@ -262,7 +260,7 @@ export default function AgentDetail() {
         {/* Center Glow */}
         <div style={{ position: "absolute", top: "15%", left: "50%", transform: "translateX(-50%)", width: "700px", height: "500px", background: "radial-gradient(circle, rgba(225,29,72,0.09) 0%, transparent 70%)", pointerEvents: "none" }} />
 
-        <div style={{ maxWidth: "1320px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", position: "relative", zIndex: 1 }}>
           <FadeUp>
             <SectionHeading
               tag="ENTERPRISE CAPABILITIES"
@@ -285,7 +283,7 @@ export default function AgentDetail() {
                     >
                       {/* FRONT */}
                       <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", background: "linear-gradient(145deg, #0A0A0F 0%, #07070B 100%)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "20px", overflow: "hidden", display: "flex", flexDirection: "column", boxShadow: "0 15px 45px rgba(0,0,0,0.6)" }} className="capability-front-card">
-                        <div style={{ position: "relative", width: "100%", height: "190px", overflow: "hidden" }}>
+                        <div style={{ position: "relative", width: "100%", height: "190px", overflow: "hidden", transform: "translateZ(0)", WebkitBackfaceVisibility: "hidden", isolation: "isolate" }}>
                           <img src={cap.image} alt={cap.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 35%, #0A0A0F 100%)" }} />
                           <span style={{ position: "absolute", top: "14px", left: "14px", background: "rgba(0,0,0,0.85)", backdropFilter: "blur(8px)", border: "1px solid rgba(225,29,72,0.3)", borderRadius: "999px", padding: "5px 14px", color: "#E11D48", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.07em" }}>
@@ -350,8 +348,8 @@ export default function AgentDetail() {
           SECTION 5 — HOW IT WORKS (3-Step Pipeline)
       ═══════════════════════════════════════════════════════════════ */}
       {data.swarmTiers && (
-        <section style={{ padding: "140px 5%", backgroundColor: "#020203", position: "relative" }}>
-          <div style={{ maxWidth: "1320px", margin: "0 auto" }}>
+        <section style={{ padding: "140px 24px", backgroundColor: "#020203", position: "relative" }}>
+          <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <FadeUp>
               <SectionHeading
                 tag="HOW IT WORKS"
@@ -366,9 +364,9 @@ export default function AgentDetail() {
                 <FadeUp key={idx} delay={idx * 0.12}>
                   <div
                     className="tier-card"
-                    style={{ position: "relative", zIndex: 1, background: "linear-gradient(145deg, #09090E 0%, #060609 100%)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: "20px", padding: "40px 32px", display: "flex", flexDirection: "column", justifyContent: "space-between", minHeight: "320px", transition: "all 0.3s ease" }}
+                    style={{ position: "relative", zIndex: 1, background: "linear-gradient(145deg, #09090E 0%, #060609 100%)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: "20px", padding: "40px 32px", display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%", width: "100%", transition: "all 0.3s ease" }}
                   >
-                    <div>
+                    <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
                       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "24px" }}>
                         <span style={{ fontSize: "2rem", fontWeight: 800, color: "#E11D48", opacity: 0.5 }}>{tier.tier}</span>
                         <span style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.55)", fontWeight: 600, padding: "4px 12px", background: "rgba(255,255,255,0.03)", borderRadius: "6px", border: "1px solid rgba(255,255,255,0.06)" }}>{tier.role}</span>
@@ -376,7 +374,7 @@ export default function AgentDetail() {
                       <h3 style={{ fontSize: "1.3rem", fontWeight: 700, color: "#FFFFFF", margin: "0 0 16px 0" }}>{tier.name}</h3>
                       <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.93rem", lineHeight: 1.75, margin: 0 }}>{tier.description}</p>
                     </div>
-                    <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "18px", marginTop: "28px" }}>
+                    <div style={{ borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "18px", marginTop: "auto" }}>
                       <div style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "6px" }}>Technology</div>
                       <div style={{ fontSize: "0.85rem", color: "#FFFFFF", fontWeight: 600 }}>{tier.tech}</div>
                     </div>
@@ -393,7 +391,7 @@ export default function AgentDetail() {
           SECTION 6 — WORKFLOW STUDIO (Clean Dashboard)
       ═══════════════════════════════════════════════════════════════ */}
       {data.interactiveDemo && currentScenario && (
-        <section style={{ padding: "140px 5%", backgroundColor: "#060609", position: "relative" }}>
+        <section style={{ padding: "140px 24px", backgroundColor: "#060609", position: "relative" }}>
           {/* Ambient Glow */}
           <div style={{ position: "absolute", top: "30%", left: "50%", transform: "translateX(-50%)", width: "600px", height: "400px", background: "radial-gradient(circle, rgba(225,29,72,0.07) 0%, transparent 70%)", pointerEvents: "none" }} />
 
@@ -498,8 +496,6 @@ export default function AgentDetail() {
                     </div>
                     <a
                       href="https://devopstrio.co.uk/contact#contact-form"
-                      target="_blank"
-                      rel="noreferrer"
                       style={{ padding: "11px 24px", backgroundColor: "#E11D48", color: "#FFFFFF", borderRadius: "10px", textDecoration: "none", fontSize: "0.88rem", fontWeight: 700, flexShrink: 0, boxShadow: "0 4px 15px rgba(225,29,72,0.35)" }}
                     >
                       Deploy this Workflow →
@@ -515,8 +511,8 @@ export default function AgentDetail() {
       {/* ═══════════════════════════════════════════════════════════════
           SECTION 7 — TRUST, COMPARISON & INTEGRATIONS
       ═══════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: "140px 5%", backgroundColor: "#020203" }}>
-        <div style={{ maxWidth: "1320px", margin: "0 auto" }}>
+      <section style={{ padding: "140px 24px", backgroundColor: "#020203" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <FadeUp>
             <SectionHeading
               tag="ENTERPRISE TRUST"
@@ -661,8 +657,6 @@ export default function AgentDetail() {
             </p>
             <a
               href="https://devopstrio.co.uk/contact#contact-form"
-              target="_blank"
-              rel="noreferrer"
               style={{ display: "inline-flex", alignItems: "center", gap: "10px", backgroundColor: "#E11D48", color: "#FFFFFF", textDecoration: "none", fontSize: "1rem", fontWeight: 700, padding: "17px 40px", borderRadius: "10px", boxShadow: "0 8px 32px rgba(225,29,72,0.5)", transition: "all 0.25s ease" }}
               className="cta-btn"
             >

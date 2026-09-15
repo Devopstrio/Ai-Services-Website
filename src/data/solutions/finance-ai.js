@@ -1,11 +1,11 @@
 import img1 from '../../assets/fresh/agent_finance_reconciliation.jpg';
-import img2 from '../../assets/fresh/agent_finance_reconciliation.jpg';
+import img2 from '../../assets/fresh/6-digital-marketing.jpg';
 import img3 from '../../assets/fresh/crm_revenue_forecasting.jpg';
 import img4 from '../../assets/solutions/7.jpg';
 import img5 from '../../assets/fresh/bajaj_finance_bharti_airtel_partnership_financial__1737355875195_1770527459556.webp';
-import img6 from '../../assets/fresh/bajaj_finance_bharti_airtel_partnership_financial__1737355875195_1770527459556.webp';
-import img7 from '../../assets/fresh/agent_finance_reconciliation.jpg';
-import img8 from '../../assets/fresh/agent_finance_reconciliation.jpg';
+import img6 from '../../assets/fresh/73bd7abeb45365336cdce7e9fff4b338.jpg';
+import img7 from '../../assets/fresh/adobestock_1423685034.jpeg';
+import img8 from '../../assets/fresh/adobestock_283199860-1-scaled.jpeg';
 
 const data = {
   id: 'finance-ai',
@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Autonomous Financial Operations & Precision Risk Modeling",
-    paragraph: "DevOpsTRIO empowers Chief Financial Officers and treasury leaders with cognitive financial systems that eliminate manual spreadsheet operations and close financial books in hours instead of weeks. Our platform matches complex invoices, detects anomalies, and reconciles cross-border transactions automatically.\n\nWith military-grade cryptographic security and full traceability, our financial models operate directly within your private cloud environment to ensure your proprietary ledger and trading data remain completely confidential.",
+    paragraph: "Devopstrio empowers Chief Financial Officers and treasury leaders with cognitive financial systems that eliminate manual spreadsheet operations and close financial books in hours instead of weeks. Our platform matches complex invoices, detects anomalies, and reconciles cross-border transactions automatically.\n\nWith military-grade cryptographic security and full traceability, our financial models operate directly within your private cloud environment to ensure your proprietary ledger and trading data remain completely confidential.",
     image: img2
   },
   benefitsBento: [

@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Zero-Shot Document Understanding & Structured Extraction",
-    paragraph: "DevOpsTRIO replaces brittle OCR templates with foundational Vision-Language Models (VLMs) that comprehend documents the way human experts do. Our architecture reads handwritten notes, complex multi-column tables, stamped seals, and hierarchical technical documentation with exceptional accuracy.\n\nWhether extracting indemnity terms from legacy insurance binders or digitizing international customs manifests, our solution seamlessly transforms chaotic PDF repositories into validated, queryable JSON schemas integrated with your enterprise data warehouse.",
+    paragraph: "Devopstrio replaces brittle OCR templates with foundational Vision-Language Models (VLMs) that comprehend documents the way human experts do. Our architecture reads handwritten notes, complex multi-column tables, stamped seals, and hierarchical technical documentation with exceptional accuracy.\n\nWhether extracting indemnity terms from legacy insurance binders or digitizing international customs manifests, our solution seamlessly transforms chaotic PDF repositories into validated, queryable JSON schemas integrated with your enterprise data warehouse.",
     image: img2
   },
   benefitsBento: [

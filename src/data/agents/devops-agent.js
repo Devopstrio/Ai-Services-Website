@@ -14,7 +14,7 @@ export const devopsAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Self-Healing Infrastructure with",
-    titleBold: "DevOpsTRIO DevOps Agent",
+    titleBold: "Devopstrio DevOps Agent",
     description: "Embedded 24/7 SRE and Cloud platform agent that correlates telemetry traces across Datadog, Prometheus, and Kubernetes, diagnoses root-cause incidents in seconds, generates verified Terraform patches, and auto-heals failed CI/CD pipelines.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const devopsAgentData = {
   ],
   overview: {
     heading: "The Autonomous SRE & Infrastructure Engineer for Modern Engineering Orgs",
-    description: "Engineering teams lose thousands of developer hours every sprint to broken CI/CD pipelines, messy Terraform drifts, and late-night pager alerts.\n\nThe DevOpsTRIO DevOps Agent functions as an autonomous Site Reliability Engineering swarm. It continuously listens to distributed traces, Kubernetes events, and container logs, detects anomalies before outages occur, generates deterministic Terraform pull requests, and restarts unhealthy workloads safely.",
+    description: "Engineering teams lose thousands of developer hours every sprint to broken CI/CD pipelines, messy Terraform drifts, and late-night pager alerts.\n\nThe Devopstrio DevOps Agent functions as an autonomous Site Reliability Engineering swarm. It continuously listens to distributed traces, Kubernetes events, and container logs, detects anomalies before outages occur, generates deterministic Terraform pull requests, and restarts unhealthy workloads safely.",
     keyPoints: [
       "24/7 autonomous SRE incident detection, root-cause correlation, and auto-remediation",
       "Self-healing CI/CD pipelines resolving flaky tests, broken dependencies, and Docker build errors",
@@ -201,7 +201,7 @@ export const devopsAgentData = {
     client: "Global Streaming & Media Platform",
     industry: "Consumer Technology",
     headline: "How a 100M-User Streaming Platform Reduced SRE MTTR by 82% and Cut Production Outages by 70%",
-    quote: "DevOpsTRIO DevOps Agent transformed our on-call life. Incidents that used to wake up 10 engineers at 3 AM now auto-heal in under a minute.",
+    quote: "Devopstrio DevOps Agent transformed our on-call life. Incidents that used to wake up 10 engineers at 3 AM now auto-heal in under a minute.",
     author: "VP of Cloud Infrastructure & SRE",
     company: "Publicly Traded Media Giant",
     image: caseImg,

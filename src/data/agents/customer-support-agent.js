@@ -14,7 +14,7 @@ export const customerSupportAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Delightful 24/7 Resolution with",
-    titleBold: "DevOpsTRIO Support Agent",
+    titleBold: "Devopstrio Support Agent",
     description: "Resolve up to 85% of tier-1 and tier-2 customer tickets autonomously across web chat, email, voice, and WhatsApp. Autonomous agents execute database actions, process refunds, diagnose API errors, and brief human specialists seamlessly.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const customerSupportAgentData = {
   ],
   overview: {
     heading: "The Autonomous Digital Support Team for Modern Enterprises",
-    description: "Traditional customer support operations are burdened by slow escalation queues, fragmented customer history, and repetitive tier-1 ticket backlogs.\n\nThe DevOpsTRIO Customer Support Agent operates as a collaborative swarm of specialized cognitive agents. Equipped with deterministic tool mesh APIs, it doesn't just generate text answers—it securely interacts with billing databases, order tracking, authentication systems, and cloud APIs to solve customer problems on the spot.",
+    description: "Traditional customer support operations are burdened by slow escalation queues, fragmented customer history, and repetitive tier-1 ticket backlogs.\n\nThe Devopstrio Customer Support Agent operates as a collaborative swarm of specialized cognitive agents. Equipped with deterministic tool mesh APIs, it doesn't just generate text answers—it securely interacts with billing databases, order tracking, authentication systems, and cloud APIs to solve customer problems on the spot.",
     keyPoints: [
       "24/7 multi-lingual omnichannel support across chat, email, Zendesk, and voice",
       "Deterministic database actions: process refunds, re-issue licenses, reset credentials",
@@ -202,7 +202,7 @@ export const customerSupportAgentData = {
     client: "Global E-Commerce & FinTech Platform",
     industry: "Consumer Technology",
     headline: "How an E-Commerce Unicorn Handled 1.2M Holiday Tickets with 85% Touchless Resolution",
-    quote: "DevOpsTRIO Customer Support Agent scaled our holiday capacity effortlessly. Response times dropped from 6 hours to 2 seconds while CSAT reached an all-time high.",
+    quote: "Devopstrio Customer Support Agent scaled our holiday capacity effortlessly. Response times dropped from 6 hours to 2 seconds while CSAT reached an all-time high.",
     author: "Global VP of Customer Operations",
     company: "Publicly Traded Commerce Leader",
     image: caseImg,

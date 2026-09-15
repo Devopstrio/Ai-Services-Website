@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Core Banking Modernization & Intelligent Financial Ecosystems",
-    paragraph: "DevOpsTRIO helps tier-1 retail banks, investment institutions, and fintech challengers modernize core banking architecture. Our platforms automate compliance monitoring, streamline KYC/AML customer onboarding, and power intelligent wealth management advisories.\n\nBy leveraging predictive models deployed across secure private cloud VPCs, financial institutions can identify emerging market risks, prevent sophisticated fraud syndicates, and deliver hyper-personalized mobile banking experiences to millions of retail customers.",
+    paragraph: "Devopstrio helps tier-1 retail banks, investment institutions, and fintech challengers modernize core banking architecture. Our platforms automate compliance monitoring, streamline KYC/AML customer onboarding, and power intelligent wealth management advisories.\n\nBy leveraging predictive models deployed across secure private cloud VPCs, financial institutions can identify emerging market risks, prevent sophisticated fraud syndicates, and deliver hyper-personalized mobile banking experiences to millions of retail customers.",
     image: img2
   },
   benefitsBento: [

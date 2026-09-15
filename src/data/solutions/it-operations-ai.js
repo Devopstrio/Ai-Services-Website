@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Predictive Infrastructure Resilience & Autonomous AIOps",
-    paragraph: "DevOpsTRIO helps enterprise Site Reliability Engineering (SRE) and IT Operations teams transition from reactive firefighting to predictive incident prevention. Our AIOps platform ingests millions of telemetry signals, logs, and distributed traces in real-time, isolating true anomalies from background noise.\n\nWhen anomalies appear, our root-cause engine correlates infrastructure topology across Kubernetes clusters, cloud networks, and databases to pinpoint the exact failure point—automatically executing self-healing runbooks before end-users experience service degradation.",
+    paragraph: "Devopstrio helps enterprise Site Reliability Engineering (SRE) and IT Operations teams transition from reactive firefighting to predictive incident prevention. Our AIOps platform ingests millions of telemetry signals, logs, and distributed traces in real-time, isolating true anomalies from background noise.\n\nWhen anomalies appear, our root-cause engine correlates infrastructure topology across Kubernetes clusters, cloud networks, and databases to pinpoint the exact failure point—automatically executing self-healing runbooks before end-users experience service degradation.",
     image: img2
   },
   benefitsBento: [

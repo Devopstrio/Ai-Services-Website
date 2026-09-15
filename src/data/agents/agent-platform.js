@@ -8,13 +8,13 @@ import caseImg from "../../assets/fresh/multinational_team_summit.jpg";
 export const agentPlatformData = {
   id: "agent-platform",
   category: "Enterprise Platform",
-  name: "DevOpsTRIO Agent Platform",
+  name: "Devopstrio Agent Platform",
   tagline: "Multi-Agent Orchestration Engine, Memory Fabric & Enterprise Tool Gateway",
   hero: {
     badge: "ENTERPRISE RUNTIME",
     autonomyLevel: "Level 4 Autonomous OS",
     titleLight: "Build & Deploy Autonomous Swarms with",
-    titleBold: "DevOpsTRIO Agent Platform",
+    titleBold: "Devopstrio Agent Platform",
     description: "The complete enterprise operating system for building, observing, and governing autonomous AI agent swarms. Features long-term vector memory fabric, sandboxed deterministic tool execution, multi-agent communication protocols, and cryptographic audit guardrails.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const agentPlatformData = {
   ],
   overview: {
     heading: "The Enterprise Operating System for Autonomous Multi-Agent Swarms",
-    description: "Building production-grade autonomous agent systems requires far more than simple LLM API calls. Enterprises require stateful agent memory, robust multi-agent negotiation protocols, deterministic sandboxed tool execution, and granular role-based security governance.\n\nThe DevOpsTRIO Agent Platform provides the foundational infrastructure layer that powers all DevOpsTRIO AI agents. It allows enterprise developers to compose, deploy, monitor, and scale specialized cognitive swarms across their private cloud fleets with zero vendor lock-in.",
+    description: "Building production-grade autonomous agent systems requires far more than simple LLM API calls. Enterprises require stateful agent memory, robust multi-agent negotiation protocols, deterministic sandboxed tool execution, and granular role-based security governance.\n\nThe Devopstrio Agent Platform provides the foundational infrastructure layer that powers all Devopstrio AI agents. It allows enterprise developers to compose, deploy, monitor, and scale specialized cognitive swarms across their private cloud fleets with zero vendor lock-in.",
     keyPoints: [
       "Distributed multi-agent communication protocol with dynamic sub-agent spawning and delegation",
       "Persistent episodic and semantic vector memory fabric with sub-millisecond retrieval",
@@ -131,7 +131,7 @@ export const agentPlatformData = {
   ],
   interactiveDemo: {
     title: "Agent Platform Studio",
-    subtitle: "Observe the DevOpsTRIO Agent Platform orchestrate a multi-agent swarm with vector memory retrieval, sandboxed tool calls, and cryptographic audit logs.",
+    subtitle: "Observe the Devopstrio Agent Platform orchestrate a multi-agent swarm with vector memory retrieval, sandboxed tool calls, and cryptographic audit logs.",
     scenarios: [
       {
         id: "swarm-spawn",
@@ -201,7 +201,7 @@ export const agentPlatformData = {
     client: "Global Fortune 100 Enterprise Conglomerate",
     industry: "Enterprise Technology & Cloud",
     headline: "How a Fortune 100 Enterprise Deployed 10,000+ Autonomous Agent Swarms with 99.9% Reliability",
-    quote: "DevOpsTRIO Agent Platform is the Kubernetes of AI agents. It gave our engineering organization the memory, sandboxing, and governance required to run autonomous swarms in production.",
+    quote: "Devopstrio Agent Platform is the Kubernetes of AI agents. It gave our engineering organization the memory, sandboxing, and governance required to run autonomous swarms in production.",
     author: "Chief AI Officer & Head of Platform",
     company: "Global Fortune 100 Tech Leader",
     image: caseImg,

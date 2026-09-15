@@ -14,7 +14,7 @@ export const publicationsData = {
     badge: "INNOVATION LAB // SCIENTIFIC PAPERS",
     subBadge: "OPEN ACCESS & PEER-REVIEWED",
     titleLight: "Advancing Global Knowledge with",
-    titleBold: "DevOpsTRIO Scientific Publications",
+    titleBold: "Devopstrio Scientific Publications",
     description: "Access our full library of peer-reviewed foundational research papers published across NeurIPS, ICML, ICLR, CVPR, and top scientific journals with reproducible code repositories.",
     bgImage: heroBg,
     liveBadge: "48+ Peer-Reviewed Papers"
@@ -117,7 +117,7 @@ export const publicationsData = {
       benchmark: "20x Faster than FEM",
       summary: "Presents continuous 3D world models learning physics-grounded aerodynamic and material stress dynamics directly from raw sensor telemetry.",
       features: [
-        "Authors: DevOpsTRIO World Models Lab & Oxford Visual Geometry Group",
+        "Authors: Devopstrio World Models Lab & Oxford Visual Geometry Group",
         "DOI: 10.48550/arXiv.2602.04118",
         "Published dataset covering 50,000 hours of continuous physics rollouts"
       ]
@@ -127,28 +127,28 @@ export const publicationsData = {
     {
       title: "Provable Neuro-Symbolic Synthesis for High-Assurance Enterprise Autonomous Systems",
       venue: "NeurIPS 2025 (Oral Presentation)",
-      authors: "Dr. K. Vance, Dr. E. Rostova, DevOpsTRIO AI Research & Stanford University Collaborators",
+      authors: "Dr. K. Vance, Dr. E. Rostova, Devopstrio AI Research & Stanford University Collaborators",
       doi: "10.48550/arXiv.2511.08921",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Scalable Mechanistic Interpretability via Hierarchical Multi-Scale Sparse Autoencoders",
       venue: "ICML 2025 (Spotlight Paper)",
-      authors: "Dr. S. Chen, M. Al-Mansoor, DevOpsTRIO Safety Group & MIT CSAIL Fellows",
+      authors: "Dr. S. Chen, M. Al-Mansoor, Devopstrio Safety Group & MIT CSAIL Fellows",
       doi: "10.48550/arXiv.2508.14022",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Emergent Cooperative Strategies in Large-Scale Asymmetric Multi-Agent Economies",
       venue: "ICLR 2026 (Outstanding Paper Award)",
-      authors: "DevOpsTRIO Autonomous Systems Group & Cambridge Computer Laboratory",
+      authors: "Devopstrio Autonomous Systems Group & Cambridge Computer Laboratory",
       doi: "10.48550/arXiv.2601.09412",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Continuous Spatio-Temporal Diffusion for Transonic Physical Dynamics Simulation",
       venue: "CVPR 2026 (Highlight Paper)",
-      authors: "DevOpsTRIO World Models Lab & Oxford Visual Geometry Group",
+      authors: "Devopstrio World Models Lab & Oxford Visual Geometry Group",
       doi: "10.48550/arXiv.2602.04118",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
@@ -156,8 +156,8 @@ export const publicationsData = {
   caseStudy: {
     partner: "International Scientific Research Consortium & University Network",
     collaborationType: "Academic Citation & Open Science",
-    headline: "How DevOpsTRIO's Open Research Publications Powered Breakthrough Findings at Over 100 Universities Worldwide",
-    quote: "DevOpsTRIO's commitment to open scientific publishing and reproducible code has accelerated our graduate research program immensely. Their neuro-symbolic papers set the standard for mathematical rigor in modern AI.",
+    headline: "How Devopstrio's Open Research Publications Powered Breakthrough Findings at Over 100 Universities Worldwide",
+    quote: "Devopstrio's commitment to open scientific publishing and reproducible code has accelerated our graduate research program immensely. Their neuro-symbolic papers set the standard for mathematical rigor in modern AI.",
     author: "Director of Institute for Artificial Intelligence",
     organization: "Global Research University Consortium",
     image: caseImg,

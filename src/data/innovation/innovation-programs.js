@@ -14,7 +14,7 @@ export const innovationProgramsData = {
     badge: "INNOVATION LAB // GLOBAL PROGRAMS",
     subBadge: "FELLOWSHIPS, GRANTS & CO-CREATION",
     titleLight: "Fostering the Next Generation of AI with",
-    titleBold: "DevOpsTRIO Innovation Programs",
+    titleBold: "Devopstrio Innovation Programs",
     description: "We empower top researchers, academic institutions, and forward-thinking enterprise innovators through sponsored PhD fellowships, dedicated GPU compute allocations, and joint industry co-creation labs.",
     bgImage: heroBg,
     liveBadge: "2026-2027 Cohort Open"
@@ -29,7 +29,7 @@ export const innovationProgramsData = {
     {
       id: "phd-fellowship",
       tag: "ACADEMIC EXCELLENCE",
-      title: "DevOpsTRIO Frontier AI PhD Fellowship",
+      title: "Devopstrio Frontier AI PhD Fellowship",
       description: "Providing 3-year fully funded stipends and unlimited access to our 420 PFLOPS H100 SuperPOD cluster for doctoral students working on foundational AI.",
       image: prog1,
       metricBadge: "Full 3-Yr Funding",
@@ -127,21 +127,21 @@ export const innovationProgramsData = {
     {
       title: "A Model for Public-Private Foundational AI Co-Innovation in Regulated Industries",
       venue: "Harvard Business Review Tech 2025",
-      authors: "DevOpsTRIO Innovation Leadership & Stanford Graduate School of Business",
+      authors: "Devopstrio Innovation Leadership & Stanford Graduate School of Business",
       doi: "10.48550/arXiv.2506.09112",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Maximizing Academic Research Velocity Through Democratized Supercomputing Grants",
       venue: "Communications of the ACM 2025",
-      authors: "DevOpsTRIO Academic Directorate & MIT CSAIL",
+      authors: "Devopstrio Academic Directorate & MIT CSAIL",
       doi: "10.48550/arXiv.2507.12091",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Frameworks for Open Intellectual Property in Collaborative Frontier Model Research",
       venue: "Oxford Journal of Law and Technology 2025",
-      authors: "DevOpsTRIO Legal & University of Cambridge",
+      authors: "Devopstrio Legal & University of Cambridge",
       doi: "10.48550/arXiv.2510.03811",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
@@ -149,8 +149,8 @@ export const innovationProgramsData = {
   caseStudy: {
     partner: "Leading Global Research University & Health System",
     collaborationType: "PhD Fellowship & Compute Grant",
-    headline: "How a DevOpsTRIO Sponsored PhD Fellowship Discovered a Novel Protein Folding Algorithm for Rare Oncology Targets",
-    quote: "The combination of DevOpsTRIO's supercomputing cluster and expert research mentorship allowed our doctoral team to achieve what would have taken 5 years in just 9 months.",
+    headline: "How a Devopstrio Sponsored PhD Fellowship Discovered a Novel Protein Folding Algorithm for Rare Oncology Targets",
+    quote: "The combination of Devopstrio's supercomputing cluster and expert research mentorship allowed our doctoral team to achieve what would have taken 5 years in just 9 months.",
     author: "Chair of Computational Biology",
     organization: "Top-5 Global Medical Research University",
     image: caseImg,

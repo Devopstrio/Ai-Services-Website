@@ -40,9 +40,9 @@ const styles = {
     position: "relative",
     zIndex: 2,
     width: "100%",
-    maxWidth: "1400px",
+    maxWidth: "1280px",
     margin: "0 auto",
-    padding: "90px 5%",
+    padding: "90px 24px",
     boxSizing: "border-box",
     display: "grid",
     gridTemplateColumns: "1px 1fr",
@@ -237,7 +237,7 @@ export default function InnovationOverview() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             >
-              <span style={styles.headingBold}>DevOpsTRIO</span>{" "}
+              <span style={styles.headingBold}>Devopstrio</span>{" "}
               <span style={styles.headingLight}>Innovation Lab</span>
             </motion.h1>
 

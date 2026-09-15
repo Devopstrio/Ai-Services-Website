@@ -14,7 +14,7 @@ export const executiveAssistantData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Supercharge Leadership Velocity with",
-    titleBold: "DevOpsTRIO Executive Assistant",
+    titleBold: "Devopstrio Executive Assistant",
     description: "An autonomous digital Chief of Staff that compiles 60-second attendee briefing dossiers, transcribes executive board sessions, tracks cross-team action deliverables, and defends focus calendars proactively.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const executiveAssistantData = {
   ],
   overview: {
     heading: "The Autonomous Chief of Staff for C-Suite Leaders",
-    description: "Enterprise executives lose over 15 hours every week to calendar conflicts, unstructured meeting notes, delayed follow-ups, and lack of pre-meeting intelligence.\n\nThe DevOpsTRIO Executive Assistant functions as an always-on digital Chief of Staff. It coordinates calendars with high-priority stakeholders, researches meeting attendees, drafts context-rich briefing memos, and ensures executive decisions turn into tracked project deliverables immediately.",
+    description: "Enterprise executives lose over 15 hours every week to calendar conflicts, unstructured meeting notes, delayed follow-ups, and lack of pre-meeting intelligence.\n\nThe Devopstrio Executive Assistant functions as an always-on digital Chief of Staff. It coordinates calendars with high-priority stakeholders, researches meeting attendees, drafts context-rich briefing memos, and ensures executive decisions turn into tracked project deliverables immediately.",
     keyPoints: [
       "Autonomous 60-second attendee briefing dossiers with LinkedIn & company news",
       "Real-time executive meeting transcription, synthesis, and Jira/Asana task creation",
@@ -201,7 +201,7 @@ export const executiveAssistantData = {
     client: "Global Enterprise Technology Unicorn",
     industry: "Enterprise Software",
     headline: "How 45 C-Suite Executives at a $4B Unicorn Reclaimed 14+ Hours Every Week",
-    quote: "DevOpsTRIO Executive Assistant is like having a seasoned Chief of Staff in your pocket. Meeting prep and follow-ups happen instantly with zero dropped balls.",
+    quote: "Devopstrio Executive Assistant is like having a seasoned Chief of Staff in your pocket. Meeting prep and follow-ups happen instantly with zero dropped balls.",
     author: "Chief Executive Officer & Co-Founder",
     company: "Publicly Traded SaaS Enterprise",
     image: caseImg,

@@ -1,8 +1,8 @@
 import img1 from '../../assets/fresh/agent_code_refactoring.jpg';
 import img2 from '../../assets/fresh/programming-background-with-person-working-with-codes-computer.jpg';
 import img3 from '../../assets/fresh/kubernetes_cluster_nodes.jpg';
-import img4 from '../../assets/fresh/agent_code_refactoring.jpg';
-import img5 from '../../assets/fresh/agent_code_refactoring.jpg';
+import img4 from '../../assets/fresh/devops_cloud_console.jpg';
+import img5 from '../../assets/fresh/1200x627_blog-buildingtrust.webp';
 import img6 from '../../assets/fresh/serviceman-server-hub-checking-documentation-supercomputers.jpg';
 import img7 from '../../assets/fresh/binary_code_tunnel.jpg';
 import img8 from '../../assets/fresh/person-using-ar-technology-perform-their-occupation.jpg';
@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Autonomous CI/CD Orchestration & Shift-Left Engineering",
-    paragraph: "DevOpsTRIO supercharges engineering organizations by embedding cognitive AI directly into the software development lifecycle. Our DevOps AI models review pull requests for hidden race conditions, generate unit and integration tests for legacy codebases, and optimize cloud infrastructure costs.\n\nBy analyzing historical deployment telemetry and code churn, our platform scores deployment risk before you merge to production—allowing development teams to ship software 5x faster while maintaining enterprise-grade security and stability.",
+    paragraph: "Devopstrio supercharges engineering organizations by embedding cognitive AI directly into the software development lifecycle. Our DevOps AI models review pull requests for hidden race conditions, generate unit and integration tests for legacy codebases, and optimize cloud infrastructure costs.\n\nBy analyzing historical deployment telemetry and code churn, our platform scores deployment risk before you merge to production—allowing development teams to ship software 5x faster while maintaining enterprise-grade security and stability.",
     image: img2
   },
   benefitsBento: [

@@ -47,12 +47,12 @@ const RESOURCES = [
 
 const styles = {
   section: {
-    padding: "130px 5%",
+    padding: "130px 24px",
     backgroundColor: "#000000",
     fontFamily: FONT
   },
   container: {
-    maxWidth: "1400px",
+    maxWidth: "1280px",
     margin: "0 auto",
   },
   header: {
@@ -99,6 +99,11 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     transition: "all 0.35s ease",
+  
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   imgWrap: {
     position: "relative",

@@ -14,7 +14,7 @@ export const legalAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Accelerate Contract Turnaround with",
-    titleBold: "DevOpsTRIO Legal Agent",
+    titleBold: "Devopstrio Legal Agent",
     description: "Audit complex MSAs, NDAs, DPAs, and vendor agreements against enterprise legal playbooks in seconds. Automatically insert pre-approved fallback clauses, flag uncapped liabilities, and seal cryptographic audit trails.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const legalAgentData = {
   ],
   overview: {
     heading: "The Autonomous Digital Counsel for Modern In-House Legal Teams",
-    description: "Enterprise general counsels and legal teams are inundated by high-volume routine contract reviews, slowing down revenue deals and vendor onboarding.\n\nThe DevOpsTRIO Legal Agent operates as a collaborative swarm of specialized cognitive legal sub-agents. It ingests inbound contract redlines, checks each clause against your corporate risk playbooks, inserts negotiated standard positions, and routes non-standard terms to human counsel with precise risk briefs.",
+    description: "Enterprise general counsels and legal teams are inundated by high-volume routine contract reviews, slowing down revenue deals and vendor onboarding.\n\nThe Devopstrio Legal Agent operates as a collaborative swarm of specialized cognitive legal sub-agents. It ingests inbound contract redlines, checks each clause against your corporate risk playbooks, inserts negotiated standard positions, and routes non-standard terms to human counsel with precise risk briefs.",
     keyPoints: [
       "Sub-second analysis of MSAs, NDAs, DPAs, and software license agreements",
       "Automated Word (DOCX) redline generation with pre-approved standard fallbacks",
@@ -201,7 +201,7 @@ export const legalAgentData = {
     client: "Global Financial Services Enterprise",
     industry: "Banking & Financial Services",
     headline: "How a Global Bank Accelerated Commercial Contract Turnaround by 88% with Zero Compliance Slips",
-    quote: "DevOpsTRIO Legal Agent eliminated our review backlogs entirely. Our commercial attorneys now focus strictly on high-stakes strategic negotiations rather than routine NDA redlines.",
+    quote: "Devopstrio Legal Agent eliminated our review backlogs entirely. Our commercial attorneys now focus strictly on high-stakes strategic negotiations rather than routine NDA redlines.",
     author: "General Counsel & VP of Legal Operations",
     company: "Publicly Traded Banking Institution",
     image: caseImg,

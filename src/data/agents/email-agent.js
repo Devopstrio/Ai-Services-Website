@@ -14,7 +14,7 @@ export const emailAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Inbox Zero on Autopilot with",
-    titleBold: "DevOpsTRIO Email Agent",
+    titleBold: "Devopstrio Email Agent",
     description: "Autonomous email agent that filters incoming messages by business urgency, synthesizes context-aligned reply drafts, extracts action items, and schedules meetings without human delays.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const emailAgentData = {
   ],
   overview: {
     heading: "The Autonomous Digital Email Concierge for Busy Professionals",
-    description: "Knowledge workers spend over 3 hours every day drowning in email newsletters, calendar requests, vendor pitches, and buried customer emergencies.\n\nThe DevOpsTRIO Email Agent acts as an intelligent executive gatekeeper. It prioritizes urgent messages from key clients and leadership, drafts nuanced contextual responses matching your tone, tracks promises made in outgoing threads, and organizes calendar bookings autonomously.",
+    description: "Knowledge workers spend over 3 hours every day drowning in email newsletters, calendar requests, vendor pitches, and buried customer emergencies.\n\nThe Devopstrio Email Agent acts as an intelligent executive gatekeeper. It prioritizes urgent messages from key clients and leadership, drafts nuanced contextual responses matching your tone, tracks promises made in outgoing threads, and organizes calendar bookings autonomously.",
     keyPoints: [
       "24/7 intelligent inbox triage filtering newsletters, spam, and urgent client requests",
       "Context-aware reply draft generation matching your authentic personal communication tone",
@@ -201,7 +201,7 @@ export const emailAgentData = {
     client: "Global Venture Capital & Advisory Firm",
     industry: "Financial Services & Venture",
     headline: "How 80 Partners at a Global Venture Firm Cut Email Overhead by 80% and Never Dropped a Deal Follow-Up",
-    quote: "DevOpsTRIO Email Agent is like having a full-time executive assistant managing your inbox. My response time improved by 4x while my daily email time dropped from 3 hours to 20 minutes.",
+    quote: "Devopstrio Email Agent is like having a full-time executive assistant managing your inbox. My response time improved by 4x while my daily email time dropped from 3 hours to 20 minutes.",
     author: "Managing Partner",
     company: "Global Venture Capital Group",
     image: caseImg,

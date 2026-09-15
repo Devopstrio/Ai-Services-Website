@@ -14,7 +14,7 @@ export const researchAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Deep Market Intelligence with",
-    titleBold: "DevOpsTRIO Research Agent",
+    titleBold: "Devopstrio Research Agent",
     description: "Autonomous scientific and market intelligence agent that scrapes thousands of SEC filings, patent registries, clinical trials, and academic papers to compile comprehensive 20-page strategic executive dossiers in minutes.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const researchAgentData = {
   ],
   overview: {
     heading: "The Autonomous Strategic Intelligence Analyst for Enterprise Leaders",
-    description: "Strategy, product, and investment teams spend weeks compiling competitor dossiers, parsing complex 10-K regulatory disclosures, and tracking patent filings.\n\nThe DevOpsTRIO Research Agent deploys a coordinated swarm of investigative research agents. It scours public and proprietary databases, synthesizes multi-perspective analysis, cross-verifies conflicting claims, and delivers boardroom-ready strategic intelligence reports overnight.",
+    description: "Strategy, product, and investment teams spend weeks compiling competitor dossiers, parsing complex 10-K regulatory disclosures, and tracking patent filings.\n\nThe Devopstrio Research Agent deploys a coordinated swarm of investigative research agents. It scours public and proprietary databases, synthesizes multi-perspective analysis, cross-verifies conflicting claims, and delivers boardroom-ready strategic intelligence reports overnight.",
     keyPoints: [
       "Deep multi-source research across SEC EDGAR, Google Patents, PubMed, and global news feeds",
       "Automated competitor landscape matrices and feature-by-feature teardowns",
@@ -201,7 +201,7 @@ export const researchAgentData = {
     client: "Global Private Equity & Growth Fund",
     industry: "Investment Management",
     headline: "How a $12B Private Equity Firm Accelerated Deal Due Diligence from 3 Weeks to 4 Hours",
-    quote: "DevOpsTRIO Research Agent is our secret weapon for thesis generation. It delivers deeper market intelligence in 15 minutes than external agencies produce in a month.",
+    quote: "Devopstrio Research Agent is our secret weapon for thesis generation. It delivers deeper market intelligence in 15 minutes than external agencies produce in a month.",
     author: "Managing Director & Head of Tech Investments",
     company: "Global Growth Equity Fund",
     image: caseImg,

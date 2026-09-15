@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Conversational Voice Intelligence & Real-Time Agent Guidance",
-    paragraph: "DevOpsTRIO upgrades traditional call centers into intelligent conversational hubs. Our low-latency voice AI engines engage callers in human-like dialogue, understanding natural speech, interruptions, accents, and emotional nuances to resolve caller requests autonomously.\n\nFor human-handled calls, our Real-Time Agent Whisper platform listens to the interaction, automatically surfacing policy answers, customer purchase history, and recommended next actions onto the representative's screen in under 200 milliseconds.",
+    paragraph: "Devopstrio upgrades traditional call centers into intelligent conversational hubs. Our low-latency voice AI engines engage callers in human-like dialogue, understanding natural speech, interruptions, accents, and emotional nuances to resolve caller requests autonomously.\n\nFor human-handled calls, our Real-Time Agent Whisper platform listens to the interaction, automatically surfacing policy answers, customer purchase history, and recommended next actions onto the representative's screen in under 200 milliseconds.",
     image: img2
   },
   benefitsBento: [

@@ -1,10 +1,10 @@
 import img1 from '../../assets/fresh/cheerful-business-team-watching-presentation-laptop-sitting-workplace-staring-display-smiling-copy-space-business-meeting-concept.jpg';
 import img2 from '../../assets/fresh/ai_consultants_discussion.jpg';
-import img3 from '../../assets/fresh/ai_consultants_discussion.jpg';
+import img3 from '../../assets/fresh/agent_knowledge_graph_synthesis.jpg';
 import img4 from '../../assets/fresh/microsoft-teams-and-sharepoint-the-perfect-collaboration-bundle-01.webp';
 import img5 from '../../assets/fresh/executive_boardroom_ai.jpg';
 import img6 from '../../assets/solutions/26.jpg';
-import img7 from '../../assets/fresh/executive_boardroom_ai.jpg';
+import img7 from '../../assets/fresh/agent_legal_compliance.jpg';
 import img8 from '../../assets/fresh/lead_developer_mentor.jpg';
 
 const data = {
@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Predictive Revenue Orchestration & Deal Acceleration",
-    paragraph: "DevOpsTRIO equips modern sales organizations with enterprise AI that turns raw pipeline data into actionable revenue outcomes. Our platforms autonomously analyze buyer signals, historical win/loss patterns, and market intent to focus your sales reps on the deals most likely to close.\n\nFrom automated CRM updates and custom battlecard generation to real-time speech analytics during executive demo calls, we empower revenue teams to identify risks early, navigate multi-stakeholder purchasing committees, and consistently exceed quarterly targets.",
+    paragraph: "Devopstrio equips modern sales organizations with enterprise AI that turns raw pipeline data into actionable revenue outcomes. Our platforms autonomously analyze buyer signals, historical win/loss patterns, and market intent to focus your sales reps on the deals most likely to close.\n\nFrom automated CRM updates and custom battlecard generation to real-time speech analytics during executive demo calls, we empower revenue teams to identify risks early, navigate multi-stakeholder purchasing committees, and consistently exceed quarterly targets.",
     image: img2
   },
   benefitsBento: [

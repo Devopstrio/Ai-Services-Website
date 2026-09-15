@@ -14,7 +14,7 @@ export const hragentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Enterprise HR Operations with",
-    titleBold: "DevOpsTRIO HR Agent",
+    titleBold: "Devopstrio HR Agent",
     description: "Deploy an autonomous cognitive agent that executes end-to-end talent operations — from onboarding and policy resolution to retention intelligence — across Workday, ServiceNow, Okta, and Slack.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const hragentData = {
   ],
   overview: {
     heading: "The Autonomous Digital Workforce for Modern HR",
-    description: "Traditional HR operations are held back by fragmented tools, manual ticket queues, and reactive engagement. The DevOpsTRIO HR Agent changes that.\n\nOperating as a collaborative swarm of specialized cognitive agents, it autonomously orchestrates complex workflows — from onboarding to retention — while enforcing enterprise guardrails at every step.",
+    description: "Traditional HR operations are held back by fragmented tools, manual ticket queues, and reactive engagement. The Devopstrio HR Agent changes that.\n\nOperating as a collaborative swarm of specialized cognitive agents, it autonomously orchestrates complex workflows — from onboarding to retention — while enforcing enterprise guardrails at every step.",
     keyPoints: [
       "24/7 multi-lingual HR policy and benefits assistant",
       "Zero-touch employee onboarding and IT provisioning",
@@ -202,7 +202,7 @@ export const hragentData = {
     client: "Global FinTech Enterprise",
     industry: "Financial Services",
     headline: "12,000-Employee FinTech Reduced HR Ticket Backlogs by 82% in 60 Days",
-    quote: "The DevOpsTRIO HR Agent transformed our people operations. What used to take days of email handoffs now settles automatically in seconds.",
+    quote: "The Devopstrio HR Agent transformed our people operations. What used to take days of email handoffs now settles automatically in seconds.",
     author: "Global Head of People & Culture",
     company: "Publicly Traded FinTech Unicorn",
     image: caseImg,

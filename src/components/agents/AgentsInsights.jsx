@@ -6,7 +6,7 @@ import insight2 from "../../assets/fresh/modern-interior-design-office.jpg";
 import insight3 from "../../assets/fresh/multinational_team_summit.jpg";
 import insight4 from "../../assets/fresh/office-work-environment-stockcake.jpg";
 import insight5 from "../../assets/fresh/sales-growth-graph-on-laptop-screen-with-pointing-hand-illustrating-business-success-and-market-trend-photo.jpeg";
-import insight6 from "../../assets/fresh/1000294122.png";
+import insight6 from "../../assets/fresh/cloud_data_center_hall.jpg";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
@@ -61,8 +61,8 @@ const styles = {
     textAlign: "left",
   },
   headerRow: {
-    padding: "0 5%",
-    maxWidth: "1300px",
+    padding: "0 24px",
+    maxWidth: "1280px",
     margin: "0 auto 34px",
   },
   heading: {
@@ -98,7 +98,7 @@ const styles = {
     justifyContent: "flex-end",
     gap: "12px",
     padding: "30px 5% 0",
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto",
   },
   navBtn: {
@@ -114,7 +114,7 @@ const styles = {
     color: "#fff",
   },
   scrollWrap: {
-    padding: "0 5%",
+    padding: "0 24px",
   },
   track: {
     display: "flex",
@@ -123,7 +123,7 @@ const styles = {
     paddingBottom: "20px",
     scrollbarWidth: "none",
     msOverflowStyle: "none",
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto",
   },
   card: {
@@ -138,6 +138,11 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     transition: "border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease",
+  
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   imgWrap: {
     position: "relative",

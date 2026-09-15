@@ -28,7 +28,7 @@ const CARDS = [
   {
     badge: "INCUBATION",
     title: "Venture AI Co-Creation",
-    body: "Partner with DevOpsTRIO to build and launch novel AI-native software products and spinouts.",
+    body: "Partner with Devopstrio to build and launch novel AI-native software products and spinouts.",
     more: "We provide dedicated technical co-founders, research engineers, and cloud infrastructure credits to accelerate zero-to-one product development.",
     image: inno3
   },
@@ -59,14 +59,14 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "110px 5%",
+    padding: "110px 24px",
     background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
     fontFamily: FONT,
     boxSizing: "border-box",
     textAlign: "left",
   },
   heading: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto 50px",
     fontFamily: FONT,
     color: "#FFFFFF",
@@ -77,7 +77,7 @@ const styles = {
   headingAccent: { color: "#E11D48" },
 
   grid: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
@@ -94,6 +94,11 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     transition: "all 0.35s ease",
+  
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
 
   imageWrap: {

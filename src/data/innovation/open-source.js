@@ -14,8 +14,8 @@ export const openSourceData = {
     badge: "INNOVATION LAB // OPEN SOURCE",
     subBadge: "APACHE 2.0 COMMUNITY FRAMEWORKS",
     titleLight: "Empowering the Global AI Community with",
-    titleBold: "DevOpsTRIO Open Source",
-    description: "We believe frontier artificial intelligence must be transparent, auditable, and accessible. DevOpsTRIO contributes open-weights foundation models, FlashAttention kernels, and agentic orchestration frameworks used by over 500,000 developers worldwide.",
+    titleBold: "Devopstrio Open Source",
+    description: "We believe frontier artificial intelligence must be transparent, auditable, and accessible. Devopstrio contributes open-weights foundation models, FlashAttention kernels, and agentic orchestration frameworks used by over 500,000 developers worldwide.",
     bgImage: heroBg,
     liveBadge: "2.4M+ PyPI Downloads"
   },
@@ -127,21 +127,21 @@ export const openSourceData = {
     {
       title: "SwarmMesh: A High-Throughput Decentralized Runtime for Autonomous Agent Swarms",
       venue: "OSDI Enterprise Systems 2025",
-      authors: "DevOpsTRIO Open Source Team & University of Washington",
+      authors: "Devopstrio Open Source Team & University of Washington",
       doi: "10.48550/arXiv.2508.08119",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "TrioKernel: Block-Quantized FP8 Attention Decoding on Hopper Architecture",
       venue: "ACM PPoPP High Performance Parallelism 2025",
-      authors: "DevOpsTRIO Systems Group & NVIDIA Research Collaborators",
+      authors: "Devopstrio Systems Group & NVIDIA Research Collaborators",
       doi: "10.48550/arXiv.2509.11902",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "OpenSAE: Standardized Dictionaries and Benchmarks for Mechanistic Interpretability",
       venue: "NeurIPS Safety & Benchmarks 2025",
-      authors: "DevOpsTRIO Safety Lab & Alignment Research Center",
+      authors: "Devopstrio Safety Lab & Alignment Research Center",
       doi: "10.48550/arXiv.2511.04113",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
@@ -150,7 +150,7 @@ export const openSourceData = {
     partner: "Global Open-Source Developer & AI Startup Ecosystem",
     collaborationType: "Community Framework Adoption",
     headline: "How SwarmMesh and TrioKernel Reduced Cloud GPU Inference Costs by 65% for 1,200+ AI Startups Worldwide",
-    quote: "DevOpsTRIO's open-source kernels are an indispensable component of our high-concurrency production stack. They enabled us to deliver sub-100ms LLM voice streaming without quadrupling our GPU cluster budget.",
+    quote: "Devopstrio's open-source kernels are an indispensable component of our high-concurrency production stack. They enabled us to deliver sub-100ms LLM voice streaming without quadrupling our GPU cluster budget.",
     author: "Chief Technology Officer",
     organization: "Voice AI & Generative Media Unicorn",
     image: caseImg,

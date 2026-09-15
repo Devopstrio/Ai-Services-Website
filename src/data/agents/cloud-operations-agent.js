@@ -14,7 +14,7 @@ export const cloudOperationsAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Multi-Cloud Resilience with",
-    titleBold: "DevOpsTRIO Cloud Ops Agent",
+    titleBold: "Devopstrio Cloud Ops Agent",
     description: "Autonomous cloud infrastructure architect that continuously optimizes compute utilization across AWS, Azure, and GCP, rightsizes over-provisioned clusters, reallocates spot instances, and auto-scales fleets with zero downtime risk.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const cloudOperationsAgentData = {
   ],
   overview: {
     heading: "The Autonomous Cloud Architect for Multi-Cloud Fleets",
-    description: "Modern multi-cloud architectures (AWS, Azure, Google Cloud) suffer from spiraling cloud spend, idle unattached storage volumes, and complex cross-region networking overhead.\n\nThe DevOpsTRIO Cloud Operations Agent continuously monitors your entire cloud footprint. It rightsizes over-provisioned EC2/VM instances, schedules dev/staging environment shutdowns, moves cold data to archive tiers, and reroutes network traffic during regional cloud outages.",
+    description: "Modern multi-cloud architectures (AWS, Azure, Google Cloud) suffer from spiraling cloud spend, idle unattached storage volumes, and complex cross-region networking overhead.\n\nThe Devopstrio Cloud Operations Agent continuously monitors your entire cloud footprint. It rightsizes over-provisioned EC2/VM instances, schedules dev/staging environment shutdowns, moves cold data to archive tiers, and reroutes network traffic during regional cloud outages.",
     keyPoints: [
       "24/7 autonomous FinOps rightsizing saving an average of 38% on monthly AWS/Azure/GCP bills",
       "Predictive multi-cloud traffic auto-scaling based on real-time application telemetry",
@@ -201,7 +201,7 @@ export const cloudOperationsAgentData = {
     client: "Global FinTech & Payments Unicorn",
     industry: "Financial Services",
     headline: "How a Global FinTech Cut Cloud Infrastructure Spend by $3.4M While Achieving 99.999% Multi-Cloud Availability",
-    quote: "DevOpsTRIO Cloud Operations Agent delivered ROI within our first 48 hours. It rightsized thousands of nodes and eliminated cloud waste without a single blip in customer traffic.",
+    quote: "Devopstrio Cloud Operations Agent delivered ROI within our first 48 hours. It rightsized thousands of nodes and eliminated cloud waste without a single blip in customer traffic.",
     author: "VP of Global Cloud Infrastructure",
     company: "Publicly Traded FinTech Platform",
     image: caseImg,

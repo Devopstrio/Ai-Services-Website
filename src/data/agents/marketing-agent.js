@@ -14,7 +14,7 @@ export const marketingAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Scale Brand Growth with",
-    titleBold: "DevOpsTRIO Marketing Agent",
+    titleBold: "Devopstrio Marketing Agent",
     description: "Deploy autonomous creative marketing swarms that synthesize brand-aligned thought leadership, generate localized ad creative variants, execute dynamic ABM landing page personalization, and optimize ad spend autonomously.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const marketingAgentData = {
   ],
   overview: {
     heading: "The Autonomous Growth Engine for Modern Marketing Teams",
-    description: "Enterprise marketing teams face bottlenecks in creative production, cross-channel campaign localization, and continuous ABM experimentation.\n\nThe DevOpsTRIO Marketing Agent coordinates specialized sub-agents that continuously analyze market trends, generate on-brand copy and visuals, deploy targeted campaigns across Google, LinkedIn, and Meta, and adjust budgets in real time.",
+    description: "Enterprise marketing teams face bottlenecks in creative production, cross-channel campaign localization, and continuous ABM experimentation.\n\nThe Devopstrio Marketing Agent coordinates specialized sub-agents that continuously analyze market trends, generate on-brand copy and visuals, deploy targeted campaigns across Google, LinkedIn, and Meta, and adjust budgets in real time.",
     keyPoints: [
       "Autonomous 24/7 campaign generation across email, search, display & social channels",
       "Dynamic real-time landing page and copy personalization for Tier-1 ABM accounts",
@@ -202,7 +202,7 @@ export const marketingAgentData = {
     client: "Global B2B DevOps Platform",
     industry: "Developer Tools",
     headline: "How a Cloud Infrastructure Unicorn Doubled Inbound Demo Requests While Slashing CAC by 48%",
-    quote: "DevOpsTRIO Marketing Agent changed our entire go-to-market speed. We launch hyper-personalized campaigns in minutes that used to take an agency six weeks.",
+    quote: "Devopstrio Marketing Agent changed our entire go-to-market speed. We launch hyper-personalized campaigns in minutes that used to take an agency six weeks.",
     author: "VP of Global Demand Generation",
     company: "Publicly Traded Cloud Platform",
     image: caseImg,

@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 /**
- * AIService.jsx — DevOpsTRIO AI Services
- * "What is DevOpsTRIO AI" — Label + large statement paragraph, subtle vertical divider.
+ * AIService.jsx — Devopstrio AI Services
+ * "What is Devopstrio AI" — Label + large statement paragraph, subtle vertical divider.
  * Obsidian dark theme, #E11D48 accent, Inter typography.
  */
 
@@ -13,7 +13,7 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "100px 5%",
+    padding: "100px 24px",
     backgroundColor: "#030303",
     background: "radial-gradient(circle at 50% 50%, rgba(225, 29, 72, 0.06) 0%, rgba(3, 3, 3, 1) 75%)",
     fontFamily: '"Inter", "DM Sans", system-ui, -apple-system, sans-serif',
@@ -23,7 +23,7 @@ const styles = {
     zIndex: 10,
   },
   grid: {
-    maxWidth: "1360px",
+    maxWidth: "1280px",
     margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "220px 1fr",
@@ -119,7 +119,7 @@ const content = [
   { text: "measurable operational breakthroughs and compounding ROI through enterprise AI.", type: "accent" },
 ];
 
-export default function WhatIsDevOpsTRIO() {
+export default function WhatIsDevopstrio() {
   return (
     <section style={styles.section}>
       <motion.div

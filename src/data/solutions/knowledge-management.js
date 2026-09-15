@@ -1,7 +1,7 @@
 import img1 from '../../assets/fresh/ai_consultants_discussion.jpg';
 import img2 from '../../assets/fresh/lead_developer_mentor.jpg';
 import img3 from '../../assets/fresh/executive_boardroom_ai.jpg';
-import img4 from '../../assets/fresh/executive_boardroom_ai.jpg';
+import img4 from '../../assets/fresh/agent_devops_cicd.jpg';
 import img5 from '../../assets/fresh/dashboard_executive_kpi.jpg';
 import img6 from '../../assets/fresh/modern-interior-design-office.jpg';
 import img7 from '../../assets/fresh/cheerful-business-team-watching-presentation-laptop-sitting-workplace-staring-display-smiling-copy-space-business-meeting-concept.jpg';
@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Enterprise Neural Search & Grounded Conversational RAG",
-    paragraph: "DevOpsTRIO helps global organizations eliminate the hundreds of hours engineers and business leaders lose every year searching for critical documents. Our neural knowledge platform indexes enterprise data across diverse storage silos while enforcing granular, real-time Role-Based Access Control (RBAC).\n\nWhen employees ask questions in natural language, our systems generate authoritative, cited answers drawn directly from verified company documentation—ensuring absolute factual accuracy, zero AI hallucinations, and airtight corporate data privacy.",
+    paragraph: "Devopstrio helps global organizations eliminate the hundreds of hours engineers and business leaders lose every year searching for critical documents. Our neural knowledge platform indexes enterprise data across diverse storage silos while enforcing granular, real-time Role-Based Access Control (RBAC).\n\nWhen employees ask questions in natural language, our systems generate authoritative, cited answers drawn directly from verified company documentation—ensuring absolute factual accuracy, zero AI hallucinations, and airtight corporate data privacy.",
     image: img2
   },
   benefitsBento: [

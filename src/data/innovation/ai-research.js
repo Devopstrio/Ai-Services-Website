@@ -15,7 +15,7 @@ export const aiResearchData = {
     subBadge: "FRONTIER AI & ADVANCED SCIENCE",
     titleLight: "Pioneering Frontier AI with",
     titleBold: "Mathematical Rigor & World Models",
-    description: "DevOpsTRIO AI Research invents foundational model architectures, neuro-symbolic reasoning frameworks, and provable safety alignment — transforming theoretical breakthroughs into scalable enterprise impact.",
+    description: "Devopstrio AI Research invents foundational model architectures, neuro-symbolic reasoning frameworks, and provable safety alignment — transforming theoretical breakthroughs into scalable enterprise impact.",
     bgImage: heroBg,
     liveBadge: "Active Cohort 2026-Q3"
   },
@@ -127,21 +127,21 @@ export const aiResearchData = {
     {
       title: "Provable Neuro-Symbolic Synthesis for High-Assurance Enterprise Autonomous Systems",
       venue: "NeurIPS 2025 (Oral)",
-      authors: "Dr. K. Vance, Dr. E. Rostova, DevOpsTRIO Research & Stanford University",
+      authors: "Dr. K. Vance, Dr. E. Rostova, Devopstrio Research & Stanford University",
       doi: "10.48550/arXiv.2511.08921",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Scalable Mechanistic Interpretability via Hierarchical Multi-Scale Sparse Autoencoders",
       venue: "ICML 2025 (Spotlight)",
-      authors: "Dr. S. Chen, M. Al-Mansoor, DevOpsTRIO Safety Group & MIT CSAIL",
+      authors: "Dr. S. Chen, M. Al-Mansoor, Devopstrio Safety Group & MIT CSAIL",
       doi: "10.48550/arXiv.2508.14022",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     },
     {
       title: "Continuous Spatio-Temporal Diffusion for Transonic Physical Dynamics Simulation",
       venue: "CVPR 2026 (Highlight)",
-      authors: "DevOpsTRIO World Models Lab & Oxford Visual Geometry Group",
+      authors: "Devopstrio World Models Lab & Oxford Visual Geometry Group",
       doi: "10.48550/arXiv.2602.04118",
       downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
@@ -149,8 +149,8 @@ export const aiResearchData = {
   caseStudy: {
     partner: "Global Aerospace & Defense Consortium",
     collaborationType: "Frontier Research Partnership",
-    headline: "How DevOpsTRIO AI Research Accelerated Quantum-Resistant Cryptography and Aerospace Simulation by 22x",
-    quote: "DevOpsTRIO AI Research provides the rare combination of pure mathematical rigor and scalable production architecture. Their neuro-symbolic algorithms cut our physical flight simulator computation from 3 days to 45 seconds while maintaining provable mathematical correctness.",
+    headline: "How Devopstrio AI Research Accelerated Quantum-Resistant Cryptography and Aerospace Simulation by 22x",
+    quote: "Devopstrio AI Research provides the rare combination of pure mathematical rigor and scalable production architecture. Their neuro-symbolic algorithms cut our physical flight simulator computation from 3 days to 45 seconds while maintaining provable mathematical correctness.",
     author: "Chief Scientist & Fellow",
     organization: "Global Aerospace & Advanced Computing Institute",
     image: caseImg,

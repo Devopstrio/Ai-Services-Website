@@ -10,7 +10,7 @@ const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
   section: {
-    padding: "130px 5%",
+    padding: "130px 24px",
     backgroundColor: "#050505",
     fontFamily: FONT,
     display: "flex",

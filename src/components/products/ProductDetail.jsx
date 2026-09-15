@@ -98,9 +98,9 @@ export default function ProductDetail() {
             position: "relative",
             zIndex: 1,
             textAlign: "left",
-            maxWidth: "1350px",
+            maxWidth: "1280px",
             width: "100%",
-            padding: "0 5%",
+            padding: "0 24px",
             opacity: opacityText
           }}
         >
@@ -187,8 +187,6 @@ export default function ProductDetail() {
 
             <a
               href="https://devopstrio.co.uk/contact#contact-form"
-              target="_blank"
-              rel="noreferrer"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -216,10 +214,10 @@ export default function ProductDetail() {
       </section>
 
       {/* 2. METRICS BANNER - Glassmorphism Strip */}
-      <section style={{ position: "relative", zIndex: 10, marginTop: "-40px", padding: "0 5%" }}>
+      <section style={{ position: "relative", zIndex: 10, marginTop: "-40px", padding: "0 24px" }}>
         <div
           style={{
-            maxWidth: "1350px",
+            maxWidth: "1280px",
             margin: "0 auto",
             background: "rgba(15,15,15,0.75)",
             backdropFilter: "blur(20px)",
@@ -284,7 +282,7 @@ export default function ProductDetail() {
       <section style={{ padding: "120px 5% 100px 5%" }}>
         <div
           style={{
-            maxWidth: "1350px",
+            maxWidth: "1280px",
             margin: "0 auto",
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
@@ -309,8 +307,6 @@ export default function ProductDetail() {
             </p>
             <a
               href="https://devopstrio.co.uk/contact#contact-form"
-              target="_blank"
-              rel="noreferrer"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -361,7 +357,7 @@ export default function ProductDetail() {
 
       {/* 4. INTERACTIVE FEATURE DEEP-DIVE (Tabbed Product Capabilities) */}
       <section style={{ padding: "80px 5% 120px 5%", backgroundColor: "#050505" }}>
-        <div style={{ maxWidth: "1350px", margin: "0 auto" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "50px" }}>
             <div style={{ color: "#E11D48", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "14px" }}>
               MODULAR CAPABILITIES
@@ -449,8 +445,8 @@ export default function ProductDetail() {
 
       {/* 5. INTERACTIVE CANDIDATE INTELLIGENCE SIMULATOR */}
       {data.interactiveDemo && (
-        <section style={{ padding: "100px 5%", backgroundColor: "#000000" }}>
-          <div style={{ maxWidth: "1350px", margin: "0 auto" }}>
+        <section style={{ padding: "100px 24px", backgroundColor: "#000000" }}>
+          <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <div style={{ textAlign: "center", marginBottom: "50px" }}>
               <div style={{ color: "#E11D48", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "14px" }}>
                 LIVE PRODUCT SIMULATOR
@@ -557,8 +553,6 @@ export default function ProductDetail() {
                   </div>
                   <a
                     href="https://devopstrio.co.uk/contact#contact-form"
-                    target="_blank"
-                    rel="noreferrer"
                     style={{
                       padding: "10px 20px",
                       backgroundColor: "#E11D48",
@@ -579,8 +573,8 @@ export default function ProductDetail() {
       )}
 
       {/* 6. HOW IT WORKS / WORKFLOW */}
-      <section style={{ padding: "100px 5%", backgroundColor: "#050505" }}>
-        <div style={{ maxWidth: "1350px", margin: "0 auto" }}>
+      <section style={{ padding: "100px 24px", backgroundColor: "#050505" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
             <div style={{ color: "#E11D48", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "14px" }}>
               END-TO-END PIPELINE
@@ -631,8 +625,8 @@ export default function ProductDetail() {
       </section>
 
       {/* 7. ENTERPRISE INTEGRATIONS & SECURITY */}
-      <section style={{ padding: "100px 5%", backgroundColor: "#000000" }}>
-        <div style={{ maxWidth: "1350px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "60px" }}>
+      <section style={{ padding: "100px 24px", backgroundColor: "#000000" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "60px" }}>
           {/* Integrations */}
           <div>
             <div style={{ color: "#E11D48", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "14px" }}>
@@ -701,7 +695,7 @@ export default function ProductDetail() {
         <section style={{ padding: "80px 5% 120px 5%", backgroundColor: "#050505" }}>
           <div
             style={{
-              maxWidth: "1350px",
+              maxWidth: "1280px",
               margin: "0 auto",
               background: "#0A0A0A",
               border: "1px solid rgba(255,255,255,0.08)",
@@ -771,8 +765,6 @@ export default function ProductDetail() {
           <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
             <a
               href="https://devopstrio.co.uk/contact#contact-form"
-              target="_blank"
-              rel="noreferrer"
               style={{
                 display: "inline-flex",
                 alignItems: "center",

@@ -4,12 +4,21 @@ import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 
+import navIndustriesImg from "../../assets/v1_covers/nav_industries.jpg";
+import navCapabilitiesImg from "../../assets/v1_covers/nav_capabilities.png";
+import navSolutionsImg from "../../assets/v1_covers/nav_solutions.jpg";
+import navAgentsImg from "../../assets/v1_covers/nav_agents.png";
+import navIntegrationsImg from "../../assets/v1_covers/nav_integrations.jpg";
+import navInnovationImg from "../../assets/v1_covers/nav_innovation.jpg";
+
+
+
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 const ACCENT = "#E11D48";
 const BG = "#030303";
 const PANEL_BG = "#0A0A0A";
 
-const LOGO_SRC = "https://devopstrio.co.uk/assets/logo/logo.png";
+const LOGO_SRC = "/assets/logo/logo.webp";
 const BRAND_NAME = "Devopstrio";
 
 /* Smooth, consistent motion curve used across the whole nav */
@@ -53,7 +62,7 @@ const NAV_SECTIONS = [
     label: "Industries",
     heading: "Industries",
     image: {
-      src: "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/e-learning-now-serious-mob.jpg",
+      src: navIndustriesImg,
       title: "AI Built for Every Industry",
       description: "From banking to healthcare — tailored AI solutions for your sector.",
       cta: "Explore Industries",
@@ -104,7 +113,7 @@ const NAV_SECTIONS = [
     label: "AI Capabilities",
     heading: "AI Capabilities",
     image: {
-      src: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-crafting-intelligent-experiences-cobalt.png",
+      src: navCapabilitiesImg,
       title: "The Full AI Stack, In-House",
       description: "NLP, vision, generative AI, and MLOps — engineered for the enterprise.",
       cta: "See Capabilities",
@@ -156,7 +165,7 @@ const NAV_SECTIONS = [
     label: "Enterprise Solutions",
     heading: "Enterprise Solutions",
     image: {
-      src: "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/managed-services-model-mob.jpg",
+      src: navSolutionsImg,
       title: "Solutions That Scale With You",
       description: "Purpose-built AI for every function, from HR to compliance.",
       cta: "Explore Solutions",
@@ -219,7 +228,7 @@ const NAV_SECTIONS = [
     label: "AI Products",
     heading: "AI Products",
     image: {
-      src: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-crafting-intelligent-experiences-topaz.png",
+      src: navAgentsImg,
       title: "Products Teams Actually Use",
       description: "AIHire, MailTab, eSigniva, Brio AI and more — ready to deploy out of the box.",
       cta: "Browse Products",
@@ -275,7 +284,7 @@ const NAV_SECTIONS = [
     label: "AI Agents",
     heading: "AI Agents",
     image: {
-      src: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-now-serving-virtual-tennis.jpg",
+      src: navIntegrationsImg,
       title: "Agents That Work Alongside Your Teams",
       description: "From HR to DevOps — autonomous agents built for the enterprise.",
       cta: "Meet the Agents",
@@ -339,7 +348,7 @@ const NAV_SECTIONS = [
     label: "Innovation Lab",
     heading: "Innovation Lab",
     image: {
-      src: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-digitally-empowered-food-beverage.jpg",
+      src: navInnovationImg,
       title: "Where We Build What's Next",
       description: "Research, prototypes, and open-source experiments from our labs.",
       cta: "Visit the Lab",
@@ -377,7 +386,7 @@ const NAV_SECTIONS = [
     label: "Integrations",
     heading: "Integrations",
     image: {
-      src: "https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-transforming-experience-topaz.png",
+      src: "/assets/services/webp/usecase_integration.webp",
       title: "Connect AI to Your Entire Stack",
       description: "Pre-built connectors for CRM, ERP, databases, and LLM providers.",
       cta: "View All Integrations",
@@ -738,6 +747,7 @@ function ImageBanner({ image }) {
 }
 
 /* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
 /*  Full-screen nav overlay                                              */
 /* ---------------------------------------------------------------------- */
 
@@ -783,34 +793,69 @@ function FullScreenNav({ open, onClose }) {
             overflow: "hidden",
           }}
         >
-          {/* Close button */}
-          <motion.button
-            initial={{ opacity: 0, scale: 0.85 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, delay: 0.1, ease: EASE }}
-            whileHover={{ scale: 1.08, backgroundColor: "rgba(225,29,72,0.18)" }}
-            whileTap={{ scale: 0.92 }}
-            onClick={onClose}
-            aria-label="Close menu"
+          {/* Top Bar inside Drawer: Close Button + Brand Logo Link */}
+          <div
             style={{
               position: "absolute",
               top: "clamp(16px, 2vw, 24px)",
               left: "clamp(16px, 2vw, 24px)",
-              width: "clamp(36px, 3vw, 44px)",
-              height: "clamp(36px, 3vw, 44px)",
-              borderRadius: "50%",
-              border: "1px solid rgba(255,255,255,0.15)",
-              backgroundColor: "rgba(255,255,255,0.04)",
-              color: "#ffffff",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
-              cursor: "pointer",
-              zIndex: 5,
+              gap: "14px",
+              zIndex: 10,
             }}
           >
-            <X size={clamp(18, 1.5, 20)} />
-          </motion.button>
+            <motion.button
+              initial={{ opacity: 0, scale: 0.85 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: 0.1, ease: EASE }}
+              whileHover={{ scale: 1.08, backgroundColor: "rgba(225,29,72,0.18)" }}
+              whileTap={{ scale: 0.92 }}
+              onClick={onClose}
+              aria-label="Close menu"
+              style={{
+                width: "clamp(36px, 3vw, 44px)",
+                height: "clamp(36px, 3vw, 44px)",
+                borderRadius: "50%",
+                border: "1px solid rgba(255,255,255,0.15)",
+                backgroundColor: "rgba(255,255,255,0.04)",
+                color: "#ffffff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: "pointer",
+              }}
+            >
+              <X size={clamp(18, 1.5, 20)} />
+            </motion.button>
+
+            <a
+              href="https://devopstrio.co.uk/"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                textDecoration: "none",
+                cursor: "pointer",
+              }}
+            >
+              <img
+                src={LOGO_SRC}
+                alt="Devopstrio logo"
+                style={{ width: "32px", height: "32px", objectFit: "contain" }}
+              />
+              <span
+                style={{
+                  fontSize: "clamp(18px, 1.6vw, 22px)",
+                  fontWeight: 700,
+                  color: "#ffffff",
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Devopstrio
+              </span>
+            </a>
+          </div>
 
           {/* Sidebar */}
           <motion.div
@@ -821,7 +866,7 @@ function FullScreenNav({ open, onClose }) {
               width: "clamp(230px, 22vw, 300px)",
               flexShrink: 0,
               height: "100%",
-              padding: "clamp(70px, 8vh, 96px) clamp(12px, 1.5vw, 20px) clamp(20px, 3vh, 32px)",
+              padding: "clamp(75px, 9vh, 100px) clamp(12px, 1.5vw, 20px) clamp(20px, 3vh, 32px)",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
@@ -846,50 +891,6 @@ function FullScreenNav({ open, onClose }) {
               <div
                 style={{
                   display: "flex",
-                  flexDirection: "column",
-                  gap: "2px",
-                  paddingTop: "14px",
-                  borderTop: "1px solid rgba(255,255,255,0.08)",
-                }}
-              >
-                {/* {SECONDARY_LINKS.map((link, i) => (
-                  <motion.div
-                    key={link.label}
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0, transition: { duration: 0.35, delay: 0.05 + i * 0.04, ease: EASE } }}
-                    whileHover={{ x: 4, transition: { duration: 0.2, ease: EASE } }}
-                  >
-                    <div
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.location.href = link.route;
-                      }}
-                      style={{
-                        display: "block",
-                        padding: "9px 18px",
-                        fontSize: "clamp(12.5px, 1vw, 13.5px)",
-                        fontWeight: 500,
-                        color: "rgba(255,255,255,0.5)",
-                        textDecoration: "none",
-                        cursor: "pointer",
-                        transition: "color 0.25s ease",
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.color = ACCENT;
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.color = "rgba(255,255,255,0.5)";
-                      }}
-                    >
-                      {link.label}
-                    </div>
-                  </motion.div>
-                ))} */}
-              </div>
-
-              <div
-                style={{
-                  display: "flex",
                   gap: "clamp(12px, 1.5vw, 16px)",
                   padding: "clamp(14px, 1.8vh, 18px) 18px 0",
                   flexWrap: "wrap",
@@ -899,8 +900,6 @@ function FullScreenNav({ open, onClose }) {
                   <motion.a
                     key={href}
                     href={href}
-                    target="_blank"
-                    rel="noreferrer"
                     whileHover={{ y: -3, scale: 1.12, color: ACCENT }}
                     whileTap={{ scale: 0.9 }}
                     transition={{ type: "spring", stiffness: 300, damping: 18 }}
@@ -1103,130 +1102,64 @@ export default function Header() {
 
   return (
     <>
-      <motion.header
-        initial={{ y: -24, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7, ease: EASE }}
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          right: 0,
-          zIndex: 50,
-          fontFamily: FONT,
-          background: scrolled ? "rgba(3, 3, 3, 0.85)" : "rgba(3, 3, 3, 0.4)",
-          backdropFilter: "blur(14px)",
-          borderBottom: "1px solid rgba(24, 24, 27, 0.6)",
-          transition: "background 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: 1380,
-            margin: "0 auto",
-            padding: "0 clamp(12px, 2vw, 28px)",
-            height: "clamp(68px, 8vh, 82px)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "clamp(10px, 1.5vw, 20px)",
-          }}
+      {/* Centered Capsule Pill Navbar Wrapper */}
+      <div className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 sm:px-6 lg:px-8 py-2 sm:py-3.5 pointer-events-none">
+        <motion.header
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: EASE }}
+          className={`w-full max-w-7xl relative rounded-full border overflow-hidden pointer-events-auto flex items-center justify-between transition-all duration-350 ${
+            scrolled
+              ? "border-zinc-800 bg-[#030303]/95 backdrop-blur-md shadow-[0_20px_40px_rgba(0,0,0,0.6)] py-2.5 sm:py-3.5 px-5 sm:px-8"
+              : "border-zinc-900/50 bg-[#030303]/60 backdrop-blur-sm py-2.5 sm:py-3.5 px-5 sm:px-8"
+          } text-white`}
+          style={{ fontFamily: FONT, isolation: "isolate" }}
         >
-          {/* Left — hamburger + logo */}
-          <div style={{ display: "flex", alignItems: "center", gap: "clamp(10px, 1.2vw, 16px)" }}>
+          {/* Left — Hamburger button + Brand Logo & Name */}
+          <div className="flex items-center gap-3 sm:gap-3.5">
             <motion.button
               aria-label="Open menu"
               onClick={() => setNavOpen(true)}
               whileHover={{ scale: 1.06, backgroundColor: "rgba(225,29,72,0.18)" }}
               whileTap={{ scale: 0.94 }}
               transition={{ duration: 0.25, ease: EASE }}
-              style={{
-                width: "clamp(36px, 3vw, 42px)",
-                height: "clamp(36px, 3vw, 42px)",
-                borderRadius: "50%",
-                border: "1px solid rgba(255,255,255,0.18)",
-                backgroundColor: "rgba(255,255,255,0.05)",
-                color: "#ffffff",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                cursor: "pointer",
-                flexShrink: 0,
-              }}
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-zinc-700/60 bg-zinc-900/60 hover:border-zinc-600 flex items-center justify-center text-white cursor-pointer shrink-0 transition-colors"
             >
               <Menu size={18} />
             </motion.button>
 
-            <div
-              onClick={() => (window.location.href = "/")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "clamp(8px, 1vw, 12px)",
-                textDecoration: "none",
-                cursor: "pointer",
-              }}
+            <a
+              href="/"
+              className="flex items-center gap-2.5 group cursor-pointer select-none no-underline text-white"
             >
               {logoOk ? (
                 <motion.img
                   src={LOGO_SRC}
                   alt={`${BRAND_NAME} logo`}
                   onError={() => setLogoOk(false)}
-                  whileHover={{ scale: 1.06 }}
+                  whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3, ease: EASE }}
-                  style={{
-                    height: "clamp(32px, 3vw, 38px)",
-                    width: "auto",
-                    display: "block",
-                  }}
+                  className="w-9 h-9 sm:w-10 sm:h-10 object-contain transition-transform duration-300"
                 />
               ) : (
                 <motion.span
-                  whileHover={{ scale: 1.06 }}
+                  whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3, ease: EASE }}
-                  style={{
-                    width: "clamp(34px, 3vw, 40px)",
-                    height: "clamp(34px, 3vw, 40px)",
-                    borderRadius: 10,
-                    background: ACCENT,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#ffffff",
-                    fontSize: "18px",
-                    fontWeight: 800,
-                    boxShadow: `0 0 20px rgba(225,29,72,0.5)`,
-                  }}
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#E11D48] flex items-center justify-center text-white font-bold text-base shadow-[0_0_15px_rgba(225,29,72,0.5)]"
                 >
                   {BRAND_NAME.charAt(0)}
                 </motion.span>
               )}
-              <span
-                style={{
-                  fontSize: "clamp(18px, 1.8vw, 22px)",
-                  fontWeight: 700,
-                  color: "#ffffff",
-                  letterSpacing: "-0.02em",
-                  fontFamily: FONT,
-                }}
-              >
+              <span className="text-[21px] sm:text-[24px] font-bold tracking-tight text-white font-sans leading-none">
                 {BRAND_NAME}
               </span>
-            </div>
+            </a>
           </div>
 
-          {/* Center pill nav - desktop only */}
+          {/* Center Links — Clean Direct Links without new tabs */}
           <nav
-            className="desktop-pill-nav"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "4px",
-              padding: "5px 6px",
-              borderRadius: "999px",
-              backgroundColor: "rgba(255,255,255,0.06)",
-              border: "1px solid rgba(255,255,255,0.10)",
-            }}
+            aria-label="Primary navigation"
+            className="hidden lg:flex items-center gap-2 xl:gap-5 2xl:gap-7"
           >
             {TOP_LINKS.map((link) => (
               <motion.a
@@ -1239,77 +1172,27 @@ export default function Header() {
                     setTimeout(() => window.dispatchEvent(new CustomEvent("open-resources-tab")), 20);
                   }
                 }}
-                target={link.route.startsWith("http") ? "_blank" : undefined}
-                rel={link.route.startsWith("http") ? "noopener noreferrer" : undefined}
-                style={{
-                  padding: "8px 18px",
-                  borderRadius: "999px",
-                  fontSize: "clamp(15px, 1.15vw, 17px)",
-                  fontWeight: 600,
-                  letterSpacing: "0.3px",
-                  color: "rgba(255,255,255,0.9)",
-                  textDecoration: "none",
-                  whiteSpace: "nowrap",
-                  cursor: "pointer",
-                  display: "block",
-                  border: "1px solid transparent",
-                  backgroundColor: "transparent",
-                  fontFamily: FONT,
-                }}
-                whileHover={{
-                  backgroundColor: "rgba(225, 29, 72, 0.12)",
-                  borderColor: "rgba(225, 29, 72, 0.4)",
-                  color: "#ffffff",
-                  boxShadow: "0 4px 15px rgba(225, 29, 72, 0.2)",
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ duration: 0.2 }}
+                className="px-2.5 xl:px-3.5 py-1.5 text-base xl:text-[17px] font-semibold tracking-[0.3px] text-white hover:text-rose-500 transition-colors cursor-pointer select-none"
               >
                 {link.label}
               </motion.a>
             ))}
           </nav>
 
-          {/* Right action */}
-          <motion.div
-            onClick={() => (window.location.href = "https://devopstrio.co.uk/contact")}
-            whileHover={{ y: -2, boxShadow: "0 12px 28px -6px rgba(225,29,72,0.8)" }}
-            whileTap={{ y: 0, scale: 0.97 }}
-            transition={{ duration: 0.25, ease: EASE }}
-            style={{
-              fontSize: "13px",
-              fontWeight: 700,
-              letterSpacing: "0.04em",
-              color: "#ffffff",
-              background: ACCENT,
-              padding: "10px 22px",
-              borderRadius: 999,
-              textDecoration: "none",
-              boxShadow: "0 6px 20px -4px rgba(225,29,72,0.6)",
-              whiteSpace: "nowrap",
-              flexShrink: 0,
-              cursor: "pointer",
-              fontFamily: FONT,
-            }}
-          >
-            GET IN TOUCH
-          </motion.div>
-        </div>
-
-        <style>{`
-          @media (max-width: 1024px) {
-            .desktop-pill-nav {
-              display: none !important;
-            }
-          }
-
-          @media (max-width: 768px) {
-            header > div {
-              padding: 0 14px !important;
-            }
-          }
-        `}</style>
-      </motion.header>
+          {/* Right Action — Contact Us Red Pill Button without new tab */}
+          <div className="flex items-center gap-2">
+            <motion.a
+              href="https://devopstrio.co.uk/contact"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex nav-contact-btn items-center gap-1.5"
+            >
+              <span>Contact Us</span>
+              <ChevronDown size={14} className="text-zinc-300" />
+            </motion.a>
+          </div>
+        </motion.header>
+      </div>
 
       <FullScreenNav open={navOpen} onClose={() => setNavOpen(false)} />
     </>

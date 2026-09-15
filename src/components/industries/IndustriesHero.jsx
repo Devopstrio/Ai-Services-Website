@@ -1,12 +1,12 @@
+import indHeroCoverImg from "../../assets/v1_covers/nav_industries.jpg";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
-// Import from services folder since these components are shared
-import AIInAction from "../services/AIinaction";
-import AIwork from "../services/AIwork";
-import Cards from "../services/Cards";
-import Business from "../services/Business";
-import ManagedService from "../services/ManagedService";
+import IndustriesInAction from "./overview/IndustriesInAction";
+import IndustriesWork from "./overview/IndustriesWork";
+import IndustriesCards from "./overview/IndustriesCards";
+import IndustriesManaged from "./overview/IndustriesManaged";
+import IndustriesInsights from "./overview/IndustriesInsights";
 import HowToReinvent from "./HowToReinvent"; // Same folder import
 import AboutIndustry from "./AboutIndustry";
 import WhoWeWorkWith from "./WhoWeWorkWith";
@@ -52,9 +52,9 @@ const styles = {
     position: "relative",
     zIndex: 2,
     width: "100%",
-    maxWidth: "1400px",
+    maxWidth: "1280px",
     margin: "0 auto",
-    padding: "90px 5%",
+    padding: "90px 24px",
     boxSizing: "border-box",
     display: "grid",
     gridTemplateColumns: "1px 1fr",
@@ -132,7 +132,7 @@ const INDUSTRIES_DATA = {
   label: "Industries",
   heading: "Industries",
   image: {
-    src: "https://www.infosys.com/content/dam/infosys-web/en/2025/thumbnails/e-learning-now-serious-mob.jpg",
+    src: indHeroCoverImg,
     title: "AI Built for Every Industry",
     description: "From banking to healthcare — tailored AI solutions for your sector.",
     cta: "Explore Industries",
@@ -403,11 +403,11 @@ export default function IndustriesHero() {
             </div>
           </div>
         </section>
-        <AIInAction />
-        <AIwork />
-        <Cards />
-        <ManagedService />
-        <Business />
+        <IndustriesInAction />
+        <IndustriesWork />
+        <IndustriesCards />
+        <IndustriesManaged />
+        <IndustriesInsights />
       </>
     );
   }

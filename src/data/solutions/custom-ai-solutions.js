@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Bespoke Enterprise AI Engineering & Proprietary IP Creation",
-    paragraph: "DevOpsTRIO partners with pioneering enterprise leaders who require proprietary AI capabilities that off-the-shelf commercial APIs cannot provide. We design, pre-train, and fine-tune domain-specific foundational models built exclusively on your confidential corporate data assets.\n\nFrom air-gapped on-device neural deployment to complex multi-agent collaborative swarms, our deep learning research engineers deliver production-grade, highly scalable systems where you retain 100% intellectual property ownership.",
+    paragraph: "Devopstrio partners with pioneering enterprise leaders who require proprietary AI capabilities that off-the-shelf commercial APIs cannot provide. We design, pre-train, and fine-tune domain-specific foundational models built exclusively on your confidential corporate data assets.\n\nFrom air-gapped on-device neural deployment to complex multi-agent collaborative swarms, our deep learning research engineers deliver production-grade, highly scalable systems where you retain 100% intellectual property ownership.",
     image: img2
   },
   benefitsBento: [

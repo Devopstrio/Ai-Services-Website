@@ -1,0 +1,346 @@
+import React, { useState, useEffect, useRef } from "react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
+import { Reveal } from "../../ui/Reveal";
+import { Link } from "react-router-dom";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export function IndustryCaseStudy({
+  caseStudyTitle,
+  caseStudyDesc,
+  metrics,
+  caseStudyHighlights
+}) {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [animating, setAnimating] = useState(false);
+  const autoPlayTimer = useRef(null);
+
+  // Define 9 high-quality DevOps case study slides using case-studies images 2.png through 10.png
+  const defaultSlides = [
+    {
+      title: "Global High-Frequency Ledger Migrations",
+      desc: React.createElement(React.Fragment, null, "Reconstructed banking mainframe ledgers into low-latency "      , React.createElement(Link, { to: "/services/cloud-services", className: "text-rose-500 hover:underline" ,}, "distributed databases" ), ", serving 45,000 requests per second with high consistency."        ),
+      metrics: [
+        { value: "45K/s", label: "Tx Throughput" },
+        { value: "99.999%", label: "System Uptime" },
+        { value: "12ms", label: "Latency Ceiling" }
+      ],
+      highlights: [
+        "Zero ledger inconsistencies over 12 months.",
+        "Built automated data reconciliation pipelines.",
+        "Configured multi-region active-active clusters."
+      ],
+      image: "/webp/assets/Industries-page/case-studies/2.webp"
+    },
+    {
+      title: "Automated SOC-2 Security Audits",
+      desc: React.createElement(React.Fragment, null, "Constructed real-time drift detection agents that scan configurations against "         , React.createElement(Link, { to: "/services/cybersecurity", className: "text-rose-500 hover:underline" ,}, "compliance rules" ), " hourly to secure "    , React.createElement(Link, { to: "/services/devops-automation", className: "text-rose-500 hover:underline" ,}, "staging loops" ), "."),
+      metrics: [
+        { value: "100%", label: "SOC-2 Checked" },
+        { value: "< 1hr", label: "Drift Alert Time" },
+        { value: "94%", label: "Manual Effort Drop" }
+      ],
+      highlights: [
+        "Continuous telemetry log processing.",
+        "Automated IAM policy validation rules.",
+        "Self-healing security group policies."
+      ],
+      image: "/webp/assets/Industries-page/case-studies/3.webp"
+    },
+    {
+      title: "Multi-Region Disaster Protection",
+      desc: React.createElement(React.Fragment, null, "Deployed cross-continent "  , React.createElement(Link, { to: "/services/cloud-services", className: "text-rose-500 hover:underline" ,}, "Kubernetes"), " and "  , React.createElement(Link, { to: "/services/devops-automation", className: "text-rose-500 hover:underline" ,}, "state synchronization" ), " systems to handle severe cloud network cuts and power grids."          ),
+      metrics: [
+        { value: "< 5s", label: "Failover Target" },
+        { value: "Zero", label: "Data Loss (RPO)" },
+        { value: "100%", label: "Tested Success" }
+      ],
+      highlights: [
+        "Continuous replication block devices.",
+        "Automated DNS failover systems.",
+        "Chaos monkey stress-test confirmed."
+      ],
+      image: "/webp/assets/Industries-page/case-studies/4.webp"
+    },
+    {
+      title: "Cloud Cost Optimization Initiative",
+      desc: React.createElement(React.Fragment, null, "Replaced redundant compute pools with "     , React.createElement(Link, { to: "/services/cloud-services", className: "text-rose-500 hover:underline" ,}, "serverless scaling" ), " and optimized database cache nodes under private VPCs."        ),
+      metrics: [
+        { value: "42%", label: "Hosting Cost Drop" },
+        { value: "$1.2M", label: "Annualized Saving" },
+        { value: "1.4x", label: "Speed Multiplier" }
+      ],
+      highlights: [
+        "Intelligent database sleep profiles.",
+        "Auto-scaling Kubernetes execution nodes.",
+        "Real-time cost telemetry alerts."
+      ],
+      image: "/webp/assets/Industries-page/case-studies/5.webp"
+    },
+    {
+      title: "Generative AI Platform Scale",
+      desc: React.createElement(React.Fragment, null, "Constructed GPU clustering pipelines and "     , React.createElement(Link, { to: "/services/ai-data-innovation", className: "text-rose-500 hover:underline" ,}, "vector db indexing"  ), " frameworks to host "    , React.createElement(Link, { to: "/services/ai-data-innovation", className: "text-rose-500 hover:underline" ,}, "LLM-driven chat tools"  ), "."),
+      metrics: [
+        { value: "24M", label: "Daily Queries" },
+        { value: "35ms", label: "Model Latency" },
+        { value: "99.9%", label: "API Availability" }
+      ],
+      highlights: [
+        "Low-latency model caching pipelines.",
+        "Distributed GPU scheduling rules.",
+        "Secure enterprise tenant isolation."
+      ],
+      image: "/webp/assets/Industries-page/case-studies/6.webp"
+    },
+    {
+      title: "GitOps CD Continuous Deployments",
+      desc: React.createElement(React.Fragment, null, "Implemented unified "  , React.createElement(Link, { to: "/services/devops-automation", className: "text-rose-500 hover:underline" ,}, "ArgoCD controllers" ), " managing 400 "   , React.createElement(Link, { to: "/services/cloud-services", className: "text-rose-500 hover:underline" ,}, "microservices"), " across staging and prod sites."     ),
+      metrics: [
+        { value: "15,000+", label: "Monthly Builds" },
+        { value: "4.8m", label: "Deploy Time" },
+        { value: "0.01%", label: "Rollback Rate" }
+      ],
+      highlights: [
+        "Declarative infrastructure state files.",
+        "Container validation scans on merge.",
+        "Automated canary release testing."
+      ],
+      image: "/webp/assets/Industries-page/case-studies/7.webp"
+    },
+    {
+      title: "24/7 SRE Telemetry & Monitoring",
+      desc: React.createElement(React.Fragment, null, "Configured unified Prometheus and "    , React.createElement(Link, { to: "/services/devops-automation", className: "text-rose-500 hover:underline" ,}, "OpenTelemetry"), " agents collecting system health metrics from 12 edge centers."         ),
+      metrics: [
+        { value: "1.2B", label: "Daily Metrics" },
+        { value: "< 2s", label: "Alert Notification" },
+        { value: "85%", label: "Auto-Remediation" }
+      ],
+      highlights: [
+        "Synthetic end-user scenario tests.",
+        "Slack/PagerDuty automated escalations.",
+        "Machine learning anomaly detection."
+      ],
+      image: "/webp/assets/Industries-page/case-studies/8.webp"
+    },
+    {
+      title: "Microservices API Mesh Implementation",
+      desc: React.createElement(React.Fragment, null, "Migrated legacy monolith backbones to high-performance "      , React.createElement(Link, { to: "/services/cloud-services", className: "text-rose-500 hover:underline" ,}, "Istio service meshes"  ), " with "  , React.createElement(Link, { to: "/services/cybersecurity", className: "text-rose-500 hover:underline" ,}, "mutual TLS" ), "."),
+      metrics: [
+        { value: "400+", label: "Connected Nodes" },
+        { value: "100%", label: "Encrypted Traffic" },
+        { value: "18%", label: "CPU Usage Decline" }
+      ],
+      highlights: [
+        "Automated mutual TLS certificates.",
+        "Granular route policy rules.",
+        "Real-time traffic trace mappings."
+      ],
+      image: "/webp/assets/Industries-page/case-studies/9.webp"
+    },
+    {
+      title: "Zero-Trust Network Perimeter",
+      desc: React.createElement(React.Fragment, null, "Architected modern boundary defenses using cloud-native firewalls, single sign-on hooks, and "           , React.createElement(Link, { to: "/services/cybersecurity", className: "text-rose-500 hover:underline" ,}, "network isolation" ), "."),
+      metrics: [
+        { value: "Zero", label: "Boundary Penetration" },
+        { value: "100%", label: "Endpoint Checked" },
+        { value: "60%", label: "Login Latency Drop" }
+      ],
+      highlights: [
+        "Identity-aware access proxies.",
+        "Dynamic firewall rule evaluations.",
+        "Continuous device health verification."
+      ],
+      image: "/webp/assets/Industries-page/case-studies/10.webp"
+    }
+  ];
+
+  // Merge the dynamically provided page case study as Slide 0 (using image 1.png), followed by the default slides
+  const slides = [
+    {
+      title: caseStudyTitle,
+      desc: caseStudyDesc,
+      metrics: metrics,
+      highlights: caseStudyHighlights,
+      image: "/webp/assets/Industries-page/case-studies/1.webp"
+    },
+    ...defaultSlides
+  ];
+
+  const totalSlides = slides.length;
+
+  const changeSlide = (newIdx) => {
+    if (animating) return;
+    setAnimating(true);
+    setTimeout(() => {
+      setActiveIdx(newIdx);
+      setAnimating(false);
+    }, 250);
+  };
+
+  const handleNext = () => {
+    resetTimer();
+    changeSlide((activeIdx + 1) % totalSlides);
+  };
+
+  const handlePrev = () => {
+    resetTimer();
+    changeSlide((activeIdx - 1 + totalSlides) % totalSlides);
+  };
+
+  const resetTimer = () => {
+    if (autoPlayTimer.current) {
+      clearInterval(autoPlayTimer.current);
+    }
+    autoPlayTimer.current = setInterval(() => {
+      changeSlide((activeIdx + 1) % totalSlides);
+    }, 7000);
+  };
+
+  // Set up auto-play cycles
+  useEffect(() => {
+    autoPlayTimer.current = setInterval(() => {
+      changeSlide((activeIdx + 1) % totalSlides);
+    }, 7000);
+
+    return () => {
+      if (autoPlayTimer.current) {
+        clearInterval(autoPlayTimer.current);
+      }
+    };
+  }, [activeIdx, totalSlides]);
+
+  const currentSlide = slides[activeIdx];
+  const displayImage = currentSlide.image || "/webp/assets/Industries-page/case-studies/1.webp";
+
+  return (
+    React.createElement('section', { id: "case-study", className: "w-full py-20 bg-[#030303] border-b border-zinc-900/60 relative overflow-hidden text-white"       ,}
+      /* Background Graphic Glow */
+      , React.createElement('div', { className: "absolute top-[30%] left-[-10%] w-[35%] aspect-square bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.015),transparent_70%)] pointer-events-none z-0"       ,} )
+
+      , React.createElement('div', { className: "max-w-7xl mx-auto w-full px-12 xl:px-8 relative z-10 text-left"       ,}
+
+        /* Section Header */
+        , React.createElement(Reveal, { className: "mb-12",}
+          , React.createElement('h2', { className: "text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-white font-sans"      ,}, "Our Case Study Proven "
+                , React.createElement('span', { className: "text-[#E11D48] font-semibold" ,}, "milestone achievements" )
+          )
+        )
+
+        /* Big Card Slider Container - Compact padding p-2 (8px) on mobile, p-6 on desktop */
+        , React.createElement('div', { className: "relative w-full bg-[#0b0b0c] border border-white/10 rounded-[24px] p-1 sm:p-5 lg:p-6 flex flex-col justify-between overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.4)]"             ,}
+
+          /* Decorative ambient glow inside card */
+          , React.createElement('div', { className: "absolute top-0 right-0 w-[300px] h-[300px] bg-gradient-to-br from-[#E11D48]/5 to-transparent rounded-full blur-[80px] pointer-events-none z-0"           ,} )
+
+          /* Active Card Body Wrapper */
+          , React.createElement('div', { className: `transition-all duration-300 ${animating ? "opacity-0 translate-y-1" : "opacity-100 translate-y-0"} grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-6 lg:gap-10 items-center relative z-10 p-2 sm:p-3`,}
+
+            /* Left Panel: Title, Description, Highlights, Metrics */
+            , React.createElement('div', null
+              /* <span className="text-xs sm:text-sm font-mono tracking-widest text-rose-500 uppercase font-bold block mb-3">
+                Case Study {(activeIdx + 1).toString().padStart(2, "0")} / {totalSlides.toString().padStart(2, "0")}
+              </span> */
+
+              , React.createElement('h3', { className: "text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight max-w-xl font-sans"        ,}
+                , currentSlide.title
+              )
+
+              /* <p className="text-zinc-300 text-base sm:text-lg leading-relaxed font-normal mb-5 max-w-xl">
+                {currentSlide.desc}
+              </p> */
+
+              /* Highlights List */
+              , React.createElement('ul', { className: "grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6 text-sm sm:text-base text-zinc-300 font-medium max-w-xl"         ,}
+                , currentSlide.highlights.map((hl, i) => (
+                  React.createElement('li', { key: i, className: "flex items-start gap-2.5"  ,}
+                    , React.createElement('span', { className: "w-2 h-2 rounded-full bg-rose-500 mt-2 flex-shrink-0"     ,} )
+                    , React.createElement('span', { className: "leading-relaxed",}, hl)
+                  )
+                ))
+              )
+
+              /* Metrics Row */
+              , React.createElement('div', { className: "grid grid-cols-3 gap-4 pt-4 border-t border-white/10 max-w-xl"      ,}
+                , currentSlide.metrics.map((m, i) => (
+                  React.createElement('div', { key: i,}
+                    , React.createElement('span', { className: "block text-2xl md:text-3xl font-black text-white font-mono tracking-tight"      ,}
+                      , m.value
+                    )
+                    , React.createElement('span', { className: "text-xs sm:text-sm text-zinc-400 font-semibold uppercase tracking-wider block mt-1"       ,}
+                      , m.label
+                    )
+                  )
+                ))
+              )
+            )
+
+            /* Right Panel: Project Showcase Image */
+            , React.createElement('div', { className: "relative w-full aspect-[16/11] rounded-[16px] border border-white/5 p-0.5 bg-zinc-950 overflow-hidden group/img"         ,}
+              , React.createElement('div', { className: "absolute inset-0 bg-gradient-to-tr from-[#E11D48]/10 via-transparent to-transparent pointer-events-none z-10"       ,} )
+              , React.createElement('img', { src: displayImage,
+                alt: currentSlide.title,
+                className: "w-full h-full object-cover rounded-[14px] transition-transform duration-700 group-hover/img:scale-[1.02] select-none pointer-events-none"        ,
+              loading: "lazy",} )
+            )
+
+          )
+
+          /* Slider Controls Footer */
+          , React.createElement('div', { className: "mt-6 pt-4 border-t border-white/5 flex flex-col sm:flex-row gap-4 justify-between items-center relative z-10 px-3 pb-2"             ,}
+
+            /* Indicators Dots */
+            , React.createElement('div', { className: "flex gap-2 items-center"  ,}
+              , slides.map((_, idx) => (
+                React.createElement('div', {
+                  key: idx,
+                  onClick: () => { resetTimer(); changeSlide(idx); },
+                  className: `h-1 rounded-full transition-all duration-300 cursor-pointer ${activeIdx === idx ? "w-6 bg-[#E11D48]" : "w-2 bg-zinc-800 hover:bg-zinc-700"
+                    }`,}
+                )
+              ))
+            )
+
+            /* Left/Right Buttons */
+            , React.createElement('div', { className: "flex gap-3 items-center"  ,}
+              , React.createElement('button', {
+                onClick: handlePrev,
+                'aria-label': "Previous slide" ,
+                className: "w-9 h-9 rounded-full border border-white/5 bg-[#0b0b0c] hover:bg-zinc-900 flex items-center justify-center text-zinc-400 hover:text-white transition-colors duration-300"             ,}
+
+                , React.createElement(ArrowLeft, { size: 14,} )
+              )
+              , React.createElement('button', {
+                onClick: handleNext,
+                'aria-label': "Next slide" ,
+                className: "w-9 h-9 rounded-full border border-white/5 bg-[#0b0b0c] hover:bg-zinc-900 flex items-center justify-center text-zinc-400 hover:text-white transition-colors duration-300"             ,}
+
+                , React.createElement(ArrowUpRight, { size: 14,} )
+              )
+            )
+
+          )
+
+        )
+
+      )
+    )
+  );
+}

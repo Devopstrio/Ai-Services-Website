@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Autonomous Threat Hunting & Adaptive Zero-Trust Defense",
-    paragraph: "DevOpsTRIO equips Chief Information Security Officers (CISOs) with AI-native cyber defense systems capable of countering machine-speed cyber attacks. Our platform continuously ingests network telemetry, endpoint signals, cloud access logs, and dark web threat intelligence to isolate anomalous lateral movement.\n\nWhen zero-day intrusions or credential hijacking attempts occur, our autonomous containment agents isolate compromised workloads, revoke token permissions, and generate forensic timelines in milliseconds—empowering your Security Operations Center (SOC) to stay steps ahead of adversaries.",
+    paragraph: "Devopstrio equips Chief Information Security Officers (CISOs) with AI-native cyber defense systems capable of countering machine-speed cyber attacks. Our platform continuously ingests network telemetry, endpoint signals, cloud access logs, and dark web threat intelligence to isolate anomalous lateral movement.\n\nWhen zero-day intrusions or credential hijacking attempts occur, our autonomous containment agents isolate compromised workloads, revoke token permissions, and generate forensic timelines in milliseconds—empowering your Security Operations Center (SOC) to stay steps ahead of adversaries.",
     image: img2
   },
   benefitsBento: [

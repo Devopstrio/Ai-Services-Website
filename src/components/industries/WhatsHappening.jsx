@@ -312,7 +312,7 @@ function SlideCard({ slide }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <motion.a href={slide.href || "https://devopstrio.co.uk/insights/case-studies"} target="_blank" rel="noopener noreferrer"
+    <motion.a href={slide.href || "https://devopstrio.co.uk/insights/case-studies"}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       layout
@@ -505,7 +505,7 @@ export function WhatsHappening() {
         width: "100%",
         backgroundColor: COLORS.bg,
         fontFamily: FONT,
-        padding: "96px 5%",
+        padding: "96px 24px",
         boxSizing: "border-box",
         overflow: "hidden",
       }}
@@ -513,7 +513,7 @@ export function WhatsHappening() {
       {/* Header */}
       <div
         style={{
-          maxWidth: "1400px",
+          maxWidth: "1280px",
           margin: "0 auto 44px",
           display: "flex",
           alignItems: "flex-end",
@@ -619,7 +619,7 @@ export function WhatsHappening() {
       {/* Cards row — CSS grid guarantees perfectly even columns, no wrap gaps */}
       <div
         style={{
-          maxWidth: "1400px",
+          maxWidth: "1280px",
           margin: "0 auto",
           display: "grid",
           gridTemplateColumns: `repeat(${perView}, 1fr)`,

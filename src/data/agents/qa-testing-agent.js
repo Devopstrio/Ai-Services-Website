@@ -14,7 +14,7 @@ export const qaTestingAgentData = {
     badge: "AUTONOMOUS AGENT",
     autonomyLevel: "Level 4 Autonomous",
     titleLight: "Zero-Defect Software Delivery with",
-    titleBold: "DevOpsTRIO QA Agent",
+    titleBold: "Devopstrio QA Agent",
     description: "Autonomous quality assurance agent that explores user flows in headless browser environments, generates Playwright and Cypress test suites directly from Jira requirements, and catches visual regressions before release.",
     bgImage: heroBg,
     liveBadge: "v4.2 Production Ready",
@@ -33,7 +33,7 @@ export const qaTestingAgentData = {
   ],
   overview: {
     heading: "The Autonomous Quality Assurance Engineer for Continuous Deployment",
-    description: "Manual QA testing creates release bottlenecks, while brittle test automation scripts constantly break when CSS selectors or page layouts change.\n\nThe DevOpsTRIO QA Testing Agent operates as an autonomous testing swarm. It spins up browser sessions, navigates complex user journeys, validates API contracts, catches pixel-level visual layout bugs, and automatically heals broken test selectors when UI changes occur.",
+    description: "Manual QA testing creates release bottlenecks, while brittle test automation scripts constantly break when CSS selectors or page layouts change.\n\nThe Devopstrio QA Testing Agent operates as an autonomous testing swarm. It spins up browser sessions, navigates complex user journeys, validates API contracts, catches pixel-level visual layout bugs, and automatically heals broken test selectors when UI changes occur.",
     keyPoints: [
       "Autonomous Playwright and Cypress test script synthesis directly from design specs and user stories",
       "Self-healing test locators that adapt dynamically to DOM and class name changes",
@@ -201,7 +201,7 @@ export const qaTestingAgentData = {
     client: "Global E-Commerce Enterprise",
     industry: "Retail & E-Commerce",
     headline: "How a Global Retail Giant Cut QA Testing Cycles from 3 Days to 15 Minutes with Zero Defect Escapes",
-    quote: "DevOpsTRIO QA Agent allowed us to transition from weekly scheduled releases to continuous production deployments 8 times a day without fearing regressions.",
+    quote: "Devopstrio QA Agent allowed us to transition from weekly scheduled releases to continuous production deployments 8 times a day without fearing regressions.",
     author: "Head of Quality Engineering",
     company: "Publicly Traded Retail Group",
     image: caseImg,

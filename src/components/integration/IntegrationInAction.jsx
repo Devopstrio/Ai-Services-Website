@@ -48,7 +48,7 @@ const styles = {
     backgroundColor: "#160608",
     display: "flex",
     alignItems: "center",
-    padding: "80px 6%",
+    padding: "80px 24px",
     boxSizing: "border-box",
   },
   textColGlow: {
@@ -155,13 +155,13 @@ export default function IntegrationInAction() {
         >
           <h2 style={styles.heading}>Want to See Connectivity in Action?</h2>
           <p style={styles.paragraph}>
-            No problem. At <span style={styles.strong}>DevOpsTRIO</span>, we
+            No problem. At <span style={styles.strong}>Devopstrio</span>, we
             have a proven track record in complex systems integration. Whether you're bridging 
             legacy mainframes or orchestrating a cloud-native microservices mesh, 
             our integration services help you break down silos, automate workflows, 
             and innovate safely. We build secure, highly available connectivity that 
             processes massive data volumes reliably. This is integration that works — 
-            engineered by DevOpsTRIO.
+            engineered by Devopstrio.
           </p>
 
           <motion.button

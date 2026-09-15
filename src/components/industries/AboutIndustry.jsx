@@ -378,6 +378,11 @@ const styles = {
     borderRadius: "16px 16px 6px 6px",
     overflow: "hidden",
     height: "440px",
+  
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   imgEl: {
     position: "absolute",

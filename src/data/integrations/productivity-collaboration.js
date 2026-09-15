@@ -15,7 +15,7 @@ export const productivityCollaborationData = {
     badge: "ENTERPRISE INTEGRATIONS // COLLABORATION MESH",
     subBadge: "REAL-TIME BI-DIRECTIONAL SYNC",
     titleLight: "Unify Your Modern Workspace with",
-    titleBold: "DevOpsTRIO Productivity & Collaboration",
+    titleBold: "Devopstrio Productivity & Collaboration",
     description: "Connect your AI agent swarms seamlessly into Microsoft 365, Google Workspace, Slack, Jira, Notion, and Linear. Enable conversational triggers, automatic document indexing, and touchless cross-tool synchronization with sub-15ms webhook execution.",
     bgImage: heroBg,
     liveBadge: "Active Mesh: 99.999% Sync Fidelity",
@@ -215,7 +215,7 @@ export const productivityCollaborationData = {
   caseStudy: {
     client: "Global SaaS Enterprise (12,000 Employees)",
     industry: "Enterprise Cloud & Collaboration",
-    headline: "How 12,000 Employees Saved 14.5 Hours per Month Using DevOpsTRIO's Bi-Directional Productivity Mesh",
+    headline: "How 12,000 Employees Saved 14.5 Hours per Month Using Devopstrio's Bi-Directional Productivity Mesh",
     quote: "Integrating our AI agents directly into Slack, Google Workspace, and Jira eliminated manual status updates, meeting follow-ups, and ticket creation across our entire 1,500-person engineering department.",
     author: "Chief Information Officer",
     company: "Public Cloud Enterprise Software Leader",

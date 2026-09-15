@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import managedImg1 from "../../assets/v1_covers/service_managed1.jpg";
+import managedImg2 from "../../assets/v1_covers/service_managed2.jpg";
+
 /**
  * ReinventManagedServices.jsx — DevOpsTRIO
  * "Reinvent with Managed Services" — asymmetric bento grid of dark cards
@@ -15,15 +18,14 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "90px 5% 110px",
-background:
-      "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",  
-        fontFamily: FONT,
+    padding: "90px 24px 110px",
+    background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
+    fontFamily: FONT,
     boxSizing: "border-box",
     textAlign: "left",
   },
   heading: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto 40px",
     fontFamily: FONT,
     color: "#FFFFFF",
@@ -33,7 +35,7 @@ background:
   },
 
   grid: {
-    maxWidth: "1300px",
+    maxWidth: "1280px",
     margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
@@ -43,7 +45,7 @@ background:
 
   cardBase: {
     position: "relative",
-    borderRadius: "4px",
+    borderRadius: "8px",
     padding: "32px",
     boxSizing: "border-box",
     display: "flex",
@@ -130,9 +132,12 @@ background:
 
   imgCard: {
     position: "relative",
-    borderRadius: "4px",
+    borderRadius: "8px",
     overflow: "hidden",
-    
+    backgroundColor: "#050505",
+    transform: "translateZ(0)",
+    WebkitBackfaceVisibility: "hidden",
+    isolation: "isolate"
   },
   imgEl: {
     position: "absolute",
@@ -273,7 +278,7 @@ function ImageCard({ img, span }) {
     >
       <motion.img
         src={img}
-        alt=""
+        alt="Managed Service Visual"
         style={styles.imgEl}
         whileHover={{ scale: 1.06 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -299,9 +304,10 @@ export default function ReinventManagedServices() {
       <div style={styles.grid}>
         <TextCard
           span="span 2"
-          label="Managed Clinical Data, AI &amp; Automation"
+          label="Managed Clinical Data, AI & Automation"
           heading="Do you have the insights to make real-time care decisions?"
           description="Unify clinical data streams into a single AI-ready pipeline that surfaces the right insight the moment it matters — not after the fact."
+          bg="#0b0b0b"
         />
         <StatCard
           span="span 1"
@@ -314,31 +320,35 @@ export default function ReinventManagedServices() {
           label="Global Delivery Centers"
           heading="Access healthcare engineering talent, wherever it lives"
           description="Tap into our distributed delivery centers for round-the-clock coverage without sacrificing clinical domain expertise."
+          bg="#141414"
         />
         <ParagraphCard
           span="span 1"
           label="Application Managed Services"
           body="Emerging AI has raised clinical application complexity, and downtime is costlier than ever. We integrate cloud and generative AI into new and legacy systems to simplify delivery and get to value faster."
+          bg="#0d0d0d"
         />
         <ImageCard
           span="span 1"
-          img="https://www.infosys.com/content/dam/infosys-web/en/new-design25/assets/hm-agent-aware-digital-ecosystems.jpg"
+          img={managedImg1}
         />
 
         <ImageCard
           span="span 1"
-          img="https://www.infosys.com/content/dam/infosys-web/en/2026/listing-thumbnails/annual-report.jpg"
+          img={managedImg2}
         />
         <TextCard
           span="span 1"
           label="Compliance Managed Services"
           heading="Is your infrastructure staying audit-ready?"
           description="Continuous HIPAA and SOC 2 monitoring built into every layer, so audit prep stops being a quarterly fire drill."
+          bg="#111111"
         />
         <ParagraphCard
           span="span 1"
           label="Infrastructure Managed Services"
           body="Managing today's clinical IT landscape with yesterday's tooling drags on your reinvention timeline. Reach your goals, cut spend, and see value faster with modern, AI-managed infrastructure."
+          bg="#090909"
         />
       </div>
     </section>

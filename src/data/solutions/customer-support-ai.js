@@ -36,7 +36,7 @@ const data = {
 ],
   overview: {
     heading: "Autonomous Support Orchestration & Real-Time Resolution",
-    paragraph: "DevOpsTRIO transforms customer service operations from costly reactive cost-centers into high-efficiency value drivers. By combining advanced conversational intelligence with deep internal knowledge-base retrieval, our support platforms resolve high-volume customer inquiries instantly across voice, chat, email, and social channels.\n\nWhen complex edge cases require human assistance, our real-time Agent Assist tool synthesizes case context, retrieves relevant customer history, and drafts high-accuracy response suggestions—reducing Average Handle Time (AHT) while dramatically improving customer satisfaction scores.",
+    paragraph: "Devopstrio transforms customer service operations from costly reactive cost-centers into high-efficiency value drivers. By combining advanced conversational intelligence with deep internal knowledge-base retrieval, our support platforms resolve high-volume customer inquiries instantly across voice, chat, email, and social channels.\n\nWhen complex edge cases require human assistance, our real-time Agent Assist tool synthesizes case context, retrieves relevant customer history, and drafts high-accuracy response suggestions—reducing Average Handle Time (AHT) while dramatically improving customer satisfaction scores.",
     image: img2
   },
   benefitsBento: [

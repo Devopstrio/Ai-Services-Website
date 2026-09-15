@@ -64,7 +64,7 @@ const styles = {
     backgroundColor: "#160608",
     display: "flex",
     alignItems: "center",
-    padding: "80px 6%",
+    padding: "80px 24px",
     boxSizing: "border-box",
   },
   textColGlow: {
