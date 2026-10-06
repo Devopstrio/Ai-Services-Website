@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
-import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 
 import navIndustriesImg from "../../assets/v1_covers/nav_industries.jpg";
@@ -434,10 +434,10 @@ const NAV_SECTIONS = [
 ];
 
 const SOCIALS = [
-  { Icon: FaLinkedin, href: "https://linkedin.com" },
-  { Icon: FaTwitter, href: "https://x.com" },
-  { Icon: FaFacebook, href: "https://facebook.com" },
-  { Icon: FaYoutube, href: "https://youtube.com" },
+  { Icon: FaLinkedin, href: "https://www.linkedin.com/company/devopstrioglobal/posts/?feedView=all", label: "LinkedIn" },
+  { Icon: FaFacebook, href: "https://www.facebook.com/profile.php?id=61579126233218", label: "Facebook" },
+  { Icon: FaInstagram, href: "https://www.instagram.com/devopstrio_offcl/", label: "Instagram" },
+  { Icon: FaYoutube, href: "https://www.youtube.com/@Devopstrioltd", label: "YouTube" },
 ];
 
 /* ---------------------------------------------------------------------- */
@@ -896,10 +896,13 @@ function FullScreenNav({ open, onClose }) {
                   flexWrap: "wrap",
                 }}
               >
-                {SOCIALS.map(({ Icon, href }) => (
+                {SOCIALS.map(({ Icon, href, label }) => (
                   <motion.a
                     key={href}
                     href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
                     whileHover={{ y: -3, scale: 1.12, color: ACCENT }}
                     whileTap={{ scale: 0.9 }}
                     transition={{ type: "spring", stiffness: 300, damping: 18 }}
@@ -1129,7 +1132,7 @@ export default function Header() {
             </motion.button>
 
             <a
-              href="/"
+              href="https://devopstrio.co.uk/"
               className="flex items-center gap-2.5 group cursor-pointer select-none no-underline text-white"
             >
               {logoOk ? (
