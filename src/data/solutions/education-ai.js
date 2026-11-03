@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/multimodal_ai_workbench.jpg';
-import img2 from '../../assets/fresh/deep_learning_tensor.jpg';
-import img3 from '../../assets/fresh/dark_ai_neural_grid.jpg';
-import img4 from '../../assets/fresh/2021_09_database-schema.jpg';
-import img5 from '../../assets/fresh/innovation_neural_network.jpg';
-import img6 from '../../assets/fresh/360_f_2084576255_smobjek0sl0e6ocwx64h4nnzs2qiblec.jpg';
-import img7 from '../../assets/fresh/neural_connections_nodes.jpg';
-import img8 from '../../assets/fresh/holographic_data_globe.jpg';
+import heroImg from '../../assets/fresh/multimodal_ai_workbench.jpg';
+import img1 from '../../assets/enterprise-references/education-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/education-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/education-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/education-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/education-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/education-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/education-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/education-ai/feature-1.webp';
 
 const data = {
   id: 'education-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Education',
     titleBold: 'AI',
     description: "Personalize learning pathways with adaptive assessment engines, automated essay grading, predictive student at-risk retention analytics, and 24/7 intelligent academic tutoring.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

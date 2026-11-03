@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/agent_swarm_orchestration.jpg";
-import memoryImg from "../../assets/fresh/neural_connections_nodes.jpg";
-import sandboxImg from "../../assets/fresh/hardware_security_module.jpg";
-import telemetryImg from "../../assets/fresh/dashboard_ai_model_training.jpg";
-import studioImg from "../../assets/fresh/multimodal_ai_workbench.jpg";
-import caseImg from "../../assets/fresh/multinational_team_summit.jpg";
+import memoryImg from "../../assets/agent-references/Agent Platform/ENTERPRISE CAPABILITIES/ENTERPRISE CAPABILITIES 2.webp";
+import sandboxImg from "../../assets/agent-references/Agent Platform/ENTERPRISE CAPABILITIES/ENTERPRISE CAPABILITIES 3.webp";
+import telemetryImg from "../../assets/agent-references/Agent Platform/ENTERPRISE CAPABILITIES/ENTERPRISE CAPABILITIES 4.webp";
+import studioImg from "../../assets/agent-references/Agent Platform/ENTERPRISE CAPABILITIES/ENTERPRISE CAPABILITIES 1.webp";
+import caseImg from "../../assets/agent-references/Agent Platform/before cta.webp";
 
 export const agentPlatformData = {
   id: "agent-platform",

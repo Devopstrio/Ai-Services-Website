@@ -1,9 +1,12 @@
 import heroBg from "../../assets/fresh/innovation_vr_workspace.jpg";
-import demo1 from "../../assets/fresh/man-using-laptop-tablet-analyze-260nw-2727872547.webp";
-import demo2 from "../../assets/fresh/multimodal_ai_workbench.jpg";
-import demo3 from "../../assets/fresh/sales-growth-graph-on-laptop-screen-with-pointing-hand-illustrating-business-success-and-market-trend-photo.jpeg";
-import demo4 from "../../assets/fresh/dashboard_executive_kpi.jpg";
-import caseImg from "../../assets/fresh/person-using-ar-technology-perform-their-occupation.jpg";
+import marketAuctionPillarImg from "../../assets/fresh/ai_demonstrations_pillar_multi_agent_auction.webp";
+import duplexVoicePillarImg from "../../assets/fresh/ai_demonstrations_pillar_duplex_voice.webp";
+import defectInspectorPillarImg from "../../assets/fresh/ai_demonstrations_pillar_4k_defect_inspector.webp";
+import jiraToPrPillarImg from "../../assets/fresh/ai_demonstrations_pillar_jira_to_pr.webp";
+import marketAuctionFrontierImg from "../../assets/fresh/ai_demonstrations_frontier_market_simulator.webp";
+import duplexVoiceFrontierImg from "../../assets/fresh/ai_demonstrations_frontier_duplex_voice.webp";
+import spatialInspectionFrontierImg from "../../assets/fresh/ai_demonstrations_frontier_spatial_inspection.webp";
+import caseImg from "../../assets/fresh/ai_demonstrations_case_study_automotive_manufacturing.webp";
 
 export const aiDemonstrationsData = {
   id: "ai-demonstrations",
@@ -31,7 +34,7 @@ export const aiDemonstrationsData = {
       tag: "AGENTIC SIMULATION",
       title: "Real-Time 1,000-Agent Market Simulator",
       description: "Visualizing emergent decentralized coordination as 1,000 autonomous agents negotiate, bid, and optimize multi-cloud computing resources in real time.",
-      image: demo2,
+      image: marketAuctionPillarImg,
       metricBadge: "1,000 Live Agents",
       highlights: [
         "Live interactive graph showing agent communication topology and message throughput",
@@ -44,7 +47,7 @@ export const aiDemonstrationsData = {
       tag: "SUB-100MS MULTIMODAL",
       title: "Sub-100ms Duplex Voice Conversational AI",
       description: "Experience ultra-low-latency voice conversational agents with native emotion modulation, dynamic interruption handling, and tool execution.",
-      image: demo1,
+      image: duplexVoicePillarImg,
       metricBadge: "85ms Voice Latency",
       highlights: [
         "End-to-end neural audio-to-audio streaming with zero intermediate text bottleneck",
@@ -57,7 +60,7 @@ export const aiDemonstrationsData = {
       tag: "SPATIAL REASONING",
       title: "Real-Time 3D Spatial Video Inspection",
       description: "Interact with multi-modal vision foundation models identifying micro-defects, safety violations, and component wear on 4K industrial video streams.",
-      image: heroBg,
+      image: defectInspectorPillarImg,
       metricBadge: "60 FPS 4K Inspection",
       highlights: [
         "Zero-shot defect bounding box localization with 99.4% precision",
@@ -70,7 +73,7 @@ export const aiDemonstrationsData = {
       tag: "DETERMINISTIC CODE",
       title: "Jira-to-PR Autonomous Coding Sandbox",
       description: "Watch an autonomous software engineering agent ingest complex Jira issue descriptions, reproduce bugs in isolated test containers, and issue verified PRs.",
-      image: demo3,
+      image: jiraToPrPillarImg,
       metricBadge: "100% Verified Tests",
       highlights: [
         "Automated reproduction unit test synthesis before code modification",
@@ -85,7 +88,7 @@ export const aiDemonstrationsData = {
       title: "Multi-Agent Cloud Resource Auction",
       category: "Autonomous Swarm",
       badge: "1,000 Agents Live",
-      image: demo2,
+      image: marketAuctionFrontierImg,
       benchmark: "99.1% Pareto Efficiency",
       summary: "Launch a live multi-agent simulation where 1,000 sub-agents compete in a Dutch auction to allocate serverless GPU workloads at lowest aggregate cost.",
       features: [
@@ -99,7 +102,7 @@ export const aiDemonstrationsData = {
       title: "Ultra-Low Latency Duplex Voice Agent",
       category: "Multimodal Voice",
       badge: "85ms Latency",
-      image: demo1,
+      image: duplexVoiceFrontierImg,
       benchmark: "Sub-100ms Turnaround",
       summary: "Experience native neural audio streaming with zero perceptible delay, tested under simulated high-jitter cellular network conditions.",
       features: [
@@ -113,7 +116,7 @@ export const aiDemonstrationsData = {
       title: "Industrial 4K Video Defect Inspector",
       category: "Computer Vision",
       badge: "60 FPS Inspection",
-      image: heroBg,
+      image: spatialInspectionFrontierImg,
       benchmark: "99.4% Defect Catch Rate",
       summary: "Upload or stream live high-definition video to observe real-time spatial object tracking, anomaly detection, and automated alert triggering.",
       features: [

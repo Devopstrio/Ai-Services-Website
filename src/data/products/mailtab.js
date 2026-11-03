@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/images_15_.jpg";
-import triageImg from "../../assets/fresh/smart_inbox_triage.jpg";
-import draftImg from "../../assets/fresh/images_14_.jpg";
-import calImg from "../../assets/fresh/quantum_laser_optics.jpg";
-import secImg from "../../assets/fresh/images_16_.jpg";
-import caseImg from "../../assets/fresh/digital-workspace-with-data-analysis-visualization.jpg";
+import triageReferenceImg from "../../assets/fresh/mailtab-smart-triage.webp";
+import draftReferenceImg from "../../assets/fresh/mailtab-contextual-drafting.webp";
+import calendarReferenceImg from "../../assets/fresh/mailtab-calendar-sync.webp";
+import privacyReferenceImg from "../../assets/fresh/mailtab-zero-trust-privacy.webp";
+import caseReferenceImg from "../../assets/fresh/mailtab-customer-success.webp";
 
 export const mailtabData = {
   "id": "mailtab",
@@ -287,8 +287,8 @@ export const mailtabData = {
   }
 }
 mailtabData.hero.bgImage = heroBg;
-mailtabData.features[0].image = triageImg;
-mailtabData.features[1].image = draftImg;
-mailtabData.features[2].image = calImg;
-mailtabData.features[3].image = secImg;
-mailtabData.caseStudy.image = caseImg;
+mailtabData.features[0].image = triageReferenceImg;
+mailtabData.features[1].image = draftReferenceImg;
+mailtabData.features[2].image = calendarReferenceImg;
+mailtabData.features[3].image = privacyReferenceImg;
+mailtabData.caseStudy.image = caseReferenceImg;

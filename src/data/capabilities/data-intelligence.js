@@ -11,13 +11,13 @@ const dataIntelligence = {
     headingRed: "Enterprise AI",
     paragraph: "Before you can run a Large Language Model or a Predictive algorithm, you need clean, accessible, and structured data. Devopstrio builds the central nervous system for your enterprise data. We migrate legacy data silos into modern Lakehouses (Databricks, Snowflake), build real-time streaming pipelines (Kafka), and implement rigorous data governance to ensure your AI models are trained on truth.",
     buttonText: "Modernize Your Data",
-    imageSrc: "/images/downloaded/cd74058d06_img.jpg",
+    imageSrc: "/assets/capability-references/data-intelligence/in-action.webp",
   },
   metricsCards: [
-    { value: "Petabytes", label: "Data Managed", image: "/images/downloaded/58dc99f461_img.jpg" },
-    { value: "Sub-Second", label: "Query Latency", image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg" },
-    { value: "100%", label: "Data Lineage", image: "/images/downloaded/609150f783_img.jpg" },
-    { value: "Zero", label: "Data Silos", image: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg" }
+    { value: "Petabytes", label: "Data Managed", image: "/assets/capability-references/data-intelligence/metric-0.webp" },
+    { value: "Sub-Second", label: "Query Latency", image: "/assets/capability-references/data-intelligence/metric-1.webp" },
+    { value: "100%", label: "Data Lineage", image: "/assets/capability-references/data-intelligence/metric-2.webp" },
+    { value: "Zero", label: "Data Silos", image: "/assets/capability-references/data-intelligence/metric-3.webp" }
   ],
   whoWeWorkWith: {
     titleLight: "Data",
@@ -32,21 +32,21 @@ const dataIntelligence = {
     titleLight: "Modern Data",
     titleRed: "Architecture",
     items: [
-      { title: "Single Source of Truth", desc: "Eliminate conflicting reports. Everyone in your organization queries the exact same unified dataset.", image: "/assets/fresh/2021_09_database-schema.jpg" },
-      { title: "AI-Ready Format", desc: "We structure and vectorize your data so it can be immediately consumed by Machine Learning and LLMs.", image: "/assets/fresh/digital-workspace-with-data-analysis-visualization.jpg" },
-      { title: "Real-Time Streaming", desc: "Stop relying on overnight batch jobs. Make decisions based on data that is milliseconds old.", image: "/assets/fresh/high_speed_fiber.jpg" }
+      { title: "Single Source of Truth", desc: "Eliminate conflicting reports. Everyone in your organization queries the exact same unified dataset.", image: "/assets/capability-references/data-intelligence/benefit-0.webp" },
+      { title: "AI-Ready Format", desc: "We structure and vectorize your data so it can be immediately consumed by Machine Learning and LLMs.", image: "/assets/capability-references/data-intelligence/benefit-1.webp" },
+      { title: "Real-Time Streaming", desc: "Stop relying on overnight batch jobs. Make decisions based on data that is milliseconds old.", image: "/assets/capability-references/data-intelligence/benefit-2.webp" }
     ]
   },
   cards: {
     titleLight: "Data",
     titleRed: "Capabilities",
     items: [
-      { badge: "LAKEHOUSE", title: "Modern Data Stack", body: "Migrate from rigid legacy warehouses to scalable Lakehouses like Databricks and Snowflake.", more: "Enjoy the scalability of a data lake with the ACID transactions of a traditional warehouse.", image: "/images/downloaded/930d9ac6ae_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "STREAMING", title: "Real-Time Pipelines", body: "Process millions of events per second using Apache Kafka and Flink.", more: "Crucial for IoT telemetry, financial trading, and dynamic website personalization.", image: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "ETL", title: "Automated ETL/ELT", body: "Build robust, self-healing data pipelines using dbt and Apache Airflow.", more: "Automate the extraction, transformation, and cleaning of messy data from hundreds of SaaS sources.", image: "/assets/ecosystem/engineering-excellence-hero/3.png", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "GOVERNANCE", title: "Data Governance", body: "Implement strict access controls, data masking, and automated PII redaction.", more: "Ensure that sensitive data is anonymized before it ever reaches your data scientists or AI models.", image: "/assets/ecosystem/engineering-excellence-hero/4.png", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "MESH", title: "Data Mesh Architecture", body: "Decentralize data ownership to individual business domains rather than a central IT bottleneck.", more: "Enable agility by treating data as a product that domains expose to each other securely.", image: "/images/downloaded/3243e93894_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "FEATURE STORE", title: "ML Feature Stores", body: "Centralize machine learning features so they can be reused across multiple models.", more: "Ensure that a feature calculated in training is exactly the same as the feature calculated in production.", image: "/assets/ecosystem/engineering-excellence-hero/webp/1.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
+      { badge: "LAKEHOUSE", title: "Modern Data Stack", body: "Migrate from rigid legacy warehouses to scalable Lakehouses like Databricks and Snowflake.", more: "Enjoy the scalability of a data lake with the ACID transactions of a traditional warehouse.", image: "/assets/capability-references/data-intelligence/capability-0.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "STREAMING", title: "Real-Time Pipelines", body: "Process millions of events per second using Apache Kafka and Flink.", more: "Crucial for IoT telemetry, financial trading, and dynamic website personalization.", image: "/assets/capability-references/data-intelligence/capability-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "ETL", title: "Automated ETL/ELT", body: "Build robust, self-healing data pipelines using dbt and Apache Airflow.", more: "Automate the extraction, transformation, and cleaning of messy data from hundreds of SaaS sources.", image: "/assets/capability-references/data-intelligence/capability-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "GOVERNANCE", title: "Data Governance", body: "Implement strict access controls, data masking, and automated PII redaction.", more: "Ensure that sensitive data is anonymized before it ever reaches your data scientists or AI models.", image: "/assets/capability-references/data-intelligence/capability-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "MESH", title: "Data Mesh Architecture", body: "Decentralize data ownership to individual business domains rather than a central IT bottleneck.", more: "Enable agility by treating data as a product that domains expose to each other securely.", image: "/assets/capability-references/data-intelligence/capability-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "FEATURE STORE", title: "ML Feature Stores", body: "Centralize machine learning features so they can be reused across multiple models.", more: "Ensure that a feature calculated in training is exactly the same as the feature calculated in production.", image: "/assets/capability-references/data-intelligence/capability-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
     ]
   },
   insights: {

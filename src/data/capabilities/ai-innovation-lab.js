@@ -11,13 +11,13 @@ const aiInnovationLab = {
     headingRed: "Bleeding Edge",
     paragraph: "Enterprises often struggle to innovate because day-to-day operations consume all their engineering resources. Devopstrio's AI Innovation Lab acts as your external R&D department. We partner with forward-thinking organizations to experiment with unproven technologies—like multi-agent frameworks, neuro-symbolic AI, and spatial computing—building rapid prototypes to test viability before you commit to massive investments.",
     buttonText: "Pitch an Idea",
-    imageSrc: "/images/downloaded/cf13b560ed_img.jpg",
+    imageSrc: "/assets/capability-references/ai-innovation-lab/in-action.webp",
   },
   metricsCards: [
-    { value: "4 Weeks", label: "To Minimum Viable Prototype", image: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg" },
-    { value: "Co-Creation", label: "Shared IP Models", image: "/images/downloaded/9ee44e4bd0_img.jpg" },
-    { value: "PhD", label: "Research Scientists", image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg" },
-    { value: "100%", label: "Experimental Freedom", image: "/images/downloaded/478798247d_img.jpg" }
+    { value: "4 Weeks", label: "To Minimum Viable Prototype", image: "/assets/capability-references/ai-innovation-lab/metric-0.webp" },
+    { value: "Co-Creation", label: "Shared IP Models", image: "/assets/capability-references/ai-innovation-lab/metric-1.webp" },
+    { value: "PhD", label: "Research Scientists", image: "/assets/capability-references/ai-innovation-lab/metric-2.webp" },
+    { value: "100%", label: "Experimental Freedom", image: "/assets/capability-references/ai-innovation-lab/metric-3.webp" }
   ],
   whoWeWorkWith: {
     titleLight: "Innovation",
@@ -32,21 +32,21 @@ const aiInnovationLab = {
     titleLight: "Why Co-Create",
     titleRed: "With Us?",
     items: [
-      { title: "Speed to Validation", desc: "Don't spend a year building something nobody wants. We build functional prototypes in weeks to test with real users.", image: "/assets/fresh/enterprise_innovation_hub.jpg" },
-      { title: "De-Risk Investment", desc: "Fail fast and fail cheap. Test high-risk, high-reward concepts without disrupting your core engineering teams.", image: "/assets/fresh/innovation_quantum_chip.jpg" },
-      { title: "Access to Rare Talent", desc: "Gain immediate access to AI researchers and engineers who specialize in technologies released just weeks ago.", image: "/assets/fresh/engineering_standup_meeting.jpg" }
+      { title: "Speed to Validation", desc: "Don't spend a year building something nobody wants. We build functional prototypes in weeks to test with real users.", image: "/assets/capability-references/ai-innovation-lab/benefit-0.webp" },
+      { title: "De-Risk Investment", desc: "Fail fast and fail cheap. Test high-risk, high-reward concepts without disrupting your core engineering teams.", image: "/assets/capability-references/ai-innovation-lab/benefit-1.webp" },
+      { title: "Access to Rare Talent", desc: "Gain immediate access to AI researchers and engineers who specialize in technologies released just weeks ago.", image: "/assets/capability-references/ai-innovation-lab/benefit-2.webp" }
     ]
   },
   cards: {
     titleLight: "Lab",
     titleRed: "Offerings",
     items: [
-      { badge: "IDEATION", title: "Design Thinking Workshops", body: "Collaborative sessions to brainstorm impossible ideas and sketch out how AI could solve them.", more: "We combine your deep domain expertise with our knowledge of what's technically possible today.", image: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "PROTOTYPING", title: "Rapid PoC Development", body: "We take an idea from a whiteboard to a clickable, AI-powered prototype in 4 to 6 weeks.", more: "Perfect for testing user interfaces, proving technical viability, or securing stakeholder funding.", image: "/images/downloaded/930d9ac6ae_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "RESEARCH", title: "Applied AI Research", body: "Tackling unsolved problems. We review academic papers and adapt theoretical models for commercial use.", more: "From experimenting with novel attention mechanisms to exploring quantum machine learning concepts.", image: "/images/downloaded/3f90bfcdd3_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "HACKATHONS", title: "Corporate Hackathons", body: "We organize and run intensive 48-hour AI hackathons for your employees to spark internal innovation.", more: "We provide the APIs, the cloud environments, and the mentorship; your team provides the domain problems.", image: "/assets/services/webp/bg-ai.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "PILOTS", title: "Production Pilots", body: "Scale a successful prototype into a secure, limited-release pilot for a subset of your users.", more: "We handle the MLOps and infrastructure needed to test the concept in the real world securely.", image: "/images/downloaded/3243e93894_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "INCUBATION", title: "Venture Incubation", body: "Co-investing in spin-off products. We provide the technical equity to build the product while you run the business.", more: "Shared risk and shared reward for truly disruptive industry solutions.", image: "/assets/services/webp/bg-cloud.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
+      { badge: "IDEATION", title: "Design Thinking Workshops", body: "Collaborative sessions to brainstorm impossible ideas and sketch out how AI could solve them.", more: "We combine your deep domain expertise with our knowledge of what's technically possible today.", image: "/assets/capability-references/ai-innovation-lab/capability-0.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "PROTOTYPING", title: "Rapid PoC Development", body: "We take an idea from a whiteboard to a clickable, AI-powered prototype in 4 to 6 weeks.", more: "Perfect for testing user interfaces, proving technical viability, or securing stakeholder funding.", image: "/assets/capability-references/ai-innovation-lab/capability-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "RESEARCH", title: "Applied AI Research", body: "Tackling unsolved problems. We review academic papers and adapt theoretical models for commercial use.", more: "From experimenting with novel attention mechanisms to exploring quantum machine learning concepts.", image: "/assets/capability-references/ai-innovation-lab/capability-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "HACKATHONS", title: "Corporate Hackathons", body: "We organize and run intensive 48-hour AI hackathons for your employees to spark internal innovation.", more: "We provide the APIs, the cloud environments, and the mentorship; your team provides the domain problems.", image: "/assets/capability-references/ai-innovation-lab/capability-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "PILOTS", title: "Production Pilots", body: "Scale a successful prototype into a secure, limited-release pilot for a subset of your users.", more: "We handle the MLOps and infrastructure needed to test the concept in the real world securely.", image: "/assets/capability-references/ai-innovation-lab/capability-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "INCUBATION", title: "Venture Incubation", body: "Co-investing in spin-off products. We provide the technical equity to build the product while you run the business.", more: "Shared risk and shared reward for truly disruptive industry solutions.", image: "/assets/capability-references/ai-innovation-lab/capability-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
     ]
   },
   insights: {

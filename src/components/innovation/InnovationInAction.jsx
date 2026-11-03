@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import labActionImg from "../../assets/fresh/agent_compliance_auditing.jpg";
+import labActionImg from "../../assets/fresh/innovation_lab_want_to_innovate.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

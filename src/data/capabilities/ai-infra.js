@@ -11,13 +11,13 @@ const aiInfra = {
     headingRed: "Scale",
     paragraph: "A model on a laptop is a toy. A model in production requires massive compute, rigorous monitoring, and automated retraining pipelines. Devopstrio engineers cloud-native AI infrastructure utilizing Kubernetes, GPU clustering, and advanced MLOps tools. We optimize for high availability and low inference latency while keeping your cloud compute costs strictly under control.",
     buttonText: "Scale Your AI",
-    imageSrc: "/images/downloaded/d5228a7004_photo-1558494949-ef010cbdcc31.jpg",
+    imageSrc: "/assets/capability-references/ai-infra/in-action.webp",
   },
   metricsCards: [
-    { value: "40%", label: "Cloud Cost Reduction", image: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg" },
-    { value: "Zero", label: "Downtime Deployments", image: "/images/downloaded/9ee44e4bd0_img.jpg" },
-    { value: "99.99%", label: "API Uptime", image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg" },
-    { value: "Automated", label: "Model Retraining", image: "/images/downloaded/478798247d_img.jpg" }
+    { value: "40%", label: "Cloud Cost Reduction", image: "/assets/capability-references/ai-infra/metric-0.webp" },
+    { value: "Zero", label: "Downtime Deployments", image: "/assets/capability-references/ai-infra/metric-1.webp" },
+    { value: "99.99%", label: "API Uptime", image: "/assets/capability-references/ai-infra/metric-2.webp" },
+    { value: "Automated", label: "Model Retraining", image: "/assets/capability-references/ai-infra/metric-3.webp" }
   ],
   whoWeWorkWith: {
     titleLight: "Infrastructure",
@@ -32,21 +32,21 @@ const aiInfra = {
     titleLight: "The MLOps",
     titleRed: "Advantage",
     items: [
-      { title: "Continuous Delivery", desc: "Apply software engineering best practices to machine learning. Version, test, and deploy models automatically.", image: "/assets/fresh/agent_devops_cicd.jpg" },
-      { title: "Cost Optimization", desc: "Stop over-provisioning expensive A100 GPUs. We scale compute down to zero when not in use.", image: "/assets/fresh/agent_cloud_infra.jpg" },
-      { title: "Total Observability", desc: "Monitor memory usage, inference latency, and data drift in real-time through centralized dashboards.", image: "/assets/fresh/dashboard_cloud_telemetry.jpg" }
+      { title: "Continuous Delivery", desc: "Apply software engineering best practices to machine learning. Version, test, and deploy models automatically.", image: "/assets/capability-references/ai-infra/benefit-0.webp" },
+      { title: "Cost Optimization", desc: "Stop over-provisioning expensive A100 GPUs. We scale compute down to zero when not in use.", image: "/assets/capability-references/ai-infra/benefit-1.webp" },
+      { title: "Total Observability", desc: "Monitor memory usage, inference latency, and data drift in real-time through centralized dashboards.", image: "/assets/capability-references/ai-infra/benefit-2.webp" }
     ]
   },
   cards: {
     titleLight: "Infrastructure",
     titleRed: "Capabilities",
     items: [
-      { badge: "COMPUTE", title: "GPU Cluster Management", body: "Deploy and manage massive distributed training clusters across AWS, GCP, or Azure.", more: "We utilize Kubernetes, Ray, and Slurm to orchestrate multi-node GPU workloads efficiently.", image: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "SERVING", title: "High-Performance Serving", body: "Expose models via ultra-low latency endpoints using Triton, vLLM, or TensorFlow Serving.", more: "We implement continuous batching and KV-cache management to maximize throughput on language models.", image: "/images/downloaded/930d9ac6ae_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "PIPELINES", title: "Automated ML Pipelines", body: "Build DAGs (Directed Acyclic Graphs) to automate data extraction, training, and deployment.", more: "Utilize tools like Kubeflow, MLflow, and Apache Airflow to remove human error from model updates.", image: "/images/downloaded/3f90bfcdd3_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "MONITORING", title: "Model Observability", body: "Track statistical data drift, concept drift, and performance degradation in production.", more: "Alert data scientists immediately if the distribution of incoming data shifts away from the training baseline.", image: "/assets/services/webp/bg-ai.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "EDGE", title: "Edge Deployment (AIoT)", body: "Compress and quantize models to run on low-power devices like cameras or factory sensors.", more: "We use TensorRT and ONNX to shrink model size by 80% without sacrificing accuracy.", image: "/images/downloaded/3243e93894_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "IAC", title: "Infrastructure as Code", body: "Provision your entire AI stack via Terraform and Ansible for reproducible environments.", more: "Spin up identical staging, QA, and production AI environments in minutes, perfectly configured.", image: "/assets/services/webp/bg-cloud.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
+      { badge: "COMPUTE", title: "GPU Cluster Management", body: "Deploy and manage massive distributed training clusters across AWS, GCP, or Azure.", more: "We utilize Kubernetes, Ray, and Slurm to orchestrate multi-node GPU workloads efficiently.", image: "/assets/capability-references/ai-infra/capability-0.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "SERVING", title: "High-Performance Serving", body: "Expose models via ultra-low latency endpoints using Triton, vLLM, or TensorFlow Serving.", more: "We implement continuous batching and KV-cache management to maximize throughput on language models.", image: "/assets/capability-references/ai-infra/capability-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "PIPELINES", title: "Automated ML Pipelines", body: "Build DAGs (Directed Acyclic Graphs) to automate data extraction, training, and deployment.", more: "Utilize tools like Kubeflow, MLflow, and Apache Airflow to remove human error from model updates.", image: "/assets/capability-references/ai-infra/capability-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "MONITORING", title: "Model Observability", body: "Track statistical data drift, concept drift, and performance degradation in production.", more: "Alert data scientists immediately if the distribution of incoming data shifts away from the training baseline.", image: "/assets/capability-references/ai-infra/capability-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "EDGE", title: "Edge Deployment (AIoT)", body: "Compress and quantize models to run on low-power devices like cameras or factory sensors.", more: "We use TensorRT and ONNX to shrink model size by 80% without sacrificing accuracy.", image: "/assets/capability-references/ai-infra/capability-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "IAC", title: "Infrastructure as Code", body: "Provision your entire AI stack via Terraform and Ansible for reproducible environments.", more: "Spin up identical staging, QA, and production AI environments in minutes, perfectly configured.", image: "/assets/capability-references/ai-infra/capability-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
     ]
   },
   insights: {

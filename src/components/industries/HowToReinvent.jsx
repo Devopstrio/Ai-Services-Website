@@ -1,6 +1,36 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
+import bankingCustomerExperienceImg from "../../assets/industries/banking_reinvent_personalized_customer_experience.webp";
+import bankingComplianceImg from "../../assets/industries/banking_reinvent_intelligent_compliance.webp";
+import healthcareFrontlineImg from "../../assets/industries/healthcare_reinvent_frontline_clinicians.webp";
+import healthcareDataImg from "../../assets/industries/healthcare_reinvent_ai_data.webp";
+import insuranceClaimsImg from "../../assets/industries/insurance_reinvent_ai_claims.webp";
+import insuranceComplianceImg from "../../assets/industries/insurance_reinvent_intelligent_compliance.webp";
+import retailFrontlineImg from "../../assets/industries/retail_reinvent_frontline_customer_engagement.webp";
+import retailChannelsImg from "../../assets/industries/retail_reinvent_digital_physical_connections.webp";
+import manufacturingAutomationImg from "../../assets/industries/manufacturing_reinvent_intelligent_automation.webp";
+import manufacturingWorkforceImg from "../../assets/industries/manufacturing_reinvent_workforce_empowerment.webp";
+import logisticsInnovationImg from "../../assets/industries/logistics_reinvent_ai_innovation.webp";
+import logisticsCustomerExperienceImg from "../../assets/industries/logistics_reinvent_customer_experience.webp";
+import governmentInnovationImg from "../../assets/industries/government_reinvent_ai_innovation.webp";
+import governmentOperationalExcellenceImg from "../../assets/industries/government_reinvent_operational_excellence.webp";
+import educationPersonalizedLearningImg from "../../assets/industries/education_reinvent_personalized_learning.webp";
+import educationDigitalTransformationImg from "../../assets/industries/education_reinvent_digital_transformation.webp";
+import telecomInnovationImg from "../../assets/industries/telecom_reinvent_ai_innovation.webp";
+import telecomOperationalExcellenceImg from "../../assets/industries/telecom_reinvent_operational_excellence.webp";
+import realEstateInnovationImg from "../../assets/industries/realestate_reinvent_ai_innovation.webp";
+import realEstateCustomerExperienceImg from "../../assets/industries/realestate_reinvent_customer_experience.webp";
+import energyInnovationImg from "../../assets/industries/energy_reinvent_ai_innovation.webp";
+import energyOperationalExcellenceImg from "../../assets/industries/energy_reinvent_operational_excellence.webp";
+import automotiveInnovationImg from "../../assets/industries/automotive_reinvent_ai_innovation.webp";
+import automotiveOperationalExcellenceImg from "../../assets/industries/automotive_reinvent_operational_excellence.webp";
+import hospitalityInnovationImg from "../../assets/industries/hospitality_reinvent_ai_innovation.webp";
+import hospitalityOperationalExcellenceImg from "../../assets/industries/hospitality_reinvent_operational_excellence.webp";
+import mediaInnovationImg from "../../assets/industries/media_reinvent_ai_innovation.webp";
+import mediaCustomerExperienceImg from "../../assets/industries/media_reinvent_customer_experience.webp";
+import professionalServicesInnovationImg from "../../assets/industries/professional_services_reinvent_ai_innovation.webp";
+import professionalServicesOperationalExcellenceImg from "../../assets/industries/professional_services_reinvent_operational_excellence.webp";
 import {
   FiActivity,
   FiTrendingUp,
@@ -118,8 +148,8 @@ const INDUSTRY_DATA = {
       },
     ],
     images: [
-      "https://picsum.photos/seed/healthcare-reinvent-1/700/500",
-      "https://picsum.photos/seed/healthcare-reinvent-2/700/500",
+      healthcareFrontlineImg,
+      healthcareDataImg,
     ]
   },
   banking: {
@@ -169,8 +199,8 @@ const INDUSTRY_DATA = {
       },
     ],
     images: [
-      "https://picsum.photos/seed/banking-reinvent-1/700/500",
-      "https://picsum.photos/seed/banking-reinvent-2/700/500",
+      bankingCustomerExperienceImg,
+      bankingComplianceImg,
     ]
   },
   retail: {
@@ -220,8 +250,8 @@ const INDUSTRY_DATA = {
       },
     ],
     images: [
-      "https://picsum.photos/seed/retail-reinvent-1/700/500",
-      "https://picsum.photos/seed/retail-reinvent-2/700/500",
+      retailFrontlineImg,
+      retailChannelsImg,
     ]
   },
   manufacturing: {
@@ -271,8 +301,8 @@ const INDUSTRY_DATA = {
       },
     ],
     images: [
-      "https://picsum.photos/seed/manufacturing-reinvent-1/700/500",
-      "https://picsum.photos/seed/manufacturing-reinvent-2/700/500",
+      manufacturingAutomationImg,
+      manufacturingWorkforceImg,
     ]
   },
   insurance: {
@@ -322,8 +352,8 @@ const INDUSTRY_DATA = {
       },
     ],
     images: [
-      "https://picsum.photos/seed/insurance-reinvent-1/700/500",
-      "https://picsum.photos/seed/insurance-reinvent-2/700/500",
+      insuranceClaimsImg,
+      insuranceComplianceImg,
     ]
   },
   education: {
@@ -373,8 +403,8 @@ const INDUSTRY_DATA = {
       },
     ],
     images: [
-      "https://picsum.photos/seed/education-reinvent-1/700/500",
-      "https://picsum.photos/seed/education-reinvent-2/700/500",
+      educationPersonalizedLearningImg,
+      educationDigitalTransformationImg,
     ]
   }
 };
@@ -655,7 +685,25 @@ export default function HowToReinvent() {
   }, [location.pathname]);
 
   const cards = industryData.cards || [];
-  const images = industryData.images || [];
+  const images = location.pathname.includes("government-public-sector") || location.pathname.includes("government")
+    ? [governmentInnovationImg, governmentOperationalExcellenceImg]
+    : location.pathname.includes("telecommunications") || location.pathname.includes("telecom")
+      ? [telecomInnovationImg, telecomOperationalExcellenceImg]
+      : location.pathname.includes("real-estate") || location.pathname.includes("realestate")
+        ? [realEstateInnovationImg, realEstateCustomerExperienceImg]
+          : location.pathname.includes("energy-utilities") || location.pathname.includes("energy")
+            ? [energyInnovationImg, energyOperationalExcellenceImg]
+            : location.pathname.includes("automotive")
+              ? [automotiveInnovationImg, automotiveOperationalExcellenceImg]
+              : location.pathname.includes("hospitality-travel") || location.pathname.includes("hospitality")
+                ? [hospitalityInnovationImg, hospitalityOperationalExcellenceImg]
+                : location.pathname.includes("media-entertainment")
+                  ? [mediaInnovationImg, mediaCustomerExperienceImg]
+                  : location.pathname.includes("professional-services")
+                    ? [professionalServicesInnovationImg, professionalServicesOperationalExcellenceImg]
+            : location.pathname.includes("logistics")
+              ? [logisticsInnovationImg, logisticsCustomerExperienceImg]
+              : industryData.images || [];
 
   const flow = [];
   if (cards.length > 0) {

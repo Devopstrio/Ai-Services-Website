@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/crm_hero.jpg";
-import sfdcImg from "../../assets/integrations/salesforce_crm.jpg";
-import hubspotImg from "../../assets/integrations/hubspot_inbound.jpg";
-import zendeskImg from "../../assets/integrations/zendesk_support.jpg";
-import dynamicsImg from "../../assets/integrations/dynamics_crm.jpg";
-import caseImg from "../../assets/integrations/crm_case.jpg";
+import sfdcImg from "../../assets/integrations/references/crm-platforms/Native SaaS Connectors/Image (Salesforce Sales & Service Cloud).webp";
+import hubspotImg from "../../assets/integrations/references/crm-platforms/Native SaaS Connectors/Image (HubSpot Marketing & Sales Hub).webp";
+import zendeskImg from "../../assets/integrations/references/crm-platforms/Native SaaS Connectors/Image (Zendesk Support & Sunshine).webp";
+import dynamicsImg from "../../assets/integrations/references/crm-platforms/Native SaaS Connectors/Image (Microsoft Dynamics 365 CRM).webp";
+import caseImg from "../../assets/integrations/references/crm-platforms/Image (Global Fintech & Banking SaaS Provider).webp";
 
 export const crmPlatformsData = {
   id: "crm-platforms",

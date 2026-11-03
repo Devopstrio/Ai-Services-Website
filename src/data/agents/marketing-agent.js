@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_marketing_campaign.jpg";
-import campaignImg from "../../assets/unique_agents/marketing_campaign_studio.jpg";
-import abmImg from "../../assets/fresh/what_is_marketing_management_7f06fabeac.webp";
-import creativeImg from "../../assets/fresh/multimodal_ai_workbench.jpg";
-import analyticsImg from "../../assets/fresh/dashboard_customer_journey.jpg";
-import caseImg from "../../assets/unique_agents/marketing_agent_case.jpg";
+import campaignImg from "../../assets/agent-references/Marketing Agent/ENTERPRISE CAPABILITIES/Image (Omnichannel Campaign Generation).webp";
+import abmImg from "../../assets/agent-references/Marketing Agent/ENTERPRISE CAPABILITIES/Image (Dynamic ABM Orchestration).webp";
+import creativeImg from "../../assets/agent-references/Marketing Agent/ENTERPRISE CAPABILITIES/Image (Brand Voice & Regulatory Enclave).webp";
+import analyticsImg from "../../assets/agent-references/Marketing Agent/ENTERPRISE CAPABILITIES/Image (Real-Time Ad Budget Optimization).webp";
+import caseImg from "../../assets/agent-references/Marketing Agent/Image (Global B2B DevOps Platform).webp";
 
 export const marketingAgentData = {
   id: "marketing-agent",

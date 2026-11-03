@@ -1,9 +1,12 @@
 import heroBg from "../../assets/fresh/product_workflow_automation.jpg";
-import road1 from "../../assets/fresh/dashboard_executive_kpi.jpg";
-import road2 from "../../assets/fresh/product_devops_copilot.jpg";
-import road3 from "../../assets/fresh/product_brio_enterprise.jpg";
-import road4 from "../../assets/fresh/server_rack_neon_glow.jpg";
-import caseImg from "../../assets/fresh/modern-interior-design-office.jpg";
+import swarmOSPillarImg from "../../assets/fresh/product_roadmap_pillar_swarmos_agent_mesh.webp";
+import leanIdePillarImg from "../../assets/fresh/product_roadmap_pillar_neurosymbolic_ide.webp";
+import photonicPillarImg from "../../assets/fresh/product_roadmap_pillar_photonic_tpu.webp";
+import worldSimulatorPillarImg from "../../assets/fresh/product_roadmap_pillar_4d_world_simulator.webp";
+import swarmOSFrontierImg from "../../assets/fresh/product_roadmap_frontier_swarmos_architecture.webp";
+import leanIdeFrontierImg from "../../assets/fresh/product_roadmap_frontier_lean4_ide.webp";
+import photonicFrontierImg from "../../assets/fresh/product_roadmap_frontier_photonic_compute.webp";
+import caseImg from "../../assets/fresh/product_roadmap_case_study_fortune50_provider.webp";
 
 export const productRoadmapData = {
   id: "product-roadmap",
@@ -31,7 +34,7 @@ export const productRoadmapData = {
       tag: "CURRENT RELEASE // Q3 2026",
       title: "SwarmOS v5.0: Autonomous Agent Mesh",
       description: "Next-gen distributed multi-agent runtime featuring sub-millisecond gRPC consensus, persistent vector memory fabric, and deterministic GitOps rollbacks.",
-      image: road2,
+      image: swarmOSPillarImg,
       metricBadge: "Now in Production",
       highlights: [
         "10,000+ concurrent cognitive agents per cluster node",
@@ -44,7 +47,7 @@ export const productRoadmapData = {
       tag: "UPCOMING // Q4 2026",
       title: "Neuro-Symbolic IDE & Lean 4 Copilot",
       description: "An integrated developer environment that verifies code correctness and mathematical logic using automated Lean 4 theorem proving kernels.",
-      image: road1,
+      image: leanIdePillarImg,
       metricBadge: "Beta Launch Oct 2026",
       highlights: [
         "Zero-hallucination code generation with SMT solver constraint checking",
@@ -57,7 +60,7 @@ export const productRoadmapData = {
       tag: "HORIZON // Q1 2027",
       title: "Photonic TPU & Sub-Watt Inference Runtime",
       description: "Co-designed inference runtime optimized for emerging optical silicon accelerators, cutting data center power consumption by 90%.",
-      image: road4,
+      image: photonicPillarImg,
       metricBadge: "In Lab Validation",
       highlights: [
         "Speed-of-light optical matrix-vector multiplier driver layers",
@@ -70,7 +73,7 @@ export const productRoadmapData = {
       tag: "VISION // Q2 2027",
       title: "Spatio-Temporal 4D World Simulator v2",
       description: "Continuous 3D physics foundation model simulating fluid dynamics, structural elasticity, and robotic compliance for industrial CAD manufacturing.",
-      image: road3,
+      image: worldSimulatorPillarImg,
       metricBadge: "Research Preview",
       highlights: [
         "Simulates complex physical dynamics 20x faster than classical FEM",
@@ -85,7 +88,7 @@ export const productRoadmapData = {
       title: "SwarmOS v5.0 Architecture Deep Dive",
       category: "Agent Runtime",
       badge: "Production Ready",
-      image: road2,
+      image: swarmOSFrontierImg,
       benchmark: "Sub-millisecond Latency",
       summary: "Explore the internal architecture of our distributed agent swarm engine with native consensus election and encrypted memory fabric.",
       features: [
@@ -99,7 +102,7 @@ export const productRoadmapData = {
       title: "Lean 4 Mathematical IDE Copilot",
       category: "Developer Tools",
       badge: "Beta Cohort Open",
-      image: road1,
+      image: leanIdeFrontierImg,
       benchmark: "100% Formal Verification",
       summary: "See how our upcoming IDE Copilot proves algebraic and algorithmic invariants before allowing code to merge into production branches.",
       features: [
@@ -113,7 +116,7 @@ export const productRoadmapData = {
       title: "Photonic Optical Compute Engine",
       category: "Hardware Acceleration",
       badge: "Lab Benchmark: 12ps",
-      image: road4,
+      image: photonicFrontierImg,
       benchmark: "90% Lower Power",
       summary: "Review preliminary benchmark traces of our optical tensor multiplication driver running on prototype silicon photonics chips.",
       features: [

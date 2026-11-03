@@ -1,9 +1,12 @@
 import heroBg from "../../assets/fresh/innovation_quantum_chip.jpg";
-import neuroImg from "../../assets/fresh/neural_connections_nodes.jpg";
-import interpretImg from "../../assets/fresh/quantum_laser_optics.jpg";
-import worldModelImg from "../../assets/fresh/quantum_cryo_computing.jpg";
-import bioImg from "../../assets/fresh/innovation_bio_ai_lab.jpg";
-import caseImg from "../../assets/fresh/close-up-data-center-programmers-using-pc-visualize-ai-neural-networks.jpg";
+import neuroPillarImg from "../../assets/fresh/ai_research_pillar_neuro_symbolic.webp";
+import interpretPillarImg from "../../assets/fresh/ai_research_pillar_mechanistic_interpretability.webp";
+import worldModelPillarImg from "../../assets/fresh/ai_research_pillar_physical_world_models.webp";
+import bioPillarImg from "../../assets/fresh/ai_research_pillar_biomolecular_design.webp";
+import formalMathFrontierImg from "../../assets/fresh/ai_research_frontier_lean4_formal_proving.webp";
+import saeFrontierImg from "../../assets/fresh/ai_research_frontier_sae_circuit_steering.webp";
+import transonicFrontierImg from "../../assets/fresh/ai_research_frontier_transonic_simulator.webp";
+import caseImg from "../../assets/fresh/ai_research_global_aerospace_consortium.webp";
 
 export const aiResearchData = {
   id: "ai-research",
@@ -31,7 +34,7 @@ export const aiResearchData = {
       tag: "MATHEMATICAL FOUNDATIONS",
       title: "Neuro-Symbolic Reasoning & Formal Logic",
       description: "Fusing deep neural representations with deterministic first-order logic solvers to eliminate arithmetic hallucinations and guarantee provable mathematical accuracy.",
-      image: neuroImg,
+      image: neuroPillarImg,
       metricBadge: "100% Provable Logic",
       highlights: [
         "Machine-checkable formal theorem proofs in Lean 4 and Coq",
@@ -44,7 +47,7 @@ export const aiResearchData = {
       tag: "SAFETY & ALIGNMENT",
       title: "Mechanistic Interpretability & Circuit Analysis",
       description: "Reverse-engineering transformer networks into monosemantic circuits using Sparse Autoencoders, isolating deceptive behaviors and steering models in real time.",
-      image: interpretImg,
+      image: interpretPillarImg,
       metricBadge: "Zero Deception",
       highlights: [
         "Millions of monosemantic features mapped across intermediate layers",
@@ -57,7 +60,7 @@ export const aiResearchData = {
       tag: "PHYSICAL SIMULATION",
       title: "Generative Physical World Models",
       description: "Training continuous 3D spatio-temporal foundation models that simulate fluid dynamics, aerodynamics, and material stress 20x faster than traditional FEM solvers.",
-      image: worldModelImg,
+      image: worldModelPillarImg,
       metricBadge: "20x Physics Speedup",
       highlights: [
         "Continuous 3D space-time representations preserving physical laws",
@@ -70,7 +73,7 @@ export const aiResearchData = {
       tag: "LIFE SCIENCES & DEEP TECH",
       title: "Generative Biomolecular Design",
       description: "Applying SE(3)-equivariant geometric deep learning to design de novo protein structures, antibody therapeutics, and synthetic enzyme catalysts.",
-      image: bioImg,
+      image: bioPillarImg,
       metricBadge: "Validated Wet-Lab Bind",
       highlights: [
         "All-atom geometric diffusion generating custom therapeutic antibodies",
@@ -85,7 +88,7 @@ export const aiResearchData = {
       title: "Lean 4 Formal Theorem Proving",
       category: "Neuro-Symbolic AI",
       badge: "Math Olympiad Solver",
-      image: neuroImg,
+      image: formalMathFrontierImg,
       benchmark: "94.8% on IMO Geometry Proofs",
       summary: "Combines neural search heuristics with the Lean 4 formal verification kernel, producing machine-checked mathematical proofs with zero hallucinations.",
       features: [
@@ -99,7 +102,7 @@ export const aiResearchData = {
       title: "SAE Mechanistic Circuit Steering",
       category: "Safety & Alignment",
       badge: "Deception Clamp",
-      image: interpretImg,
+      image: saeFrontierImg,
       benchmark: "99.4% Deception Circuit Isolation",
       summary: "Extracts millions of monosemantic latent features from neural residual streams, applying real-time steering vectors to prevent deceptive responses.",
       features: [
@@ -113,7 +116,7 @@ export const aiResearchData = {
       title: "Transonic Aerodynamic World Simulator",
       category: "Physical Systems",
       badge: "Fluid Dynamics",
-      image: worldModelImg,
+      image: transonicFrontierImg,
       benchmark: "22x Faster than ANSYS Fluent",
       summary: "Simulates turbulent airflow and shockwave boundary layer detachment on supersonic aircraft airfoils directly from continuous latent representations.",
       features: [

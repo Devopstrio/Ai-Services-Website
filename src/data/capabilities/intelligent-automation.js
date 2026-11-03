@@ -11,13 +11,13 @@ const intelligentAutomation = {
     headingRed: "Unpredictable",
     paragraph: "Traditional Robotic Process Automation (RPA) breaks the moment a UI changes or an exception occurs. Devopstrio engineers Cognitive Automation systems that combine RPA with Machine Learning and Generative AI. Our bots can read unstructured emails, make judgement calls based on historical data, and dynamically navigate complex GUI interfaces without brittle xpath selectors.",
     buttonText: "Explore Automation",
-    imageSrc: "/images/downloaded/d820dc4e18_photo-1551288049-bebda4e38f71.jpg",
+    imageSrc: "/assets/capability-references/intelligent-automation/in-action.webp",
   },
   metricsCards: [
-    { value: "60%", label: "Reduction in Manual Tasks", image: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg" },
-    { value: "24/7", label: "Operational Uptime", image: "/images/downloaded/d97187fdf9_img.jpg" },
-    { value: "0", label: "Fatigue Errors", image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg" },
-    { value: "10x", label: "Faster Exception Handling", image: "/images/downloaded/478798247d_img.jpg" }
+    { value: "60%", label: "Reduction in Manual Tasks", image: "/assets/capability-references/intelligent-automation/metric-0.webp" },
+    { value: "24/7", label: "Operational Uptime", image: "/assets/capability-references/intelligent-automation/metric-1.webp" },
+    { value: "0", label: "Fatigue Errors", image: "/assets/capability-references/intelligent-automation/metric-2.webp" },
+    { value: "10x", label: "Faster Exception Handling", image: "/assets/capability-references/intelligent-automation/metric-3.webp" }
   ],
   whoWeWorkWith: {
     titleLight: "Automation",
@@ -32,21 +32,21 @@ const intelligentAutomation = {
     titleLight: "The Cognitive",
     titleRed: "Advantage",
     items: [
-      { title: "Resilient Workflows", desc: "Our AI-powered bots use computer vision to navigate UIs. If a button moves, the bot still finds it.", image: "/assets/fresh/automated_logistics_hub.jpg" },
-      { title: "Unstructured Data", desc: "Process free-text emails, PDFs, and hand-written notes directly within the automation pipeline.", image: "/assets/fresh/data-anlytics-ai-database-management-260nw-2489189257.webp" },
-      { title: "Human in the Loop", desc: "Bots automatically pause and route edge cases to human managers for approval before continuing.", image: "/assets/fresh/global_operations_center.jpg" }
+      { title: "Resilient Workflows", desc: "Our AI-powered bots use computer vision to navigate UIs. If a button moves, the bot still finds it.", image: "/assets/capability-references/intelligent-automation/benefit-0.webp" },
+      { title: "Unstructured Data", desc: "Process free-text emails, PDFs, and hand-written notes directly within the automation pipeline.", image: "/assets/capability-references/intelligent-automation/benefit-1.webp" },
+      { title: "Human in the Loop", desc: "Bots automatically pause and route edge cases to human managers for approval before continuing.", image: "/assets/capability-references/intelligent-automation/benefit-2.webp" }
     ]
   },
   cards: {
     titleLight: "Automation",
     titleRed: "Capabilities",
     items: [
-      { badge: "RPA + AI", title: "Cognitive RPA", body: "Enhance traditional UiPath or Automation Anywhere bots with LLMs to handle complex reasoning.", more: "We build bots that don't just move data, but understand the context of the data they are moving.", image: "/images/downloaded/58dc99f461_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "PROCESS MINING", title: "Task Mining", body: "Deploy background agents to quietly observe how employees work and automatically generate process maps.", more: "Discover exactly where the bottlenecks are in your organization before you build the automation.", image: "/images/downloaded/001f4d30d1_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "ORCHESTRATION", title: "BPM Orchestration", body: "Coordinate hundreds of bots, API calls, and human approvals into a single massive workflow.", more: "We use Camunda and temporal.io to build stateful, resilient automation pipelines that never drop a task.", image: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "EMAIL", title: "Intelligent Triage", body: "Bots that read shared inboxes (e.g., support@, billing@), classify the intent, and reply autonomously.", more: "Reduce initial response times from hours to seconds while routing complex issues to the right department.", image: "/assets/ecosystem/grid/community-talent-network_categories-Grid/webp/Generated-Design-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "MAINFRAME", title: "Legacy Integration", body: "Automate green-screen AS/400 mainframes without APIs using computer vision and terminal emulation.", more: "Connect your 40-year-old mainframe directly to modern web apps without rewriting the legacy code.", image: "/assets/ecosystem/grid/community-talent-network_categories-Grid/webp/Generated-Design-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "LOW CODE", title: "Low-Code Platforms", body: "Empower your business users to build their own automations safely using PowerAutomate and Zapier.", more: "We set up the governance, guardrails, and custom connectors so citizen developers can automate safely.", image: "/assets/ecosystem/grid/community-talent-network_categories-Grid/webp/Generated-Design-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
+      { badge: "RPA + AI", title: "Cognitive RPA", body: "Enhance traditional UiPath or Automation Anywhere bots with LLMs to handle complex reasoning.", more: "We build bots that don't just move data, but understand the context of the data they are moving.", image: "/assets/capability-references/intelligent-automation/capability-0.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "PROCESS MINING", title: "Task Mining", body: "Deploy background agents to quietly observe how employees work and automatically generate process maps.", more: "Discover exactly where the bottlenecks are in your organization before you build the automation.", image: "/assets/capability-references/intelligent-automation/capability-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "ORCHESTRATION", title: "BPM Orchestration", body: "Coordinate hundreds of bots, API calls, and human approvals into a single massive workflow.", more: "We use Camunda and temporal.io to build stateful, resilient automation pipelines that never drop a task.", image: "/assets/capability-references/intelligent-automation/capability-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "EMAIL", title: "Intelligent Triage", body: "Bots that read shared inboxes (e.g., support@, billing@), classify the intent, and reply autonomously.", more: "Reduce initial response times from hours to seconds while routing complex issues to the right department.", image: "/assets/capability-references/intelligent-automation/capability-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "MAINFRAME", title: "Legacy Integration", body: "Automate green-screen AS/400 mainframes without APIs using computer vision and terminal emulation.", more: "Connect your 40-year-old mainframe directly to modern web apps without rewriting the legacy code.", image: "/assets/capability-references/intelligent-automation/capability-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "LOW CODE", title: "Low-Code Platforms", body: "Empower your business users to build their own automations safely using PowerAutomate and Zapier.", more: "We set up the governance, guardrails, and custom connectors so citizen developers can automate safely.", image: "/assets/capability-references/intelligent-automation/capability-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
     ]
   },
   insights: {

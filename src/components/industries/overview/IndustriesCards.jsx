@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
-import healthcareImg from "../../../assets/fresh/clinical_ai_diagnostics.jpg";
-import bankingImg from "../../../assets/fresh/agent_finance_reconciliation.jpg";
-import retailImg from "../../../assets/industries/retail_2.jpg";
-import mfgImg from "../../../assets/fresh/automated_logistics_hub.jpg";
-import energyImg from "../../../assets/industries/energy_4.jpg";
-import autoImg from "../../../assets/fresh/automotive_autonomous_driving.jpg";
+import healthcareImg from "../../../assets/fresh/industry_clinical_ai_life_sciences.webp";
+import bankingImg from "../../../assets/fresh/industry_financial_systems_risk.webp";
+import retailImg from "../../../assets/fresh/industry_intelligent_commerce_demand.webp";
+import mfgImg from "../../../assets/fresh/industry_smart_factory_vision_ai.webp";
+import energyImg from "../../../assets/fresh/industry_grid_optimization_telemetry.webp";
+import autoImg from "../../../assets/fresh/industry_connected_vehicle_fleets.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

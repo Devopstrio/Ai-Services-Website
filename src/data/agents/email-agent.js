@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/product_mailtab_inbox.jpg";
-import triageImg from "../../assets/unique_agents/email_inbox_triage.jpg";
-import draftImg from "../../assets/fresh/digital-workspace-with-data-analysis-visualization.jpg";
-import scheduleImg from "../../assets/fresh/microsoft-teams-and-sharepoint-the-perfect-collaboration-bundle-01.webp";
-import followImg from "../../assets/unique_agents/meeting_transcript_hub.jpg";
-import caseImg from "../../assets/unique_agents/email_agent_case.jpg";
+import triageImg from "../../assets/agent-references/Email Agent/ENTERPRISE CAPABILITIES/Image (Intelligent Urgency Triage).webp";
+import draftImg from "../../assets/agent-references/Email Agent/ENTERPRISE CAPABILITIES/Image (Context-Aware Reply Drafting).webp";
+import scheduleImg from "../../assets/agent-references/Email Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Calendar Scheduling).webp";
+import followImg from "../../assets/agent-references/Email Agent/ENTERPRISE CAPABILITIES/Image (Proactive Follow-Up & Commitment Guard).webp";
+import caseImg from "../../assets/agent-references/Email Agent/Image (Global Venture Capital & Advisory Firm).webp";
 
 export const emailAgentData = {
   id: "email-agent",

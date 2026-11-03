@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_database_tuning.jpg";
-import sqlImg from "../../assets/fresh/2021_09_database-schema.jpg";
-import indexImg from "../../assets/fresh/data-anlytics-ai-database-management-260nw-2489189257.webp";
-import tuningImg from "../../assets/fresh/what-is-database-1.jpg";
-import replicationImg from "../../assets/fresh/server_rack_neon_glow.jpg";
-import caseImg from "../../assets/fresh/serviceman-server-hub-checking-documentation-supercomputers.jpg";
+import sqlImg from "../../assets/agent-references/Database Agent/ENTERPRISE CAPABILITIES/Image (Automated SQL Query Rewrites).webp";
+import indexImg from "../../assets/agent-references/Database Agent/ENTERPRISE CAPABILITIES/Image (Zero-Downtime Autonomous Indexing).webp";
+import tuningImg from "../../assets/agent-references/Database Agent/ENTERPRISE CAPABILITIES/Image (Deadlock & Lock Contention Elimination).webp";
+import replicationImg from "../../assets/agent-references/Database Agent/ENTERPRISE CAPABILITIES/Image (Zero-Data-Loss Replica Failover).webp";
+import caseImg from "../../assets/agent-references/Database Agent/Image (Global FinTech Exchange).webp";
 
 export const databaseAgentData = {
   id: "database-agent",

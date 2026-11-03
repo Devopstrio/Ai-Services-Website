@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/hqnpqurhefcp7mhvtxld.webp";
-import feat1Img from "../../assets/fresh/global_operations_center.jpg";
-import feat2Img from "../../assets/fresh/html-css-collage-concept-with-person.jpg";
-import feat3Img from "../../assets/fresh/ijgktdssvo1m7d1wscpf.webp";
-import feat4Img from "../../assets/fresh/images.jpg";
-import caseImg from "../../assets/fresh/fthrxuelietnvkeiesnp.webp";
+import skillGraphReferenceImg from "../../assets/fresh/humanex-skill-graph.webp";
+import retentionReferenceImg from "../../assets/fresh/humanex-retention-modeling.webp";
+import mobilityReferenceImg from "../../assets/fresh/humanex-internal-mobility.webp";
+import successionReferenceImg from "../../assets/fresh/humanex-succession-planning.webp";
+import caseReferenceImg from "../../assets/fresh/humanex-customer-success.webp";
 
 export const humanexaiData = {
   "id": "humanex-ai",
@@ -260,8 +260,8 @@ export const humanexaiData = {
   }
 };
 humanexaiData.hero.bgImage = heroBg;
-humanexaiData.features[0].image = feat1Img || heroBg;
-humanexaiData.features[1].image = feat2Img || heroBg;
-humanexaiData.features[2].image = feat3Img || heroBg;
-humanexaiData.features[3].image = feat4Img || heroBg;
-humanexaiData.caseStudy.image = caseImg || heroBg;
+humanexaiData.features[0].image = skillGraphReferenceImg;
+humanexaiData.features[1].image = retentionReferenceImg;
+humanexaiData.features[2].image = mobilityReferenceImg;
+humanexaiData.features[3].image = successionReferenceImg;
+humanexaiData.caseStudy.image = caseReferenceImg;

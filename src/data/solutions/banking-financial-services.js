@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/product_sales_intelligence.jpg';
-import img2 from '../../assets/fresh/images_7_.jpg';
-import img3 from '../../assets/fresh/images_8_.jpg';
-import img4 from '../../assets/fresh/images_9_.jpg';
-import img5 from '../../assets/fresh/innovation_robotics_arm.jpg';
-import img6 from '../../assets/fresh/innovation_vr_workspace.jpg';
-import img7 from '../../assets/fresh/interested-coworkers-with-new-project.jpg';
-import img8 from '../../assets/fresh/istockphoto-1224175758-612x612.jpg';
+import heroImg from '../../assets/fresh/product_sales_intelligence.jpg';
+import img1 from '../../assets/enterprise-references/banking-financial-services/feature-2.webp';
+import img2 from '../../assets/enterprise-references/banking-financial-services/overview.webp';
+import img3 from '../../assets/enterprise-references/banking-financial-services/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/banking-financial-services/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/banking-financial-services/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/banking-financial-services/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/banking-financial-services/feature-0.webp';
+import img8 from '../../assets/enterprise-references/banking-financial-services/feature-1.webp';
 
 const data = {
   id: 'banking-financial-services',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Banking &',
     titleBold: 'Financial Services',
     description: "Drive core banking modernization with AI-powered sub-second credit decisioning, automated KYC/AML onboarding, algorithmic portfolio management, and real-time fraud defense.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

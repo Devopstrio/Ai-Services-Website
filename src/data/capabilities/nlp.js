@@ -11,28 +11,28 @@ const nlp = {
     headingRed: "Unstructured",
     paragraph: "80% of enterprise data is trapped in unstructured text: emails, support tickets, contracts, and social media. Devopstrio engineers advanced Natural Language Processing (NLP) solutions that unlock this data. We don't just count words; we deploy transformer-based models that grasp context, entity relationships, and sentiment, turning chaotic text into structured, actionable intelligence.",
     buttonText: "See NLP Use Cases",
-    imageSrc: "/images/downloaded/2fcc20e90b_img.jpg",
+    imageSrc: "/assets/capability-references/nlp/in-action.webp",
   },
   metricsCards: [
     { 
       value: "100+", 
       label: "Languages Supported",
-      image: "/images/downloaded/58dc99f461_img.jpg"
+      image: "/assets/capability-references/nlp/metric-0.webp"
     },
     { 
       value: "80%", 
       label: "Faster Document Triage",
-      image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg"
+      image: "/assets/capability-references/nlp/metric-1.webp"
     },
     { 
       value: "99%", 
       label: "Entity Extraction Accuracy",
-      image: "/images/downloaded/609150f783_img.jpg"
+      image: "/assets/capability-references/nlp/metric-2.webp"
     },
     { 
       value: "1B+", 
       label: "Documents Processed",
-      image: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg"
+      image: "/assets/capability-references/nlp/metric-3.webp"
     }
   ],
   whoWeWorkWith: {
@@ -63,17 +63,17 @@ const nlp = {
       {
         title: "Unlock Dark Data",
         desc: "Stop letting valuable insights sit idle in PDFs and emails. Turn all your textual data into a queryable, structured format.",
-        image: "/assets/fresh/agent_knowledge_graph_synthesis.jpg"
+        image: "/assets/capability-references/nlp/benefit-0.webp"
       },
       {
         title: "Automate Triage",
         desc: "Save thousands of human hours by having NLP models read, classify, and route incoming communications instantly.",
-        image: "/assets/fresh/crm_revenue_forecasting.jpg" 
+        image: "/assets/capability-references/nlp/benefit-1.webp"
       },
       {
         title: "Global Reach",
         desc: "With multi-lingual translation and cross-lingual understanding, analyze customer feedback globally without manual translation.",
-        image: "/assets/fresh/holographic_data_globe.jpg" 
+        image: "/assets/capability-references/nlp/benefit-2.webp"
       }
     ]
   },
@@ -86,7 +86,7 @@ const nlp = {
         title: "Named Entity Recognition (NER)",
         body: "Automatically identify and extract people, organizations, locations, and custom medical/financial terms from text.",
         more: "We train custom Spacy and HuggingFace models tailored to your highly specific industry jargon.",
-        image: "/images/downloaded/930d9ac6ae_img.jpg",
+        image: "/assets/capability-references/nlp/capability-0.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -94,7 +94,7 @@ const nlp = {
         title: "Text Classification",
         body: "Sort documents, emails, and tickets into predefined categories with high accuracy.",
         more: "Replace manual inbox sorting with deep learning models that understand the true intent of the message, not just keyword matching.",
-        image: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg",
+        image: "/assets/capability-references/nlp/capability-1.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -102,7 +102,7 @@ const nlp = {
         title: "Sentiment Analysis",
         body: "Gauge the emotional tone behind customer reviews, survey responses, and social media mentions.",
         more: "Our models go beyond simple positive/negative, detecting sarcasm, urgency, and specific emotional states.",
-        image: "/assets/ecosystem/grid/engineering-excellence-page_categories-Grid/webp/Generated-Design-2.webp",
+        image: "/assets/capability-references/nlp/capability-2.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -110,7 +110,7 @@ const nlp = {
         title: "Document Summarization",
         body: "Condense 100-page reports into highly accurate, 1-page executive summaries.",
         more: "We use both extractive (pulling key sentences) and abstractive (generating new text) summarization techniques based on your needs.",
-        image: "/assets/ecosystem/grid/engineering-excellence-page_categories-Grid/webp/Generated-Design-3.webp",
+        image: "/assets/capability-references/nlp/capability-3.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -118,7 +118,7 @@ const nlp = {
         title: "Machine Translation",
         body: "Seamlessly translate text across hundreds of languages while preserving domain-specific terminology.",
         more: "We deploy localized, offline translation models for highly sensitive environments where data cannot be sent to public APIs.",
-        image: "/images/downloaded/3243e93894_img.jpg",
+        image: "/assets/capability-references/nlp/capability-4.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -126,7 +126,7 @@ const nlp = {
         title: "Semantic Search",
         body: "Search by meaning, not just keywords. Find exact answers buried deep within your knowledge base.",
         more: "We build dense vector embeddings of your textual data, allowing users to query using natural language questions.",
-        image: "/assets/ecosystem/grid/engineering-excellence-page_categories-Grid/webp/Generated-Design-4.webp",
+        image: "/assets/capability-references/nlp/capability-5.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       }
     ]

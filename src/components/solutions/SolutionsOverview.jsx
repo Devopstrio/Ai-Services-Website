@@ -7,12 +7,12 @@ import SolutionsOutcomes from "./SolutionsOutcomes";
 import SolutionsInsights from "./SolutionsInsights";
 
 import enterpriseDashboardImg from "../../assets/fresh/dashboard_ai_model_training.jpg";
-import digitalGlobeImg from "../../assets/fresh/dashboard_cloud_telemetry.jpg";
-import teamCoworkersImg from "../../assets/fresh/dashboard_customer_journey.jpg";
-import dataAnalyticsImg from "../../assets/fresh/dashboard_cyber_soc.jpg";
-import datacenterFirewallImg from "../../assets/fresh/dashboard_fintech_metrics.jpg";
-import cyberShieldImg from "../../assets/fresh/dashboard_supply_chain.jpg";
-import analystTabletImg from "../../assets/fresh/data-anlytics-ai-database-management-260nw-2489189257.webp";
+import digitalGlobeImg from "../../assets/enterprise-references/overview/card-core-solution.webp";
+import teamCoworkersImg from "../../assets/enterprise-references/overview/card-automation.webp";
+import dataAnalyticsImg from "../../assets/enterprise-references/overview/card-data-knowledge.webp";
+import datacenterFirewallImg from "../../assets/enterprise-references/overview/card-infrastructure.webp";
+import cyberShieldImg from "../../assets/enterprise-references/overview/card-security.webp";
+import analystTabletImg from "../../assets/enterprise-references/overview/card-business-operations.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

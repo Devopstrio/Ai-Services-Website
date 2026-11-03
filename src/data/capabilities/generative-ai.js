@@ -11,28 +11,28 @@ const generativeAi = {
       headingRed: "Chatbots",
       paragraph: "We engineer highly specialized LLMs and multi-modal models that deeply understand your proprietary data. By implementing strict guardrails and quantization, we reduce manual overhead by up to 60% while adhering to enterprise security constraints. From automated reporting to hyper-personalized assistants, this is GenAI that actually drives ROI.",
       buttonText: "Explore Use Cases",
-      imageSrc: "/images/downloaded/560988f906_img.jpg",
+      imageSrc: "/assets/capability-references/generative-ai/in-action.webp",
     },
     metricsCards: [
       { 
         value: "50+", 
         label: "Production Models",
-        image: "/images/downloaded/090bb5653b_img.jpg"
+        image: "/assets/capability-references/generative-ai/metric-0.webp"
       },
       { 
         value: "60%", 
         label: "Cost Reduction",
-        image: "/images/downloaded/aa314d90f7_photo-1550751827-4bd374c3f58b.jpg"
+        image: "/assets/capability-references/generative-ai/metric-1.webp"
       },
       { 
         value: "100%", 
         label: "Data Privacy",
-        image: "/images/downloaded/478798247d_img.jpg"
+        image: "/assets/capability-references/generative-ai/metric-2.webp"
       },
       { 
         value: "15+", 
         label: "Industry LLMs",
-        image: "/images/downloaded/d97187fdf9_img.jpg"
+        image: "/assets/capability-references/generative-ai/metric-3.webp"
       }
     ],
     whoWeWorkWith: {
@@ -63,17 +63,17 @@ const generativeAi = {
         {
           title: "Accelerated Workflows",
           desc: "Reduce time spent on manual reporting, data entry, and content generation by empowering employees with AI copilots.",
-          image: "/assets/fresh/multimodal_ai_workbench.jpg"
+          image: "/assets/capability-references/generative-ai/benefit-0.webp"
         },
         {
           title: "Zero Data Leakage",
           desc: "Unlike public APIs, our air-gapped deployments ensure your proprietary data never leaves your secure VPC environment.",
-          image: "/assets/fresh/cloud-security-hub-hero.jpg" // Fixed image link
+          image: "/assets/capability-references/generative-ai/benefit-1.webp" // Fixed image link
         },
         {
           title: "Predictable Scaling Costs",
           desc: "Optimize cloud inference costs by utilizing quantized models and dynamic batching rather than paying per-token fees.",
-          image: "/assets/fresh/deep_learning_tensor.jpg" // Replaced duplicate image
+          image: "/assets/capability-references/generative-ai/benefit-2.webp" // Replaced duplicate image
         }
       ]
     },
@@ -86,7 +86,7 @@ const generativeAi = {
           title: "Custom LLM Tuning",
           body: "We fine-tune open-source models (Llama 3, Mistral) on your private datasets to create domain-specific intelligence.",
           more: "By adapting foundational models to your specific vocabulary, industry compliance rules, and formatting, you get highly accurate responses without leaking intellectual property.",
-          image: "/images/downloaded/930d9ac6ae_img.jpg",
+          image: "/assets/capability-references/generative-ai/capability-0.webp",
           color1: "#F5F2EA", color2: "#E6DBC6"
         },
         {
@@ -94,7 +94,7 @@ const generativeAi = {
           title: "RAG Pipelines",
           body: "Eliminate hallucinations by grounding AI responses entirely in your enterprise documents and databases.",
           more: "We build secure Retrieval-Augmented Generation architectures that fetch live data from your internal knowledge bases, ensuring every generated output is factual and verifiable.",
-          image: "/assets/services/webp/bg-ai.webp",
+          image: "/assets/capability-references/generative-ai/capability-1.webp",
           color1: "#F5F2EA", color2: "#E6DBC6"
         },
         {
@@ -102,7 +102,7 @@ const generativeAi = {
           title: "Multi-Modal Generation",
           body: "Process and generate text, image, audio, and code simultaneously for complex enterprise workflows.",
           more: "From automated visual inspection reporting in manufacturing to generating UI code directly from design screenshots, we build pipelines that handle all data types.",
-          image: "/images/downloaded/3f90bfcdd3_img.jpg",
+          image: "/assets/capability-references/generative-ai/capability-2.webp",
           color1: "#F5F2EA", color2: "#E6DBC6"
         },
         {
@@ -110,7 +110,7 @@ const generativeAi = {
           title: "Guardrails & Compliance",
           body: "Implement deterministic safety layers that filter PII and prevent prompt injection attacks.",
           more: "We deploy guardrails that sit between the user and the LLM, intercepting harmful inputs and sanitizing outputs to guarantee regulatory compliance in every interaction.",
-          image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg",
+          image: "/assets/capability-references/generative-ai/capability-3.webp",
           color1: "#F5F2EA", color2: "#E6DBC6"
         },
         {
@@ -118,7 +118,7 @@ const generativeAi = {
           title: "Agentic Workflows",
           body: "Deploy autonomous AI agents that don't just generate text, but actively execute tasks.",
           more: "Our GenAI agents can call APIs, navigate software, and orchestrate complex business processes end-to-end, acting as autonomous team members.",
-          image: "/images/downloaded/001f4d30d1_img.jpg",
+          image: "/assets/capability-references/generative-ai/capability-4.webp",
           color1: "#F5F2EA", color2: "#E6DBC6"
         },
         {
@@ -126,7 +126,7 @@ const generativeAi = {
           title: "Cost-Optimized Inference",
           body: "Scale without massive API bills by deploying quantized models on edge or cloud infrastructure.",
           more: "We implement advanced batching, quantization, and specialized hardware selection to ensure real-time AI responses under heavy load while minimizing compute costs.",
-          image: "/assets/services/webp/bg-cloud.webp",
+          image: "/assets/capability-references/generative-ai/capability-5.webp",
           color1: "#F5F2EA", color2: "#E6DBC6"
         }
       ]

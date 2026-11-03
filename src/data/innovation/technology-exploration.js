@@ -1,9 +1,11 @@
 import heroBg from "../../assets/fresh/telecom_5g_network_tower.jpg";
-import tech1 from "../../assets/fresh/integration_hybrid_network.jpg";
-import tech2 from "../../assets/fresh/high_speed_fiber.jpg";
-import tech3 from "../../assets/fresh/dark_ai_neural_grid.jpg";
-import tech4 from "../../assets/fresh/microchip_wafer_lithography.jpg";
-import caseImg from "../../assets/fresh/multinational_team_summit.jpg";
+import photonicPillarImg from "../../assets/fresh/technology_exploration_pillar_photonic_optical_matrix.webp";
+import latticePillarImg from "../../assets/fresh/technology_exploration_pillar_lattice_cryptography.webp";
+import neuromorphicPillarImg from "../../assets/fresh/technology_exploration_pillar_spiking_neuromorphic.webp";
+import neuralDecodingPillarImg from "../../assets/fresh/technology_exploration_pillar_neural_decoding.webp";
+import photonicFrontierImg from "../../assets/fresh/technology_exploration_frontier_photonic_tensor.webp";
+import latticeFrontierImg from "../../assets/fresh/technology_exploration_frontier_lattice_key_exchange.webp";
+import caseImg from "../../assets/fresh/technology_exploration_case_study_telecom_defense.webp";
 
 export const technologyExplorationData = {
   id: "technology-exploration",
@@ -31,7 +33,7 @@ export const technologyExplorationData = {
       tag: "SILICON & PHOTONICS",
       title: "Photonic Tensor Processing Units (pTPU)",
       description: "Evaluating analog optical matrix multipliers that calculate matrix-vector dot products at the speed of light with near-zero heat dissipation.",
-      image: tech2,
+      image: photonicPillarImg,
       metricBadge: "Speed-of-Light Inference",
       highlights: [
         "Silicon photonics waveguides executing optical interference convolutions",
@@ -44,7 +46,7 @@ export const technologyExplorationData = {
       tag: "CYBER DEFENSE",
       title: "Quantum-Resistant Lattice Cryptography",
       description: "Implementing and stress-testing NIST-standardized lattice-based encryption algorithms (Kyber, Dilithium) across distributed enterprise mesh networks.",
-      image: tech1,
+      image: latticePillarImg,
       metricBadge: "NIST FIPS 203/204",
       highlights: [
         "Cryptographic agility layer allowing seamless migration from RSA/ECC",
@@ -57,7 +59,7 @@ export const technologyExplorationData = {
       tag: "NEUROMORPHIC EDGE",
       title: "Spiking Neuromorphic Edge Architectures",
       description: "Investigating event-driven asynchronous neuromorphic processors (Intel Loihi, BrainChip) for ultra-low-power edge robotics and IoT nodes.",
-      image: tech4,
+      image: neuromorphicPillarImg,
       metricBadge: "Sub-10mW Inference",
       highlights: [
         "Spike-timing-dependent plasticity (STDP) continuous on-chip learning",
@@ -70,7 +72,7 @@ export const technologyExplorationData = {
       tag: "NEURAL INTERFACES",
       title: "Non-Invasive Neural Decoding Interfaces",
       description: "Translating high-density EEG and functional near-infrared spectroscopy (fNIRS) telemetry into intent vectors for hands-free industrial CAD manipulation.",
-      image: tech3,
+      image: neuralDecodingPillarImg,
       metricBadge: "Neural Telemetry",
       highlights: [
         "Continuous transformer decoding of motor cortex neural intent signals",
@@ -85,7 +87,7 @@ export const technologyExplorationData = {
       title: "Photonic Optical Matrix Multiplier",
       category: "Optical AI Hardware",
       badge: "Analog Light Compute",
-      image: tech2,
+      image: photonicFrontierImg,
       benchmark: "0.01 picoseconds / MAC",
       summary: "Simulates optical phase shifters and Mach-Zehnder interferometers performing 4096x4096 matrix multiplications using wavelength-division multiplexing.",
       features: [
@@ -99,7 +101,7 @@ export const technologyExplorationData = {
       title: "Lattice Post-Quantum Key Exchange",
       category: "Post-Quantum Security",
       badge: "ML-KEM (Kyber-1024)",
-      image: tech1,
+      image: latticeFrontierImg,
       benchmark: "Immune to Shor's Algorithm",
       summary: "Interactive cryptographic sandbox demonstrating real-time lattice encapsulation and decapsulation defending against quantum attacks.",
       features: [
@@ -113,7 +115,7 @@ export const technologyExplorationData = {
       title: "Event-Based Spiking Neural Engine",
       category: "Neuromorphic AI",
       badge: "Asynchronous Spikes",
-      image: tech4,
+      image: neuromorphicPillarImg,
       benchmark: "8.4 mW Peak Power",
       summary: "Processes dynamic vision sensor (DVS) microsecond event streams to track high-velocity objects in microgravity and edge aerospace conditions.",
       features: [

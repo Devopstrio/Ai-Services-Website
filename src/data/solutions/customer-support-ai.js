@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/customer_support_hub.jpg';
-import img2 from '../../assets/fresh/product_humanex_talent.jpg';
-import img3 from '../../assets/unique_solutions/customer_support_case.jpg';
-import img4 from '../../assets/fresh/product_marketing_creative.jpg';
-import img5 from '../../assets/unique_solutions/workflow_auto_mesh.jpg';
-import img6 from '../../assets/fresh/programmers-data-center-workplace-using-computer-verifying-firewall.jpg';
-import img7 from '../../assets/solutions/7.jpg';
-import img8 from '../../assets/fresh/serviceman-server-hub-checking-documentation-supercomputers_1_.jpg';
+import heroImg from '../../assets/unique_solutions/customer_support_hub.jpg';
+import img1 from '../../assets/enterprise-references/customer-support-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/customer-support-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/customer-support-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/customer-support-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/customer-support-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/customer-support-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/customer-support-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/customer-support-ai/feature-1.webp';
 
 const data = {
   id: 'customer-support-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Customer Support',
     titleBold: 'AI',
     description: "Elevate your customer experience with autonomous tier-1 resolution, sentiment-aware routing, and real-time agent copilots. Deliver rapid, empathetic, and multi-lingual support that drives brand loyalty and reduces operational support costs.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/global_operations_center.jpg";
-import fintechImg from "../../assets/fresh/fintech_algorithmic_trading.jpg";
-import healthImg from "../../assets/fresh/clinical_ai_diagnostics.jpg";
-import autoImg from "../../assets/fresh/automotive_autonomous_driving.jpg";
-import telecomImg from "../../assets/fresh/telecom_5g_network_tower.jpg";
-import caseImg from "../../assets/fresh/multinational_team_summit.jpg";
+import fintechImg from "../../assets/agent-references/Industry Agents/ENTERPRISE CAPABILITIES/Image (Banking & Capital Markets Swarm).webp";
+import healthImg from "../../assets/agent-references/Industry Agents/ENTERPRISE CAPABILITIES/Image (Clinical Healthcare & Diagnostics Swarm).webp";
+import autoImg from "../../assets/agent-references/Industry Agents/ENTERPRISE CAPABILITIES/Image (Industrial Manufacturing & Predictive IoT).webp";
+import telecomImg from "../../assets/agent-references/Industry Agents/ENTERPRISE CAPABILITIES/Image (5G & Telecom Network Swarm).webp";
+import caseImg from "../../assets/agent-references/Industry Agents/Image (Tier-1 Global Investment Bank & Healthcare Conglomerate).webp";
 
 export const industryAgentsData = {
   id: "industry-agents",

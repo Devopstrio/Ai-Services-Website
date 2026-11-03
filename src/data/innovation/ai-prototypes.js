@@ -3,7 +3,14 @@ import proto1 from "../../assets/fresh/saas_cloud_platform_ui.jpg";
 import proto2 from "../../assets/fresh/dashboard_ai_model_training.jpg";
 import proto3 from "../../assets/fresh/multimodal_ai_workbench.jpg";
 import proto4 from "../../assets/fresh/server_rack_neon_glow.jpg";
-import caseImg from "../../assets/fresh/office-work-environment-stockcake.jpg";
+import cognitiveSandboxImg from "../../assets/fresh/ai_prototypes_pillar_cognitive_sandboxes.webp";
+import multiAgentWorkflowImg from "../../assets/fresh/ai_prototypes_pillar_multi_agent_workflows.webp";
+import modelBenchmarkImg from "../../assets/fresh/ai_prototypes_pillar_model_benchmarks.webp";
+import airGappedSandboxImg from "../../assets/fresh/ai_prototypes_pillar_air_gapped_sandboxes.webp";
+import loanUnderwritingImg from "../../assets/fresh/ai_prototypes_frontier_loan_underwriting.webp";
+import clinicalTrialsImg from "../../assets/fresh/ai_prototypes_frontier_clinical_trials.webp";
+import kubernetesRemediationImg from "../../assets/fresh/ai_prototypes_frontier_kubernetes_remediation.webp";
+import caseImg from "../../assets/fresh/ai_prototypes_case_study_financial_services.webp";
 
 export const aiPrototypesData = {
   id: "ai-prototypes",
@@ -31,7 +38,7 @@ export const aiPrototypesData = {
       tag: "FULL-STACK PROTOTYPING",
       title: "Interactive Cognitive Enterprise Sandboxes",
       description: "Building production-grade interactive React & Node web applications powered by custom fine-tuned models to demonstrate live user workflows.",
-      image: proto1,
+      image: cognitiveSandboxImg,
       metricBadge: "14-Day Delivery",
       highlights: [
         "Pre-integrated enterprise authentication (Okta, Entra ID, SAML)",
@@ -44,7 +51,7 @@ export const aiPrototypesData = {
       tag: "AGENTIC WORKFLOWS",
       title: "Multi-Agent Workflow Simulation Testbeds",
       description: "Prototyping collaborative multi-agent swarms that execute end-to-end business logic across mocked ERP, CRM, and ticketing endpoints.",
-      image: proto3,
+      image: multiAgentWorkflowImg,
       metricBadge: "End-to-End Mesh",
       highlights: [
         "Live tool-calling simulations with deterministic rollback guards",
@@ -57,7 +64,7 @@ export const aiPrototypesData = {
       tag: "PERFORMANCE VALIDATION",
       title: "Multi-Model Latency & Cost Bake-Offs",
       description: "Benchmarking proprietary LLMs, open-weights models, and custom SLMs against your specific enterprise workloads to pinpoint optimal price-to-performance.",
-      image: proto2,
+      image: modelBenchmarkImg,
       metricBadge: "Cost & Speed Matrix",
       highlights: [
         "Side-by-side output evaluation using automated LLM-as-a-judge",
@@ -70,7 +77,7 @@ export const aiPrototypesData = {
       tag: "DATA PRIVACY & SOVEREIGNTY",
       title: "Zero-Data-Retention Air-Gapped Sandboxes",
       description: "Spinning up isolated VPC enclaves where confidential enterprise data is processed without leaving your dedicated cloud perimeter.",
-      image: proto4,
+      image: airGappedSandboxImg,
       metricBadge: "Air-Gapped Privacy",
       highlights: [
         "Customer-managed encryption keys (CMEK) with cryptographic isolation",
@@ -85,7 +92,7 @@ export const aiPrototypesData = {
       title: "Automated Commercial Loan Underwriting MVP",
       category: "Fintech Prototyping",
       badge: "Real-Time OCR & SMT Match",
-      image: proto1,
+      image: loanUnderwritingImg,
       benchmark: "Processed in 4.2 Seconds",
       summary: "Interactive sandbox extracting 100+ page commercial balance sheets, cross-verifying tax filings, and generating structured credit committee dossiers.",
       features: [
@@ -99,7 +106,7 @@ export const aiPrototypesData = {
       title: "Clinical Trial Eligibility Matcher",
       category: "Healthcare & Life Sciences",
       badge: "HIPAA Compliant Enclave",
-      image: proto3,
+      image: clinicalTrialsImg,
       benchmark: "98.7% Patient Match Accuracy",
       summary: "Parses complex EHR medical records against 5,000+ active clinical trial protocols to identify eligible candidates in seconds.",
       features: [
@@ -113,7 +120,7 @@ export const aiPrototypesData = {
       title: "Kubernetes Incident Auto-Remediation Bot",
       category: "Engineering Sandbox",
       badge: "Sub-Second Pod Healing",
-      image: proto2,
+      image: kubernetesRemediationImg,
       benchmark: "Auto-Resolved in 1.8s",
       summary: "Live simulated sandbox intercepting CrashLoopBackOff alerts, diagnosing root cause memory leaks, and issuing safe GitOps pull requests.",
       features: [

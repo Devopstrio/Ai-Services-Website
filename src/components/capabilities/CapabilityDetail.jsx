@@ -1,9 +1,13 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { CAPABILITY_SERVICES_DATA } from "../../data/capabilities";
+import { getCapabilityUseCaseIcon } from "../../data/capabilities/useCaseIcons";
+import enterpriseItOpsIcon from "../../assets/capabilities/enterprise-it-ops.svg";
+import customerExperienceIcon from "../../assets/capabilities/customer-experience.svg";
+import dataAnalyticsIcon from "../../assets/capabilities/data-analytics.svg";
 
-import { ArrowRight, ArrowLeft, ChevronLeft, ChevronRight, Cpu, Users, Database } from "lucide-react";
+import { ArrowRight, ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
@@ -14,9 +18,9 @@ const ArrowIcon = () => (
 );
 
 const iconMap = {
-  cpu: <Cpu size={32} color="#E11D48" />,
-  users: <Users size={32} color="#E11D48" />,
-  database: <Database size={32} color="#E11D48" />
+  cpu: enterpriseItOpsIcon,
+  users: customerExperienceIcon,
+  database: dataAnalyticsIcon
 };
 
 function RibbonGraphic() {
@@ -169,7 +173,12 @@ export default function CapabilityDetail() {
                         transition={{ duration: 0.4, type: "spring", stiffness: 300 }}
                         style={{ width: "70px", height: "70px", borderRadius: "16px", backgroundColor: "rgba(225,29,72,0.1)", border: "1px solid rgba(225,29,72,0.3)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px", cursor: "pointer" }}
                      >
-                        {iconMap[item.icon] || <Cpu size={32} color="#E11D48"/>}
+                        <img
+                          src={getCapabilityUseCaseIcon(serviceId, item.title) || iconMap[item.icon] || iconMap.cpu}
+                          alt=""
+                          aria-hidden="true"
+                          style={{ width: "32px", height: "32px" }}
+                        />
                      </motion.div>
                      <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#E11D48", marginBottom: "16px" }}>{item.title}</h3>
                      <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0 }}>{item.desc}</p>

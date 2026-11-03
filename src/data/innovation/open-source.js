@@ -1,9 +1,12 @@
 import heroBg from "../../assets/fresh/programming-background-with-person-working-with-codes-computer.jpg";
-import repo1 from "../../assets/fresh/kubernetes_cluster_nodes.jpg";
-import repo2 from "../../assets/fresh/integration_microservices.jpg";
-import repo3 from "../../assets/fresh/dashboard_ai_model_training.jpg";
-import repo4 from "../../assets/fresh/server_rack_neon_glow.jpg";
-import caseImg from "../../assets/fresh/lead_developer_mentor.jpg";
+import swarmMeshPillarImg from "../../assets/fresh/open_source_pillar_swarmmesh_runtime.webp";
+import trioKernelPillarImg from "../../assets/fresh/open_source_pillar_triokernel_flash_decoding.webp";
+import openSaEPillarImg from "../../assets/fresh/open_source_pillar_opensae_interpretability.webp";
+import proofEvalPillarImg from "../../assets/fresh/open_source_pillar_proofeval_benchmarks.webp";
+import swarmMeshFrontierImg from "../../assets/fresh/open_source_frontier_swarmmesh_orchestrator.webp";
+import trioKernelFrontierImg from "../../assets/fresh/open_source_frontier_triokernel_fp8_attention.webp";
+import openSaEFrontierImg from "../../assets/fresh/open_source_frontier_opensae_visualizer.webp";
+import caseImg from "../../assets/fresh/open_source_case_study_global_ecosystem.webp";
 
 export const openSourceData = {
   id: "open-source",
@@ -31,7 +34,7 @@ export const openSourceData = {
       tag: "AGENTIC FRAMEWORK",
       title: "SwarmMesh: Distributed Multi-Agent Runtime",
       description: "A lightweight, async Python/Rust runtime for orchestrating 10,000+ communicating agents with built-in consensus protocols and persistent memory fabric.",
-      image: repo1,
+      image: swarmMeshPillarImg,
       metricBadge: "10,000+ Agents",
       highlights: [
         "Sub-millisecond inter-agent message passing over gRPC and ZeroMQ",
@@ -44,7 +47,7 @@ export const openSourceData = {
       tag: "INFERENCE OPTIMIZATION",
       title: "TrioKernel: Ultra-Fast Flash-Decoding CUDA Kernels",
       description: "Custom Triton and CUDA C++ kernels providing 3.4x faster long-context attention decoding on NVIDIA Blackwell and Hopper GPUs.",
-      image: repo2,
+      image: trioKernelPillarImg,
       metricBadge: "3.4x Faster TTFT",
       highlights: [
         "FP8 block-scaled matrix multiplication for 128k context windows",
@@ -57,7 +60,7 @@ export const openSourceData = {
       tag: "SAFETY TOOLKIT",
       title: "OpenSAE: Mechanistic Interpretability Library",
       description: "The premier open-source toolkit for training and evaluating Sparse Autoencoders (SAE) on billion-parameter foundation models.",
-      image: repo3,
+      image: openSaEPillarImg,
       metricBadge: "16M Monosemantic Features",
       highlights: [
         "One-click extraction of monosemantic feature vectors from Llama and Mistral",
@@ -70,7 +73,7 @@ export const openSourceData = {
       tag: "BENCHMARK SUITE",
       title: "ProofEval: Neuro-Symbolic Mathematical Benchmarks",
       description: "Standardized evaluation benchmark suite for measuring mathematical reasoning, code synthesis correctness, and formal theorem proof completion.",
-      image: repo4,
+      image: proofEvalPillarImg,
       metricBadge: "Lean 4 Certified",
       highlights: [
         "10,000+ curated Olympiad and university mathematics problems with Lean 4 proofs",
@@ -85,7 +88,7 @@ export const openSourceData = {
       title: "SwarmMesh Distributed Agent Orchestrator",
       category: "Open-Source Framework",
       badge: "pip install swarmmesh",
-      image: repo1,
+      image: swarmMeshFrontierImg,
       benchmark: "12,000 msgs/sec throughput",
       summary: "High-throughput asynchronous communication mesh connecting specialized sub-agents with automatic leader election and tool sandboxing.",
       features: [
@@ -99,7 +102,7 @@ export const openSourceData = {
       title: "TrioKernel FP8 Attention Kernel",
       category: "Inference Kernel",
       badge: "CUDA / Triton C++",
-      image: repo2,
+      image: trioKernelFrontierImg,
       benchmark: "3.4x Speedup at 128k Context",
       summary: "Optimized attention decoding kernel eliminating memory-bound bottlenecks on H100 GPU clusters during long-context document synthesis.",
       features: [
@@ -113,7 +116,7 @@ export const openSourceData = {
       title: "OpenSAE Circuit Inspection Visualizer",
       category: "Safety Toolkit",
       badge: "pip install opensae",
-      image: repo3,
+      image: openSaEFrontierImg,
       benchmark: "Mapped 16.3M Latent Features",
       summary: "Web-based neuron inspection dashboard allowing researchers to click on intermediate layer activations and view human-interpretable feature labels.",
       features: [

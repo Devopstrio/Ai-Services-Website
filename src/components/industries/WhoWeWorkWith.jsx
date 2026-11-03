@@ -1,6 +1,51 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import healthcareProvidersImg from "../../assets/industries/healthcare_who_work_with_providers.svg";
+import healthcarePayersImg from "../../assets/industries/healthcare_who_work_with_payers.svg";
+import healthcarePharmaImg from "../../assets/industries/healthcare_who_work_with_pharma_biotech_medtech.svg";
+import retailBanksImg from "../../assets/industries/banking_who_work_with_retail_banks.svg";
+import investmentBanksImg from "../../assets/industries/banking_who_work_with_investment_banks.svg";
+import fintechDigitalBanksImg from "../../assets/industries/banking_who_work_with_fintech_digital_banks.svg";
+import lifeHealthInsurersImg from "../../assets/industries/insurance_who_work_with_life_health.svg";
+import pcInsurersImg from "../../assets/industries/insurance_who_work_with_pc.svg";
+import insurtechInnovatorsImg from "../../assets/industries/insurance_who_work_with_insurtech.svg";
+import brickMortarRetailersImg from "../../assets/industries/retail_who_work_with_brick_mortar.svg";
+import ecommercePlatformsImg from "../../assets/industries/retail_who_work_with_ecommerce_platforms.svg";
+import consumerBrandsImg from "../../assets/industries/retail_who_work_with_consumer_brands.svg";
+import industrialManufacturersImg from "../../assets/industries/manufacturing_who_work_with_industrial_manufacturers.svg";
+import supplyChainLeadersImg from "../../assets/industries/manufacturing_who_work_with_supply_chain_leaders.svg";
+import processManufacturersImg from "../../assets/industries/manufacturing_who_work_with_process_manufacturers.svg";
+import logisticsProvidersImg from "../../assets/industries/logistics_who_work_with_providers.svg";
+import supplyChainEnterprisesImg from "../../assets/industries/logistics_who_work_with_supply_chain_enterprises.svg";
+import transportationLeadersImg from "../../assets/industries/logistics_who_work_with_transportation_leaders.svg";
+import federalAgenciesImg from "../../assets/industries/government_who_work_with_federal_agencies.svg";
+import stateLocalGovernmentImg from "../../assets/industries/government_who_work_with_state_local_government.svg";
+import publicSectorEnterprisesImg from "../../assets/industries/government_who_work_with_public_sector_enterprises.svg";
+import k12InstitutionsImg from "../../assets/industries/education_who_work_with_k12_institutions.svg";
+import higherEducationImg from "../../assets/industries/education_who_work_with_higher_education.svg";
+import edtechEnterprisesImg from "../../assets/industries/education_who_work_with_edtech_enterprises.svg";
+import telecomOperatorsImg from "../../assets/industries/telecom_who_work_with_operators.svg";
+import telecom5gProvidersImg from "../../assets/industries/telecom_who_work_with_5g_technology_providers.svg";
+import telecomDigitalProvidersImg from "../../assets/industries/telecom_who_work_with_digital_service_providers.svg";
+import realEstatePropertyDevelopersImg from "../../assets/industries/realestate_who_work_with_property_developers.svg";
+import realEstateInvestmentImg from "../../assets/industries/realestate_who_work_with_investment.svg";
+import realEstatePropertyManagementImg from "../../assets/industries/realestate_who_work_with_property_management.svg";
+import energyUtilitiesImg from "../../assets/industries/energy_who_work_with_utilities.svg";
+import renewableEnergyProvidersImg from "../../assets/industries/energy_who_work_with_renewable_providers.svg";
+import oilGasEnterprisesImg from "../../assets/industries/energy_who_work_with_oil_gas.svg";
+import automotiveIndustryLeadersImg from "../../assets/industries/automotive_who_work_with_industry_leaders.svg";
+import automotiveInnovatorsImg from "../../assets/industries/automotive_who_work_with_innovators.svg";
+import automotiveEnterprisesImg from "../../assets/industries/automotive_who_work_with_enterprises.svg";
+import hospitalityHotelsResortsImg from "../../assets/industries/hospitality_who_work_with_hotels_resorts.svg";
+import hospitalityTravelPlatformsImg from "../../assets/industries/hospitality_who_work_with_travel_platforms.svg";
+import hospitalityGroupsImg from "../../assets/industries/hospitality_who_work_with_hospitality_groups.svg";
+import mediaIndustryLeadersImg from "../../assets/industries/media_who_work_with_industry_leaders.svg";
+import mediaInnovatorsImg from "../../assets/industries/media_who_work_with_innovators.svg";
+import mediaEnterprisesImg from "../../assets/industries/media_who_work_with_enterprises.svg";
+import professionalServicesIndustryLeadersImg from "../../assets/industries/professional_services_who_work_with_industry_leaders.svg";
+import professionalServicesInnovatorsImg from "../../assets/industries/professional_services_who_work_with_innovators.svg";
+import professionalServicesEnterprisesImg from "../../assets/industries/professional_services_who_work_with_enterprises.svg";
 
 /**
  * WhoWeWorkWith.jsx — DevOpsTRIO
@@ -330,293 +375,134 @@ background:
 const IconComponents = {
   // Healthcare
   heart: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M36 62C36 62 10 46.5 10 27.5C10 17.8 17.6 10 27 10C31 10 34.5 12 36 15C37.5 12 41 10 45 10C54.4 10 62 17.8 62 27.5C62 46.5 36 62 36 62Z" stroke="#E11D48" strokeWidth="4" strokeLinejoin="round"/>
-      <path d="M18 33H27L31 24L38 42L42 33H54" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
+    <img src={healthcareProvidersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   people: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <circle cx="22" cy="20" r="9" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M8 44c0-8 6.3-14 14-14s14 6 14 14" stroke="#E11D48" strokeWidth="4" strokeLinecap="round"/>
-      <rect x="42" y="10" width="14" height="30" rx="7" transform="rotate(20 49 25)" stroke="#FF6E8E" strokeWidth="4"/>
-      <line x1="43" y1="26" x2="53" y2="22" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <circle cx="58" cy="46" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-      <line x1="54" y1="46" x2="62" y2="46" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={healthcarePayersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   capsule: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="14" y="30" width="52" height="22" rx="11" transform="rotate(-35 40 41)" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M31 24L49 42" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <circle cx="40" cy="33" r="6" fill="#FF6E8E" opacity="0.35"/>
-    </svg>
+    <img src={healthcarePharmaImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Banking
   bank: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="8" y="32" width="56" height="32" rx="4" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 8L8 32H64L36 8Z" stroke="#FF6E8E" strokeWidth="4" strokeLinejoin="round"/>
-      <line x1="28" y1="40" x2="44" y2="40" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={retailBanksImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   chart: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M8 56H64" stroke="#E11D48" strokeWidth="4" strokeLinecap="round"/>
-      <path d="M28 56V32L44 16L52 24L64 12" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="28" cy="32" r="4" fill="#E11D48"/>
-      <circle cx="44" cy="16" r="4" fill="#E11D48"/>
-      <circle cx="64" cy="12" r="4" fill="#E11D48"/>
-    </svg>
+    <img src={investmentBanksImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   rocket: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M36 8C28 20 22 32 22 44C22 50 24 56 36 62C48 56 50 50 50 44C50 32 44 20 36 8Z" stroke="#E11D48" strokeWidth="4"/>
-      <circle cx="36" cy="36" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-      <path d="M22 44L8 58" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <path d="M50 44L64 58" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={fintechDigitalBanksImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Retail
   store: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="6" y="28" width="60" height="34" rx="4" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M14 28L18 12H54L58 28" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <line x1="28" y1="40" x2="44" y2="40" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={brickMortarRetailersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   cart: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M12 16H64L58 40H18L12 16Z" stroke="#E11D48" strokeWidth="4" strokeLinejoin="round"/>
-      <circle cx="24" cy="56" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-      <circle cx="48" cy="56" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-      <line x1="16" y1="16" x2="8" y2="8" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={ecommercePlatformsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   brand: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <circle cx="36" cy="36" r="28" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 8C36 8 44 20 44 36C44 52 36 64 36 64" stroke="#FF6E8E" strokeWidth="4"/>
-      <path d="M36 8C36 8 28 20 28 36C28 52 36 64 36 64" stroke="#FF6E8E" strokeWidth="4"/>
-      <circle cx="36" cy="36" r="8" fill="#E11D48" opacity="0.3"/>
-    </svg>
+    <img src={consumerBrandsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Manufacturing
   factory: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="8" y="40" width="56" height="24" rx="2" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M20 40V24L36 32L52 24V40" stroke="#FF6E8E" strokeWidth="4" strokeLinejoin="round"/>
-      <line x1="28" y1="48" x2="44" y2="48" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={industrialManufacturersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   chain: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <circle cx="24" cy="36" r="12" stroke="#E11D48" strokeWidth="4"/>
-      <circle cx="48" cy="36" r="12" stroke="#FF6E8E" strokeWidth="4"/>
-      <path d="M36 28L40 24" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <path d="M36 44L32 48" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={supplyChainLeadersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   process: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M12 36H28L36 20L44 52L52 36H60" stroke="#E11D48" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="12" cy="36" r="6" fill="#FF6E8E" opacity="0.4"/>
-      <circle cx="60" cy="36" r="6" fill="#FF6E8E" opacity="0.4"/>
-    </svg>
+    <img src={processManufacturersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Insurance
   shield: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M36 8L12 16V28C12 42 22 56 36 60C50 56 60 42 60 28V16L36 8Z" stroke="#E11D48" strokeWidth="4" strokeLinejoin="round"/>
-      <line x1="28" y1="36" x2="44" y2="36" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <line x1="36" y1="28" x2="36" y2="44" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={lifeHealthInsurersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   umbrella: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M12 40C12 26 22 10 36 10C50 10 60 26 60 40" stroke="#E11D48" strokeWidth="4" strokeLinecap="round"/>
-      <path d="M36 10V24" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <circle cx="36" cy="36" r="4" fill="#E11D48"/>
-    </svg>
+    <img src={pcInsurersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   lightning: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M44 12L24 36H40L28 60" stroke="#E11D48" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="44" cy="12" r="6" fill="#FF6E8E" opacity="0.4"/>
-      <circle cx="28" cy="60" r="6" fill="#FF6E8E" opacity="0.4"/>
-    </svg>
+    <img src={insurtechInnovatorsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Education
   school: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="8" y="32" width="56" height="32" rx="2" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 8L8 32H64L36 8Z" stroke="#FF6E8E" strokeWidth="4" strokeLinejoin="round"/>
-      <circle cx="36" cy="48" r="6" fill="#E11D48" opacity="0.3"/>
-    </svg>
+    <img src={k12InstitutionsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   university: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M12 56H60" stroke="#E11D48" strokeWidth="4" strokeLinecap="round"/>
-      <rect x="20" y="40" width="32" height="16" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M20 40L36 20L52 40" stroke="#FF6E8E" strokeWidth="4" strokeLinejoin="round"/>
-    </svg>
+    <img src={higherEducationImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   "education-tech": () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="12" y="20" width="48" height="36" rx="4" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 20V36" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <line x1="24" y1="28" x2="48" y2="28" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <circle cx="36" cy="44" r="4" fill="#E11D48"/>
-    </svg>
+    <img src={edtechEnterprisesImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Logistics
   truck: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="8" y="28" width="40" height="28" rx="2" stroke="#E11D48" strokeWidth="4"/>
-      <rect x="48" y="36" width="16" height="20" rx="2" stroke="#FF6E8E" strokeWidth="4"/>
-      <circle cx="18" cy="56" r="8" stroke="#E11D48" strokeWidth="4"/>
-      <circle cx="56" cy="56" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-    </svg>
+    <img src={logisticsProvidersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   warehouse: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="8" y="32" width="56" height="32" rx="2" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 16L8 32H64L36 16Z" stroke="#FF6E8E" strokeWidth="4" strokeLinejoin="round"/>
-      <line x1="28" y1="40" x2="44" y2="40" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={supplyChainEnterprisesImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   transport: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M8 44H64" stroke="#E11D48" strokeWidth="4" strokeLinecap="round"/>
-      <rect x="12" y="28" width="48" height="16" rx="2" stroke="#FF6E8E" strokeWidth="4"/>
-      <circle cx="24" cy="52" r="8" stroke="#E11D48" strokeWidth="4"/>
-      <circle cx="48" cy="52" r="8" stroke="#E11D48" strokeWidth="4"/>
-    </svg>
+    <img src={transportationLeadersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Government
   federal: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M36 8L8 28H64L36 8Z" stroke="#E11D48" strokeWidth="4" strokeLinejoin="round"/>
-      <rect x="20" y="28" width="32" height="36" rx="2" stroke="#FF6E8E" strokeWidth="4"/>
-      <line x1="28" y1="38" x2="44" y2="38" stroke="#E11D48" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={federalAgenciesImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   local: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <circle cx="36" cy="28" r="16" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 44V64" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <rect x="20" y="48" width="32" height="16" rx="2" stroke="#FF6E8E" strokeWidth="4"/>
-    </svg>
+    <img src={stateLocalGovernmentImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   public: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <circle cx="36" cy="36" r="28" stroke="#E11D48" strokeWidth="4"/>
-      <circle cx="36" cy="36" r="12" stroke="#FF6E8E" strokeWidth="4"/>
-      <line x1="36" y1="8" x2="36" y2="16" stroke="#E11D48" strokeWidth="4" strokeLinecap="round"/>
-      <line x1="36" y1="56" x2="36" y2="64" stroke="#E11D48" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={publicSectorEnterprisesImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Telecom
   network: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <circle cx="36" cy="36" r="20" stroke="#E11D48" strokeWidth="4"/>
-      <circle cx="36" cy="18" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-      <circle cx="56" cy="44" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-      <circle cx="16" cy="44" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-    </svg>
+    <img src={telecomOperatorsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   "5g": () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M8 28L28 28L8 48L28 48" stroke="#E11D48" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M40 16L64 16L40 48L64 48" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
+    <img src={telecom5gProvidersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   digital: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="12" y="20" width="48" height="32" rx="4" stroke="#E11D48" strokeWidth="4"/>
-      <circle cx="36" cy="36" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-      <line x1="24" y1="28" x2="48" y2="28" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <line x1="24" y1="44" x2="48" y2="44" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={telecomDigitalProvidersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Energy
   energy: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M36 12L12 40H36L24 60" stroke="#E11D48" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="48" cy="36" r="16" stroke="#FF6E8E" strokeWidth="4"/>
-    </svg>
+    <img src={energyUtilitiesImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   solar: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <circle cx="36" cy="36" r="12" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 16V8" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <path d="M36 64V56" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <path d="M16 36H8" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <path d="M64 36H56" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={renewableEnergyProvidersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   oil: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M24 8L24 48" stroke="#E11D48" strokeWidth="4" strokeLinecap="round"/>
-      <path d="M48 16L48 56" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <circle cx="24" cy="48" r="8" stroke="#E11D48" strokeWidth="4"/>
-      <circle cx="48" cy="56" r="8" stroke="#FF6E8E" strokeWidth="4"/>
-    </svg>
+    <img src={oilGasEnterprisesImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Real Estate
   building: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="12" y="20" width="48" height="44" rx="2" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M24 20V12L48 12V20" stroke="#FF6E8E" strokeWidth="4" strokeLinejoin="round"/>
-      <line x1="28" y1="28" x2="44" y2="28" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <line x1="28" y1="36" x2="44" y2="36" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={realEstatePropertyDevelopersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   investment: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M8 48L24 32L40 44L56 28" stroke="#E11D48" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="24" cy="32" r="6" fill="#FF6E8E" opacity="0.4"/>
-      <circle cx="40" cy="44" r="6" fill="#FF6E8E" opacity="0.4"/>
-      <circle cx="56" cy="28" r="6" fill="#FF6E8E" opacity="0.4"/>
-    </svg>
+    <img src={realEstateInvestmentImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   management: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="8" y="24" width="56" height="40" rx="4" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 24V16" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <line x1="20" y1="32" x2="52" y2="32" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={realEstatePropertyManagementImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Hospitality
   hotel: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <rect x="8" y="24" width="56" height="40" rx="2" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 24V16" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-      <line x1="24" y1="32" x2="48" y2="32" stroke="#FF6E8E" strokeWidth="4" strokeLinecap="round"/>
-    </svg>
+    <img src={hospitalityHotelsResortsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   travel: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <circle cx="36" cy="36" r="28" stroke="#E11D48" strokeWidth="4"/>
-      <path d="M36 8L44 24L60 28L46 40L52 56L36 48L20 56L26 40L12 28L28 24L36 8Z" stroke="#FF6E8E" strokeWidth="4" strokeLinejoin="round"/>
-    </svg>
+    <img src={hospitalityTravelPlatformsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   hospitality: () => (
-    <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
-      <path d="M36 20L12 36L20 44L36 60L52 44L60 36L36 20Z" stroke="#E11D48" strokeWidth="4" strokeLinejoin="round"/>
-      <circle cx="36" cy="36" r="6" fill="#FF6E8E" opacity="0.4"/>
-    </svg>
+    <img src={hospitalityGroupsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />
   ),
   
   // Default
@@ -642,8 +528,24 @@ const IconComponents = {
   ),
 };
 
-function Column({ group, index }) {
-  const Icon = IconComponents[group.icon] || IconComponents.leaders;
+const AUTOMOTIVE_ICON_COMPONENTS = {
+  leaders: () => <img src={automotiveIndustryLeadersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />,
+  innovators: () => <img src={automotiveInnovatorsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />,
+  enterprise: () => <img src={automotiveEnterprisesImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />,
+};
+const MEDIA_ICON_COMPONENTS = {
+  leaders: () => <img src={mediaIndustryLeadersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />,
+  innovators: () => <img src={mediaInnovatorsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />,
+  enterprise: () => <img src={mediaEnterprisesImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />,
+};
+const PROFESSIONAL_SERVICES_ICON_COMPONENTS = {
+  leaders: () => <img src={professionalServicesIndustryLeadersImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />,
+  innovators: () => <img src={professionalServicesInnovatorsImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />,
+  enterprise: () => <img src={professionalServicesEnterprisesImg} alt="" width="72" height="72" style={{ objectFit: "contain" }} />,
+};
+
+function Column({ group, index, iconComponents }) {
+  const Icon = iconComponents[group.icon] || iconComponents.leaders;
   
   return (
     <motion.div
@@ -706,6 +608,13 @@ export default function WhoWeWorkWith() {
   }, [location.pathname]);
 
   const groups = industryData.groups || DEFAULT_DATA.groups;
+  const iconComponents = location.pathname.includes("automotive")
+    ? { ...IconComponents, ...AUTOMOTIVE_ICON_COMPONENTS }
+    : location.pathname.includes("media-entertainment")
+      ? { ...IconComponents, ...MEDIA_ICON_COMPONENTS }
+      : location.pathname.includes("professional-services")
+        ? { ...IconComponents, ...PROFESSIONAL_SERVICES_ICON_COMPONENTS }
+      : IconComponents;
 
   return (
     <section style={styles.section}>
@@ -721,7 +630,7 @@ export default function WhoWeWorkWith() {
 
       <div style={styles.grid}>
         {groups.map((group, i) => (
-          <Column group={group} index={i} key={group.title} />
+          <Column group={group} index={i} iconComponents={iconComponents} key={group.title} />
         ))}
       </div>
     </section>

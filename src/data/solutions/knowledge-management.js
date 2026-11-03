@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/ai_consultants_discussion.jpg';
-import img2 from '../../assets/fresh/lead_developer_mentor.jpg';
-import img3 from '../../assets/fresh/executive_boardroom_ai.jpg';
-import img4 from '../../assets/fresh/agent_devops_cicd.jpg';
-import img5 from '../../assets/fresh/dashboard_executive_kpi.jpg';
-import img6 from '../../assets/fresh/modern-interior-design-office.jpg';
-import img7 from '../../assets/fresh/cheerful-business-team-watching-presentation-laptop-sitting-workplace-staring-display-smiling-copy-space-business-meeting-concept.jpg';
-import img8 from '../../assets/fresh/luxurious-modern-office-space-with-important-reports-laptop-empty-desk-showcasing-important-data.jpg';
+import heroImg from '../../assets/fresh/ai_consultants_discussion.jpg';
+import img1 from '../../assets/enterprise-references/knowledge-management/feature-2.webp';
+import img2 from '../../assets/enterprise-references/knowledge-management/overview.webp';
+import img3 from '../../assets/enterprise-references/knowledge-management/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/knowledge-management/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/knowledge-management/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/knowledge-management/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/knowledge-management/feature-0.webp';
+import img8 from '../../assets/enterprise-references/knowledge-management/feature-1.webp';
 
 const data = {
   id: 'knowledge-management',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Knowledge',
     titleBold: 'Management',
     description: "Break enterprise information silos with private Retrieval-Augmented Generation (RAG) and Neural Search. Connect Slack, Confluence, SharePoint, and code repositories into a unified, halluncination-free knowledge engine.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

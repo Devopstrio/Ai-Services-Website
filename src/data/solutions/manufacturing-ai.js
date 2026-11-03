@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/mfg_ai_robotics.jpg';
-import img2 from '../../assets/fresh/microchip_wafer_lithography.jpg';
-import img3 from '../../assets/unique_solutions/mfg_ai_case.jpg';
-import img4 from '../../assets/fresh/manufacturing_predictive_maintenance.jpg';
-import img5 from '../../assets/fresh/robotic_assembly_precision.jpg';
-import img6 from '../../assets/fresh/innovation_robotics_arm.jpg';
-import img7 from '../../assets/solutions/10.jpg';
-import img8 from '../../assets/solutions/11.jpg';
+import heroImg from '../../assets/unique_solutions/mfg_ai_robotics.jpg';
+import img1 from '../../assets/enterprise-references/manufacturing-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/manufacturing-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/manufacturing-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/manufacturing-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/manufacturing-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/manufacturing-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/manufacturing-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/manufacturing-ai/feature-1.webp';
 
 const data = {
   id: 'manufacturing-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Manufacturing',
     titleBold: 'AI',
     description: "Drive Industry 4.0 transformation with edge computer vision quality inspection, predictive machine maintenance, dynamic supply chain routing, and autonomous energy consumption optimization.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

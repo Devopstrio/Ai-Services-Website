@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 
-import outcome1 from "../../assets/fresh/cloud_data_center_hall.jpg";
-import outcome2 from "../../assets/fresh/crm-software-platforms-hero-2026-1000x600.webp";
-import outcome3 from "../../assets/fresh/crm_revenue_forecasting.jpg";
-import outcome4 from "../../assets/fresh/cyber_digital_matrix.jpg";
-import outcome5 from "../../assets/fresh/cyber_threat_map.jpg";
-import outcome6 from "../../assets/fresh/dark_ai_neural_grid.jpg";
+import outcome1 from "../../assets/enterprise-references/overview/outcome-1.webp";
+import outcome2 from "../../assets/enterprise-references/overview/outcome-2.webp";
+import outcome3 from "../../assets/enterprise-references/overview/outcome-3.webp";
+import outcome4 from "../../assets/enterprise-references/overview/outcome-4.webp";
+import outcome5 from "../../assets/enterprise-references/overview/outcome-5.webp";
+import outcome6 from "../../assets/enterprise-references/overview/outcome-6.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/aillm_hero.jpg";
-import openaiImg from "../../assets/integrations/openai_gpt.jpg";
-import anthropicImg from "../../assets/integrations/anthropic_claude.jpg";
-import geminiImg from "../../assets/integrations/gemini_google.jpg";
-import vllmImg from "../../assets/integrations/vllm_huggingface.jpg";
-import caseImg from "../../assets/integrations/aillm_case.jpg";
+import openaiImg from "../../assets/integrations/references/ai-llm-providers/Native SaaS/Image (OpenAI GPT-4o & o1).webp";
+import anthropicImg from "../../assets/integrations/references/ai-llm-providers/Native SaaS/Image (Anthropic Claude 3.5 Sonnet & Opus).webp";
+import geminiImg from "../../assets/integrations/references/ai-llm-providers/Native SaaS/Image (Google Gemini 1.5 Pro & Flash).webp";
+import vllmImg from "../../assets/integrations/references/ai-llm-providers/Native SaaS/Image (vLLM & Private Hugging Face Models).webp";
+import caseImg from "../../assets/integrations/references/ai-llm-providers/Image (Global Digital Health & Insurance Platform (25M Users)).webp";
 
 export const aiLlmProvidersData = {
   id: "ai-llm-providers",

@@ -573,6 +573,7 @@ export default function ProductDetail() {
       )}
 
       {/* 6. HOW IT WORKS / WORKFLOW */}
+      {data.workflow?.length > 0 && (
       <section style={{ padding: "100px 24px", backgroundColor: "#050505" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
@@ -623,11 +624,14 @@ export default function ProductDetail() {
           </div>
         </div>
       </section>
+      )}
 
       {/* 7. ENTERPRISE INTEGRATIONS & SECURITY */}
+      {(data.integrations?.length > 0 || data.security?.length > 0) && (
       <section style={{ padding: "100px 24px", backgroundColor: "#000000" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "60px" }}>
           {/* Integrations */}
+          {data.integrations?.length > 0 && (
           <div>
             <div style={{ color: "#E11D48", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "14px" }}>
               ECOSYSTEM SYNC
@@ -653,8 +657,10 @@ export default function ProductDetail() {
               ))}
             </div>
           </div>
+          )}
 
           {/* Security & Compliance */}
+          {data.security?.length > 0 && (
           <div>
             <div style={{ color: "#E11D48", fontSize: "0.85rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "14px" }}>
               GOVERNANCE & TRUST
@@ -687,8 +693,10 @@ export default function ProductDetail() {
               ))}
             </div>
           </div>
+          )}
         </div>
       </section>
+      )}
 
       {/* 8. CASE STUDY SPOTLIGHT */}
       {data.caseStudy && (

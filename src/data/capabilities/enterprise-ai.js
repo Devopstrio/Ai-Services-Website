@@ -11,28 +11,28 @@ const enterpriseAi = {
     headingRed: "Scales",
     paragraph: "Off-the-shelf AI doesn't solve unique enterprise problems. We provide full-lifecycle AI development—from data engineering and model training to frontend integration and MLOps. Whether you are building an AI-powered SaaS product or modernizing internal legacy systems with machine learning, our engineering teams ensure your AI is secure, scalable, and built for production environments.",
     buttonText: "Discuss Your Project",
-    imageSrc: "/images/downloaded/cd74058d06_img.jpg",
+    imageSrc: "/assets/capability-references/enterprise-ai/in-action.webp",
   },
   metricsCards: [
     { 
       value: "3x", 
       label: "Faster Time-to-Market",
-      image: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg"
+      image: "/assets/capability-references/enterprise-ai/metric-0.webp"
     },
     { 
       value: "99.9%", 
       label: "Model Uptime",
-      image: "/images/downloaded/d97187fdf9_img.jpg"
+      image: "/assets/capability-references/enterprise-ai/metric-1.webp"
     },
     { 
       value: "SOC2", 
       label: "Compliant Pipelines",
-      image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg"
+      image: "/assets/capability-references/enterprise-ai/metric-2.webp"
     },
     { 
       value: "10M+", 
       label: "Daily Inferences",
-      image: "/images/downloaded/478798247d_img.jpg"
+      image: "/assets/capability-references/enterprise-ai/metric-3.webp"
     }
   ],
   whoWeWorkWith: {
@@ -63,17 +63,17 @@ const enterpriseAi = {
       {
         title: "IP Ownership",
         desc: "Stop renting intelligence. When we build your enterprise AI solutions, you own the models, the data pipelines, and the competitive advantage.",
-        image: "/assets/fresh/saas_cloud_platform_ui.jpg"
+        image: "/assets/capability-references/enterprise-ai/benefit-0.webp"
       },
       {
         title: "Seamless Integration",
         desc: "We don't just build isolated models; we engineer the APIs and frontend interfaces to seamlessly blend AI into your users' daily workflows.",
-        image: "/assets/fresh/devops_cloud_console.jpg" 
+        image: "/assets/capability-references/enterprise-ai/benefit-1.webp"
       },
       {
         title: "Future-Proof Architecture",
         desc: "Built on modular, cloud-agnostic frameworks (Kubernetes, Ray) so you can easily swap foundational models as technology evolves.",
-        image: "/assets/fresh/dark_ai_neural_grid.jpg" 
+        image: "/assets/capability-references/enterprise-ai/benefit-2.webp"
       }
     ]
   },
@@ -86,7 +86,7 @@ const enterpriseAi = {
         title: "Data Engineering",
         body: "AI is only as good as its data. We build robust ETL pipelines, data lakes, and feature stores to feed your models.",
         more: "Using Snowflake, Databricks, and Kafka, we ensure high-quality, real-time data is always available for model training and inference.",
-        image: "/images/downloaded/58dc99f461_img.jpg",
+        image: "/assets/capability-references/enterprise-ai/capability-0.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -94,7 +94,7 @@ const enterpriseAi = {
         title: "Custom Model Training",
         body: "From classical machine learning to deep neural networks, we architect and train models optimized for your specific metrics.",
         more: "We leverage PyTorch and TensorFlow, utilizing distributed GPU clusters to train highly complex models efficiently.",
-        image: "/images/downloaded/001f4d30d1_img.jpg",
+        image: "/assets/capability-references/enterprise-ai/capability-1.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -102,7 +102,7 @@ const enterpriseAi = {
         title: "API & Microservices",
         body: "We expose models as highly available, low-latency microservices that can be consumed by any internal or external application.",
         more: "Built with FastAPI, gRPC, and Docker, our model endpoints are designed to scale instantly under heavy load.",
-        image: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg",
+        image: "/assets/capability-references/enterprise-ai/capability-2.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -110,7 +110,7 @@ const enterpriseAi = {
         title: "Continuous Deployment",
         body: "Automated pipelines for model evaluation, deployment, and rollback. Never deploy a degraded model to production.",
         more: "We implement CI/CD for machine learning using MLflow, Kubeflow, and GitHub Actions, ensuring consistent and reproducible deployments.",
-        image: "/assets/services/webp/bg-ai.webp",
+        image: "/assets/capability-references/enterprise-ai/capability-3.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -118,7 +118,7 @@ const enterpriseAi = {
         title: "AI Frontend Integration",
         body: "We build intuitive React and Next.js applications that make complex AI insights easy for end-users to understand and act upon.",
         more: "From interactive data visualizations to chat interfaces, we bridge the gap between backend intelligence and user experience.",
-        image: "/assets/services/webp/bg-cloud.webp",
+        image: "/assets/capability-references/enterprise-ai/capability-4.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -126,7 +126,7 @@ const enterpriseAi = {
         title: "Enterprise Security",
         body: "End-to-end encryption, role-based access control, and comprehensive audit logging for all AI interactions.",
         more: "We design architectures that pass strict SOC2, HIPAA, and GDPR compliance audits, keeping your enterprise safe.",
-        image: "/assets/services/webp/bg-devops.webp",
+        image: "/assets/capability-references/enterprise-ai/capability-5.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       }
     ]

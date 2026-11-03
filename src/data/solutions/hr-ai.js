@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/neural_connections_nodes.jpg';
-import img2 from '../../assets/fresh/agent_database_optimizer.jpg';
-import img3 from '../../assets/fresh/multimodal_ai_workbench.jpg';
-import img4 from '../../assets/fresh/close-up-data-center-programmers-using-pc-visualize-ai-neural-networks.jpg';
-import img5 from '../../assets/fresh/agent_deep_market_research.jpg';
-import img6 from '../../assets/solutions/2.jpg';
-import img7 from '../../assets/fresh/agent_database_tuning.jpg';
-import img8 from '../../assets/fresh/agent_hr_workforce.jpg';
+import heroImg from '../../assets/fresh/neural_connections_nodes.jpg';
+import img1 from '../../assets/enterprise-references/hr-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/hr-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/hr-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/hr-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/hr-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/hr-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/hr-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/hr-ai/feature-1.webp';
 
 const data = {
   id: 'hr-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Human Resources',
     titleBold: 'AI',
     description: "Empower your people operations with cognitive AI agents and predictive analytics. Streamline global talent acquisition, eliminate candidate screening bottlenecks, reduce costly attrition, and deliver 24/7 intelligent HR support across your enterprise workforce.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

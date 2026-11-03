@@ -1,10 +1,11 @@
 import heroBg from "../../assets/integrations/productivity_hero.jpg";
-import msftImg from "../../assets/integrations/microsoft_teams_collab.jpg";
-import googleImg from "../../assets/integrations/google_workspace_sync.jpg";
-import slackImg from "../../assets/integrations/slack_automation_mesh.jpg";
-import jiraImg from "../../assets/integrations/jira_confluence_agile.jpg";
-import notionImg from "../../assets/integrations/notion_linear_knowledge.jpg";
-import caseImg from "../../assets/integrations/enterprise_collab_case.jpg";
+import msftImg from "../../assets/integrations/references/productivity-collaboration/Native SaaS Connectors & Ecosystem/Image (Microsoft 365 & Teams).webp";
+import googleImg from "../../assets/integrations/references/productivity-collaboration/Native SaaS Connectors & Ecosystem/Image (Google Workspace).webp";
+import slackImg from "../../assets/integrations/references/productivity-collaboration/Native SaaS Connectors & Ecosystem/Image (Slack & Messaging Mesh).webp";
+import jiraImg from "../../assets/integrations/references/productivity-collaboration/Native SaaS Connectors & Ecosystem/Image (Atlassian Jira & Confluence).webp";
+import notionImg from "../../assets/integrations/references/productivity-collaboration/Native SaaS Connectors & Ecosystem/Image (Notion & Linear).webp";
+import boxImg from "../../assets/integrations/references/productivity-collaboration/Native SaaS Connectors & Ecosystem/Image (Box & Enterprise Storage).webp";
+import caseImg from "../../assets/integrations/references/productivity-collaboration/Image (Global SaaS Enterprise (12,000 Employees)).webp";
 
 export const productivityCollaborationData = {
   id: "productivity-collaboration",
@@ -113,7 +114,7 @@ export const productivityCollaborationData = {
       name: "Box & Enterprise Storage",
       category: "Content Cloud",
       badge: "Box Enterprise API",
-      image: heroBg,
+      image: boxImg,
       description: "Secure ingestion and OCR processing of high-volume corporate document repositories stored across Box, Dropbox, and cloud file systems.",
       protocols: ["Box Webhooks v2", "OAuth 2.0 JWT Grant", "Chunked File Upload REST"],
       syncCapabilities: [

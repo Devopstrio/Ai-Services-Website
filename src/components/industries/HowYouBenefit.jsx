@@ -2,6 +2,81 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { getIndustryImages } from "../../data/industries/industryImages";
+import bankingBenefitCustomerExperience from "../../assets/industries/banking_benefit_enhanced_customer_experience.webp";
+import bankingBenefitOperationalEfficiency from "../../assets/industries/banking_benefit_operational_efficiency.webp";
+import bankingBenefitRiskManagement from "../../assets/industries/banking_benefit_risk_management_compliance.webp";
+import bankingBenefitDataInsights from "../../assets/industries/banking_benefit_data_driven_insights.webp";
+import bankingBenefitInnovationGrowth from "../../assets/industries/banking_benefit_innovation_growth.webp";
+import healthcareBenefitExperience from "../../assets/industries/healthcare_benefit_enhanced_experience.webp";
+import healthcareBenefitStaffWellbeing from "../../assets/industries/healthcare_benefit_staff_wellbeing.webp";
+import healthcareBenefitPopulationCare from "../../assets/industries/healthcare_benefit_population_care.webp";
+import healthcareBenefitHealthEquity from "../../assets/industries/healthcare_benefit_health_equity.webp";
+import healthcareBenefitCostReduction from "../../assets/industries/healthcare_benefit_cost_reduction.webp";
+import insuranceBenefitClaims from "../../assets/industries/insurance_benefit_streamlined_claims.webp";
+import insuranceBenefitRiskAssessment from "../../assets/industries/insurance_benefit_risk_assessment_underwriting.webp";
+import insuranceBenefitFraudDetection from "../../assets/industries/insurance_benefit_fraud_detection.webp";
+import insuranceBenefitCustomerEngagement from "../../assets/industries/insurance_benefit_customer_engagement.webp";
+import insuranceBenefitCompliance from "../../assets/industries/insurance_benefit_regulatory_compliance.webp";
+import retailBenefitPersonalizedExperiences from "../../assets/industries/retail_benefit_personalized_experiences.webp";
+import retailBenefitSupplyChain from "../../assets/industries/retail_benefit_supply_chain_optimization.webp";
+import retailBenefitOperationalExcellence from "../../assets/industries/retail_benefit_operational_excellence.webp";
+import retailBenefitMerchandising from "../../assets/industries/retail_benefit_data_driven_merchandising.webp";
+import retailBenefitSustainability from "../../assets/industries/retail_benefit_sustainability_esg.webp";
+import manufacturingBenefitPredictiveMaintenance from "../../assets/industries/manufacturing_benefit_predictive_maintenance.webp";
+import manufacturingBenefitQuality from "../../assets/industries/manufacturing_benefit_quality_excellence.webp";
+import manufacturingBenefitSupplyChain from "../../assets/industries/manufacturing_benefit_supply_chain_resilience.webp";
+import manufacturingBenefitOperationalEfficiency from "../../assets/industries/manufacturing_benefit_operational_efficiency.webp";
+import manufacturingBenefitWorkforce from "../../assets/industries/manufacturing_benefit_workforce_empowerment.webp";
+import logisticsBenefitRouteOptimization from "../../assets/industries/logistics_benefit_route_optimization.webp";
+import logisticsBenefitWarehouseAutomation from "../../assets/industries/logistics_benefit_warehouse_automation.webp";
+import logisticsBenefitDemandForecasting from "../../assets/industries/logistics_benefit_demand_forecasting.webp";
+import logisticsBenefitSupplyChainVisibility from "../../assets/industries/logistics_benefit_supply_chain_visibility.webp";
+import logisticsBenefitCostOptimization from "../../assets/industries/logistics_benefit_cost_optimization.webp";
+import governmentBenefitCitizenServices from "../../assets/industries/government_benefit_citizen_services.webp";
+import governmentBenefitPolicyAnalytics from "../../assets/industries/government_benefit_policy_analytics.webp";
+import governmentBenefitPublicSafety from "../../assets/industries/government_benefit_public_safety.webp";
+import governmentBenefitOperationalEfficiency from "../../assets/industries/government_benefit_operational_efficiency.webp";
+import governmentBenefitDigitalTransformation from "../../assets/industries/government_benefit_digital_transformation.webp";
+import educationBenefitPersonalizedLearning from "../../assets/industries/education_benefit_personalized_learning.webp";
+import educationBenefitStudentSuccess from "../../assets/industries/education_benefit_student_success.webp";
+import educationBenefitAdministrativeEfficiency from "../../assets/industries/education_benefit_administrative_efficiency.webp";
+import educationBenefitContentDelivery from "../../assets/industries/education_benefit_content_delivery.webp";
+import educationBenefitDigitalTransformation from "../../assets/industries/education_benefit_digital_transformation.webp";
+import telecomBenefitNetworkOptimization from "../../assets/industries/telecom_benefit_network_optimization.webp";
+import telecomBenefitCustomerRetention from "../../assets/industries/telecom_benefit_customer_retention.webp";
+import telecomBenefit5gAcceleration from "../../assets/industries/telecom_benefit_5g_acceleration.webp";
+import telecomBenefitOperationalExcellence from "../../assets/industries/telecom_benefit_operational_excellence.webp";
+import telecomBenefitDigitalServices from "../../assets/industries/telecom_benefit_digital_services.webp";
+import realEstateBenefitPropertyValuation from "../../assets/industries/realestate_benefit_property_valuation.webp";
+import realEstateBenefitMarketAnalytics from "../../assets/industries/realestate_benefit_market_analytics.webp";
+import realEstateBenefitSmartBuildings from "../../assets/industries/realestate_benefit_smart_buildings.webp";
+import realEstateBenefitInvestmentOptimization from "../../assets/industries/realestate_benefit_investment_optimization.webp";
+import realEstateBenefitPropertyManagement from "../../assets/industries/realestate_benefit_property_management.webp";
+import energyBenefitGridOptimization from "../../assets/industries/energy_benefit_grid_optimization.webp";
+import energyBenefitPredictiveMaintenance from "../../assets/industries/energy_benefit_predictive_maintenance.webp";
+import energyBenefitSustainabilityAnalytics from "../../assets/industries/energy_benefit_sustainability_analytics.webp";
+import energyBenefitRenewableIntegration from "../../assets/industries/energy_benefit_renewable_integration.webp";
+import energyBenefitCustomerEngagement from "../../assets/industries/energy_benefit_customer_engagement.webp";
+import automotiveBenefitCustomerExperience from "../../assets/industries/automotive_benefit_customer_experience.webp";
+import automotiveBenefitOperationalEfficiency from "../../assets/industries/automotive_benefit_operational_efficiency.webp";
+import automotiveBenefitDataInsights from "../../assets/industries/automotive_benefit_data_insights.webp";
+import automotiveBenefitInnovationGrowth from "../../assets/industries/automotive_benefit_innovation_growth.webp";
+import automotiveBenefitSustainability from "../../assets/industries/automotive_benefit_sustainability.webp";
+import hospitalityBenefitCustomerExperience from "../../assets/industries/hospitality_benefit_customer_experience.webp";
+import hospitalityBenefitOperationalEfficiency from "../../assets/industries/hospitality_benefit_operational_efficiency.webp";
+import hospitalityBenefitDataInsights from "../../assets/industries/hospitality_benefit_data_insights.webp";
+import hospitalityBenefitInnovationGrowth from "../../assets/industries/hospitality_benefit_innovation_growth.webp";
+import hospitalityBenefitSustainability from "../../assets/industries/hospitality_benefit_sustainability.webp";
+import mediaBenefitCustomerExperience from "../../assets/industries/media_benefit_customer_experience.webp";
+import mediaBenefitOperationalEfficiency from "../../assets/industries/media_benefit_operational_efficiency.webp";
+import mediaBenefitDataInsights from "../../assets/industries/media_benefit_data_insights.webp";
+import mediaBenefitInnovationGrowth from "../../assets/industries/media_benefit_innovation_growth.webp";
+import mediaBenefitSustainability from "../../assets/industries/media_benefit_sustainability.webp";
+import professionalServicesBenefitCustomerExperience from "../../assets/industries/professional_services_benefit_customer_experience.webp";
+import professionalServicesBenefitOperationalEfficiency from "../../assets/industries/professional_services_benefit_operational_efficiency.webp";
+import professionalServicesBenefitDataInsights from "../../assets/industries/professional_services_benefit_data_insights.webp";
+import professionalServicesBenefitInnovationGrowth from "../../assets/industries/professional_services_benefit_innovation_growth.webp";
+import professionalServicesBenefitSustainability from "../../assets/industries/professional_services_benefit_sustainability.webp";
 
 /**
  * HowYouBenefit.jsx — DevOpsTRIO
@@ -10,6 +85,111 @@ import { getIndustryImages } from "../../data/industries/industryImages";
  */
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const BANKING_BENEFIT_IMAGES = [
+  bankingBenefitCustomerExperience,
+  bankingBenefitOperationalEfficiency,
+  bankingBenefitRiskManagement,
+  bankingBenefitDataInsights,
+  bankingBenefitInnovationGrowth,
+];
+const HEALTHCARE_BENEFIT_IMAGES = [
+  healthcareBenefitExperience,
+  healthcareBenefitStaffWellbeing,
+  healthcareBenefitPopulationCare,
+  healthcareBenefitHealthEquity,
+  healthcareBenefitCostReduction,
+];
+const INSURANCE_BENEFIT_IMAGES = [
+  insuranceBenefitClaims,
+  insuranceBenefitRiskAssessment,
+  insuranceBenefitFraudDetection,
+  insuranceBenefitCustomerEngagement,
+  insuranceBenefitCompliance,
+];
+const RETAIL_BENEFIT_IMAGES = [
+  retailBenefitPersonalizedExperiences,
+  retailBenefitSupplyChain,
+  retailBenefitOperationalExcellence,
+  retailBenefitMerchandising,
+  retailBenefitSustainability,
+];
+const MANUFACTURING_BENEFIT_IMAGES = [
+  manufacturingBenefitPredictiveMaintenance,
+  manufacturingBenefitQuality,
+  manufacturingBenefitSupplyChain,
+  manufacturingBenefitOperationalEfficiency,
+  manufacturingBenefitWorkforce,
+];
+const LOGISTICS_BENEFIT_IMAGES = [
+  logisticsBenefitRouteOptimization,
+  logisticsBenefitWarehouseAutomation,
+  logisticsBenefitDemandForecasting,
+  logisticsBenefitSupplyChainVisibility,
+  logisticsBenefitCostOptimization,
+];
+const GOVERNMENT_BENEFIT_IMAGES = [
+  governmentBenefitCitizenServices,
+  governmentBenefitPolicyAnalytics,
+  governmentBenefitPublicSafety,
+  governmentBenefitOperationalEfficiency,
+  governmentBenefitDigitalTransformation,
+];
+const EDUCATION_BENEFIT_IMAGES = [
+  educationBenefitPersonalizedLearning,
+  educationBenefitStudentSuccess,
+  educationBenefitAdministrativeEfficiency,
+  educationBenefitContentDelivery,
+  educationBenefitDigitalTransformation,
+];
+const TELECOM_BENEFIT_IMAGES = [
+  telecomBenefitNetworkOptimization,
+  telecomBenefitCustomerRetention,
+  telecomBenefit5gAcceleration,
+  telecomBenefitOperationalExcellence,
+  telecomBenefitDigitalServices,
+];
+const REAL_ESTATE_BENEFIT_IMAGES = [
+  realEstateBenefitPropertyValuation,
+  realEstateBenefitMarketAnalytics,
+  realEstateBenefitSmartBuildings,
+  realEstateBenefitInvestmentOptimization,
+  realEstateBenefitPropertyManagement,
+];
+const ENERGY_BENEFIT_IMAGES = [
+  energyBenefitGridOptimization,
+  energyBenefitPredictiveMaintenance,
+  energyBenefitSustainabilityAnalytics,
+  energyBenefitRenewableIntegration,
+  energyBenefitCustomerEngagement,
+];
+const AUTOMOTIVE_BENEFIT_IMAGES = [
+  automotiveBenefitCustomerExperience,
+  automotiveBenefitOperationalEfficiency,
+  automotiveBenefitDataInsights,
+  automotiveBenefitInnovationGrowth,
+  automotiveBenefitSustainability,
+];
+const HOSPITALITY_BENEFIT_IMAGES = [
+  hospitalityBenefitCustomerExperience,
+  hospitalityBenefitOperationalEfficiency,
+  hospitalityBenefitDataInsights,
+  hospitalityBenefitInnovationGrowth,
+  hospitalityBenefitSustainability,
+];
+const MEDIA_BENEFIT_IMAGES = [
+  mediaBenefitCustomerExperience,
+  mediaBenefitOperationalEfficiency,
+  mediaBenefitDataInsights,
+  mediaBenefitInnovationGrowth,
+  mediaBenefitSustainability,
+];
+const PROFESSIONAL_SERVICES_BENEFIT_IMAGES = [
+  professionalServicesBenefitCustomerExperience,
+  professionalServicesBenefitOperationalEfficiency,
+  professionalServicesBenefitDataInsights,
+  professionalServicesBenefitInnovationGrowth,
+  professionalServicesBenefitSustainability,
+];
 
 // Industry-specific data configurations
 const INDUSTRY_DATA = {
@@ -609,6 +789,37 @@ export default function HowYouBenefit() {
 
   const cards = industryData.cards || DEFAULT_DATA.cards;
   const localImages = getIndustryImages(location.pathname);
+  const benefitImages = location.pathname.includes("healthcare")
+    ? HEALTHCARE_BENEFIT_IMAGES
+    : location.pathname.includes("banking")
+      ? BANKING_BENEFIT_IMAGES
+      : location.pathname.includes("insurance")
+        ? INSURANCE_BENEFIT_IMAGES
+        : location.pathname.includes("retail-ecommerce") || location.pathname.includes("retail")
+          ? RETAIL_BENEFIT_IMAGES
+          : location.pathname.includes("manufacturing")
+            ? MANUFACTURING_BENEFIT_IMAGES
+            : location.pathname.includes("logistics")
+              ? LOGISTICS_BENEFIT_IMAGES
+              : location.pathname.includes("government-public-sector") || location.pathname.includes("government")
+                ? GOVERNMENT_BENEFIT_IMAGES
+                : location.pathname.includes("education")
+                  ? EDUCATION_BENEFIT_IMAGES
+                  : location.pathname.includes("telecommunications") || location.pathname.includes("telecom")
+                    ? TELECOM_BENEFIT_IMAGES
+                    : location.pathname.includes("real-estate") || location.pathname.includes("realestate")
+                      ? REAL_ESTATE_BENEFIT_IMAGES
+                      : location.pathname.includes("energy-utilities") || location.pathname.includes("energy")
+                        ? ENERGY_BENEFIT_IMAGES
+                        : location.pathname.includes("automotive")
+                          ? AUTOMOTIVE_BENEFIT_IMAGES
+                          : location.pathname.includes("hospitality-travel") || location.pathname.includes("hospitality")
+                            ? HOSPITALITY_BENEFIT_IMAGES
+                            : location.pathname.includes("media-entertainment")
+                              ? MEDIA_BENEFIT_IMAGES
+                              : location.pathname.includes("professional-services")
+                                ? PROFESSIONAL_SERVICES_BENEFIT_IMAGES
+                            : localImages;
 
   return (
     <section style={styles.section}>
@@ -625,7 +836,7 @@ export default function HowYouBenefit() {
       <div style={styles.grid}>
         {cards.map((card, i) => (
           <BenefitCard
-            card={{ ...card, img: localImages[i % localImages.length] || card.img }}
+            card={{ ...card, img: benefitImages[i % benefitImages.length] || card.img }}
             index={i}
             key={card.title}
           />

@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/saas_cloud_platform_ui.jpg";
-import feat1Img from "../../assets/fresh/multimodal_ai_workbench.jpg";
-import feat2Img from "../../assets/fresh/deep_learning_tensor.jpg";
-import feat3Img from "../../assets/fresh/microchip_wafer_lithography.jpg";
-import feat4Img from "../../assets/fresh/server_rack_neon_glow.jpg";
-import caseImg from "../../assets/fresh/holographic_data_globe.jpg";
+import promptIdeReferenceImg from "../../assets/fresh/ai-studio-prompt-ide.webp";
+import evaluationsReferenceImg from "../../assets/fresh/ai-studio-evaluations.webp";
+import fineTuningReferenceImg from "../../assets/fresh/ai-studio-fine-tuning.webp";
+import gatewayReferenceImg from "../../assets/fresh/ai-studio-ai-gateway.webp";
+import caseReferenceImg from "../../assets/fresh/ai-studio-customer-success.webp";
 
 export const aistudioData = {
   "id": "ai-studio",
@@ -233,8 +233,8 @@ export const aistudioData = {
   }
 };
 aistudioData.hero.bgImage = heroBg;
-aistudioData.features[0].image = feat1Img || heroBg;
-aistudioData.features[1].image = feat2Img || heroBg;
-aistudioData.features[2].image = feat3Img || heroBg;
-aistudioData.features[3].image = feat4Img || heroBg;
-aistudioData.caseStudy.image = caseImg || heroBg;
+aistudioData.features[0].image = promptIdeReferenceImg;
+aistudioData.features[1].image = evaluationsReferenceImg;
+aistudioData.features[2].image = fineTuningReferenceImg;
+aistudioData.features[3].image = gatewayReferenceImg;
+aistudioData.caseStudy.image = caseReferenceImg;

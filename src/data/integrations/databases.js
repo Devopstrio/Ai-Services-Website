@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/db_hero.jpg";
-import pgImg from "../../assets/integrations/postgres_sql.jpg";
-import snowImg from "../../assets/integrations/snowflake_dw.jpg";
-import mongoImg from "../../assets/integrations/mongodb_nosql.jpg";
-import bqImg from "../../assets/integrations/bigquery_analytics.jpg";
-import caseImg from "../../assets/integrations/db_case.jpg";
+import pgImg from "../../assets/integrations/references/databases/Native SaaS/Image (PostgreSQL & Supabase).webp";
+import snowImg from "../../assets/integrations/references/databases/Native SaaS/Image (Snowflake Data Cloud).webp";
+import mongoImg from "../../assets/integrations/references/databases/Native SaaS/Image (MongoDB Atlas & DocumentDB).webp";
+import bqImg from "../../assets/integrations/references/databases/Native SaaS/Image (Google BigQuery & Databricks).webp";
+import caseImg from "../../assets/integrations/references/databases/Image (Global Retail & E-Commerce Marketplace ($12B GMV)).webp";
 
 export const databasesData = {
   id: "databases",

@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/images_10_.jpg";
-import feat1Img from "../../assets/fresh/hardware_security_module.jpg";
-import feat2Img from "../../assets/fresh/images_11_.jpg";
-import feat3Img from "../../assets/fresh/ijgktdssvo1m7d1wscpf.webp";
-import feat4Img from "../../assets/fresh/images_13_.jpg";
-import caseImg from "../../assets/fresh/dashboard_ai_model_training.jpg";
+import neuralSearchReferenceImg from "../../assets/fresh/knowledge-neural-search.webp";
+import citationsReferenceImg from "../../assets/fresh/knowledge-citations.webp";
+import tableOcrReferenceImg from "../../assets/fresh/knowledge-table-ocr.webp";
+import integrationsReferenceImg from "../../assets/fresh/knowledge-integrations.webp";
+import caseReferenceImg from "../../assets/fresh/knowledge-customer-success.webp";
 
 export const knowledgeaiData = {
   "id": "knowledge-ai",
@@ -233,8 +233,8 @@ export const knowledgeaiData = {
   }
 };
 knowledgeaiData.hero.bgImage = heroBg;
-knowledgeaiData.features[0].image = feat1Img || heroBg;
-knowledgeaiData.features[1].image = feat2Img || heroBg;
-knowledgeaiData.features[2].image = feat3Img || heroBg;
-knowledgeaiData.features[3].image = feat4Img || heroBg;
-knowledgeaiData.caseStudy.image = caseImg || heroBg;
+knowledgeaiData.features[0].image = neuralSearchReferenceImg;
+knowledgeaiData.features[1].image = citationsReferenceImg;
+knowledgeaiData.features[2].image = tableOcrReferenceImg;
+knowledgeaiData.features[3].image = integrationsReferenceImg;
+knowledgeaiData.caseStudy.image = caseReferenceImg;

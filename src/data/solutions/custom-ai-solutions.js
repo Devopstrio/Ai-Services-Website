@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/custom_ai_lab.jpg';
-import img2 from '../../assets/fresh/photo-1606857521015-7f9fcf423740.avif';
-import img3 from '../../assets/unique_solutions/custom_ai_case.jpg';
-import img4 from '../../assets/solutions/8.jpg';
-import img5 from '../../assets/fresh/kubernetes_cluster_nodes.jpg';
-import img6 from '../../assets/fresh/product_aihire_recruiting.jpg';
-import img7 from '../../assets/fresh/product_ai_studio_ide.jpg';
-import img8 from '../../assets/fresh/product_brio_enterprise.jpg';
+import heroImg from '../../assets/unique_solutions/custom_ai_lab.jpg';
+import img1 from '../../assets/enterprise-references/custom-ai-solutions/feature-2.webp';
+import img2 from '../../assets/enterprise-references/custom-ai-solutions/overview.webp';
+import img3 from '../../assets/enterprise-references/custom-ai-solutions/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/custom-ai-solutions/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/custom-ai-solutions/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/custom-ai-solutions/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/custom-ai-solutions/feature-0.webp';
+import img8 from '../../assets/enterprise-references/custom-ai-solutions/feature-1.webp';
 
 const data = {
   id: 'custom-ai-solutions',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Custom AI',
     titleBold: 'Solutions',
     description: "Architect bespoke, proprietary foundational models, autonomous multi-agent swarms, and edge AI systems engineered specifically for your enterprise's unique competitive advantage.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

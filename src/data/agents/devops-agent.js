@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_devops_cicd.jpg";
-import ciImg from "../../assets/unique_agents/devops_pipeline_heal.jpg";
-import k8sImg from "../../assets/fresh/kubernetes_cluster_nodes.jpg";
-import sreImg from "../../assets/fresh/server_rack_neon_glow.jpg";
-import iacImg from "../../assets/fresh/cloud_data_center_hall.jpg";
-import caseImg from "../../assets/unique_agents/devops_agent_case.jpg";
+import ciImg from "../../assets/agent-references/DevOps Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Pipeline Auto-Healing).webp";
+import k8sImg from "../../assets/agent-references/DevOps Agent/ENTERPRISE CAPABILITIES/Image (Kubernetes Fleet Self-Healing).webp";
+import sreImg from "../../assets/agent-references/DevOps Agent/ENTERPRISE CAPABILITIES/Image (Sub-Minute SRE Outage Triage).webp";
+import iacImg from "../../assets/agent-references/DevOps Agent/ENTERPRISE CAPABILITIES/Image (Terraform & Cloud Drift Remediation).webp";
+import caseImg from "../../assets/agent-references/DevOps Agent/Image (Global Streaming & Media Platform).webp";
 
 export const devopsAgentData = {
   id: "devops-agent",

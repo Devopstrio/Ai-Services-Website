@@ -5,11 +5,12 @@ import { FaLinkedin, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 
 import navIndustriesImg from "../../assets/v1_covers/nav_industries.jpg";
-import navCapabilitiesImg from "../../assets/v1_covers/nav_capabilities.png";
-import navSolutionsImg from "../../assets/v1_covers/nav_solutions.jpg";
+const navCapabilitiesImg = "/assets/capability-references/cta/capabilities.webp";
+import navSolutionsImg from "../../assets/enterprise-references/cta/cta.webp";
 import navAgentsImg from "../../assets/v1_covers/nav_agents.png";
 import navIntegrationsImg from "../../assets/v1_covers/nav_integrations.jpg";
 import navInnovationImg from "../../assets/v1_covers/nav_innovation.jpg";
+import integrationDropdownCtaImg from "../../assets/fresh/integration-dropdown-cta.webp";
 
 
 
@@ -386,7 +387,7 @@ const NAV_SECTIONS = [
     label: "Integrations",
     heading: "Integrations",
     image: {
-      src: "/assets/services/webp/usecase_integration.webp",
+      src: integrationDropdownCtaImg,
       title: "Connect AI to Your Entire Stack",
       description: "Pre-built connectors for CRM, ERP, databases, and LLM providers.",
       cta: "View All Integrations",

@@ -11,13 +11,13 @@ const aiSearch = {
     headingRed: "Discovery",
     paragraph: "Traditional keyword search is broken. Employees waste hours looking for documents in SharePoint, Google Drive, and Confluence. Devopstrio builds Enterprise Neural Search systems using dense vector embeddings and Large Language Models. Instead of a list of blue links, your employees can ask natural language questions and receive instantly synthesized, cited answers drawn directly from your secure proprietary data.",
     buttonText: "Try Enterprise Search",
-    imageSrc: "/images/downloaded/cd74058d06_img.jpg",
+    imageSrc: "/assets/capability-references/ai-search/in-action.webp",
   },
   metricsCards: [
-    { value: "40%", label: "Time Saved Searching", image: "/images/downloaded/58dc99f461_img.jpg" },
-    { value: "100+", label: "Data Connectors", image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg" },
-    { value: "Semantic", label: "Intent Understanding", image: "/images/downloaded/609150f783_img.jpg" },
-    { value: "Zero", label: "Hallucinations (RAG)", image: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg" }
+    { value: "40%", label: "Time Saved Searching", image: "/assets/capability-references/ai-search/metric-0.webp" },
+    { value: "100+", label: "Data Connectors", image: "/assets/capability-references/ai-search/metric-1.webp" },
+    { value: "Semantic", label: "Intent Understanding", image: "/assets/capability-references/ai-search/metric-2.webp" },
+    { value: "Zero", label: "Hallucinations (RAG)", image: "/assets/capability-references/ai-search/metric-3.webp" }
   ],
   whoWeWorkWith: {
     titleLight: "Search",
@@ -32,21 +32,21 @@ const aiSearch = {
     titleLight: "The Search",
     titleRed: "Advantage",
     items: [
-      { title: "Unified Knowledge", desc: "Connect Confluence, Jira, Google Drive, and internal databases into a single, omniscient search bar.", image: "/assets/fresh/agent_knowledge_graph.jpg" },
-      { title: "Strict Access Control", desc: "Search respects IAM permissions. The AI will never summarize a document the user doesn't have access to.", image: "/assets/fresh/cyber_digital_matrix.jpg" },
-      { title: "Conversational UI", desc: "Interact with your data via chat. Ask follow-up questions, summarize long PDFs, and request data comparisons.", image: "/assets/fresh/ai-powered-device-concept.jpg" }
+      { title: "Unified Knowledge", desc: "Connect Confluence, Jira, Google Drive, and internal databases into a single, omniscient search bar.", image: "/assets/capability-references/ai-search/benefit-0.webp" },
+      { title: "Strict Access Control", desc: "Search respects IAM permissions. The AI will never summarize a document the user doesn't have access to.", image: "/assets/capability-references/ai-search/benefit-1.webp" },
+      { title: "Conversational UI", desc: "Interact with your data via chat. Ask follow-up questions, summarize long PDFs, and request data comparisons.", image: "/assets/capability-references/ai-search/benefit-2.webp" }
     ]
   },
   cards: {
     titleLight: "Search",
     titleRed: "Capabilities",
     items: [
-      { badge: "SEMANTIC", title: "Vector Search", body: "Search by concepts, not exact keywords. 'Cost reduction' will match with 'savings'.", more: "We deploy highly optimized Vector Databases (Pinecone, Milvus) to instantly search millions of embedded documents.", image: "/images/downloaded/930d9ac6ae_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "RAG", title: "Generative Answers", body: "Instead of links, get a paragraph answer synthesized from the top 5 matching documents.", more: "Retrieval-Augmented Generation (RAG) ensures the LLM only uses your proprietary data, eliminating hallucinations.", image: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "HYBRID", title: "Hybrid Retrieval", body: "Combine the best of semantic vector search with traditional keyword (BM25) search.", more: "This ensures that specific product IDs and names are found exactly, while abstract concepts are searched semantically.", image: "/assets/ecosystem/card/webp/Enterprise-Accelerators-Frameworks.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "CONNECTORS", title: "Enterprise Connectors", body: "We build secure data pipelines that continuously sync your SaaS apps into the search index.", more: "Slack, Notion, SharePoint, Salesforce—all synced in real-time while preserving document-level ACL permissions.", image: "/assets/services/webp/bg-ai.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "MULTIMODAL", title: "Multimodal Search", body: "Search through images, charts, and scanned PDFs using natural language.", more: "Our pipelines use Vision-Language models to embed the contents of graphs and photos so they are just as searchable as text.", image: "/images/downloaded/3243e93894_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "CITATIONS", title: "Verifiable Citations", body: "Every answer generated by the AI includes clickable footnote citations to the source files.", more: "Build trust with your users. If the AI makes a claim, they can instantly open the original PDF to verify.", image: "/assets/services/webp/bg-cloud.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
+      { badge: "SEMANTIC", title: "Vector Search", body: "Search by concepts, not exact keywords. 'Cost reduction' will match with 'savings'.", more: "We deploy highly optimized Vector Databases (Pinecone, Milvus) to instantly search millions of embedded documents.", image: "/assets/capability-references/ai-search/capability-0.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "RAG", title: "Generative Answers", body: "Instead of links, get a paragraph answer synthesized from the top 5 matching documents.", more: "Retrieval-Augmented Generation (RAG) ensures the LLM only uses your proprietary data, eliminating hallucinations.", image: "/assets/capability-references/ai-search/capability-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "HYBRID", title: "Hybrid Retrieval", body: "Combine the best of semantic vector search with traditional keyword (BM25) search.", more: "This ensures that specific product IDs and names are found exactly, while abstract concepts are searched semantically.", image: "/assets/capability-references/ai-search/capability-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "CONNECTORS", title: "Enterprise Connectors", body: "We build secure data pipelines that continuously sync your SaaS apps into the search index.", more: "Slack, Notion, SharePoint, Salesforce—all synced in real-time while preserving document-level ACL permissions.", image: "/assets/capability-references/ai-search/capability-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "MULTIMODAL", title: "Multimodal Search", body: "Search through images, charts, and scanned PDFs using natural language.", more: "Our pipelines use Vision-Language models to embed the contents of graphs and photos so they are just as searchable as text.", image: "/assets/capability-references/ai-search/capability-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "CITATIONS", title: "Verifiable Citations", body: "Every answer generated by the AI includes clickable footnote citations to the source files.", more: "Build trust with your users. If the AI makes a claim, they can instantly open the original PDF to verify.", image: "/assets/capability-references/ai-search/capability-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
     ]
   },
   insights: {

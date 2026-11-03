@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/microchip_wafer_lithography.jpg';
-import img2 from '../../assets/fresh/integration_microservices.jpg';
-import img3 from '../../assets/fresh/multimodal_ai_workbench.jpg';
-import img4 from '../../assets/fresh/agent_finance_reconciliation.jpg';
-import img5 from '../../assets/fresh/innovation_neural_network.jpg';
-import img6 from '../../assets/fresh/agent_hr_workforce.jpg';
-import img7 from '../../assets/fresh/neural_connections_nodes.jpg';
-import img8 from '../../assets/fresh/agent_knowledge_graph.jpg';
+import heroImg from '../../assets/fresh/microchip_wafer_lithography.jpg';
+import img1 from '../../assets/enterprise-references/retail-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/retail-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/retail-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/retail-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/retail-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/retail-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/retail-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/retail-ai/feature-1.webp';
 
 const data = {
   id: 'retail-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Retail',
     titleBold: 'AI',
     description: "Maximize store and e-commerce revenue with dynamic algorithmic pricing, real-time demand forecasting, visual product search, and hyper-personalized loyalty recommendation engines.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

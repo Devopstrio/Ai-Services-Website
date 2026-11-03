@@ -17,7 +17,8 @@ const CAPABILITIES = [
     description:
       "Predict enterprise load, infrastructure strain, and resource gaps days ahead — not after the alert fires.",
     href: "#predictive-analytics",
-    img: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg",
+    img: "/assets/Home-page/AI%20Capabilities/Forecast%20demand%20before%20it%20happens.webp",
+    imageFit: "contain",
     size: "large",
   },
   {
@@ -27,7 +28,9 @@ const CAPABILITIES = [
     description:
       "Extract insights, summaries, and action workflows from complex unstructured data in real time.",
     href: "#nlu",
-    img: "/images/downloaded/179ada9fcc_photo-1550745165-9bc0b252726f.jpg",
+    img: "/assets/Home-page/AI%20Capabilities/Turn%20enterprise%20documents%20into%20structured%20signal.webp",
+    imageFit: "contain",
+    imagePosition: "right center",
     size: "wide",
   },
   {
@@ -36,7 +39,8 @@ const CAPABILITIES = [
     title: "Automated Visual Intelligence",
     description: "Real-time edge detection, spatial inspection, and automated quality control.",
     href: "#computer-vision",
-    img: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg",
+    img: "/assets/Home-page/AI%20Capabilities/Automated%20Visual%20Intelligence.webp",
+    imageFit: "contain",
     size: "small",
   },
   {
@@ -45,7 +49,8 @@ const CAPABILITIES = [
     title: "Catch Drift Before Outages",
     description: "Continuous real-time telemetry across multi-cloud pipelines and AI models.",
     href: "#anomaly-detection",
-    img: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg",
+    img: "/assets/Home-page/AI%20Capabilities/Catch%20Drift%20Before%20Outages.webp",
+    imageFit: "contain",
     size: "small",
   },
   {
@@ -265,6 +270,7 @@ function CapabilityCard({ item, index }) {
 
   return (
     <motion.a
+      className="home-ai-capabilities__card"
       href={item.href}
       style={{ ...styles.card, ...areaStyle(item.id) }}
       initial="hidden"
@@ -278,15 +284,26 @@ function CapabilityCard({ item, index }) {
         <motion.img
           src={item.img}
           alt={item.title}
-          style={styles.cardImg}
-          variants={{ hover: { scale: 1.07 } }}
+          style={{
+            ...styles.cardImg,
+            objectFit: item.imageFit || styles.cardImg.objectFit,
+            objectPosition: item.imagePosition || "center center",
+          }}
+          variants={
+            item.imageFit === "contain"
+              ? undefined
+              : { hover: { scale: 1.07 } }
+          }
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         />
       </motion.div>
 
       <div style={isBanner ? styles.overlayHorizontal : styles.overlayVertical} />
 
-      <div style={isBanner ? styles.contentSide : styles.contentBottom}>
+      <div
+        className={isBanner ? "home-ai-capabilities__banner-content" : undefined}
+        style={isBanner ? styles.contentSide : styles.contentBottom}
+      >
         <span style={styles.tag}>{item.tag}</span>
         <h3 style={isLarge || isBanner ? styles.titleLg : styles.titleSm}>
           {item.title}
@@ -310,7 +327,7 @@ function CapabilityCard({ item, index }) {
 
 export default function AICapabilities() {
   return (
-    <section style={styles.section}>
+    <section className="home-ai-capabilities" style={styles.section}>
       <motion.div
         style={styles.intro}
         initial={{ opacity: 0, y: 24 }}
@@ -332,7 +349,7 @@ export default function AICapabilities() {
         </p>
       </motion.div>
 
-      <div style={styles.grid}>
+      <div className="home-ai-capabilities__grid" style={styles.grid}>
         {CAPABILITIES.map((item, i) => (
           <CapabilityCard item={item} index={i} key={item.id} />
         ))}

@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_legal_compliance.jpg";
-import redlineImg from "../../assets/fresh/agent_compliance_auditing.jpg";
-import playbookImg from "../../assets/unique_agents/legal_contract_review.jpg";
-import mnaImg from "../../assets/fresh/executive_boardroom_ai.jpg";
-import sealImg from "../../assets/fresh/identification-vs-authontication-2.jpg";
-import caseImg from "../../assets/unique_agents/legal_agent_case.jpg";
+import redlineImg from "../../assets/agent-references/Legal Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Contract Redlining).png";
+import playbookImg from "../../assets/agent-references/Legal Agent/ENTERPRISE CAPABILITIES/Image (Dynamic Legal Playbook Enforcement).png";
+import mnaImg from "../../assets/agent-references/Legal Agent/ENTERPRISE CAPABILITIES/Image (M&A Due Diligence & VDR Audit).png";
+import sealImg from "../../assets/agent-references/Legal Agent/ENTERPRISE CAPABILITIES/Image (Cryptographic Agreement Sealing).png";
+import caseImg from "../../assets/agent-references/Legal Agent/Image (Global Financial Services Enterprise).png";
 
 export const legalAgentData = {
   id: "legal-agent",

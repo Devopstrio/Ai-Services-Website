@@ -2,12 +2,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-import buildingTrustImg from "../../assets/fresh/agent_procurement_negotiation.jpg";
-import datacenterFirewallImg from "../../assets/fresh/agent_swarm_orchestration.jpg";
-import businessTeamImg from "../../assets/fresh/agent_swe_coding.jpg";
-import analystTabletImg from "../../assets/fresh/ai-powered-device-concept.jpg";
-import collaborationBundleImg from "../../assets/fresh/an9vuooimrqpn90whkub.webp";
-import innovationArImg from "../../assets/overview/innovation-ar.jpg";
+import devOpsCopilotImg from "../../assets/fresh/products-overview-devops-copilot.webp";
+import eSignivaImg from "../../assets/fresh/products-overview-esigniva.webp";
+import humanexAiImg from "../../assets/fresh/products-overview-humanex-ai.webp";
+import knowledgeAiImg from "../../assets/fresh/products-overview-knowledge-ai.webp";
+import salesAiImg from "../../assets/fresh/products-overview-sales-ai.webp";
+import supportAiImg from "../../assets/fresh/products-overview-support-ai.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
@@ -24,7 +24,7 @@ const PRODUCTS = [
       value: "Reduce contract turnaround time by up to 70% while ensuring complete regulatory compliance."
     },
     bgCode: "linear-gradient(to bottom, rgba(17,17,17,0.85) 0%, rgba(26,5,8,0.95) 100%)",
-    bgImage: `url(${buildingTrustImg})`,
+    bgImage: `url(${eSignivaImg})`,
     iconColor: "#E11D48"
   },
   {
@@ -39,7 +39,7 @@ const PRODUCTS = [
       value: "Drastically reduce MTTR and automate repetitive platform engineering tasks."
     },
     bgCode: "linear-gradient(to bottom, rgba(10,10,10,0.85) 0%, rgba(17,17,17,0.98) 100%)",
-    bgImage: `url(${datacenterFirewallImg})`,
+    bgImage: `url(${devOpsCopilotImg})`,
     iconColor: "#ffffff"
   },
   {
@@ -54,7 +54,7 @@ const PRODUCTS = [
       value: "Increase employee retention and optimize workforce skill distribution."
     },
     bgCode: "linear-gradient(to bottom, rgba(5,5,5,0.85) 0%, rgba(21,21,21,0.98) 100%)",
-    bgImage: `url(${businessTeamImg})`,
+    bgImage: `url(${humanexAiImg})`,
     iconColor: "rgba(225,29,72,0.8)"
   },
   {
@@ -69,7 +69,7 @@ const PRODUCTS = [
       value: "Accelerate sales cycles and increase conversion rates with data-driven outreach."
     },
     bgCode: "linear-gradient(to bottom, rgba(17,17,17,0.85) 0%, rgba(5,5,5,0.98) 100%)",
-    bgImage: `url(${analystTabletImg})`,
+    bgImage: `url(${salesAiImg})`,
     iconColor: "rgba(255,255,255,0.7)"
   },
   {
@@ -84,7 +84,7 @@ const PRODUCTS = [
       value: "Eliminate information retrieval bottlenecks and boost employee productivity."
     },
     bgCode: "linear-gradient(to bottom, rgba(26,5,8,0.85) 0%, rgba(5,5,5,0.98) 100%)",
-    bgImage: `url(${collaborationBundleImg})`,
+    bgImage: `url(${knowledgeAiImg})`,
     iconColor: "#E11D48"
   },
   {
@@ -99,7 +99,7 @@ const PRODUCTS = [
       value: "Deflect up to 60% of support tickets while increasing customer satisfaction scores."
     },
     bgCode: "linear-gradient(to bottom, rgba(10,10,10,0.85) 0%, rgba(17,17,17,0.98) 100%)",
-    bgImage: `url(${innovationArImg})`,
+    bgImage: `url(${supportAiImg})`,
     iconColor: "rgba(255,255,255,0.9)"
   }
 ];

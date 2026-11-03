@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_executive_assistant.jpg";
-import scheduleImg from "../../assets/fresh/digital-workspace-with-data-analysis-visualization.jpg";
-import briefingImg from "../../assets/fresh/executive_boardroom_ai.jpg";
-import minutesImg from "../../assets/fresh/agent_meeting_notes.jpg";
-import actionsImg from "../../assets/unique_agents/exec_assistant_case.jpg";
-import caseImg from "../../assets/unique_agents/meeting_agent_case.jpg";
+import scheduleImg from "../../assets/agent-references/Executive Assistant/ENTERPRISE CAPABILITIES/Image (Intelligent Schedule & Focus Defense).webp";
+import briefingImg from "../../assets/agent-references/Executive Assistant/ENTERPRISE CAPABILITIES/Image (Pre-Meeting Executive Briefing Dossiers).webp";
+import minutesImg from "../../assets/agent-references/Executive Assistant/ENTERPRISE CAPABILITIES/Image (Boardroom Transcription & Decision Synthesis).webp";
+import actionsImg from "../../assets/agent-references/Executive Assistant/ENTERPRISE CAPABILITIES/Image (Autonomous Action Item Delegation).webp";
+import caseImg from "../../assets/agent-references/Executive Assistant/Image (Global Enterprise Technology Unicorn).webp";
 
 export const executiveAssistantData = {
   id: "executive-assistant",

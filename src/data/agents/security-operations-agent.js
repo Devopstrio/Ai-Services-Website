@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_security_soc.jpg";
-import threatImg from "../../assets/unique_agents/secops_threat_hunt.jpg";
-import socImg from "../../assets/fresh/dashboard_cyber_soc.jpg";
-import hsmImg from "../../assets/fresh/hardware_security_module.jpg";
-import networkImg from "../../assets/fresh/cyber_digital_matrix.jpg";
-import caseImg from "../../assets/unique_agents/secops_agent_case.jpg";
+import threatImg from "../../assets/agent-references/Security Operations Agent/ENTERPRISE CAPABILITIES/Image (Sub-Second Endpoint Isolation).webp";
+import socImg from "../../assets/agent-references/Security Operations Agent/ENTERPRISE CAPABILITIES/Image (Neural Alert Correlation & Deduplication).webp";
+import hsmImg from "../../assets/agent-references/Security Operations Agent/ENTERPRISE CAPABILITIES/Image (Autonomous CVE Triage & Remediation).webp";
+import networkImg from "../../assets/agent-references/Security Operations Agent/ENTERPRISE CAPABILITIES/Image (Zero-Trust Identity & Session Defense).webp";
+import caseImg from "../../assets/agent-references/Security Operations Agent/Image (Global Financial Infrastructure Network).webp";
 
 export const securityOperationsAgentData = {
   id: "security-operations-agent",

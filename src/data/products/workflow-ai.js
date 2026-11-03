@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/images_3_.jpg";
-import feat1Img from "../../assets/fresh/programming-background-with-person-working-with-codes-computer.jpg";
-import feat2Img from "../../assets/fresh/images_4_.jpg";
-import feat3Img from "../../assets/fresh/images_5_.jpg";
-import feat4Img from "../../assets/fresh/dashboard_cloud_telemetry.jpg";
-import caseImg from "../../assets/fresh/images_6_.jpg";
+import orchestrationReferenceImg from "../../assets/fresh/workflow-orchestration.webp";
+import selfHealingReferenceImg from "../../assets/fresh/workflow-self-healing.webp";
+import humanGatesReferenceImg from "../../assets/fresh/workflow-human-gates.webp";
+import telemetryReferenceImg from "../../assets/fresh/workflow-telemetry.webp";
+import caseReferenceImg from "../../assets/fresh/workflow-customer-success.webp";
 
 export const workflowaiData = {
   "id": "workflow-ai",
@@ -233,8 +233,8 @@ export const workflowaiData = {
   }
 };
 workflowaiData.hero.bgImage = heroBg;
-workflowaiData.features[0].image = feat1Img || heroBg;
-workflowaiData.features[1].image = feat2Img || heroBg;
-workflowaiData.features[2].image = feat3Img || heroBg;
-workflowaiData.features[3].image = feat4Img || heroBg;
-workflowaiData.caseStudy.image = caseImg || heroBg;
+workflowaiData.features[0].image = orchestrationReferenceImg;
+workflowaiData.features[1].image = selfHealingReferenceImg;
+workflowaiData.features[2].image = humanGatesReferenceImg;
+workflowaiData.features[3].image = telemetryReferenceImg;
+workflowaiData.caseStudy.image = caseReferenceImg;

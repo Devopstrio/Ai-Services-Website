@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/contact_center_voice.jpg';
-import img2 from '../../assets/fresh/man-using-laptop-tablet-analyze-260nw-2727872547.webp';
-import img3 from '../../assets/fresh/manufacturing_predictive_maintenance.jpg';
-import img4 from '../../assets/unique_solutions/contact_center_case.jpg';
-import img5 from '../../assets/fresh/o617yuhzaypd5vculo0kdsgsuhhdutyfbvjrd9rcl5x-wzbxqjixxxbhgllopryznd7wbtmxxjpodopgxhf6lwocnpeyvjwvf5mhbjprzw37td8yjdmjrjdtxgc7t-tks81n3osnyjqcdnamznierpwomyaqkynpbt7lbcax7krombnudovmcqsgprgjgsqr.jpg';
-import img6 from '../../assets/fresh/openinno_686062167_jacoblund02.jpg';
-import img7 from '../../assets/solutions/12.jpg';
-import img8 from '../../assets/fresh/person-using-ar-technology-perform-their-occupation.jpg';
+import heroImg from '../../assets/unique_solutions/contact_center_voice.jpg';
+import img1 from '../../assets/enterprise-references/contact-center-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/contact-center-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/contact-center-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/contact-center-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/contact-center-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/contact-center-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/contact-center-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/contact-center-ai/feature-1.webp';
 
 const data = {
   id: 'contact-center-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Contact Center',
     titleBold: 'AI',
     description: "Modernize telecom and customer contact centers with sub-second conversational voice bots, real-time agent whisper guidance, and 100% automated quality assurance analytics.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

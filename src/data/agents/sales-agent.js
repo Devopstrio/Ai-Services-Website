@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_sales_outreach.jpg";
-import pipelineImg from "../../assets/unique_agents/sales_pipeline_velocity.jpg";
-import intentImg from "../../assets/fresh/dashboard_customer_journey.jpg";
-import coachImg from "../../assets/fresh/sales-growth-graph-on-laptop-screen-with-pointing-hand-illustrating-business-success-and-market-trend-photo.jpeg";
-import crmImg from "../../assets/fresh/crm-software-platforms-hero-2026-1000x600.webp";
-import caseImg from "../../assets/unique_agents/sales_agent_case.jpg";
+import pipelineImg from "../../assets/agent-references/Sales Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Account Sourcing).webp";
+import intentImg from "../../assets/agent-references/Sales Agent/ENTERPRISE CAPABILITIES/Image (Contextual Outreach Swarms).webp";
+import coachImg from "../../assets/agent-references/Sales Agent/ENTERPRISE CAPABILITIES/Image (Live Call & Deal Guidance).webp";
+import crmImg from "../../assets/agent-references/Sales Agent/ENTERPRISE CAPABILITIES/Image (Zero-Touch CRM Hygiene).webp";
+import caseImg from "../../assets/agent-references/Sales Agent/Image (Global Cloud Security SaaS).webp";
 
 export const salesAgentData = {
   id: "sales-agent",

@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/auth_hero.jpg";
-import oktaImg from "../../assets/integrations/okta_sso.jpg";
-import entraImg from "../../assets/integrations/entra_id.jpg";
-import auth0Img from "../../assets/integrations/auth0_jwt.jpg";
-import cyberarkImg from "../../assets/integrations/cyberark_pam.jpg";
-import caseImg from "../../assets/integrations/auth_case.jpg";
+import oktaImg from "../../assets/integrations/references/identity-authentication/Native Saas/Image (Okta Workforce & Customer Identity).webp";
+import entraImg from "../../assets/integrations/references/identity-authentication/Native Saas/Image (Microsoft Entra ID (Azure AD)).webp";
+import auth0Img from "../../assets/integrations/references/identity-authentication/Native Saas/Image (Auth0 by Okta).webp";
+import cyberarkImg from "../../assets/integrations/references/identity-authentication/Native Saas/Image (CyberArk Privileged Access Manager).webp";
+import caseImg from "../../assets/integrations/references/identity-authentication/Image (Tier-1 Global Financial Institution ($600B AUM)).webp";
 
 export const identityAuthenticationData = {
   id: "identity-authentication",

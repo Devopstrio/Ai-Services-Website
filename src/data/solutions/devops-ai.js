@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/agent_code_refactoring.jpg';
-import img2 from '../../assets/fresh/programming-background-with-person-working-with-codes-computer.jpg';
-import img3 from '../../assets/fresh/kubernetes_cluster_nodes.jpg';
-import img4 from '../../assets/fresh/devops_cloud_console.jpg';
-import img5 from '../../assets/fresh/1200x627_blog-buildingtrust.webp';
-import img6 from '../../assets/fresh/serviceman-server-hub-checking-documentation-supercomputers.jpg';
-import img7 from '../../assets/fresh/binary_code_tunnel.jpg';
-import img8 from '../../assets/fresh/person-using-ar-technology-perform-their-occupation.jpg';
+import heroImg from '../../assets/fresh/agent_code_refactoring.jpg';
+import img1 from '../../assets/enterprise-references/devops-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/devops-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/devops-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/devops-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/devops-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/devops-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/devops-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/devops-ai/feature-1.webp';
 
 const data = {
   id: 'devops-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'DevOps',
     titleBold: 'AI',
     description: "Accelerate software delivery velocity with AI-augmented CI/CD pipelines, automated pull request security reviews, self-generating Terraform infrastructure, and predictive release risk scoring.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

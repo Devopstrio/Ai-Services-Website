@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import strategyImg from "../../assets/fresh/agent_executive_assistant.jpg";
-import architectureImg from "../../assets/fresh/ai_consultants_discussion.jpg";
-import deliveryImg from "../../assets/fresh/cheerful-business-team-watching-presentation-laptop-sitting-workplace-staring-display-smiling-copy-space-business-meeting-concept.jpg";
-import governanceImg from "../../assets/fresh/dashboard_executive_kpi.jpg";
-import partnershipsImg from "../../assets/fresh/executive_boardroom_ai.jpg";
-import securityImg from "../../assets/fresh/lead_developer_mentor.jpg";
+import strategyImg from "../../assets/agent-references/Overview/Powering Agents/Image (AI Agent Roadmaps).webp";
+import architectureImg from "../../assets/agent-references/Overview/Powering Agents/Image (Enterprise-Ready Agent Platforms).webp";
+import deliveryImg from "../../assets/agent-references/Overview/Powering Agents/Image (End-to-End Agent Delivery).webp";
+import governanceImg from "../../assets/agent-references/Overview/Powering Agents/Image (Responsible Autonomy by Design).webp";
+import partnershipsImg from "../../assets/agent-references/Overview/Powering Agents/Image (Ecosystem Integration).webp";
+import securityImg from "../../assets/agent-references/Overview/Powering Agents/Image (Secure & Compliant Agents).webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

@@ -187,6 +187,7 @@ const styles = {
     width: "100%",
     height: "100%",
     objectFit: "cover",
+    objectPosition: "center top",
     display: "block",
   },
   cardOverlay: {
@@ -245,49 +246,49 @@ const rightCards = [
     label: "Thought Leadership",
     tags: ["Healthcare", "GenAI"],
     title: "Beyond Automated Compliance",
-    img: "/images/downloaded/b992b92391_gft-image-mood-03.webp",
+    img: "/assets/Home-page/Enterprise%20AI%20Overview/Image%20(Beyond%20Automated%20Compliance).webp",
   },
   {
     label: "Press Release",
     tags: ["Press Release", "2026"],
     title: "TRIO and Meridian Advance Sovereign AI for Health Systems",
-    img: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg",
+    img: "/assets/Home-page/Enterprise%20AI%20Overview/TRIO%20and%20Meridian%20Advance%20Sovereign%20AI%20for%20Health%20Systems.webp",
   },
   {
     label: "Success Story",
     tags: ["Healthcare", "GenAI"],
     title: "Northbeam Accelerates Legacy Modernization",
-    img: "/images/downloaded/179ada9fcc_photo-1550745165-9bc0b252726f.jpg",
+    img: "/assets/Home-page/Enterprise%20AI%20Overview/Image%20(Northbeam%20Accelerates%20Legacy%20Modernization).webp",
   },
   {
     label: "Blog",
     tags: ["Healthcare", "AI Modernization"],
     title: "The Hidden Cost of Legacy Pipelines",
-    img: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg",
+    img: "/assets/Home-page/Enterprise%20AI%20Overview/The%20Hidden%20Cost%20of%20Legacy%20Pipelines.webp",
   },
   {
     label: "Case Study",
     tags: ["DevOps", "GenAI"],
     title: "Cascade Health Cuts Release Time by 6x",
-    img: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg",
+    img: "/assets/Home-page/Enterprise%20AI%20Overview/Image%20(Cascade%20Health%20Cuts%20Release%20Time%20by%206x).webp",
   },
   {
     label: "Research",
     tags: ["Enterprise AI"],
     title: "Where Enterprise AI Actually Pays Off",
-    img: "/images/downloaded/ed43542bb6_photo-1556742049-0cfed4f6a45d.jpg",
+    img: "/assets/Home-page/Enterprise%20AI%20Overview/Where%20Enterprise%20AI%20Actually%20Pays%20Off.webp",
   },
   {
     label: "Webinar",
     tags: ["Compliance", "AI"],
     title: "Designing Compliance-Native AI Pipelines",
-    img: "/images/downloaded/1a772fb840_photo-1563013544-824ae1b704d3.jpg",
+    img: "/assets/Home-page/Enterprise%20AI%20Overview/Image%20(Designing%20Compliance-Native%20AI%20Pipelines).webp",
   },
   {
     label: "Press Release",
     tags: ["Healthcare", "2026"],
     title: "Ironframe Deploys TRIO Across 12 Facilities",
-    img: "/images/downloaded/3dc0f69c72_photo-1550751827-4bd374c3f58b.jpg",
+    img: "/assets/Home-page/Enterprise%20AI%20Overview/Ironframe%20Deploys%20TRIO%20Across%2012%20Facilities.webp",
   },
 ];
 
@@ -303,6 +304,7 @@ const fadeUp = {
 function RightCard({ card, index }) {
   return (
     <motion.div
+      className="home-enterprise-ai-overview__card"
       style={styles.card}
       initial="hidden"
       whileInView="visible"
@@ -316,8 +318,6 @@ function RightCard({ card, index }) {
           src={card.img}
           alt={card.title}
           style={styles.cardImg}
-          variants={{ hover: { scale: 1.08 } }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         />
       </motion.div>
       <div style={styles.cardOverlay} />
@@ -369,7 +369,7 @@ function ArrowIcon() {
 
 export default function EnterpriseAIOverview() {
   return (
-    <section style={styles.section}>
+    <section className="home-enterprise-ai-overview" style={styles.section}>
       <motion.div
         style={styles.intro}
         initial={{ opacity: 0, y: 24 }}
@@ -392,10 +392,11 @@ export default function EnterpriseAIOverview() {
         </p>
       </motion.div>
 
-      <div style={styles.grid}>
+      <div className="home-enterprise-ai-overview__grid" style={styles.grid}>
         {/* LEFT — sticky featured visual */}
-        <div style={styles.leftSticky}>
+        <div className="home-enterprise-ai-overview__left-sticky" style={styles.leftSticky}>
           <motion.div
+            className="home-enterprise-ai-overview__left-card"
             style={styles.leftCard}
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -403,13 +404,9 @@ export default function EnterpriseAIOverview() {
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.img
-              src="/images/downloaded/5de46f79ad_img.webp"
+              src="/assets/Home-page/Enterprise%20AI%20Overview/A%20unified%20control%20layer%20for%20AI%20across%20the%20enterprise.webp"
               alt="Enterprise AI Overview"
               style={styles.leftImg}
-              initial={{ scale: 1.08 }}
-              whileInView={{ scale: 1 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
             />
             <div style={styles.leftOverlay} />
 
@@ -446,7 +443,7 @@ export default function EnterpriseAIOverview() {
         </div>
 
         {/* RIGHT — scrolling 2-col grid */}
-        <div style={styles.rightGrid}>
+        <div className="home-enterprise-ai-overview__right-grid" style={styles.rightGrid}>
           {rightCards.map((card, i) => (
             <RightCard card={card} index={i} key={card.title} />
           ))}

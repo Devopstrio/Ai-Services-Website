@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/agent_finance_reconciliation.jpg';
-import img2 from '../../assets/fresh/6-digital-marketing.jpg';
-import img3 from '../../assets/fresh/crm_revenue_forecasting.jpg';
-import img4 from '../../assets/solutions/7.jpg';
-import img5 from '../../assets/fresh/bajaj_finance_bharti_airtel_partnership_financial__1737355875195_1770527459556.webp';
-import img6 from '../../assets/fresh/73bd7abeb45365336cdce7e9fff4b338.jpg';
-import img7 from '../../assets/fresh/adobestock_1423685034.jpeg';
-import img8 from '../../assets/fresh/adobestock_283199860-1-scaled.jpeg';
+import heroImg from '../../assets/fresh/agent_finance_reconciliation.jpg';
+import img1 from '../../assets/enterprise-references/finance-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/finance-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/finance-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/finance-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/finance-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/finance-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/finance-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/finance-ai/feature-1.webp';
 
 const data = {
   id: 'finance-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Finance',
     titleBold: 'AI',
     description: "Transform corporate finance with autonomous invoice reconciliation, real-time fraud mitigation, algorithmic cash flow forecasting, and automated multi-entity regulatory reporting.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

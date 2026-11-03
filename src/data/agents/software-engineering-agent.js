@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_swe_coding.jpg";
-import codeImg from "../../assets/unique_agents/swe_coding_copilot.jpg";
-import refactorImg from "../../assets/fresh/lead_developer_mentor.jpg";
-import prImg from "../../assets/fresh/html-css-collage-concept-with-person.jpg";
-import reviewImg from "../../assets/fresh/engineering_standup_meeting.jpg";
-import caseImg from "../../assets/unique_agents/swe_agent_case.jpg";
+import codeImg from "../../assets/agent-references/Software Engineering Agent/ENTERPRISE CAPABILITIES/Image (Jira-to-Pull Request Synthesis).webp";
+import refactorImg from "../../assets/agent-references/Software Engineering Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Legacy Refactoring).webp";
+import prImg from "../../assets/agent-references/Software Engineering Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Unit & Integration Test Generation).webp";
+import reviewImg from "../../assets/agent-references/Software Engineering Agent/ENTERPRISE CAPABILITIES/Image (Instant Architectural PR Reviewer).webp";
+import caseImg from "../../assets/agent-references/Software Engineering Agent/Image (FinTech Banking Platform).webp";
 
 export const softwareEngineeringAgentData = {
   id: "software-engineering-agent",

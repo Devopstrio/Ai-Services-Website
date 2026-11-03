@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/agent_deep_market_research.jpg';
-import img2 from '../../assets/fresh/multimodal_ai_workbench.jpg';
-import img3 from '../../assets/fresh/neural_connections_nodes.jpg';
-import img4 from '../../assets/fresh/serviceman-server-hub-checking-documentation-supercomputers.jpg';
-import img5 from '../../assets/fresh/holographic_data_globe.jpg';
-import img6 from '../../assets/fresh/deep_learning_tensor.jpg';
-import img7 from '../../assets/fresh/innovation_neural_network.jpg';
-import img8 from '../../assets/fresh/agent_executive_assistant.jpg';
+import heroImg from '../../assets/fresh/agent_deep_market_research.jpg';
+import img1 from '../../assets/enterprise-references/marketing-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/marketing-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/marketing-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/marketing-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/marketing-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/marketing-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/marketing-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/marketing-ai/feature-1.webp';
 
 const data = {
   id: 'marketing-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Marketing',
     titleBold: 'AI',
     description: "Drive exponential customer acquisition and brand loyalty with generative campaign engines, real-time creative optimization, dynamic audience segmentation, and predictive multi-touch attribution.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

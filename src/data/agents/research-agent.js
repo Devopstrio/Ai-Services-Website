@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_research_analyst.jpg";
-import marketImg from "../../assets/fresh/agent_deep_market_research.jpg";
-import compImg from "../../assets/fresh/deep_learning_tensor.jpg";
-import patentImg from "../../assets/fresh/quantum_laser_optics.jpg";
-import dossierImg from "../../assets/fresh/executive_boardroom_ai.jpg";
-import caseImg from "../../assets/fresh/multinational_team_summit.jpg";
+import marketImg from "../../assets/agent-references/Research Agent/ENTERPRISE CAPABILITIES/Image (Comprehensive Strategic Dossiers).webp";
+import compImg from "../../assets/agent-references/Research Agent/ENTERPRISE CAPABILITIES/Image (Competitor Product & Patent Teardowns).webp";
+import patentImg from "../../assets/agent-references/Research Agent/ENTERPRISE CAPABILITIES/Image (Scientific Literature & Patent Discovery).webp";
+import dossierImg from "../../assets/agent-references/Research Agent/ENTERPRISE CAPABILITIES/Image (SEC Filing & Earnings Call Synthesis).webp";
+import caseImg from "../../assets/agent-references/Research Agent/Image (Global Private Equity & Growth Fund).webp";
 
 export const researchAgentData = {
   id: "research-agent",

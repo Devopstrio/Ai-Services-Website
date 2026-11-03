@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
-import challenge1 from "../../assets/fresh/automated_invoice_processing.jpg";
-import challenge2 from "../../assets/fresh/automated_logistics_hub.jpg";
-import challenge3 from "../../assets/fresh/automotive_autonomous_driving.jpg";
-import challenge4 from "../../assets/fresh/bajaj_finance_bharti_airtel_partnership_financial__1737355875195_1770527459556.webp";
+import challenge1 from "../../assets/enterprise-references/overview/challenge-1.webp";
+import challenge2 from "../../assets/enterprise-references/overview/challenge-2.webp";
+import challenge3 from "../../assets/enterprise-references/overview/challenge-3.webp";
+import challenge4 from "../../assets/enterprise-references/overview/challenge-4.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

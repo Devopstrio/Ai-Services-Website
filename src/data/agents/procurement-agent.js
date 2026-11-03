@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_procurement_vendor.jpg";
-import rfqImg from "../../assets/unique_agents/procurement_vendor_rfq.jpg";
-import vendorImg from "../../assets/fresh/automated_logistics_hub.jpg";
-import spendImg from "../../assets/fresh/dashboard_supply_chain.jpg";
-import contractImg from "../../assets/fresh/global_shipping_container_port.jpg";
-import caseImg from "../../assets/unique_agents/procurement_agent_case.jpg";
+import rfqImg from "../../assets/agent-references/Procurement Agent/ENTERPRISE CAPABILITIES/Image (Autonomous RFQ Scoring Matrix).webp";
+import vendorImg from "../../assets/agent-references/Procurement Agent/ENTERPRISE CAPABILITIES/Image (Automated Vendor Risk & Onboarding).webp";
+import spendImg from "../../assets/agent-references/Procurement Agent/ENTERPRISE CAPABILITIES/Image (Maverick Spend Guardrails).webp";
+import contractImg from "../../assets/agent-references/Procurement Agent/ENTERPRISE CAPABILITIES/Image (Continuous Vendor SLA Auditing).webp";
+import caseImg from "../../assets/agent-references/Procurement Agent/Image (Global Logistics & Transportation Enterprise).webp";
 
 export const procurementAgentData = {
   id: "procurement-agent",

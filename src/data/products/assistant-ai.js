@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/devops_cloud_console.jpg";
-import feat1Img from "../../assets/fresh/dashboard_supply_chain.jpg";
-import feat2Img from "../../assets/fresh/digital-workspace-with-data-analysis-visualization.jpg";
-import feat3Img from "../../assets/fresh/product_design_review.jpg";
-import feat4Img from "../../assets/fresh/engineering_standup_meeting.jpg";
-import caseImg from "../../assets/fresh/digital-world-banner-background-remixed-from-public-domain-by-nasa.jpg";
+import preMeetingReferenceImg from "../../assets/fresh/assistant-pre-meeting-prep.webp";
+import actionTrackerReferenceImg from "../../assets/fresh/assistant-action-tracker.webp";
+import ghostwritingReferenceImg from "../../assets/fresh/assistant-ghostwriting.webp";
+import timeDefenseReferenceImg from "../../assets/fresh/assistant-time-defense.webp";
+import caseReferenceImg from "../../assets/fresh/assistant-customer-success.webp";
 
 export const assistantaiData = {
   "id": "assistant-ai",
@@ -233,8 +233,8 @@ export const assistantaiData = {
   }
 };
 assistantaiData.hero.bgImage = heroBg;
-assistantaiData.features[0].image = feat1Img || heroBg;
-assistantaiData.features[1].image = feat2Img || heroBg;
-assistantaiData.features[2].image = feat3Img || heroBg;
-assistantaiData.features[3].image = feat4Img || heroBg;
-assistantaiData.caseStudy.image = caseImg || heroBg;
+assistantaiData.features[0].image = preMeetingReferenceImg;
+assistantaiData.features[1].image = actionTrackerReferenceImg;
+assistantaiData.features[2].image = ghostwritingReferenceImg;
+assistantaiData.features[3].image = timeDefenseReferenceImg;
+assistantaiData.caseStudy.image = caseReferenceImg;

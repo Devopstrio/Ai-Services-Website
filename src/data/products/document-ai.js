@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/i69gm3mijzfrp2ca43ii.webp";
-import feat1Img from "../../assets/fresh/enterprise_scrum_sprint.jpg";
-import feat2Img from "../../assets/fresh/fintech_algorithmic_trading.jpg";
-import feat3Img from "../../assets/fresh/tech_architect_whiteboard.jpg";
-import feat4Img from "../../assets/fresh/hf4lskkkwpiy2moy4rqa.webp";
-import caseImg from "../../assets/fresh/global_shipping_container_port.jpg";
+import visualParsingReferenceImg from "../../assets/fresh/document-visual-parsing.webp";
+import tableExtractionReferenceImg from "../../assets/fresh/document-table-extraction.webp";
+import exceptionReviewReferenceImg from "../../assets/fresh/document-exception-review.webp";
+import fraudDetectionReferenceImg from "../../assets/fresh/document-fraud-detection.webp";
+import caseReferenceImg from "../../assets/fresh/document-customer-success.webp";
 
 export const documentaiData = {
   "id": "document-ai",
@@ -233,8 +233,8 @@ export const documentaiData = {
   }
 };
 documentaiData.hero.bgImage = heroBg;
-documentaiData.features[0].image = feat1Img || heroBg;
-documentaiData.features[1].image = feat2Img || heroBg;
-documentaiData.features[2].image = feat3Img || heroBg;
-documentaiData.features[3].image = feat4Img || heroBg;
-documentaiData.caseStudy.image = caseImg || heroBg;
+documentaiData.features[0].image = visualParsingReferenceImg;
+documentaiData.features[1].image = tableExtractionReferenceImg;
+documentaiData.features[2].image = exceptionReviewReferenceImg;
+documentaiData.features[3].image = fraudDetectionReferenceImg;
+documentaiData.caseStudy.image = caseReferenceImg;

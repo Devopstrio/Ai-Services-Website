@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/gov_ai_civic.jpg';
-import img2 from '../../assets/fresh/dark_ai_neural_grid.jpg';
-import img3 from '../../assets/unique_solutions/gov_ai_case.jpg';
-import img4 from '../../assets/overview/datacenter-firewall.jpg';
-import img5 from '../../assets/fresh/server_rack_neon_glow.jpg';
-import img6 from '../../assets/solutions/19.jpg';
-import img7 from '../../assets/solutions/20.jpg';
-import img8 from '../../assets/solutions/21.jpg';
+import heroImg from '../../assets/unique_solutions/gov_ai_civic.jpg';
+import img1 from '../../assets/enterprise-references/government-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/government-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/government-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/government-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/government-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/government-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/government-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/government-ai/feature-1.webp';
 
 const data = {
   id: 'government-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Government',
     titleBold: 'AI',
     description: "Enhance citizen services, optimize urban transit, and accelerate public policy analysis with air-gapped, FedRAMP-compliant Artificial Intelligence designed for public sector security.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

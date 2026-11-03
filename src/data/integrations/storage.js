@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/storage_hero.jpg";
-import s3Img from "../../assets/integrations/s3_storage.jpg";
-import azureBlobImg from "../../assets/integrations/azure_blob.jpg";
-import gcsImg from "../../assets/integrations/gcs_storage.jpg";
-import minioImg from "../../assets/integrations/minio_storage.jpg";
-import caseImg from "../../assets/integrations/storage_case.jpg";
+import s3Img from "../../assets/integrations/references/storage/Native SaaS/Image (Amazon S3 & Glacier).webp";
+import azureBlobImg from "../../assets/integrations/references/storage/Native SaaS/Image (Azure Blob Storage & Data Lake Gen2).webp";
+import gcsImg from "../../assets/integrations/references/storage/Native SaaS/Image (Google Cloud Storage (GCS)).webp";
+import minioImg from "../../assets/integrations/references/storage/Native SaaS/Image (MinIO & On-Premises S3).webp";
+import caseImg from "../../assets/integrations/references/storage/Image (Leading Global Medical Imaging & Radiology Network).webp";
 
 export const storageData = {
   id: "storage",

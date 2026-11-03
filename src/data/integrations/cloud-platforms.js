@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/cloud_hero.jpg";
-import awsImg from "../../assets/integrations/aws_cloud.jpg";
-import azureImg from "../../assets/integrations/azure_cloud.jpg";
-import gcpImg from "../../assets/integrations/gcp_cloud.jpg";
-import k8sImg from "../../assets/integrations/k8s_cluster.jpg";
-import caseImg from "../../assets/integrations/cloud_case.jpg";
+import awsImg from "../../assets/integrations/references/cloud-platforms/Native SaaS Connectors & Ecosystem/Image (Amazon Web Services (AWS)).webp";
+import azureImg from "../../assets/integrations/references/cloud-platforms/Native SaaS Connectors & Ecosystem/Image (Microsoft Azure).webp";
+import gcpImg from "../../assets/integrations/references/cloud-platforms/Native SaaS Connectors & Ecosystem/Image (Google Cloud Platform (GCP)).webp";
+import k8sImg from "../../assets/integrations/references/cloud-platforms/Native SaaS Connectors & Ecosystem/Image (Kubernetes & Hybrid Mesh).webp";
+import caseImg from "../../assets/integrations/references/cloud-platforms/Image (Global Telecommunications & Cloud Infrastructure Provider).webp";
 
 export const cloudPlatformsData = {
   id: "cloud-platforms",

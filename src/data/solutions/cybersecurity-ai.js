@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/cyber_security_soc.jpg';
-import img2 from '../../assets/fresh/utszepvw5y6gyqxeluri.webp';
-import img3 from '../../assets/unique_solutions/cyber_security_case.jpg';
-import img4 from '../../assets/fresh/cyber_threat_map.jpg';
-import img5 from '../../assets/fresh/hardware_security_module.jpg';
-import img6 from '../../assets/fresh/xwkj8sgbte1lnatibkes.webp';
-import img7 from '../../assets/fresh/y4sreyneh9zwgyveiwch.webp';
-import img8 from '../../assets/fresh/it-experts-server-hub-doing-brainstorming-finding-ways-shield-data.jpg';
+import heroImg from '../../assets/unique_solutions/cyber_security_soc.jpg';
+import img1 from '../../assets/enterprise-references/cybersecurity-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/cybersecurity-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/cybersecurity-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/cybersecurity-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/cybersecurity-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/cybersecurity-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/cybersecurity-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/cybersecurity-ai/feature-1.webp';
 
 const data = {
   id: 'cybersecurity-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Cybersecurity',
     titleBold: 'AI',
     description: "Defend against advanced persistent threats with autonomous SOC triage, predictive behavioral zero-trust analytics, real-time phishing neutralization, and self-patching vulnerability management.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

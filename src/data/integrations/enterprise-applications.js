@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/entapp_hero.jpg";
-import snowImg from "../../assets/integrations/servicenow_itsm.jpg";
-import docusignImg from "../../assets/integrations/docusign_esign.jpg";
-import stripeImg from "../../assets/integrations/stripe_billing.jpg";
-import coupaImg from "../../assets/integrations/coupa_procure.jpg";
-import caseImg from "../../assets/integrations/entapp_case.jpg";
+import snowImg from "../../assets/integrations/references/enterprise-applications/Native Saas/Image (ServiceNow ITSM & CSM).webp";
+import docusignImg from "../../assets/integrations/references/enterprise-applications/Native Saas/Image (DocuSign eSignature & CLM).webp";
+import stripeImg from "../../assets/integrations/references/enterprise-applications/Native Saas/Image (Stripe Payments & Billing).webp";
+import coupaImg from "../../assets/integrations/references/enterprise-applications/Native Saas/Image (Coupa Business Spend Management).webp";
+import caseImg from "../../assets/integrations/references/enterprise-applications/Image (Global B2B Software Enterprise ($1.4B Annual Recurring Revenue)).webp";
 
 export const enterpriseApplicationsData = {
   id: "enterprise-applications",

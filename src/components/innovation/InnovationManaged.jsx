@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import serverHubImg from "../../assets/fresh/agent_workflow_orchestrator.jpg";
+import serverHubImg from "../../assets/fresh/innovation_lab_scale_ai_server_hub.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

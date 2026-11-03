@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/product_document_ocr.jpg";
-import ocrImg from "../../assets/fresh/automated_invoice_processing.jpg";
-import tableImg from "../../assets/fresh/dashboard_supply_chain.jpg";
-import formsImg from "../../assets/fresh/talent_intelligence_portal.jpg";
-import idpImg from "../../assets/fresh/digital-workspace-with-data-analysis-visualization.jpg";
-import caseImg from "../../assets/fresh/multinational_team_summit.jpg";
+import ocrImg from "../../assets/agent-references/Document Agent/ENTERPRISE CAPABILITIES/Image (Dynamic Schema Mapping & Validation).webp";
+import tableImg from "../../assets/agent-references/Document Agent/ENTERPRISE CAPABILITIES/Image (Complex Multi-Page Table Extraction).webp";
+import formsImg from "../../assets/agent-references/Document Agent/ENTERPRISE CAPABILITIES/Image (Handwritten & Scanned Form Processing).webp";
+import idpImg from "../../assets/agent-references/Document Agent/ENTERPRISE CAPABILITIES/Image (Automated ERP & Warehouse Ingestion).webp";
+import caseImg from "../../assets/agent-references/Document Agent/Image (Global Management Consulting Enterprise).webp";
 
 export const documentAgentData = {
   id: "document-agent",

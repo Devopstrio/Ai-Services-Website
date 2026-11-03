@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/images_23_.jpg";
-import feat1Img from "../../assets/fresh/images_24_.jpg";
-import feat2Img from "../../assets/fresh/images_25_.jpg";
-import feat3Img from "../../assets/fresh/images_16_.jpg";
-import feat4Img from "../../assets/fresh/images_26_.jpg";
-import caseImg from "../../assets/fresh/images_2_.jpg";
+import leadScoringReferenceImg from "../../assets/fresh/sales-lead-scoring.webp";
+import callCoachingReferenceImg from "../../assets/fresh/sales-call-coaching.webp";
+import outreachReferenceImg from "../../assets/fresh/sales-personalized-outreach.webp";
+import pipelineForecastReferenceImg from "../../assets/fresh/sales-pipeline-forecast.webp";
+import caseReferenceImg from "../../assets/fresh/sales-customer-success.webp";
 
 export const salesaiData = {
   "id": "sales-ai",
@@ -233,8 +233,8 @@ export const salesaiData = {
   }
 };
 salesaiData.hero.bgImage = heroBg;
-salesaiData.features[0].image = feat1Img || heroBg;
-salesaiData.features[1].image = feat2Img || heroBg;
-salesaiData.features[2].image = feat3Img || heroBg;
-salesaiData.features[3].image = feat4Img || heroBg;
-salesaiData.caseStudy.image = caseImg || heroBg;
+salesaiData.features[0].image = leadScoringReferenceImg;
+salesaiData.features[1].image = callCoachingReferenceImg;
+salesaiData.features[2].image = outreachReferenceImg;
+salesaiData.features[3].image = pipelineForecastReferenceImg;
+salesaiData.caseStudy.image = caseReferenceImg;

@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_meeting_notes.jpg";
-import speechImg from "../../assets/fresh/agent_meeting_intelligence.jpg";
-import taskImg from "../../assets/fresh/engineering_standup_meeting.jpg";
-import syncImg from "../../assets/fresh/microsoft-teams-and-sharepoint-the-perfect-collaboration-bundle-01.webp";
-import diarizationImg from "../../assets/unique_agents/meeting_transcript_hub.jpg";
-import caseImg from "../../assets/unique_agents/meeting_agent_case.jpg";
+import speechImg from "../../assets/agent-references/Meeting Agent/ENTERPRISE CAPABILITIES/Image (90-Second Executive Meeting Summaries).webp";
+import taskImg from "../../assets/agent-references/Meeting Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Action Item Extraction).webp";
+import syncImg from "../../assets/agent-references/Meeting Agent/ENTERPRISE CAPABILITIES/Image (Cross-Meeting Project Memory).webp";
+import diarizationImg from "../../assets/agent-references/Meeting Agent/ENTERPRISE CAPABILITIES/Image (Multi-Speaker Voice Diarization).webp";
+import caseImg from "../../assets/agent-references/Meeting Agent/Image (Global Software Engineering Enterprise).webp";
 
 export const meetingAgentData = {
   id: "meeting-agent",

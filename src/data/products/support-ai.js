@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/product_mailtab_inbox.jpg";
-import feat1Img from "../../assets/fresh/support_ticket_automation.jpg";
-import feat2Img from "../../assets/fresh/product_support_desk.jpg";
-import feat3Img from "../../assets/fresh/cheerful-business-team-watching-presentation-laptop-sitting-workplace-staring-display-smiling-copy-space-business-meeting-concept.jpg";
-import feat4Img from "../../assets/fresh/remote-it-support-provider-2.webp";
-import caseImg from "../../assets/fresh/edge_computing_satellite.jpg";
+import triageReferenceImg from "../../assets/fresh/support-autonomous-triage.webp";
+import escalationReferenceImg from "../../assets/fresh/support-smart-escalation.webp";
+import voiceReferenceImg from "../../assets/fresh/support-voice-ai-agent.webp";
+import telemetryReferenceImg from "../../assets/fresh/support-product-telemetry.webp";
+import caseReferenceImg from "../../assets/fresh/support-customer-success.webp";
 
 export const supportaiData = {
   "id": "support-ai",
@@ -233,8 +233,8 @@ export const supportaiData = {
   }
 };
 supportaiData.hero.bgImage = heroBg;
-supportaiData.features[0].image = feat1Img || heroBg;
-supportaiData.features[1].image = feat2Img || heroBg;
-supportaiData.features[2].image = feat3Img || heroBg;
-supportaiData.features[3].image = feat4Img || heroBg;
-supportaiData.caseStudy.image = caseImg || heroBg;
+supportaiData.features[0].image = triageReferenceImg;
+supportaiData.features[1].image = escalationReferenceImg;
+supportaiData.features[2].image = voiceReferenceImg;
+supportaiData.features[3].image = telemetryReferenceImg;
+supportaiData.caseStudy.image = caseReferenceImg;

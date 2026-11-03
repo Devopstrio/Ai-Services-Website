@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/devops_hero.jpg";
-import ghImg from "../../assets/integrations/github_actions.jpg";
-import glImg from "../../assets/integrations/gitlab_ci.jpg";
-import argoImg from "../../assets/integrations/argocd_gitops.jpg";
-import tfImg from "../../assets/integrations/terraform_iac.jpg";
-import caseImg from "../../assets/integrations/devops_case.jpg";
+import ghImg from "../../assets/integrations/references/devops/Native Saas/Image (GitHub Enterprise & Actions).webp";
+import glImg from "../../assets/integrations/references/devops/Native Saas/Image (GitLab Ultimate & Auto DevOps).webp";
+import argoImg from "../../assets/integrations/references/devops/Native Saas/Image (ArgoCD & Kubernetes GitOps).webp";
+import tfImg from "../../assets/integrations/references/devops/Native Saas/Image (HashiCorp Terraform & OpenTofu).webp";
+import caseImg from "../../assets/integrations/references/devops/Image (Global Fintech & Neo-Bank Platform ($50B Annual Payments)).webp";
 
 export const devopsData = {
   id: "devops",

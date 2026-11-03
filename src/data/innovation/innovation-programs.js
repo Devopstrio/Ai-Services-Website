@@ -1,9 +1,12 @@
 import heroBg from "../../assets/fresh/cheerful-business-team-watching-presentation-laptop-sitting-workplace-staring-display-smiling-copy-space-business-meeting-concept.jpg";
-import prog1 from "../../assets/fresh/ai_consultants_discussion.jpg";
-import prog2 from "../../assets/fresh/interested-coworkers-with-new-project.jpg";
-import prog3 from "../../assets/fresh/luxurious-modern-office-space-with-important-reports-laptop-empty-desk-showcasing-important-data.jpg";
-import prog4 from "../../assets/fresh/enterprise_innovation_hub.jpg";
-import caseImg from "../../assets/fresh/tech_architect_whiteboard.jpg";
+import fellowshipPillarImg from "../../assets/fresh/innovation_programs_pillar_phd_fellowship.webp";
+import cocreationPillarImg from "../../assets/fresh/innovation_programs_pillar_enterprise_cocreation.webp";
+import computeGrantsPillarImg from "../../assets/fresh/innovation_programs_pillar_supercomputing_grants.webp";
+import ventureStudioPillarImg from "../../assets/fresh/innovation_programs_pillar_venture_studio.webp";
+import fellowshipFrontierImg from "../../assets/fresh/innovation_programs_frontier_fellowship_application.webp";
+import cocreationFrontierImg from "../../assets/fresh/innovation_programs_frontier_cocreation_sprint.webp";
+import computeGrantsFrontierImg from "../../assets/fresh/innovation_programs_frontier_compute_grants.webp";
+import caseImg from "../../assets/fresh/innovation_programs_case_study_research_university.webp";
 
 export const innovationProgramsData = {
   id: "innovation-programs",
@@ -31,7 +34,7 @@ export const innovationProgramsData = {
       tag: "ACADEMIC EXCELLENCE",
       title: "Devopstrio Frontier AI PhD Fellowship",
       description: "Providing 3-year fully funded stipends and unlimited access to our 420 PFLOPS H100 SuperPOD cluster for doctoral students working on foundational AI.",
-      image: prog1,
+      image: fellowshipPillarImg,
       metricBadge: "Full 3-Yr Funding",
       highlights: [
         "100% tuition, living stipend, and conference travel grant coverage",
@@ -44,7 +47,7 @@ export const innovationProgramsData = {
       tag: "INDUSTRY CO-CREATION",
       title: "Joint Enterprise AI Co-Innovation Enclaves",
       description: "Embedding dedicated research teams inside enterprise environments to co-design bespoke foundation models, agent swarms, and proprietary IP.",
-      image: prog4,
+      image: cocreationPillarImg,
       metricBadge: "Joint IP Creation",
       highlights: [
         "Shared equity and licensing agreements preserving customer IP ownership",
@@ -57,7 +60,7 @@ export const innovationProgramsData = {
       tag: "COMPUTE EMPOWERMENT",
       title: "Academic Supercomputing GPU Grants",
       description: "Awarding 10,000+ GPU hours on NVIDIA H100 and B200 SuperPOD clusters to independent researchers working on AI safety, alignment, and open science.",
-      image: prog3,
+      image: computeGrantsPillarImg,
       metricBadge: "10,000+ GPU Hours",
       highlights: [
         "Fast-track application review cycle with decisions in under 14 days",
@@ -70,7 +73,7 @@ export const innovationProgramsData = {
       tag: "VENTURE ACCELERATION",
       title: "Frontier AI Venture Studio Incubation",
       description: "Partnering with early-stage deep tech founders to provide seed capital, architecture design, and direct distribution to our enterprise customer base.",
-      image: prog2,
+      image: ventureStudioPillarImg,
       metricBadge: "Seed to Series A",
       highlights: [
         "Up to $500k in non-dilutive compute credits and seed architecture support",
@@ -85,7 +88,7 @@ export const innovationProgramsData = {
       title: "Academic Fellowship Application Track",
       category: "PhD Programs",
       badge: "Fall 2026 Applications",
-      image: prog1,
+      image: fellowshipFrontierImg,
       benchmark: "100% Fully Funded",
       summary: "Explore application tracks across Neuro-Symbolic Logic, Mechanistic Interpretability, Multimodal World Models, and Quantum Algorithms.",
       features: [
@@ -99,7 +102,7 @@ export const innovationProgramsData = {
       title: "Enterprise Co-Innovation Sprint",
       category: "Enterprise Partnership",
       badge: "6-Month Joint Sprint",
-      image: prog4,
+      image: cocreationFrontierImg,
       benchmark: "Guaranteed Production PoC",
       summary: "Collaborative 6-month research sprint solving domain-specific bottleneck challenges with customized multi-agent foundation models.",
       features: [
@@ -113,7 +116,7 @@ export const innovationProgramsData = {
       title: "Open Science Compute Grant Pool",
       category: "Compute Allocation",
       badge: "14-Day Fast Track",
-      image: prog3,
+      image: computeGrantsFrontierImg,
       benchmark: "420 PFLOPS Available",
       summary: "Apply for non-dilutive high-performance GPU allocations to train academic pre-prints, open-weights models, and benchmark evaluation suites.",
       features: [

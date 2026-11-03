@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_support_triage.jpg";
-import triageImg from "../../assets/fresh/support_ticket_automation.jpg";
-import omniImg from "../../assets/unique_agents/customer_cx_triage.jpg";
-import actionsImg from "../../assets/fresh/remote-it-support-provider-2.webp";
-import escalationImg from "../../assets/fresh/dashboard_cyber_soc.jpg";
-import caseImg from "../../assets/unique_agents/support_agent_case.jpg";
+import triageImg from "../../assets/agent-references/Customer Support Agent/ENTERPRISE CAPABILITIES/Image (Zero-Latency Inquiry Resolution).webp";
+import omniImg from "../../assets/agent-references/Customer Support Agent/ENTERPRISE CAPABILITIES/Image (Omnichannel Conversation Memory).webp";
+import actionsImg from "../../assets/agent-references/Customer Support Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Transaction Execution).webp";
+import escalationImg from "../../assets/agent-references/Customer Support Agent/ENTERPRISE CAPABILITIES/Image (Contextual Human Escalation).webp";
+import caseImg from "../../assets/agent-references/Customer Support Agent/Image (Global E-Commerce & FinTech Platform).webp";
 
 export const customerSupportAgentData = {
   id: "customer-support-agent",

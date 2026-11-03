@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/legal_ai_search.jpg';
-import img2 from '../../assets/fresh/neural_connections_nodes.jpg';
-import img3 from '../../assets/unique_solutions/legal_ai_case.jpg';
-import img4 from '../../assets/fresh/deep_learning_tensor.jpg';
-import img5 from '../../assets/solutions/13.jpg';
-import img6 from '../../assets/solutions/14.jpg';
-import img7 from '../../assets/solutions/15.jpg';
-import img8 from '../../assets/fresh/talent_intelligence_portal.jpg';
+import heroImg from '../../assets/unique_solutions/legal_ai_search.jpg';
+import img1 from '../../assets/enterprise-references/legal-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/legal-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/legal-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/legal-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/legal-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/legal-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/legal-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/legal-ai/feature-1.webp';
 
 const data = {
   id: 'legal-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Legal',
     titleBold: 'AI',
     description: "Accelerate due diligence, contract lifecycle review, and e-discovery with private generative legal copilots. Extract clauses, identify non-standard liabilities, and draft briefs in minutes with verifiable citations.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

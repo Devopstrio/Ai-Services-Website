@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/images_17_.jpg";
-import feat1Img from "../../assets/fresh/ai_circuit_mesh.jpg";
-import feat2Img from "../../assets/fresh/images_18_.jpg";
-import feat3Img from "../../assets/fresh/holographic_data_globe.jpg";
-import feat4Img from "../../assets/fresh/images_19_.jpg";
-import caseImg from "../../assets/fresh/digital-world-banner-background-remixed-from-public-domain-by-nasa.jpg";
+import contentEngineReferenceImg from "../../assets/fresh/marketing-content-engine.webp";
+import abmReferenceImg from "../../assets/fresh/marketing-abm-personalization.webp";
+import localizationReferenceImg from "../../assets/fresh/marketing-localization.webp";
+import testingReferenceImg from "../../assets/fresh/marketing-ab-testing.webp";
+import caseReferenceImg from "../../assets/fresh/marketing-customer-success.webp";
 
 export const marketingaiData = {
   "id": "marketing-ai",
@@ -233,8 +233,8 @@ export const marketingaiData = {
   }
 };
 marketingaiData.hero.bgImage = heroBg;
-marketingaiData.features[0].image = feat1Img || heroBg;
-marketingaiData.features[1].image = feat2Img || heroBg;
-marketingaiData.features[2].image = feat3Img || heroBg;
-marketingaiData.features[3].image = feat4Img || heroBg;
-marketingaiData.caseStudy.image = caseImg || heroBg;
+marketingaiData.features[0].image = contentEngineReferenceImg;
+marketingaiData.features[1].image = abmReferenceImg;
+marketingaiData.features[2].image = localizationReferenceImg;
+marketingaiData.features[3].image = testingReferenceImg;
+marketingaiData.caseStudy.image = caseReferenceImg;

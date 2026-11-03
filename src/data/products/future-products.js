@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/fthrxuelietnvkeiesnp.webp";
-import feat1Img from "../../assets/fresh/generated_image__agent_governance_framework_architecture_diagram.png";
-import feat2Img from "../../assets/fresh/robotic_assembly_precision.jpg";
-import feat3Img from "../../assets/fresh/global_operations_center.jpg";
-import feat4Img from "../../assets/fresh/augmented_reality_simulation.jpg";
-import caseImg from "../../assets/fresh/hardware_security_module.jpg";
+import quantumReferenceImg from "../../assets/fresh/future-quantum-ai.webp";
+import spatialReferenceImg from "../../assets/fresh/future-spatial-ai.webp";
+import edgeSiliconReferenceImg from "../../assets/fresh/future-edge-silicon.webp";
+import bioReferenceImg from "../../assets/fresh/future-bio-ai.webp";
+import caseReferenceImg from "../../assets/fresh/future-customer-success.webp";
 
 export const futureproductsData = {
   "id": "future-products",
@@ -233,8 +233,8 @@ export const futureproductsData = {
   }
 };
 futureproductsData.hero.bgImage = heroBg;
-futureproductsData.features[0].image = feat1Img || heroBg;
-futureproductsData.features[1].image = feat2Img || heroBg;
-futureproductsData.features[2].image = feat3Img || heroBg;
-futureproductsData.features[3].image = feat4Img || heroBg;
-futureproductsData.caseStudy.image = caseImg || heroBg;
+futureproductsData.features[0].image = quantumReferenceImg;
+futureproductsData.features[1].image = spatialReferenceImg;
+futureproductsData.features[2].image = edgeSiliconReferenceImg;
+futureproductsData.features[3].image = bioReferenceImg;
+futureproductsData.caseStudy.image = caseReferenceImg;

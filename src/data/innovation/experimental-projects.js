@@ -3,7 +3,14 @@ import moonshot1 from "../../assets/fresh/innovation_vr_workspace.jpg";
 import moonshot2 from "../../assets/fresh/microchip_wafer_lithography.jpg";
 import moonshot3 from "../../assets/fresh/quantum_cryo_computing.jpg";
 import moonshot4 from "../../assets/fresh/innovation_bio_ai_lab.jpg";
-import caseImg from "../../assets/fresh/cloud_data_center_hall.jpg";
+import roboticsPillarImg from "../../assets/fresh/experimental_projects_pillar_dexterous_robotics.webp";
+import spatialPillarImg from "../../assets/fresh/experimental_projects_pillar_4d_neural_radiance.webp";
+import quantumPillarImg from "../../assets/fresh/experimental_projects_pillar_quantum_gate_synthesis.webp";
+import biologyPillarImg from "../../assets/fresh/experimental_projects_pillar_metabolic_enzymes.webp";
+import roboticsFrontierImg from "../../assets/fresh/experimental_projects_frontier_dual_arm_manipulation.webp";
+import spatialFrontierImg from "../../assets/fresh/experimental_projects_frontier_factory_gaussian_twin.webp";
+import quantumFrontierImg from "../../assets/fresh/experimental_projects_frontier_quantum_compiler.webp";
+import caseImg from "../../assets/fresh/experimental_projects_case_study_robotics_foundry.webp";
 
 export const experimentalProjectsData = {
   id: "experimental-projects",
@@ -31,7 +38,7 @@ export const experimentalProjectsData = {
       tag: "EMBODIED COGNITION",
       title: "Autonomous Dexterous Robotics Swarms",
       description: "Training vision-language-action (VLA) foundation models for dual-arm robotic manipulators with zero-shot generalization in unmapped industrial settings.",
-      image: heroBg,
+      image: roboticsPillarImg,
       metricBadge: "Sub-mm Precision",
       highlights: [
         "Real-time tactile sensory feedback loop operating at 500 Hz",
@@ -44,7 +51,7 @@ export const experimentalProjectsData = {
       tag: "SPATIAL COMPUTING",
       title: "Real-Time 4D Neural Radiance Fields",
       description: "Generative spatial world rendering synthesizing dynamic, photorealistic 4D environments from sparse video feeds for immersive digital twins.",
-      image: moonshot1,
+      image: spatialPillarImg,
       metricBadge: "120 FPS 4D Render",
       highlights: [
         "Continuous spatio-temporal 4D Gaussian splatting at 120 FPS",
@@ -57,7 +64,7 @@ export const experimentalProjectsData = {
       tag: "QUANTUM-AI ALGORITHMS",
       title: "AI-Driven Quantum Gate Synthesis",
       description: "Deploying reinforcement learning search algorithms to discover error-mitigated quantum circuits and optimize gate fidelity for NISQ hardware.",
-      image: moonshot3,
+      image: quantumPillarImg,
       metricBadge: "90% Gate Compression",
       highlights: [
         "Automated discovery of optimal Clifford+T quantum fault-tolerant gates",
@@ -70,7 +77,7 @@ export const experimentalProjectsData = {
       tag: "BIO-MOONSHOT",
       title: "De Novo Metabolic Enzyme Catalysts",
       description: "Engineering synthetic enzymes and biochemical catalysts using all-atom generative diffusion to accelerate industrial carbon capture.",
-      image: moonshot4,
+      image: biologyPillarImg,
       metricBadge: "Carbon Sequestration",
       highlights: [
         "SE(3)-equivariant geometric protein backbone generation",
@@ -85,7 +92,7 @@ export const experimentalProjectsData = {
       title: "Visuomotor Dual-Arm Manipulation",
       category: "Embodied Robotics",
       badge: "500 Hz Tactile Policy",
-      image: heroBg,
+      image: roboticsFrontierImg,
       benchmark: "99.2% Task Success Rate",
       summary: "Evaluates closed-loop visuomotor foundation models manipulating complex electronic assemblies with deformable cables and dynamic obstacles.",
       features: [
@@ -99,7 +106,7 @@ export const experimentalProjectsData = {
       title: "4D Industrial Factory Gaussian Twin",
       category: "Spatial Computing",
       badge: "Real-Time Telemetry",
-      image: moonshot1,
+      image: spatialFrontierImg,
       benchmark: "120 FPS at 4K Resolution",
       summary: "Streams live LiDAR and RGB camera telemetry into continuous 4D Gaussian splats to simulate factory floor bottlenecks in real time.",
       features: [
@@ -113,7 +120,7 @@ export const experimentalProjectsData = {
       title: "Quantum Error-Mitigated Compiler",
       category: "Quantum Computing",
       badge: "NISQ Optimization",
-      image: moonshot3,
+      image: quantumFrontierImg,
       benchmark: "10x Lower Circuit Depth",
       summary: "Synthesizes ultra-dense quantum circuits by discovering non-intuitive topological gate commutations using neural Monte Carlo tree search.",
       features: [

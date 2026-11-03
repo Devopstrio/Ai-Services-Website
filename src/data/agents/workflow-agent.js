@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_workflow_orchestrator.jpg";
-import flowImg from "../../assets/fresh/integration_event_streaming.jpg";
-import apiImg from "../../assets/fresh/integration_api_gateway.jpg";
-import gateImg from "../../assets/fresh/integration_microservices.jpg";
-import meshImg from "../../assets/fresh/integration_hybrid_network.jpg";
-import caseImg from "../../assets/fresh/multinational_team_summit.jpg";
+import flowImg from "../../assets/agent-references/Workflow Agent/ENTERPRISE CAPABILITIES/Image (End-to-End Enterprise Process Flows).webp";
+import apiImg from "../../assets/agent-references/Workflow Agent/ENTERPRISE CAPABILITIES/Image (Self-Healing API & Schema Connectors).webp";
+import gateImg from "../../assets/agent-references/Workflow Agent/ENTERPRISE CAPABILITIES/Image (Interactive Human Approval Checkpoints).webp";
+import meshImg from "../../assets/agent-references/Workflow Agent/ENTERPRISE CAPABILITIES/Image (Real-Time Bi-Directional Data Mesh).webp";
+import caseImg from "../../assets/agent-references/Workflow Agent/Image (Global Telecommunications Giant).webp";
 
 export const workflowAgentData = {
   id: "workflow-agent",

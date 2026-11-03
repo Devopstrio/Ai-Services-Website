@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_hr_workforce.jpg";
-import onboardImg from "../../assets/unique_agents/hr_talent_onboarding.jpg";
-import policyImg from "../../assets/fresh/executive_boardroom_ai.jpg";
-import skillImg from "../../assets/fresh/talent_intelligence_portal.jpg";
-import retainImg from "../../assets/fresh/dashboard_executive_kpi.jpg";
-import caseImg from "../../assets/unique_agents/hr_agent_case.jpg";
+import onboardImg from "../../assets/agent-references/HR Agent/ENTERPRISE CAPABILITIES/Image (Zero-Touch Onboarding).webp";
+import policyImg from "../../assets/agent-references/HR Agent/ENTERPRISE CAPABILITIES/24 x 7 Employee Concierge).webp";
+import skillImg from "../../assets/agent-references/HR Agent/ENTERPRISE CAPABILITIES/Image (Enterprise Skill Graph).webp";
+import retainImg from "../../assets/agent-references/HR Agent/ENTERPRISE CAPABILITIES/Image (Flight-Risk Intelligence).webp";
+import caseImg from "../../assets/agent-references/HR Agent/Image (Global FinTech Enterprise).webp";
 
 export const hragentData = {
   id: "hr-agent",

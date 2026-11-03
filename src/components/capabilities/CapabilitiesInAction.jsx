@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import actionImg from "../../assets/fresh/73bd7abeb45365336cdce7e9fff4b338.jpg";
+const actionImg = "/assets/capability-references/overview/in-action.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

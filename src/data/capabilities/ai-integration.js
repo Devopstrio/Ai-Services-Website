@@ -11,13 +11,13 @@ const aiIntegration = {
     headingRed: "Intelligence",
     paragraph: "The hardest part of AI isn't training the model; it's getting it to work inside your existing software stack. Devopstrio specializes in complex enterprise AI integrations. We build the secure APIs, middleware, and microservices necessary to embed Large Language Models and predictive algorithms directly into your CRM, ERP, and bespoke internal applications—without disrupting daily operations.",
     buttonText: "Discuss Integration",
-    imageSrc: "/images/downloaded/1f3b03c63c_img.jpg",
+    imageSrc: "/assets/capability-references/ai-integration/in-action.webp",
   },
   metricsCards: [
-    { value: "200+", label: "Systems Integrated", image: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg" },
-    { value: "Zero", label: "Downtime Deployments", image: "/images/downloaded/9ee44e4bd0_img.jpg" },
-    { value: "API", label: "First Architecture", image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg" },
-    { value: "100%", label: "Secure VPC Bridging", image: "/images/downloaded/478798247d_img.jpg" }
+    { value: "200+", label: "Systems Integrated", image: "/assets/capability-references/ai-integration/metric-0.webp" },
+    { value: "Zero", label: "Downtime Deployments", image: "/assets/capability-references/ai-integration/metric-1.webp" },
+    { value: "API", label: "First Architecture", image: "/assets/capability-references/ai-integration/metric-2.webp" },
+    { value: "100%", label: "Secure VPC Bridging", image: "/assets/capability-references/ai-integration/metric-3.webp" }
   ],
   whoWeWorkWith: {
     titleLight: "Integration",
@@ -32,21 +32,21 @@ const aiIntegration = {
     titleLight: "Why Choose Our",
     titleRed: "Integration?",
     items: [
-      { title: "Maximize Existing ROI", desc: "Extend the life of your legacy systems. Add modern AI capabilities without the risk and cost of a full rewrite.", image: "/assets/fresh/crm-software-platforms-hero-2026-1000x600.webp" },
-      { title: "User Adoption", desc: "Employees don't want to learn another tool. We put the AI directly inside the software they already use every day.", image: "/assets/fresh/digital-world-banner-background-remixed-from-public-domain-by-nasa.jpg" },
-      { title: "Enterprise Security", desc: "We build secure middleware that ensures data passed between your systems and the AI models is encrypted and compliant.", image: "/assets/fresh/cloud-security-hub-hero.jpg" }
+      { title: "Maximize Existing ROI", desc: "Extend the life of your legacy systems. Add modern AI capabilities without the risk and cost of a full rewrite.", image: "/assets/capability-references/ai-integration/benefit-0.webp" },
+      { title: "User Adoption", desc: "Employees don't want to learn another tool. We put the AI directly inside the software they already use every day.", image: "/assets/capability-references/ai-integration/benefit-1.webp" },
+      { title: "Enterprise Security", desc: "We build secure middleware that ensures data passed between your systems and the AI models is encrypted and compliant.", image: "/assets/capability-references/ai-integration/benefit-2.webp" }
     ]
   },
   cards: {
     titleLight: "Integration",
     titleRed: "Capabilities",
     items: [
-      { badge: "MIDDLEWARE", title: "AI API Gateways", body: "Centralize and monitor all AI requests across your enterprise through a secure gateway.", more: "Manage rate limits, handle fallbacks if an LLM provider goes down, and audit every prompt securely.", image: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "COPILOTS", title: "Custom Copilot UI", body: "Inject chat interfaces or AI suggestion widgets directly into your existing web applications.", more: "We build React/Vue components that seamlessly blend into your app's existing design system.", image: "/images/downloaded/930d9ac6ae_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "SAAS", title: "SaaS Ecosystems", body: "Deep integrations with platforms like Salesforce, ServiceNow, Zendesk, and Workday.", more: "We use native APIs and Webhooks to trigger AI actions based on events in your core SaaS platforms.", image: "/images/downloaded/3f90bfcdd3_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "HYBRID", title: "Cloud to On-Premise", body: "Connect cloud-based LLMs to your secure, on-premise databases without opening firewalls.", more: "We deploy secure tunnels and reverse proxies to allow safe, one-way querying of your internal data.", image: "/assets/services/webp/bg-ai.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "PIPELINES", title: "Event-Driven AI", body: "Trigger AI models asynchronously based on Kafka events or database inserts.", more: "For example, automatically running a computer vision model the millisecond an image is uploaded to an S3 bucket.", image: "/images/downloaded/3243e93894_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "MIGRATION", title: "LLM Agnostic Design", body: "Don't get locked into one provider. We build abstraction layers so you can swap models instantly.", more: "Switch from OpenAI to Anthropic to open-source Llama seamlessly without changing a single line of frontend code.", image: "/assets/services/webp/bg-cloud.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
+      { badge: "MIDDLEWARE", title: "AI API Gateways", body: "Centralize and monitor all AI requests across your enterprise through a secure gateway.", more: "Manage rate limits, handle fallbacks if an LLM provider goes down, and audit every prompt securely.", image: "/assets/capability-references/ai-integration/capability-0.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "COPILOTS", title: "Custom Copilot UI", body: "Inject chat interfaces or AI suggestion widgets directly into your existing web applications.", more: "We build React/Vue components that seamlessly blend into your app's existing design system.", image: "/assets/capability-references/ai-integration/capability-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "SAAS", title: "SaaS Ecosystems", body: "Deep integrations with platforms like Salesforce, ServiceNow, Zendesk, and Workday.", more: "We use native APIs and Webhooks to trigger AI actions based on events in your core SaaS platforms.", image: "/assets/capability-references/ai-integration/capability-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "HYBRID", title: "Cloud to On-Premise", body: "Connect cloud-based LLMs to your secure, on-premise databases without opening firewalls.", more: "We deploy secure tunnels and reverse proxies to allow safe, one-way querying of your internal data.", image: "/assets/capability-references/ai-integration/capability-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "PIPELINES", title: "Event-Driven AI", body: "Trigger AI models asynchronously based on Kafka events or database inserts.", more: "For example, automatically running a computer vision model the millisecond an image is uploaded to an S3 bucket.", image: "/assets/capability-references/ai-integration/capability-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "MIGRATION", title: "LLM Agnostic Design", body: "Don't get locked into one provider. We build abstraction layers so you can swap models instantly.", more: "Switch from OpenAI to Anthropic to open-source Llama seamlessly without changing a single line of frontend code.", image: "/assets/capability-references/ai-integration/capability-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
     ]
   },
   insights: {

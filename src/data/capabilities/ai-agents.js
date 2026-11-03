@@ -11,28 +11,28 @@ const aiAgents = {
     headingRed: "Takes Action",
     paragraph: "Static chatbots are obsolete. Devopstrio engineers agentic systems using advanced orchestration frameworks like LangChain and AutoGen. These agents dynamically plan, use external tools, query databases, and correct their own mistakes in real-time. Whether it's an autonomous customer success agent or an automated DevSecOps remediation bot, we build AI that works alongside your team as a fully capable digital employee.",
     buttonText: "See Agents Live",
-    imageSrc: "/images/downloaded/179ada9fcc_photo-1550745165-9bc0b252726f.jpg",
+    imageSrc: "/assets/capability-references/ai-agents/in-action.webp",
   },
   metricsCards: [
     { 
       value: "40%", 
       label: "Faster Task Resolution",
-      image: "/images/downloaded/478798247d_img.jpg"
+      image: "/assets/capability-references/ai-agents/metric-0.webp"
     },
     { 
       value: "24/7", 
       label: "Autonomous Operations",
-      image: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg"
+      image: "/assets/capability-references/ai-agents/metric-1.webp"
     },
     { 
       value: "100+", 
       label: "API Integrations",
-      image: "/images/downloaded/609150f783_img.jpg"
+      image: "/assets/capability-references/ai-agents/metric-2.webp"
     },
     { 
       value: "5x", 
       label: "Ops Scalability",
-      image: "/images/downloaded/d97187fdf9_img.jpg"
+      image: "/assets/capability-references/ai-agents/metric-3.webp"
     }
   ],
   whoWeWorkWith: {
@@ -63,17 +63,17 @@ const aiAgents = {
       {
         title: "End-to-End Execution",
         desc: "Agents break down high-level goals into actionable steps, executing complex workflows across multiple software platforms autonomously.",
-        image: "/assets/fresh/agent_swe_coding.jpg"
+        image: "/assets/capability-references/ai-agents/benefit-0.webp"
       },
       {
         title: "Human-in-the-Loop",
         desc: "Maintain total control with built-in pause points. Agents execute up to a critical decision, then wait for human approval before proceeding.",
-        image: "/assets/fresh/agent_workflow_orchestrator.jpg" 
+        image: "/assets/capability-references/ai-agents/benefit-1.webp"
       },
       {
         title: "Tool Usage & APIs",
         desc: "Our agents are equipped with secure API keys to interact directly with Jira, Salesforce, AWS, and your internal proprietary systems.",
-        image: "/assets/fresh/agent_automated_qa_pipeline.jpg" 
+        image: "/assets/capability-references/ai-agents/benefit-2.webp"
       }
     ]
   },
@@ -86,7 +86,7 @@ const aiAgents = {
         title: "Multi-Agent Systems",
         body: "Deploy teams of specialized agents that collaborate. A 'researcher' agent finds data, while a 'writer' agent formats it, and a 'reviewer' agent checks for errors.",
         more: "Using frameworks like AutoGen and crewAI, we build conversational architectures where AI agents debate and refine solutions together.",
-        image: "/images/downloaded/930d9ac6ae_img.jpg",
+        image: "/assets/capability-references/ai-agents/capability-0.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -94,7 +94,7 @@ const aiAgents = {
         title: "Long-Term Context",
         body: "Equip agents with persistent memory architectures (Vector DBs) so they remember past user interactions and company policies across sessions.",
         more: "This ensures personalized, context-aware operations where the agent never has to ask the same question twice.",
-        image: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg",
+        image: "/assets/capability-references/ai-agents/capability-1.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -102,7 +102,7 @@ const aiAgents = {
         title: "Dynamic Planning",
         body: "Agents capable of Chain-of-Thought (CoT) and ReAct (Reason + Act) methodologies to solve problems they haven't explicitly been programmed for.",
         more: "Instead of rigid if/then logic, our agents analyze the current state, determine the next best action, and adapt if they encounter an error.",
-        image: "/images/downloaded/3f90bfcdd3_img.jpg",
+        image: "/assets/capability-references/ai-agents/capability-2.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -110,7 +110,7 @@ const aiAgents = {
         title: "Agentic Guardrails",
         body: "Strict execution boundaries that prevent agents from taking destructive actions or leaking data across boundaries.",
         more: "We implement robust IAM roles for AI agents, ensuring they operate with the absolute principle of least privilege within your cloud.",
-        image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg",
+        image: "/assets/capability-references/ai-agents/capability-3.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -118,7 +118,7 @@ const aiAgents = {
         title: "Custom Tool Creation",
         body: "We build tailored OpenAPI specifications and Python functions that act as the 'hands' for your AI agents.",
         more: "Whether it's executing a SQL query on a mainframe or triggering a Jenkins CI/CD pipeline, we connect the agent to your stack.",
-        image: "/images/downloaded/3243e93894_img.jpg",
+        image: "/assets/capability-references/ai-agents/capability-4.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       },
       {
@@ -126,7 +126,7 @@ const aiAgents = {
         title: "Agent Observability",
         body: "Full visibility into the agent's thought process. Track every API call, token generated, and decision made in real-time.",
         more: "We integrate LangSmith and custom dashboards so you can audit agent behavior, track costs, and optimize prompts continuously.",
-        image: "/images/downloaded/9ee44e4bd0_img.jpg",
+        image: "/assets/capability-references/ai-agents/capability-5.webp",
         color1: "#F5F2EA", color2: "#E6DBC6"
       }
     ]

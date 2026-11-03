@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/bi_hero.jpg";
-import pbiImg from "../../assets/integrations/powerbi_dash.jpg";
-import tabImg from "../../assets/integrations/tableau_viz.jpg";
-import lookerImg from "../../assets/integrations/looker_explore.jpg";
-import tsImg from "../../assets/integrations/thoughtspot_search.jpg";
-import caseImg from "../../assets/integrations/bi_case.jpg";
+import pbiImg from "../../assets/integrations/references/business-intelligence/Native Saas/Image (Microsoft Power BI & Fabric).webp";
+import tabImg from "../../assets/integrations/references/business-intelligence/Native Saas/Image (Tableau Cloud & Server).webp";
+import lookerImg from "../../assets/integrations/references/business-intelligence/Native Saas/Image (Google Looker & LookML).webp";
+import tsImg from "../../assets/integrations/references/business-intelligence/Native Saas/Image (ThoughtSpot & Self-Service BI).webp";
+import caseImg from "../../assets/integrations/references/business-intelligence/Image (Global Consumer Goods & Retail Brand ($8.5B Revenue)).webp";
 
 export const businessIntelligenceData = {
   id: "business-intelligence",

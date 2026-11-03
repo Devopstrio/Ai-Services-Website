@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import serverHubImg from "../../assets/fresh/agent_automated_qa_pipeline.jpg";
+const serverHubImg = "/assets/capability-references/overview/managed-delivery.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

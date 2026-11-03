@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/erp_hero.jpg";
-import sapImg from "../../assets/integrations/sap_s4hana.jpg";
-import oracleImg from "../../assets/integrations/oracle_netsuite.jpg";
-import workdayImg from "../../assets/integrations/workday_hcm.jpg";
-import erpFinImg from "../../assets/integrations/erp_finance.jpg";
-import caseImg from "../../assets/integrations/erp_case.jpg";
+import sapImg from "../../assets/integrations/references/erp-systems/Native SaaS Connectors & Ecosystem/Image (SAP S-4HANA & ECC).webp";
+import oracleImg from "../../assets/integrations/references/erp-systems/Native SaaS Connectors & Ecosystem/Image (Oracle NetSuite Cloud ERP).webp";
+import workdayImg from "../../assets/integrations/references/erp-systems/Native SaaS Connectors & Ecosystem/Image (Workday HCM & Financials).webp";
+import erpFinImg from "../../assets/integrations/references/erp-systems/Native SaaS Connectors & Ecosystem/Image (Microsoft Dynamics 365 Finance).webp";
+import caseImg from "../../assets/integrations/references/erp-systems/Image (Global Industrial Equipment Manufacturer ($3.8B Revenue)).webp";
 
 export const erpSystemsData = {
   id: "erp-systems",

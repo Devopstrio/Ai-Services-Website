@@ -11,13 +11,13 @@ const computerVision = {
     headingRed: "Pixels",
     paragraph: "Computer Vision is transforming the physical world. Devopstrio engineers deep learning vision models capable of real-time object detection, facial recognition, and defect analysis. We deploy lightweight, high-performance models directly to edge devices on the factory floor, or scale massive video-processing pipelines in the cloud for global surveillance networks.",
     buttonText: "See Vision AI Live",
-    imageSrc: "/images/downloaded/45d63a1d7c_img.jpg",
+    imageSrc: "/assets/capability-references/computer-vision/in-action.webp",
   },
   metricsCards: [
-    { value: "99.9%", label: "Defect Detection Rate", image: "/images/downloaded/aa314d90f7_photo-1550751827-4bd374c3f58b.jpg" },
-    { value: "30fps+", label: "Real-Time Inference", image: "/images/downloaded/001f4d30d1_img.jpg" },
-    { value: "Edge", label: "Optimized Deployment", image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg" },
-    { value: "10M+", label: "Frames Processed", image: "/images/downloaded/090bb5653b_img.jpg" }
+    { value: "99.9%", label: "Defect Detection Rate", image: "/assets/capability-references/computer-vision/metric-0.webp" },
+    { value: "30fps+", label: "Real-Time Inference", image: "/assets/capability-references/computer-vision/metric-1.webp" },
+    { value: "Edge", label: "Optimized Deployment", image: "/assets/capability-references/computer-vision/metric-2.webp" },
+    { value: "10M+", label: "Frames Processed", image: "/assets/capability-references/computer-vision/metric-3.webp" }
   ],
   whoWeWorkWith: {
     titleLight: "Vision",
@@ -32,21 +32,21 @@ const computerVision = {
     titleLight: "The Vision",
     titleRed: "Advantage",
     items: [
-      { title: "Tireless Inspection", desc: "Cameras don't get fatigued. Maintain perfect quality control 24/7 without human error.", image: "/assets/fresh/augmented_reality_simulation.jpg" },
-      { title: "Edge Processing", desc: "Process video directly on local cameras to avoid massive bandwidth costs and ensure privacy.", image: "/assets/fresh/edge_computing_satellite.jpg" },
-      { title: "Spatial Analytics", desc: "Understand physical spaces dynamically. Track inventory levels or monitor safety compliance visually.", image: "/assets/fresh/hardware_security_module.jpg" }
+      { title: "Tireless Inspection", desc: "Cameras don't get fatigued. Maintain perfect quality control 24/7 without human error.", image: "/assets/capability-references/computer-vision/benefit-0.webp" },
+      { title: "Edge Processing", desc: "Process video directly on local cameras to avoid massive bandwidth costs and ensure privacy.", image: "/assets/capability-references/computer-vision/benefit-1.webp" },
+      { title: "Spatial Analytics", desc: "Understand physical spaces dynamically. Track inventory levels or monitor safety compliance visually.", image: "/assets/capability-references/computer-vision/benefit-2.webp" }
     ]
   },
   cards: {
     titleLight: "Vision",
     titleRed: "Capabilities",
     items: [
-      { badge: "DETECTION", title: "Object Detection", body: "Locate and classify multiple objects within a single image or video frame.", more: "We use YOLO and Faster R-CNN architectures to track inventory, vehicles, and personnel.", image: "/images/downloaded/930d9ac6ae_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "SEGMENTATION", title: "Image Segmentation", body: "Classify every single pixel in an image for highly precise boundaries.", more: "Crucial for medical imaging and autonomous driving where bounding boxes aren't accurate enough.", image: "/assets/services/webp/bg-ai.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "RECOGNITION", title: "Facial & Biometrics", body: "Securely identify individuals for access control or personalized experiences.", more: "We implement advanced liveness detection to prevent spoofing and ensure strict GDPR compliance.", image: "/images/downloaded/3f90bfcdd3_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "OCR", title: "Optical Character Recognition", body: "Extract text from messy real-world images, street signs, or handwritten notes.", more: "We combine OCR with NLP to not just read the text, but understand the context of the document.", image: "/assets/services/webp/bg-cloud.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "VIDEO", title: "Video Analytics", body: "Process live streams to detect complex events over time, like theft or safety hazards.", more: "Our pipelines handle RTSP streams, utilizing GPU-accelerated decoding for massive scalability.", image: "/assets/services/webp/bg-devops.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "GENERATION", title: "Image Synthesis", body: "Use GANs and Diffusion models to generate missing training data or edit images.", more: "We create synthetic datasets to train vision models for rare edge cases (like specific factory defects).", image: "/assets/services/webp/bg-data.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
+      { badge: "DETECTION", title: "Object Detection", body: "Locate and classify multiple objects within a single image or video frame.", more: "We use YOLO and Faster R-CNN architectures to track inventory, vehicles, and personnel.", image: "/assets/capability-references/computer-vision/capability-0.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "SEGMENTATION", title: "Image Segmentation", body: "Classify every single pixel in an image for highly precise boundaries.", more: "Crucial for medical imaging and autonomous driving where bounding boxes aren't accurate enough.", image: "/assets/capability-references/computer-vision/capability-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "RECOGNITION", title: "Facial & Biometrics", body: "Securely identify individuals for access control or personalized experiences.", more: "We implement advanced liveness detection to prevent spoofing and ensure strict GDPR compliance.", image: "/assets/capability-references/computer-vision/capability-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "OCR", title: "Optical Character Recognition", body: "Extract text from messy real-world images, street signs, or handwritten notes.", more: "We combine OCR with NLP to not just read the text, but understand the context of the document.", image: "/assets/capability-references/computer-vision/capability-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "VIDEO", title: "Video Analytics", body: "Process live streams to detect complex events over time, like theft or safety hazards.", more: "Our pipelines handle RTSP streams, utilizing GPU-accelerated decoding for massive scalability.", image: "/assets/capability-references/computer-vision/capability-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "GENERATION", title: "Image Synthesis", body: "Use GANs and Diffusion models to generate missing training data or edit images.", more: "We create synthetic datasets to train vision models for rare edge cases (like specific factory defects).", image: "/assets/capability-references/computer-vision/capability-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
     ]
   },
   insights: {

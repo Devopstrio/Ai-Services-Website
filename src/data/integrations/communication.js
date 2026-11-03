@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/comm_hero.jpg";
-import twilioImg from "../../assets/integrations/twilio_voice.jpg";
-import waImg from "../../assets/integrations/whatsapp_api.jpg";
-import sendgridImg from "../../assets/integrations/sendgrid_email.jpg";
-import webrtcImg from "../../assets/integrations/webrtc_media.jpg";
-import caseImg from "../../assets/integrations/comm_case.jpg";
+import twilioImg from "../../assets/integrations/references/communication/Native SaaS/Image (Twilio Voice & Messaging).webp";
+import waImg from "../../assets/integrations/references/communication/Native SaaS/Image (WhatsApp Business Cloud API).webp";
+import sendgridImg from "../../assets/integrations/references/communication/Native SaaS/Image (Twilio SendGrid & Postmark).webp";
+import webrtcImg from "../../assets/integrations/references/communication/Native SaaS/Image (WebRTC Ultra-Low Latency Voice).webp";
+import caseImg from "../../assets/integrations/references/communication/cta.webp";
 
 export const communicationData = {
   id: "communication",

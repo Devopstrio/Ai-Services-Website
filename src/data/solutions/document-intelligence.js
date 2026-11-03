@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/doc_intel_ocr.jpg';
-import img2 from '../../assets/solutions/6.jpg';
-import img3 from '../../assets/unique_solutions/doc_intel_case.jpg';
-import img4 from '../../assets/fresh/dashboard_ai_model_training.jpg';
-import img5 from '../../assets/solutions/4.jpg';
-import img6 from '../../assets/fresh/product_aihire_recruiting.jpg';
-import img7 from '../../assets/fresh/saas_cloud_platform_ui.jpg';
-import img8 from '../../assets/fresh/modern-interior-design-office.jpg';
+import heroImg from '../../assets/unique_solutions/doc_intel_ocr.jpg';
+import img1 from '../../assets/enterprise-references/document-intelligence/feature-2.webp';
+import img2 from '../../assets/enterprise-references/document-intelligence/overview.webp';
+import img3 from '../../assets/enterprise-references/document-intelligence/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/document-intelligence/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/document-intelligence/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/document-intelligence/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/document-intelligence/feature-0.webp';
+import img8 from '../../assets/enterprise-references/document-intelligence/feature-1.webp';
 
 const data = {
   id: 'document-intelligence',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Document',
     titleBold: 'Intelligence',
     description: "Unlock dark unstructured enterprise data across millions of PDF contracts, handwritten forms, medical records, and technical schematics with zero-template neural extraction pipelines.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

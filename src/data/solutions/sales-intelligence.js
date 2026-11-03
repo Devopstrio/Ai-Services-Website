@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/cheerful-business-team-watching-presentation-laptop-sitting-workplace-staring-display-smiling-copy-space-business-meeting-concept.jpg';
-import img2 from '../../assets/fresh/ai_consultants_discussion.jpg';
-import img3 from '../../assets/fresh/agent_knowledge_graph_synthesis.jpg';
-import img4 from '../../assets/fresh/microsoft-teams-and-sharepoint-the-perfect-collaboration-bundle-01.webp';
-import img5 from '../../assets/fresh/executive_boardroom_ai.jpg';
-import img6 from '../../assets/solutions/26.jpg';
-import img7 from '../../assets/fresh/agent_legal_compliance.jpg';
-import img8 from '../../assets/fresh/lead_developer_mentor.jpg';
+import heroImg from '../../assets/fresh/cheerful-business-team-watching-presentation-laptop-sitting-workplace-staring-display-smiling-copy-space-business-meeting-concept.jpg';
+import img1 from '../../assets/enterprise-references/sales-intelligence/feature-2.webp';
+import img2 from '../../assets/enterprise-references/sales-intelligence/overview.webp';
+import img3 from '../../assets/enterprise-references/sales-intelligence/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/sales-intelligence/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/sales-intelligence/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/sales-intelligence/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/sales-intelligence/feature-0.webp';
+import img8 from '../../assets/enterprise-references/sales-intelligence/feature-1.webp';
 
 const data = {
   id: 'sales-intelligence',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Sales',
     titleBold: 'Intelligence',
     description: "Supercharge your B2B revenue engine with predictive pipeline modeling, automated prospect research, and live deal execution copilots. Convert more pipeline, accurately forecast revenue, and shorten enterprise sales cycles.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

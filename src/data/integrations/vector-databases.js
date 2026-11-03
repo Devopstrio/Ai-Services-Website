@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/vectordb_hero.jpg";
-import pineconeImg from "../../assets/integrations/pinecone_vector.jpg";
-import qdrantImg from "../../assets/integrations/qdrant_vector.jpg";
-import milvusImg from "../../assets/integrations/milvus_vector.jpg";
-import weaviateImg from "../../assets/integrations/weaviate_vector.jpg";
-import caseImg from "../../assets/integrations/vectordb_case.jpg";
+import pineconeImg from "../../assets/integrations/references/vector-databases/Native SaaS/Image (Pinecone Serverless).webp";
+import qdrantImg from "../../assets/integrations/references/vector-databases/Native SaaS/Image (Qdrant Vector Engine).webp";
+import milvusImg from "../../assets/integrations/references/vector-databases/Native SaaS/Image (Milvus & Zilliz Cloud).webp";
+import weaviateImg from "../../assets/integrations/references/vector-databases/Native SaaS/Image (Weaviate Cloud).webp";
+import caseImg from "../../assets/integrations/references/vector-databases/Image (Global Legal Tech & Intellectual Property Firm).webp";
 
 export const vectorDatabasesData = {
   id: "vector-databases",

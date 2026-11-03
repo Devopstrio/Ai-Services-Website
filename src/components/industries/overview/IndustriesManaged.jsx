@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import datacenterFirewallImg from "../../../assets/fresh/1200x627_blog-buildingtrust.webp";
+import datacenterFirewallImg from "../../../assets/fresh/industry_managed_delivery.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

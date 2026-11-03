@@ -11,13 +11,13 @@ const idp = {
     headingRed: "Paper Trail",
     paragraph: "Legacy OCR is brittle and breaks when a template changes. Devopstrio engineers Intelligent Document Processing (IDP) pipelines utilizing state-of-the-art vision-language models. Our systems read documents like a human—understanding context, tables, and layouts regardless of the format. We automate back-office operations, instantly turning messy paperwork into structured JSON data fed directly into your ERP.",
     buttonText: "See IDP in Action",
-    imageSrc: "/images/downloaded/2fcc20e90b_img.jpg",
+    imageSrc: "/assets/capability-references/idp/in-action.webp",
   },
   metricsCards: [
-    { value: "95%", label: "Straight-Through Processing", image: "/images/downloaded/58dc99f461_img.jpg" },
-    { value: "10x", label: "Faster Invoice Handling", image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg" },
-    { value: "Zero", label: "Template Configuration", image: "/images/downloaded/609150f783_img.jpg" },
-    { value: "Multi", label: "Language Support", image: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg" }
+    { value: "95%", label: "Straight-Through Processing", image: "/assets/capability-references/idp/metric-0.webp" },
+    { value: "10x", label: "Faster Invoice Handling", image: "/assets/capability-references/idp/metric-1.webp" },
+    { value: "Zero", label: "Template Configuration", image: "/assets/capability-references/idp/metric-2.webp" },
+    { value: "Multi", label: "Language Support", image: "/assets/capability-references/idp/metric-3.webp" }
   ],
   whoWeWorkWith: {
     titleLight: "IDP",
@@ -32,21 +32,21 @@ const idp = {
     titleLight: "Why Upgrade",
     titleRed: "to IDP?",
     items: [
-      { title: "Template-Free", desc: "Our AI understands document semantics. If a vendor changes their invoice layout, the system still extracts the data perfectly.", image: "/assets/fresh/product_document_ocr.jpg" },
-      { title: "Eliminate Human Error", desc: "Remove the typos and fatigue associated with manual data entry, ensuring perfect data integrity in your databases.", image: "/assets/fresh/automated_invoice_processing.jpg" },
-      { title: "Rapid Scalability", desc: "Process 10 documents or 10,000 documents a day without needing to hire and train additional back-office staff.", image: "/assets/fresh/cloud_data_center_hall.jpg" }
+      { title: "Template-Free", desc: "Our AI understands document semantics. If a vendor changes their invoice layout, the system still extracts the data perfectly.", image: "/assets/capability-references/idp/benefit-0.webp" },
+      { title: "Eliminate Human Error", desc: "Remove the typos and fatigue associated with manual data entry, ensuring perfect data integrity in your databases.", image: "/assets/capability-references/idp/benefit-1.webp" },
+      { title: "Rapid Scalability", desc: "Process 10 documents or 10,000 documents a day without needing to hire and train additional back-office staff.", image: "/assets/capability-references/idp/benefit-2.webp" }
     ]
   },
   cards: {
     titleLight: "IDP",
     titleRed: "Capabilities",
     items: [
-      { badge: "EXTRACTION", title: "Cognitive Extraction", body: "Extract key-value pairs, dates, and amounts from highly unstructured documents.", more: "We use Donut and LayoutLM models that analyze both the text and the visual structure of the document simultaneously.", image: "/images/downloaded/930d9ac6ae_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "TABLES", title: "Complex Table Parsing", body: "Accurately digitize nested tables, multi-page lists, and borderless tables.", more: "Our pipelines reconstruct table structures into clean JSON or CSV formats, even when lines are skewed or missing.", image: "/images/downloaded/2a360fc242_photo-1558494949-ef010cbdcc31.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "HANDWRITING", title: "Handwriting (ICR)", body: "Transcribe cursive and messy handwritten notes from legacy forms.", more: "Advanced Intelligent Character Recognition (ICR) models translate scribbles into searchable text.", image: "/assets/ecosystem/grid/accelerators-frameworks-_Grid/webp/Generated-Design-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "CLASSIFICATION", title: "Document Sorting", body: "Automatically identify document types within a massive unorganized PDF.", more: "Split a 50-page scanned packet into separate Invoices, Tax Forms, and Receipts autonomously.", image: "/assets/ecosystem/grid/accelerators-frameworks-_Grid/webp/Generated-Design-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "VALIDATION", title: "Automated Validation", body: "Cross-check extracted data against external databases for instant verification.", more: "E.g., verify that the extracted VAT number matches the official government registry automatically.", image: "/images/downloaded/3243e93894_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "HUMAN IN LOOP", title: "Confidence Scoring", body: "The AI flags low-confidence fields for human review via an intuitive UI.", more: "Ensure 100% accuracy by letting humans verify only the edge cases while the AI handles 95% of the volume.", image: "/assets/ecosystem/grid/accelerators-frameworks-_Grid/webp/Generated-Design-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
+      { badge: "EXTRACTION", title: "Cognitive Extraction", body: "Extract key-value pairs, dates, and amounts from highly unstructured documents.", more: "We use Donut and LayoutLM models that analyze both the text and the visual structure of the document simultaneously.", image: "/assets/capability-references/idp/capability-0.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "TABLES", title: "Complex Table Parsing", body: "Accurately digitize nested tables, multi-page lists, and borderless tables.", more: "Our pipelines reconstruct table structures into clean JSON or CSV formats, even when lines are skewed or missing.", image: "/assets/capability-references/idp/capability-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "HANDWRITING", title: "Handwriting (ICR)", body: "Transcribe cursive and messy handwritten notes from legacy forms.", more: "Advanced Intelligent Character Recognition (ICR) models translate scribbles into searchable text.", image: "/assets/capability-references/idp/capability-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "CLASSIFICATION", title: "Document Sorting", body: "Automatically identify document types within a massive unorganized PDF.", more: "Split a 50-page scanned packet into separate Invoices, Tax Forms, and Receipts autonomously.", image: "/assets/capability-references/idp/capability-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "VALIDATION", title: "Automated Validation", body: "Cross-check extracted data against external databases for instant verification.", more: "E.g., verify that the extracted VAT number matches the official government registry automatically.", image: "/assets/capability-references/idp/capability-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "HUMAN IN LOOP", title: "Confidence Scoring", body: "The AI flags low-confidence fields for human review via an intuitive UI.", more: "Ensure 100% accuracy by letting humans verify only the edge cases while the AI handles 95% of the volume.", image: "/assets/capability-references/idp/capability-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
     ]
   },
   insights: {

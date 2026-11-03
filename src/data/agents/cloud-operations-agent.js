@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_cloud_infra.jpg";
-import finopsImg from "../../assets/fresh/dashboard_cloud_telemetry.jpg";
-import multiCloudImg from "../../assets/fresh/integration_cloud_mesh.jpg";
-import autoscaleImg from "../../assets/fresh/cloud_data_center_hall.jpg";
-import edgeImg from "../../assets/fresh/edge_computing_satellite.jpg";
-import caseImg from "../../assets/fresh/cloud-security-hub-hero.jpg";
+import finopsImg from "../../assets/agent-references/Cloud Operations Agent/ENTERPRISE CAPABILITIES/Image (Autonomous FinOps Rightsizing).webp";
+import multiCloudImg from "../../assets/agent-references/Cloud Operations Agent/ENTERPRISE CAPABILITIES/Image (Multi-Cloud Disaster Recovery Mesh).webp";
+import autoscaleImg from "../../assets/agent-references/Cloud Operations Agent/ENTERPRISE CAPABILITIES/Image (Predictive Elastic Auto-Scaling).webp";
+import edgeImg from "../../assets/agent-references/Cloud Operations Agent/ENTERPRISE CAPABILITIES/Image (Continuous Cloud Security Posture (CSPM)).webp";
+import caseImg from "../../assets/agent-references/Cloud Operations Agent/Image (Global FinTech & Payments Unicorn).webp";
 
 export const cloudOperationsAgentData = {
   id: "cloud-operations-agent",

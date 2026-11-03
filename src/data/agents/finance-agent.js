@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_finance_reconciliation.jpg";
-import matchImg from "../../assets/fresh/automated_invoice_processing.jpg";
-import reconImg from "../../assets/unique_agents/finance_audit_recon.jpg";
-import fraudImg from "../../assets/fresh/fintech_algorithmic_trading.jpg";
-import forecastImg from "../../assets/fresh/bajaj_finance_bharti_airtel_partnership_financial__1737355875195_1770527459556.webp";
-import caseImg from "../../assets/unique_agents/finance_agent_case.jpg";
+import matchImg from "../../assets/agent-references/Finance Agent/ENTERPRISE CAPABILITIES/Image (Touchless 3-Way Matching).webp";
+import reconImg from "../../assets/agent-references/Finance Agent/ENTERPRISE CAPABILITIES/Image (Continuous Month-End Close).webp";
+import fraudImg from "../../assets/agent-references/Finance Agent/ENTERPRISE CAPABILITIES/Image (Real-Time Invoice Fraud Defense).webp";
+import forecastImg from "../../assets/agent-references/Finance Agent/ENTERPRISE CAPABILITIES/Image (Predictive Cash Flow Forecasting).webp";
+import caseImg from "../../assets/agent-references/Finance Agent/Image (Publicly Traded Manufacturing Enterprise).webp";
 
 export const financeAgentData = {
   id: "finance-agent",

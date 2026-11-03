@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import int1 from "../../assets/fresh/ai_circuit_mesh.jpg";
-import int2 from "../../assets/fresh/close-up-data-center-programmers-using-pc-visualize-ai-neural-networks.jpg";
-import int3 from "../../assets/fresh/innovation_neural_network.jpg";
-import strategyImg from "../../assets/fresh/integration_api_gateway.jpg";
-import archImg from "../../assets/fresh/integration_cloud_mesh.jpg";
-import deliveryImg from "../../assets/fresh/integration_event_streaming.jpg";
+import int1 from "../../assets/fresh/integration-event-driven.webp";
+import int2 from "../../assets/fresh/integration-legacy-cloud.webp";
+import int3 from "../../assets/fresh/integration-enterprise-saas.webp";
+import strategyImg from "../../assets/fresh/integration-flow-automation.webp";
+import archImg from "../../assets/fresh/integration-zero-trust.webp";
+import deliveryImg from "../../assets/fresh/integration-streaming-etl.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

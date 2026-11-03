@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import strategyImg from "../../assets/fresh/6-digital-marketing.jpg";
-import architectureImg from "../../assets/fresh/360_f_2084576255_smobjek0sl0e6ocwx64h4nnzs2qiblec.jpg";
-import deliveryImg from "../../assets/fresh/2021_09_database-schema.jpg";
-import governanceImg from "../../assets/fresh/73bd7abeb45365336cdce7e9fff4b338.jpg";
-import partnershipsImg from "../../assets/fresh/adobestock_1423685034.jpeg";
-import securityImg from "../../assets/fresh/adobestock_283199860-1-scaled.jpeg";
+const strategyImg = "/assets/capability-references/overview/card-strategy.webp";
+const architectureImg = "/assets/capability-references/overview/card-platforms.webp";
+const deliveryImg = "/assets/capability-references/overview/card-delivery.webp";
+const governanceImg = "/assets/capability-references/overview/card-governance.webp";
+const partnershipsImg = "/assets/capability-references/overview/card-integration.webp";
+const securityImg = "/assets/capability-references/overview/card-security.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

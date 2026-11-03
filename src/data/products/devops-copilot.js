@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/it-experts-server-hub-doing-brainstorming-finding-ways-shield-data.jpg";
-import feat1Img from "../../assets/fresh/kubernetes_cluster_nodes.jpg";
-import feat2Img from "../../assets/fresh/binary_code_tunnel.jpg";
-import feat3Img from "../../assets/fresh/product_devops_copilot.jpg";
-import feat4Img from "../../assets/fresh/programming-background-with-person-working-with-codes-computer.jpg";
-import caseImg from "../../assets/fresh/serviceman-server-hub-checking-documentation-supercomputers.jpg";
+import triageReferenceImg from "../../assets/fresh/devops-incident-triage.webp";
+import iacReferenceImg from "../../assets/fresh/devops-iac-generation.webp";
+import pipelineReferenceImg from "../../assets/fresh/devops-pipeline-healing.webp";
+import finopsReferenceImg from "../../assets/fresh/devops-finops-tuning.webp";
+import caseReferenceImg from "../../assets/fresh/devops-customer-success.webp";
 
 export const devopscopilotData = {
   "id": "devops-copilot",
@@ -260,8 +260,8 @@ export const devopscopilotData = {
   }
 };
 devopscopilotData.hero.bgImage = heroBg;
-devopscopilotData.features[0].image = feat1Img || heroBg;
-devopscopilotData.features[1].image = feat2Img || heroBg;
-devopscopilotData.features[2].image = feat3Img || heroBg;
-devopscopilotData.features[3].image = feat4Img || heroBg;
-devopscopilotData.caseStudy.image = caseImg || heroBg;
+devopscopilotData.features[0].image = triageReferenceImg;
+devopscopilotData.features[1].image = iacReferenceImg;
+devopscopilotData.features[2].image = pipelineReferenceImg;
+devopscopilotData.features[3].image = finopsReferenceImg;
+devopscopilotData.caseStudy.image = caseReferenceImg;

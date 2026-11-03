@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_knowledge_graph.jpg";
-import graphImg from "../../assets/fresh/agent_knowledge_graph_synthesis.jpg";
-import searchImg from "../../assets/unique_agents/knowledge_rag_graph.jpg";
-import groundedImg from "../../assets/fresh/digital-world-banner-background-remixed-from-public-domain-by-nasa.jpg";
-import rbacImg from "../../assets/fresh/identification-vs-authontication-2.jpg";
-import caseImg from "../../assets/unique_agents/knowledge_agent_case.jpg";
+import graphImg from "../../assets/agent-references/Knowledge Agent/ENTERPRISE CAPABILITIES/Image (Dynamic Knowledge Graph Synthesis).webp";
+import searchImg from "../../assets/agent-references/Knowledge Agent/ENTERPRISE CAPABILITIES/Image (Grounded Multi-Modal RAG Search).webp";
+import groundedImg from "../../assets/agent-references/Knowledge Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Knowledge Base Hygiene).webp";
+import rbacImg from "../../assets/agent-references/Knowledge Agent/ENTERPRISE CAPABILITIES/Image (Zero-Leakage Permission (ACL) Guardrails).webp";
+import caseImg from "../../assets/agent-references/Knowledge Agent/Image (Global Logistics & Freight Conglomerate).webp";
 
 export const knowledgeAgentData = {
   id: "knowledge-agent",

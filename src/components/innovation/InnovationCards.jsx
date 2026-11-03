@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import inno1 from "../../assets/fresh/innovation_bio_ai_lab.jpg";
-import inno2 from "../../assets/fresh/innovation_quantum_chip.jpg";
-import inno3 from "../../assets/fresh/quantum_cryo_computing.jpg";
-import strategyImg from "../../assets/fresh/quantum_laser_optics.jpg";
-import archImg from "../../assets/fresh/enterprise_innovation_hub.jpg";
-import deliveryImg from "../../assets/fresh/agent_cloud_infra.jpg";
+import inno1 from "../../assets/fresh/innovation_lab_applied_ai_research.webp";
+import inno2 from "../../assets/fresh/innovation_lab_rapid_poc_accelerator.webp";
+import inno3 from "../../assets/fresh/innovation_lab_venture_ai_cocreation.webp";
+import strategyImg from "../../assets/fresh/innovation_lab_technology_roadmaps.webp";
+import archImg from "../../assets/fresh/innovation_lab_emerging_architecture.webp";
+import deliveryImg from "../../assets/fresh/innovation_lab_open_source.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

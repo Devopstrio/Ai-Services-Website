@@ -1,9 +1,9 @@
 import heroBg from "../../assets/library/agent_qa_testing.jpg";
-import autoQaImg from "../../assets/fresh/agent_automated_qa_pipeline.jpg";
-import playwrightImg from "../../assets/unique_agents/qa_automated_testing.jpg";
-import visualImg from "../../assets/fresh/html-css-collage-concept-with-person.jpg";
-import fuzzingImg from "../../assets/fresh/binary_code_tunnel.jpg";
-import caseImg from "../../assets/unique_agents/qa_agent_case.jpg";
+import autoQaImg from "../../assets/agent-references/QA Testing Agent/ENTERPRISE CAPABILITIES/Image (Autonomous Playwright Test Synthesis).webp";
+import playwrightImg from "../../assets/agent-references/QA Testing Agent/ENTERPRISE CAPABILITIES/Image (Self-Healing Test Selectors).webp";
+import visualImg from "../../assets/agent-references/QA Testing Agent/ENTERPRISE CAPABILITIES/Image (Pixel-Perfect Visual Regression).webp";
+import fuzzingImg from "../../assets/agent-references/QA Testing Agent/ENTERPRISE CAPABILITIES/Image (Intelligent API Boundary Fuzzing).webp";
+import caseImg from "../../assets/agent-references/QA Testing Agent/Image (Global E-Commerce Enterprise).webp";
 
 export const qaTestingAgentData = {
   id: "qa-testing-agent",

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import inActionImg from "../../assets/industries/industry_ai_in_action_reference.webp";
 
 /**
  * AIInAction.jsx — DevOpsTRIO
@@ -34,11 +35,12 @@ const styles = {
   },
   imgEl: {
     position: "absolute",
-    top: "-8%",
-    left: 90,
+    top: "-6%",
+    left: 0,
     width: "100%",
-    height: "106%",
+    height: "112%",
     objectFit: "cover",
+    objectPosition: "center",
   },
   textCol: {
   },
@@ -152,7 +154,7 @@ export default function AIInAction() {
       {/* LEFT — parallax image */}
       <div style={styles.imageCol}>
         <motion.img
-          src="/images/ind1.jpg"
+          src={inActionImg}
           alt="AI in action"
           style={{ ...styles.imgEl, y: imgY }}
           initial={{ opacity: 0, scale: 1.08 }}

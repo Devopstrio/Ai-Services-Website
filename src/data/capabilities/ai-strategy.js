@@ -11,13 +11,13 @@ const aiStrategy = {
     headingRed: "Execution",
     paragraph: "Every company wants to 'use AI,' but very few know where to start. Devopstrio's strategic consultants bridge the gap between business objectives and deep technical execution. We don't just deliver slide decks; we audit your data architecture, prototype use cases, and deliver a concrete, phased roadmap to integrate AI into your core business model.",
     buttonText: "Schedule a Workshop",
-    imageSrc: "/images/downloaded/efe1ff8789_img.jpg",
+    imageSrc: "/assets/capability-references/ai-strategy/in-action.webp",
   },
   metricsCards: [
-    { value: "30 Days", label: "To First Prototype", image: "/images/downloaded/d8fce458be_photo-1555255707-c07966088b7b.jpg" },
-    { value: "100+", label: "Use Cases Evaluated", image: "/images/downloaded/d97187fdf9_img.jpg" },
-    { value: "Clear", label: "ROI Projections", image: "/images/downloaded/e90f091f58_photo-1563013544-824ae1b704d3.jpg" },
-    { value: "Executive", label: "Alignment", image: "/images/downloaded/478798247d_img.jpg" }
+    { value: "30 Days", label: "To First Prototype", image: "/assets/capability-references/ai-strategy/metric-0.webp" },
+    { value: "100+", label: "Use Cases Evaluated", image: "/assets/capability-references/ai-strategy/metric-1.webp" },
+    { value: "Clear", label: "ROI Projections", image: "/assets/capability-references/ai-strategy/metric-2.webp" },
+    { value: "Executive", label: "Alignment", image: "/assets/capability-references/ai-strategy/metric-3.webp" }
   ],
   whoWeWorkWith: {
     titleLight: "Strategic",
@@ -32,21 +32,21 @@ const aiStrategy = {
     titleLight: "The Consulting",
     titleRed: "Advantage",
     items: [
-      { title: "Avoid Expensive Mistakes", desc: "Stop investing in 'cool' AI projects that don't solve real business problems. We focus strictly on measurable ROI.", image: "/assets/fresh/executive_boardroom_ai.jpg" },
-      { title: "Data Reality Check", desc: "We audit your data silos to tell you exactly what needs to be cleaned and structured before AI is even possible.", image: "/assets/fresh/ai_circuit_mesh.jpg" },
-      { title: "Build vs. Buy Analysis", desc: "Unbiased recommendations on when to use off-the-shelf SaaS versus building custom, proprietary models.", image: "/assets/fresh/enterprise_scrum_sprint.jpg" }
+      { title: "Avoid Expensive Mistakes", desc: "Stop investing in 'cool' AI projects that don't solve real business problems. We focus strictly on measurable ROI.", image: "/assets/capability-references/ai-strategy/benefit-0.webp" },
+      { title: "Data Reality Check", desc: "We audit your data silos to tell you exactly what needs to be cleaned and structured before AI is even possible.", image: "/assets/capability-references/ai-strategy/benefit-1.webp" },
+      { title: "Build vs. Buy Analysis", desc: "Unbiased recommendations on when to use off-the-shelf SaaS versus building custom, proprietary models.", image: "/assets/capability-references/ai-strategy/benefit-2.webp" }
     ]
   },
   cards: {
     titleLight: "Consulting",
     titleRed: "Offerings",
     items: [
-      { badge: "WORKSHOP", title: "Discovery Workshops", body: "Interactive sessions with key stakeholders to demystify AI and brainstorm practical use cases for your industry.", more: "We align your team's understanding of what AI can (and cannot) do today.", image: "/images/downloaded/58dc99f461_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "ASSESSMENT", title: "Readiness Assessment", body: "A deep dive into your data architecture, security posture, and talent pool to evaluate your ability to execute AI.", more: "Deliverable includes a gap-analysis report highlighting exact technical blockers.", image: "/images/downloaded/001f4d30d1_img.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "ROADMAP", title: "Strategic Roadmapping", body: "Develop a phased, 12-24 month plan prioritizing use cases by complexity and expected ROI.", more: "Ensures you secure early wins to build momentum before tackling massive transformations.", image: "/images/downloaded/0d2d507676_photo-1551288049-bebda4e38f71.jpg", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "PROTOTYPE", title: "Rapid Prototyping", body: "Don't wait months. We build a functional Proof-of-Concept (PoC) in 4-6 weeks to validate the strategy.", more: "Prove the technical feasibility and business value before committing massive budget.", image: "/assets/services/webp/bg-cloud.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "TALENT", title: "Center of Excellence", body: "Help establishing an internal AI CoE, defining governance, roles, and hiring strategies for your enterprise.", more: "We transition our knowledge to your internal teams so you can sustain innovation independently.", image: "/assets/services/webp/bg-devops.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
-      { badge: "VENDOR", title: "Vendor Selection", body: "Unbiased technical evaluations of third-party AI tools and cloud providers.", more: "We cut through marketing hype to tell you which vendor actually fits your technical constraints.", image: "/assets/services/webp/bg-data.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
+      { badge: "WORKSHOP", title: "Discovery Workshops", body: "Interactive sessions with key stakeholders to demystify AI and brainstorm practical use cases for your industry.", more: "We align your team's understanding of what AI can (and cannot) do today.", image: "/assets/capability-references/ai-strategy/capability-0.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "ASSESSMENT", title: "Readiness Assessment", body: "A deep dive into your data architecture, security posture, and talent pool to evaluate your ability to execute AI.", more: "Deliverable includes a gap-analysis report highlighting exact technical blockers.", image: "/assets/capability-references/ai-strategy/capability-1.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "ROADMAP", title: "Strategic Roadmapping", body: "Develop a phased, 12-24 month plan prioritizing use cases by complexity and expected ROI.", more: "Ensures you secure early wins to build momentum before tackling massive transformations.", image: "/assets/capability-references/ai-strategy/capability-2.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "PROTOTYPE", title: "Rapid Prototyping", body: "Don't wait months. We build a functional Proof-of-Concept (PoC) in 4-6 weeks to validate the strategy.", more: "Prove the technical feasibility and business value before committing massive budget.", image: "/assets/capability-references/ai-strategy/capability-3.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "TALENT", title: "Center of Excellence", body: "Help establishing an internal AI CoE, defining governance, roles, and hiring strategies for your enterprise.", more: "We transition our knowledge to your internal teams so you can sustain innovation independently.", image: "/assets/capability-references/ai-strategy/capability-4.webp", color1: "#F5F2EA", color2: "#E6DBC6" },
+      { badge: "VENDOR", title: "Vendor Selection", body: "Unbiased technical evaluations of third-party AI tools and cloud providers.", more: "We cut through marketing hype to tell you which vendor actually fits your technical constraints.", image: "/assets/capability-references/ai-strategy/capability-5.webp", color1: "#F5F2EA", color2: "#E6DBC6" }
     ]
   },
   insights: {

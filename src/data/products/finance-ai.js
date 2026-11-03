@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/images_12_.jpg";
-import feat1Img from "../../assets/fresh/identification-vs-authontication-2.jpg";
-import feat2Img from "../../assets/fresh/high_speed_fiber.jpg";
-import feat3Img from "../../assets/fresh/image.png";
-import feat4Img from "../../assets/fresh/product_finance_ledger.jpg";
-import caseImg from "../../assets/fresh/dashboard_fintech_metrics.jpg";
+import apArReferenceImg from "../../assets/fresh/finance-ap-ar-automation.webp";
+import fraudReferenceImg from "../../assets/fresh/finance-fraud-detection.webp";
+import closeReferenceImg from "../../assets/fresh/finance-month-end-close.webp";
+import cashForecastReferenceImg from "../../assets/fresh/finance-cash-forecasting.webp";
+import caseReferenceImg from "../../assets/fresh/finance-customer-success.webp";
 
 export const financeaiData = {
   "id": "finance-ai",
@@ -233,8 +233,8 @@ export const financeaiData = {
   }
 };
 financeaiData.hero.bgImage = heroBg;
-financeaiData.features[0].image = feat1Img || heroBg;
-financeaiData.features[1].image = feat2Img || heroBg;
-financeaiData.features[2].image = feat3Img || heroBg;
-financeaiData.features[3].image = feat4Img || heroBg;
-financeaiData.caseStudy.image = caseImg || heroBg;
+financeaiData.features[0].image = apArReferenceImg;
+financeaiData.features[1].image = fraudReferenceImg;
+financeaiData.features[2].image = closeReferenceImg;
+financeaiData.features[3].image = cashForecastReferenceImg;
+financeaiData.caseStudy.image = caseReferenceImg;

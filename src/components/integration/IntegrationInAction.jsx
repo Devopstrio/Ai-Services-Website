@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import integrationActionImg from "../../assets/fresh/integration_hybrid_network.jpg";
+import integrationActionImg from "../../assets/fresh/integration-connectivity-action.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 

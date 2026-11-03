@@ -1,11 +1,12 @@
-import img1 from '../../assets/fresh/man-using-laptop-tablet-analyze-260nw-2727872547.webp';
-import img2 from '../../assets/fresh/clinical_ai_diagnostics.jpg';
-import img3 from '../../assets/fresh/agent_automated_qa_pipeline.jpg';
-import img4 from '../../assets/solutions/7.jpg';
-import img5 from '../../assets/fresh/agent_cloud_infra.jpg';
-import img6 from '../../assets/fresh/agent_code_refactoring.jpg';
-import img7 from '../../assets/fresh/innovation_bio_ai_lab.jpg';
-import img8 from '../../assets/fresh/agent_compliance_auditing.jpg';
+import heroImg from '../../assets/fresh/man-using-laptop-tablet-analyze-260nw-2727872547.webp';
+import img1 from '../../assets/enterprise-references/healthcare-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/healthcare-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/healthcare-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/healthcare-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/healthcare-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/healthcare-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/healthcare-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/healthcare-ai/feature-1.webp';
 
 const data = {
   id: 'healthcare-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Healthcare',
     titleBold: 'AI',
     description: "Empower clinicians and healthcare systems with ambient clinical documentation, AI-assisted radiological diagnostics, predictive patient triage, and HIPAA-compliant administrative automation.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

@@ -1,9 +1,9 @@
 import heroBg from "../../assets/integrations/custom_hero.jpg";
-import openapiImg from "../../assets/integrations/openapi_mesh.jpg";
-import grpcImg from "../../assets/integrations/grpc_microservices.jpg";
-import gqlImg from "../../assets/integrations/graphql_federation.jpg";
-import sdkImg from "../../assets/integrations/sdk_bridges.jpg";
-import caseImg from "../../assets/integrations/custom_case.jpg";
+import openapiImg from "../../assets/integrations/references/custom-integration/Native Saas/Image (OpenAPI 3.1 & REST Gateway).webp";
+import grpcImg from "../../assets/integrations/references/custom-integration/Native Saas/Image (gRPC & Protocol Buffers).webp";
+import gqlImg from "../../assets/integrations/references/custom-integration/Native Saas/Image (GraphQL Federation & Mesh).webp";
+import sdkImg from "../../assets/integrations/references/custom-integration/Native Saas/Image (TypeScript, Python & Go SDKs).webp";
+import caseImg from "../../assets/integrations/references/custom-integration/Image (Tier-1 Defense & Aerospace Engineering Conglomerate).webp";
 
 export const customIntegrationData = {
   id: "custom-integration",

@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/it_ops_noc.jpg';
-import img2 from '../../assets/fresh/dark_ai_neural_grid.jpg';
-import img3 from '../../assets/unique_solutions/it_ops_case.jpg';
-import img4 from '../../assets/fresh/cloud_data_center_hall.jpg';
-import img5 from '../../assets/fresh/holographic_data_globe.jpg';
-import img6 from '../../assets/fresh/server_rack_neon_glow.jpg';
-import img7 from '../../assets/fresh/microchip_wafer_lithography.jpg';
-import img8 from '../../assets/fresh/cyber_digital_matrix.jpg';
+import heroImg from '../../assets/unique_solutions/it_ops_noc.jpg';
+import img1 from '../../assets/enterprise-references/it-operations-ai/feature-2.webp';
+import img2 from '../../assets/enterprise-references/it-operations-ai/overview.webp';
+import img3 from '../../assets/enterprise-references/it-operations-ai/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/it-operations-ai/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/it-operations-ai/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/it-operations-ai/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/it-operations-ai/feature-0.webp';
+import img8 from '../../assets/enterprise-references/it-operations-ai/feature-1.webp';
 
 const data = {
   id: 'it-operations-ai',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'IT Operations',
     titleBold: 'AI (AIOps)',
     description: "Eliminate downtime and alert fatigue with autonomous incident triage, predictive outage forecasting, and self-healing cloud infrastructure orchestrated by AIOps intelligence.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {

@@ -245,7 +245,7 @@ export default function InnovationDetail() {
                     <img
                       src={pillar.image}
                       alt={pillar.title}
-                      style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease" }}
+                      style={{ width: "100%", height: "100%", objectFit: "contain", transition: "transform 0.5s ease" }}
                       className="pillar-img"
                     />
                     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 30%, #09090E 100%)" }} />
@@ -402,7 +402,7 @@ export default function InnovationDetail() {
 
                   {/* Right: High-Res Visual Image */}
                   <div style={{ position: "relative", width: "100%", height: "100%", minHeight: "360px" }}>
-                    <img src={currentFrontier.image} alt={currentFrontier.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <img src={currentFrontier.image} alt={currentFrontier.title} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
                     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, #09090E 0%, rgba(9,9,14,0.2) 40%, transparent 100%)" }} />
                   </div>
                 </motion.div>
@@ -514,7 +514,7 @@ export default function InnovationDetail() {
                 </div>
               </div>
               <div style={{ position: "relative", width: "100%", height: "100%", minHeight: "360px" }}>
-                <img src={data.caseStudy.image} alt={data.caseStudy.partner} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <img src={data.caseStudy.image} alt={data.caseStudy.partner} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, #0A0A0E 0%, rgba(10,10,14,0.2) 30%, transparent 100%)" }} />
               </div>
             </div>

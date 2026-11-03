@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/digital-world-banner-background-remixed-from-public-domain-by-nasa_1_.jpg";
-import feat1Img from "../../assets/fresh/digital-world-banner-background-remixed-from-public-domain-by-nasa_2_.jpg";
-import feat2Img from "../../assets/fresh/edge_computing_satellite.jpg";
-import feat3Img from "../../assets/fresh/cyber_threat_map.jpg";
-import feat4Img from "../../assets/fresh/enabling_secure_innovation_for_devops_globalsign.jpg";
-import caseImg from "../../assets/fresh/energy_smart_grid_monitoring.jpg";
+import searchReferenceImg from "../../assets/fresh/brio-federated-search.webp";
+import citationReferenceImg from "../../assets/fresh/brio-citation-engine.webp";
+import securityReferenceImg from "../../assets/fresh/brio-security-acl.webp";
+import synthesisReferenceImg from "../../assets/fresh/brio-multi-agent-synthesis.webp";
+import caseReferenceImg from "../../assets/fresh/brio-customer-success.webp";
 
 export const brioaiData = {
   "id": "brio-ai",
@@ -260,8 +260,8 @@ export const brioaiData = {
   }
 };
 brioaiData.hero.bgImage = heroBg;
-brioaiData.features[0].image = feat1Img || heroBg;
-brioaiData.features[1].image = feat2Img || heroBg;
-brioaiData.features[2].image = feat3Img || heroBg;
-brioaiData.features[3].image = feat4Img || heroBg;
-brioaiData.caseStudy.image = caseImg || heroBg;
+brioaiData.features[0].image = searchReferenceImg;
+brioaiData.features[1].image = citationReferenceImg;
+brioaiData.features[2].image = securityReferenceImg;
+brioaiData.features[3].image = synthesisReferenceImg;
+brioaiData.caseStudy.image = caseReferenceImg;

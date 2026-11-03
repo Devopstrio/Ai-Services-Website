@@ -1,9 +1,12 @@
 import heroBg from "../../assets/fresh/dark_ai_neural_grid.jpg";
-import pub1 from "../../assets/fresh/neural_connections_nodes.jpg";
-import pub2 from "../../assets/fresh/quantum_laser_optics.jpg";
-import pub3 from "../../assets/fresh/quantum_cryo_computing.jpg";
-import pub4 from "../../assets/fresh/innovation_bio_ai_lab.jpg";
-import caseImg from "../../assets/fresh/close-up-data-center-programmers-using-pc-visualize-ai-neural-networks.jpg";
+import pub1 from "../../assets/fresh/publications_pillar_formal_proofs.webp";
+import pub2 from "../../assets/fresh/publications_pillar_interpretability.webp";
+import pub3 from "../../assets/fresh/publications_pillar_world_models.webp";
+import pub4 from "../../assets/fresh/publications_pillar_agent_swarms.webp";
+import frontier1 from "../../assets/fresh/publications_frontier_neuro_symbolic.webp";
+import frontier2 from "../../assets/fresh/publications_frontier_sparse_autoencoders.webp";
+import frontier3 from "../../assets/fresh/publications_frontier_spatio_temporal.webp";
+import caseImg from "../../assets/fresh/publications_case_study.webp";
 
 export const publicationsData = {
   id: "publications",
@@ -85,7 +88,7 @@ export const publicationsData = {
       title: "Provable Neuro-Symbolic Synthesis (NeurIPS 2025)",
       category: "Neuro-Symbolic Math",
       badge: "Oral Presentation",
-      image: pub1,
+      image: frontier1,
       benchmark: "94.8% IMO Proof Accuracy",
       summary: "Full paper introducing bounded tree search over Lean 4 formal axioms to guarantee zero structural hallucination in high-assurance engineering systems.",
       features: [
@@ -99,7 +102,7 @@ export const publicationsData = {
       title: "Hierarchical Sparse Autoencoders (ICML 2025)",
       category: "Safety & Interpretability",
       badge: "Spotlight Paper",
-      image: pub2,
+      image: frontier2,
       benchmark: "99.4% Deception Isolation",
       summary: "Pioneering paper demonstrating real-time activation steering on 70B parameter models to eliminate deceptive alignment without degrading reasoning.",
       features: [
@@ -113,7 +116,7 @@ export const publicationsData = {
       title: "Continuous Spatio-Temporal Diffusion (CVPR 2026)",
       category: "World Models",
       badge: "Highlight Paper",
-      image: pub3,
+      image: frontier3,
       benchmark: "20x Faster than FEM",
       summary: "Presents continuous 3D world models learning physics-grounded aerodynamic and material stress dynamics directly from raw sensor telemetry.",
       features: [

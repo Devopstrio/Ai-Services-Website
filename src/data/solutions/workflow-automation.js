@@ -1,11 +1,12 @@
-import img1 from '../../assets/unique_solutions/workflow_auto_mesh.jpg';
-import img2 from '../../assets/fresh/lead_developer_mentor.jpg';
-import img3 from '../../assets/unique_solutions/workflow_auto_case.jpg';
-import img4 from '../../assets/fresh/office-work-environment-stockcake.jpg';
-import img5 from '../../assets/fresh/agent_workflow_orchestrator.jpg';
-import img6 from '../../assets/fresh/sales-growth-graph-on-laptop-screen-with-pointing-hand-illustrating-business-success-and-market-trend-photo.jpeg';
-import img7 from '../../assets/fresh/integration_api_gateway.jpg';
-import img8 from '../../assets/fresh/dashboard_supply_chain.jpg';
+import heroImg from '../../assets/unique_solutions/workflow_auto_mesh.jpg';
+import img1 from '../../assets/enterprise-references/workflow-automation/feature-2.webp';
+import img2 from '../../assets/enterprise-references/workflow-automation/overview.webp';
+import img3 from '../../assets/enterprise-references/workflow-automation/benefit-0.webp';
+import img4 from '../../assets/enterprise-references/workflow-automation/benefit-1.webp';
+import img5 from '../../assets/enterprise-references/workflow-automation/benefit-2.webp';
+import img6 from '../../assets/enterprise-references/workflow-automation/benefit-3.webp';
+import img7 from '../../assets/enterprise-references/workflow-automation/feature-0.webp';
+import img8 from '../../assets/enterprise-references/workflow-automation/feature-1.webp';
 
 const data = {
   id: 'workflow-automation',
@@ -14,7 +15,7 @@ const data = {
     titleLight: 'Workflow',
     titleBold: 'Automation',
     description: "Orchestrate complex cross-departmental operations with autonomous AI agents. Replace rigid, fragile legacy RPA scripts with adaptive cognitive workflows that handle unexpected exceptions with ease.",
-    bgImage: img1
+    bgImage: heroImg
   },
   metricsBanner: [
   {
