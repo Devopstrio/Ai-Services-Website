@@ -46,7 +46,7 @@ export function BusinessImpact() {
 
                 , React.createElement('div', { className: "relative z-10 my-auto"  ,}
                   /* Big Viewable Metric Value */
-                  , React.createElement('span', { className: "block text-5xl lg:text-6xl font-extrabold text-white group-hover:text-rose-400 transition-colors duration-300 mb-3 tracking-tight font-sans"          ,}
+                  , React.createElement('span', { className: "block text-5xl lg:text-6xl font-semibold text-white group-hover:text-rose-400 transition-colors duration-300 mb-3 tracking-tight font-sans"          ,}
                     , item.value
                   )
 

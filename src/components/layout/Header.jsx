@@ -555,7 +555,7 @@ function ColumnBlock({ block, blockIndex, startIndex }) {
           style={{
             textAlign: "left",
             fontSize: "clamp(11px, 0.85vw, 12.5px)",
-            fontWeight: 700,
+            fontWeight: 600,
             textTransform: "uppercase",
             letterSpacing: "0.07em",
             color: "rgba(225,29,72,0.85)",
@@ -702,7 +702,7 @@ function ImageBanner({ image }) {
             style={{
               margin: 0,
               fontSize: "clamp(17px, 1.8vw, 24px)",
-              fontWeight: 700,
+              fontWeight: 600,
               color: "#ffffff",
               letterSpacing: "-0.01em",
               lineHeight: 1.25,
@@ -731,7 +731,7 @@ function ImageBanner({ image }) {
               gap: "6px",
               marginTop: "4px",
               fontSize: "clamp(12px, 1vw, 14px)",
-              fontWeight: 700,
+              fontWeight: 600,
               color: "#ffffff",
               textDecoration: "underline",
               textDecorationColor: ACCENT,
@@ -848,7 +848,7 @@ function FullScreenNav({ open, onClose }) {
               <span
                 style={{
                   fontSize: "clamp(18px, 1.6vw, 22px)",
-                  fontWeight: 700,
+                  fontWeight: 600,
                   color: "#ffffff",
                   letterSpacing: "-0.02em",
                 }}
@@ -981,7 +981,7 @@ function FullScreenNav({ open, onClose }) {
                   style={{
                     margin: "0 0 clamp(20px, 2.5vw, 32px)",
                     fontSize: "clamp(26px, 3.2vw, 38px)",
-                    fontWeight: 700,
+                    fontWeight: 600,
                     color: "#ffffff",
                     letterSpacing: "-0.02em",
                     textAlign: "left",
@@ -1183,12 +1183,12 @@ export default function Header() {
                 <motion.span
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3, ease: EASE }}
-                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#E11D48] flex items-center justify-center text-white font-bold text-base shadow-[0_0_15px_rgba(225,29,72,0.5)]"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#E11D48] flex items-center justify-center text-white font-semibold text-base shadow-[0_0_15px_rgba(225,29,72,0.5)]"
                 >
                   {BRAND_NAME.charAt(0)}
                 </motion.span>
               )}
-              <span className="text-[21px] sm:text-[24px] font-bold tracking-tight text-white font-sans leading-none">
+              <span className="text-[21px] sm:text-[24px] font-semibold tracking-tight text-white font-sans leading-none">
                 {BRAND_NAME}
               </span>
             </a>

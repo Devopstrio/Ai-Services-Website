@@ -69,7 +69,7 @@ const styles = {
   heading: {
     color: "#FFFFFF",
     fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     margin: 0,
     letterSpacing: "-0.02em"
   },
@@ -144,7 +144,7 @@ const styles = {
     border: "1px solid rgba(255,255,255,0.12)",
     color: "#E11D48",
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.1em",
     padding: "6px 12px",
     borderRadius: "6px",
@@ -160,7 +160,7 @@ const styles = {
   challengeTitle: {
     color: "#FFFFFF",
     fontSize: "1.25rem",
-    fontWeight: 700,
+    fontWeight: 600,
     margin: "0 0 12px 0",
     letterSpacing: "-0.01em",
     lineHeight: 1.3

@@ -18,19 +18,21 @@ export const aiPrototypesData = {
   name: "AI Prototypes",
   tagline: "Rapid Sandbox Incubation, Interactive MVPs & Production-Grade PoC Acceleration",
   hero: {
-    badge: "INNOVATION LAB // RAPID SANDBOX",
-    subBadge: "FROM CONCEPT TO MVP IN 2 WEEKS",
-    titleLight: "Accelerate Idea-to-Code Velocity with",
-    titleBold: "Devopstrio AI Prototypes",
-    description: "De-risk capital investment and test radical enterprise AI use cases before broad commitment. We build high-fidelity interactive prototypes with live model inference in under 14 days.",
+    badge: "DEVOPS TRIO // RAPID SANDBOX",
+    subBadge: "RAPID ITERATION & VALIDATION",
+    titleLight: "Rapid Incubation &",
+    titleBold: "AI Prototypes",
+    description: "De-risking enterprise AI investment by building high-fidelity interactive prototypes with live model inference in under 14 days.",
     bgImage: heroBg,
-    liveBadge: "Active Sandbox v4.6"
+    liveBadge: "Active Sandbox Cohort",
+    primaryCtaText: "Explore Prototypes",
+    secondaryCtaText: "View Case Study"
   },
   stats: [
-    { value: "< 14 Days", label: "Idea-to-Working-MVP", sub: "Interactive full-stack prototype delivery" },
-    { value: "94.6%", label: "Production Transition Rate", sub: "Prototypes graduated into enterprise production" },
-    { value: "100+ PoCs", label: "Enterprise Sandboxes Built", sub: "Across Fortune 500 financial, healthcare & SaaS" },
-    { value: "4.8x", label: "ROI Acceleration", sub: "Validated commercial viability before full build" }
+    { value: "14 Days", label: "Concept-to-Working-MVP", sub: "Interactive full-stack prototype delivery" },
+    { value: "PoC", label: "Production Transition Ready", sub: "Architected for scalable enterprise deployment" },
+    { value: "SLM/LLM", label: "Multi-Model Bake-Offs", sub: "Side-by-side cost and latency evaluation" },
+    { value: "Air-Gap", label: "Isolated Sandboxes", sub: "Zero enterprise data leakage" }
   ],
   pillars: [
     {
@@ -39,7 +41,6 @@ export const aiPrototypesData = {
       title: "Interactive Cognitive Enterprise Sandboxes",
       description: "Building production-grade interactive React & Node web applications powered by custom fine-tuned models to demonstrate live user workflows.",
       image: cognitiveSandboxImg,
-      metricBadge: "14-Day Delivery",
       highlights: [
         "Pre-integrated enterprise authentication (Okta, Entra ID, SAML)",
         "Synthetic test data generators mimicking proprietary enterprise datasets",
@@ -52,7 +53,6 @@ export const aiPrototypesData = {
       title: "Multi-Agent Workflow Simulation Testbeds",
       description: "Prototyping collaborative multi-agent swarms that execute end-to-end business logic across mocked ERP, CRM, and ticketing endpoints.",
       image: multiAgentWorkflowImg,
-      metricBadge: "End-to-End Mesh",
       highlights: [
         "Live tool-calling simulations with deterministic rollback guards",
         "Asynchronous human-in-the-loop review and approval gateways",
@@ -65,106 +65,125 @@ export const aiPrototypesData = {
       title: "Multi-Model Latency & Cost Bake-Offs",
       description: "Benchmarking proprietary LLMs, open-weights models, and custom SLMs against your specific enterprise workloads to pinpoint optimal price-to-performance.",
       image: modelBenchmarkImg,
-      metricBadge: "Cost & Speed Matrix",
       highlights: [
         "Side-by-side output evaluation using automated LLM-as-a-judge",
-        "Quantization benchmarks (FP8, INT4, AWQ) on NVIDIA and AMD silicon",
-        "Exact dollar cost per 1M tokens calculated against real workload distributions"
+        "Quantization stress-tests (FP8 vs INT4) measuring accuracy degradation",
+        "Clear unit-economic projections modeling monthly API and GPU expenses"
       ]
     },
     {
-      id: "private-enclave-poc",
-      tag: "DATA PRIVACY & SOVEREIGNTY",
-      title: "Zero-Data-Retention Air-Gapped Sandboxes",
-      description: "Spinning up isolated VPC enclaves where confidential enterprise data is processed without leaving your dedicated cloud perimeter.",
+      id: "air-gapped-sandbox",
+      tag: "HIGH-ASSURANCE SECURITY",
+      title: "Ephemeral Air-Gapped Validation Sandboxes",
+      description: "Spinning up completely isolated, zero-egress VPC sandboxes where enterprise compliance officers can safely review prototype behaviour on real PII/HIPAA data.",
       image: airGappedSandboxImg,
-      metricBadge: "Air-Gapped Privacy",
       highlights: [
-        "Customer-managed encryption keys (CMEK) with cryptographic isolation",
-        "Zero model training or public weights caching guarantee",
-        "Full SOC 2 Type II and HIPAA compliant prototype environments"
+        "One-click teardown with cryptographic verification of data destruction",
+        "Network-isolated model execution with local weight storage",
+        "Automated compliance logs generated for enterprise audit teams"
       ]
     }
   ],
   interactiveFrontiers: [
     {
-      id: "fintech-proto",
-      title: "Automated Commercial Loan Underwriting MVP",
-      category: "Fintech Prototyping",
-      badge: "Real-Time OCR & SMT Match",
+      id: "loan-underwriting",
+      title: "Autonomous Commercial Loan Underwriting Copilot",
+      tabLabel: "Loan Underwriting",
+      category: "Fintech Prototype",
+      badge: "Financial Copilot",
       image: loanUnderwritingImg,
-      benchmark: "Processed in 4.2 Seconds",
-      summary: "Interactive sandbox extracting 100+ page commercial balance sheets, cross-verifying tax filings, and generating structured credit committee dossiers.",
+      summary: "An interactive prototype extracting financial covenants and cash flow statements from 200+ page SEC 10-K filings, producing auditable credit memos in minutes.",
       features: [
-        "Multi-modal extraction across scanned bank PDFs and SEC filings",
-        "Automated debt-service coverage ratio (DSCR) algorithmic scoring",
-        "Instant credit approval recommendation with full explainability logs"
+        "Cross-checks balance sheets with deterministic Python calculation kernels",
+        "Strict citation highlighting linking every insight to original PDF coordinates",
+        "Interactive human credit committee review and signature approval workflow"
       ]
     },
     {
-      id: "health-proto",
-      title: "Clinical Trial Eligibility Matcher",
-      category: "Healthcare & Life Sciences",
-      badge: "HIPAA Compliant Enclave",
+      id: "clinical-trials",
+      title: "Multi-Modal Patient-Trial Matching Workbench",
+      tabLabel: "Clinical Matching",
+      category: "Healthcare Prototype",
+      badge: "Clinical NLP",
       image: clinicalTrialsImg,
-      benchmark: "98.7% Patient Match Accuracy",
-      summary: "Parses complex EHR medical records against 5,000+ active clinical trial protocols to identify eligible candidates in seconds.",
+      summary: "Parses complex EHR oncology narratives and genomic biomarkers against 45,000 active ClinicalTrials.gov protocols with deterministic inclusion/exclusion logic.",
       features: [
-        "De-identifies patient health information (PHI) via cryptographic blinding",
-        "Extracts inclusion/exclusion criteria using medical ontology vectors",
-        "Generates audit-ready compliance dossiers for principal investigators"
+        "Hybrid biomedical NER extracting TNM staging and mutation profiles",
+        "Transparent eligibility justification trees for clinical review",
+        "Full HIPAA-compliant local execution without external cloud calls"
       ]
     },
     {
-      id: "devops-proto",
-      title: "Kubernetes Incident Auto-Remediation Bot",
-      category: "Engineering Sandbox",
-      badge: "Sub-Second Pod Healing",
+      id: "k8s-remediation",
+      title: "Autonomous Kubernetes CrashLoop Remediation Agent",
+      tabLabel: "K8s Remediation",
+      category: "DevOps Prototype",
+      badge: "Infrastructure Agent",
       image: kubernetesRemediationImg,
-      benchmark: "Auto-Resolved in 1.8s",
-      summary: "Live simulated sandbox intercepting CrashLoopBackOff alerts, diagnosing root cause memory leaks, and issuing safe GitOps pull requests.",
+      summary: "Inspects live Prometheus metrics, pod events, and stack traces to automatically formulate, test, and apply hotfix PRs for production crash loops.",
       features: [
-        "Ingests live Prometheus telemetry and structured container logs",
-        "Generates isolated canary test sandbox to verify patch before deploy",
-        "Integrates with Slack & PagerDuty for instant SRE sign-off"
+        "Dry-run simulation cluster verifying hotfixes before production release",
+        "Generates clean GitHub Pull Requests with root-cause postmortems",
+        "Instant Slack notification with one-click engineer approval buttons"
       ]
-    }
-  ],
-  papers: [
-    {
-      title: "Empirical Frameworks for Rapid Prototyping of Large Language Model Workflows",
-      venue: "IEEE Software Enterprise AI 2025",
-      authors: "Devopstrio Prototyping Division & Carnegie Mellon University",
-      doi: "10.48550/arXiv.2507.03921",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Cost-Performance Tradeoffs in Quantized Enterprise Foundation Model Inference",
-      venue: "SysML 2025 (Best Practice)",
-      authors: "Devopstrio Systems Group & UC Berkeley",
-      doi: "10.48550/arXiv.2506.11029",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Air-Gapped Multi-Agent Sandbox Architecture for Regulated Financial Institutions",
-      venue: "ACM FinTech Computing 2025",
-      authors: "Devopstrio Security Lab & Imperial College London",
-      doi: "10.48550/arXiv.2511.05432",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
   ],
   caseStudy: {
+    tag: "CO-INNOVATION INITIATIVE",
+    collaborationType: "Enterprise Prototype Acceleration",
     partner: "Tier-1 Global Financial Services Institution",
-    collaborationType: "Rapid Prototyping Sandbox",
-    headline: "How a 14-Day AI Prototype Proved Commercial Viability for a \$40M Global Wealth Intelligence Platform",
-    quote: "Devopstrio's AI Prototypes sandbox gave our executive board the confidence to greenlight our multi-million dollar AI transformation. They delivered a fully functional MVP with real customer telemetry in just 10 business days.",
-    author: "Head of Digital Innovation & Wealth Tech",
-    organization: "Global Tier-1 Banking Leader",
+    title: "Autonomous Commercial Credit Underwriting Sandbox",
+    description: "Built a fully functioning, air-gapped prototype in 14 days that automates complex SEC 10-K extraction, cash-flow reconciliation, and credit memo drafting.",
     image: caseImg,
     metrics: [
-      { stat: "10 Days", label: "From kickoff to working executive demo" },
-      { stat: "96.4%", label: "Model precision on private wealth data" },
-      { stat: "\$40M", label: "Commercial program greenlit by board" }
+      { stat: "14 Days", label: "From blank canvas to working MVP" },
+      { stat: "100%", label: "Auditable citation tracking" },
+      { stat: "Air-Gapped", label: "Zero customer PII leakage" }
+    ],
+    highlights: [
+      "Deterministic balance sheet reconciliation engine",
+      "Interactive multi-model comparison matrix",
+      "Executive sponsor demo with zero infrastructure lag"
+    ],
+    ctaText: "Request Prototype Brief",
+    ctaHref: "https://devopstrio.co.uk/contact#contact-form"
+  },
+    publicationsState: {
+    heading: "Publications & Research Notes",
+    tag: "PUBLICATIONS & RESEARCH NOTES",
+    body: "Our formal publication list will be added as papers are finalized and peer-reviewed. In the interim, foundational preprints and quarterly research dispatches are shared through our research insights feed.",
+    buttonText: "Subscribe for Updates",
+    buttonHref: "https://devopstrio.co.uk/insights",
+    statusBadge: "Next Release: Q4 2026",
+    statusNote: "Formal verification & mechanistic interpretability preprints currently in internal review."
+  },
+  howWeWork: {
+    tag: "COLLABORATION MODEL",
+    title: "From Concept to Prototype in 14 Days",
+    steps: [
+      {
+        step: "01",
+        name: "Discovery & Scope",
+        desc: "Align on enterprise workflow, target user persona, and foundational models in 48 hours."
+      },
+      {
+        step: "02",
+        name: "Interactive Build",
+        desc: "Develop full-stack web UI with live inference, synthetic test datasets, and audit logs."
+      },
+      {
+        step: "03",
+        name: "Executive Handoff",
+        desc: "Demonstrate live prototype to stakeholders with full architecture code and ROI matrix."
+      }
     ]
+  },
+  closingCta: {
+    title: "Bring Your AI Concept to Life",
+    description: "Our rapid prototyping lab turns complex enterprise AI concepts into working, production-grade prototypes in under two weeks.",
+    primaryText: "Join Our Engineering Team",
+    primaryHref: "https://devopstrio.co.uk/careers",
+    secondaryText: "Request a 14-Day Sandbox Sprint",
+    secondaryHref: "https://devopstrio.co.uk/contact#contact-form"
   }
 };

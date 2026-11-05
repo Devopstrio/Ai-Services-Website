@@ -70,7 +70,7 @@ export function IndustryCompliance({ compliances }) {
                         )
 
                         , React.createElement('div', { className: "relative z-10" ,}
-                          , React.createElement('strong', { className: "text-lg font-bold text-white mb-1.5 group-hover:text-rose-400 transition-colors duration-300 block font-sans"        ,}
+                          , React.createElement('strong', { className: "text-lg font-semibold text-white mb-1.5 group-hover:text-rose-400 transition-colors duration-300 block font-sans"        ,}
                             , title.trim()
                           )
 

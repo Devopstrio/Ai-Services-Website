@@ -338,7 +338,7 @@ background:
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(1.9rem, 3.2vw, 2.5rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.015em",
   },
   grid: {

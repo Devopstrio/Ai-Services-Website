@@ -183,7 +183,7 @@ export default function ClientSuccessStories() {
               style={{
                 margin: 0,
                 fontSize: "clamp(30px, 4vw, 38px)",
-                fontWeight: 700,
+                fontWeight: 600,
                 color: COLORS.white,
                 letterSpacing: "-0.02em",
                 textAlign: "left",
@@ -392,7 +392,7 @@ export default function ClientSuccessStories() {
                       backgroundColor: COLORS.accent,
                       color: COLORS.white,
                       fontSize: "12.5px",
-                      fontWeight: 700,
+                      fontWeight: 600,
                       marginBottom: "24px",
                     }}
                   >
@@ -406,7 +406,7 @@ export default function ClientSuccessStories() {
                     style={{
                       margin: "0 0 20px",
                       fontSize: "clamp(26px, 2.6vw, 34px)",
-                      fontWeight: 700,
+                      fontWeight: 600,
                       lineHeight: 1.25,
                       color: COLORS.white,
                       letterSpacing: "-0.02em",
@@ -452,7 +452,7 @@ export default function ClientSuccessStories() {
                     border: `1px solid ${COLORS.whiteFaint}`,
                     color: COLORS.white,
                     fontSize: "14px",
-                    fontWeight: 700,
+                    fontWeight: 600,
                     textDecoration: "none",
                     width: "fit-content",
                   }}

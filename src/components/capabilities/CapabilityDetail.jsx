@@ -119,7 +119,6 @@ function InsightTwoFaceCard({ item, index }) {
               color: "#FDA4AF",
               textTransform: "uppercase",
               marginBottom: "8px",
-              textShadow: "0 1px 6px rgba(0,0,0,0.6)",
             }}
           >
             {item.tag}
@@ -128,12 +127,11 @@ function InsightTwoFaceCard({ item, index }) {
             style={{
               fontFamily: FONT,
               fontSize: "1.3rem",
-              fontWeight: 700,
+              fontWeight: 600,
               color: "#FFFFFF",
               lineHeight: 1.25,
               margin: 0,
               letterSpacing: "-0.02em",
-              textShadow: "0 2px 12px rgba(0,0,0,0.65)",
             }}
           >
             {item.title}
@@ -148,7 +146,6 @@ function InsightTwoFaceCard({ item, index }) {
               fontSize: "13.5px",
               fontWeight: 600,
               color: "#FFFFFF",
-              textShadow: "0 1px 6px rgba(0,0,0,0.5)",
             }}
           >
             Reveal Insights
@@ -180,7 +177,7 @@ function InsightTwoFaceCard({ item, index }) {
           style={{
             fontFamily: FONT,
             fontSize: "11px",
-            fontWeight: 700,
+            fontWeight: 600,
             letterSpacing: "0.12em",
             color: "#E11D48",
             textTransform: "uppercase",
@@ -193,7 +190,7 @@ function InsightTwoFaceCard({ item, index }) {
           style={{
             fontFamily: FONT,
             fontSize: "1.3rem",
-            fontWeight: 700,
+            fontWeight: 600,
             color: "#0A0A0A",
             lineHeight: 1.25,
             margin: "0 0 12px 0",
@@ -281,7 +278,7 @@ export default function CapabilityDetail() {
                 <span style={{ color: "#E11D48" }}>{data.breadcrumbs[1]}</span>
             </div>
             <motion.h1 initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }} style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", lineHeight: 1.05, fontWeight: 300, margin: "0 0 24px 0", letterSpacing: "-0.02em", color: "#fff" }}>
-              <span style={{ fontWeight: 700 }}>{data.hero.titleLight}</span> <span style={{ color: "rgba(255,255,255,0.85)" }}>{data.hero.titleBold}</span>
+              <span style={{ fontWeight: 600 }}>{data.hero.titleLight}</span> <span style={{ color: "rgba(255,255,255,0.85)" }}>{data.hero.titleBold}</span>
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }} style={{ fontSize: "clamp(1.05rem, 1.2vw, 1.15rem)", lineHeight: 1.6, color: "rgba(255,255,255,0.65)", margin: 0 }}>
               {data.hero.description}
@@ -340,7 +337,6 @@ export default function CapabilityDetail() {
                       color: "#FDA4AF",
                       textTransform: "uppercase",
                       marginBottom: "6px",
-                      textShadow: "0 1px 6px rgba(0,0,0,0.6)",
                     }}
                   >
                     CAPABILITY IMPACT
@@ -349,12 +345,11 @@ export default function CapabilityDetail() {
                     style={{
                       fontFamily: FONT,
                       fontSize: "2.8rem",
-                      fontWeight: 700,
+                      fontWeight: 600,
                       margin: "0 0 6px 0",
                       color: "#FFFFFF",
                       lineHeight: 1.1,
                       letterSpacing: "-0.02em",
-                      textShadow: "0 2px 12px rgba(0,0,0,0.65)",
                     }}
                   >
                     {metric.value}
@@ -410,7 +405,7 @@ export default function CapabilityDetail() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                  style={{ fontFamily: FONT, color: "#FFFFFF", fontSize: "clamp(1.85rem, 3vw, 2.5rem)", fontWeight: 700, lineHeight: 1.2, letterSpacing: "-0.02em", margin: 0, marginBottom: "20px" }}
+                  style={{ fontFamily: FONT, color: "#FFFFFF", fontSize: "clamp(1.85rem, 3vw, 2.5rem)", fontWeight: 600, lineHeight: 1.2, letterSpacing: "-0.02em", margin: 0, marginBottom: "20px" }}
                 >
                   {data.inAction.headingLight} <span style={{ color: "#E11D48" }}>{data.inAction.headingRed}</span>
                 </motion.h2>
@@ -445,7 +440,7 @@ export default function CapabilityDetail() {
                     color: "#030303",
                     fontFamily: FONT,
                     fontSize: "13.5px",
-                    fontWeight: 700,
+                    fontWeight: 600,
                     textDecoration: "none",
                     cursor: "pointer",
                     boxShadow: "0 10px 25px rgba(0,0,0,0.3)",
@@ -475,7 +470,7 @@ export default function CapabilityDetail() {
          <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8 }} style={{ marginBottom: "60px" }}>
               <h2 style={{ fontSize: "clamp(2.5rem, 4vw, 3.2rem)", fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
-                <span style={{ fontWeight: 700 }}>{data.whoWeWorkWith.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.whoWeWorkWith.titleRed}</span>
+                <span style={{ fontWeight: 600 }}>{data.whoWeWorkWith.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.whoWeWorkWith.titleRed}</span>
               </h2>
             </motion.div>
 
@@ -494,7 +489,7 @@ export default function CapabilityDetail() {
                           style={{ width: "32px", height: "32px" }}
                         />
                      </motion.div>
-                     <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#E11D48", marginBottom: "16px" }}>{item.title}</h3>
+                     <h3 style={{ fontSize: "1.5rem", fontWeight: 600, color: "#E11D48", marginBottom: "16px" }}>{item.title}</h3>
                      <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
                   </div>
                ))}
@@ -507,7 +502,7 @@ export default function CapabilityDetail() {
          <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8 }} style={{ marginBottom: "60px" }}>
               <h2 style={{ fontSize: "clamp(2.5rem, 4vw, 3.2rem)", fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
-                <span style={{ fontWeight: 700 }}>{data.benefits.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.benefits.titleRed}</span>
+                <span style={{ fontWeight: 600 }}>{data.benefits.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.benefits.titleRed}</span>
               </h2>
             </motion.div>
 
@@ -517,7 +512,7 @@ export default function CapabilityDetail() {
                      <img src={benefit.image} alt={benefit.title} style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.6 }} />
                      
                      <div style={{ position: "relative", zIndex: 2, backgroundColor: "rgba(10,10,10,0.85)", backdropFilter: "blur(10px)", margin: "20px", padding: "30px", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)", width: "calc(100% - 40px)" }}>
-                        <h3 style={{ fontSize: "1.4rem", fontWeight: 700, color: "#E11D48", margin: "0 0 12px 0", lineHeight: 1.3 }}>{benefit.title}</h3>
+                        <h3 style={{ fontSize: "1.4rem", fontWeight: 600, color: "#E11D48", margin: "0 0 12px 0", lineHeight: 1.3 }}>{benefit.title}</h3>
                         <p style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.8)", margin: 0, lineHeight: 1.6 }}>{benefit.desc}</p>
                      </div>
                   </motion.div>
@@ -531,7 +526,7 @@ export default function CapabilityDetail() {
         <div style={{ width: "100%", maxWidth: "1280px" }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} style={{ marginBottom: "60px", textAlign: "center" }}>
             <h2 style={{ fontSize: "clamp(2.5rem, 4vw, 3.2rem)", fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
-              <span style={{ fontWeight: 700 }}>{data.cards.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.cards.titleRed}</span>
+              <span style={{ fontWeight: 600 }}>{data.cards.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.cards.titleRed}</span>
             </h2>
           </motion.div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: "24px" }}>
@@ -557,7 +552,7 @@ export default function CapabilityDetail() {
                       {card.badge}
                     </div>
                     
-                    <h3 style={{ fontSize: "1.75rem", fontWeight: 700, color: isHovered ? "#000000" : "#ffffff", lineHeight: 1.2, margin: "0 0 16px 0", letterSpacing: "-0.01em", transition: "color 0.4s ease-in-out" }}>
+                    <h3 style={{ fontSize: "1.75rem", fontWeight: 600, color: isHovered ? "#000000" : "#ffffff", lineHeight: 1.2, margin: "0 0 16px 0", letterSpacing: "-0.01em", transition: "color 0.4s ease-in-out" }}>
                       {card.title}
                     </h3>
                     
@@ -589,7 +584,7 @@ export default function CapabilityDetail() {
         <div style={{ width: "100%", maxWidth: "1280px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "60px", borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "24px" }}>
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)", fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
-              <span style={{ fontWeight: 700 }}>{data.insights.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.insights.titleRed}</span>
+              <span style={{ fontWeight: 600 }}>{data.insights.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.insights.titleRed}</span>
             </motion.h2>
             <div style={{ display: "flex", gap: "12px" }}>
                <a

@@ -70,7 +70,7 @@ const styles = {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(1.9rem, 3.2vw, 2.5rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.015em",
   },
   headingAccent: { color: "#E11D48" },
@@ -121,7 +121,7 @@ const styles = {
     color: "#FFFFFF",
     fontFamily: FONT,
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.06em",
   },
   textBlock: {
@@ -133,7 +133,7 @@ const styles = {
   title: {
     fontFamily: FONT,
     fontSize: "1.2rem",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
     margin: "0 0 12px 0",
     letterSpacing: "-0.01em",

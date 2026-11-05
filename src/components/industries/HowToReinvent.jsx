@@ -696,7 +696,7 @@ background:
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(1.7rem, 2.8vw, 2.2rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.015em",
   },
 
@@ -752,7 +752,7 @@ background:
   label: {
     fontFamily: FONT,
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.08em",
     color: "rgba(255,255,255,0.85)",
     marginBottom: "14px",
@@ -760,7 +760,7 @@ background:
   title: {
     fontFamily: FONT,
     fontSize: "1.12rem",
-    fontWeight: 700,
+    fontWeight: 600,
     lineHeight: 1.35,
     margin: 0,
     marginBottom: "14px",
@@ -783,7 +783,7 @@ background:
   learnMore: {
     fontFamily: FONT,
     fontSize: "13.5px",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
   },
   arrowBox: {

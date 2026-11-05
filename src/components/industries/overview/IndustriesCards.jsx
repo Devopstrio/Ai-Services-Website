@@ -74,7 +74,7 @@ const styles = {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(2rem, 3.8vw, 3rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.02em",
     lineHeight: 1.2,
     margin: 0,
@@ -141,7 +141,7 @@ const styles = {
   cardTitle: {
     fontFamily: FONT,
     fontSize: "1.35rem",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
     margin: "0 0 10px 0",
   },
@@ -159,7 +159,7 @@ const styles = {
     gap: "6px",
     color: "#E11D48",
     fontSize: "14px",
-    fontWeight: 700,
+    fontWeight: 600,
     marginTop: "auto",
   },
 };

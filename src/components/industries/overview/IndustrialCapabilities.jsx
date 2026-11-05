@@ -61,7 +61,7 @@ export function IndustrialCapabilities() {
                     , cert.icon
                   )
 
-                  , React.createElement('h3', { className: "text-base font-bold text-white mb-2 tracking-tight group-hover:text-[#E11D48] transition-colors duration-300"       ,}
+                  , React.createElement('h3', { className: "text-base font-semibold text-white mb-2 tracking-tight group-hover:text-[#E11D48] transition-colors duration-300"       ,}
                     , cert.title
                   )
 

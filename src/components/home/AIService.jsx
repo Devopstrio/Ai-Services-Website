@@ -39,7 +39,7 @@ const styles = {
   label: {
     fontFamily: '"DM Sans", "Inter", sans-serif',
     fontSize: "clamp(1.5rem, 2.2vw, 2.1rem)",
-    fontWeight: 800,
+    fontWeight: 600,
     letterSpacing: "-0.01em",
     textTransform: "uppercase",
     color: "#FFFFFF",

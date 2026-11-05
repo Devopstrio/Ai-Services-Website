@@ -5,6 +5,7 @@ import SolutionsChallenges from "./SolutionsChallenges";
 import SolutionsArchitecture from "./SolutionsArchitecture";
 import SolutionsOutcomes from "./SolutionsOutcomes";
 import SolutionsInsights from "./SolutionsInsights";
+import RepresentativeCTA from "../ui/RepresentativeCTA";
 
 import digitalGlobeImg from "../../assets/enterprise-references/overview/card-core-solution.webp";
 import teamCoworkersImg from "../../assets/enterprise-references/overview/card-automation.webp";
@@ -114,7 +115,7 @@ const styles = {
     color: "#E11D48",
     fontFamily: FONT,
     fontSize: "12px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.12em",
     textTransform: "uppercase",
     marginBottom: "16px",
@@ -204,7 +205,7 @@ const styles = {
   },
   solutionsSub: {
     color: "#FFFFFF",
-    fontWeight: 700,
+    fontWeight: 600,
     fontSize: "2rem",
     letterSpacing: "-0.02em",
     margin: "0 0 12px 0",
@@ -302,7 +303,7 @@ const styles = {
   catLabel: {
     color: "#E11D48",
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.1em",
     textTransform: "uppercase",
     marginBottom: "12px",
@@ -310,7 +311,7 @@ const styles = {
   cardTitle: {
     color: "#FFFFFF",
     fontSize: "1.3rem",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.01em",
     margin: "0 0 10px 0",
     lineHeight: 1.3,
@@ -331,7 +332,7 @@ const styles = {
   },
   expandedLabel: {
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#E11D48",
     textTransform: "uppercase",
     letterSpacing: "0.08em",
@@ -356,7 +357,7 @@ const styles = {
     gap: "8px",
     color: "#E11D48",
     fontSize: "13px",
-    fontWeight: 700,
+    fontWeight: 600,
     cursor: "pointer",
     marginTop: "8px",
   },
@@ -620,7 +621,7 @@ export default function SolutionsOverview() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             >
-              <span style={{ fontWeight: 700, color: "#FFFFFF" }}>Solutions Built</span>{" "}
+              <span style={{ fontWeight: 600, color: "#FFFFFF" }}>Solutions Built</span>{" "}
               <span style={{ fontWeight: 400, color: "rgba(255,255,255,0.7)" }}>for What's Next</span>
             </motion.h1>
 
@@ -702,6 +703,16 @@ export default function SolutionsOverview() {
       <SolutionsArchitecture />
       <SolutionsOutcomes />
       <SolutionsInsights />
+      <RepresentativeCTA
+        title="Ready to Build Your Enterprise AI"
+        highlightText="Solution Architecture?"
+        description="Accelerate your digital transformation with bespoke AI models, autonomous workflow swarms, and enterprise-grade VPC deployment."
+        primaryBtnText="SCHEDULE ARCHITECTURE REVIEW"
+        primaryBtnHref="https://devopstrio.co.uk/contact#contact-form"
+        secondaryBtnText="TALK TO AN AI EXPERT"
+        secondaryBtnHref="/contact"
+        theme="rose"
+      />
     </>
   );
 }

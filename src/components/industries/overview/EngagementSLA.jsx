@@ -58,12 +58,12 @@ export function EngagementSLA() {
                   /* Subtle Inner Glow on Hover */
                   , React.createElement('div', { className: "absolute inset-0 bg-gradient-to-br from-[#E11D48]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0"          ,} )
 
-                  , React.createElement('span', { className: "text-3xl md:text-4xl font-black text-[#E11D48] group-hover:scale-105 transition-transform duration-300 origin-left relative z-10"         ,}
+                  , React.createElement('span', { className: "text-3xl md:text-4xl font-semibold text-[#E11D48] group-hover:scale-105 transition-transform duration-300 origin-left relative z-10"         ,}
                     , item.num
                   )
 
                   , React.createElement('div', { className: "relative z-10" ,}
-                    , React.createElement('strong', { className: "text-sm font-bold text-white mb-1.5 group-hover:text-[#E11D48] transition-colors duration-300 block"       ,}
+                    , React.createElement('strong', { className: "text-sm font-semibold text-white mb-1.5 group-hover:text-[#E11D48] transition-colors duration-300 block"       ,}
                       , item.label
                     )
                     , React.createElement('p', { className: "text-xs text-zinc-400 leading-relaxed font-semibold"   ,}

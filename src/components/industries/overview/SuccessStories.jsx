@@ -147,7 +147,7 @@ export function SuccessStories() {
                     )
 
                     /* Title */
-                    , React.createElement('h3', { className: "text-xl sm:text-2xl font-bold text-white leading-snug group-hover:text-rose-400 transition-colors duration-300 font-sans"        ,}
+                    , React.createElement('h3', { className: "text-xl sm:text-2xl font-semibold text-white leading-snug group-hover:text-rose-400 transition-colors duration-300 font-sans"        ,}
                       , story.achievement
                     )
                   )
@@ -157,7 +157,7 @@ export function SuccessStories() {
                     , React.createElement('span', { className: "text-xs uppercase font-mono tracking-wider font-semibold text-zinc-400"     ,}, "Case Study"
 
                     )
-                    , React.createElement('span', { className: "text-xs sm:text-sm font-bold flex items-center gap-1.5 text-rose-400 group-hover:text-white transition-colors"        ,}, "Read Story "
+                    , React.createElement('span', { className: "text-xs sm:text-sm font-semibold flex items-center gap-1.5 text-rose-400 group-hover:text-white transition-colors"        ,}, "Read Story "
                         , React.createElement(ArrowUpRight, { size: 14, className: "group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"  ,} )
                     )
                   )

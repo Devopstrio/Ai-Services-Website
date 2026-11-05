@@ -121,7 +121,7 @@ const styles = {
   title: {
     color: "#FFFFFF",
     fontSize: "clamp(2rem, 3.5vw, 2.8rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.02em",
     margin: 0
   },
@@ -160,7 +160,7 @@ const styles = {
   },
   catLabel: {
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.1em",
     color: "rgba(255,255,255,0.6)",
     marginBottom: "16px",
@@ -171,7 +171,7 @@ const styles = {
   productName: {
     color: "#FFFFFF",
     fontSize: "1.6rem",
-    fontWeight: 700,
+    fontWeight: 600,
     margin: "0 0 16px 0",
     letterSpacing: "-0.01em",
     lineHeight: 1.2,
@@ -192,7 +192,7 @@ const styles = {
     gap: "8px",
     color: "#E11D48",
     fontSize: "14px",
-    fontWeight: 700,
+    fontWeight: 600,
     marginTop: "auto",
     position: "relative",
     zIndex: 2
@@ -221,7 +221,7 @@ const styles = {
   },
   expandedLabel: {
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.08em",
     color: "rgba(255,255,255,0.4)",
     textTransform: "uppercase",

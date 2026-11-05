@@ -69,7 +69,7 @@ const styles = {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(1.9rem, 3.2vw, 2.7rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     lineHeight: 1.25,
     letterSpacing: "-0.015em",
     margin: 0,

@@ -44,7 +44,7 @@ export function IndustryPageTemplate() {
   if (!data) {
     return (
       <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center pt-24">
-        <h1 className="text-2xl font-bold mb-4">Industry Not Found</h1>
+        <h1 className="text-2xl font-semibold mb-4">Industry Not Found</h1>
         <Link to="/industries/overview" className="text-rose-500 hover:underline">← Back to Industries Overview</Link>
       </div>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ShieldCheck, Cpu, Database, Sparkles, ArrowRight } from "lucide-react";
+import { ShieldCheck, Cpu, Database, Bot, ArrowRight } from "lucide-react";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
@@ -21,7 +21,7 @@ const PILLARS = [
     body: "Sub-second fraud detection, automated AML compliance, and quantitative risk modeling deployed in isolated, encrypted cloud VPC environments.",
   },
   {
-    icon: <Sparkles size={26} color="#E11D48" />,
+    icon: <Bot size={26} color="#E11D48" />,
     title: "Industry Copilots & Agent Swarms",
     body: "Customized conversational assistants for clinical workflows, retail customer concierges, and engineering teams that eliminate manual administrative drag.",
   },
@@ -46,7 +46,7 @@ const styles = {
   },
   tag: {
     fontSize: "12px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.1em",
     color: "#E11D48",
     textTransform: "uppercase",
@@ -57,7 +57,7 @@ const styles = {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(2rem, 3.8vw, 3rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.02em",
     lineHeight: 1.2,
     margin: 0,
@@ -93,7 +93,7 @@ const styles = {
   cardTitle: {
     fontFamily: FONT,
     fontSize: "1.25rem",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
     margin: "0 0 14px 0",
   },

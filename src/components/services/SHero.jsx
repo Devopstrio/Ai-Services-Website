@@ -77,7 +77,7 @@ background:
     margin: 0,
   },
   headingBold: {
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
   },
   headingLight: {
@@ -95,7 +95,7 @@ background:
   },
   accent: {
     color: "#E11D48",
-    fontWeight: 700,
+    fontWeight: 600,
   },
 };
 

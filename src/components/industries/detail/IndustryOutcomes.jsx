@@ -38,7 +38,7 @@ export function IndustryOutcomes({ outcomes }) {
 
                 , React.createElement('div', { className: "relative z-10" ,}
                   /* Huge stats value */
-                  , React.createElement('span', { className: "block text-5xl font-black font-sans tracking-tight text-[#E11D48] mb-4 group-hover:scale-[1.02] transition-transform duration-300 select-none"          ,}
+                  , React.createElement('span', { className: "block text-5xl font-semibold font-sans tracking-tight text-[#E11D48] mb-4 group-hover:scale-[1.02] transition-transform duration-300 select-none"          ,}
                     , out.value
                   )
 

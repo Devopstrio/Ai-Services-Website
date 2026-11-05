@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Layers, Cpu, Database, ShieldCheck, Sparkles } from "lucide-react";
+import { Layers, Cpu, Database, ShieldCheck } from "lucide-react";
 
 import eco1 from "../../assets/fresh/agent_database_tuning.jpg";
 import eco2 from "../../assets/fresh/agent_finance_reconciliation.jpg";
@@ -26,7 +26,7 @@ const styles = {
   label: {
     color: "#E11D48",
     fontSize: "12px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.15em",
     textTransform: "uppercase",
     marginBottom: "16px"
@@ -34,7 +34,7 @@ const styles = {
   heading: {
     color: "#FFFFFF",
     fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     margin: 0,
     letterSpacing: "-0.02em"
   },
@@ -88,7 +88,7 @@ const styles = {
   platformTitle: {
     color: "#fff",
     fontSize: "1.4rem",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.01em",
     display: "flex",
     alignItems: "center",
@@ -192,7 +192,7 @@ function Layer({ title, desc, products, delay, image, icon: Icon }) {
             </div>
             {title}
           </div>
-          <span style={{ fontSize: "11px", color: "#E11D48", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+          <span style={{ fontSize: "11px", color: "#E11D48", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" }}>
             CONNECTED LAYER
           </span>
         </div>
@@ -253,7 +253,7 @@ export default function ProductsEcosystem() {
           desc="Domain-specific AI applications that integrate directly into your frontline enterprise workflows."
           products={["Sales AI", "Marketing AI", "Support AI", "Finance AI"]}
           image={eco1}
-          icon={Sparkles}
+          icon={Cpu}
           delay={0}
         />
 

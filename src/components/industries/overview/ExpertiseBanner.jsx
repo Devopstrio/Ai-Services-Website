@@ -61,8 +61,8 @@ export function ExpertiseBanner() {
                     , React.createElement('span', { className: "text-slate-100",}, "CERTIFIED BENCHMARK" )
                   )
 
-                  , React.createElement('h3', { className: "text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-white font-sans"       ,}, "Co-engineered compliance & "
-                       , React.createElement('span', { className: "text-rose-500 font-bold" ,}, "security benchmarks" )
+                  , React.createElement('h3', { className: "text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight text-white font-sans"       ,}, "Co-engineered compliance & "
+                       , React.createElement('span', { className: "text-rose-500 font-semibold" ,}, "security benchmarks" )
                   )
                 )
               )
@@ -70,11 +70,11 @@ export function ExpertiseBanner() {
               /* Right Column: Key Security Metrics */
               , React.createElement('div', { className: "lg:w-[35%] flex justify-start lg:justify-end gap-6 sm:gap-8 text-left relative z-10 w-full"         ,}
                 , React.createElement('div', { className: "border-l-2 border-rose-500/40 pl-4"  ,}
-                  , React.createElement('span', { className: "block text-3xl sm:text-4xl font-black text-rose-500 mb-1 font-mono"      ,}, "100%")
+                  , React.createElement('span', { className: "block text-3xl sm:text-4xl font-semibold text-rose-500 mb-1 font-mono"      ,}, "100%")
                   , React.createElement('span', { className: "block text-xs sm:text-sm font-semibold tracking-widest text-zinc-400 uppercase"      ,}, "Audit readiness" )
                 )
                 , React.createElement('div', { className: "border-l-2 border-slate-300/40 pl-4"  ,}
-                  , React.createElement('span', { className: "block text-3xl sm:text-4xl font-black text-slate-200 mb-1 font-mono"      ,}, "ZERO")
+                  , React.createElement('span', { className: "block text-3xl sm:text-4xl font-semibold text-slate-200 mb-1 font-mono"      ,}, "ZERO")
                   , React.createElement('span', { className: "block text-xs sm:text-sm font-semibold tracking-widest text-zinc-400 uppercase"      ,}, "Security Breaches" )
                 )
               )

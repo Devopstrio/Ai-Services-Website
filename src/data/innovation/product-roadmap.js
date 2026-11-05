@@ -14,19 +14,21 @@ export const productRoadmapData = {
   name: "Product Roadmap",
   tagline: "Transparent Horizon Architecture, Upcoming Feature Releases & Lab Milestones",
   hero: {
-    badge: "INNOVATION LAB // PRODUCT HORIZON",
+    badge: "DEVOPS TRIO // PRODUCT HORIZON",
     subBadge: "TRANSPARENT 2026-2027 ROADMAP",
-    titleLight: "Engineering Tomorrow's Platform with",
-    titleBold: "Devopstrio Product Roadmap",
-    description: "Explore our transparent quarterly product roadmap detailing upcoming foundation models, autonomous agent frameworks, and enterprise developer tooling releases.",
+    titleLight: "Architecture &",
+    titleBold: "Product Roadmap",
+    description: "Transparent quarterly release milestones for upcoming foundation models, autonomous agent frameworks, and enterprise developer tooling.",
     bgImage: heroBg,
-    liveBadge: "Roadmap: 2026-Q3 Active"
+    liveBadge: "Roadmap: Active Release Horizon",
+    primaryCtaText: "Explore Roadmap",
+    secondaryCtaText: "View Releases"
   },
   stats: [
-    { value: "4 Quarters", label: "Transparent Forward Horizon", sub: "Quarterly release milestones mapped to 2027" },
-    { value: "100%", label: "Backward Compatibility", sub: "Zero breaking API changes across upgrades" },
-    { value: "99.99%", label: "Target Uptime SLA", sub: "Multi-region sovereign high-availability" },
-    { value: "2 Weeks", label: "Continuous Release Cadence", sub: "Bi-weekly minor updates & security patches" }
+    { value: "Quarterly", label: "Predictable Release Cadence", sub: "Milestone-driven roadmap" },
+    { value: "API First", label: "Stable Interfaces", sub: "Backward-compatible contract guarantees" },
+    { value: "SwarmOS", label: "Distributed Mesh Architecture", sub: "Multi-agent runtime framework" },
+    { value: "Early Access", label: "Enterprise Preview Channel", sub: "Testing pre-release capabilities" }
   ],
   pillars: [
     {
@@ -35,11 +37,10 @@ export const productRoadmapData = {
       title: "SwarmOS v5.0: Autonomous Agent Mesh",
       description: "Next-gen distributed multi-agent runtime featuring sub-millisecond gRPC consensus, persistent vector memory fabric, and deterministic GitOps rollbacks.",
       image: swarmOSPillarImg,
-      metricBadge: "Now in Production",
       highlights: [
-        "10,000+ concurrent cognitive agents per cluster node",
+        "High-density concurrent cognitive agents per cluster node",
         "Deterministic replay debugger for distributed agent execution traces",
-        "Native bi-directional connectors for Workday, SAP, and Salesforce"
+        "Native bi-directional enterprise connectors for standard business systems"
       ]
     },
     {
@@ -48,10 +49,9 @@ export const productRoadmapData = {
       title: "Neuro-Symbolic IDE & Lean 4 Copilot",
       description: "An integrated developer environment that verifies code correctness and mathematical logic using automated Lean 4 theorem proving kernels.",
       image: leanIdePillarImg,
-      metricBadge: "Beta Launch Oct 2026",
       highlights: [
-        "Zero-hallucination code generation with SMT solver constraint checking",
-        "Automated unit test synthesis with 100% formal branch coverage",
+        "Verified code generation with SMT solver constraint checking",
+        "Automated unit test synthesis with formal branch coverage",
         "VS Code and JetBrains IDE native language server extensions"
       ]
     },
@@ -59,108 +59,127 @@ export const productRoadmapData = {
       id: "q1-2027-release",
       tag: "HORIZON // Q1 2027",
       title: "Photonic TPU & Sub-Watt Inference Runtime",
-      description: "Co-designed inference runtime optimized for emerging optical silicon accelerators, cutting data center power consumption by 90%.",
+      description: "Co-designed inference runtime optimized for emerging optical silicon accelerators, cutting data center power consumption.",
       image: photonicPillarImg,
-      metricBadge: "In Lab Validation",
       highlights: [
-        "Speed-of-light optical matrix-vector multiplier driver layers",
-        "Sub-picosecond latency for high-frequency financial & aerospace telemetry",
-        "Zero thermal throttling on high-density edge computing racks"
+        "Optical matrix-vector multiplier driver layers for high-speed compute",
+        "Sub-picosecond latency for telemetry and high-frequency data streams",
+        "Optimized thermal profile on high-density edge computing racks"
       ]
     },
     {
       id: "q2-2027-release",
-      tag: "VISION // Q2 2027",
-      title: "Spatio-Temporal 4D World Simulator v2",
-      description: "Continuous 3D physics foundation model simulating fluid dynamics, structural elasticity, and robotic compliance for industrial CAD manufacturing.",
+      tag: "LONG-RANGE // Q2 2027",
+      title: "Generative 4D World Simulator v2",
+      description: "Continuous real-time spatial simulator trained on multi-modal physical telemetry for robotics sim-to-real transfer.",
       image: worldSimulatorPillarImg,
-      metricBadge: "Research Preview",
       highlights: [
-        "Simulates complex physical dynamics 20x faster than classical FEM",
-        "Zero-shot sim-to-real robotic policy transfer with sub-millimeter precision",
-        "Real-time digital twin synchronization with live factory IoT sensors"
+        "Continuous 3D space-time representations with physical constraint guarantees",
+        "Real-time sensor simulation for LiDAR, stereo vision, and tactile pads",
+        "Automated scenario synthesis testing edge-case safety failure modes"
       ]
     }
   ],
   interactiveFrontiers: [
     {
-      id: "swarmos-preview",
-      title: "SwarmOS v5.0 Architecture Deep Dive",
-      category: "Agent Runtime",
-      badge: "Production Ready",
+      id: "swarmos-architecture",
+      title: "SwarmOS Agent Mesh Interactive Topology",
+      tabLabel: "SwarmOS v5",
+      category: "Platform Architecture",
+      badge: "Agent Mesh",
       image: swarmOSFrontierImg,
-      benchmark: "Sub-millisecond Latency",
-      summary: "Explore the internal architecture of our distributed agent swarm engine with native consensus election and encrypted memory fabric.",
+      summary: "Explore the internal architecture of SwarmOS: from the distributed raft consensus engine down to the embedded vector memory layer.",
       features: [
-        "Zero external database dependencies",
-        "Supports dynamic sub-agent role specialization",
-        "Cryptographically signed audit logs exportable in one click"
+        "Interactive component diagram showing dataflow between agents and external APIs",
+        "Simulate node failure and watch the self-healing failover protocol in action",
+        "Download sample infrastructure-as-code deployment manifests for AWS and Azure"
       ]
     },
     {
       id: "lean-ide-preview",
-      title: "Lean 4 Mathematical IDE Copilot",
-      category: "Developer Tools",
-      badge: "Beta Cohort Open",
+      title: "Neuro-Symbolic IDE Interface Walkthrough",
+      tabLabel: "Neuro-Symbolic IDE",
+      category: "Developer Tooling",
+      badge: "Lean 4 IDE",
       image: leanIdeFrontierImg,
-      benchmark: "100% Formal Verification",
-      summary: "See how our upcoming IDE Copilot proves algebraic and algorithmic invariants before allowing code to merge into production branches.",
+      summary: "Experience how the upcoming Lean 4 copilot automatically proves lemmas and prevents logic errors in real time as you write code.",
       features: [
-        "Automated proof-step auto-completion in Lean 4 and Coq",
-        "Flags arithmetic edge cases and security race conditions",
-        "Works seamlessly across Rust, Python, Go, and C++"
+        "Live split-screen showing generated Python code alongside Lean 4 formal proofs",
+        "Automated theorem generator validating edge cases before code execution",
+        "Sign up for private developer preview access opening in Q4 2026"
       ]
     },
     {
-      id: "photonic-preview",
-      title: "Photonic Optical Compute Engine",
-      category: "Hardware Acceleration",
-      badge: "Lab Benchmark: 12ps",
+      id: "photonic-runtime-preview",
+      title: "Optical Acceleration Driver Stack",
+      tabLabel: "Photonic Runtime",
+      category: "Hardware Runtime",
+      badge: "Optical TPU",
       image: photonicFrontierImg,
-      benchmark: "90% Lower Power",
-      summary: "Review preliminary benchmark traces of our optical tensor multiplication driver running on prototype silicon photonics chips.",
+      summary: "Review the software stack connecting PyTorch models directly to emerging optical hardware accelerators with zero code refactoring.",
       features: [
-        "Sub-watt inference token generation",
-        "Immune to electromagnetic interference in aerospace environments",
-        "Standardized PyTorch C++ extension backend"
+        "Hardware abstraction layer mapping matrix ops to optical interference filters",
+        "Thermal and optical calibration feedback loop maintaining calculation fidelity",
+        "Early benchmark results against standard Hopper and Blackwell GPU clusters"
       ]
-    }
-  ],
-  papers: [
-    {
-      title: "Architectural Evolution of Enterprise AI Platforms: A 5-Year Retrospective and Roadmap",
-      venue: "IEEE Computer Society Horizon 2025",
-      authors: "Devopstrio Architecture Council & MIT CSAIL",
-      doi: "10.48550/arXiv.2508.11029",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "SwarmOS: Decentralized Fault-Tolerant Orchestration for Enterprise Cognitive Agents",
-      venue: "ACM EuroSys Cloud Systems 2025",
-      authors: "Devopstrio Distributed Systems Team",
-      doi: "10.48550/arXiv.2510.04891",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Formal Invariant Synthesis in Developer Tooling via Neuro-Symbolic Verification",
-      venue: "ACM SIGPLAN PLDI 2025",
-      authors: "Devopstrio Programming Languages Group & Oxford",
-      doi: "10.48550/arXiv.2512.03112",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
   ],
   caseStudy: {
-    partner: "Fortune 50 Enterprise Technology & Cloud Services Provider",
-    collaborationType: "Early Roadmap Access Partner",
-    headline: "How Early Access to SwarmOS v5.0 Accelerated Enterprise Customer Deployments by 400%",
-    quote: "Devopstrio's transparent product roadmap gave our engineering organization the visibility we needed to plan our multi-cloud AI infrastructure two years ahead of competitors.",
-    author: "Senior Vice President of Engineering",
-    organization: "Global Cloud & AI Infrastructure Leader",
+    tag: "CO-INNOVATION INITIATIVE",
+    collaborationType: "Roadmap Early Access Partner",
+    partner: "Fortune 50 Enterprise Cloud Provider",
+    title: "Enterprise Agent Mesh Deployment & Early Access Stress Test",
+    description: "Validating SwarmOS v5.0 across distributed multi-region infrastructure, confirming sub-millisecond agent coordination and backward API stability.",
     image: caseImg,
     metrics: [
-      { stat: "400%", label: "Faster deployment of customer AI agents" },
-      { stat: "Zero", label: "Breaking API changes across major upgrades" },
-      { stat: "99.99%", label: "Production uptime maintained globally" }
+      { stat: "Sub-ms", label: "Inter-agent message latency" },
+      { stat: "Zero", label: "Breaking API changes across versions" },
+      { stat: "Multi-Region", label: "High-availability deployment" }
+    ],
+    highlights: [
+      "Automated GitOps state rollback mechanisms",
+      "Native bi-directional enterprise connectors",
+      "Stress testing under sustained high-throughput workloads"
+    ],
+    ctaText: "Request Roadmap Brief",
+    ctaHref: "https://devopstrio.co.uk/contact#contact-form"
+  },
+    publicationsState: {
+    heading: "Publications & Research Notes",
+    tag: "PUBLICATIONS & RESEARCH NOTES",
+    body: "Our formal publication list will be added as papers are finalized and peer-reviewed. In the interim, foundational preprints and quarterly research dispatches are shared through our research insights feed.",
+    buttonText: "Subscribe for Updates",
+    buttonHref: "https://devopstrio.co.uk/insights",
+    statusBadge: "Next Release: Q4 2026",
+    statusNote: "Formal verification & mechanistic interpretability preprints currently in internal review."
+  },
+  howWeWork: {
+    tag: "COLLABORATION MODEL",
+    title: "How We Ship Enterprise Software",
+    steps: [
+      {
+        step: "01",
+        name: "Architecture Preview",
+        desc: "Share RFC specifications and prototype builds with enterprise design partners."
+      },
+      {
+        step: "02",
+        name: "Enterprise Canary",
+        desc: "Deploy pre-release versions across isolated production test environments."
+      },
+      {
+        step: "03",
+        name: "General Availability",
+        desc: "Deliver hardened releases backed by enterprise SLAs and comprehensive documentation."
+      }
     ]
+  },
+  closingCta: {
+    title: "Shape the Future of Enterprise AI",
+    description: "Join our platform engineering and research teams building the foundation models and developer runtimes of tomorrow.",
+    primaryText: "Explore Platform Roles",
+    primaryHref: "https://devopstrio.co.uk/careers",
+    secondaryText: "Join the Early Access Program",
+    secondaryHref: "https://devopstrio.co.uk/contact#contact-form"
   }
 };

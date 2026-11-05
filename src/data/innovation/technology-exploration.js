@@ -13,19 +13,21 @@ export const technologyExplorationData = {
   name: "Technology Exploration",
   tagline: "360° Emerging Tech Radar, Horizon Scanning & Next-Gen Hardware Synthesis",
   hero: {
-    badge: "INNOVATION LAB // TECH RADAR",
+    badge: "DEVOPS TRIO // TECH RADAR",
     subBadge: "HORIZON SCANNING (2026-2035)",
-    titleLight: "Navigating the Next Decade with",
-    titleBold: "Devopstrio Technology Exploration",
-    description: "Our Technology Exploration division acts as a forward radar for enterprise leadership, continuously evaluating breakthroughs in photonic tensor processing, post-quantum cryptography, and spatial neuromorphic computing.",
+    titleLight: "Emerging Tech &",
+    titleBold: "Hardware Frontiers",
+    description: "Continuous evaluation of post-quantum cryptography, silicon photonics, and neuromorphic edge computing for forward-looking enterprise architecture.",
     bgImage: heroBg,
-    liveBadge: "Radar Edition: 2026-Q3"
+    liveBadge: "Active Horizon Radar",
+    primaryCtaText: "Explore Tech Radar",
+    secondaryCtaText: "View Analysis"
   },
   stats: [
-    { value: "10-Year", label: "Horizon Technology Horizon", sub: "Actionable roadmap forecasting 2026-2035" },
-    { value: "120+", label: "Frontier Technologies Tracked", sub: "Assessed across 5 maturity quadrants" },
-    { value: "100x", label: "Efficiency in Photonic AI", sub: "Sub-picosecond optical matrix compute" },
-    { value: "50+ Reports", label: "Executive Intelligence Briefs", sub: "Published annually for enterprise CTOs" }
+    { value: "Radar", label: "Horizon Scanning", sub: "Emerging technological radar" },
+    { value: "pTPU", label: "Silicon Photonics", sub: "Analog optical tensor compute" },
+    { value: "PQC", label: "Post-Quantum Cryptography", sub: "NIST-standardized lattice encryption" },
+    { value: "SNN", label: "Neuromorphic Edge", sub: "Sub-milliwatt event-driven chips" }
   ],
   pillars: [
     {
@@ -34,7 +36,6 @@ export const technologyExplorationData = {
       title: "Photonic Tensor Processing Units (pTPU)",
       description: "Evaluating analog optical matrix multipliers that calculate matrix-vector dot products at the speed of light with near-zero heat dissipation.",
       image: photonicPillarImg,
-      metricBadge: "Speed-of-Light Inference",
       highlights: [
         "Silicon photonics waveguides executing optical interference convolutions",
         "100x lower thermal dissipation compared to traditional copper interconnects",
@@ -47,9 +48,8 @@ export const technologyExplorationData = {
       title: "Quantum-Resistant Lattice Cryptography",
       description: "Implementing and stress-testing NIST-standardized lattice-based encryption algorithms (Kyber, Dilithium) across distributed enterprise mesh networks.",
       image: latticePillarImg,
-      metricBadge: "NIST FIPS 203/204",
       highlights: [
-        "Cryptographic agility layer allowing seamless migration from RSA/ECC",
+        "Cryptographic agility layer allowing seamless migration from legacy RSA/ECC",
         "Zero performance degradation in TLS 1.3 encrypted handshake latency",
         "Immutable hardware security module (HSM) key derivation integration"
       ]
@@ -58,9 +58,8 @@ export const technologyExplorationData = {
       id: "neuromorphic-snn",
       tag: "NEUROMORPHIC EDGE",
       title: "Spiking Neuromorphic Edge Architectures",
-      description: "Investigating event-driven asynchronous neuromorphic processors (Intel Loihi, BrainChip) for ultra-low-power edge robotics and IoT nodes.",
+      description: "Investigating event-driven asynchronous neuromorphic processors for ultra-low-power edge robotics and IoT nodes.",
       image: neuromorphicPillarImg,
-      metricBadge: "Sub-10mW Inference",
       highlights: [
         "Spike-timing-dependent plasticity (STDP) continuous on-chip learning",
         "Operates under 10 milliwatts on solar and kinetic energy harvesting",
@@ -68,98 +67,104 @@ export const technologyExplorationData = {
       ]
     },
     {
-      id: "spatial-bci",
+      id: "neural-decoding",
       tag: "NEURAL INTERFACES",
-      title: "Non-Invasive Neural Decoding Interfaces",
-      description: "Translating high-density EEG and functional near-infrared spectroscopy (fNIRS) telemetry into intent vectors for hands-free industrial CAD manipulation.",
+      title: "Non-Invasive High-Bandwidth Neural Decoding",
+      description: "Researching high-density EEG and functional near-infrared spectroscopy (fNIRS) foundation models for non-invasive intent classification.",
       image: neuralDecodingPillarImg,
-      metricBadge: "Neural Telemetry",
       highlights: [
-        "Continuous transformer decoding of motor cortex neural intent signals",
-        "95.4% intent classification accuracy across 40 complex CAD operations",
-        "Zero-calibration adaptive cross-subject neural transfer learning"
+        "Transformer-based temporal alignment filtering high-amplitude muscular artifacts",
+        "Zero-calibration cross-subject transfer learning for assistive communication",
+        "Sub-20ms cognitive load estimation for safety-critical aviation cockpits"
       ]
     }
   ],
   interactiveFrontiers: [
     {
-      id: "photonic-radar",
-      title: "Photonic Optical Matrix Multiplier",
-      category: "Optical AI Hardware",
-      badge: "Analog Light Compute",
+      id: "photonic-matrix",
+      title: "Photonic Matrix Multiplier Benchmarking Simulator",
+      tabLabel: "Silicon Photonics",
+      category: "Optical Computing",
+      badge: "Optical Matrix",
       image: photonicFrontierImg,
-      benchmark: "0.01 picoseconds / MAC",
-      summary: "Simulates optical phase shifters and Mach-Zehnder interferometers performing 4096x4096 matrix multiplications using wavelength-division multiplexing.",
+      summary: "Simulate matrix multiplication operations executed through Mach-Zehnder optical interferometers and compare power consumption against modern GPUs.",
       features: [
-        "Zero resistive thermal dissipation",
-        "100 GHz modulation bandwidth per optical channel",
-        "Calculates complete attention layer in 12 picoseconds"
+        "Interactive wavelength frequency allocation matrix across 128 channels",
+        "Simulates thermal phase drift and automated digital feedback compensation",
+        "Calculates theoretical energy savings across billion-parameter inference workloads"
       ]
     },
     {
-      id: "quantum-crypto-radar",
-      title: "Lattice Post-Quantum Key Exchange",
-      category: "Post-Quantum Security",
-      badge: "ML-KEM (Kyber-1024)",
+      id: "lattice-encryption",
+      title: "Post-Quantum TLS 1.3 Handshake Testbed",
+      tabLabel: "Lattice Crypto",
+      category: "Quantum Defense",
+      badge: "Post-Quantum",
       image: latticeFrontierImg,
-      benchmark: "Immune to Shor's Algorithm",
-      summary: "Interactive cryptographic sandbox demonstrating real-time lattice encapsulation and decapsulation defending against quantum attacks.",
+      summary: "Test live quantum-resistant key exchanges using ML-KEM (Kyber-768) and stateful hash-based digital signatures against active adversary replay.",
       features: [
-        "Validated against 10,000-qubit simulated Shor quantum attack",
-        "Sub-millisecond key encapsulation overhead on mobile devices",
-        "Full backward compatibility with existing enterprise X.509 PKI"
+        "Side-by-side packet capture comparison between classic ECDHE and ML-KEM",
+        "Simulated harvest-now, decrypt-later cryptographic attack analysis",
+        "Automated certificate authority migration roadmap generator for enterprise CISOs"
       ]
-    },
-    {
-      id: "neuromorphic-edge-radar",
-      title: "Event-Based Spiking Neural Engine",
-      category: "Neuromorphic AI",
-      badge: "Asynchronous Spikes",
-      image: neuromorphicPillarImg,
-      benchmark: "8.4 mW Peak Power",
-      summary: "Processes dynamic vision sensor (DVS) microsecond event streams to track high-velocity objects in microgravity and edge aerospace conditions.",
-      features: [
-        "1,000,000 events/second temporal resolution",
-        "Zero idle power consumption when scene is static",
-        "Direct FPGA emulation on Xilinx Kria silicon"
-      ]
-    }
-  ],
-  papers: [
-    {
-      title: "Co-Design of Photonic Silicon and Transformer Models for Sub-Picosecond Inference",
-      venue: "Nature Electronics & Hardware 2025",
-      authors: "Devopstrio Hardware Lab & UC Santa Barbara",
-      doi: "10.48550/arXiv.2510.14209",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Enterprise Migration Architectures for Post-Quantum Lattice Cryptography",
-      venue: "IEEE Security & Privacy 2025",
-      authors: "Devopstrio Cryptography Group & ETH Zurich",
-      doi: "10.48550/arXiv.2508.06912",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Asynchronous Spiking Neural Networks for Ultra-Low-Power Edge Anomaly Detection",
-      venue: "IEEE Transactions on Neural Networks 2025",
-      authors: "Devopstrio Neuromorphic Team & TU Munich",
-      doi: "10.48550/arXiv.2512.08831",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
   ],
   caseStudy: {
-    partner: "Global Telecommunications & Defense Infrastructure Operator",
-    collaborationType: "Horizon Technology Assessment",
-    headline: "How Devopstrio's Post-Quantum Tech Radar Protected Critical Satellite Communications Across 4 Continents",
-    quote: "Devopstrio's technology exploration team gave us the 5-year cryptographic roadmap we needed. We upgraded our core satellite ground stations to post-quantum lattice security two years ahead of international mandate deadlines.",
-    author: "Chief Information Security Officer",
-    organization: "Global Satellite Communications Leader",
+    tag: "CO-INNOVATION INITIATIVE",
+    collaborationType: "Emerging Tech Evaluation",
+    partner: "Global Telecommunications & Aerospace Leader",
+    title: "Post-Quantum Secure Telemetry & Photonic Switching",
+    description: "Evaluating NIST-standardized lattice encryption across sovereign satellite ground stations, paired with photonic tensor processing for real-time signal filtering.",
     image: caseImg,
     metrics: [
-      { stat: "100%", label: "Post-quantum lattice security migration" },
-      { stat: "2 Years", label: "Ahead of regulatory compliance mandate" },
-      { stat: "0 ms", label: "Additional handshake latency overhead" }
+      { stat: "Sub-ms", label: "Lattice key encapsulation latency" },
+      { stat: "100x", label: "Lower thermal dissipation over photonics" },
+      { stat: "NIST FIPS", label: "Standardized quantum resistance" }
+    ],
+    highlights: [
+      "Hardware security module integration with zero handoff delay",
+      "Analog optical matrix convolution benchmarks",
+      "Joint technical assessment presented to national infrastructure regulators"
+    ],
+    ctaText: "Request Technology Brief",
+    ctaHref: "https://devopstrio.co.uk/contact#contact-form"
+  },
+    publicationsState: {
+    heading: "Publications & Research Notes",
+    tag: "PUBLICATIONS & RESEARCH NOTES",
+    body: "Our formal publication list will be added as papers are finalized and peer-reviewed. In the interim, foundational preprints and quarterly research dispatches are shared through our research insights feed.",
+    buttonText: "Subscribe for Updates",
+    buttonHref: "https://devopstrio.co.uk/insights",
+    statusBadge: "Next Release: Q4 2026",
+    statusNote: "Formal verification & mechanistic interpretability preprints currently in internal review."
+  },
+  howWeWork: {
+    tag: "COLLABORATION MODEL",
+    title: "How We Evaluate Emerging Tech",
+    steps: [
+      {
+        step: "01",
+        name: "Horizon Radar",
+        desc: "Continuously scan academic patents, physical labs, and hardware prototypes across 5 maturity quadrants."
+      },
+      {
+        step: "02",
+        name: "Lab Benchmarking",
+        desc: "Acquire early developer kits, simulate physical performance, and stress-test in isolated environments."
+      },
+      {
+        step: "03",
+        name: "Strategic Synthesis",
+        desc: "Deliver actionable transition roadmaps and risk-adjusted implementation plans to leadership."
+      }
     ]
+  },
+  closingCta: {
+    title: "Prepare Your Enterprise for the Future",
+    description: "Our technology exploration team helps enterprise CTOs and architectural boards de-risk emerging hardware and cryptographic shifts.",
+    primaryText: "Explore Engineering Careers",
+    primaryHref: "https://devopstrio.co.uk/careers",
+    secondaryText: "Request an Executive Briefing",
+    secondaryHref: "https://devopstrio.co.uk/contact#contact-form"
   }
 };

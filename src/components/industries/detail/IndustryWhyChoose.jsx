@@ -116,7 +116,7 @@ export function IndustryWhyChoose({ whyChoose }) {
 
                   /* Card Main Body */
                   , React.createElement('div', { className: "p-6 sm:p-7 flex flex-col flex-grow text-left"     ,}
-                    , React.createElement('h3', { className: `text-xl sm:text-2xl font-bold text-white mb-2 leading-snug ${titleHoverColors[idx]} transition-colors duration-300 font-sans`,}
+                    , React.createElement('h3', { className: `text-xl sm:text-2xl font-semibold text-white mb-2 leading-snug ${titleHoverColors[idx]} transition-colors duration-300 font-sans`,}
                       , why.title
                     )
 

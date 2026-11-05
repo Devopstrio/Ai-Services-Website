@@ -75,11 +75,11 @@ export function IndustriesGrid() {
           )
 
           , React.createElement(Reveal, null
-            , React.createElement('p', { className: "text-white text-base sm:text-lg md:text-xl font-bold tracking-wide uppercase mb-3 font-sans"        ,}, "Different Industries. One Shared Future."
+            , React.createElement('p', { className: "text-white text-base sm:text-lg md:text-xl font-semibold tracking-wide uppercase mb-3 font-sans"        ,}, "Different Industries. One Shared Future."
 
             )
             , React.createElement('h2', { className: "text-3xl md:text-4xl xl:text-5xl font-semibold tracking-tight text-white mb-2 leading-tight font-sans"        ,}
-              , React.createElement('span', { className: "inline-block bg-rose-500 text-black font-extrabold px-3.5 py-1 mx-1.5 rounded-sm transform -rotate-3 shadow-[0_4px_20px_rgba(225,29,72,0.45)] align-middle uppercase tracking-wider text-2xl sm:text-3xl md:text-4xl xl:text-5xl"                 ,}, "CONNECT"
+              , React.createElement('span', { className: "inline-block bg-rose-500 text-black font-semibold px-3.5 py-1 mx-1.5 rounded-sm transform -rotate-3 shadow-[0_4px_20px_rgba(225,29,72,0.45)] align-middle uppercase tracking-wider text-2xl sm:text-3xl md:text-4xl xl:text-5xl"                 ,}, "CONNECT"
 
               ), " ", "Technology with Innovation"
 

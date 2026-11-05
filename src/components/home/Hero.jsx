@@ -84,7 +84,7 @@ const styles = {
   },
   headlineBold: {
     fontFamily: FONT,
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
     display: "block",
     marginTop: "16px",

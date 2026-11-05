@@ -1,56 +1,63 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 import inno1 from "../../assets/fresh/innovation_lab_applied_ai_research.webp";
 import inno2 from "../../assets/fresh/innovation_lab_rapid_poc_accelerator.webp";
 import inno3 from "../../assets/fresh/innovation_lab_venture_ai_cocreation.webp";
-import strategyImg from "../../assets/fresh/innovation_lab_technology_roadmaps.webp";
 import archImg from "../../assets/fresh/innovation_lab_emerging_architecture.webp";
+import strategyImg from "../../assets/fresh/innovation_lab_technology_roadmaps.webp";
 import deliveryImg from "../../assets/fresh/innovation_lab_open_source.webp";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const CARDS = [
   {
-    badge: "RESEARCH & LAB",
+    badge: "RESEARCH LAB",
     title: "Applied AI Research",
-    body: "We conduct proprietary research into foundational model fine-tuning, reasoning engines, and token compression.",
-    more: "Our dedicated research team explores open-source advancements, translating academic breakthroughs into resilient enterprise-grade applications.",
+    body: "Proprietary research into foundation model fine-tuning, reasoning engines, and mechanistic model interpretability.",
+    route: "/innovation/ai-research",
+    linkText: "Explore Research",
     image: inno1
   },
   {
-    badge: "PROTOTYPING",
+    badge: "RAPID POC",
     title: "Rapid POC Accelerator",
-    body: "Go from concept to a production-grade interactive prototype in under four weeks with our pre-built accelerators.",
-    more: "We build secure foundational sandboxes utilizing our pre-integrated LLM pipelines, proving ROI and user adoption before massive capital investment.",
+    body: "Go from concept to production-grade interactive prototype in under 14 days with our pre-built enterprise sandboxes.",
+    route: "/innovation/ai-prototypes",
+    linkText: "Explore Prototypes",
     image: inno2
   },
   {
-    badge: "INCUBATION",
+    badge: "CO-CREATION",
     title: "Venture AI Co-Creation",
-    body: "Partner with Devopstrio to build and launch novel AI-native software products and spinouts.",
-    more: "We provide dedicated technical co-founders, research engineers, and cloud infrastructure credits to accelerate zero-to-one product development.",
+    body: "Partner with Devopstrio to design, build, and launch novel AI-native software architectures and enterprise spinouts.",
+    route: "/innovation/innovation-programs",
+    linkText: "Explore Programs",
     image: inno3
   },
   {
     badge: "ARCHITECTURE",
     title: "Emerging Architecture Lab",
-    body: "Testing next-generation neural memory structures, vector indexing models, and edge hardware deployment.",
-    more: "We benchmark emerging frameworks and specialized AI silicon to ensure your long-term tech stack remains flexible and competitive.",
+    body: "Benchmarking next-generation neural memory structures, optical tensor processing, and edge hardware deployment.",
+    route: "/innovation/technology-exploration",
+    linkText: "Explore Tech Radar",
     image: archImg
   },
   {
     badge: "STRATEGY",
     title: "Strategic Technology Roadmaps",
-    body: "Anticipate market disruptions and future-proof your digital capabilities against rapid AI shifts.",
-    more: "Our leadership advises executive boards and CTOs on where to invest, what to build internally, and what to buy across the dynamic AI landscape.",
+    body: "Anticipate platform disruptions and future-proof enterprise digital capabilities against rapidly shifting model paradigms.",
+    route: "/innovation/product-roadmap",
+    linkText: "View Roadmap",
     image: strategyImg
   },
   {
-    badge: "ECOSYSTEM",
+    badge: "OPEN SOURCE",
     title: "Open Source Contributions",
-    body: "Actively contributing to open-weights AI models, agentic frameworks, and developer tooling worldwide.",
-    more: "We believe in transparent, secure innovation and publish open benchmarks and security tools to foster responsible enterprise AI adoption.",
+    body: "Actively contributing high-throughput inference kernels, agentic frameworks, and developer tooling to the global ecosystem.",
+    route: "/innovation/open-source",
+    linkText: "Explore Open Source",
     image: deliveryImg
   },
 ];
@@ -59,189 +66,281 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "110px 24px",
-    background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
+    padding: "96px 24px",
+    background: "#020203",
     fontFamily: FONT,
     boxSizing: "border-box",
     textAlign: "left",
   },
-  heading: {
-    maxWidth: "1280px",
-    margin: "0 auto 50px",
-    fontFamily: FONT,
-    color: "#FFFFFF",
-    fontSize: "clamp(1.9rem, 3.2vw, 2.5rem)",
-    fontWeight: 700,
-    letterSpacing: "-0.015em",
-  },
-  headingAccent: { color: "#E11D48" },
-
-  grid: {
+  container: {
     maxWidth: "1280px",
     margin: "0 auto",
+    width: "100%",
+  },
+  headerWrap: {
+    marginBottom: "44px",
+    textAlign: "left",
+  },
+  eyebrow: {
+    color: "#E11D48",
+    fontSize: "12px",
+    fontWeight: 600,
+    letterSpacing: "0.08em",
+    textTransform: "uppercase",
+    marginBottom: "8px",
+    display: "block",
+  },
+  heading: {
+    fontFamily: FONT,
+    color: "#FFFFFF",
+    fontSize: "clamp(1.85rem, 3vw, 2.4rem)",
+    fontWeight: 600,
+    letterSpacing: "-0.02em",
+    margin: 0,
+    lineHeight: 1.25,
+  },
+  headingAccent: {
+    color: "#E11D48",
+    fontWeight: 600,
+  },
+
+  grid: {
+    width: "100%",
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+    gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
     gap: "24px",
+    alignItems: "stretch",
   },
 
   card: {
     position: "relative",
-    borderRadius: "16px",
-    backgroundColor: "#0c0c0c",
+    borderRadius: "14px",
+    backgroundColor: "#0A0A0C",
     border: "1px solid rgba(255,255,255,0.08)",
     overflow: "hidden",
     cursor: "pointer",
     display: "flex",
     flexDirection: "column",
-    transition: "all 0.35s ease",
-  
     height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
+    transition: "border-color 0.25s ease, transform 0.25s ease",
+    boxSizing: "border-box",
+    isolation: "isolate",
+    transform: "translate3d(0, 0, 0)",
+    WebkitBackfaceVisibility: "hidden",
+    backfaceVisibility: "hidden",
   },
 
   imageWrap: {
     position: "relative",
     width: "100%",
-    height: "200px",
+    height: "210px",
+    minHeight: "210px",
+    maxHeight: "210px",
     overflow: "hidden",
+    flexShrink: 0,
+    backgroundColor: "#0A0A0C",
+    marginBottom: "-2px",
+    transform: "translate3d(0, 0, 0)",
+    WebkitBackfaceVisibility: "hidden",
+    backfaceVisibility: "hidden",
   },
   img: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
-    transition: "transform 0.5s ease",
+    display: "block",
+    transition: "transform 0.4s ease",
+    WebkitBackfaceVisibility: "hidden",
+    backfaceVisibility: "hidden",
   },
   imgOverlay: {
     position: "absolute",
     inset: 0,
-    background: "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(10,10,10,0.9) 100%)",
+    background: "linear-gradient(to bottom, transparent 40%, rgba(10,10,12,0.85) 85%, #0A0A0C 100%)",
+    pointerEvents: "none",
   },
   badge: {
     position: "absolute",
     top: "14px",
     left: "14px",
-    padding: "5px 12px",
+    padding: "4px 10px",
     borderRadius: "6px",
-    backgroundColor: "#E11D48",
-    color: "#FFFFFF",
+    backgroundColor: "rgba(10, 10, 12, 0.85)",
+    backdropFilter: "blur(6px)",
+    WebkitBackdropFilter: "blur(6px)",
+    border: "1px solid rgba(255,255,255,0.12)",
+    color: "#E11D48",
     fontFamily: FONT,
     fontSize: "11px",
-    fontWeight: 700,
-    letterSpacing: "0.05em",
+    fontWeight: 600,
+    letterSpacing: "0.08em",
     zIndex: 2,
   },
   textBlock: {
-    padding: "24px 26px 28px",
+    padding: "24px",
     flex: 1,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    boxSizing: "border-box",
+    backgroundColor: "#0A0A0C",
+    position: "relative",
+    zIndex: 1,
+  },
+  contentTop: {
     display: "flex",
     flexDirection: "column",
   },
   title: {
     fontFamily: FONT,
     fontSize: "1.2rem",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
-    margin: "0 0 12px 0",
-    letterSpacing: "-0.01em",
+    margin: "0 0 10px 0",
+    letterSpacing: "-0.015em",
+    lineHeight: 1.35,
+    minHeight: "54px",
+    display: "flex",
+    alignItems: "flex-start",
   },
   body: {
     fontFamily: FONT,
     fontSize: "14px",
-    color: "rgba(255,255,255,0.65)",
+    color: "rgba(255,255,255,0.68)",
     lineHeight: 1.6,
     margin: 0,
+    minHeight: "68px",
+    fontWeight: 400,
   },
-  moreText: {
-    fontFamily: FONT,
-    fontSize: "14px",
-    color: "rgba(255,255,255,0.85)",
-    lineHeight: 1.6,
-    margin: 0,
-    paddingTop: "14px",
-    borderTop: "1px solid rgba(255,255,255,0.1)",
-    marginTop: "14px",
+  footerRow: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingTop: "16px",
+    marginTop: "16px",
+    borderTop: "1px solid rgba(255,255,255,0.06)",
   },
+  linkText: {
+    color: "#FFFFFF",
+    fontSize: "13px",
+    fontWeight: 600,
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "6px",
+    letterSpacing: "0.01em",
+    transition: "color 0.2s ease, transform 0.2s ease",
+  },
+  linkIconWrap: {
+    width: "24px",
+    height: "24px",
+    borderRadius: "50%",
+    backgroundColor: "rgba(255,255,255,0.06)",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "#E11D48",
+    transition: "background-color 0.2s ease, transform 0.2s ease",
+  }
 };
 
 export default function InnovationCards() {
-  const [openCardIndex, setOpenCardIndex] = useState(null);
-
-  const toggleCard = (i) => {
-    setOpenCardIndex((prev) => (prev === i ? null : i));
-  };
+  const navigate = useNavigate();
 
   return (
     <section style={styles.section}>
-      <motion.h2
-        style={styles.heading}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      >
-        Accelerating Ideas with <span style={styles.headingAccent}>Agility and Expertise</span>
-      </motion.h2>
+      <div style={styles.container}>
+        <div style={styles.headerWrap}>
+          <span style={styles.eyebrow}>INNOVATION PILLARS</span>
+          <motion.h2
+            style={styles.heading}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          >
+            Accelerating Ideas with <span style={styles.headingAccent}>Agility and Expertise</span>
+          </motion.h2>
+        </div>
 
-      <div style={styles.grid}>
-        {CARDS.map((card, i) => {
-          const isOpen = openCardIndex === i;
-
-          return (
+        <div style={styles.grid} className="innovation-cards-responsive-grid">
+          {CARDS.map((card, i) => (
             <motion.div
               key={card.title}
-              onClick={() => toggleCard(i)}
-              style={{
-                ...styles.card,
-                borderColor: isOpen ? "rgba(225,29,72,0.6)" : "rgba(255,255,255,0.08)",
-                boxShadow: isOpen ? "0 14px 40px rgba(225,29,72,0.15)" : "none",
-              }}
-              initial={{ opacity: 0, y: 26 }}
+              onClick={() => navigate(card.route)}
+              style={styles.card}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.5, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
               whileHover={{
-                borderColor: "rgba(225,29,72,0.5)",
-                boxShadow: "0 12px 35px rgba(225,29,72,0.15)",
-                transform: "translateY(-4px)"
+                y: -2,
+                borderColor: "rgba(255,255,255,0.22)"
               }}
+              className="innovation-overview-card group"
             >
               <div style={styles.imageWrap}>
                 <img
                   src={card.image}
                   alt={card.title}
                   style={styles.img}
+                  className="card-thumbnail"
                 />
                 <div style={styles.imgOverlay} />
                 <div style={styles.badge}>{card.badge}</div>
               </div>
 
-              <motion.div style={styles.textBlock} layout>
-                <motion.h3 style={styles.title} layout>
-                  {card.title}
-                </motion.h3>
-                <motion.p style={styles.body} layout>
-                  {card.body}
-                </motion.p>
+              <div style={styles.textBlock}>
+                <div style={styles.contentTop}>
+                  <h3 style={styles.title}>
+                    {card.title}
+                  </h3>
+                  <p style={styles.body}>
+                    {card.body}
+                  </p>
+                </div>
 
-                <AnimatePresence>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
-                    >
-                      <p style={styles.moreText}>{card.more}</p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
+                <div style={styles.footerRow}>
+                  <span style={styles.linkText} className="card-link-text">
+                    {card.linkText}
+                  </span>
+                  <span style={styles.linkIconWrap} className="card-link-icon">
+                    <ArrowRight size={13} />
+                  </span>
+                </div>
+              </div>
             </motion.div>
-          );
-        })}
+          ))}
+        </div>
       </div>
+
+      <style>{`
+        .innovation-overview-card {
+          isolation: isolate;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transform: translate3d(0, 0, 0);
+        }
+        .innovation-overview-card:hover .card-thumbnail {
+          transform: scale(1.02);
+        }
+        .innovation-overview-card:hover .card-link-text {
+          color: #E11D48 !important;
+        }
+        .innovation-overview-card:hover .card-link-icon {
+          background-color: rgba(225,29,72,0.18) !important;
+          transform: translateX(3px);
+        }
+        @media (max-width: 1024px) {
+          .innovation-cards-responsive-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          }
+        }
+        @media (max-width: 680px) {
+          .innovation-cards-responsive-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

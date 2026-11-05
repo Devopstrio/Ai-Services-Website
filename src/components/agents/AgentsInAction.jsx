@@ -5,34 +5,51 @@ import agentGovernanceImg from "../../assets/agent-references/Overview/Want to S
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
-  section: {
+  outerSection: {
+    position: "relative",
+    width: "100%",
+    padding: "90px 24px",
+    background: "radial-gradient(circle, rgba(225,29,72,0.12) 0%, rgba(225,29,72,0) 70%)",
+    fontFamily: FONT,
+    boxSizing: "border-box",
+    textAlign: "left",
+  },
+  container: {
+    maxWidth: "1280px",
+    margin: "0 auto",
+    width: "100%",
+    boxSizing: "border-box",
+  },
+  boxWrapper: {
     position: "relative",
     width: "100%",
     display: "grid",
-    gridTemplateColumns: "1.1fr 1fr",
-    minHeight: "620px",
-    background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
-    fontFamily: FONT,
+    gridTemplateColumns: "1fr 1fr",
+    minHeight: "500px",
+    backgroundColor: "#0A0A0A",
+    borderRadius: "24px",
+    border: "1px solid rgba(255, 255, 255, 0.08)",
     overflow: "hidden",
+    boxShadow: "0 20px 50px rgba(0,0,0,0.6)",
     textAlign: "left",
   },
   imageCol: {
     position: "relative",
     overflow: "hidden",
-    backgroundColor: "#0a0a0a",
+    backgroundColor: "#000000",
+    minHeight: "360px",
   },
   imgEl: {
     position: "absolute",
-    top: "-8%",
-    left: 90,
+    inset: 0,
     width: "100%",
-    height: "106%",
-    objectFit: "cover",
+    height: "100%",
   },
   imgOverlay: {
     position: "absolute",
     inset: 0,
-    background: "linear-gradient(90deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.55) 100%), linear-gradient(0deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%)",
+    background:
+      "linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(22,6,8,0.9) 100%), linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 40%)",
   },
   glowDot: {
     position: "absolute",
@@ -48,7 +65,7 @@ const styles = {
     backgroundColor: "#160608",
     display: "flex",
     alignItems: "center",
-    padding: "80px 24px",
+    padding: "60px 48px",
     boxSizing: "border-box",
   },
   textColGlow: {
@@ -63,13 +80,13 @@ const styles = {
   inner: {
     position: "relative",
     zIndex: 1,
-    maxWidth: "480px",
+    maxWidth: "500px",
   },
   heading: {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(1.9rem, 3.2vw, 2.7rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     lineHeight: 1.25,
     letterSpacing: "-0.015em",
     margin: 0,
@@ -77,9 +94,10 @@ const styles = {
   paragraph: {
     marginTop: "24px",
     fontFamily: FONT,
-    color: "rgba(255,255,255,0.6)",
+    color: "rgba(255,255,255,0.65)",
     fontSize: "15.5px",
     lineHeight: 1.85,
+    margin: 0,
   },
   strong: {
     color: "#FFFFFF",
@@ -124,58 +142,80 @@ export default function AgentsInAction() {
     offset: ["start end", "end start"],
   });
 
-  const imgY = useTransform(scrollYProgress, [0, 1], ["-6%", "6%"]);
+  const imgY = useTransform(scrollYProgress, [0, 1], ["-4%", "4%"]);
   const glowX = useTransform(scrollYProgress, [0, 1], ["10%", "60%"]);
   const glowY = useTransform(scrollYProgress, [0, 1], ["70%", "20%"]);
 
   return (
-    <section ref={sectionRef} style={styles.section}>
-      <div style={styles.imageCol}>
-        <motion.div
-          style={{ ...styles.imgEl, backgroundColor: "#000", y: imgY }}
-          initial={{ opacity: 0, scale: 1.08 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <img src={agentGovernanceImg} alt="Agent Governance Architecture" style={{ width: "100%", height: "100%", objectFit: "contain", opacity: 0.85, padding: "20px" }} />
-        </motion.div>
-        <motion.div style={{ ...styles.glowDot, left: glowX, top: glowY }} />
-        <div style={styles.imgOverlay} />
+    <section ref={sectionRef} style={styles.outerSection}>
+      <div style={styles.container}>
+        <div style={styles.boxWrapper} className="agents-in-action-grid">
+          <div style={styles.imageCol} className="agents-in-action-image-col">
+            <motion.div
+              style={{ ...styles.imgEl, backgroundColor: "#000", y: imgY }}
+              initial={{ opacity: 0, scale: 1.05 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <img 
+                src={agentGovernanceImg} 
+                alt="Agent Governance Architecture" 
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", opacity: 0.8 }} 
+              />
+            </motion.div>
+            <motion.div style={{ ...styles.glowDot, left: glowX, top: glowY }} />
+            <div style={styles.imgOverlay} />
+          </div>
+
+          <div style={styles.textCol} className="agents-in-action-text-col">
+            <div style={styles.textColGlow} />
+            <motion.div
+              style={styles.inner}
+              initial={{ opacity: 0, y: 26 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <h2 style={styles.heading}>Want to See Agents in Action?</h2>
+              <p style={styles.paragraph}>
+                No problem. At <span style={styles.strong}>Devopstrio</span>, we
+                have a proven track record of deploying autonomous systems. Whether you're exploring your
+                first multi-agent orchestration or reimagining operations end-to-end,
+                our specialized AI Agents help you move faster, work smarter, and automate
+                safely. We build secure, highly capable autonomous agents that 
+                execute complex workflows reliably at scale. This is autonomy that works — 
+                engineered by Devopstrio.
+              </p>
+
+              <motion.button
+                onClick={() => window.location.href = "https://devopstrio.co.uk/contact"}
+                style={styles.ctaBtn}
+                whileHover={{ scale: 1.03, boxShadow: "0 8px 26px rgba(225, 29, 72, 0.4)" }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
+              >
+                See Agents in Action
+                <ArrowIcon />
+              </motion.button>
+            </motion.div>
+          </div>
+        </div>
       </div>
 
-      <div style={styles.textCol}>
-        <div style={styles.textColGlow} />
-        <motion.div
-          style={styles.inner}
-          initial={{ opacity: 0, y: 26 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <h2 style={styles.heading}>Want to See Agents in Action?</h2>
-          <p style={styles.paragraph}>
-            No problem. At <span style={styles.strong}>Devopstrio</span>, we
-            have a proven track record of deploying autonomous systems. Whether you're exploring your
-            first multi-agent orchestration or reimagining operations end-to-end,
-            our specialized AI Agents help you move faster, work smarter, and automate
-            safely. We build secure, highly capable autonomous agents that 
-            execute complex workflows reliably at scale. This is autonomy that works — 
-            engineered by Devopstrio.
-          </p>
-
-          <motion.button
-            onClick={() => window.location.href = "https://devopstrio.co.uk/contact"}
-            style={styles.ctaBtn}
-            whileHover={{ scale: 1.03, boxShadow: "0 8px 26px rgba(225, 29, 72, 0.4)" }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-          >
-            See Agents in Action
-            <ArrowIcon />
-          </motion.button>
-        </motion.div>
-      </div>
+      <style>{`
+        @media (max-width: 960px) {
+          .agents-in-action-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .agents-in-action-image-col {
+            min-height: 320px !important;
+          }
+          .agents-in-action-text-col {
+            padding: 48px 28px !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

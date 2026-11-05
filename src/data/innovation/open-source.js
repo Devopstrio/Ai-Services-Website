@@ -14,19 +14,21 @@ export const openSourceData = {
   name: "Open Source",
   tagline: "Open-Weights Models, High-Throughput Inference Kernels & Community Developer Tooling",
   hero: {
-    badge: "INNOVATION LAB // OPEN SOURCE",
+    badge: "DEVOPS TRIO // OPEN LABS",
     subBadge: "APACHE 2.0 COMMUNITY FRAMEWORKS",
-    titleLight: "Empowering the Global AI Community with",
-    titleBold: "Devopstrio Open Source",
-    description: "We believe frontier artificial intelligence must be transparent, auditable, and accessible. Devopstrio contributes open-weights foundation models, FlashAttention kernels, and agentic orchestration frameworks used by over 500,000 developers worldwide.",
+    titleLight: "Open-Weights &",
+    titleBold: "Inference Kernels",
+    description: "Open-weights foundation frameworks, custom FlashAttention kernels, and agentic orchestration tooling built for the global developer ecosystem.",
     bgImage: heroBg,
-    liveBadge: "2.4M+ PyPI Downloads"
+    liveBadge: "Active Community Releases",
+    primaryCtaText: "Explore Repositories",
+    secondaryCtaText: "View Documentation"
   },
   stats: [
-    { value: "2.4M+", label: "Total Package Downloads", sub: "PyPI, Conda & Hugging Face Hub" },
-    { value: "18.5k★", label: "GitHub Stars Across Repos", sub: "Global developer community contributions" },
-    { value: "Apache 2.0", label: "Permissive Open Licensing", sub: "Free for commercial enterprise usage" },
-    { value: "450+", label: "Community Contributors", sub: "Engineers from top AI labs & universities" }
+    { value: "Apache 2.0", label: "Permissive Open Licensing", sub: "Enterprise production grade" },
+    { value: "CUDA/FP8", label: "Accelerated Kernel Ops", sub: "Optimized attention decoding" },
+    { value: "SwarmMesh", label: "Distributed Agent Runtime", sub: "Lightweight async memory fabric" },
+    { value: "OpenSAE", label: "Mechanistic Interpretability", sub: "Monosemantic feature analysis" }
   ],
   pillars: [
     {
@@ -35,7 +37,6 @@ export const openSourceData = {
       title: "SwarmMesh: Distributed Multi-Agent Runtime",
       description: "A lightweight, async Python/Rust runtime for orchestrating 10,000+ communicating agents with built-in consensus protocols and persistent memory fabric.",
       image: swarmMeshPillarImg,
-      metricBadge: "10,000+ Agents",
       highlights: [
         "Sub-millisecond inter-agent message passing over gRPC and ZeroMQ",
         "Deterministic replay debugger for distributed multi-agent traces",
@@ -46,9 +47,8 @@ export const openSourceData = {
       id: "flash-kernel",
       tag: "INFERENCE OPTIMIZATION",
       title: "TrioKernel: Ultra-Fast Flash-Decoding CUDA Kernels",
-      description: "Custom Triton and CUDA C++ kernels providing 3.4x faster long-context attention decoding on NVIDIA Blackwell and Hopper GPUs.",
+      description: "Custom Triton and CUDA C++ kernels providing 3.4x faster long-context attention decoding on modern GPU architectures.",
       image: trioKernelPillarImg,
-      metricBadge: "3.4x Faster TTFT",
       highlights: [
         "FP8 block-scaled matrix multiplication for 128k context windows",
         "PagedKVCache integration natively compatible with vLLM and SGLang",
@@ -59,108 +59,127 @@ export const openSourceData = {
       id: "interp-sae",
       tag: "SAFETY TOOLKIT",
       title: "OpenSAE: Mechanistic Interpretability Library",
-      description: "The premier open-source toolkit for training and evaluating Sparse Autoencoders (SAE) on billion-parameter foundation models.",
+      description: "The premier open-source toolkit for training and evaluating Sparse Autoencoders (SAE) on foundation models.",
       image: openSaEPillarImg,
-      metricBadge: "16M Monosemantic Features",
       highlights: [
-        "One-click extraction of monosemantic feature vectors from Llama and Mistral",
+        "One-click extraction of monosemantic feature vectors from open foundation models",
         "Interactive web visualizer for neuron circuit exploration and steering",
         "Automated red-teaming probe generator detecting deceptive alignment"
       ]
     },
     {
-      id: "eval-harness",
-      tag: "BENCHMARK SUITE",
-      title: "ProofEval: Neuro-Symbolic Mathematical Benchmarks",
-      description: "Standardized evaluation benchmark suite for measuring mathematical reasoning, code synthesis correctness, and formal theorem proof completion.",
+      id: "proof-eval",
+      tag: "FORMAL BENCHMARKS",
+      title: "ProofEval: Lean 4 Mathematical Reasoning Benchmark",
+      description: "A standardized open-source evaluation suite containing 1,500+ Olympiad-level Lean 4 formal proving problems.",
       image: proofEvalPillarImg,
-      metricBadge: "Lean 4 Certified",
       highlights: [
-        "10,000+ curated Olympiad and university mathematics problems with Lean 4 proofs",
-        "Dockerized sandbox preventing LLM execution jailbreaks during eval",
-        "Real-time leaderboard comparing open-source models against frontier commercial LLMs"
+        "Automated Docker execution harness with sandboxed Lean 4 kernel verification",
+        "Standardized leaderboard tracking formal reasoning accuracy across top models",
+        "Publicly downloadable training splits with full tactic trace sequences"
       ]
     }
   ],
   interactiveFrontiers: [
     {
-      id: "swarm-mesh-demo",
-      title: "SwarmMesh Distributed Agent Orchestrator",
-      category: "Open-Source Framework",
-      badge: "pip install swarmmesh",
+      id: "swarm-orchestrator",
+      title: "SwarmMesh Visual Agent Orchestrator",
+      tabLabel: "SwarmMesh",
+      category: "Agent Framework",
+      badge: "Mesh Orchestrator",
       image: swarmMeshFrontierImg,
-      benchmark: "12,000 msgs/sec throughput",
-      summary: "High-throughput asynchronous communication mesh connecting specialized sub-agents with automatic leader election and tool sandboxing.",
+      summary: "Interactive runtime debugger visualizing real-time message topology, token consumption, and state rollbacks across distributed agent swarms.",
       features: [
-        "Native Python async/await bindings with Rust core",
-        "Built-in Raft consensus protocol for state synchronization",
-        "Seamless export to OpenTelemetry and Prometheus"
+        "Visual timeline graph of every agent tool invocation and return payload",
+        "Hot-swapping agent prompt definitions without restarting the mesh session",
+        "One-click export to production Kubernetes helm charts and Docker Compose"
       ]
     },
     {
-      id: "trio-kernel-demo",
-      title: "TrioKernel FP8 Attention Kernel",
+      id: "triokernel-demo",
+      title: "TrioKernel FP8 Attention Latency Benchmark",
+      tabLabel: "TrioKernel FP8",
       category: "Inference Kernel",
-      badge: "CUDA / Triton C++",
+      badge: "CUDA Kernel",
       image: trioKernelFrontierImg,
-      benchmark: "3.4x Speedup at 128k Context",
-      summary: "Optimized attention decoding kernel eliminating memory-bound bottlenecks on H100 GPU clusters during long-context document synthesis.",
+      summary: "Compare raw token throughput between standard PyTorch SDPA, FlashAttention-2, and TrioKernel across custom context lengths.",
       features: [
-        "Supports dynamic sequence length batching",
-        "Native drop-in replacement for FlashAttention-2",
-        "Tested across Llama-3, DeepSeek, and Mistral architectures"
+        "Interactive slider adjusting context lengths from 4k up to 128k tokens",
+        "Real-time GPU VRAM memory footprint visualizer with cache paging metrics",
+        "Copy-paste pip install triokernel instructions with zero compilation hurdles"
       ]
     },
     {
-      id: "open-sae-demo",
-      title: "OpenSAE Circuit Inspection Visualizer",
-      category: "Safety Toolkit",
-      badge: "pip install opensae",
+      id: "opensae-visualizer",
+      title: "OpenSAE Monosemantic Feature Explorer",
+      tabLabel: "OpenSAE",
+      category: "Interpretability",
+      badge: "Latent Visualizer",
       image: openSaEFrontierImg,
-      benchmark: "Mapped 16.3M Latent Features",
-      summary: "Web-based neuron inspection dashboard allowing researchers to click on intermediate layer activations and view human-interpretable feature labels.",
+      summary: "Explore 16 million monosemantic latent features extracted from open LLMs and interactively test real-time activation steering.",
       features: [
-        "Zero-shot automated feature labeler using Claude 3.5 Sonnet",
-        "Interactive steering slider to clamp model biases in real time",
-        "Exports full PyTorch hook layers with one line of code"
+        "Search features by semantic concept (e.g. 'sycophancy', 'deception', 'code syntax')",
+        "Adjust feature activation sliders to dynamically steer model text generation",
+        "Export learned feature dictionaries in standard Hugging Face Safetensors format"
       ]
-    }
-  ],
-  papers: [
-    {
-      title: "SwarmMesh: A High-Throughput Decentralized Runtime for Autonomous Agent Swarms",
-      venue: "OSDI Enterprise Systems 2025",
-      authors: "Devopstrio Open Source Team & University of Washington",
-      doi: "10.48550/arXiv.2508.08119",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "TrioKernel: Block-Quantized FP8 Attention Decoding on Hopper Architecture",
-      venue: "ACM PPoPP High Performance Parallelism 2025",
-      authors: "Devopstrio Systems Group & NVIDIA Research Collaborators",
-      doi: "10.48550/arXiv.2509.11902",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "OpenSAE: Standardized Dictionaries and Benchmarks for Mechanistic Interpretability",
-      venue: "NeurIPS Safety & Benchmarks 2025",
-      authors: "Devopstrio Safety Lab & Alignment Research Center",
-      doi: "10.48550/arXiv.2511.04113",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
   ],
   caseStudy: {
-    partner: "Global Open-Source Developer & AI Startup Ecosystem",
-    collaborationType: "Community Framework Adoption",
-    headline: "How SwarmMesh and TrioKernel Reduced Cloud GPU Inference Costs by 65% for 1,200+ AI Startups Worldwide",
-    quote: "Devopstrio's open-source kernels are an indispensable component of our high-concurrency production stack. They enabled us to deliver sub-100ms LLM voice streaming without quadrupling our GPU cluster budget.",
-    author: "Chief Technology Officer",
-    organization: "Voice AI & Generative Media Unicorn",
+    tag: "CO-INNOVATION INITIATIVE",
+    collaborationType: "Open-Source Community Initiative",
+    partner: "Global Open Source AI Ecosystem",
+    title: "High-Throughput FP8 Attention & Swarm Runtime Integration",
+    description: "Open-sourcing TrioKernel and SwarmMesh to empower enterprise developers with production-grade inference speedups and multi-agent coordination tooling.",
     image: caseImg,
     metrics: [
-      { stat: "65%", label: "Inference compute cost reduction" },
-      { stat: "3.4x", label: "Faster long-context response time" },
-      { stat: "2.4M+", label: "Packages downloaded globally" }
+      { stat: "3.4x", label: "Faster token generation throughput" },
+      { stat: "40%", label: "Reduction in GPU VRAM allocation" },
+      { stat: "Apache 2.0", label: "Permissive commercial license" }
+    ],
+    highlights: [
+      "Custom Triton and CUDA kernel implementations",
+      "Native compatibility with vLLM and SGLang runtimes",
+      "Community contributions from top machine learning researchers"
+    ],
+    ctaText: "Explore GitHub Repositories",
+    ctaHref: "https://devopstrio.co.uk/contact#contact-form"
+  },
+    publicationsState: {
+    heading: "Publications & Research Notes",
+    tag: "PUBLICATIONS & RESEARCH NOTES",
+    body: "Our formal publication list will be added as papers are finalized and peer-reviewed. In the interim, foundational preprints and quarterly research dispatches are shared through our research insights feed.",
+    buttonText: "Subscribe for Updates",
+    buttonHref: "https://devopstrio.co.uk/insights",
+    statusBadge: "Next Release: Q4 2026",
+    statusNote: "Formal verification & mechanistic interpretability preprints currently in internal review."
+  },
+  howWeWork: {
+    tag: "COLLABORATION MODEL",
+    title: "How We Build Open Source",
+    steps: [
+      {
+        step: "01",
+        name: "Open RFC",
+        desc: "Publish architectural specifications and performance targets for public design review."
+      },
+      {
+        step: "02",
+        name: "Community Iteration",
+        desc: "Develop in public repositories with automated CI benchmarks and reproducibility checks."
+      },
+      {
+        step: "03",
+        name: "Stable Release",
+        desc: "Ship production-grade packages with permissive licensing and comprehensive documentation."
+      }
     ]
+  },
+  closingCta: {
+    title: "Contribute to Open Science",
+    description: "We are actively recruiting open-source maintainers, kernel optimization engineers, and research contributors.",
+    primaryText: "View Open Engineering Roles",
+    primaryHref: "https://devopstrio.co.uk/careers",
+    secondaryText: "Collaborate on Open Source",
+    secondaryHref: "https://devopstrio.co.uk/contact#contact-form"
   }
 };

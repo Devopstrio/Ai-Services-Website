@@ -20,7 +20,7 @@ const styles = {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(2rem, 3.6vw, 3rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.02em",
   },
 
@@ -54,7 +54,7 @@ const styles = {
   label: {
     fontFamily: FONT,
     fontSize: "12px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.08em",
     textTransform: "uppercase",
     color: "rgba(255,255,255,0.85)",
@@ -70,7 +70,7 @@ const styles = {
     inset: 0,
     fontFamily: FONT,
     fontSize: "clamp(1.2rem, 1.9vw, 1.6rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
     lineHeight: 1.3,
     margin: 0,
@@ -91,7 +91,7 @@ const styles = {
     gap: "10px",
     fontFamily: FONT,
     fontSize: "14px",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
   },
   arrowBox: {
@@ -107,7 +107,7 @@ const styles = {
   statNumber: {
     fontFamily: FONT,
     fontSize: "clamp(2.6rem, 4vw, 3.4rem)",
-    fontWeight: 800,
+    fontWeight: 600,
     color: "#FFFFFF",
     lineHeight: 1,
     marginBottom: "18px",

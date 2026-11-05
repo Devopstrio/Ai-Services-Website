@@ -65,23 +65,29 @@ const styles = {
     boxSizing: "border-box",
     textAlign: "left",
   },
-  heading: {
+  container: {
     maxWidth: "1280px",
-    margin: "0 auto 50px",
+    margin: "0 auto",
+    width: "100%",
+  },
+  heading: {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(1.9rem, 3.2vw, 2.5rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.015em",
+    margin: "0 0 48px 0",
+    textAlign: "left",
   },
   headingAccent: { color: "#E11D48" },
 
   grid: {
-    maxWidth: "1280px",
-    margin: "0 auto",
+    width: "100%",
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gridAutoRows: "1fr",
     gap: "24px",
+    alignItems: "stretch",
   },
 
   card: {
@@ -93,19 +99,19 @@ const styles = {
     cursor: "pointer",
     display: "flex",
     flexDirection: "column",
-    transition: "all 0.35s ease",
-  
     height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
+    transition: "all 0.35s ease",
+    boxSizing: "border-box",
   },
 
   imageWrap: {
     position: "relative",
     width: "100%",
-    height: "200px",
+    height: "210px",
+    minHeight: "210px",
+    maxHeight: "210px",
     overflow: "hidden",
+    flexShrink: 0,
   },
   img: {
     width: "100%",
@@ -128,7 +134,7 @@ const styles = {
     color: "#FFFFFF",
     fontFamily: FONT,
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.05em",
     zIndex: 2,
   },
@@ -137,14 +143,20 @@ const styles = {
     flex: 1,
     display: "flex",
     flexDirection: "column",
+    justifyContent: "flex-start",
+    boxSizing: "border-box",
   },
   title: {
     fontFamily: FONT,
     fontSize: "1.2rem",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
     margin: "0 0 12px 0",
     letterSpacing: "-0.01em",
+    lineHeight: 1.35,
+    minHeight: "3.2rem",
+    display: "flex",
+    alignItems: "flex-start",
   },
   body: {
     fontFamily: FONT,
@@ -152,6 +164,8 @@ const styles = {
     color: "rgba(255,255,255,0.65)",
     lineHeight: 1.6,
     margin: 0,
+    minHeight: "4.5rem",
+    flex: 1,
   },
   moreText: {
     fontFamily: FONT,
@@ -174,74 +188,89 @@ export default function AgentsCards() {
 
   return (
     <section style={styles.section}>
-      <motion.h2
-        style={styles.heading}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      >
-        Powering Agents with <span style={styles.headingAccent}>Expertise and Trust</span>
-      </motion.h2>
+      <div style={styles.container}>
+        <motion.h2
+          style={styles.heading}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        >
+          Powering Agents with <span style={styles.headingAccent}>Expertise and Trust</span>
+        </motion.h2>
 
-      <div style={styles.grid}>
-        {CARDS.map((card, i) => {
-          const isOpen = openCardIndex === i;
+        <div style={styles.grid} className="agents-cards-responsive-grid">
+          {CARDS.map((card, i) => {
+            const isOpen = openCardIndex === i;
 
-          return (
-            <motion.div
-              key={card.title}
-              onClick={() => toggleCard(i)}
-              style={{
-                ...styles.card,
-                borderColor: isOpen ? "rgba(225,29,72,0.6)" : "rgba(255,255,255,0.08)",
-                boxShadow: isOpen ? "0 14px 40px rgba(225,29,72,0.15)" : "none",
-              }}
-              initial={{ opacity: 0, y: 26 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              whileHover={{
-                borderColor: "rgba(225,29,72,0.5)",
-                boxShadow: "0 12px 35px rgba(225,29,72,0.15)",
-                transform: "translateY(-4px)"
-              }}
-            >
-              <div style={styles.imageWrap}>
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  style={styles.img}
-                />
-                <div style={styles.imgOverlay} />
-                <div style={styles.badge}>{card.badge}</div>
-              </div>
+            return (
+              <motion.div
+                key={card.title}
+                onClick={() => toggleCard(i)}
+                style={{
+                  ...styles.card,
+                  borderColor: isOpen ? "rgba(225,29,72,0.6)" : "rgba(255,255,255,0.08)",
+                  boxShadow: isOpen ? "0 14px 40px rgba(225,29,72,0.15)" : "none",
+                }}
+                initial={{ opacity: 0, y: 26 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                whileHover={{
+                  borderColor: "rgba(225,29,72,0.5)",
+                  boxShadow: "0 12px 35px rgba(225,29,72,0.15)",
+                  transform: "translateY(-4px)"
+                }}
+              >
+                <div style={styles.imageWrap}>
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    style={styles.img}
+                  />
+                  <div style={styles.imgOverlay} />
+                  <div style={styles.badge}>{card.badge}</div>
+                </div>
 
-              <motion.div style={styles.textBlock} layout>
-                <motion.h3 style={styles.title} layout>
-                  {card.title}
-                </motion.h3>
-                <motion.p style={styles.body} layout>
-                  {card.body}
-                </motion.p>
+                <motion.div style={styles.textBlock} layout>
+                  <motion.h3 style={styles.title} layout>
+                    {card.title}
+                  </motion.h3>
+                  <motion.p style={styles.body} layout>
+                    {card.body}
+                  </motion.p>
 
-                <AnimatePresence>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
-                    >
-                      <p style={styles.moreText}>{card.more}</p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                  <AnimatePresence>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                      >
+                        <p style={styles.moreText}>{card.more}</p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
               </motion.div>
-            </motion.div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
+
+      <style>{`
+        @media (max-width: 1024px) {
+          .agents-cards-responsive-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+        @media (max-width: 680px) {
+          .agents-cards-responsive-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

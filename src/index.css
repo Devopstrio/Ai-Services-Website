@@ -20,7 +20,14 @@
 
   --font-sans: 'Inter', 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-editorial: 'DM Sans', system-ui, sans-serif;
+  
+  --font-weight-light: 400;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 600;
+  --font-weight-extrabold: 600;
+  --font-weight-black: 600;
 
   color-scheme: dark;
   color: var(--color-text-secondary);
@@ -260,4 +267,74 @@ img[src*="support-"],
 img[src*="finance-"],
 img[src*="future-"] {
   object-fit: contain !important;
+}
+
+
+/* ─── Tactile CTA Buttons (Universal Representative CTA) ─── */
+.btn-tactile {
+  --btn-theme-bg: #e11d48;
+  --btn-theme-hover: #be123c;
+  --btn-theme-focus: #f43f5e;
+  --btn-theme-text: #ffffff;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0;
+  display: inline-flex;
+  text-decoration: none;
+  outline: 2px solid transparent;
+  outline-offset: 4px;
+  border-radius: 9999px;
+  background-color: var(--btn-theme-bg);
+  color: var(--btn-theme-text);
+  transition:
+    background-color 200ms ease,
+    transform 150ms ease,
+    box-shadow 150ms ease;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+.btn-tactile:hover {
+  background-color: var(--btn-theme-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(225, 29, 72, 0.35);
+}
+.btn-tactile:active {
+  transform: translateY(0);
+}
+.btn-tactile:focus-visible {
+  outline-color: var(--btn-theme-focus);
+}
+.btn-tactile > div {
+  position: relative;
+  pointer-events: none;
+  border-radius: 9999px;
+  width: 100%;
+  height: 100%;
+}
+.btn-tactile > div > span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.4rem;
+  gap: 0.4rem;
+}
+/* Tactile Secondary Button (Obsidian Zinc) */
+.btn-tactile-secondary {
+  --btn-theme-bg: #18181b;
+  --btn-theme-hover: #27272a;
+  --btn-theme-text: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+.btn-tactile-secondary:hover {
+  background-color: var(--btn-theme-hover);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }

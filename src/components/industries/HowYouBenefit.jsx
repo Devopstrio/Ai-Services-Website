@@ -620,7 +620,7 @@ function parseBold(str) {
   return str.split(/(\*\*[^*]+\*\*)/g).map((chunk, i) => {
     if (chunk.startsWith("**") && chunk.endsWith("**")) {
       return (
-        <strong key={i} style={{ color: "#FFFFFF", fontWeight: 700 }}>
+        <strong key={i} style={{ color: "#FFFFFF", fontWeight: 600 }}>
           {chunk.slice(2, -2)}
         </strong>
       );
@@ -647,7 +647,7 @@ const styles = {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(1.9rem, 3.2vw, 2.5rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.015em",
   },
   grid: {
@@ -703,7 +703,7 @@ const styles = {
   panelTitle: {
     fontFamily: FONT,
     fontSize: "1.2rem",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#E11D48",
     margin: 0,
     marginBottom: "14px",

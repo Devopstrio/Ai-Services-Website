@@ -1,9 +1,9 @@
 import heroBg from "../../assets/unique_agents/legal_contract_review.jpg";
-import riskImg from "../../assets/fresh/cyber_digital_matrix.jpg";
-import esignImg from "../../assets/unique_solutions/doc_intel_ocr.jpg";
-import playImg from "../../assets/fresh/talent_intelligence_portal.jpg";
-import postImg from "../../assets/fresh/bajaj_finance_bharti_airtel_partnership_financial__1737355875195_1770527459556.webp";
-import caseImg from "../../assets/unique_agents/legal_agent_case.jpg";
+import riskImg from "../../assets/products/esigniva/cryptographic_audit.webp";
+import esignImg from "../../assets/products/esigniva/digital_signatures.webp";
+import playImg from "../../assets/products/esigniva/workflow_routing.webp";
+import postImg from "../../assets/products/esigniva/template_automation.webp";
+import caseImg from "../../assets/products/esigniva/case_study.webp";
 
 export const safesignaiData = {
   id: "safesign-ai",

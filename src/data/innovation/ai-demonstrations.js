@@ -14,28 +14,29 @@ export const aiDemonstrationsData = {
   name: "AI Demonstrations",
   tagline: "Live Interactive Sandboxes, Benchmark Replays & Real-Time Swarm Visualizers",
   hero: {
-    badge: "INNOVATION LAB // LIVE DEMOS",
+    badge: "DEVOPS TRIO // LIVE DEMOS",
     subBadge: "INTERACTIVE RUNTIMES & BENCHMARKS",
-    titleLight: "Experience the Future Live with",
-    titleBold: "Devopstrio AI Demonstrations",
-    description: "Interact directly with live foundation models, emergent multi-agent simulations, and autonomous coding swarms running on dedicated cloud GPU clusters.",
+    titleLight: "Interactive Sandboxes &",
+    titleBold: "AI Demonstrations",
+    description: "Experience live foundation models, emergent multi-agent simulations, and sub-100ms conversational audio streaming in sandboxed environments.",
     bgImage: heroBg,
-    liveBadge: "Live Cluster Online"
+    liveBadge: "Live Cluster Online",
+    primaryCtaText: "Launch Sandboxes",
+    secondaryCtaText: "View Demonstrations"
   },
   stats: [
-    { value: "10+ Demos", label: "Interactive Live Sandboxes", sub: "Live model inference with real-time telemetry" },
-    { value: "< 100ms", label: "End-to-End Latency", sub: "Ultra-fast streaming token generation" },
-    { value: "50,000+", label: "Interactive Sessions Run", sub: "By enterprise engineers & researchers" },
-    { value: "100%", label: "Live Code Execution", sub: "Secure sandboxed WebAssembly & Python execution" }
+    { value: "Interactive", label: "Live Model Sandboxes", sub: "Real-time telemetry and execution" },
+    { value: "Streaming", label: "Sub-100ms Duplex Audio", sub: "Natural conversational turn-taking" },
+    { value: "Swarm", label: "Agentic Coordination", sub: "Decentralized bidding visualizers" },
+    { value: "Wasm/GPU", label: "Isolated Execution", sub: "Secure sandboxed runtime environments" }
   ],
   pillars: [
     {
       id: "swarm-visualizer",
       tag: "AGENTIC SIMULATION",
       title: "Real-Time 1,000-Agent Market Simulator",
-      description: "Visualizing emergent decentralized coordination as 1,000 autonomous agents negotiate, bid, and optimize multi-cloud computing resources in real time.",
+      description: "Visualizing emergent decentralized coordination as autonomous agents negotiate, bid, and optimize computing resources in real time.",
       image: marketAuctionPillarImg,
-      metricBadge: "1,000 Live Agents",
       highlights: [
         "Live interactive graph showing agent communication topology and message throughput",
         "Configurable private utility functions and bidding strategies",
@@ -46,121 +47,139 @@ export const aiDemonstrationsData = {
       id: "voice-streaming-demo",
       tag: "SUB-100MS MULTIMODAL",
       title: "Sub-100ms Duplex Voice Conversational AI",
-      description: "Experience ultra-low-latency voice conversational agents with native emotion modulation, dynamic interruption handling, and tool execution.",
+      description: "Experience low-latency voice conversational agents with native emotion modulation, dynamic interruption handling, and tool execution.",
       image: duplexVoicePillarImg,
-      metricBadge: "85ms Voice Latency",
       highlights: [
-        "End-to-end neural audio-to-audio streaming with zero intermediate text bottleneck",
+        "End-to-end neural audio-to-audio streaming with minimal latency bottlenecks",
         "Natural conversational turn-taking with graceful barge-in handling",
-        "Supports 35+ global languages with regional dialect adaptation"
+        "Broad language support with regional dialect adaptation"
       ]
     },
     {
       id: "vision-spatial-demo",
       tag: "SPATIAL REASONING",
       title: "Real-Time 3D Spatial Video Inspection",
-      description: "Interact with multi-modal vision foundation models identifying micro-defects, safety violations, and component wear on 4K industrial video streams.",
+      description: "Interact with multi-modal vision foundation models identifying micro-defects, safety conditions, and component wear on high-resolution industrial video streams.",
       image: defectInspectorPillarImg,
-      metricBadge: "60 FPS 4K Inspection",
       highlights: [
-        "Zero-shot defect bounding box localization with 99.4% precision",
-        "Continuous 3D spatial coordinate tracking across moving factory assembly lines",
-        "Instant PDF audit summary generation with timestamped video proof frames"
+        "Zero-shot defect bounding box localization with high precision",
+        "Continuous 3D spatial coordinate tracking across moving assembly lines",
+        "Instant audit summary generation with timestamped video proof frames"
       ]
     },
     {
-      id: "formal-code-demo",
-      tag: "DETERMINISTIC CODE",
-      title: "Jira-to-PR Autonomous Coding Sandbox",
-      description: "Watch an autonomous software engineering agent ingest complex Jira issue descriptions, reproduce bugs in isolated test containers, and issue verified PRs.",
+      id: "code-swarm-demo",
+      tag: "AUTONOMOUS DEVOPS",
+      title: "Autonomous Jira-to-PR Coding Swarm",
+      description: "Watch a team of 4 specialized AI agents read an issue ticket, locate relevant files in a repository, write tests, and submit a working pull request.",
       image: jiraToPrPillarImg,
-      metricBadge: "100% Verified Tests",
       highlights: [
-        "Automated reproduction unit test synthesis before code modification",
-        "Self-healing syntax and type error loops in under 30 seconds",
-        "Generates detailed architectural pull request summaries with diff explanations"
+        "Live terminal view showing agents executing linters, unit tests, and git commands",
+        "Automated rollback if synthetic test suites fail during compilation",
+        "Full diff view highlighting generated code changes and architectural justification"
       ]
     }
   ],
   interactiveFrontiers: [
     {
-      id: "live-swarm-demo",
-      title: "Multi-Agent Cloud Resource Auction",
-      category: "Autonomous Swarm",
-      badge: "1,000 Agents Live",
+      id: "market-auction-sim",
+      title: "Live Decentralized Resource Auction",
+      tabLabel: "Market Auction",
+      category: "Multi-Agent Sim",
+      badge: "Auction Sim",
       image: marketAuctionFrontierImg,
-      benchmark: "99.1% Pareto Efficiency",
-      summary: "Launch a live multi-agent simulation where 1,000 sub-agents compete in a Dutch auction to allocate serverless GPU workloads at lowest aggregate cost.",
+      summary: "Control simulated supply shocks and observe how autonomous agents dynamically adapt spot compute prices through decentralized auctions.",
       features: [
-        "Interactive parameter slider for market volatility and bidder risk tolerance",
-        "Live visual chart tracking aggregate cloud spend reduction",
-        "Exports full transaction ledger for audit inspection"
+        "Slider controlling sudden node outages and workload spikes",
+        "Real-time chart tracking clearing prices vs theoretical Nash equilibrium",
+        "Inspect individual agent decision logs explaining their bidding logic"
       ]
     },
     {
-      id: "live-voice-demo",
-      title: "Ultra-Low Latency Duplex Voice Agent",
-      category: "Multimodal Voice",
-      badge: "85ms Latency",
+      id: "duplex-voice-sandbox",
+      title: "Interactive Voice Latency Sandbox",
+      tabLabel: "Duplex Voice",
+      category: "Audio Streaming",
+      badge: "Voice Demo",
       image: duplexVoiceFrontierImg,
-      benchmark: "Sub-100ms Turnaround",
-      summary: "Experience native neural audio streaming with zero perceptible delay, tested under simulated high-jitter cellular network conditions.",
+      summary: "Speak directly into your microphone to test voice agent responsiveness, interrupt mid-sentence, and evaluate natural response pacing.",
       features: [
-        "Real-time audio waveform visualizer with sentiment inflection markers",
-        "Handles conversational interruptions without breaking context",
-        "Demonstrates dynamic CRM database lookup during live speech"
+        "Live oscilloscope showing voice input vs agent response audio waves",
+        "Toggle background noise filters to test industrial factory robustness",
+        "Switch between conversational personas: support, technical lead, and executive"
       ]
     },
     {
-      id: "live-vision-demo",
-      title: "Industrial 4K Video Defect Inspector",
+      id: "spatial-inspector-sandbox",
+      title: "Interactive 4K Component Defect Inspector",
+      tabLabel: "Spatial Inspection",
       category: "Computer Vision",
-      badge: "60 FPS Inspection",
+      badge: "Vision QC",
       image: spatialInspectionFrontierImg,
-      benchmark: "99.4% Defect Catch Rate",
-      summary: "Upload or stream live high-definition video to observe real-time spatial object tracking, anomaly detection, and automated alert triggering.",
+      summary: "Upload or select sample industrial video clips to watch our spatial vision model detect hairline solder fractures and component misalignments.",
       features: [
-        "Sub-millimeter defect detection on automotive and electronic assemblies",
-        "Heatmap visualization highlighting anomalous component stress regions",
-        "Direct export to Siemens and Rockwell automation PLCs"
+        "Side-by-side view showing raw video vs model segmentation masks",
+        "Adjust confidence thresholds in real time to balance precision and recall",
+        "Export structured JSON defect reports with precise spatial coordinates"
       ]
-    }
-  ],
-  papers: [
-    {
-      title: "Design Principles for Real-Time Duplex Neural Audio Streaming Systems",
-      venue: "ACM Multimedia Systems 2025",
-      authors: "Devopstrio Multimodal Team & Stanford CCRMA",
-      doi: "10.48550/arXiv.2509.09812",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Interactive Visualization and Tracing of Distributed Multi-Agent Consensus",
-      venue: "IEEE VIS Visual Analytics 2025",
-      authors: "Devopstrio Visualization Group & MIT Media Lab",
-      doi: "10.48550/arXiv.2510.11429",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Zero-Shot Spatial 3D Video Inspection for High-Velocity Industrial Assembly",
-      venue: "CVPR Industrial Vision 2025",
-      authors: "Devopstrio Vision Lab & University of Oxford",
-      doi: "10.48550/arXiv.2511.03190",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
   ],
   caseStudy: {
-    partner: "Global Automotive OEM & Industrial Manufacturing Leader",
-    collaborationType: "Live Demonstration Pilot",
-    headline: "How Live Video Defect Inspection Saved \$18.4M in Preventable Assembly Recalls in Year One",
-    quote: "Testing Devopstrio's live computer vision demonstration on our actual stamping plant video feeds convinced our executive committee in 15 minutes. It detected micro-fissures that human inspectors missed.",
-    author: "Global Head of Quality Assurance",
-    organization: "Leading Global Automotive Manufacturer",
+    tag: "CO-INNOVATION INITIATIVE",
+    collaborationType: "Interactive Sandbox Demonstration",
+    partner: "Leading Automotive Tier-1 Supplier",
+    title: "High-Speed Spatial Defect Inspection & Telemetry",
+    description: "Demonstrating real-time 3D spatial computer vision across automated assembly lines, confirming micro-defect detection with zero false-alarm line halts.",
     image: caseImg,
     metrics: [
-      { stat: "99.4%", label: "Micro-defect detection accuracy" },
-      { stat: "\$18.4M", label: "Saved in preventable warranty recalls" },
-      { stat: "60 FPS", label: "Real-time 4K inspection throughput" }
+      { stat: "60 FPS", label: "High-resolution video inspection rate" },
+      { stat: "Sub-100ms", label: "End-to-end classification latency" },
+      { stat: "Zero-Shot", label: "New defect pattern adaptation" }
+    ],
+    highlights: [
+      "Hardware-accelerated edge inference on industrial nodes",
+      "Live operator review dashboard with visual proof frames",
+      "Immediate automated reporting integrated into plant MES"
+    ],
+    ctaText: "Schedule Interactive Demo",
+    ctaHref: "https://devopstrio.co.uk/contact#contact-form"
+  },
+    publicationsState: {
+    heading: "Publications & Research Notes",
+    tag: "PUBLICATIONS & RESEARCH NOTES",
+    body: "Our formal publication list will be added as papers are finalized and peer-reviewed. In the interim, foundational preprints and quarterly research dispatches are shared through our research insights feed.",
+    buttonText: "Subscribe for Updates",
+    buttonHref: "https://devopstrio.co.uk/insights",
+    statusBadge: "Next Release: Q4 2026",
+    statusNote: "Formal verification & mechanistic interpretability preprints currently in internal review."
+  },
+  howWeWork: {
+    tag: "COLLABORATION MODEL",
+    title: "How to Experience Our Sandboxes",
+    steps: [
+      {
+        step: "01",
+        name: "Select Sandbox",
+        desc: "Choose from agent swarms, sub-100ms duplex voice, or 3D spatial computer vision."
+      },
+      {
+        step: "02",
+        name: "Test Workload",
+        desc: "Provide custom test inputs or evaluate live benchmarks across real-time telemetry."
+      },
+      {
+        step: "03",
+        name: "Deploy Architecture",
+        desc: "Transition sandbox configurations into dedicated enterprise environments."
+      }
     ]
+  },
+  closingCta: {
+    title: "Build Next-Generation AI Experiences",
+    description: "Our demonstration team builds interactive sandboxes and proof-of-concept experiences for world-class enterprise clients.",
+    primaryText: "Join Our Engineering Team",
+    primaryHref: "https://devopstrio.co.uk/careers",
+    secondaryText: "Request a Private Demonstration",
+    secondaryHref: "https://devopstrio.co.uk/contact#contact-form"
   }
 };

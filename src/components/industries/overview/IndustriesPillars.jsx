@@ -149,7 +149,7 @@ export function IndustriesPillars() {
                         to: pillar.ctaHref,
                         className: "inline-flex items-center justify-between w-full pt-3 border-t border-zinc-800/80 group/all"       ,}
 
-                        , React.createElement('span', { className: "text-sm md:text-base font-bold text-rose-500 group-hover/all:text-rose-400 transition-colors"     ,}, "Explore "
+                        , React.createElement('span', { className: "text-sm md:text-base font-semibold text-rose-500 group-hover/all:text-rose-400 transition-colors"     ,}, "Explore "
                            , pillar.title.toLowerCase(), " capabilities"
                         )
                         , React.createElement('div', { className: "w-8 h-8 rounded-full border border-rose-500/40 bg-rose-500/10 flex items-center justify-center text-rose-500 group-hover/all:bg-rose-600 group-hover/all:text-white group-hover/all:border-rose-600 group-hover/all:scale-110 transition-all duration-300 shadow-[0_0_20px_rgba(225,29,72,0.35)]"                ,}

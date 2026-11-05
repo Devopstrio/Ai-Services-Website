@@ -682,7 +682,7 @@ function SlideCard({ slide }) {
             color: COLORS.white,
             fontFamily: FONT,
             fontSize: "12px",
-            fontWeight: 700,
+            fontWeight: 600,
             letterSpacing: "0.01em",
           }}
         >
@@ -730,7 +730,7 @@ function SlideCard({ slide }) {
             color: COLORS.bg,
             fontFamily: FONT,
             fontSize: "13.5px",
-            fontWeight: 700,
+            fontWeight: 600,
             alignSelf: "flex-start",
           }}
         >
@@ -849,7 +849,7 @@ export function WhatsHappening() {
               margin: 0,
               fontFamily: FONT,
               fontSize: "clamp(30px, 4vw, 40px)",
-              fontWeight: 700,
+              fontWeight: 600,
               color: COLORS.white,
               letterSpacing: "-0.02em",
             }}

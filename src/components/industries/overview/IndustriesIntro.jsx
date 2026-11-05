@@ -27,7 +27,7 @@ export function IndustriesIntro() {
             )
 
             , React.createElement(Reveal, { delay: 0.05,}
-              , React.createElement('h2', { className: "text-2xl md:text-3xl font-bold tracking-tight leading-tight text-white"     ,}, "We bridge the gap between "
+              , React.createElement('h2', { className: "text-2xl md:text-3xl font-semibold tracking-tight leading-tight text-white"     ,}, "We bridge the gap between "
                      , React.createElement('span', { className: "text-[#E11D48]",}, "complex software design"  ), " and domain-specific regulatory constraints."
               )
             )

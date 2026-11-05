@@ -68,7 +68,7 @@ const styles = {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(2rem, 3.6vw, 3rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.02em",
     margin: 0,
     marginBottom: "22px",
@@ -139,7 +139,7 @@ const styles = {
   imgTag: {
     fontFamily: FONT,
     fontSize: "10.5px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.08em",
     color: "rgba(255,255,255,0.85)",
   },
@@ -164,7 +164,7 @@ const styles = {
   hoverTag: {
     fontFamily: FONT,
     fontSize: "10.5px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.08em",
     color: "#3a2f28",
   },
@@ -190,7 +190,7 @@ const styles = {
     gap: "8px",
     fontFamily: FONT,
     fontSize: "12.5px",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#E11D48",
   },
 };

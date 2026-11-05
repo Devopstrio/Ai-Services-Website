@@ -201,7 +201,7 @@ const styles = {
     display: "inline-block",
     fontFamily: FONT,
     fontSize: "12px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.1em",
     textTransform: "uppercase",
     color: "#E11D48",

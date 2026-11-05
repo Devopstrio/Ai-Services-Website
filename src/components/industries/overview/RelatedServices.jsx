@@ -65,7 +65,7 @@ export function RelatedServices() {
 
                 /* Bottom Row: Big Title without description */
                 , React.createElement('div', { className: "relative z-10 mt-auto"  ,}
-                  , React.createElement('h3', { className: "text-xl sm:text-2xl font-bold text-white group-hover:text-rose-400 transition-colors duration-300 leading-snug font-sans"        ,}
+                  , React.createElement('h3', { className: "text-xl sm:text-2xl font-semibold text-white group-hover:text-rose-400 transition-colors duration-300 leading-snug font-sans"        ,}
                     , srv.title
                   )
                 )

@@ -51,7 +51,7 @@ const styles = {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(1.8rem, 3.2vw, 2.6rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     lineHeight: 1.25,
     letterSpacing: "-0.01em",
     margin: 0,
@@ -145,18 +145,16 @@ const styles = {
     textTransform: "uppercase",
     color: "#FDA4AF",
     marginBottom: "10px",
-    textShadow: "0 1px 8px rgba(0,0,0,0.6)",
   },
   leftTitle: {
     fontFamily: FONT,
     fontSize: "clamp(1.6rem, 2.4vw, 2.1rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
     lineHeight: 1.2,
     letterSpacing: "-0.025em",
     margin: 0,
     maxWidth: "440px",
-    textShadow: "0 2px 14px rgba(0,0,0,0.65)",
   },
   leftLinkRow: {
     display: "flex",
@@ -167,7 +165,6 @@ const styles = {
     fontFamily: FONT,
     fontSize: "14px",
     fontWeight: 600,
-    textShadow: "0 1px 6px rgba(0,0,0,0.5)",
   },
 
   /* right grid */
@@ -238,17 +235,15 @@ const styles = {
     textTransform: "uppercase",
     color: "#FDA4AF",
     marginBottom: "8px",
-    textShadow: "0 1px 6px rgba(0,0,0,0.6)",
   },
   cardTitle: {
     fontFamily: FONT,
     fontSize: "16px",
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
     lineHeight: 1.25,
     letterSpacing: "-0.02em",
     margin: 0,
-    textShadow: "0 2px 12px rgba(0,0,0,0.65)",
   },
 };
 

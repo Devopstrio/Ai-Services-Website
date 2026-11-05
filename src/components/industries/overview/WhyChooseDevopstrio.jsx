@@ -56,7 +56,7 @@ export function WhyChooseDevopstrio() {
                     , item.icon
                   )
 
-                  , React.createElement('h4', { className: "text-base font-bold text-white mb-2 tracking-tight transition-colors duration-300"      ,}
+                  , React.createElement('h4', { className: "text-base font-semibold text-white mb-2 tracking-tight transition-colors duration-300"      ,}
                     , item.title
                   )
 

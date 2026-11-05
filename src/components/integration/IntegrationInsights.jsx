@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 
 import insight1 from "../../assets/fresh/integration_microservices.jpg";
 import insight2 from "../../assets/fresh/telecom_5g_network_tower.jpg";
@@ -10,51 +10,92 @@ import insight6 from "../../assets/fresh/agent_security_soc.jpg";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
-const ITEMS = [
+// Integration keywords for dynamic matching
+const INTEGRATION_KEYWORDS = [
+  "integration",
+  "integrations",
+  "api",
+  "apis",
+  "microservices",
+  "cloud architecture",
+  "architecture",
+  "automation",
+  "workflow",
+  "mesh",
+  "middleware",
+  "connectors",
+  "saas",
+  "migration",
+  "etl",
+  "kafka",
+  "zero-trust",
+  "identity",
+  "power platform",
+  "azure",
+  "aws",
+  "gcp",
+  "infrastructure",
+  "resilience"
+];
+
+// Curated high-relevance defaults ensuring 100% uptime
+const DEFAULT_INTEGRATION_ITEMS = [
   {
-    tag: "ARCHITECTURE GUIDE",
-    title: "Designing Real-Time Event Meshes with Apache Kafka",
-    desc: "How to decouple monolithic services and establish high-throughput message buses for distributed AI microservices.",
-    image: insight1
+    tag: "WORKFLOW AUTOMATION",
+    title: "From Manual Workflows to Intelligent Operations: How Devopstrio Scales Power Platform Automation",
+    desc: "How enterprises eliminate operational bottlenecks and streamline cross-system workflows with robust automated pipelines.",
+    image: "https://devopstrio.co.uk/api/insights-proxy/api/images/6a91618a1827f20aab9041b0",
+    fallback: insight1,
+    href: "https://devopstrio.co.uk/insights/client-transformations/from-manual-workflows-to-intelligent-operations-how-devopstrio-scales-power-platform-automation-t214qj"
   },
   {
-    tag: "SECURITY BRIEF",
-    title: "Zero-Trust Service-to-Service Authentication",
-    desc: "Enforcing mTLS, SPIFFE/SPIRE workload identities, and token verification across hybrid Kubernetes clusters.",
-    image: insight2
+    tag: "CLOUD MIGRATION",
+    title: "Azure to AWS Migration: Turn Cloud Transformation Into a Business Advantage",
+    desc: "A strategic architectural playbook for migrating multi-tier enterprise workloads between hyperscalers with minimal downtime.",
+    image: "https://devopstrio.co.uk/api/insights-proxy/api/images/6a95539c83a0ae7068d8336c",
+    fallback: insight2,
+    href: "https://devopstrio.co.uk/insights/blogs/azure-to-aws-migration-turn-cloud-transformation-into-a-business-advantage-50zv8c"
   },
   {
-    tag: "CASE STUDY",
-    title: "FinTech Giant Unifies 40 Core Banking APIs",
-    desc: "Migrating from point-to-point SOAP endpoints to a centralized GraphQL and gRPC mesh with 99.999% uptime.",
-    image: insight3
+    tag: "CLOUD ARCHITECTURE",
+    title: "Why Does Cloud Architecture Matter?",
+    desc: "Design secure, scalable, and reliable cloud environments for your business with modern architectural foundations.",
+    image: "https://devopstrio.co.uk/api/insights-proxy/api/images/6ae07b6032e71524990bd3f4",
+    fallback: insight3,
+    href: "https://devopstrio.co.uk/insights/blogs/why-does-cloud-architecture-matter-7unrl1"
   },
   {
-    tag: "ENTERPRISE PATTERN",
-    title: "Change Data Capture (CDC) for AI Context Memory",
-    desc: "Streaming database transactions into vector stores in real time to power dynamic LLM retrieval engines.",
-    image: insight4
+    tag: "INFRASTRUCTURE",
+    title: "How Can Businesses Make Their Cloud Infrastructure More Reliable?",
+    desc: "Strategies for multi-region high availability, automated failover meshes, and continuous service resilience.",
+    image: "https://devopstrio.co.uk/api/insights-proxy/api/images/6ae32b19cdb5a7dc110e5762",
+    fallback: insight4,
+    href: "https://devopstrio.co.uk/insights/blogs/how-can-businesses-make-their-cloud-infrastructure-more-reliable-7klzbr"
   },
   {
-    tag: "INTEGRATION GUIDE",
-    title: "Building Resilient SaaS Connectors at Scale",
-    desc: "Handling third-party API rate limits, exponential backoff, and idempotent webhook listeners in production.",
-    image: insight5
+    tag: "ZERO-TRUST ACCESS",
+    title: "From Password Dependence to Identity Intelligence: Quantifying the Value of Zero-Trust Access",
+    desc: "Implementing workload identity, mTLS service meshes, and continuous verification across distributed enterprise endpoints.",
+    image: "https://devopstrio.co.uk/api/insights-proxy/api/images/6a9133bdb0aa570c70b766bc",
+    fallback: insight5,
+    href: "https://devopstrio.co.uk/insights/impact-metrics/from-password-dependence-to-identity-intelligence-quantifying-the-value-of-zero-trust-access-7m40ff"
   },
   {
-    tag: "CASE STUDY",
-    title: "Global Retailer Connects 2,000 Stores to Cloud AI",
-    desc: "Real-time inventory synchronization across multi-region edge servers cut stockout incidents by 45%.",
-    image: insight6
-  },
+    tag: "BUSINESS RESILIENCE",
+    title: "From Backup to Business Resilience: How Devopstrio Modernizes Cloud Recovery Strategies",
+    desc: "Building immutable data pipelines, automated cross-cloud failovers, and transactional consistency across distributed databases.",
+    image: "https://devopstrio.co.uk/api/insights-proxy/api/images/6a955c9b83a0ae7068d83371",
+    fallback: insight6,
+    href: "https://devopstrio.co.uk/insights/client-transformations/from-backup-to-business-resilience-how-devopstrio-modernizes-cloud-recovery-strategies-u97m4j"
+  }
 ];
 
 const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "90px 0 110px",
-    background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
+    padding: "96px 0 110px",
+    background: "#020203",
     fontFamily: FONT,
     boxSizing: "border-box",
     overflow: "hidden",
@@ -64,15 +105,23 @@ const styles = {
     padding: "0 24px",
     maxWidth: "1280px",
     margin: "0 auto 34px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-end",
+    flexWrap: "wrap",
+    gap: "16px",
   },
   heading: {
     fontFamily: FONT,
     color: "#FFFFFF",
-    fontSize: "clamp(2rem, 3.6vw, 3rem)",
-    fontWeight: 700,
+    fontSize: "clamp(2rem, 3.4vw, 2.8rem)",
+    fontWeight: 600,
     letterSpacing: "-0.02em",
     margin: 0,
-    marginBottom: "22px",
+  },
+  headingAccent: {
+    color: "#E11D48",
+    fontWeight: 600,
   },
   viewAll: {
     display: "inline-flex",
@@ -82,29 +131,32 @@ const styles = {
     fontSize: "14px",
     fontWeight: 600,
     color: "#FFFFFF",
+    textDecoration: "none",
     cursor: "pointer",
+    transition: "color 0.2s ease",
   },
   viewAllArrow: {
     width: "24px",
     height: "24px",
     backgroundColor: "#E11D48",
-    borderRadius: "3px",
+    borderRadius: "4px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    transition: "transform 0.2s ease, background-color 0.2s ease",
   },
   navControls: {
     display: "flex",
     justifyContent: "flex-end",
     gap: "12px",
-    padding: "30px 5% 0",
+    padding: "30px 24px 0",
     maxWidth: "1280px",
     margin: "0 auto",
   },
   navBtn: {
     width: "38px",
     height: "38px",
-    borderRadius: "4px",
+    borderRadius: "6px",
     backgroundColor: "rgba(255,255,255,0.06)",
     border: "1px solid rgba(255,255,255,0.1)",
     display: "flex",
@@ -112,6 +164,7 @@ const styles = {
     justifyContent: "center",
     cursor: "pointer",
     color: "#fff",
+    transition: "all 0.2s ease",
   },
   scrollWrap: {
     padding: "0 24px",
@@ -133,79 +186,103 @@ const styles = {
     position: "relative",
     overflow: "hidden",
     cursor: "pointer",
-    backgroundColor: "#0A0A0A",
+    backgroundColor: "#0A0A0C",
     border: "1px solid rgba(255,255,255,0.08)",
     display: "flex",
     flexDirection: "column",
-    transition: "border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease",
-  
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
     justifyContent: "space-between",
+    boxSizing: "border-box",
+    textDecoration: "none",
+    transition: "border-color 0.3s ease, transform 0.3s ease",
   },
   imgWrap: {
     position: "relative",
     width: "100%",
-    height: "220px",
+    height: "210px",
+    minHeight: "210px",
+    maxHeight: "210px",
     overflow: "hidden",
+    flexShrink: 0,
+    borderBottom: "1px solid rgba(255,255,255,0.06)",
   },
   img: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
-    transition: "transform 0.5s ease",
+    transition: "transform 0.4s ease",
+    display: "block",
   },
   imgOverlay: {
     position: "absolute",
     inset: 0,
-    background: "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(10,10,10,0.9) 100%)",
+    background: "linear-gradient(180deg, rgba(2,2,3,0.1) 0%, rgba(10,10,12,0.88) 100%)",
   },
   tagBadge: {
     position: "absolute",
     top: "14px",
     left: "14px",
-    padding: "5px 12px",
+    padding: "4px 10px",
     borderRadius: "6px",
-    backgroundColor: "#E11D48",
-    color: "#FFFFFF",
+    backgroundColor: "rgba(10, 10, 12, 0.82)",
+    backdropFilter: "blur(6px)",
+    WebkitBackdropFilter: "blur(6px)",
+    border: "1px solid rgba(255,255,255,0.12)",
+    color: "#E11D48",
     fontFamily: FONT,
     fontSize: "11px",
-    fontWeight: 700,
-    letterSpacing: "0.04em",
+    fontWeight: 600,
+    letterSpacing: "0.06em",
     zIndex: 2,
+    maxWidth: "85%",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
   },
   body: {
-    padding: "24px",
+    padding: "22px 24px 24px",
     flex: 1,
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    backgroundColor: "#0A0A0A",
+    backgroundColor: "#0A0A0C",
+    boxSizing: "border-box",
   },
   title: {
     fontFamily: FONT,
-    fontSize: "1.1rem",
+    fontSize: "1.12rem",
     fontWeight: 600,
     color: "#FFFFFF",
     lineHeight: 1.4,
-    margin: "0 0 12px 0",
+    margin: "0 0 10px 0",
+    letterSpacing: "-0.01em",
+    display: "-webkit-box",
+    WebkitLineClamp: 2,
+    WebkitBoxOrient: "vertical",
+    overflow: "hidden",
+    minHeight: "44px",
   },
   desc: {
     fontFamily: FONT,
-    fontSize: "13px",
+    fontSize: "13.5px",
     lineHeight: 1.6,
-    color: "rgba(255,255,255,0.6)",
+    color: "rgba(255,255,255,0.65)",
     margin: 0,
+    display: "-webkit-box",
+    WebkitLineClamp: 3,
+    WebkitBoxOrient: "vertical",
+    overflow: "hidden",
+    fontWeight: 400,
+    minHeight: "64px",
   },
   readMore: {
     display: "inline-flex",
     alignItems: "center",
     gap: "6px",
-    color: "#E11D48",
+    color: "#FFFFFF",
     fontSize: "13px",
     fontWeight: 600,
     marginTop: "16px",
+    transition: "color 0.2s ease, gap 0.2s ease",
   }
 };
 
@@ -225,31 +302,36 @@ function NavArrowIcon({ direction }) {
   );
 }
 
-function Card({ item }) {
+function Card({ item, fallbackImg }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [imgSrc, setImgSrc] = useState(item.image || fallbackImg);
 
   return (
-    <motion.div
+    <motion.a
+      href={item.href}
+      target="_blank"
+      rel="noopener noreferrer"
       style={{
         ...styles.card,
-        borderColor: isHovered ? "rgba(225,29,72,0.5)" : "rgba(255,255,255,0.08)",
-        transform: isHovered ? "translateY(-6px)" : "none",
-        boxShadow: isHovered ? "0 12px 35px rgba(225,29,72,0.15)" : "none",
+        borderColor: isHovered ? "rgba(255,255,255,0.22)" : "rgba(255,255,255,0.08)",
+        transform: isHovered ? "translateY(-4px)" : "none",
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5 }}
+      className="integration-insight-card group"
     >
       <div style={styles.imgWrap}>
         <img
-          src={item.image}
+          src={imgSrc}
           alt={item.title}
+          onError={() => setImgSrc(fallbackImg)}
           style={{
             ...styles.img,
-            transform: isHovered ? "scale(1.06)" : "scale(1)",
+            transform: isHovered ? "scale(1.04)" : "scale(1)",
           }}
         />
         <div style={styles.imgOverlay} />
@@ -261,20 +343,104 @@ function Card({ item }) {
           <h3 style={styles.title}>{item.title}</h3>
           <p style={styles.desc}>{item.desc}</p>
         </div>
-        <div style={styles.readMore}>
+        <div style={{ ...styles.readMore, color: isHovered ? "#E11D48" : "#FFFFFF", gap: isHovered ? "9px" : "6px" }}>
           Read Article <ArrowIcon />
         </div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }
 
 export default function IntegrationInsights() {
   const trackRef = useRef(null);
+  const [items, setItems] = useState(DEFAULT_INTEGRATION_ITEMS);
+  const fallbackList = [insight1, insight2, insight3, insight4, insight5, insight6];
+
+  // Dynamic fetch from Devopstrio live Insights API
+  useEffect(() => {
+    let isMounted = true;
+    const fetchLatestInsights = async () => {
+      try {
+        const response = await fetch(
+          "https://devopstrio.co.uk/api/insights-proxy/api/public/DP-901265/content?skip=0&limit=50"
+        );
+        if (!response.ok) return;
+
+        const data = await response.json();
+        const rawItems = data?.items || [];
+        if (!rawItems.length) return;
+
+        const matched = [];
+        for (const item of rawItems) {
+          const searchable = [
+            item.title || "",
+            item.subtitle || "",
+            item.category_slug || "",
+            item.section_slug || "",
+            ...(item.tags || [])
+          ].join(" ").toLowerCase();
+
+          let score = 0;
+          let matchedKeyword = "";
+          for (const kw of INTEGRATION_KEYWORDS) {
+            if (searchable.includes(kw.toLowerCase())) {
+              score += 1;
+              if (!matchedKeyword) matchedKeyword = kw.toUpperCase();
+            }
+          }
+
+          if (score > 0) {
+            const catSlug = item.category?.slug || item.category_slug || "blogs";
+            const catName = item.category?.name || item.category_slug || "Integration";
+            const imageUrl = item.cover_image_id
+              ? `https://devopstrio.co.uk/api/insights-proxy/api/images/${item.cover_image_id}`
+              : null;
+
+            matched.push({
+              tag: matchedKeyword || catName.toUpperCase(),
+              title: item.title,
+              desc:
+                item.subtitle ||
+                "Explore Devopstrio's technical architecture publication on enterprise system integration and cloud resilience.",
+              image: imageUrl,
+              href: `https://devopstrio.co.uk/insights/${catSlug}/${item.slug}`,
+              score,
+              date: item.published_at || item.created_at || ""
+            });
+          }
+        }
+
+        // Sort by relevance score, then publication date (newest first)
+        matched.sort(
+          (a, b) => b.score - a.score || new Date(b.date).getTime() - new Date(a.date).getTime()
+        );
+
+        if (isMounted && matched.length > 0) {
+          // If fewer than 6, append non-duplicative default integration items
+          const combined = [...matched];
+          const existingSlugs = new Set(matched.map((m) => m.href));
+          for (const def of DEFAULT_INTEGRATION_ITEMS) {
+            if (!existingSlugs.has(def.href) && combined.length < 8) {
+              combined.push(def);
+            }
+          }
+          setItems(combined);
+        }
+      } catch (err) {
+        // Silently preserve high-quality default items if offline/error
+        console.error("Integration Insights live fetch fallback active:", err);
+      }
+    };
+
+    fetchLatestInsights();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const handleScroll = (dir) => {
     if (trackRef.current) {
-      const scrollAmount = 380;
+      const scrollAmount = 384;
       trackRef.current.scrollBy({
         left: dir === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
@@ -287,35 +453,55 @@ export default function IntegrationInsights() {
       <div style={styles.headerRow}>
         <motion.h2
           style={styles.heading}
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.6 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          Explore Integration <span style={{ color: "#E11D48" }}>Insights</span>
+          Explore Integration <span style={styles.headingAccent}>Insights</span>
         </motion.h2>
 
-        <div style={styles.viewAll}>
+        <a
+          href="https://devopstrio.co.uk/insights"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.viewAll}
+          className="group"
+        >
           View All Insights
           <div style={styles.viewAllArrow}>
             <ArrowIcon />
           </div>
-        </div>
+        </a>
       </div>
 
       <div style={styles.scrollWrap}>
         <div style={styles.track} ref={trackRef}>
-          {ITEMS.map((item, i) => (
-            <Card key={i} item={item} />
+          {items.map((item, i) => (
+            <Card
+              key={`${item.href || item.title}-${i}`}
+              item={item}
+              fallbackImg={fallbackList[i % fallbackList.length]}
+            />
           ))}
         </div>
       </div>
 
       <div style={styles.navControls}>
-        <button style={styles.navBtn} onClick={() => handleScroll("left")} aria-label="Scroll left">
+        <button
+          style={styles.navBtn}
+          onClick={() => handleScroll("left")}
+          aria-label="Scroll left"
+          className="hover:border-white/30"
+        >
           <NavArrowIcon direction="left" />
         </button>
-        <button style={styles.navBtn} onClick={() => handleScroll("right")} aria-label="Scroll right">
+        <button
+          style={styles.navBtn}
+          onClick={() => handleScroll("right")}
+          aria-label="Scroll right"
+          className="hover:border-white/30"
+        >
           <NavArrowIcon direction="right" />
         </button>
       </div>

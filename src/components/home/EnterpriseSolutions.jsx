@@ -131,7 +131,7 @@ export default function TopStories() {
             transition={{ duration: 0.5 }}
             style={{
               fontSize: "16px",
-              fontWeight: 700,
+              fontWeight: 600,
               letterSpacing: "0.1em",
               color: COLORS.whiteDim,
             }}
@@ -258,7 +258,7 @@ export default function TopStories() {
                     style={{
                       margin: 0,
                       fontSize: "clamp(20px, 2.2vw, 28px)",
-                      fontWeight: 700,
+                      fontWeight: 600,
                       lineHeight: 1.3,
                       color: COLORS.white,
                       letterSpacing: "-0.01em",

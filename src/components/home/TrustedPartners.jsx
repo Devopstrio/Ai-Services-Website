@@ -73,7 +73,7 @@ background:
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(1.8rem, 3.2vw, 2rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.015em",
     lineHeight: 1.25,
   },
@@ -127,7 +127,7 @@ background:
   name: {
     fontFamily: FONT,
     fontSize: "1.1rem",
-    fontWeight: 800,
+    fontWeight: 600,
     color: "#fff8f8",
     margin: 0,
     marginBottom: "10px",

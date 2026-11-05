@@ -114,7 +114,7 @@ export function IndustryUseCases() {
             , React.createElement('h2', { className: "text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-white font-sans relative inline-block"        ,}, "Proven Use Cases to"
                  , " "
               , React.createElement('span', { className: "relative inline-block" ,}
-                , React.createElement('span', { className: "inline-block bg-rose-500 text-black font-extrabold px-3.5 py-1 mx-1.5 rounded-sm transform -rotate-3 shadow-[0_4px_20px_rgba(225,29,72,0.45)] align-middle uppercase tracking-wider text-2xl sm:text-3xl md:text-4xl lg:text-5xl"                 ,}, "GROW"
+                , React.createElement('span', { className: "inline-block bg-rose-500 text-black font-semibold px-3.5 py-1 mx-1.5 rounded-sm transform -rotate-3 shadow-[0_4px_20px_rgba(225,29,72,0.45)] align-middle uppercase tracking-wider text-2xl sm:text-3xl md:text-4xl lg:text-5xl"                 ,}, "GROW"
 
                 )
                 /* Horizontally Flipped Arrow on Right Side of GROW */
@@ -183,7 +183,7 @@ export function IndustryUseCases() {
                     )
 
                     /* Improved Big Title */
-                    , React.createElement('h4', { className: "text-xl sm:text-2xl font-bold text-white leading-tight group-hover:text-rose-400 transition-colors duration-300 font-sans"        ,}
+                    , React.createElement('h4', { className: "text-xl sm:text-2xl font-semibold text-white leading-tight group-hover:text-rose-400 transition-colors duration-300 font-sans"        ,}
                       , uc.title
                     )
                   )
@@ -193,7 +193,7 @@ export function IndustryUseCases() {
                     , React.createElement('span', { className: "text-xs uppercase font-mono tracking-wider font-semibold text-zinc-400"     ,}, "Case Study"
 
                     )
-                    , React.createElement('span', { className: "text-xs sm:text-sm font-bold flex items-center gap-1.5 text-rose-400 group-hover:text-white transition-colors"        ,}, "Learn More "
+                    , React.createElement('span', { className: "text-xs sm:text-sm font-semibold flex items-center gap-1.5 text-rose-400 group-hover:text-white transition-colors"        ,}, "Learn More "
                         , React.createElement(ArrowUpRight, { size: 14, className: "group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"  ,} )
                     )
                   )

@@ -255,11 +255,11 @@ export function IndustryCaseStudy({
 
             /* Left Panel: Title, Description, Highlights, Metrics */
             , React.createElement('div', null
-              /* <span className="text-xs sm:text-sm font-mono tracking-widest text-rose-500 uppercase font-bold block mb-3">
+              /* <span className="text-xs sm:text-sm font-mono tracking-widest text-rose-500 uppercase font-semibold block mb-3">
                 Case Study {(activeIdx + 1).toString().padStart(2, "0")} / {totalSlides.toString().padStart(2, "0")}
               </span> */
 
-              , React.createElement('h3', { className: "text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 leading-tight max-w-xl font-sans"        ,}
+              , React.createElement('h3', { className: "text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 leading-tight max-w-xl font-sans"        ,}
                 , currentSlide.title
               )
 
@@ -281,7 +281,7 @@ export function IndustryCaseStudy({
               , React.createElement('div', { className: "grid grid-cols-3 gap-4 pt-4 border-t border-white/10 max-w-xl"      ,}
                 , currentSlide.metrics.map((m, i) => (
                   React.createElement('div', { key: i,}
-                    , React.createElement('span', { className: "block text-2xl md:text-3xl font-black text-white font-mono tracking-tight"      ,}
+                    , React.createElement('span', { className: "block text-2xl md:text-3xl font-semibold text-white font-mono tracking-tight"      ,}
                       , m.value
                     )
                     , React.createElement('span', { className: "text-xs sm:text-sm text-zinc-400 font-semibold uppercase tracking-wider block mt-1"       ,}

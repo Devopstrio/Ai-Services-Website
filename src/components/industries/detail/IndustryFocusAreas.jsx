@@ -64,7 +64,7 @@ export function IndustryFocusAreas({ focusAreas }) {
 
                   )
 
-                  , React.createElement('h3', { className: "text-xl sm:text-2xl font-bold text-white mb-2 tracking-tight group-hover:text-rose-500 transition-colors duration-300 font-sans"         ,}
+                  , React.createElement('h3', { className: "text-xl sm:text-2xl font-semibold text-white mb-2 tracking-tight group-hover:text-rose-500 transition-colors duration-300 font-sans"         ,}
                     , area.title
                   )
                 )

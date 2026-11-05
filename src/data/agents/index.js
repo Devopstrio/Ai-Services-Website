@@ -21,7 +21,7 @@ import { workflowAgentData } from "./workflow-agent";
 import { industryAgentsData } from "./industry-agents";
 import { agentPlatformData } from "./agent-platform";
 
-// Comprehensive Registry of all 22 AI Agents
+// Comprehensive Registry of all 22 AI Agents + Agent Platform
 export const AGENTS_REGISTRY = {
   // Business Operations
   "hr-agent": hragentData,
@@ -49,7 +49,10 @@ export const AGENTS_REGISTRY = {
   "email-agent": emailAgentData,
   "workflow-agent": workflowAgentData,
   "industry-agents": industryAgentsData,
-  "agent-platform": agentPlatformData
+
+  // Enterprise Agent Platform (Supports both 'agent-platform' and 'platform')
+  "agent-platform": agentPlatformData,
+  "platform": agentPlatformData
 };
 
 export function getAgentData(slug) {
@@ -59,5 +62,13 @@ export function getAgentData(slug) {
     .replace(/^(agents\/)?(business-operations\/|engineering-it\/|productivity\/)?/, "")
     .replace(/^\/+|\/+$/g, "");
   
-  return AGENTS_REGISTRY[cleanSlug] || AGENTS_REGISTRY["hr-agent"];
+  if (cleanSlug === "platform" || cleanSlug === "agent-platform") {
+    return agentPlatformData;
+  }
+  
+  return (
+    AGENTS_REGISTRY[cleanSlug] ||
+    AGENTS_REGISTRY[`${cleanSlug}-agent`] ||
+    AGENTS_REGISTRY["hr-agent"]
+  );
 }

@@ -1,48 +1,74 @@
 // API Backend Client for MediaHub / Newsletter Microservice
 
+const PRIMARY_API_URL = "https://devopstrio.co.uk/api/insights-proxy/api";
+const FALLBACK_API_URL = "https://mediahub-backend-docker-hgh6hzgacraqbhb2.southindia-01.azurewebsites.net/api";
+
 const API_BASE_URL =
   import.meta.env.VITE_API_URL ||
-  "https://mediahub-backend-docker-hgh6hzgacraqbhb2.southindia-01.azurewebsites.net";
+  PRIMARY_API_URL;
 
 const COMPANY_ID = import.meta.env.VITE_COMPANY_ID || "DP-901265";
 
 class InsightsApi {
   constructor(baseUrl = API_BASE_URL, companyId = COMPANY_ID) {
-    this.baseUrl = baseUrl.replace(/\/+$/, "");
+    let cleanBase = (baseUrl || PRIMARY_API_URL).replace(/\/+$/, "");
+    if (!cleanBase.endsWith("/api")) {
+      cleanBase = `${cleanBase}/api`;
+    }
+    this.baseUrl = cleanBase;
     this.companyId = companyId;
   }
 
   async fetchApi(endpoint, options = {}) {
-    const url = `${this.baseUrl}${endpoint.startsWith("/") ? "" : "/"}${endpoint}`;
+    let cleanEndpoint = endpoint.startsWith("/") ? endpoint : `/${endpoint}`;
+    if (cleanEndpoint.startsWith("/api/")) {
+      cleanEndpoint = cleanEndpoint.replace(/^\/api/, "");
+    }
+
     const headers = {
       "Content-Type": "application/json",
       ...(options.headers || {}),
     };
 
-    const res = await fetch(url, {
-      ...options,
-      headers,
-    });
+    const targetUrls = [
+      `${this.baseUrl}${cleanEndpoint}`,
+      `${FALLBACK_API_URL}${cleanEndpoint}`,
+    ];
 
-    if (!res.ok) {
-      let errMsg = `Request failed with status ${res.status}`;
+    let lastError = null;
+
+    for (const url of targetUrls) {
       try {
-        const errJson = await res.json();
-        errMsg = errJson.message || errJson.error || errMsg;
-      } catch {
-        // ignore
+        const res = await fetch(url, {
+          ...options,
+          headers,
+        });
+
+        if (res.ok) {
+          try {
+            return await res.json();
+          } catch {
+            return { success: true };
+          }
+        }
+
+        let errMsg = `Request failed with status ${res.status}`;
+        try {
+          const errJson = await res.json();
+          errMsg = errJson.message || errJson.error || errJson.detail || errMsg;
+        } catch {
+          // ignore
+        }
+        lastError = new Error(errMsg);
+      } catch (networkErr) {
+        lastError = networkErr;
       }
-      if (options.throwError !== false) {
-        throw new Error(errMsg);
-      }
-      return null;
     }
 
-    try {
-      return await res.json();
-    } catch {
-      return null;
+    if (options.throwError !== false && lastError) {
+      throw lastError;
     }
+    return null;
   }
 
   // 1. Subscribe API Call

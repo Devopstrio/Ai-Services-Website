@@ -14,30 +14,31 @@ export const innovationProgramsData = {
   name: "Innovation Programs",
   tagline: "Academic Fellowships, Enterprise Co-Creation Enclaves & Supercomputing GPU Grants",
   hero: {
-    badge: "INNOVATION LAB // GLOBAL PROGRAMS",
+    badge: "DEVOPS TRIO // GLOBAL PROGRAMS",
     subBadge: "FELLOWSHIPS, GRANTS & CO-CREATION",
-    titleLight: "Fostering the Next Generation of AI with",
-    titleBold: "Devopstrio Innovation Programs",
-    description: "We empower top researchers, academic institutions, and forward-thinking enterprise innovators through sponsored PhD fellowships, dedicated GPU compute allocations, and joint industry co-creation labs.",
+    titleLight: "Academic Fellowships &",
+    titleBold: "Compute Grants",
+    description: "Empowering researchers and enterprise partners through sponsored fellowships, dedicated GPU compute allocations, and joint innovation enclaves.",
     bgImage: heroBg,
-    liveBadge: "2026-2027 Cohort Open"
+    liveBadge: "Active Cohort Open",
+    primaryCtaText: "Explore Programs",
+    secondaryCtaText: "Apply for Grants"
   },
   stats: [
-    { value: "$20M+", label: "Annual Compute & Research Grants", sub: "Allocated to universities & startup innovators" },
-    { value: "45+ Universities", label: "Global Academic Partners", sub: "Stanford, MIT, Cambridge, Oxford, CMU, ETH" },
-    { value: "120+ Fellows", label: "Sponsored PhD & Postdocs", sub: "Publishing breakthrough peer-reviewed research" },
-    { value: "32 Co-Labs", label: "Enterprise Co-Creation Centers", sub: "Building joint IP with Fortune 500 leaders" }
+    { value: "Fellowships", label: "Frontier PhD Programs", sub: "Fully funded research stipends" },
+    { value: "SuperPOD", label: "Dedicated Compute Grants", sub: "High-performance GPU cluster hours" },
+    { value: "Co-Labs", label: "Enterprise Co-Innovation", sub: "Joint intellectual property initiatives" },
+    { value: "Open", label: "Publication Freedom", sub: "Unrestricted peer-reviewed scientific publishing" }
   ],
   pillars: [
     {
       id: "phd-fellowship",
       tag: "ACADEMIC EXCELLENCE",
       title: "Devopstrio Frontier AI PhD Fellowship",
-      description: "Providing 3-year fully funded stipends and unlimited access to our 420 PFLOPS H100 SuperPOD cluster for doctoral students working on foundational AI.",
+      description: "Providing fully funded stipends and access to our high-performance GPU SuperPOD cluster for doctoral students working on foundational AI.",
       image: fellowshipPillarImg,
-      metricBadge: "Full 3-Yr Funding",
       highlights: [
-        "100% tuition, living stipend, and conference travel grant coverage",
+        "Comprehensive tuition, living stipend, and conference travel funding",
         "Direct mentorship from senior research scientists and lab directors",
         "Open publication rights with zero proprietary patent lock-in"
       ]
@@ -48,119 +49,137 @@ export const innovationProgramsData = {
       title: "Joint Enterprise AI Co-Innovation Enclaves",
       description: "Embedding dedicated research teams inside enterprise environments to co-design bespoke foundation models, agent swarms, and proprietary IP.",
       image: cocreationPillarImg,
-      metricBadge: "Joint IP Creation",
       highlights: [
-        "Shared equity and licensing agreements preserving customer IP ownership",
+        "Collaborative agreements preserving customer IP ownership",
         "Quarterly breakthrough milestones with verified production deployment gates",
-        "Executive board briefings on emerging frontier technology trajectories"
+        "Executive briefings on emerging frontier technology trajectories"
       ]
     },
     {
       id: "compute-grants",
       tag: "COMPUTE EMPOWERMENT",
       title: "Academic Supercomputing GPU Grants",
-      description: "Awarding 10,000+ GPU hours on NVIDIA H100 and B200 SuperPOD clusters to independent researchers working on AI safety, alignment, and open science.",
+      description: "Awarding GPU hours on high-density SuperPOD clusters to independent researchers working on AI safety, alignment, and open science.",
       image: computeGrantsPillarImg,
-      metricBadge: "10,000+ GPU Hours",
       highlights: [
-        "Fast-track application review cycle with decisions in under 14 days",
-        "High-bandwidth 3.2 Tbps InfiniBand cluster nodes with pre-installed PyTorch & JAX",
+        "Fast-track application review cycle with rapid evaluation",
+        "High-bandwidth InfiniBand cluster nodes with pre-installed PyTorch & JAX",
         "Dedicated engineering support for distributed parallel training optimization"
       ]
     },
     {
-      id: "startup-incubation",
-      tag: "VENTURE ACCELERATION",
-      title: "Frontier AI Venture Studio Incubation",
-      description: "Partnering with early-stage deep tech founders to provide seed capital, architecture design, and direct distribution to our enterprise customer base.",
+      id: "venture-studio",
+      tag: "COMMERCIAL SPIN-OUTS",
+      title: "Frontier AI Venture Incubation Studio",
+      description: "Spinning off lab-proven research breakthroughs into independent venture-backed enterprise companies with seed capital and cloud credits.",
       image: ventureStudioPillarImg,
-      metricBadge: "Seed to Series A",
       highlights: [
-        "Up to $500k in non-dilutive compute credits and seed architecture support",
-        "Direct sandbox pilots with Fortune 500 banking, retail, and healthcare CIOs",
-        "Legal and compliance scaffolding for EU AI Act and SOC 2 Type II"
+        "Pre-seed capital, legal formation, and enterprise pilot matching",
+        "Dedicated cloud infrastructure credits and engineering support",
+        "Direct warm intros to top-tier enterprise software venture funds"
       ]
     }
   ],
   interactiveFrontiers: [
     {
       id: "fellowship-portal",
-      title: "Academic Fellowship Application Track",
-      category: "PhD Programs",
-      badge: "Fall 2026 Applications",
+      title: "PhD Fellowship Interactive Eligibility Screener",
+      tabLabel: "PhD Fellowship",
+      category: "Academic Grants",
+      badge: "Fellowship Screener",
       image: fellowshipFrontierImg,
-      benchmark: "100% Fully Funded",
-      summary: "Explore application tracks across Neuro-Symbolic Logic, Mechanistic Interpretability, Multimodal World Models, and Quantum Algorithms.",
+      summary: "Evaluate your research proposal against our annual fellowship priority areas and compute resource matching criteria.",
       features: [
-        "Open to PhD candidates worldwide",
-        "Includes 50,000 H100 GPU compute hours",
-        "Annual summer residency at our central lab campus"
+        "Automated semantic keyword matching against priority research tracks",
+        "Compute allocation estimator calculating required GPU cluster hours",
+        "Direct submission portal with rolling peer-review feedback cycles"
       ]
     },
     {
-      id: "co-lab-portal",
-      title: "Enterprise Co-Innovation Sprint",
-      category: "Enterprise Partnership",
-      badge: "6-Month Joint Sprint",
+      id: "cocreation-sprint",
+      title: "Enterprise Co-Creation Sprint Designer",
+      tabLabel: "Enterprise Co-Lab",
+      category: "Corporate Innovation",
+      badge: "Sprint Designer",
       image: cocreationFrontierImg,
-      benchmark: "Guaranteed Production PoC",
-      summary: "Collaborative 6-month research sprint solving domain-specific bottleneck challenges with customized multi-agent foundation models.",
+      summary: "Design a customized 90-day joint research sprint embedding Devopstrio scientists with your enterprise domain experts.",
       features: [
-        "Dedicated team of 4 senior AI research scientists",
-        "Bi-weekly sprint demos with empirical benchmark tracking",
-        "Full enterprise source code and model weights handover"
+        "Select focus areas: generative models, multi-agent swarms, or computer vision",
+        "Define target intellectual property milestones and governance structures",
+        "Receive a detailed timeline with assigned research leads and compute quotas"
       ]
     },
     {
-      id: "compute-grant-portal",
-      title: "Open Science Compute Grant Pool",
-      category: "Compute Allocation",
-      badge: "14-Day Fast Track",
+      id: "compute-grant-allocator",
+      title: "Academic Supercomputing Grant Portal",
+      tabLabel: "Compute Grants",
+      category: "Supercomputing",
+      badge: "GPU Allocator",
       image: computeGrantsFrontierImg,
-      benchmark: "420 PFLOPS Available",
-      summary: "Apply for non-dilutive high-performance GPU allocations to train academic pre-prints, open-weights models, and benchmark evaluation suites.",
+      summary: "Submit your open-source research proposal for immediate allocation of high-performance GPU compute on our sovereign research clusters.",
       features: [
-        "Zero compute cost for verified academic institutions",
-        "Slurm cluster access with automated checkpointing",
-        "Published results featured on our global research portal"
+        "Instant validation of academic email and institutional affiliation",
+        "PyTorch distributed multi-node parallel benchmarking templates",
+        "Automatic Slurm job script generation for seamless cluster queueing"
       ]
-    }
-  ],
-  papers: [
-    {
-      title: "A Model for Public-Private Foundational AI Co-Innovation in Regulated Industries",
-      venue: "Harvard Business Review Tech 2025",
-      authors: "Devopstrio Innovation Leadership & Stanford Graduate School of Business",
-      doi: "10.48550/arXiv.2506.09112",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Maximizing Academic Research Velocity Through Democratized Supercomputing Grants",
-      venue: "Communications of the ACM 2025",
-      authors: "Devopstrio Academic Directorate & MIT CSAIL",
-      doi: "10.48550/arXiv.2507.12091",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Frameworks for Open Intellectual Property in Collaborative Frontier Model Research",
-      venue: "Oxford Journal of Law and Technology 2025",
-      authors: "Devopstrio Legal & University of Cambridge",
-      doi: "10.48550/arXiv.2510.03811",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
     }
   ],
   caseStudy: {
-    partner: "Leading Global Research University & Health System",
-    collaborationType: "PhD Fellowship & Compute Grant",
-    headline: "How a Devopstrio Sponsored PhD Fellowship Discovered a Novel Protein Folding Algorithm for Rare Oncology Targets",
-    quote: "The combination of Devopstrio's supercomputing cluster and expert research mentorship allowed our doctoral team to achieve what would have taken 5 years in just 9 months.",
-    author: "Chair of Computational Biology",
-    organization: "Top-5 Global Medical Research University",
+    tag: "CO-INNOVATION INITIATIVE",
+    collaborationType: "Academic Supercomputing Partnership",
+    partner: "Leading Global Research University",
+    title: "Frontier SuperPOD Allocation & Formal Proving Breakthrough",
+    description: "Partnering with university computer science faculty to allocate dedicated GPU cluster hours, leading to breakthrough machine-verified mathematical proof systems.",
     image: caseImg,
     metrics: [
-      { stat: "9 Months", label: "From thesis proposal to wet-lab validation" },
-      { stat: "100,000", label: "GPU hours provided via compute grant" },
-      { stat: "Nature Bio", label: "Lead publication accepted with high impact" }
+      { stat: "Dedicated", label: "GPU SuperPOD cluster allocation" },
+      { stat: "100%", label: "Open peer-reviewed publishing" },
+      { stat: "3-Year", label: "Doctoral research funding support" }
+    ],
+    highlights: [
+      "InfiniBand-connected parallel training nodes",
+      "Direct technical mentorship from senior lab staff",
+      "Joint publication presented at top AI conferences"
+    ],
+    ctaText: "Request Program Details",
+    ctaHref: "https://devopstrio.co.uk/contact#contact-form"
+  },
+    publicationsState: {
+    heading: "Publications & Research Notes",
+    tag: "PUBLICATIONS & RESEARCH NOTES",
+    body: "Our formal publication list will be added as papers are finalized and peer-reviewed. In the interim, foundational preprints and quarterly research dispatches are shared through our research insights feed.",
+    buttonText: "Subscribe for Updates",
+    buttonHref: "https://devopstrio.co.uk/insights",
+    statusBadge: "Next Release: Q4 2026",
+    statusNote: "Formal verification & mechanistic interpretability preprints currently in internal review."
+  },
+  howWeWork: {
+    tag: "COLLABORATION MODEL",
+    title: "How We Support Researchers & Partners",
+    steps: [
+      {
+        step: "01",
+        name: "Proposal Review",
+        desc: "Evaluate technical merit, open-science impact, and compute feasibility within 14 days."
+      },
+      {
+        step: "02",
+        name: "Resource Allocation",
+        desc: "Provision dedicated SuperPOD cluster queues, direct mentorship, and seed funding."
+      },
+      {
+        step: "03",
+        name: "Collaborative Delivery",
+        desc: "Publish open research papers, deploy joint IP, or spin off venture-backed initiatives."
+      }
     ]
+  },
+  closingCta: {
+    title: "Apply for Research Grants & Fellowships",
+    description: "We partner with leading universities, doctoral candidates, and innovative enterprises to foster the next generation of artificial intelligence.",
+    primaryText: "Explore Fellowship Careers",
+    primaryHref: "https://devopstrio.co.uk/careers",
+    secondaryText: "Apply for a Compute Grant",
+    secondaryHref: "https://devopstrio.co.uk/contact#contact-form"
   }
 };

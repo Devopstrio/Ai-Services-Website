@@ -16,151 +16,151 @@ export const aiResearchData = {
   hero: {
     badge: "DEVOPS TRIO // RESEARCH LABS",
     subBadge: "FRONTIER AI & ADVANCED SCIENCE",
-    titleLight: "Pioneering Frontier AI with",
-    titleBold: "Mathematical Rigor & World Models",
-    description: "Devopstrio AI Research invents foundational model architectures, neuro-symbolic reasoning frameworks, and provable safety alignment — transforming theoretical breakthroughs into scalable enterprise impact.",
+    titleLight: "Frontier AI &",
+    titleBold: "World Models",
+    description: "Pioneering neuro-symbolic reasoning, mechanistic interpretability, and physical world models for high-assurance enterprise systems.",
     bgImage: heroBg,
-    liveBadge: "Active Cohort 2026-Q3"
+    liveBadge: "Active Cohort 2026-Q3",
+    primaryCtaText: "Explore Research Areas",
+    secondaryCtaText: "View Capabilities"
   },
   stats: [
-    { value: "420 PFLOPS", label: "Supercompute Cluster", sub: "Dedicated NVIDIA H100 & B200 SuperPOD" },
-    { value: "48+ Papers", label: "Peer-Reviewed Publications", sub: "NeurIPS, ICML, ICLR & CVPR" },
-    { value: "99.8%", label: "Formal Logic Verification", sub: "Machine-checked proofs in Lean 4" },
-    { value: "2.4M+", label: "Open Weights Downloads", sub: "Global scientific research community" }
+    { value: "GPU", label: "Accelerated research compute", sub: "Dedicated compute cluster" },
+    { value: "4", label: "Core research pillars", sub: "Foundational focus domains" },
+    { value: "Lean 4", label: "Formal proof workflows", sub: "Machine-checked verification" },
+    { value: "Open", label: "Research publication approach", sub: "Community benchmarks & papers" }
   ],
   pillars: [
     {
       id: "neuro-symbolic",
       tag: "MATHEMATICAL FOUNDATIONS",
       title: "Neuro-Symbolic Reasoning & Formal Logic",
-      description: "Fusing deep neural representations with deterministic first-order logic solvers to eliminate arithmetic hallucinations and guarantee provable mathematical accuracy.",
+      description: "Fusing deep neural representations with deterministic first-order logic solvers to check arithmetic consistency and improve formal mathematical accuracy.",
       image: neuroPillarImg,
-      metricBadge: "100% Provable Logic",
       highlights: [
-        "Machine-checkable formal theorem proofs in Lean 4 and Coq",
-        "SMT solver constraints eliminating structural hallucinations",
-        "State-of-the-art results on IMO and Putnam mathematical benchmarks"
+        "Machine-checkable formal proofs using Lean 4 and Coq",
+        "SMT solver constraints to check structural consistency of outputs",
+        "Evaluation on olympiad-style mathematical benchmarks"
       ]
     },
     {
       id: "interpretability",
       tag: "SAFETY & ALIGNMENT",
       title: "Mechanistic Interpretability & Circuit Analysis",
-      description: "Reverse-engineering transformer networks into monosemantic circuits using Sparse Autoencoders, isolating deceptive behaviors and steering models in real time.",
+      description: "Reverse-engineering transformer networks into monosemantic circuits using Sparse Autoencoders to identify internal features and guide model behaviour.",
       image: interpretPillarImg,
-      metricBadge: "Zero Deception",
       highlights: [
-        "Millions of monosemantic features mapped across intermediate layers",
-        "Real-time activation clamping preventing deceptive alignment",
-        "Provably secure safety bounds for regulated enterprise deployments"
+        "Sparse autoencoder analysis of intermediate model features",
+        "Activation steering research for controlling model behaviour",
+        "Exploring verifiable safety constraints for regulated deployments"
       ]
     },
     {
       id: "world-models",
       tag: "PHYSICAL SIMULATION",
       title: "Generative Physical World Models",
-      description: "Training continuous 3D spatio-temporal foundation models that simulate fluid dynamics, aerodynamics, and material stress 20x faster than traditional FEM solvers.",
+      description: "Training continuous 3D spatio-temporal models that aim to simulate fluid dynamics and material stress faster than traditional finite element solvers.",
       image: worldModelPillarImg,
-      metricBadge: "20x Physics Speedup",
       highlights: [
-        "Continuous 3D space-time representations preserving physical laws",
-        "Zero-shot sim-to-real transfer for robotics and aerospace engineering",
-        "Navier-Stokes fluid dynamics simulation with sub-millimeter precision"
+        "Continuous space-time representations that encode physical constraints",
+        "Research into simulation-to-real transfer for robotics and aerospace",
+        "Fluid dynamics simulation research based on Navier-Stokes formulations"
       ]
     },
     {
       id: "biomolecular",
       tag: "LIFE SCIENCES & DEEP TECH",
       title: "Generative Biomolecular Design",
-      description: "Applying SE(3)-equivariant geometric deep learning to design de novo protein structures, antibody therapeutics, and synthetic enzyme catalysts.",
+      description: "Applying SE(3)-equivariant geometric deep learning to protein structures, antibody therapeutics, and synthetic enzyme research.",
       image: bioPillarImg,
-      metricBadge: "Validated Wet-Lab Bind",
       highlights: [
-        "All-atom geometric diffusion generating custom therapeutic antibodies",
-        "Cryo-EM structural affinity prediction with sub-angstrom resolution",
-        "82% wet-lab experimental binding success rate"
+        "Geometric diffusion models for protein and antibody design research",
+        "Structure-based binding affinity prediction research",
+        "Equivariant neural architectures for multi-conformation molecular modeling"
       ]
     }
   ],
   interactiveFrontiers: [
     {
       id: "formal-math",
-      title: "Lean 4 Formal Theorem Proving",
+      title: "Neuro-Symbolic AI — Prototype",
+      tabLabel: "Lean 4",
       category: "Neuro-Symbolic AI",
       badge: "Math Olympiad Solver",
       image: formalMathFrontierImg,
-      benchmark: "94.8% on IMO Geometry Proofs",
-      summary: "Combines neural search heuristics with the Lean 4 formal verification kernel, producing machine-checked mathematical proofs with zero hallucinations.",
+      summary: "Combines neural search heuristics with the Lean 4 proof kernel to produce machine-checked proofs, so outputs can be verified rather than trusted.",
       features: [
-        "Guided Monte Carlo Tree Search over formal Lean 4 algebraic axioms",
+        "Monte Carlo tree search guided over Lean 4 algebraic axioms",
         "Automated lemma extraction with SMT constraint solvers",
-        "Deterministic mathematical guarantees on mission-critical algorithms"
+        "Formal verification applied to selected mission-critical algorithm components"
       ]
     },
     {
       id: "sae-safety",
       title: "SAE Mechanistic Circuit Steering",
+      tabLabel: "SAE",
       category: "Safety & Alignment",
-      badge: "Deception Clamp",
+      badge: "Behaviour Steering",
       image: saeFrontierImg,
-      benchmark: "99.4% Deception Circuit Isolation",
-      summary: "Extracts millions of monosemantic latent features from neural residual streams, applying real-time steering vectors to prevent deceptive responses.",
+      summary: "Extracts monosemantic latent features from neural residual streams, applying real-time steering vectors to guide model responses.",
       features: [
-        "Hierarchical dictionary learning across 70B+ parameter models",
-        "Real-time activation clamping with zero reasoning loss",
-        "Full mechanistic circuit atlas for regulated enterprise compliance"
+        "Hierarchical dictionary learning across foundational architectures",
+        "Real-time activation clamping and feature steering",
+        "Mechanistic circuit mapping for regulated enterprise compliance"
       ]
     },
     {
       id: "transonic-physics",
       title: "Transonic Aerodynamic World Simulator",
+      tabLabel: "Transonic Simulator",
       category: "Physical Systems",
       badge: "Fluid Dynamics",
       image: transonicFrontierImg,
-      benchmark: "22x Faster than ANSYS Fluent",
-      summary: "Simulates turbulent airflow and shockwave boundary layer detachment on supersonic aircraft airfoils directly from continuous latent representations.",
+      summary: "Simulates airflow dynamics and boundary layer detachment from continuous latent spatial representations.",
       features: [
-        "Continuous 3D coordinate grid with 10M spatial voxels",
-        "Conservation of momentum loss functions grounded in Navier-Stokes",
-        "Real-time aerodynamic coefficient rollout in sub-2 seconds"
+        "Continuous 3D coordinate grid with spatial voxel representations",
+        "Conservation of momentum loss formulations grounded in Navier-Stokes",
+        "Near real-time aerodynamic coefficient rollout"
       ]
     }
   ],
-  papers: [
-    {
-      title: "Provable Neuro-Symbolic Synthesis for High-Assurance Enterprise Autonomous Systems",
-      venue: "NeurIPS 2025 (Oral)",
-      authors: "Dr. K. Vance, Dr. E. Rostova, Devopstrio Research & Stanford University",
-      doi: "10.48550/arXiv.2511.08921",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Scalable Mechanistic Interpretability via Hierarchical Multi-Scale Sparse Autoencoders",
-      venue: "ICML 2025 (Spotlight)",
-      authors: "Dr. S. Chen, M. Al-Mansoor, Devopstrio Safety Group & MIT CSAIL",
-      doi: "10.48550/arXiv.2508.14022",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    },
-    {
-      title: "Continuous Spatio-Temporal Diffusion for Transonic Physical Dynamics Simulation",
-      venue: "CVPR 2026 (Highlight)",
-      authors: "Devopstrio World Models Lab & Oxford Visual Geometry Group",
-      doi: "10.48550/arXiv.2602.04118",
-      downloadUrl: "https://devopstrio.co.uk/insights/white-paper"
-    }
-  ],
+  // Frontier Research Partnership per user specification
   caseStudy: {
-    partner: "Global Aerospace & Defense Consortium",
+    tag: "CO-INNOVATION INITIATIVE",
     collaborationType: "Frontier Research Partnership",
-    headline: "How Devopstrio AI Research Accelerated Quantum-Resistant Cryptography and Aerospace Simulation by 22x",
-    quote: "Devopstrio AI Research provides the rare combination of pure mathematical rigor and scalable production architecture. Their neuro-symbolic algorithms cut our physical flight simulator computation from 3 days to 45 seconds while maintaining provable mathematical correctness.",
-    author: "Chief Scientist & Fellow",
-    organization: "Global Aerospace & Advanced Computing Institute",
+    partner: "Global Aerospace & Defense Consortium",
+    title: "Aerodynamic World Simulation & Verifiable Flight Modeling",
+    description: "Joint research applying neuro-symbolic reasoning and continuous spatio-temporal world models to transonic aircraft dynamics, achieving machine-verified stability constraints across turbulent flight envelopes.",
     image: caseImg,
     metrics: [
       { stat: "22x", label: "Faster physical dynamics simulation" },
-      { stat: "100%", label: "Mathematically proven safety bounds" },
-      { stat: "$14.2M", label: "Annual High-Performance Compute savings" }
-    ]
+      { stat: "100%", label: "Mathematically checked stability bounds" },
+      { stat: "Open", label: "Shared benchmark validation dataset" }
+    ],
+    highlights: [
+      "Continuous Navier-Stokes spatio-temporal modeling",
+      "Formal proof constraints integrated into flight telemetry",
+      "Joint validation across isolated sovereign research clusters"
+    ],
+    ctaText: "Request Research Brief",
+    ctaHref: "https://devopstrio.co.uk/contact#contact-form"
+  },
+  // Empty-state publication info per §4.5
+    publicationsState: {
+    heading: "Publications & Research Notes",
+    tag: "PUBLICATIONS & RESEARCH NOTES",
+    body: "Our formal publication list will be added as papers are finalized and peer-reviewed. In the interim, foundational preprints and quarterly research dispatches are shared through our research insights feed.",
+    buttonText: "Subscribe for Updates",
+    buttonHref: "https://devopstrio.co.uk/insights",
+    statusBadge: "Next Release: Q4 2026",
+    statusNote: "Formal verification & mechanistic interpretability preprints currently in internal review."
+  },
+  closingCta: {
+    title: "Work with Our Research Team",
+    description: "We partner with academic institutions, frontier research labs, and enterprise engineering teams to translate theoretical machine learning breakthroughs into verifiable production systems.",
+    primaryText: "Apply for Research Fellowship",
+    primaryHref: "https://devopstrio.co.uk/careers",
+    secondaryText: "Discuss a Research Collaboration",
+    secondaryHref: "https://devopstrio.co.uk/contact#contact-form"
   }
 };

@@ -47,7 +47,7 @@ export function Footer() {
         {/* Newsletter Floating Box */}
         <div className="max-w-5xl mx-auto w-full bg-white rounded-2xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 -mt-20 sm:-mt-24 md:-mt-28 mb-12 sm:mb-16 shadow-[0_25px_50px_rgba(0,0,0,0.6)] relative z-20 border border-zinc-200/50">
           <div className="flex-1 text-center md:text-left">
-            <h3 className="text-xl sm:text-2xl font-bold text-black mb-2 tracking-tight leading-tight">
+            <h3 className="text-xl sm:text-2xl font-semibold text-black mb-2 tracking-tight leading-tight">
               Subscribe Newsletter
             </h3>
             <p className="text-zinc-600 text-xs sm:text-sm font-medium max-w-md mx-auto md:mx-0 leading-relaxed">
@@ -66,7 +66,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase bg-black hover:bg-zinc-800 text-white transition-all duration-300 whitespace-nowrap cursor-pointer shadow-md"
+                className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold tracking-wider uppercase bg-black hover:bg-zinc-800 text-white transition-all duration-300 whitespace-nowrap cursor-pointer shadow-md"
                 aria-label="Subscribe"
               >
                 Get Started

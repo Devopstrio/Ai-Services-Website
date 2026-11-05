@@ -114,7 +114,7 @@ export function FeaturedIndustries() {
           , React.createElement(Reveal, null
             , React.createElement('h2', { className: "text-3xl md:text-4xl xl:text-5xl font-semibold tracking-tight text-white mb-2 leading-tight font-sans"        ,}, "Architected to"
                , " "
-              , React.createElement('span', { className: "inline-block bg-rose-500 text-black font-extrabold px-3.5 py-1 mx-1.5 rounded-sm transform -rotate-3 shadow-[0_4px_20px_rgba(225,29,72,0.45)] align-middle uppercase tracking-wider text-2xl sm:text-3xl md:text-4xl xl:text-5xl"                 ,}, "CREATE"
+              , React.createElement('span', { className: "inline-block bg-rose-500 text-black font-semibold px-3.5 py-1 mx-1.5 rounded-sm transform -rotate-3 shadow-[0_4px_20px_rgba(225,29,72,0.45)] align-middle uppercase tracking-wider text-2xl sm:text-3xl md:text-4xl xl:text-5xl"                 ,}, "CREATE"
 
               ), " ", "High-Impact Solutions"
 
@@ -132,7 +132,7 @@ export function FeaturedIndustries() {
                   key: tab.id,
                   onClick: () => setActiveTab(tab.id),
                   className: `text-sm md:text-[15px] font-semibold transition-all duration-300 relative pb-3 cursor-pointer shrink-0 ${
-                    isActive ? "text-rose-500 font-bold" : "text-zinc-400 hover:text-white"
+                    isActive ? "text-rose-500 font-semibold" : "text-zinc-400 hover:text-white"
                   }`,}
 
                   , tab.name
@@ -170,7 +170,7 @@ export function FeaturedIndustries() {
             /* Mobile Solid Rose Content Card */
             , React.createElement('div', { className: "relative z-10 w-full bg-rose-600 p-6 flex flex-col justify-between min-h-[220px] shadow-2xl"         ,}
               , React.createElement('div', null
-                , React.createElement('h3', { className: "text-xl font-bold tracking-tight text-white mb-2.5"    ,}
+                , React.createElement('h3', { className: "text-xl font-semibold tracking-tight text-white mb-2.5"    ,}
                   , activeData.title
                 )
                 , React.createElement('p', { className: "text-white text-xs font-medium leading-relaxed opacity-95"    ,}
@@ -181,7 +181,7 @@ export function FeaturedIndustries() {
               , React.createElement('div', { className: "pt-4",}
                 , React.createElement(Link, { 
                   to: `/industries/${activeData.slug}`,
-                  className: "text-xs font-bold text-white hover:text-rose-100 uppercase tracking-wider inline-flex items-center gap-2 group/btn w-fit relative z-30"            ,}
+                  className: "text-xs font-semibold text-white hover:text-rose-100 uppercase tracking-wider inline-flex items-center gap-2 group/btn w-fit relative z-30"            ,}
 
                   , React.createElement('span', null, "Explore " , activeData.name)
                   , React.createElement(ArrowUpRight, { size: 16, className: "transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-0.5 transition-transform text-white"    ,} )
@@ -215,7 +215,7 @@ export function FeaturedIndustries() {
               , React.createElement('div', { className: "absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out bg-gradient-to-r from-transparent via-white/30 to-transparent pointer-events-none z-20"            ,} )
 
               , React.createElement('div', null
-                , React.createElement('h3', { className: "text-xl lg:text-2xl font-bold tracking-tight text-white mb-4"     ,}
+                , React.createElement('h3', { className: "text-xl lg:text-2xl font-semibold tracking-tight text-white mb-4"     ,}
                   , activeData.title
                 )
                 , React.createElement('p', { className: "text-white text-xs lg:text-sm font-medium leading-relaxed opacity-95"     ,}
@@ -226,7 +226,7 @@ export function FeaturedIndustries() {
               , React.createElement('div', null
                 , React.createElement(Link, { 
                   to: `/industries/${activeData.slug}`,
-                  className: "text-xs font-bold text-white hover:text-rose-100 uppercase tracking-wider flex items-center gap-1.5 mt-8 group/btn w-fit relative z-30"             ,}
+                  className: "text-xs font-semibold text-white hover:text-rose-100 uppercase tracking-wider flex items-center gap-1.5 mt-8 group/btn w-fit relative z-30"             ,}
 
                   , React.createElement('span', null, "Explore " , activeData.name)
                   , React.createElement(ArrowUpRight, { size: 14, className: "transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-0.5 transition-transform text-white"    ,} )

@@ -1,51 +1,57 @@
 import { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
-import insight1 from "../../assets/fresh/microsoft-teams-and-sharepoint-the-perfect-collaboration-bundle-01.webp";
-import insight2 from "../../assets/fresh/modern-interior-design-office.jpg";
-import insight3 from "../../assets/fresh/multinational_team_summit.jpg";
-import insight4 from "../../assets/fresh/office-work-environment-stockcake.jpg";
-import insight5 from "../../assets/fresh/sales-growth-graph-on-laptop-screen-with-pointing-hand-illustrating-business-success-and-market-trend-photo.jpeg";
-import insight6 from "../../assets/fresh/cloud_data_center_hall.jpg";
+import insight1 from "../../assets/fresh/agent_code_refactoring.jpg";
+import insight2 from "../../assets/fresh/agent_deep_market_research.jpg";
+import insight3 from "../../assets/fresh/agent_hr_workforce.jpg";
+import insight4 from "../../assets/fresh/agent_marketing_campaign.jpg";
+import insight5 from "../../assets/fresh/agent_procurement_vendor.jpg";
+import insight6 from "../../assets/fresh/agent_sales_outreach.jpg";
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const ITEMS = [
   {
-    tag: "AGENT RESEARCH",
-    title: "Multi-Agent System Orchestration at Enterprise Scale",
-    desc: "How leading organizations coordinate specialized swarms of autonomous agents while guaranteeing deterministic compliance.",
-    image: insight1
+    tag: "CASE STUDY",
+    title: "Next-Gen IT Operations with Autonomous Agentic AI",
+    desc: "How enterprises deploy autonomous multi-agent swarms to auto-resolve infrastructure alerts and slash incident response times.",
+    image: insight1,
+    href: "https://devopstrio.co.uk/insights/case-studies/next-gen-it-operations-with-agentic-ai-9jkmk0",
   },
   {
-    tag: "SECURITY REPORT",
-    title: "Governing Autonomous Actions: Zero-Trust Guardrails",
-    desc: "Why traditional perimeter security fails with autonomous AI agents and how to implement continuous execution sandboxes.",
-    image: insight2
+    tag: "BLOG",
+    title: "How AI Agents Boost Enterprise Automation and Business Growth",
+    desc: "A strategic blueprint for orchestrating autonomous agents across enterprise workflows, driving productivity and operational velocity.",
+    image: insight2,
+    href: "https://devopstrio.co.uk/insights/blogs/how-ai-agents-boost-enterprise-automation-and-business-growth-l0yqvh",
   },
   {
     tag: "CASE STUDY",
-    title: "Tier-1 Bank Deploys 5,000 Autonomous Fraud Agents",
-    desc: "How real-time agentic triage isolated unauthorized cross-border transactions in under 20 milliseconds with zero false alarms.",
-    image: insight3
+    title: "Enhancing Institutional Banking Productivity with Agentic AI",
+    desc: "Autonomous agent deployment in financial services: automating compliance checks, transaction auditing, and sub-second anomaly isolation.",
+    image: insight3,
+    href: "https://devopstrio.co.uk/insights/case-studies/enhancing-institutional-banking-productivity-with-agentic-ai-s5t8ui",
   },
   {
-    tag: "RESEARCH REPORT",
-    title: "From Copilots to Autonomous Swarms",
-    desc: "A strategic roadmap for graduating from human-prompted chatbots to fully autonomous cognitive business workflows.",
-    image: insight4
+    tag: "CLIENT TRANSFORMATION",
+    title: "From Manual Workflows to Intelligent Agentic Operations",
+    desc: "How Devopstrio modernized legacy operational workflows with autonomous agents, eliminating cross-departmental coordination bottlenecks.",
+    image: insight4,
+    href: "https://devopstrio.co.uk/insights/client-transformations/from-manual-workflows-to-intelligent-operations-how-devopstrio-automated-enterprise-workflows-g8f9k2",
   },
   {
-    tag: "EXECUTIVE BRIEF",
-    title: "Enterprise Agent Architecture: LLMs to Action Tools",
-    desc: "Designing resilient tool-calling APIs and stateful memory stores that prevent hallucination in production workflows.",
-    image: insight5
+    tag: "WHITE PAPER",
+    title: "MLOps to LLMOps: Streamlining AI Model Deployment & Scaling",
+    desc: "Key architectural principles for deploying, supervising, and scaling production-grade agent platforms with zero model retention risk.",
+    image: insight5,
+    href: "https://devopstrio.co.uk/insights/blogs/mlops-to-llmops-streamlining-ai-model-deployment-scaling-4ckbn4",
   },
   {
     tag: "CASE STUDY",
-    title: "Global Supply Chain Automated by 24/7 Agent Swarms",
-    desc: "Automated customs manifest verification and inventory balancing cut order-to-delivery turnaround time by 60%.",
-    image: insight6
+    title: "From Frozen Legacy to AI-Powered Velocity with Autonomous AI",
+    desc: "Transforming a global enterprise by replacing fragile manual handoffs with autonomous, self-healing cognitive agent pipelines.",
+    image: insight6,
+    href: "https://devopstrio.co.uk/insights/case-studies/from-frozen-legacy-to-ai-powered-velocity-transforming-a-global-investment-and-insurance-firm-ejni38",
   },
 ];
 
@@ -64,15 +70,19 @@ const styles = {
     padding: "0 24px",
     maxWidth: "1280px",
     margin: "0 auto 34px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-end",
+    flexWrap: "wrap",
+    gap: "16px",
   },
   heading: {
     fontFamily: FONT,
     color: "#FFFFFF",
     fontSize: "clamp(2rem, 3.6vw, 3rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "-0.02em",
     margin: 0,
-    marginBottom: "22px",
   },
   viewAll: {
     display: "inline-flex",
@@ -83,35 +93,38 @@ const styles = {
     fontWeight: 600,
     color: "#FFFFFF",
     cursor: "pointer",
+    transition: "color 0.2s ease",
   },
   viewAllArrow: {
     width: "24px",
     height: "24px",
     backgroundColor: "#E11D48",
-    borderRadius: "3px",
+    borderRadius: "4px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    transition: "transform 0.2s ease, background-color 0.2s ease",
   },
   navControls: {
     display: "flex",
     justifyContent: "flex-end",
     gap: "12px",
-    padding: "30px 5% 0",
+    padding: "30px 24px 0",
     maxWidth: "1280px",
     margin: "0 auto",
   },
   navBtn: {
     width: "38px",
     height: "38px",
-    borderRadius: "4px",
+    borderRadius: "6px",
     backgroundColor: "rgba(255,255,255,0.06)",
-    border: "1px solid rgba(255,255,255,0.1)",
+    border: "1px solid rgba(255,255,255,0.12)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     cursor: "pointer",
-    color: "#fff",
+    color: "#FFFFFF",
+    transition: "all 0.2s ease",
   },
   scrollWrap: {
     padding: "0 24px",
@@ -128,7 +141,6 @@ const styles = {
   },
   card: {
     flex: "0 0 360px",
-    height: "440px",
     borderRadius: "16px",
     position: "relative",
     overflow: "hidden",
@@ -137,12 +149,9 @@ const styles = {
     border: "1px solid rgba(255,255,255,0.08)",
     display: "flex",
     flexDirection: "column",
-    transition: "border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease",
-  
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
     justifyContent: "space-between",
+    transition: "border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease",
+    textDecoration: "none",
   },
   imgWrap: {
     position: "relative",
@@ -171,7 +180,7 @@ const styles = {
     color: "#FFFFFF",
     fontFamily: FONT,
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.04em",
     zIndex: 2,
   },
@@ -190,12 +199,13 @@ const styles = {
     color: "#FFFFFF",
     lineHeight: 1.4,
     margin: "0 0 12px 0",
+    letterSpacing: "-0.01em",
   },
   desc: {
     fontFamily: FONT,
-    fontSize: "13px",
+    fontSize: "13.5px",
     lineHeight: 1.6,
-    color: "rgba(255,255,255,0.6)",
+    color: "rgba(255,255,255,0.65)",
     margin: 0,
   },
   readMore: {
@@ -205,7 +215,8 @@ const styles = {
     color: "#E11D48",
     fontSize: "13px",
     fontWeight: 600,
-    marginTop: "16px",
+    marginTop: "20px",
+    transition: "gap 0.2s ease",
   }
 };
 
@@ -229,12 +240,15 @@ function Card({ item }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <motion.div
+    <motion.a
+      href={item.href}
+      target="_blank"
+      rel="noopener noreferrer"
       style={{
         ...styles.card,
         borderColor: isHovered ? "rgba(225,29,72,0.5)" : "rgba(255,255,255,0.08)",
         transform: isHovered ? "translateY(-6px)" : "none",
-        boxShadow: isHovered ? "0 12px 35px rgba(225,29,72,0.15)" : "none",
+        boxShadow: isHovered ? "0 14px 40px rgba(225,29,72,0.18)" : "none",
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -261,11 +275,11 @@ function Card({ item }) {
           <h3 style={styles.title}>{item.title}</h3>
           <p style={styles.desc}>{item.desc}</p>
         </div>
-        <div style={styles.readMore}>
+        <div style={{ ...styles.readMore, gap: isHovered ? "10px" : "6px" }}>
           Read Article <ArrowIcon />
         </div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }
 
@@ -295,12 +309,18 @@ export default function AgentsInsights() {
           Explore Agent <span style={{ color: "#E11D48" }}>Insights</span>
         </motion.h2>
 
-        <div style={styles.viewAll}>
+        <a 
+          href="https://devopstrio.co.uk/insights" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={styles.viewAll}
+          className="view-all-insights-link"
+        >
           View All Insights
           <div style={styles.viewAllArrow}>
             <ArrowIcon />
           </div>
-        </div>
+        </a>
       </div>
 
       <div style={styles.scrollWrap}>
@@ -312,13 +332,35 @@ export default function AgentsInsights() {
       </div>
 
       <div style={styles.navControls}>
-        <button style={styles.navBtn} onClick={() => handleScroll("left")} aria-label="Scroll left">
+        <button 
+          style={styles.navBtn} 
+          onClick={() => handleScroll("left")} 
+          aria-label="Scroll left"
+          onMouseEnter={e => e.currentTarget.style.borderColor = "rgba(225,29,72,0.4)"}
+          onMouseLeave={e => e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"}
+        >
           <NavArrowIcon direction="left" />
         </button>
-        <button style={styles.navBtn} onClick={() => handleScroll("right")} aria-label="Scroll right">
+        <button 
+          style={styles.navBtn} 
+          onClick={() => handleScroll("right")} 
+          aria-label="Scroll right"
+          onMouseEnter={e => e.currentTarget.style.borderColor = "rgba(225,29,72,0.4)"}
+          onMouseLeave={e => e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"}
+        >
           <NavArrowIcon direction="right" />
         </button>
       </div>
+
+      <style>{`
+        .view-all-insights-link:hover {
+          color: #E11D48 !important;
+        }
+        .view-all-insights-link:hover div {
+          background-color: #BE123C !important;
+          transform: translateX(3px);
+        }
+      `}</style>
     </section>
   );
 }

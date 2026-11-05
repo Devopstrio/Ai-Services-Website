@@ -16,7 +16,7 @@ const styles = {
   heading: {
     color: "#FFFFFF",
     fontSize: "clamp(2.5rem, 4vw, 3.5rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     margin: "0 0 80px 0",
     textAlign: "center",
     letterSpacing: "-0.02em"
@@ -56,7 +56,7 @@ const styles = {
   layerTitle: {
     color: "#FFFFFF",
     fontSize: "1.5rem",
-    fontWeight: 700,
+    fontWeight: 600,
     marginBottom: "12px",
     letterSpacing: "-0.01em"
   },
@@ -128,7 +128,7 @@ function ArchitectureLayer({ title, desc, nodes, isTop, delay }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {isTop && <div style={{ color: "#E11D48", fontWeight: 800, fontSize: "14px", marginBottom: "16px", letterSpacing: "0.15em" }}>ENTERPRISE OUTCOME</div>}
+      {isTop && <div style={{ color: "#E11D48", fontWeight: 600, fontSize: "14px", marginBottom: "16px", letterSpacing: "0.15em" }}>ENTERPRISE OUTCOME</div>}
       <div style={styles.layerTitle}>{title}</div>
       <div style={styles.layerDesc}>{desc}</div>
       

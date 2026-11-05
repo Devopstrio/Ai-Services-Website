@@ -1,9 +1,9 @@
 import heroBg from "../../assets/fresh/talent_intelligence_portal.jpg";
-import resumeParsingImg from "../../assets/unique_agents/hr_talent_onboarding.jpg";
-import videoInterviewImg from "../../assets/fresh/ai_consultants_discussion.jpg";
-import antiBiasImg from "../../assets/fresh/identification-vs-authontication-2.jpg";
-import retentionImg from "../../assets/fresh/enterprise_innovation_hub.jpg";
-import caseStudyImg from "../../assets/unique_agents/hr_agent_case.jpg";
+import resumeParsingImg from "../../assets/products/aihire/resume_screening.webp";
+import videoInterviewImg from "../../assets/products/aihire/video_interviews.webp";
+import antiBiasImg from "../../assets/products/aihire/proctoring_integrity.webp";
+import retentionImg from "../../assets/products/aihire/collaborative_pipeline.webp";
+import caseStudyImg from "../../assets/products/aihire/case_study.webp";
 
 export const aihireData = {
   id: "aihire",

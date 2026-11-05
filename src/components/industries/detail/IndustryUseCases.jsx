@@ -166,7 +166,7 @@ export function IndustryUseCases({ useCases }) {
                       Success Case {(idx + 1).toString().padStart(2, "0")}
                     </span> */
 
-                    , React.createElement('h3', { className: "text-xl sm:text-2xl font-bold text-white mb-2 leading-snug group-hover:text-rose-500 transition-colors font-sans"        ,}
+                    , React.createElement('h3', { className: "text-xl sm:text-2xl font-semibold text-white mb-2 leading-snug group-hover:text-rose-500 transition-colors font-sans"        ,}
                       , uc.title
                     )
 

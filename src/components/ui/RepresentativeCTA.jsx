@@ -1,68 +1,151 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { Reveal } from "./Reveal";
+import { motion } from "framer-motion";
+
+function CtaButton({ text, href, to, onClick, isPrimary = true, isEmerald = false }) {
+  const target = href || to;
+  const isExternal =
+    typeof target === "string" &&
+    (target.startsWith("http") || target.startsWith("#") || target.startsWith("mailto:"));
+
+  const className = isPrimary
+    ? `btn-tactile group ${isEmerald ? "[--btn-theme-bg:#059669] [--btn-theme-focus:#10b981]" : ""}`
+    : "btn-tactile btn-tactile-secondary group";
+
+  const content = (
+    <div>
+      <span>
+        {text}
+        <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+      </span>
+    </div>
+  );
+
+  if (onClick) {
+    return (
+      <button onClick={onClick} className={className} type="button">
+        {content}
+      </button>
+    );
+  }
+
+  if (isExternal) {
+    return (
+      <a
+        href={target}
+        className={className}
+        target={target.startsWith("http") ? "_blank" : undefined}
+        rel={target.startsWith("http") ? "noopener noreferrer" : undefined}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link to={target || "/contact"} className={className}>
+      {content}
+    </Link>
+  );
+}
 
 export function RepresentativeCTA({
-  title = "Ready To Design Your Industry",
-  highlightText = "Regulatory & Cloud Roadmap?",
-  description = "Book a dedicated architectural mapping session with our principal systems engineering practice.",
-  primaryBtnText = "Schedule Discovery Call",
+  title = "Ready To Shape The Next Era Of",
+  highlightText = "AI & Digital Innovation?",
+  description,
+  primaryBtnText = "GET STARTED",
   primaryBtnHref = "/contact",
-  secondaryBtnText = "Explore Solutions",
+  primaryBtnTo,
+  primaryBtnOnClick,
+  secondaryBtnText = "EXPLORE PLATFORM",
   secondaryBtnHref = "/solutions/overview",
-  badgeText = "Enterprise Advisory",
-  imageSrc = "/webp/assets/Industries-page/industries/Banking-and-Finance.webp",
-  imageAlt = "Devopstrio Architect"
+  secondaryBtnTo,
+  secondaryBtnOnClick,
+  imageSrc = "/cta-img-001.webp",
+  imageAlt = "AI Representative",
+  theme = "rose",
+  hideImageOnMobile = false,
+  badgeText
 }) {
+  const isEmerald = theme === "emerald";
+  const highlightColor = isEmerald
+    ? "text-emerald-400 font-bold"
+    : "text-rose-500 font-bold";
+
   return (
-    <section className="w-full py-20 bg-black text-white relative overflow-hidden border-t border-zinc-900">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        <Reveal>
-          <div className="relative rounded-3xl bg-gradient-to-br from-zinc-950 via-zinc-900/60 to-black border border-zinc-800/80 p-8 sm:p-12 lg:p-16 overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className="max-w-2xl text-left">
-              {badgeText && (
-                <span className="inline-block px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-widest uppercase bg-rose-500/10 text-rose-500 border border-rose-500/20 mb-6">
-                  {badgeText}
-                </span>
-              )}
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-white tracking-tight leading-tight mb-6">
-                {title} <span className="font-semibold text-rose-500">{highlightText}</span>
-              </h2>
-              <p className="text-zinc-400 text-sm sm:text-base font-light leading-relaxed mb-8 max-w-xl">
-                {description}
-              </p>
-              <div className="flex flex-wrap items-center gap-4">
-                <Link
-                  to={primaryBtnHref}
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-xs font-bold tracking-wider uppercase bg-rose-600 hover:bg-rose-500 text-white transition-all shadow-[0_0_25px_rgba(225,29,72,0.3)] hover:-translate-y-0.5"
-                >
-                  {primaryBtnText}
-                  <ArrowUpRight size={16} />
-                </Link>
+    <section className="w-full pt-12 sm:pt-16 lg:pt-20 pb-8 sm:pb-12 bg-black relative font-sans overflow-x-clip">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 36 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.22 }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <div className="bg-[#080808] border border-zinc-800/80 rounded-3xl p-6 sm:p-10 lg:p-12 lg:pl-14 lg:pr-8 relative shadow-2xl flex flex-col lg:flex-row items-stretch justify-between gap-8 min-h-[360px] sm:min-h-[400px] lg:min-h-[440px] xl:min-h-[460px] overflow-hidden">
+            {/* Left Content Column: Title at Top, CTA Buttons at Bottom */}
+            <div className="w-full lg:w-[58%] xl:w-[60%] z-20 flex flex-col justify-between items-start text-left relative py-2">
+              <div>
+                {badgeText && (
+                  <span className="inline-block px-3.5 py-1.5 rounded-full text-[11px] font-semibold tracking-widest uppercase bg-rose-500/10 text-rose-500 border border-rose-500/20 mb-4 sm:mb-6">
+                    {badgeText}
+                  </span>
+                )}
+                {/* Title at Top */}
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white leading-[1.18] font-sans mb-4 sm:mb-6 max-w-3xl drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">
+                  {title}{" "}
+                  {highlightText && (
+                    <span className={`${highlightColor} block sm:inline mt-1 sm:mt-0 font-semibold`}>
+                      {highlightText}
+                    </span>
+                  )}
+                </h2>
+
+                {description && (
+                  <p className="text-zinc-400 text-sm sm:text-base font-light leading-relaxed mb-6 max-w-xl">
+                    {description}
+                  </p>
+                )}
+              </div>
+
+              {/* Tactile CTA Buttons */}
+              <div className="mt-auto pt-6 sm:pt-8 flex flex-wrap items-center gap-5 sm:gap-7">
+                {primaryBtnText && (
+                  <CtaButton
+                    text={primaryBtnText}
+                    href={primaryBtnHref || primaryBtnTo}
+                    onClick={primaryBtnOnClick}
+                    isPrimary={true}
+                    isEmerald={isEmerald}
+                  />
+                )}
                 {secondaryBtnText && (
-                  <Link
-                    to={secondaryBtnHref}
-                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-xs font-bold tracking-wider uppercase border border-zinc-700 hover:border-zinc-500 bg-zinc-900/60 hover:bg-zinc-800 text-white transition-all hover:-translate-y-0.5"
-                  >
-                    {secondaryBtnText}
-                    <ArrowUpRight size={16} />
-                  </Link>
+                  <CtaButton
+                    text={secondaryBtnText}
+                    href={secondaryBtnHref || secondaryBtnTo}
+                    onClick={secondaryBtnOnClick}
+                    isPrimary={false}
+                    isEmerald={isEmerald}
+                  />
                 )}
               </div>
             </div>
-            {imageSrc && (
-              <div className="w-full lg:w-96 flex justify-center lg:justify-end">
-                <img
-                  src={imageSrc}
-                  alt={imageAlt}
-                  className="w-full max-h-72 object-cover rounded-2xl border border-zinc-800/80 shadow-2xl"
-                  loading="lazy"
-                />
-              </div>
-            )}
+
+            {/* Right Representative Image (Cleanly fitted inside card with full head clearance) */}
+            <div
+              className={`${
+                hideImageOnMobile ? "hidden lg:flex" : "flex"
+              } lg:absolute lg:bottom-0 lg:right-2 xl:right-6 lg:top-auto lg:h-[88%] xl:h-[90%] w-full sm:w-[460px] md:w-[500px] lg:w-[520px] xl:w-[580px] justify-center lg:justify-end items-end pointer-events-none z-10 mt-6 sm:mt-8 lg:mt-0 mx-auto lg:mx-0`}
+            >
+              <img
+                src={imageSrc}
+                alt={imageAlt}
+                className="w-auto h-auto max-h-[240px] sm:max-h-[300px] lg:h-full lg:max-h-full object-contain object-bottom pointer-events-none drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] lg:drop-shadow-[0_25px_50px_rgba(0,0,0,0.95)]"
+                loading="lazy"
+              />
+            </div>
           </div>
-        </Reveal>
+        </motion.div>
       </div>
     </section>
   );

@@ -407,7 +407,7 @@ const styles = {
   statNumber: {
     fontFamily: FONT,
     fontSize: "clamp(2.2rem, 3.6vw, 3rem)",
-    fontWeight: 800,
+    fontWeight: 600,
     color: "#FFFFFF",
     lineHeight: 1,
     margin: 0,

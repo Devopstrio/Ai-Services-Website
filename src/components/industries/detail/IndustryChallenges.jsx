@@ -45,7 +45,7 @@ export function IndustryChallenges({ challenges }) {
                   )
 
                   /* Title (Increased Font Size) */
-                  , React.createElement('h4', { className: "text-xl sm:text-2xl font-bold text-white tracking-tight group-hover:text-rose-400 transition-colors duration-300 leading-snug font-sans"         ,}
+                  , React.createElement('h4', { className: "text-xl sm:text-2xl font-semibold text-white tracking-tight group-hover:text-rose-400 transition-colors duration-300 leading-snug font-sans"         ,}
                     , chal.title
                   )
                 )

@@ -220,16 +220,14 @@ const styles = {
     textTransform: "uppercase",
     color: "#FDA4AF",
     marginBottom: "8px",
-    textShadow: "0 1px 8px rgba(0,0,0,0.6)",
   },
   titleBase: {
     fontFamily: FONT,
-    fontWeight: 700,
+    fontWeight: 600,
     color: "#FFFFFF",
     lineHeight: 1.2,
     letterSpacing: "-0.025em",
     margin: 0,
-    textShadow: "0 2px 12px rgba(0,0,0,0.65)",
   },
 
   linkRow: {
@@ -241,7 +239,6 @@ const styles = {
     fontSize: "13.5px",
     fontWeight: 600,
     color: "#FFFFFF",
-    textShadow: "0 1px 6px rgba(0,0,0,0.5)",
   },
 
   /* Face 2: Hover Face (Solid White Reveal Card) */
@@ -255,7 +252,7 @@ const styles = {
   hoverTag: {
     fontFamily: FONT,
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.12em",
     textTransform: "uppercase",
     color: "#E11D48",
@@ -263,7 +260,7 @@ const styles = {
   hoverTitle: {
     fontFamily: FONT,
     color: "#0A0A0A",
-    fontWeight: 700,
+    fontWeight: 600,
     lineHeight: 1.25,
     margin: "6px 0 0",
     letterSpacing: "-0.02em",
@@ -404,7 +401,7 @@ function CapabilityCard({ item, index }) {
               <div key={i} style={{ display: "flex", alignItems: "baseline", gap: "8px" }}>
                 <span style={{ width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "#E11D48", shrink: 0 }} />
                 <div style={{ fontSize: "12px", lineHeight: 1.45 }}>
-                  <strong style={{ color: "#18181B", fontWeight: 700 }}>{h.label}: </strong>
+                  <strong style={{ color: "#18181B", fontWeight: 600 }}>{h.label}: </strong>
                   <span style={{ color: "#52525B" }}>{h.text}</span>
                 </div>
               </div>
@@ -441,7 +438,7 @@ function CapabilityCard({ item, index }) {
                 <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
                   <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#E11D48", marginTop: "7px", shrink: 0 }} />
                   <div>
-                    <span style={{ fontFamily: FONT, fontSize: "13.5px", fontWeight: 700, color: "#18181B" }}>{h.label}: </span>
+                    <span style={{ fontFamily: FONT, fontSize: "13.5px", fontWeight: 600, color: "#18181B" }}>{h.label}: </span>
                     <span style={{ fontFamily: FONT, fontSize: "13px", color: "#52525B", lineHeight: 1.55 }}>{h.text}</span>
                   </div>
                 </div>
@@ -478,7 +475,7 @@ function CapabilityCard({ item, index }) {
           <div style={{ display: "flex", gap: "16px", borderTop: "1px solid #E4E4E7", paddingTop: "12px", marginTop: "10px" }}>
             {item.highlights?.map((h, i) => (
               <div key={i} style={{ flex: 1, fontSize: "11.5px", lineHeight: 1.45 }}>
-                <strong style={{ color: "#18181B", display: "block", fontWeight: 700 }}>{h.label}</strong>
+                <strong style={{ color: "#18181B", display: "block", fontWeight: 600 }}>{h.label}</strong>
                 <span style={{ color: "#52525B" }}>{h.text}</span>
               </div>
             ))}

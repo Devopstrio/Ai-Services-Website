@@ -59,7 +59,7 @@ export function IndustrialFaq() {
                     onClick: () => setOpenFaq(isOpen ? null : idx),
                     className: "w-full flex items-center justify-between p-6 text-left transition-colors relative z-10"        ,}
 
-                    , React.createElement('span', { className: "text-sm md:text-base font-bold text-zinc-200 group-hover:text-white transition-colors"     ,}
+                    , React.createElement('span', { className: "text-sm md:text-base font-semibold text-zinc-200 group-hover:text-white transition-colors"     ,}
                       , faq.q
                     )
                     , React.createElement('span', { className: `w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 group-hover:text-white group-hover:bg-rose-950/15 group-hover:border-rose-500/20 transition-all duration-300 ${

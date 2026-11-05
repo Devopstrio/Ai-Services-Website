@@ -73,7 +73,7 @@ const styles = {
   label: {
     color: "#E11D48",
     fontSize: "12px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.15em",
     textTransform: "uppercase",
     marginBottom: "16px"
@@ -81,7 +81,7 @@ const styles = {
   heading: {
     color: "#FFFFFF",
     fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
-    fontWeight: 700,
+    fontWeight: 600,
     margin: "0 0 16px 0",
     letterSpacing: "-0.02em"
   },
@@ -139,7 +139,7 @@ const styles = {
     color: "#FFFFFF",
     fontFamily: FONT,
     fontSize: "11px",
-    fontWeight: 700,
+    fontWeight: 600,
     letterSpacing: "0.05em",
     zIndex: 2,
   },
@@ -153,7 +153,7 @@ const styles = {
   title: {
     color: "#FFFFFF",
     fontSize: "1.3rem",
-    fontWeight: 700,
+    fontWeight: 600,
     margin: "0 0 10px 0",
     letterSpacing: "-0.01em",
     lineHeight: 1.3

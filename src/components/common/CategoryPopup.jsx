@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { X, Check, Loader2, Sparkles } from "lucide-react";
+import { X, Check, Loader2 } from "lucide-react";
 import Swal from "sweetalert2";
 import { insightsApi } from "../../lib/insightsApi";
 
@@ -107,14 +107,13 @@ export default function CategoryPopup({ email, closePopup }) {
         {/* Header */}
         <div className="flex items-center gap-2 mb-2">
           <span className="p-1.5 rounded-md bg-rose-500/10 text-rose-500 border border-rose-500/20">
-            <Sparkles size={16} />
-          </span>
-          <span className="text-xs font-bold uppercase tracking-widest text-rose-500">
+            </span>
+          <span className="text-xs font-semibold uppercase tracking-widest text-rose-500">
             Newsletter Preferences
           </span>
         </div>
 
-        <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-2">
+        <h3 className="text-xl sm:text-2xl font-semibold text-white tracking-tight mb-2">
           Tailor Your Insights
         </h3>
 
@@ -198,7 +197,7 @@ export default function CategoryPopup({ email, closePopup }) {
             type="button"
             onClick={submitSubscription}
             disabled={loading || fetchingPref}
-            className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold uppercase tracking-wider bg-rose-600 hover:bg-rose-500 text-white transition-all shadow-[0_0_20px_rgba(225,29,72,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
+            className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold uppercase tracking-wider bg-rose-600 hover:bg-rose-500 text-white transition-all shadow-[0_0_20px_rgba(225,29,72,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? (
               <>
