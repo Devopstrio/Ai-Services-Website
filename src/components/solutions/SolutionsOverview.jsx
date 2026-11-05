@@ -6,7 +6,6 @@ import SolutionsArchitecture from "./SolutionsArchitecture";
 import SolutionsOutcomes from "./SolutionsOutcomes";
 import SolutionsInsights from "./SolutionsInsights";
 
-import enterpriseDashboardImg from "../../assets/fresh/dashboard_ai_model_training.jpg";
 import digitalGlobeImg from "../../assets/enterprise-references/overview/card-core-solution.webp";
 import teamCoworkersImg from "../../assets/enterprise-references/overview/card-automation.webp";
 import dataAnalyticsImg from "../../assets/enterprise-references/overview/card-data-knowledge.webp";
@@ -16,92 +15,123 @@ import analystTabletImg from "../../assets/enterprise-references/overview/card-b
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
+function RibbonGraphic() {
+  const bars = Array.from({ length: 60 }, (_, i) => i);
+  const cx = 520;
+  const cy = 300;
+  const baseAngle = -70;
+  const angleStep = 2.6;
+
+  return (
+    <svg
+      viewBox="0 0 900 600"
+      style={{ width: "100%", height: "100%" }}
+      preserveAspectRatio="xMidYMid slice"
+    >
+      <defs>
+        <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.28" />
+          <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0.04" />
+        </linearGradient>
+      </defs>
+      {bars.map((i) => {
+        const angle = baseAngle + i * angleStep;
+        const rad = (angle * Math.PI) / 180;
+        const len = 260 + Math.sin(i * 0.35) * 40;
+        const x2 = cx + Math.cos(rad) * len;
+        const y2 = cy + Math.sin(rad) * len;
+        return (
+          <motion.line
+            key={i}
+            x1={cx}
+            y1={cy}
+            x2={x2}
+            y2={y2}
+            stroke="url(#barGrad)"
+            strokeWidth="6"
+            strokeLinecap="round"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.2, delay: 0.3 + i * 0.008, ease: "easeOut" }}
+          />
+        );
+      })}
+    </svg>
+  );
+}
+
 const styles = {
-  section: {
+  heroSection: {
     position: "relative",
     width: "100%",
-    minHeight: "850px",
-    background: "#000000",
+    minHeight: "720px",
+    background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
     fontFamily: FONT,
     overflow: "hidden",
     display: "flex",
     alignItems: "center",
     boxSizing: "border-box",
     textAlign: "left",
-    paddingTop: "120px",
-    paddingBottom: "80px"
+    marginTop: "70px",
   },
-  heroBgGlow: {
+  graphicWrap: {
     position: "absolute",
-    top: "-20%",
-    right: "-10%",
-    width: "80%",
-    height: "120%",
-    background: "radial-gradient(circle, rgba(225,29,72,0.12) 0%, rgba(0,0,0,0) 60%)",
+    top: 0,
+    right: 0,
+    height: "100%",
+    width: "68%",
+    marginRight: "0%",
+    marginTop: "0",
+    zIndex: 0,
     pointerEvents: "none",
+    maskImage: "linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.4) 22%, #000 46%, #000 100%)",
+    WebkitMaskImage: "linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.4) 22%, #000 46%, #000 100%)",
   },
-  container: {
+  heroContainer: {
     position: "relative",
     zIndex: 2,
     width: "100%",
     maxWidth: "1280px",
     margin: "0 auto",
-    padding: "0 24px",
+    padding: "90px 24px",
     boxSizing: "border-box",
-    display: "flex",
-    flexDirection: "column",
-    gap: "120px",
-  },
-  heroSplit: {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr",
+    gridTemplateColumns: "1px 1fr",
     gap: "60px",
-    alignItems: "center",
   },
-  heroLeft: {
-    maxWidth: "640px",
+  divider: {
+    backgroundColor: "rgba(255,255,255,0.14)",
+    height: "100%",
+    minHeight: "380px",
+  },
+  heroTextCol: {
+    maxWidth: "980px",
     display: "flex",
     flexDirection: "column",
-    gap: "32px",
+    justifyContent: "center",
   },
   label: {
     color: "#E11D48",
     fontFamily: FONT,
     fontSize: "12px",
     fontWeight: 700,
-    letterSpacing: "0.1em",
+    letterSpacing: "0.12em",
     textTransform: "uppercase",
+    marginBottom: "16px",
   },
   heading: {
     fontFamily: FONT,
-    fontSize: "clamp(2.8rem, 5.5vw, 4.5rem)",
-    lineHeight: 1.05,
+    fontSize: "clamp(2.4rem, 4.8vw, 3.8rem)",
+    lineHeight: 1.1,
     letterSpacing: "-0.02em",
     margin: 0,
     color: "#FFFFFF",
-    fontWeight: 700,
-  },
-  headingAccent: {
-    color: "#E11D48",
-  },
-  paragraph: {
-    fontFamily: FONT,
-    fontSize: "clamp(1.05rem, 1.4vw, 1.25rem)",
-    lineHeight: 1.7,
-    color: "rgba(255,255,255,0.65)",
-    fontWeight: 400,
-    margin: 0,
-    maxWidth: "540px"
-  },
-  ctaRow: {
-    display: "flex",
-    gap: "16px"
   },
   primaryCta: {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "16px 32px",
+    padding: "14px 30px",
     backgroundColor: "#E11D48",
     color: "#FFFFFF",
     borderRadius: "8px",
@@ -109,94 +139,59 @@ const styles = {
     fontWeight: 600,
     cursor: "pointer",
     border: "none",
-    gap: "8px"
+    gap: "8px",
+    transition: "all 0.25s ease",
   },
   secondaryCta: {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "16px 32px",
+    padding: "14px 30px",
     backgroundColor: "transparent",
     color: "#FFFFFF",
-    border: "1px solid rgba(255,255,255,0.2)",
+    border: "1px solid rgba(255,255,255,0.25)",
     borderRadius: "8px",
     fontSize: "15px",
     fontWeight: 600,
     cursor: "pointer",
+    transition: "all 0.25s ease",
   },
   featuresRow: {
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
     gap: "24px",
-    marginTop: "24px",
+    marginTop: "44px",
+    maxWidth: "720px",
     borderTop: "1px solid rgba(255,255,255,0.1)",
-    paddingTop: "32px",
+    paddingTop: "28px",
   },
   featItem: {
     display: "flex",
     flexDirection: "column",
-    gap: "8px"
+    gap: "6px",
   },
   featIconWrap: {
-    width: "40px",
-    height: "40px",
+    width: "38px",
+    height: "38px",
     borderRadius: "8px",
     background: "rgba(225,29,72,0.1)",
-    border: "1px solid rgba(225,29,72,0.2)",
+    border: "1px solid rgba(225,29,72,0.25)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     color: "#E11D48",
-    marginBottom: "8px"
+    marginBottom: "6px",
   },
   featTitle: {
     fontSize: "14px",
     fontWeight: 600,
     color: "#FFFFFF",
-    margin: 0
+    margin: 0,
   },
   featDesc: {
     fontSize: "13px",
-    color: "rgba(255,255,255,0.5)",
-    margin: 0
-  },
-  heroRight: {
-    position: "relative",
-    height: "600px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    perspective: "1200px"
-  },
-  glassPanelWrap: {
-    position: "relative",
-    width: "120%",
-    height: "85%",
-    transformStyle: "preserve-3d"
-  },
-  dashboardGlow: {
-    position: "absolute",
-    top: "20%",
-    left: "10%",
-    right: "10%",
-    bottom: "20%",
-    background: "#E11D48",
-    filter: "blur(80px)",
-    opacity: 0.25,
-    zIndex: 1,
-    transform: "translateZ(-50px)"
-  },
-  glassPanel: {
-    position: "absolute",
-    inset: 0,
-    background: "rgba(10,10,10,0.8)",
-    border: "1px solid rgba(255,255,255,0.08)",
-    borderRadius: "16px",
-    boxShadow: "0 40px 80px rgba(0,0,0,0.8)",
-    backgroundImage: `url(${enterpriseDashboardImg})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    zIndex: 2
+    color: "rgba(255,255,255,0.55)",
+    margin: 0,
   },
 
   solutionsSection: {
@@ -212,14 +207,14 @@ const styles = {
     fontWeight: 700,
     fontSize: "2rem",
     letterSpacing: "-0.02em",
-    margin: "0 0 12px 0"
+    margin: "0 0 12px 0",
   },
   solutionsTitle: {
     color: "rgba(255,255,255,0.6)",
     fontSize: "1rem",
     fontWeight: 400,
     margin: 0,
-    lineHeight: 1.6
+    lineHeight: 1.6,
   },
   solutionsGrid: {
     display: "grid",
@@ -244,14 +239,14 @@ const styles = {
     width: "45%",
     flexShrink: 0,
     position: "relative",
-    overflow: "hidden"
+    overflow: "hidden",
   },
   featImg: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
     position: "absolute",
-    inset: 0
+    inset: 0,
   },
   featImgOverlay: {
     position: "absolute",
@@ -265,9 +260,8 @@ const styles = {
     flexDirection: "column",
     position: "relative",
     zIndex: 2,
-    justifyContent: "center"
+    justifyContent: "center",
   },
-  
   supCard: {
     position: "relative",
     borderRadius: "16px",
@@ -285,14 +279,14 @@ const styles = {
     height: "180px",
     flexShrink: 0,
     position: "relative",
-    overflow: "hidden"
+    overflow: "hidden",
   },
   supImg: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
     position: "absolute",
-    inset: 0
+    inset: 0,
   },
   supImgOverlay: {
     position: "absolute",
@@ -300,83 +294,72 @@ const styles = {
     background: "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(10,10,10,1) 100%)",
   },
   supContent: {
-    padding: "24px 32px 32px",
-    flex: 1,
+    padding: "30px",
     display: "flex",
     flexDirection: "column",
+    flex: 1,
   },
-
   catLabel: {
+    color: "#E11D48",
     fontSize: "11px",
     fontWeight: 700,
     letterSpacing: "0.1em",
-    color: "#E11D48",
+    textTransform: "uppercase",
     marginBottom: "12px",
-    textTransform: "uppercase"
   },
   cardTitle: {
-    fontFamily: FONT,
-    fontSize: "1.4rem",
-    fontWeight: 600,
     color: "#FFFFFF",
-    margin: "0 0 12px 0",
+    fontSize: "1.3rem",
+    fontWeight: 700,
     letterSpacing: "-0.01em",
-    lineHeight: 1.2
+    margin: "0 0 10px 0",
+    lineHeight: 1.3,
   },
   cardDesc: {
-    fontFamily: FONT,
-    fontSize: "14.5px",
-    color: "rgba(255,255,255,0.55)",
+    color: "rgba(255,255,255,0.6)",
+    fontSize: "13.5px",
     lineHeight: 1.6,
-    margin: "0 0 24px 0",
-  },
-  exploreLink: {
-    display: "inline-flex",
-    alignItems: "center",
-    gap: "8px",
-    color: "#FFFFFF",
-    fontSize: "14px",
-    fontWeight: 600,
-    marginTop: "auto"
+    margin: 0,
   },
   expandedBox: {
-    marginTop: "24px",
-    paddingTop: "24px",
-    borderTop: "1px solid rgba(255,255,255,0.1)",
+    marginTop: "20px",
+    paddingTop: "20px",
+    borderTop: "1px solid rgba(255,255,255,0.08)",
     display: "flex",
     flexDirection: "column",
-    gap: "16px"
+    gap: "16px",
   },
   expandedLabel: {
     fontSize: "11px",
     fontWeight: 700,
-    letterSpacing: "0.08em",
-    color: "rgba(255,255,255,0.4)",
+    color: "#E11D48",
     textTransform: "uppercase",
-    marginBottom: "4px"
+    letterSpacing: "0.08em",
+    marginBottom: "4px",
   },
   expandedText: {
-    fontSize: "14px",
-    color: "rgba(255,255,255,0.8)",
+    fontSize: "13px",
     lineHeight: 1.5,
-    margin: 0
+    color: "rgba(255,255,255,0.8)",
+    margin: 0,
   },
   list: {
     margin: 0,
-    paddingLeft: "20px",
-    fontSize: "14px",
+    paddingLeft: "16px",
+    fontSize: "13px",
+    lineHeight: 1.6,
     color: "rgba(255,255,255,0.8)",
-    lineHeight: 1.5
   },
   navigateBtn: {
-    marginTop: "24px",
     display: "inline-flex",
     alignItems: "center",
     gap: "8px",
     color: "#E11D48",
-    fontSize: "14px",
+    fontSize: "13px",
     fontWeight: 700,
-  }
+    cursor: "pointer",
+    marginTop: "8px",
+  },
 };
 
 function ArrowIcon() {
@@ -479,20 +462,28 @@ function ExpandableSolutionCard({ isFeatured, label, title, desc, expandedData, 
                 </div>
               </div>
             </motion.div>
-          ) : (
-            <motion.div
-              key="collapsed"
-              layout
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              style={{ ...styles.exploreLink, gap: isHovered ? "12px" : "8px" }}
-            >
-              {isFeatured ? "Explore Solution" : `Explore ${label}`} <ArrowIcon />
-            </motion.div>
-          )}
+          ) : null}
         </AnimatePresence>
+
+        <div style={{ marginTop: "auto", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ color: "rgba(255,255,255,0.4)", fontSize: "12px" }}>
+            {isExpanded ? "Click to collapse" : "Click to expand details"}
+          </div>
+          <div style={{ 
+            width: "28px", 
+            height: "28px", 
+            borderRadius: "50%", 
+            background: isHovered ? "rgba(225,29,72,0.15)" : "rgba(255,255,255,0.05)",
+            border: `1px solid ${isHovered ? "rgba(225,29,72,0.3)" : "rgba(255,255,255,0.1)"}`,
+            display: "flex", 
+            alignItems: "center", 
+            justifyContent: "center",
+            color: isHovered ? "#E11D48" : "rgba(255,255,255,0.7)",
+            transition: "all 0.3s ease"
+          }}>
+            <ArrowIcon />
+          </div>
+        </div>
       </motion.div>
     </motion.div>
   );
@@ -501,22 +492,22 @@ function ExpandableSolutionCard({ isFeatured, label, title, desc, expandedData, 
 const SOLUTIONS_DATA = [
   {
     isFeatured: true,
-    label: "Core Solution",
-    title: "Enterprise Custom AI",
-    desc: "Build, deploy, and scale enterprise-grade AI applications. From conversational copilots to predictive intelligence engines, we seamlessly integrate AI into your core operations.",
+    label: "Core Enterprise AI",
+    title: "Enterprise AI Development",
+    desc: "Build mission-critical custom intelligence with enterprise-grade foundation models, fine-tuned specifically on your private proprietary datasets.",
     route: "/solutions/custom-ai-solutions",
     delay: 0,
     expandedData: {
-      solves: "Complex enterprise AI adoption and fragmented deployment challenges.",
-      capabilities: ["Custom LLM Wrappers", "Enterprise Copilots", "Predictive Intelligence", "Secure AI Integration"],
-      value: "Faster AI adoption with scalable, secure enterprise foundations."
+      solves: "Generic LLMs lacking domain precision, security compliance, and private data integration.",
+      capabilities: ["Custom LLM Fine-Tuning", "Retrieval-Augmented Generation (RAG)", "Enterprise Security Guardrails", "Multi-Modal Architectures"],
+      value: "Up to 60% reduction in manual analytical overhead with zero proprietary data leakage."
     },
-    ImgComponent: <img src={digitalGlobeImg} style={styles.featImg} alt="Enterprise AI" />
+    ImgComponent: <img src={digitalGlobeImg} style={styles.featImg} alt="Enterprise AI Development" />
   },
   {
     isFeatured: false,
-    label: "Automation",
-    title: "Intelligent Automation",
+    label: "Intelligent Automation",
+    title: "Workflow Automation",
     desc: "Transform complex operational workflows with AI-driven autonomous cognitive agents.",
     route: "/solutions/workflow-automation",
     delay: 0.1,
@@ -594,121 +585,115 @@ export default function SolutionsOverview() {
 
   return (
     <>
-      <section style={styles.section}>
-        <div style={styles.heroBgGlow} />
+      {/* 1. HERO SECTION (Aligned with Industry reference design) */}
+      <section style={styles.heroSection}>
+        <motion.div
+          style={styles.graphicWrap}
+          initial={{ opacity: 0, rotate: -4 }}
+          animate={{ opacity: 1, rotate: 0 }}
+          transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <motion.div
+            style={{ width: "100%", height: "100%" }}
+            animate={{ rotate: [0, 2, 0] }}
+            transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <RibbonGraphic />
+          </motion.div>
+        </motion.div>
 
-        <div style={styles.container}>
-          <div style={styles.heroSplit}>
-            <div style={styles.heroLeft}>
-              <motion.div 
-                style={styles.label}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                ENTERPRISE SOLUTIONS
-              </motion.div>
-              
-              <motion.h1 
-                style={styles.heading}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-              >
-                Solutions Built <br />
-                <span style={styles.headingAccent}>for What's Next</span>
-              </motion.h1>
+        <div style={styles.heroContainer}>
+          <div style={styles.divider} />
+          <div style={styles.heroTextCol}>
+            <motion.div 
+              style={styles.label}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              ENTERPRISE SOLUTIONS
+            </motion.div>
+            
+            <motion.h1 
+              style={styles.heading}
+              initial={{ opacity: 0, y: 26 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <span style={{ fontWeight: 700, color: "#FFFFFF" }}>Solutions Built</span>{" "}
+              <span style={{ fontWeight: 400, color: "rgba(255,255,255,0.7)" }}>for What's Next</span>
+            </motion.h1>
 
-              <motion.p 
-                style={styles.paragraph}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+            <motion.div 
+              style={{ display: "flex", gap: "16px", marginTop: "36px", flexWrap: "wrap" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <motion.button 
+                style={styles.primaryCta}
+                whileHover={{ scale: 1.03, backgroundColor: "#be123c" }}
+                whileTap={{ scale: 0.97 }}
+                onClick={() => {
+                  document.getElementById('solution-areas')?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
-                We help enterprises modernize, automate and innovate with secure, scalable and intelligent solutions that drive real business outcomes.
-              </motion.p>
+                Explore All Solutions <ArrowIcon />
+              </motion.button>
+              <motion.button 
+                style={styles.secondaryCta}
+                whileHover={{ backgroundColor: "rgba(255,255,255,0.08)", borderColor: "rgba(255,255,255,0.4)" }}
+                whileTap={{ scale: 0.97 }}
+                onClick={() => navigate("/contact")}
+              >
+                Talk to an Expert
+              </motion.button>
+            </motion.div>
 
-              <motion.div 
-                style={styles.ctaRow}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-              >
-                <motion.button 
-                  style={styles.primaryCta}
-                  whileHover={{ scale: 1.03, backgroundColor: "#be123c" }}
-                  whileTap={{ scale: 0.97 }}
-                  onClick={() => {
-                    document.getElementById('solution-areas')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Explore All Solutions <ArrowIcon />
-                </motion.button>
-                <motion.button 
-                  style={styles.secondaryCta}
-                  whileHover={{ backgroundColor: "rgba(255,255,255,0.05)" }}
-                  whileTap={{ scale: 0.97 }}
-                  onClick={() => navigate("/contact")}
-                >
-                  Talk to an Expert
-                </motion.button>
-              </motion.div>
-
-              <motion.div 
-                style={styles.featuresRow}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                <div style={styles.featItem}>
-                  <div style={styles.featIconWrap}>
-                    <SettingsIcon />
-                  </div>
-                  <h4 style={styles.featTitle}>End-to-End</h4>
-                  <p style={styles.featDesc}>Strategy to Support</p>
+            <motion.div 
+              style={styles.featuresRow}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.35 }}
+            >
+              <div style={styles.featItem}>
+                <div style={styles.featIconWrap}>
+                  <SettingsIcon />
                 </div>
-                <div style={styles.featItem}>
-                  <div style={styles.featIconWrap}>
-                    <SettingsIcon />
-                  </div>
-                  <h4 style={styles.featTitle}>Enterprise Grade</h4>
-                  <p style={styles.featDesc}>Secure by Design</p>
+                <h4 style={styles.featTitle}>End-to-End</h4>
+                <p style={styles.featDesc}>Strategy to Support</p>
+              </div>
+              <div style={styles.featItem}>
+                <div style={styles.featIconWrap}>
+                  <SettingsIcon />
                 </div>
-                <div style={styles.featItem}>
-                  <div style={styles.featIconWrap}>
-                    <SettingsIcon />
-                  </div>
-                  <h4 style={styles.featTitle}>Outcome Focused</h4>
-                  <p style={styles.featDesc}>Built for Impact</p>
+                <h4 style={styles.featTitle}>Enterprise Grade</h4>
+                <p style={styles.featDesc}>Secure by Design</p>
+              </div>
+              <div style={styles.featItem}>
+                <div style={styles.featIconWrap}>
+                  <SettingsIcon />
                 </div>
-              </motion.div>
-            </div>
+                <h4 style={styles.featTitle}>Outcome Focused</h4>
+                <p style={styles.featDesc}>Built for Impact</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
-            <div style={styles.heroRight}>
-              <motion.div 
-                style={styles.glassPanelWrap}
-                initial={{ opacity: 0, x: 40, rotateY: -15, rotateX: 10 }}
-                animate={{ opacity: 1, x: 0, rotateY: -15, rotateX: 10 }}
-                transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-              >
-                <div style={styles.dashboardGlow} />
-                <div style={styles.glassPanel} />
-              </motion.div>
-            </div>
+      {/* 2. SOLUTIONS GRID */}
+      <section id="solution-areas" style={{ backgroundColor: "#000000", padding: "100px 24px 120px", display: "flex", justifyContent: "center" }}>
+        <div style={{ width: "100%", maxWidth: "1280px", display: "flex", flexDirection: "column", gap: "50px" }}>
+          <div style={styles.solutionsHeader}>
+            <h2 style={styles.solutionsSub}>Our Enterprise Solutions</h2>
+            <p style={styles.solutionsTitle}>Comprehensive solutions to accelerate your digital transformation journey.</p>
           </div>
 
-          {/* SOLUTIONS GRID */}
-          <div id="solution-areas" style={styles.solutionsSection}>
-            <div style={styles.solutionsHeader}>
-              <h2 style={styles.solutionsSub}>Our Enterprise Solutions</h2>
-              <p style={styles.solutionsTitle}>Comprehensive solutions to accelerate your digital transformation journey.</p>
-            </div>
-
-            <div style={styles.solutionsGrid}>
-              {SOLUTIONS_DATA.map((item, i) => (
-                <ExpandableSolutionCard key={i} {...item} />
-              ))}
-            </div>
+          <div style={styles.solutionsGrid}>
+            {SOLUTIONS_DATA.map((item, i) => (
+              <ExpandableSolutionCard key={i} {...item} />
+            ))}
           </div>
         </div>
       </section>

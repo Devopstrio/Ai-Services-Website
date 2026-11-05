@@ -200,7 +200,11 @@ function TextCard({ label, heading, description, bg = "#121212", span }) {
         </div>
       </div>
 
-      <div style={styles.learnMore}>
+      <motion.div
+        style={styles.learnMore}
+        variants={{ rest: { opacity: 0, y: 4 }, hover: { opacity: 1, y: 0 } }}
+        transition={{ duration: 0.25, ease: "easeOut" }}
+      >
         Learn more
         <motion.span
           style={styles.arrowBox}
@@ -209,7 +213,7 @@ function TextCard({ label, heading, description, bg = "#121212", span }) {
         >
           <ArrowIcon />
         </motion.span>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
@@ -238,12 +242,6 @@ function ParagraphCard({ label, body, bg = "#121212", span }) {
         >
           {body}
         </p>
-      </div>
-      <div style={styles.learnMore}>
-        Learn more
-        <span style={styles.arrowBox}>
-          <ArrowIcon />
-        </span>
       </div>
     </motion.div>
   );

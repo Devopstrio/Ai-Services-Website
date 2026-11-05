@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { useState, useRef } from "react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 import challenge1 from "../../assets/enterprise-references/overview/challenge-1.webp";
 import challenge2 from "../../assets/enterprise-references/overview/challenge-2.webp";
@@ -59,104 +59,127 @@ const styles = {
     margin: "0 auto",
   },
   header: {
-    textAlign: "center",
-    marginBottom: "70px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-end",
+    marginBottom: "50px",
+    flexWrap: "wrap",
+    gap: "20px"
   },
   heading: {
     color: "#FFFFFF",
     fontSize: "clamp(2.4rem, 4vw, 3.4rem)",
     fontWeight: 700,
-    margin: "0 0 18px 0",
+    margin: 0,
     letterSpacing: "-0.02em"
   },
-  subheading: {
-    color: "rgba(255,255,255,0.6)",
-    fontSize: "1.15rem",
-    maxWidth: "640px",
-    margin: "0 auto",
-    lineHeight: 1.6
+  navRow: {
+    display: "flex",
+    gap: "10px",
+    alignItems: "center"
   },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+  navBtn: {
+    width: "46px",
+    height: "46px",
+    borderRadius: "50%",
+    border: "1px solid rgba(255,255,255,0.15)",
+    backgroundColor: "transparent",
+    color: "#fff",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    cursor: "pointer",
+    transition: "all 0.2s ease"
+  },
+  track: {
+    display: "flex",
     gap: "28px",
+    overflowX: "auto",
+    scrollbarWidth: "none",
+    msOverflowStyle: "none",
+    scrollSnapType: "x mandatory",
+    paddingBottom: "10px"
   },
   card: {
     background: "#0a0a0a",
-    border: "1px solid rgba(255,255,255,0.08)",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    borderColor: "rgba(255,255,255,0.08)",
     borderRadius: "16px",
     overflow: "hidden",
     cursor: "pointer",
     display: "flex",
     flexDirection: "column",
-    transition: "all 0.35s ease",
-  
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
     justifyContent: "space-between",
+    transition: "all 0.35s ease",
+    flex: "0 0 calc((100% - 56px) / 3)",
+    minWidth: "320px",
+    scrollSnapAlign: "start",
+    boxSizing: "border-box"
   },
   imgWrap: {
     position: "relative",
+    height: "200px",
     width: "100%",
-    height: "190px",
-    overflow: "hidden",
+    overflow: "hidden"
   },
   img: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
-    transition: "transform 0.5s ease",
+    display: "block",
+    transition: "transform 0.6s ease"
   },
   imgOverlay: {
     position: "absolute",
     inset: 0,
-    background: "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(10,10,10,0.9) 100%)",
+    background: "linear-gradient(180deg, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.85) 100%)"
   },
   tagBadge: {
     position: "absolute",
-    top: "14px",
-    left: "14px",
-    padding: "5px 12px",
-    borderRadius: "6px",
-    backgroundColor: "rgba(225,29,72,0.9)",
-    color: "#FFFFFF",
-    fontFamily: FONT,
+    top: "16px",
+    left: "16px",
+    backgroundColor: "rgba(0,0,0,0.65)",
+    backdropFilter: "blur(6px)",
+    border: "1px solid rgba(255,255,255,0.12)",
+    color: "#E11D48",
     fontSize: "11px",
     fontWeight: 700,
-    letterSpacing: "0.05em",
-    zIndex: 2,
+    letterSpacing: "0.1em",
+    padding: "6px 12px",
+    borderRadius: "6px",
+    textTransform: "uppercase"
   },
   body: {
-    padding: "26px",
-    flex: 1,
+    padding: "28px",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
-    gap: "18px",
+    flex: 1,
+    justifyContent: "space-between"
   },
   challengeTitle: {
     color: "#FFFFFF",
     fontSize: "1.25rem",
     fontWeight: 700,
-    margin: "0 0 8px 0",
-    letterSpacing: "-0.01em"
+    margin: "0 0 12px 0",
+    letterSpacing: "-0.01em",
+    lineHeight: 1.3
   },
   solutionText: {
-    color: "#E11D48",
-    fontSize: "0.95rem",
-    fontWeight: 600,
-    margin: "0 0 14px 0",
     display: "flex",
     alignItems: "center",
-    gap: "6px"
+    gap: "8px",
+    color: "#E11D48",
+    fontSize: "13.5px",
+    fontWeight: 600,
+    marginBottom: "20px"
   },
   outcomeBox: {
-    background: "rgba(255,255,255,0.03)",
+    padding: "16px",
+    backgroundColor: "rgba(255,255,255,0.03)",
     border: "1px solid rgba(255,255,255,0.06)",
     borderRadius: "10px",
-    padding: "14px",
-    color: "rgba(255,255,255,0.75)",
+    color: "rgba(255,255,255,0.7)",
     fontSize: "13.5px",
     lineHeight: 1.5,
   }
@@ -164,6 +187,17 @@ const styles = {
 
 export default function SolutionsChallenges() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const trackRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (trackRef.current) {
+      const scrollAmount = trackRef.current.clientWidth / 3 + 28;
+      trackRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth"
+      });
+    }
+  };
 
   return (
     <section style={styles.section}>
@@ -178,18 +212,31 @@ export default function SolutionsChallenges() {
           >
             From Challenge to <span style={{ color: "#E11D48" }}>Outcome</span>
           </motion.h2>
-          <motion.p 
-            style={styles.subheading}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.6 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            Every enterprise faces distinct technical hurdles. Here is how we systematically transform operational bottlenecks into measurable ROI.
-          </motion.p>
+
+          <div style={styles.navRow}>
+            <button 
+              onClick={() => scroll("left")} 
+              style={styles.navBtn}
+              aria-label="Previous Challenge"
+              className="challenge-nav-btn"
+            >
+              <ChevronLeft size={20} />
+            </button>
+            <button 
+              onClick={() => scroll("right")} 
+              style={styles.navBtn}
+              aria-label="Next Challenge"
+              className="challenge-nav-btn"
+            >
+              <ChevronRight size={20} />
+            </button>
+            <style>{`
+              .challenge-nav-btn:hover { background-color: rgba(225,29,72,0.15) !important; border-color: #E11D48 !important; }
+            `}</style>
+          </div>
         </div>
 
-        <div style={styles.grid}>
+        <div ref={trackRef} style={styles.track}>
           {CHALLENGES.map((item, i) => {
             const isHovered = hoveredIndex === i;
             return (

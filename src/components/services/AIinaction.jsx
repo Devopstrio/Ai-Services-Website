@@ -1,104 +1,114 @@
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import inActionImg from "../../assets/industries/industry_ai_in_action_reference.webp";
 
 /**
- * AIInAction.jsx — DevOpsTRIO
- * Split section: left = parallax image, right = dark-red tinted panel with
- * heading + copy + CTA. Smooth scroll-linked parallax via Framer's
- * useScroll/useTransform (lightweight, no manual scroll-loop math).
- * Black theme, #E11D48 accent, white text, inline CSS only. Font: Geist
+ * AIInAction.jsx — Devopstrio
+ * Structured identically to IndustriesInAction: 1.05fr / 1fr grid, exact image cover framing,
+ * smooth gradient overlay blend, and responsive mobile stacking.
  */
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const styles = {
-  section: {
+  outerSection: {
+    position: "relative",
+    width: "100%",
+    padding: "60px 0",
+    backgroundColor: "#030303",
+    fontFamily: FONT,
+    boxSizing: "border-box",
+  },
+  container: {
+    maxWidth: "1280px",
+    margin: "0 auto",
+    padding: "0 24px",
+    boxSizing: "border-box",
+  },
+  boxWrapper: {
     position: "relative",
     width: "100%",
     display: "grid",
-    gridTemplateColumns: "1.1fr 1fr",
-    minHeight: "620px",
-    background:
-      "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
-    fontFamily: FONT,
+    gridTemplateColumns: "1.05fr 1fr",
+    minHeight: "520px",
+    backgroundColor: "#0A0A0A",
+    borderRadius: "24px",
+    border: "1px solid rgba(255, 255, 255, 0.08)",
     overflow: "hidden",
+    boxShadow: "0 20px 50px rgba(0,0,0,0.6)",
     textAlign: "left",
   },
   imageCol: {
-  },
-
-  imageCol: {
     position: "relative",
     overflow: "hidden",
-    backgroundColor: "#0a0a0a",
+    backgroundColor: "#000000",
+    minHeight: "360px",
   },
   imgEl: {
     position: "absolute",
-    top: "-6%",
-    left: 0,
+    inset: 0,
     width: "100%",
-    height: "112%",
+    height: "100%",
     objectFit: "cover",
-    objectPosition: "center",
-  },
-  textCol: {
   },
   imgOverlay: {
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(90deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.55) 100%), linear-gradient(0deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%)",
+      "linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.7) 100%), linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 40%)",
   },
-  glowDot: {
-    position: "absolute",
-    width: "220px",
-    height: "220px",
-    borderRadius: "50%",
-    background:
-      "radial-gradient(circle, rgba(225,29,72,0.55) 0%, rgba(225,29,72,0) 70%)",
-    filter: "blur(10px)",
-    pointerEvents: "none",
-  },
-
   textCol: {
     position: "relative",
     backgroundColor: "#160608",
     display: "flex",
     alignItems: "center",
-    padding: "80px 24px",
+    padding: "60px 48px",
     boxSizing: "border-box",
-  },
-  textColGlow: {
-    position: "absolute",
-    top: "-10%",
-    right: "-10%",
-    width: "420px",
-    height: "420px",
-    background:
-      "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
-    pointerEvents: "none",
   },
   inner: {
     position: "relative",
     zIndex: 1,
     maxWidth: "480px",
   },
+  eyebrow: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "8px",
+    fontFamily: FONT,
+    fontSize: "11.5px",
+    fontWeight: 600,
+    letterSpacing: "0.12em",
+    textTransform: "uppercase",
+    color: "#FDA4AF",
+    marginBottom: "14px",
+  },
+  eyebrowDot: {
+    width: "6px",
+    height: "6px",
+    borderRadius: "50%",
+    backgroundColor: "#E11D48",
+    boxShadow: "0 0 8px #E11D48",
+  },
   heading: {
     fontFamily: FONT,
     color: "#FFFFFF",
-    fontSize: "clamp(1.9rem, 3.2vw, 2.7rem)",
+    fontSize: "clamp(1.85rem, 3vw, 2.5rem)",
     fontWeight: 700,
-    lineHeight: 1.25,
-    letterSpacing: "-0.015em",
+    lineHeight: 1.2,
+    letterSpacing: "-0.02em",
     margin: 0,
+    marginBottom: "20px",
+  },
+  accent: {
+    color: "#E11D48",
   },
   paragraph: {
-    marginTop: "24px",
     fontFamily: FONT,
-    color: "rgba(255,255,255,0.6)",
-    fontSize: "15.5px",
-    lineHeight: 1.85,
+    color: "rgba(255,255,255,0.7)",
+    fontSize: "15px",
+    lineHeight: 1.75,
+    margin: 0,
+    marginBottom: "32px",
   },
   strong: {
     color: "#FFFFFF",
@@ -107,9 +117,8 @@ const styles = {
   ctaBtn: {
     display: "inline-flex",
     alignItems: "center",
-    gap: "12px",
-    marginTop: "34px",
-    padding: "15px 28px",
+    gap: "10px",
+    padding: "13px 26px",
     borderRadius: "10px",
     backgroundColor: "#E11D48",
     color: "#FFFFFF",
@@ -119,6 +128,9 @@ const styles = {
     border: "none",
     cursor: "pointer",
     width: "fit-content",
+    textDecoration: "none",
+    boxShadow: "0 4px 18px rgba(225, 29, 72, 0.35)",
+    transition: "all 0.25s ease",
   },
 };
 
@@ -137,73 +149,90 @@ function ArrowIcon() {
 }
 
 export default function AIInAction() {
-  const sectionRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-
-  // smooth scroll-linked parallax — lightweight, driven by Framer's own
-  // rAF-batched scroll tracking, not a manual scroll listener
-  const imgY = useTransform(scrollYProgress, [0, 1], ["-6%", "6%"]);
-  const glowX = useTransform(scrollYProgress, [0, 1], ["10%", "60%"]);
-  const glowY = useTransform(scrollYProgress, [0, 1], ["70%", "20%"]);
-
   return (
-    <section ref={sectionRef} style={styles.section}>
-      {/* LEFT — parallax image */}
-      <div style={styles.imageCol}>
-        <motion.img
-          src={inActionImg}
-          alt="AI in action"
-          style={{ ...styles.imgEl, y: imgY }}
-          initial={{ opacity: 0, scale: 1.08 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
-        />
-        <motion.div
-          style={{ ...styles.glowDot, left: glowX, top: glowY }}
-        />
-        <div style={styles.imgOverlay} />
+    <section style={styles.outerSection}>
+      <div style={styles.container}>
+        <div className="aiInActionWrapper" style={styles.boxWrapper}>
+          {/* LEFT — identically framed visual matching Industry AI in Action */}
+          <div style={styles.imageCol}>
+            <motion.img
+              src={inActionImg}
+              alt="AI in action"
+              style={styles.imgEl}
+              initial={{ scale: 1.08 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              onError={(e) => {
+                e.currentTarget.src = "/assets/services/webp/bg-ai.webp";
+              }}
+            />
+            <div style={styles.imgOverlay} />
+          </div>
+
+          {/* RIGHT — dark red-tinted text panel */}
+          <div style={styles.textCol}>
+            <div style={styles.inner}>
+              <div style={styles.eyebrow}>
+                <span style={styles.eyebrowDot} />
+                AI in Action
+              </div>
+
+              <motion.h2
+                style={styles.heading}
+                initial={{ opacity: 0, y: 22 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              >
+                Want to See AI <span style={styles.accent}>in Action?</span>
+              </motion.h2>
+
+              <motion.p
+                style={styles.paragraph}
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+              >
+                No problem. At <span style={styles.strong}>DevOpsTRIO</span>, we
+                have a proven AI track record. Whether you're exploring your
+                first AI use case or reimagining clinical operations
+                end-to-end, our AI services help you move faster, work
+                smarter, and innovate responsibly. For example, we built a
+                compliance-native AI pipeline for a national hospital network,
+                processing petabyte-scale patient data securely at scale. This
+                is AI that works — engineered by DevOpsTRIO.
+              </motion.p>
+
+              <motion.a
+                href="https://devopstrio.co.uk/company/contact"
+                style={styles.ctaBtn}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                whileHover={{
+                  scale: 1.03,
+                  boxShadow: "0 8px 26px rgba(225, 29, 72, 0.5)",
+                }}
+                whileTap={{ scale: 0.97 }}
+              >
+                See AI in Action
+                <ArrowIcon />
+              </motion.a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* RIGHT — dark red-tinted content panel */}
-      <div style={styles.textCol}>
-        <div style={styles.textColGlow} />
-        <motion.div
-          style={styles.inner}
-          initial={{ opacity: 0, y: 26 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <h2 style={styles.heading}>Want to See AI in Action?</h2>
-          <p style={styles.paragraph}>
-            No problem. At <span style={styles.strong}>DevOpsTRIO</span>, we
-            have a proven AI track record. Whether you're exploring your
-            first AI use case or reimagining clinical operations
-            end-to-end, our AI services help you move faster, work
-            smarter, and innovate responsibly. For example, we built a
-            compliance-native AI pipeline for a national hospital network,
-            processing petabyte-scale patient data securely at scale. This
-            is AI that works — engineered by DevOpsTRIO.
-          </p>
-
-          <motion.button
-            style={styles.ctaBtn}
-            whileHover={{
-              scale: 1.03,
-              boxShadow: "0 8px 26px rgba(225, 29, 72, 0.4)",
-            }}
-            whileTap={{ scale: 0.97 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-          >
-            See AI in Action
-            <ArrowIcon />
-          </motion.button>
-        </motion.div>
-      </div>
+      <style>{`
+        @media (max-width: 868px) {
+          .aiInActionWrapper {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

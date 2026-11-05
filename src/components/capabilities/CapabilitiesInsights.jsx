@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import insight1 from "../../assets/fresh/agent_code_refactoring.jpg";
 import insight2 from "../../assets/fresh/agent_deep_market_research.jpg";
@@ -12,40 +12,46 @@ const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
 const ITEMS = [
   {
-    tag: "RESEARCH REPORT",
-    title: "Are You Ready for Autonomous AI Agents?",
-    desc: "AI agents are moving from pilot to production. Here's what separates enterprises that scale autonomous workflows safely from those stuck testing.",
-    image: insight1
+    tag: "BLOG",
+    title: "Predictive MLOps Across Global Cloud Infrastructure",
+    desc: "Predictive infrastructure monitoring cut unplanned downtime by more than half across a massive multi-region cloud deployment.",
+    image: insight6,
+    href: "https://devopstrio.co.uk/insights/blogs/why-does-your-business-need-mlops-f6uvyy",
   },
   {
-    tag: "RESEARCH REPORT",
-    title: "Reinventing Enterprise Operations — How Mature Companies Use Gen AI to Support Growth",
-    desc: "Organizations with the highest operations maturity are 3.3x more likely to succeed at scaling high-value gen AI use cases and report 2.5x higher efficiency gains.",
-    image: insight2
+    tag: "WHITE PAPER",
+    title: "The Executive's Guide to AI-Ready Infrastructure",
+    desc: "What enterprise leadership teams need in place before scaling AI beyond a single department — infrastructure, governance, and talent.",
+    image: insight5,
+    href: "https://devopstrio.co.uk/insights/white-paper/ai-infrastructure-services-for-gpu-azure-ai-aws-sagemaker-mxn5by",
+  },
+  {
+    tag: "CASE STUDY",
+    title: "Reinventing Business Operations with AI-Native Workflows",
+    desc: "How high-performing enterprises restructure core operations around AI-native workflows instead of bolting AI onto legacy processes.",
+    image: insight4,
+    href: "https://devopstrio.co.uk/insights/case-studies/from-frozen-legacy-to-ai-powered-velocity-transforming-a-global-investment-and-insurance-firm-ejni38",
+  },
+  {
+    tag: "CASE STUDY",
+    title: "Are You Ready for Autonomous AI Agents?",
+    desc: "AI agents are moving from pilot to production. Here's what separates enterprises that scale autonomous workflows safely from those stuck testing.",
+    image: insight1,
+    href: "https://devopstrio.co.uk/insights/case-studies/next-gen-it-operations-with-agentic-ai-9jkmk0",
+  },
+  {
+    tag: "BLOG",
+    title: "How Mature Companies Use Gen AI to Support Enterprise Growth",
+    desc: "Organizations with high operations maturity are 3.3x more likely to scale high-value gen AI use cases and report 2.5x efficiency gains.",
+    image: insight2,
+    href: "https://devopstrio.co.uk/insights/blogs/how-gen-ai-is-turning-business-ideas-into-smarter-service-in-the-uk-i161ge",
   },
   {
     tag: "CASE STUDY",
     title: "Global Logistics Leader Pioneers AI-Native Shared Services",
-    desc: "By consolidating operational workflows onto a single AI-managed platform, this global enterprise cut administrative overhead by 42% in under a year.",
-    image: insight3
-  },
-  {
-    tag: "RESEARCH REPORT",
-    title: "Reinventing Business Operations",
-    desc: "A closer look at how the highest-performing enterprises are restructuring operations around AI-native workflows instead of bolting AI onto legacy processes.",
-    image: insight4
-  },
-  {
-    tag: "RESEARCH REPORT",
-    title: "The Executive's Guide to AI-Ready Infrastructure",
-    desc: "What enterprise leadership teams need in place before scaling AI beyond a single department — infrastructure, governance, and talent.",
-    image: insight5
-  },
-  {
-    tag: "CASE STUDY",
-    title: "Predictive MLOps Across Global Cloud Infrastructure",
-    desc: "Predictive infrastructure monitoring cut unplanned downtime by more than half across a massive multi-region cloud deployment.",
-    image: insight6
+    desc: "By consolidating operational workflows onto an AI-managed platform, this global enterprise cut administrative overhead by 42% in under a year.",
+    image: insight3,
+    href: "https://devopstrio.co.uk/insights/case-studies/how-a-global-entertainment-giant-rebuilt-its-it-core-with-automation-first-cloud-engineering-0tff11",
   },
 ];
 
@@ -64,6 +70,12 @@ const styles = {
     padding: "0 24px",
     maxWidth: "1280px",
     margin: "0 auto 34px",
+    display: "flex",
+    alignItems: "flex-end",
+    justifyContent: "space-between",
+    flexWrap: "wrap",
+    gap: "16px",
+    boxSizing: "border-box",
   },
   heading: {
     fontFamily: FONT,
@@ -72,7 +84,6 @@ const styles = {
     fontWeight: 700,
     letterSpacing: "-0.02em",
     margin: 0,
-    marginBottom: "22px",
   },
   viewAll: {
     display: "inline-flex",
@@ -83,6 +94,8 @@ const styles = {
     fontWeight: 600,
     color: "#FFFFFF",
     cursor: "pointer",
+    textDecoration: "none",
+    transition: "color 0.2s ease",
   },
   viewAllArrow: {
     width: "24px",
@@ -97,30 +110,34 @@ const styles = {
     display: "flex",
     justifyContent: "flex-end",
     gap: "12px",
-    padding: "30px 5% 0",
+    padding: "24px 24px 0",
     maxWidth: "1280px",
     margin: "0 auto",
+    boxSizing: "border-box",
   },
   navBtn: {
-    width: "38px",
-    height: "38px",
-    borderRadius: "4px",
-    backgroundColor: "rgba(255,255,255,0.06)",
-    border: "1px solid rgba(255,255,255,0.1)",
+    width: "42px",
+    height: "42px",
+    borderRadius: "8px",
+    backgroundColor: "rgba(0,0,0,0.6)",
+    border: "1px solid rgba(255,255,255,0.15)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     cursor: "pointer",
     color: "#fff",
+    transition: "all 0.2s ease",
   },
   scrollWrap: {
     padding: "0 24px",
+    boxSizing: "border-box",
   },
   track: {
     display: "flex",
     gap: "24px",
     overflowX: "auto",
-    paddingBottom: "20px",
+    paddingBottom: "16px",
+    paddingTop: "6px",
     scrollbarWidth: "none",
     msOverflowStyle: "none",
     maxWidth: "1280px",
@@ -128,7 +145,8 @@ const styles = {
   },
   card: {
     flex: "0 0 360px",
-    height: "440px",
+    width: "360px",
+    height: "450px",
     borderRadius: "16px",
     position: "relative",
     overflow: "hidden",
@@ -137,29 +155,30 @@ const styles = {
     border: "1px solid rgba(255,255,255,0.08)",
     display: "flex",
     flexDirection: "column",
+    boxSizing: "border-box",
+    textDecoration: "none",
     transition: "border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease",
-  
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
   },
   imgWrap: {
     position: "relative",
     width: "100%",
-    height: "220px",
+    height: "195px",
     overflow: "hidden",
+    flexShrink: 0,
+    backgroundColor: "#000000",
   },
   img: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
+    display: "block",
     transition: "transform 0.5s ease",
   },
   imgOverlay: {
     position: "absolute",
     inset: 0,
-    background: "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(10,10,10,0.9) 100%)",
+    background:
+      "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(10,10,10,0.85) 100%)",
   },
   tagBadge: {
     position: "absolute",
@@ -172,24 +191,31 @@ const styles = {
     fontFamily: FONT,
     fontSize: "11px",
     fontWeight: 700,
-    letterSpacing: "0.04em",
+    letterSpacing: "0.06em",
     zIndex: 2,
+    textTransform: "uppercase",
   },
   body: {
-    padding: "24px",
+    padding: "22px 24px 24px",
     flex: 1,
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
     backgroundColor: "#0A0A0A",
+    boxSizing: "border-box",
   },
   title: {
     fontFamily: FONT,
     fontSize: "1.1rem",
     fontWeight: 600,
     color: "#FFFFFF",
-    lineHeight: 1.4,
-    margin: "0 0 12px 0",
+    lineHeight: 1.35,
+    margin: "0 0 10px 0",
+    minHeight: "3rem",
+    display: "-webkit-box",
+    WebkitLineClamp: 2,
+    WebkitBoxOrient: "vertical",
+    overflow: "hidden",
   },
   desc: {
     fontFamily: FONT,
@@ -197,6 +223,10 @@ const styles = {
     lineHeight: 1.6,
     color: "rgba(255,255,255,0.6)",
     margin: 0,
+    display: "-webkit-box",
+    WebkitLineClamp: 3,
+    WebkitBoxOrient: "vertical",
+    overflow: "hidden",
   },
   readMore: {
     display: "inline-flex",
@@ -206,21 +236,39 @@ const styles = {
     fontSize: "13px",
     fontWeight: 600,
     marginTop: "16px",
-  }
+  },
 };
 
 function ArrowIcon() {
   return (
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-      <path d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M2.5 6H9.5M9.5 6L6.5 3M9.5 6L6.5 9"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 function NavArrowIcon({ direction }) {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ transform: direction === 'left' ? 'rotate(180deg)' : 'none' }}>
-      <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      style={{ transform: direction === "left" ? "rotate(180deg)" : "none" }}
+    >
+      <path
+        d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
@@ -229,12 +277,17 @@ function Card({ item }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <motion.div
+    <motion.a
+      href={item.href}
+      target="_blank"
+      rel="noopener noreferrer"
       style={{
         ...styles.card,
-        borderColor: isHovered ? "rgba(225,29,72,0.5)" : "rgba(255,255,255,0.08)",
+        borderColor: isHovered
+          ? "rgba(225,29,72,0.5)"
+          : "rgba(255,255,255,0.08)",
         transform: isHovered ? "translateY(-6px)" : "none",
-        boxShadow: isHovered ? "0 12px 35px rgba(225,29,72,0.15)" : "none",
+        boxShadow: isHovered ? "0 12px 35px rgba(225,29,72,0.18)" : "none",
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -265,7 +318,7 @@ function Card({ item }) {
           Read Article <ArrowIcon />
         </div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }
 
@@ -274,7 +327,7 @@ export default function CapabilitiesInsights() {
 
   const handleScroll = (dir) => {
     if (trackRef.current) {
-      const scrollAmount = 380;
+      const scrollAmount = 384;
       trackRef.current.scrollBy({
         left: dir === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
@@ -295,12 +348,17 @@ export default function CapabilitiesInsights() {
           Explore AI <span style={{ color: "#E11D48" }}>Insights</span>
         </motion.h2>
 
-        <div style={styles.viewAll}>
+        <a
+          href="https://devopstrio.co.uk/insights"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={styles.viewAll}
+        >
           View All Insights
           <div style={styles.viewAllArrow}>
             <ArrowIcon />
           </div>
-        </div>
+        </a>
       </div>
 
       <div style={styles.scrollWrap}>
@@ -312,10 +370,34 @@ export default function CapabilitiesInsights() {
       </div>
 
       <div style={styles.navControls}>
-        <button style={styles.navBtn} onClick={() => handleScroll("left")} aria-label="Scroll left">
+        <button
+          style={styles.navBtn}
+          onClick={() => handleScroll("left")}
+          aria-label="Scroll left"
+          onMouseEnter={(e) => {
+            e.currentTarget.style.borderColor = "#E11D48";
+            e.currentTarget.style.backgroundColor = "rgba(225,29,72,0.15)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)";
+            e.currentTarget.style.backgroundColor = "rgba(0,0,0,0.6)";
+          }}
+        >
           <NavArrowIcon direction="left" />
         </button>
-        <button style={styles.navBtn} onClick={() => handleScroll("right")} aria-label="Scroll right">
+        <button
+          style={styles.navBtn}
+          onClick={() => handleScroll("right")}
+          aria-label="Scroll right"
+          onMouseEnter={(e) => {
+            e.currentTarget.style.borderColor = "#E11D48";
+            e.currentTarget.style.backgroundColor = "rgba(225,29,72,0.15)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)";
+            e.currentTarget.style.backgroundColor = "rgba(0,0,0,0.6)";
+          }}
+        >
           <NavArrowIcon direction="right" />
         </button>
       </div>

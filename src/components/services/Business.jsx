@@ -150,43 +150,64 @@ const styles = {
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.05) 35%, rgba(0,0,0,0.85) 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.15) 70%, rgba(0,0,0,0.75) 100%)",
   },
   imgTopContent: {
     position: "absolute",
-    top: "24px",
-    left: "22px",
-    right: "22px",
+    top: "26px",
+    left: "24px",
+    right: "24px",
     zIndex: 2,
   },
+  imgBottomContent: {
+    position: "absolute",
+    left: "24px",
+    right: "24px",
+    bottom: "22px",
+    zIndex: 2,
+    display: "flex",
+    alignItems: "center",
+  },
+  linkRow: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "8px",
+    fontFamily: FONT,
+    fontSize: "13px",
+    fontWeight: 600,
+    color: "#FFFFFF",
+    textShadow: "0 1px 6px rgba(0,0,0,0.6)",
+  },
   imgTag: {
-    fontSize: "10.5px",
-    fontWeight: 700,
+    fontSize: "12px",
+    fontWeight: 600,
     letterSpacing: "0.12em",
-    color: "#E11D48",
+    color: "#FDA4AF",
     textTransform: "uppercase",
     marginBottom: "12px",
     fontFamily: FONT,
+    textShadow: "0 1px 6px rgba(0,0,0,0.6)",
   },
   imgTitle: {
     fontFamily: FONT,
     color: "#FFFFFF",
-    fontSize: "1.15rem",
+    fontSize: "21px",
     fontWeight: 700,
-    lineHeight: 1.35,
+    lineHeight: 1.25,
     margin: 0,
-    letterSpacing: "-0.01em",
+    letterSpacing: "-0.025em",
+    textShadow: "0 2px 12px rgba(0,0,0,0.55)",
   },
 
   hoverFace: {
     position: "absolute",
     inset: 0,
     backgroundColor: "#FFFFFF",
-    padding: "32px 26px 28px",
+    padding: "32px 26px",
     boxSizing: "border-box",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "center",
     zIndex: 3,
   },
   hoverTag: {
@@ -199,20 +220,19 @@ const styles = {
   },
   hoverTitle: {
     fontFamily: FONT,
-    color: "#000000",
-    fontSize: "1.15rem",
+    color: "#0A0A0A",
+    fontSize: "1.1rem",
     fontWeight: 700,
-    lineHeight: 1.35,
-    margin: "10px 0",
-    letterSpacing: "-0.01em",
+    lineHeight: 1.25,
+    margin: "8px 0 10px",
+    letterSpacing: "-0.02em",
   },
   hoverDesc: {
     fontFamily: FONT,
-    color: "#4a4a4a",
+    color: "#3F3F46",
     fontSize: "13px",
     lineHeight: 1.6,
     margin: 0,
-    flex: 1,
   },
   hoverExpand: {
     fontFamily: FONT,
@@ -306,6 +326,12 @@ function TrendCard({ item, index }) {
           <div style={styles.imgTag}>{item.tag}</div>
           <h3 style={styles.imgTitle}>{item.title}</h3>
         </div>
+        <div style={styles.imgBottomContent}>
+          <div style={styles.linkRow}>
+            Reveal Insights
+            <ArrowIcon color="#FFFFFF" />
+          </div>
+        </div>
       </motion.div>
 
       {/* hover face — cream info panel */}
@@ -320,10 +346,7 @@ function TrendCard({ item, index }) {
         <div style={styles.hoverTag}>{item.tag}</div>
         <h3 style={styles.hoverTitle}>{item.title}</h3>
         <p style={styles.hoverDesc}>{item.desc}</p>
-        <span style={styles.hoverExpand}>
-          Expand
-          <ArrowIcon color="#E11D48" />
-        </span>
+        
       </motion.div>
     </motion.div>
   );

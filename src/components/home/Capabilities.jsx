@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 
 /**
  * AICapabilities.jsx — Devopstrio
- * Asymmetric bento grid — 5 cards, image + overlay text, individual links.
- * Black theme, #E11D48 accent, white text, inline CSS only. Font: Geist
+ * Asymmetric bento grid — 5 cards.
+ * Two-Face Crossfade transition on hover:
+ *   - Face 1 (Rest): Dark Photography + Gradient + "Reveal Insights"
+ *   - Face 2 (Hover): Solid White Reveal Card + High-Level Rich Content (No Explore CTA)
  */
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
@@ -15,7 +17,12 @@ const CAPABILITIES = [
     tag: "Predictive Analytics",
     title: "Forecast demand before it happens",
     description:
-      "Predict enterprise load, infrastructure strain, and resource gaps days ahead — not after the alert fires.",
+      "Anticipate enterprise compute workloads, infrastructure bottlenecks, and mission-critical capacity deficits days in advance using time-series transformers and adaptive neural telemetry.",
+    highlights: [
+      { label: "Workload Forecasting", text: "Pre-empt compute spikes and queue backlogs 72 hours ahead." },
+      { label: "Autonomous Rebalancing", text: "Dynamically scale multi-cloud clusters before SLAs degrade." },
+      { label: "Deficit Interception", text: "Eliminate emergency firefighting with continuous predictive signals." },
+    ],
     href: "#predictive-analytics",
     img: "/assets/Home-page/AI%20Capabilities/Forecast%20demand%20before%20it%20happens.webp",
     imageFit: "contain",
@@ -26,7 +33,11 @@ const CAPABILITIES = [
     tag: "Natural Language & LLMs",
     title: "Turn enterprise documents into structured signal",
     description:
-      "Extract insights, summaries, and action workflows from complex unstructured data in real time.",
+      "Transform petabytes of unstructured contracts, clinical EHR records, and financial documentation into deterministic knowledge graphs and automated executive decision pipelines.",
+    highlights: [
+      { label: "Semantic Extraction", text: "Zero-loss structured ingestion across PDFs, scanned records, and legacy logs." },
+      { label: "Agentic Synthesis", text: "Autonomous verification pipelines that cross-audit against regulatory standards." },
+    ],
     href: "#nlu",
     img: "/assets/Home-page/AI%20Capabilities/Turn%20enterprise%20documents%20into%20structured%20signal.webp",
     imageFit: "contain",
@@ -37,20 +48,24 @@ const CAPABILITIES = [
     id: "c",
     tag: "Computer Vision",
     title: "Automated Visual Intelligence",
-    description: "Real-time edge detection, spatial inspection, and automated quality control.",
+    description:
+      "Deploy sub-millisecond edge visual inspection, spatial defect detection, and automated regulatory quality validation directly on device without cloud latency.",
     href: "#computer-vision",
     img: "/assets/Home-page/AI%20Capabilities/Automated%20Visual%20Intelligence.webp",
-    imageFit: "contain",
+    imageFit: "cover",
+    imagePosition: "center 15%",
     size: "small",
   },
   {
     id: "d",
     tag: "Anomaly Detection",
     title: "Catch Drift Before Outages",
-    description: "Continuous real-time telemetry across multi-cloud pipelines and AI models.",
+    description:
+      "Continuous real-time observability across multi-cloud clusters and foundational AI models to intercept data drift, hallucination spikes, and outages before SLAs breach.",
     href: "#anomaly-detection",
     img: "/assets/Home-page/AI%20Capabilities/Catch%20Drift%20Before%20Outages.webp",
-    imageFit: "contain",
+    imageFit: "cover",
+    imagePosition: "center center",
     size: "small",
   },
   {
@@ -58,9 +73,16 @@ const CAPABILITIES = [
     tag: "Autonomous Decisioning",
     title: "Rule-aware AI that recommends the next best action",
     description:
-      "Combine governance policies, live telemetry, and foundation model outputs into explainable, audited enterprise decisions.",
+      "Synthesize strict enterprise governance policies, live streaming telemetry, and LLM reasoning into auditable, deterministic operational actions with full human-in-the-loop oversight.",
+    highlights: [
+      { label: "Policy Guardrails", text: "Deterministic adherence to corporate governance and compliance rules." },
+      { label: "Audit-Ready Reasoning", text: "Full trace lineage generated for every automated recommendation." },
+      { label: "Human-in-the-Loop", text: "High-impact actions require explicit sign-off with contextual rationale." },
+    ],
     href: "#decisioning",
     img: "/images/downloaded/ed43542bb6_photo-1556742049-0cfed4f6a45d.jpg",
+    imageFit: "cover",
+    imagePosition: "center 80%",
     size: "banner",
   },
 ];
@@ -77,7 +99,7 @@ const styles = {
   },
   intro: {
     maxWidth: "880px",
-    margin: "0 auto 56px",
+    margin: "0 auto 40px",
     textAlign: "center",
   },
   eyebrow: {
@@ -113,12 +135,6 @@ const styles = {
     margin: 0,
   },
   headingAccent: { color: "#F43F5E" },
-  subtext: {
-    marginTop: "16px",
-    color: "#A1A1AA",
-    fontSize: "15px",
-    lineHeight: 1.6,
-  },
 
   grid: {
     maxWidth: "1280px",
@@ -144,7 +160,14 @@ const styles = {
     display: "block",
     textDecoration: "none",
     boxShadow: "0 4px 20px rgba(0,0,0,0.3)",
-    transition: "border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease",
+    transition: "border-color 0.3s ease, box-shadow 0.3s ease",
+  },
+
+  /* Face 1: Image Face (Default Rest state) */
+  imgFace: {
+    position: "absolute",
+    inset: 0,
+    zIndex: 1,
   },
   cardImgWrap: {
     position: "absolute",
@@ -161,13 +184,13 @@ const styles = {
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0.92) 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.22) 40%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.96) 100%)",
   },
   overlayHorizontal: {
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(90deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.15) 100%)",
+      "linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.0) 100%)",
   },
 
   contentBottom: {
@@ -191,35 +214,22 @@ const styles = {
 
   tag: {
     fontFamily: FONT,
-    fontSize: "11.5px",
-    fontWeight: 700,
-    letterSpacing: "0.08em",
+    fontSize: "12px",
+    fontWeight: 600,
+    letterSpacing: "0.12em",
     textTransform: "uppercase",
-    color: "#E11D48",
-    marginBottom: "10px",
+    color: "#FDA4AF",
+    marginBottom: "8px",
+    textShadow: "0 1px 8px rgba(0,0,0,0.6)",
   },
-  titleLg: {
+  titleBase: {
     fontFamily: FONT,
-    fontSize: "22px",
     fontWeight: 700,
     color: "#FFFFFF",
-    lineHeight: 1.3,
+    lineHeight: 1.2,
+    letterSpacing: "-0.025em",
     margin: 0,
-  },
-  titleSm: {
-    fontFamily: FONT,
-    fontSize: "16px",
-    fontWeight: 700,
-    color: "#FFFFFF",
-    lineHeight: 1.3,
-    margin: 0,
-  },
-  desc: {
-    fontFamily: FONT,
-    fontSize: "13.5px",
-    lineHeight: 1.6,
-    color: "rgba(255,255,255,0.6)",
-    marginTop: "8px",
+    textShadow: "0 2px 12px rgba(0,0,0,0.65)",
   },
 
   linkRow: {
@@ -228,25 +238,63 @@ const styles = {
     gap: "8px",
     marginTop: "14px",
     fontFamily: FONT,
-    fontSize: "13px",
+    fontSize: "13.5px",
     fontWeight: 600,
     color: "#FFFFFF",
+    textShadow: "0 1px 6px rgba(0,0,0,0.5)",
   },
-  linkUnderline: {
-    position: "relative",
+
+  /* Face 2: Hover Face (Solid White Reveal Card) */
+  hoverFace: {
+    position: "absolute",
+    inset: 0,
+    backgroundColor: "#FFFFFF",
+    zIndex: 3,
+    boxSizing: "border-box",
+  },
+  hoverTag: {
+    fontFamily: FONT,
+    fontSize: "11px",
+    fontWeight: 700,
+    letterSpacing: "0.12em",
+    textTransform: "uppercase",
+    color: "#E11D48",
+  },
+  hoverTitle: {
+    fontFamily: FONT,
+    color: "#0A0A0A",
+    fontWeight: 700,
+    lineHeight: 1.25,
+    margin: "6px 0 0",
+    letterSpacing: "-0.02em",
+  },
+  hoverDesc: {
+    fontFamily: FONT,
+    color: "#3F3F46",
+    lineHeight: 1.6,
+    margin: "8px 0 0",
   },
 };
+
+function getTitleSize(id) {
+  switch (id) {
+    case "a": return "26px";
+    case "e": return "24px";
+    case "b": return "20px";
+    default: return "19px";
+  }
+}
 
 function areaStyle(id) {
   return { gridArea: id };
 }
 
-function ArrowIcon() {
+function ArrowIcon({ color = "#FFFFFF" }) {
   return (
     <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
       <path
         d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12"
-        stroke="#FFFFFF"
+        stroke={color}
         strokeWidth="1.6"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -267,60 +315,200 @@ const cardVariants = {
 function CapabilityCard({ item, index }) {
   const isBanner = item.size === "banner";
   const isLarge = item.size === "large";
+  const isWide = item.size === "wide";
 
   return (
     <motion.a
       className="home-ai-capabilities__card"
       href={item.href}
       style={{ ...styles.card, ...areaStyle(item.id) }}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.25 }}
+      initial="rest"
+      whileHover="hover"
+      animate="rest"
       variants={cardVariants}
       custom={index}
-      whileHover="hover"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.25 }}
     >
-      <motion.div style={styles.cardImgWrap}>
-        <motion.img
-          src={item.img}
-          alt={item.title}
-          style={{
-            ...styles.cardImg,
-            objectFit: item.imageFit || styles.cardImg.objectFit,
-            objectPosition: item.imagePosition || "center center",
-          }}
-          variants={
-            item.imageFit === "contain"
-              ? undefined
-              : { hover: { scale: 1.07 } }
-          }
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        />
+      {/* ----------------- FACE 1: DEFAULT (REST) ----------------- */}
+      <motion.div
+        style={styles.imgFace}
+        variants={{ rest: { opacity: 1 }, hover: { opacity: 0 } }}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+      >
+        <motion.div style={styles.cardImgWrap}>
+          <motion.img
+            src={item.img}
+            alt={item.title}
+            style={{
+              ...styles.cardImg,
+              objectFit: item.imageFit || styles.cardImg.objectFit,
+              objectPosition: item.imagePosition || "center center",
+            }}
+          />
+        </motion.div>
+
+        <div style={isBanner ? styles.overlayHorizontal : styles.overlayVertical} />
+
+        <div
+          className={isBanner ? "home-ai-capabilities__banner-content" : undefined}
+          style={isBanner ? styles.contentSide : styles.contentBottom}
+        >
+          <span style={styles.tag}>{item.tag}</span>
+          <h3 style={{ ...styles.titleBase, fontSize: getTitleSize(item.id) }}>
+            {item.title}
+          </h3>
+
+          <div style={styles.linkRow}>
+            Reveal Insights
+            <span style={{ display: "flex", marginLeft: "2px" }}>
+              <ArrowIcon />
+            </span>
+          </div>
+        </div>
       </motion.div>
 
-      <div style={isBanner ? styles.overlayHorizontal : styles.overlayVertical} />
+      {/* ----------------- FACE 2: HOVER (WHITE REVEAL CARD — NO EXPLORE BUTTON) ----------------- */}
+      {isBanner ? (
+        /* WIDE BANNER (Card E) */
+        <motion.div
+          style={{
+            ...styles.hoverFace,
+            padding: "28px 44px",
+            display: "grid",
+            gridTemplateColumns: "1.1fr 1.3fr 1.4fr",
+            alignItems: "center",
+            gap: "36px",
+          }}
+          variants={{
+            rest: { opacity: 0, pointerEvents: "none" },
+            hover: { opacity: 1, pointerEvents: "auto" },
+          }}
+          transition={{ duration: 0.35, ease: "easeInOut" }}
+        >
+          <div>
+            <div style={styles.hoverTag}>{item.tag}</div>
+            <h3 style={{ ...styles.hoverTitle, fontSize: "21px", marginTop: "6px" }}>
+              {item.title}
+            </h3>
+          </div>
 
-      <div
-        className={isBanner ? "home-ai-capabilities__banner-content" : undefined}
-        style={isBanner ? styles.contentSide : styles.contentBottom}
-      >
-        <span style={styles.tag}>{item.tag}</span>
-        <h3 style={isLarge || isBanner ? styles.titleLg : styles.titleSm}>
-          {item.title}
-        </h3>
-        {(isLarge || isBanner) && <p style={styles.desc}>{item.description}</p>}
+          <div style={{ borderLeft: "1px solid #E4E4E7", paddingLeft: "26px" }}>
+            <p style={{ ...styles.hoverDesc, margin: 0, fontSize: "13.5px", color: "#3F3F46", lineHeight: 1.65 }}>
+              {item.description}
+            </p>
+          </div>
 
-        <motion.span style={styles.linkRow} variants={{ hover: { x: 4 } }}>
-          Learn more
-          <motion.span
-            style={{ display: "flex" }}
-            variants={{ hover: { x: 3 } }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-          >
-            <ArrowIcon />
-          </motion.span>
-        </motion.span>
-      </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "9px", borderLeft: "1px solid #E4E4E7", paddingLeft: "26px" }}>
+            {item.highlights?.map((h, i) => (
+              <div key={i} style={{ display: "flex", alignItems: "baseline", gap: "8px" }}>
+                <span style={{ width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "#E11D48", shrink: 0 }} />
+                <div style={{ fontSize: "12px", lineHeight: 1.45 }}>
+                  <strong style={{ color: "#18181B", fontWeight: 700 }}>{h.label}: </strong>
+                  <span style={{ color: "#52525B" }}>{h.text}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      ) : isLarge ? (
+        /* LARGE TALL CARD (Card A: Predictive Analytics) */
+        <motion.div
+          style={{
+            ...styles.hoverFace,
+            padding: "40px 36px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+          variants={{
+            rest: { opacity: 0, pointerEvents: "none" },
+            hover: { opacity: 1, pointerEvents: "auto" },
+          }}
+          transition={{ duration: 0.35, ease: "easeInOut" }}
+        >
+          <div>
+            <div style={styles.hoverTag}>{item.tag}</div>
+            <h3 style={{ ...styles.hoverTitle, fontSize: "25px", marginTop: "8px" }}>
+              {item.title}
+            </h3>
+            <p style={{ ...styles.hoverDesc, fontSize: "14.5px", marginTop: "14px", lineHeight: 1.65 }}>
+              {item.description}
+            </p>
+
+            <div style={{ marginTop: "32px", display: "flex", flexDirection: "column", gap: "14px", borderTop: "1px solid #E4E4E7", paddingTop: "24px" }}>
+              {item.highlights?.map((h, i) => (
+                <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
+                  <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#E11D48", marginTop: "7px", shrink: 0 }} />
+                  <div>
+                    <span style={{ fontFamily: FONT, fontSize: "13.5px", fontWeight: 700, color: "#18181B" }}>{h.label}: </span>
+                    <span style={{ fontFamily: FONT, fontSize: "13px", color: "#52525B", lineHeight: 1.55 }}>{h.text}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      ) : isWide ? (
+        /* WIDE CARD (Card B: Natural Language & LLMs) */
+        <motion.div
+          style={{
+            ...styles.hoverFace,
+            padding: "26px 28px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+          variants={{
+            rest: { opacity: 0, pointerEvents: "none" },
+            hover: { opacity: 1, pointerEvents: "auto" },
+          }}
+          transition={{ duration: 0.35, ease: "easeInOut" }}
+        >
+          <div>
+            <div style={styles.hoverTag}>{item.tag}</div>
+            <h3 style={{ ...styles.hoverTitle, fontSize: "19px", marginTop: "6px" }}>
+              {item.title}
+            </h3>
+            <p style={{ ...styles.hoverDesc, fontSize: "13px", marginTop: "8px" }}>
+              {item.description}
+            </p>
+          </div>
+
+          <div style={{ display: "flex", gap: "16px", borderTop: "1px solid #E4E4E7", paddingTop: "12px", marginTop: "10px" }}>
+            {item.highlights?.map((h, i) => (
+              <div key={i} style={{ flex: 1, fontSize: "11.5px", lineHeight: 1.45 }}>
+                <strong style={{ color: "#18181B", display: "block", fontWeight: 700 }}>{h.label}</strong>
+                <span style={{ color: "#52525B" }}>{h.text}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      ) : (
+        /* STANDARD COMPACT CARDS (Cards C & D) */
+        <motion.div
+          style={{
+            ...styles.hoverFace,
+            padding: "26px 24px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+          variants={{
+            rest: { opacity: 0, pointerEvents: "none" },
+            hover: { opacity: 1, pointerEvents: "auto" },
+          }}
+          transition={{ duration: 0.35, ease: "easeInOut" }}
+        >
+          <div style={styles.hoverTag}>{item.tag}</div>
+          <h3 style={{ ...styles.hoverTitle, fontSize: "18px", marginTop: "6px" }}>
+            {item.title}
+          </h3>
+          <p style={{ ...styles.hoverDesc, fontSize: "13px", marginTop: "10px", lineHeight: 1.6 }}>
+            {item.description}
+          </p>
+        </motion.div>
+      )}
     </motion.a>
   );
 }
@@ -343,10 +531,6 @@ export default function AICapabilities() {
           Five ways <span style={styles.headingAccent}>AI</span> works inside
           Devopstrio
         </h2>
-        <p style={styles.subtext}>
-          Not a feature list — a set of capabilities running quietly under
-          every pipeline, dashboard, and decision.
-        </p>
       </motion.div>
 
       <div className="home-ai-capabilities__grid" style={styles.grid}>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
 
@@ -19,50 +19,55 @@ const COLORS = {
 
 const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL ||
+  "https://mediahub-backend-docker-hgh6hzgacraqbhb2.southindia-01.azurewebsites.net";
+const COMPANY_ID = import.meta.env.VITE_COMPANY_ID || "DP-901265";
+
 /* ---------------------------------------------------------------------- */
-/*  Data                                                                   */
+/*  Initial Fallback Data (Guarantees zero layout shift / instant render)  */
 /* ---------------------------------------------------------------------- */
 
-const STORIES = [
+const FALLBACK_STORIES = [
   {
-    tag: "Success Story",
-    title: "Automation of Clinical Data Onboarding",
+    tag: "Client Transformation",
+    title: "From Compliance Gaps to Continuous Control: How Devopstrio Strengthens Microsoft 365 Security",
     description:
-      "The client is a leading regional hospital network. Devopstrio helped automate the onboarding of multiple EHR data pipelines, cutting manual review time significantly.",
-    image: "/assets/services/webp/bg-ai.webp",
-    href: "https://devopstrio.co.uk/insights/case-studies",
-  },
-  {
-    tag: "Success Story",
-    title: "Compliance Auditing at Scale",
-    description:
-      "A multi-state payer group partnered with Devopstrio to build an autonomous compliance auditor, reducing audit prep time from weeks to days.",
+      "A leading enterprise healthcare network partnered with Devopstrio to build an autonomous compliance auditor and security posture engine, reducing audit prep from weeks to hours.",
     image: "/assets/services/webp/bg-cloud.webp",
-    href: "https://devopstrio.co.uk/insights/case-studies",
+    href: "https://devopstrio.co.uk/insights/client-transformations/from-compliance-gaps-to-continuous-control-how-devopstrio-strengthens-microsoft-365-security-gvfrcw",
   },
   {
-    tag: "Case Study",
-    title: "Cutting Release Cycles by 68%",
+    tag: "Client Transformation",
+    title: "From Backup to Business Resilience: How Devopstrio Modernizes Cloud Recovery Strategies",
     description:
-      "A national hospital system adopted Devopstrio's Agent Platform to modernize legacy pipelines, shipping releases nearly 3x faster with full audit trails.",
-    image: "/assets/services/webp/bg-case-study.webp",
-    href: "https://devopstrio.co.uk/insights/case-studies",
-  },
-  {
-    tag: "Success Story",
-    title: "Real-Time Patient Data Interoperability",
-    description:
-      "Devopstrio connected disparate clinical systems for a growing care network, enabling real-time data exchange across 40+ facilities.",
-    image: "/assets/services/webp/bg-devops.webp",
-    href: "https://devopstrio.co.uk/insights/case-studies",
-  },
-  {
-    tag: "Case Study",
-    title: "24/7 Monitoring for Critical Infrastructure",
-    description:
-      "A healthcare SaaS provider deployed Devopstrio's observability suite to achieve 99.99% uptime across their patient-facing platforms.",
+      "Discover how Devopstrio helps organizations modernize cloud backup and disaster recovery to improve data protection, recovery readiness, operational continuity, and cost efficiency.",
     image: "/assets/services/webp/bg-data.webp",
-    href: "https://devopstrio.co.uk/insights/case-studies",
+    href: "https://devopstrio.co.uk/insights/client-transformations/from-backup-to-business-resilience-how-devopstrio-modernizes-cloud-recovery-strategies-u97m4j",
+  },
+  {
+    tag: "Client Transformation",
+    title: "From Manual Workflows to Intelligent Operations: How Devopstrio Scales Power Platform Automation",
+    description:
+      "Automating complex clinical operations, EHR intake queues, and hospital scheduling pipelines with enterprise governance and intelligent agent orchestration.",
+    image: "/assets/services/webp/bg-ai.webp",
+    href: "https://devopstrio.co.uk/insights/client-transformations/from-manual-workflows-to-intelligent-operations-how-devopstrio-scales-power-platform-automation-t214qj",
+  },
+  {
+    tag: "Client Transformation",
+    title: "Azure Under Control: How Devopstrio Turns Complex Cloud Estates into Governed Platforms",
+    description:
+      "Transforming multi-subscription enterprise cloud estates into fully automated, policy-enforced platforms with automated cost guardrails and real-time observability.",
+    image: "/assets/services/webp/bg-devops.webp",
+    href: "https://devopstrio.co.uk/insights/client-transformations/azure-under-control-how-devopstrio-turns-complex-cloud-estates-into-governed-platforms-k3u6is",
+  },
+  {
+    tag: "Client Transformation",
+    title: "From AI Curiosity to Workplace Capability: How Devopstrio Operationalizes Microsoft 365 Copilot",
+    description:
+      "Enabling enterprise clinical and executive teams to deploy production-grade sovereign AI copilots with verified compliance boundaries and auditable governance.",
+    image: "/assets/services/webp/bg-case-study.webp",
+    href: "https://devopstrio.co.uk/insights/client-transformations/from-ai-curiosity-to-workplace-capability-how-devopstrio-operationalizes-microsoft-365-copilot-lahm3x",
   },
 ];
 
@@ -90,8 +95,50 @@ const slideVariants = {
 /* ---------------------------------------------------------------------- */
 
 export default function ClientSuccessStories() {
+  const [stories, setStories] = useState(FALLBACK_STORIES);
   const [[index, direction], setIndex] = useState([0, 0]);
-  const total = STORIES.length;
+
+  // Fetch live client transformations dynamically from Devopstrio Insights API
+  useEffect(() => {
+    let isMounted = true;
+    async function loadDynamicStories() {
+      try {
+        const url = `${API_BASE_URL.replace(/\/+$/, "")}/api/public/${COMPANY_ID}/content?category_slug=client-transformations&limit=10`;
+        const res = await fetch(url);
+        if (!res.ok) return;
+
+        const data = await res.json();
+        const list = Array.isArray(data) ? data : data.items || [];
+
+        if (list.length > 0 && isMounted) {
+          const formatted = list.map((item, idx) => ({
+            tag: item.category?.name || "Client Transformation",
+            title: item.title,
+            description:
+              item.subtitle ||
+              item.summary ||
+              item.excerpt ||
+              FALLBACK_STORIES[idx % FALLBACK_STORIES.length].description,
+            image: item.cover_image_id
+              ? `${API_BASE_URL.replace(/\/+$/, "")}/api/images/${item.cover_image_id}`
+              : FALLBACK_STORIES[idx % FALLBACK_STORIES.length].image,
+            href: `https://devopstrio.co.uk/insights/client-transformations/${item.slug}`,
+          }));
+          setStories(formatted);
+        }
+      } catch (err) {
+        // Fallback silently handles offline / sandbox network restriction
+        console.warn("Using offline fallback stories:", err.message);
+      }
+    }
+
+    loadDynamicStories();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const total = stories.length;
 
   const goTo = (newIndex, dir) => {
     const wrapped = (newIndex + total) % total;
@@ -101,7 +148,7 @@ export default function ClientSuccessStories() {
   const next = () => goTo(index + 1, 1);
   const prev = () => goTo(index - 1, -1);
 
-  const story = STORIES[index];
+  const story = stories[index] || FALLBACK_STORIES[0];
 
   return (
     <section
@@ -155,7 +202,7 @@ export default function ClientSuccessStories() {
               Learn from our clients how we've been empowering their healthcare teams
             </motion.p>
             <motion.a
-              href="#"
+              href="https://devopstrio.co.uk/insights/client-transformations"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -303,6 +350,9 @@ export default function ClientSuccessStories() {
                   initial={{ scale: 1.1 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
+                  onError={(e) => {
+                    e.currentTarget.src = "/assets/services/webp/bg-ai.webp";
+                  }}
                   style={{
                     position: "absolute",
                     inset: 0,
@@ -357,12 +407,17 @@ export default function ClientSuccessStories() {
                       margin: "0 0 20px",
                       fontSize: "clamp(26px, 2.6vw, 34px)",
                       fontWeight: 700,
-                      lineHeight: 1.2,
+                      lineHeight: 1.25,
                       color: COLORS.white,
                       letterSpacing: "-0.02em",
                     }}
                   >
-                    {story.title}
+                    <a
+                      href={story.href}
+                      style={{ color: "inherit", textDecoration: "none" }}
+                    >
+                      {story.title}
+                    </a>
                   </motion.h3>
 
                   <motion.p
@@ -412,7 +467,7 @@ export default function ClientSuccessStories() {
 
         {/* Dots */}
         <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginTop: "32px" }}>
-          {STORIES.map((_, i) => (
+          {stories.map((_, i) => (
             <button
               key={i}
               onClick={() => goTo(i, i > index ? 1 : -1)}

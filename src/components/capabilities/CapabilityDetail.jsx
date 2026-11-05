@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { CAPABILITY_SERVICES_DATA } from "../../data/capabilities";
 import { getCapabilityUseCaseIcon } from "../../data/capabilities/useCaseIcons";
+import { getCapabilityInsights } from "../../data/capabilities/capabilityInsightsMap";
 import enterpriseItOpsIcon from "../../assets/capabilities/enterprise-it-ops.svg";
 import customerExperienceIcon from "../../assets/capabilities/customer-experience.svg";
 import dataAnalyticsIcon from "../../assets/capabilities/data-analytics.svg";
@@ -52,11 +53,192 @@ function RibbonGraphic() {
   );
 }
 
+function InsightTwoFaceCard({ item, index }) {
+  const targetUrl = item.url || "https://devopstrio.co.uk/insights";
+
+  return (
+    <motion.a
+      href={targetUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      initial="rest"
+      whileHover="hover"
+      animate="rest"
+      initial={{ opacity: 0, x: 30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: index * 0.05 }}
+      style={{
+        flex: "0 0 380px",
+        position: "relative",
+        height: "440px",
+        borderRadius: "16px",
+        overflow: "hidden",
+        cursor: "pointer",
+        border: "1px solid rgba(255,255,255,0.08)",
+        backgroundColor: "#0A0A0A",
+        boxSizing: "border-box",
+        textDecoration: "none",
+        display: "block",
+      }}
+    >
+      {/* 1. Default Image Face (Dark Photo + Card Typo) */}
+      <motion.div
+        variants={{ rest: { opacity: 1 }, hover: { opacity: 0 } }}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        style={{ position: "absolute", inset: 0 }}
+      >
+        <img
+          src={item.image}
+          alt={item.title}
+          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.22) 35%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.96) 100%)",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            left: "26px",
+            right: "26px",
+            bottom: "26px",
+            zIndex: 2,
+          }}
+        >
+          <div
+            style={{
+              fontFamily: FONT,
+              fontSize: "11.5px",
+              fontWeight: 600,
+              letterSpacing: "0.12em",
+              color: "#FDA4AF",
+              textTransform: "uppercase",
+              marginBottom: "8px",
+              textShadow: "0 1px 6px rgba(0,0,0,0.6)",
+            }}
+          >
+            {item.tag}
+          </div>
+          <h3
+            style={{
+              fontFamily: FONT,
+              fontSize: "1.3rem",
+              fontWeight: 700,
+              color: "#FFFFFF",
+              lineHeight: 1.25,
+              margin: 0,
+              letterSpacing: "-0.02em",
+              textShadow: "0 2px 12px rgba(0,0,0,0.65)",
+            }}
+          >
+            {item.title}
+          </h3>
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              marginTop: "14px",
+              fontFamily: FONT,
+              fontSize: "13.5px",
+              fontWeight: 600,
+              color: "#FFFFFF",
+              textShadow: "0 1px 6px rgba(0,0,0,0.5)",
+            }}
+          >
+            Reveal Insights
+            <ArrowRight size={15} strokeWidth={2.2} />
+          </div>
+        </div>
+      </motion.div>
+
+      {/* 2. Hover Face (Solid White Reveal Template) */}
+      <motion.div
+        variants={{
+          rest: { opacity: 0, pointerEvents: "none" },
+          hover: { opacity: 1, pointerEvents: "auto" },
+        }}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        style={{
+          position: "absolute",
+          inset: 0,
+          backgroundColor: "#FFFFFF",
+          padding: "36px 30px",
+          boxSizing: "border-box",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          zIndex: 3,
+        }}
+      >
+        <div
+          style={{
+            fontFamily: FONT,
+            fontSize: "11px",
+            fontWeight: 700,
+            letterSpacing: "0.12em",
+            color: "#E11D48",
+            textTransform: "uppercase",
+            marginBottom: "8px",
+          }}
+        >
+          {item.tag}
+        </div>
+        <h3
+          style={{
+            fontFamily: FONT,
+            fontSize: "1.3rem",
+            fontWeight: 700,
+            color: "#0A0A0A",
+            lineHeight: 1.25,
+            margin: "0 0 12px 0",
+            letterSpacing: "-0.02em",
+          }}
+        >
+          {item.title}
+        </h3>
+        <p
+          style={{
+            fontFamily: FONT,
+            fontSize: "13.5px",
+            color: "#3F3F46",
+            lineHeight: 1.6,
+            margin: 0,
+          }}
+        >
+          {item.desc}
+        </p>
+        <div
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "8px",
+            marginTop: "18px",
+            fontFamily: FONT,
+            fontSize: "13.5px",
+            fontWeight: 600,
+            color: "#E11D48",
+          }}
+        >
+          Read Full Article
+          <ArrowRight size={15} strokeWidth={2.2} />
+        </div>
+      </motion.div>
+    </motion.a>
+  );
+}
+
 export default function CapabilityDetail() {
   const { serviceId } = useParams();
   const navigate = useNavigate();
   const data = CAPABILITY_SERVICES_DATA[serviceId];
   const trackRef = useRef(null);
+  const insightItems = data ? getCapabilityInsights(serviceId, data.insights) : [];
 
   const [hoveredCard, setHoveredCard] = useState(null);
 
@@ -84,7 +266,7 @@ export default function CapabilityDetail() {
       
       {/* 1. HERO SECTION */}
       <section style={{ position: "relative", width: "100%", minHeight: "720px", background: "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)", display: "flex", alignItems: "center", marginTop: "70px", overflow: "hidden" }}>
-        <motion.div initial={{ opacity: 0, rotate: -4 }} animate={{ opacity: 1, rotate: 0 }} transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }} style={{ position: "absolute", top: 0, right: 0, height: "100%", width: "68%", marginTop: "-50px", zIndex: 0, pointerEvents: "none", maskImage: "linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.4) 22%, #000 46%, #000 100%)", WebkitMaskImage: "linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.4) 22%, #000 46%, #000 100%)" }}>
+        <motion.div initial={{ opacity: 0, rotate: -4 }} animate={{ opacity: 1, rotate: 0 }} transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }} style={{ position: "absolute", top: 0, right: 0, height: "100%", width: "68%", marginTop: 0, zIndex: 0, pointerEvents: "none", maskImage: "linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.4) 22%, #000 46%, #000 100%)", WebkitMaskImage: "linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.4) 22%, #000 46%, #000 100%)" }}>
           <motion.div style={{ width: "100%", height: "100%" }} animate={{ rotate: [0, 2, 0] }} transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}>
             <RibbonGraphic />
           </motion.div>
@@ -120,40 +302,172 @@ export default function CapabilityDetail() {
       <section style={{ backgroundColor: "#000", padding: "80px 5% 0 5%" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "24px" }}>
           {data.metricsCards.map((metric, i) => (
-             <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, delay: i * 0.1 }} style={{ position: "relative", height: "350px", borderRadius: "12px", overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)" }}>
-               <img src={metric.image} alt="Metric" style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.6 }} />
-               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 60%)" }} />
-               <div style={{ position: "absolute", bottom: "30px", left: "30px", right: "30px" }}>
-                  <h3 style={{ fontSize: "3rem", fontWeight: 700, margin: "0 0 8px 0", color: "#fff", lineHeight: 1 }}>{metric.value}</h3>
-                  <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.7)", margin: 0, fontWeight: 500 }}>{metric.label}</p>
+             <motion.div
+               key={i}
+               initial={{ opacity: 0, y: 30 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true, amount: 0.2 }}
+               transition={{ duration: 0.6, delay: i * 0.1 }}
+               style={{
+                 position: "relative",
+                 height: "360px",
+                 borderRadius: "16px",
+                 overflow: "hidden",
+                 border: "1px solid rgba(255,255,255,0.08)",
+                 backgroundColor: "#0A0A0A",
+               }}
+             >
+               <img
+                 src={metric.image}
+                 alt={metric.label}
+                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+               />
+               <div
+                 style={{
+                   position: "absolute",
+                   inset: 0,
+                   background:
+                     "linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.2) 35%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.96) 100%)",
+                 }}
+               />
+               <div style={{ position: "absolute", bottom: "26px", left: "24px", right: "24px", zIndex: 2 }}>
+                  <div
+                    style={{
+                      fontFamily: FONT,
+                      fontSize: "11.5px",
+                      fontWeight: 600,
+                      letterSpacing: "0.12em",
+                      color: "#FDA4AF",
+                      textTransform: "uppercase",
+                      marginBottom: "6px",
+                      textShadow: "0 1px 6px rgba(0,0,0,0.6)",
+                    }}
+                  >
+                    CAPABILITY IMPACT
+                  </div>
+                  <h3
+                    style={{
+                      fontFamily: FONT,
+                      fontSize: "2.8rem",
+                      fontWeight: 700,
+                      margin: "0 0 6px 0",
+                      color: "#FFFFFF",
+                      lineHeight: 1.1,
+                      letterSpacing: "-0.02em",
+                      textShadow: "0 2px 12px rgba(0,0,0,0.65)",
+                    }}
+                  >
+                    {metric.value}
+                  </h3>
+                  <p
+                    style={{
+                      fontFamily: FONT,
+                      fontSize: "14px",
+                      color: "#E4E4E7",
+                      margin: 0,
+                      fontWeight: 500,
+                      lineHeight: 1.45,
+                    }}
+                  >
+                    {metric.label}
+                  </p>
                </div>
              </motion.div>
           ))}
         </div>
       </section>
 
-      {/* 3. IN ACTION (Merged and Less Repetitive) */}
-      <section style={{ position: "relative", width: "100%", display: "grid", gridTemplateColumns: "1.1fr 1fr", minHeight: "520px", marginTop: "120px" }}>
-        <div style={{ position: "relative", overflow: "hidden", backgroundColor: "#0a0a0a" }}>
-          <img src={data.inAction.imageSrc} alt="In Action" style={{ position: "absolute", top: "-8%", left: 90, width: "100%", height: "106%", objectFit: "cover" }} />
-          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.55) 100%), linear-gradient(0deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%)" }} />
-          <div style={{ position: "absolute", width: "220px", height: "220px", borderRadius: "50%", background: "radial-gradient(circle, rgba(225, 29, 72, 0.4) 0%, transparent 70%)", top: "40%", left: "30%", filter: "blur(40px)", mixBlendMode: "screen", pointerEvents: "none" }} />
+      {/* 3. IN ACTION (Framed identically to Want to See Industry AI in Action) */}
+      <section style={{ position: "relative", width: "100%", padding: "70px 0 30px", backgroundColor: "#000000", fontFamily: FONT, boxSizing: "border-box" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 24px", boxSizing: "border-box" }}>
+          <div className="capInActionWrapper" style={{ position: "relative", width: "100%", display: "grid", gridTemplateColumns: "1.05fr 1fr", minHeight: "520px", backgroundColor: "#0A0A0A", borderRadius: "24px", border: "1px solid rgba(255, 255, 255, 0.08)", overflow: "hidden", boxShadow: "0 20px 50px rgba(0,0,0,0.6)", textAlign: "left" }}>
+            
+            {/* LEFT — edge-to-edge framed visual matching Industry AI in Action */}
+            <div style={{ position: "relative", overflow: "hidden", backgroundColor: "#000000", minHeight: "360px" }}>
+              <motion.img
+                src={data.inAction.imageSrc}
+                alt="In Action"
+                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+                initial={{ scale: 1.08 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                onError={(e) => { e.currentTarget.src = "/assets/services/webp/bg-ai.webp"; }}
+              />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.7) 100%), linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 40%)" }} />
+            </div>
+
+            {/* RIGHT — deep crimson tinted content panel */}
+            <div style={{ position: "relative", backgroundColor: "#160608", display: "flex", alignItems: "center", padding: "60px 48px", boxSizing: "border-box" }}>
+              <div style={{ position: "relative", zIndex: 1, maxWidth: "480px" }}>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: FONT, fontSize: "11.5px", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#FDA4AF", marginBottom: "14px" }}>
+                  <span style={{ width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#E11D48", boxShadow: "0 0 8px #E11D48" }} />
+                  AI IN ACTION
+                </div>
+
+                <motion.h2
+                  initial={{ opacity: 0, y: 22 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                  style={{ fontFamily: FONT, color: "#FFFFFF", fontSize: "clamp(1.85rem, 3vw, 2.5rem)", fontWeight: 700, lineHeight: 1.2, letterSpacing: "-0.02em", margin: 0, marginBottom: "20px" }}
+                >
+                  {data.inAction.headingLight} <span style={{ color: "#E11D48" }}>{data.inAction.headingRed}</span>
+                </motion.h2>
+
+                <motion.p
+                  initial={{ opacity: 0, y: 18 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+                  style={{ fontFamily: FONT, color: "rgba(255,255,255,0.7)", fontSize: "15px", lineHeight: 1.75, margin: 0, marginBottom: "32px" }}
+                >
+                  {data.inAction.paragraph}
+                </motion.p>
+
+                <motion.a
+                  href="https://devopstrio.co.uk/company/contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  whileHover={{ scale: 1.04, backgroundColor: "#f4f4f5" }}
+                  whileTap={{ scale: 0.96 }}
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "10px",
+                    padding: "13px 26px",
+                    borderRadius: "999px",
+                    backgroundColor: "#FFFFFF",
+                    color: "#030303",
+                    fontFamily: FONT,
+                    fontSize: "13.5px",
+                    fontWeight: 700,
+                    textDecoration: "none",
+                    cursor: "pointer",
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.3)",
+                    transition: "all 0.25s ease",
+                  }}
+                >
+                  {data.inAction.buttonText || "See in Action"}
+                  <ArrowRight size={15} strokeWidth={2.5} />
+                </motion.a>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div style={{ position: "relative", backgroundColor: "#0b0b0b", display: "flex", alignItems: "center", padding: "8% 10% 8% 8%" }}>
-          <div style={{ position: "absolute", width: "300px", height: "300px", borderRadius: "50%", background: "radial-gradient(circle, rgba(225, 29, 72, 0.08) 0%, transparent 70%)", bottom: "-10%", right: "-10%", filter: "blur(60px)", pointerEvents: "none" }} />
-          <motion.div initial={{ opacity: 0, y: 26 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} style={{ position: "relative", zIndex: 1 }}>
-            <h2 style={{ fontSize: "clamp(2rem, 3.5vw, 2.75rem)", fontWeight: 300, lineHeight: 1.1, margin: "0 0 24px 0", letterSpacing: "-0.02em", color: "#ffffff" }}>
-              <span style={{ fontWeight: 700 }}>{data.inAction.headingLight}</span> <span style={{ color: "#E11D48" }}>{data.inAction.headingRed}</span>
-            </h2>
-            <p style={{ fontSize: "clamp(1rem, 1.2vw, 1.15rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.6, marginBottom: "40px" }}>
-              {data.inAction.paragraph}
-            </p>
-            <motion.button onClick={() => window.location.href = "https://devopstrio.co.uk/contact"} style={{ display: "inline-flex", alignItems: "center", gap: "10px", padding: "14px 32px", backgroundColor: "#E11D48", color: "#ffffff", border: "none", borderRadius: "999px", fontSize: "0.95rem", fontWeight: 500, cursor: "pointer", outline: "none", transition: "background-color 0.25s ease" }} whileHover={{ scale: 1.03, boxShadow: "0 8px 26px rgba(225, 29, 72, 0.4)" }} whileTap={{ scale: 0.97 }} transition={{ duration: 0.25, ease: "easeOut" }}>
-              {data.inAction.buttonText}
-              <ArrowIcon />
-            </motion.button>
-          </motion.div>
-        </div>
+
+        <style>{`
+          @media (max-width: 868px) {
+            .capInActionWrapper {
+              grid-template-columns: 1fr !important;
+            }
+          }
+        `}</style>
       </section>
 
       {/* 4. WHO WE WORK WITH (Bubbling Icons Section) */}
@@ -278,53 +592,36 @@ export default function CapabilityDetail() {
               <span style={{ fontWeight: 700 }}>{data.insights.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.insights.titleRed}</span>
             </motion.h2>
             <div style={{ display: "flex", gap: "12px" }}>
+               <a
+                 href="https://devopstrio.co.uk/insights"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 style={{
+                   display: "inline-flex",
+                   alignItems: "center",
+                   gap: "8px",
+                   backgroundColor: "#E11D48",
+                   color: "#FFFFFF",
+                   textDecoration: "none",
+                   padding: "10px 22px",
+                   borderRadius: "9999px",
+                   fontSize: "13.5px",
+                   fontWeight: 600,
+                   transition: "all 0.25s ease",
+                   boxShadow: "0 4px 15px rgba(225,29,72,0.3)",
+                   marginRight: "6px",
+                 }}
+                 className="cap-all-insights-btn"
+               >
+                 View All Insights <ArrowRight size={15} />
+               </a>
                <button onClick={() => scroll('left')} style={{ width: "48px", height: "48px", borderRadius: "50%", border: "1px solid rgba(255,255,255,0.15)", backgroundColor: "transparent", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" }}><ChevronLeft size={20}/></button>
                <button onClick={() => scroll('right')} style={{ width: "48px", height: "48px", borderRadius: "50%", border: "1px solid rgba(255,255,255,0.15)", backgroundColor: "transparent", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" }}><ChevronRight size={20}/></button>
             </div>
           </div>
           <div ref={trackRef} style={{ display: "flex", gap: "24px", overflowX: "auto", scrollbarWidth: "none", msOverflowStyle: "none", paddingBottom: "20px" }}>
-            {data.insights.items.map((item, i) => (
-              <motion.div key={i} initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.1 }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: i * 0.05 }} style={{ flex: "0 0 380px", position: "relative", height: "440px", borderRadius: "16px", padding: "40px", display: "flex", flexDirection: "column", cursor: "pointer", border: "1px solid rgba(255,255,255,0.08)", background: "#111", overflow: "hidden" }} className="insight-card">
-                 
-                 {/* Background Image */}
-                 <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-                    <img src={item.image} alt={item.title} style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.5, transition: "opacity 0.4s ease, transform 0.4s ease" }} className="insight-img" />
-                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.2) 100%)" }} />
-                 </div>
-
-                 <div style={{ fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.12em", color: "rgba(255,255,255,0.7)", marginBottom: "32px", zIndex: 2, position: "relative" }} className="insight-tag">
-                   {item.tag}
-                 </div>
-                 
-                 <div style={{ marginTop: "auto", zIndex: 2, position: "relative" }}>
-                   <h3 style={{ fontSize: "1.75rem", fontWeight: 700, color: "#ffffff", lineHeight: 1.2, margin: "0 0 16px 0", letterSpacing: "-0.01em" }} className="insight-title">
-                     {item.title}
-                   </h3>
-                   <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.6)", lineHeight: 1.6, margin: 0 }} className="insight-desc">
-                     {item.desc}
-                   </p>
-                 </div>
-
-                 <style>{`
-                   .insight-card {
-                     transition: transform 0.4s ease, border-color 0.4s ease;
-                   }
-                   .insight-card:hover {
-                     transform: translateY(-8px);
-                     border-color: rgba(225,29,72,0.5) !important;
-                   }
-                   .insight-card:hover .insight-img {
-                     transform: scale(1.05);
-                     opacity: 0.7 !important;
-                   }
-                   .insight-card:hover .insight-title, .insight-card:hover .insight-tag {
-                     color: #ffffff !important;
-                   }
-                   .insight-card:hover .insight-desc {
-                     color: rgba(255,255,255,0.85) !important;
-                   }
-                 `}</style>
-              </motion.div>
+            {insightItems.map((item, i) => (
+              <InsightTwoFaceCard key={i} item={item} index={i} />
             ))}
           </div>
         </div>

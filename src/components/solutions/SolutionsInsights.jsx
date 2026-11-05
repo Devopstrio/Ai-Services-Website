@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { useState, useRef } from "react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 import insight1 from "../../assets/fresh/binary_code_tunnel.jpg";
 import insight2 from "../../assets/fresh/agent_finance_reconciliation.jpg";
@@ -49,7 +48,9 @@ const styles = {
   section: {
     padding: "130px 24px",
     backgroundColor: "#000000",
-    fontFamily: FONT
+    fontFamily: FONT,
+    position: "relative",
+    overflow: "hidden"
   },
   container: {
     maxWidth: "1280px",
@@ -59,7 +60,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "flex-end",
-    marginBottom: "60px",
+    marginBottom: "50px",
     flexWrap: "wrap",
     gap: "24px"
   },
@@ -70,79 +71,111 @@ const styles = {
     margin: 0,
     letterSpacing: "-0.02em"
   },
+  actionsRow: {
+    display: "flex",
+    alignItems: "center",
+    gap: "16px",
+    flexWrap: "wrap"
+  },
   cta: {
     display: "inline-flex",
     alignItems: "center",
     gap: "10px",
-    padding: "14px 28px",
+    padding: "13px 26px",
     backgroundColor: "#E11D48",
     color: "#FFFFFF",
-    borderRadius: "8px",
+    borderRadius: "9999px",
     fontSize: "14px",
     fontWeight: 600,
     cursor: "pointer",
     border: "none",
-    transition: "all 0.25s ease"
+    textDecoration: "none",
+    transition: "all 0.25s ease",
+    boxShadow: "0 4px 15px rgba(225,29,72,0.3)"
   },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+  navRow: {
+    display: "flex",
+    gap: "10px",
+    alignItems: "center"
+  },
+  navBtn: {
+    width: "44px",
+    height: "44px",
+    borderRadius: "50%",
+    border: "1px solid rgba(255,255,255,0.15)",
+    backgroundColor: "transparent",
+    color: "#fff",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    cursor: "pointer",
+    transition: "all 0.2s ease"
+  },
+  track: {
+    display: "flex",
     gap: "28px",
-    alignItems: "stretch"
+    overflowX: "auto",
+    scrollbarWidth: "none",
+    msOverflowStyle: "none",
+    scrollSnapType: "x mandatory",
+    paddingBottom: "10px"
   },
   card: {
     background: "#0a0a0a",
-    border: "1px solid rgba(255,255,255,0.08)",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    borderColor: "rgba(255,255,255,0.08)",
     borderRadius: "16px",
     overflow: "hidden",
     cursor: "pointer",
     display: "flex",
     flexDirection: "column",
-    transition: "all 0.35s ease",
-  
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
     justifyContent: "space-between",
+    transition: "all 0.35s ease",
+    flex: "0 0 calc((100% - 56px) / 3)",
+    minWidth: "320px",
+    scrollSnapAlign: "start",
+    boxSizing: "border-box"
   },
   imgWrap: {
     position: "relative",
+    height: "220px",
     width: "100%",
-    height: "200px",
-    overflow: "hidden",
+    overflow: "hidden"
   },
   img: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
-    transition: "transform 0.5s ease",
+    display: "block",
+    transition: "transform 0.6s ease"
   },
   imgOverlay: {
     position: "absolute",
     inset: 0,
-    background: "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(10,10,10,0.9) 100%)",
+    background: "linear-gradient(180deg, rgba(10,10,10,0.1) 0%, rgba(10,10,10,0.85) 100%)"
   },
   tagBadge: {
     position: "absolute",
-    top: "14px",
-    left: "14px",
-    padding: "5px 12px",
-    borderRadius: "6px",
-    backgroundColor: "#E11D48",
-    color: "#FFFFFF",
-    fontFamily: FONT,
+    top: "16px",
+    left: "16px",
+    backgroundColor: "rgba(0,0,0,0.65)",
+    backdropFilter: "blur(6px)",
+    border: "1px solid rgba(255,255,255,0.12)",
+    color: "#E11D48",
     fontSize: "11px",
     fontWeight: 700,
-    letterSpacing: "0.05em",
-    zIndex: 2,
+    letterSpacing: "0.1em",
+    padding: "6px 12px",
+    borderRadius: "6px",
+    textTransform: "uppercase"
   },
   body: {
-    padding: "26px",
-    flex: 1,
+    padding: "28px",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
-    gap: "16px",
+    flex: 1,
+    justifyContent: "space-between"
   },
   title: {
     color: "#FFFFFF",
@@ -165,13 +198,23 @@ const styles = {
     color: "#E11D48",
     fontSize: "13.5px",
     fontWeight: 600,
-    marginTop: "8px"
+    marginTop: "20px"
   }
 };
 
 export default function SolutionsInsights() {
-  const navigate = useNavigate();
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const trackRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (trackRef.current) {
+      const scrollAmount = trackRef.current.clientWidth / 3 + 28;
+      trackRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth"
+      });
+    }
+  };
 
   return (
     <section style={styles.section}>
@@ -187,17 +230,44 @@ export default function SolutionsInsights() {
               Explore <span style={{ color: "#E11D48" }}>Expertise</span>
             </motion.h2>
           </div>
-          <motion.button 
-            style={styles.cta}
-            whileHover={{ scale: 1.03, backgroundColor: "#BE123C" }}
-            whileTap={{ scale: 0.97 }}
-            onClick={() => navigate("/contact")}
-          >
-            Schedule Consultation <ArrowRight size={16} />
-          </motion.button>
+
+          <div style={styles.actionsRow}>
+            <a 
+              href="https://devopstrio.co.uk/contact#schedule"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={styles.cta}
+              className="schedule-consultation-btn"
+            >
+              Schedule Consultation <ArrowRight size={16} />
+            </a>
+            <style>{`
+              .schedule-consultation-btn:hover { background-color: #BE123C !important; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(225,29,72,0.5) !important; }
+              .expertise-nav-btn:hover { background-color: rgba(225,29,72,0.15) !important; border-color: #E11D48 !important; }
+            `}</style>
+
+            <div style={styles.navRow}>
+              <button 
+                onClick={() => scroll("left")} 
+                style={styles.navBtn}
+                aria-label="Previous Expertise"
+                className="expertise-nav-btn"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button 
+                onClick={() => scroll("right")} 
+                style={styles.navBtn}
+                aria-label="Next Expertise"
+                className="expertise-nav-btn"
+              >
+                <ChevronRight size={20} />
+              </button>
+            </div>
+          </div>
         </div>
 
-        <div style={styles.grid}>
+        <div ref={trackRef} style={styles.track}>
           {RESOURCES.map((item, i) => {
             const isHovered = hoveredIndex === i;
             return (
@@ -211,7 +281,13 @@ export default function SolutionsInsights() {
                 }}
                 onMouseEnter={() => setHoveredIndex(i)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                onClick={() => navigate(item.route)}
+                onClick={() => {
+                  if (item.route.startsWith("http")) {
+                    window.open(item.route, "_blank", "noopener,noreferrer");
+                  } else {
+                    window.location.href = item.route;
+                  }
+                }}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}

@@ -145,7 +145,7 @@ export default function IndustriesInAction() {
               </motion.p>
 
               <motion.a
-                href="/services"
+                href="https://devopstrio.co.uk/industries"
                 style={styles.btn}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}

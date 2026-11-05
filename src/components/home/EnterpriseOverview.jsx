@@ -21,7 +21,7 @@ const styles = {
   },
   intro: {
     maxWidth: "680px",
-    margin: "0 auto 64px",
+    margin: "0 auto 40px",
     textAlign: "center",
   },
   eyebrow: {
@@ -85,6 +85,9 @@ const styles = {
     height: "780px",
     border: "1px solid rgba(255,255,255,0.08)",
     backgroundColor: "#0a0a0a",
+    display: "block",
+    textDecoration: "none",
+    cursor: "pointer",
   },
   leftImg: {
     position: "absolute",
@@ -97,7 +100,7 @@ const styles = {
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0.92) 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.2) 35%, rgba(0,0,0,0.78) 70%, rgba(0,0,0,0.96) 100%)",
   },
   leftTopRow: {
     position: "absolute",
@@ -137,20 +140,23 @@ const styles = {
   leftLabel: {
     fontFamily: FONT,
     fontSize: "12px",
-    fontWeight: 700,
-    letterSpacing: "0.1em",
+    fontWeight: 600,
+    letterSpacing: "0.12em",
     textTransform: "uppercase",
-    color: "#E11D48",
+    color: "#FDA4AF",
     marginBottom: "10px",
+    textShadow: "0 1px 8px rgba(0,0,0,0.6)",
   },
   leftTitle: {
     fontFamily: FONT,
-    fontSize: "clamp(1.5rem, 2.2vw, 2rem)",
+    fontSize: "clamp(1.6rem, 2.4vw, 2.1rem)",
     fontWeight: 700,
     color: "#FFFFFF",
-    lineHeight: 1.25,
+    lineHeight: 1.2,
+    letterSpacing: "-0.025em",
     margin: 0,
-    maxWidth: "420px",
+    maxWidth: "440px",
+    textShadow: "0 2px 14px rgba(0,0,0,0.65)",
   },
   leftLinkRow: {
     display: "flex",
@@ -161,6 +167,7 @@ const styles = {
     fontFamily: FONT,
     fontSize: "14px",
     fontWeight: 600,
+    textShadow: "0 1px 6px rgba(0,0,0,0.5)",
   },
 
   /* right grid */
@@ -177,6 +184,7 @@ const styles = {
     border: "1px solid rgba(255,255,255,0.08)",
     backgroundColor: "#0a0a0a",
     cursor: "pointer",
+    transition: "border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease",
   },
   cardImgWrap: {
     position: "absolute",
@@ -194,7 +202,7 @@ const styles = {
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.9) 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.22) 40%, rgba(0,0,0,0.85) 75%, rgba(0,0,0,0.96) 100%)",
   },
   cardTagsRow: {
     position: "absolute",
@@ -224,20 +232,23 @@ const styles = {
   },
   cardLabel: {
     fontFamily: FONT,
-    fontSize: "11px",
-    fontWeight: 700,
-    letterSpacing: "0.09em",
+    fontSize: "11.5px",
+    fontWeight: 600,
+    letterSpacing: "0.12em",
     textTransform: "uppercase",
-    color: "#E11D48",
+    color: "#FDA4AF",
     marginBottom: "8px",
+    textShadow: "0 1px 6px rgba(0,0,0,0.6)",
   },
   cardTitle: {
     fontFamily: FONT,
-    fontSize: "15px",
+    fontSize: "16px",
     fontWeight: 700,
     color: "#FFFFFF",
-    lineHeight: 1.3,
+    lineHeight: 1.25,
+    letterSpacing: "-0.02em",
     margin: 0,
+    textShadow: "0 2px 12px rgba(0,0,0,0.65)",
   },
 };
 
@@ -318,6 +329,8 @@ function RightCard({ card, index }) {
           src={card.img}
           alt={card.title}
           style={styles.cardImg}
+          variants={{ hover: { scale: 1.06 } }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
         />
       </motion.div>
       <div style={styles.cardOverlay} />
@@ -385,17 +398,14 @@ export default function EnterpriseAIOverview() {
           One platform for every layer of{" "}
           <span style={styles.headingAccent}>enterprise AI</span> delivery
         </h2>
-        <p style={styles.subtext}>
-          Explore how healthcare and enterprise teams design, secure, and
-          scale AI pipelines with Devopstrio — from first model to
-          full production.
-        </p>
+        
       </motion.div>
 
       <div className="home-enterprise-ai-overview__grid" style={styles.grid}>
         {/* LEFT — sticky featured visual */}
         <div className="home-enterprise-ai-overview__left-sticky" style={styles.leftSticky}>
-          <motion.div
+          <motion.a
+            href="/solutions/overview"
             className="home-enterprise-ai-overview__left-card"
             style={styles.leftCard}
             initial={{ opacity: 0, x: -24 }}
@@ -439,7 +449,7 @@ export default function EnterpriseAIOverview() {
                 <ArrowIcon />
               </motion.div>
             </div>
-          </motion.div>
+          </motion.a>
         </div>
 
         {/* RIGHT — scrolling 2-col grid */}

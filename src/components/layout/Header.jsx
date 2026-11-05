@@ -877,6 +877,40 @@ function FullScreenNav({ open, onClose }) {
             className="sidebar-scroll"
           >
             <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
+              <motion.a
+                href="/"
+                initial={{ opacity: 0, x: -14 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 0.4, ease: EASE } }}
+                whileHover={{ x: 4, transition: { duration: 0.2, ease: EASE } }}
+                whileTap={{ scale: 0.97, transition: { duration: 0.15, ease: EASE } }}
+                style={{
+                  position: "relative",
+                  display: "flex",
+                  alignItems: "center",
+                  width: "100%",
+                  textAlign: "left",
+                  padding: "12px 18px",
+                  borderRadius: "10px",
+                  textDecoration: "none",
+                  cursor: "pointer",
+                  backgroundColor: "transparent",
+                  fontFamily: FONT,
+                  fontSize: "clamp(13.5px, 1.05vw, 15.5px)",
+                  fontWeight: 500,
+                  color: "rgba(255,255,255,0.62)",
+                  transition: "background-color 0.3s ease, color 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "rgba(255,255,255,0.045)";
+                  e.currentTarget.style.color = "#ffffff";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.color = "rgba(255,255,255,0.62)";
+                }}
+              >
+                Home
+              </motion.a>
               {NAV_SECTIONS.map((section, i) => (
                 <SidebarItem
                   key={section.id}

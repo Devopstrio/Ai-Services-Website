@@ -1,13 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { ArrowUp } from "lucide-react";
+import CategoryPopup from "../common/CategoryPopup";
+import trademarkImg from "../../assets/trademark-icon.png";
 
 export function Footer() {
   const [email, setEmail] = useState("");
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email) {
-      alert("Thank you for subscribing to Devopstrio Newsletter!");
-      setEmail("");
+    if (email && email.includes("@")) {
+      setIsPopupOpen(true);
     }
   };
 
@@ -50,7 +66,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase bg-black hover:bg-zinc-800 text-white transition-all duration-300 cursor-pointer shadow-md"
+                className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-bold tracking-wider uppercase bg-black hover:bg-zinc-800 text-white transition-all duration-300 whitespace-nowrap cursor-pointer shadow-md"
                 aria-label="Subscribe"
               >
                 Get Started
@@ -59,19 +75,38 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Category Popup Modal */}
+        {isPopupOpen && (
+          <CategoryPopup
+            email={email}
+            closePopup={() => {
+              setIsPopupOpen(false);
+              setEmail("");
+            }}
+          />
+        )}
+
         {/* 6-Column Mega Menu */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-12 mb-20 text-left">
 
-          {/* Col 1: Brand & Logo */}
+          {/* Col 1: Brand & Logo with Registered Trademark Symbol */}
           <div className="flex flex-col items-center text-center gap-0">
             <a href="https://devopstrio.co.uk/" className="flex flex-col items-center gap-3 group inline-flex mb-4">
-              <img
-                src="/images/downloaded/a228f16227_logo.webp"
-                alt="Devopstrio logo"
-                className="w-16 h-16 object-contain transition-all duration-500 group-hover:scale-105 filter drop-shadow-[0_0_15px_rgba(255,255,255,0.15)]"
-                loading="lazy"
-                onError={(e) => { e.currentTarget.src = "/images/downloaded/3225cf5a28_logo.png"; }}
-              />
+              <div className="relative inline-flex items-center justify-center">
+                <img
+                  src="/assets/logo/logo.webp"
+                  alt="Devopstrio logo"
+                  className="w-16 h-16 object-contain transition-all duration-500 group-hover:scale-105 filter drop-shadow-[0_0_15px_rgba(255,255,255,0.15)]"
+                  loading="lazy"
+                  onError={(e) => { e.currentTarget.src = "/images/downloaded/a228f16227_logo.webp"; }}
+                />
+                <img
+                  src={trademarkImg}
+                  alt="Registered Trademark"
+                  className="absolute top-0 -right-4 w-4 h-4 object-contain brightness-0 invert opacity-95 group-hover:opacity-100 transition-opacity drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                  loading="lazy"
+                />
+              </div>
               <div className="flex flex-col items-center text-center">
                 <span className="text-3xl font-semibold text-white tracking-tight leading-none">
                   Devopstrio
@@ -187,6 +222,8 @@ export function Footer() {
           <div className="flex flex-wrap justify-center gap-6 items-center">
             <a
               href="https://www.linkedin.com/company/devopstrioglobal/posts/?feedView=all"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
               title="LinkedIn"
             >
@@ -196,6 +233,8 @@ export function Footer() {
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61579126233218"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
               title="Facebook"
             >
@@ -205,6 +244,8 @@ export function Footer() {
             </a>
             <a
               href="https://www.instagram.com/devopstrio_offcl/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
               title="Instagram"
             >
@@ -224,6 +265,17 @@ export function Footer() {
         </div>
 
       </div>
+
+      {/* Floating Scroll to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-0 right-0 z-50 p-3.5 rounded-tl-[1.5rem] bg-zinc-900/40 backdrop-blur-xl border-t border-l border-white/[0.08] text-zinc-400 hover:text-white hover:bg-zinc-800/60 transition-all duration-500 shadow-[-10px_-10px_30px_rgba(0,0,0,0.5)] cursor-pointer ${
+          showScrollTop ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none translate-y-full"
+        }`}
+        aria-label="Scroll to top"
+      >
+        <ArrowUp size={22} strokeWidth={2} className="hover:-translate-y-1 transition-transform duration-300" />
+      </button>
     </footer>
   );
 }

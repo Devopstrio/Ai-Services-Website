@@ -87,7 +87,9 @@ const styles = {
     fontSize: "14px",
     fontWeight: 600,
     color: "#FFFFFF",
+    textDecoration: "none",
     cursor: "pointer",
+    transition: "color 0.2s ease",
   },
   viewAllArrow: {
     width: "24px",
@@ -143,43 +145,64 @@ const styles = {
     position: "absolute",
     inset: 0,
     background:
-      "linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.05) 35%, rgba(0,0,0,0.85) 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.15) 70%, rgba(0,0,0,0.75) 100%)",
   },
   imgTopContent: {
     position: "absolute",
-    top: "24px",
-    left: "22px",
-    right: "22px",
+    top: "26px",
+    left: "24px",
+    right: "24px",
     zIndex: 2,
   },
   imgTag: {
-    fontSize: "10.5px",
-    fontWeight: 700,
+    fontSize: "12px",
+    fontWeight: 600,
     letterSpacing: "0.12em",
-    color: "#E11D48",
+    color: "#FDA4AF",
     textTransform: "uppercase",
     marginBottom: "12px",
     fontFamily: FONT,
+    textShadow: "0 1px 6px rgba(0,0,0,0.6)",
   },
   imgTitle: {
     fontFamily: FONT,
     color: "#FFFFFF",
-    fontSize: "1.15rem",
+    fontSize: "21px",
     fontWeight: 700,
-    lineHeight: 1.35,
+    lineHeight: 1.25,
     margin: 0,
-    letterSpacing: "-0.01em",
+    letterSpacing: "-0.025em",
+    textShadow: "0 2px 12px rgba(0,0,0,0.55)",
+  },
+  imgBottomContent: {
+    position: "absolute",
+    bottom: "22px",
+    left: "24px",
+    right: "24px",
+    zIndex: 2,
+    display: "flex",
+    alignItems: "center",
+  },
+  revealBtn: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "8px",
+    fontFamily: FONT,
+    fontSize: "13px",
+    fontWeight: 600,
+    color: "#FFFFFF",
+    textShadow: "0 1px 6px rgba(0,0,0,0.6)",
   },
 
   hoverFace: {
     position: "absolute",
     inset: 0,
     backgroundColor: "#FFFFFF",
-    padding: "32px 26px 28px",
+    padding: "32px 26px",
     boxSizing: "border-box",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "center",
     zIndex: 3,
   },
   hoverTag: {
@@ -265,8 +288,11 @@ function ArrowIcon({ color = "#FFFFFF", dir = "right" }) {
 
 function TrendCard({ item, index }) {
   return (
-    <motion.div
-      style={styles.card}
+    <motion.a
+      href="https://devopstrio.co.uk/insights"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ ...styles.card, textDecoration: "none" }}
       initial="rest"
       whileHover="hover"
       animate="rest"
@@ -290,6 +316,12 @@ function TrendCard({ item, index }) {
           <div style={styles.imgTag}>{item.tag}</div>
           <h3 style={styles.imgTitle}>{item.title}</h3>
         </div>
+        <div style={styles.imgBottomContent}>
+          <span style={styles.revealBtn}>
+            Reveal Insights
+            <ArrowIcon color="#FFFFFF" />
+          </span>
+        </div>
       </motion.div>
 
       <motion.div
@@ -303,12 +335,9 @@ function TrendCard({ item, index }) {
         <div style={styles.hoverTag}>{item.tag}</div>
         <h3 style={styles.hoverTitle}>{item.title}</h3>
         <p style={styles.hoverDesc}>{item.desc}</p>
-        <span style={styles.hoverExpand}>
-          Read Article
-          <ArrowIcon color="#E11D48" />
-        </span>
+        
       </motion.div>
-    </motion.div>
+    </motion.a>
   );
 }
 
@@ -331,12 +360,17 @@ export default function IndustriesInsights() {
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       >
         <h2 style={styles.heading}>Explore Industry Insights</h2>
-        <span style={styles.viewAll}>
+        <a
+          href="https://devopstrio.co.uk/insights"
+          style={styles.viewAll}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           View All Insights
           <span style={styles.viewAllArrow}>
             <ArrowIcon />
           </span>
-        </span>
+        </a>
       </motion.div>
 
       <div style={styles.scrollWrap}>

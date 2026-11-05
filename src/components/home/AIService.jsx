@@ -26,28 +26,28 @@ const styles = {
     maxWidth: "1280px",
     margin: "0 auto",
     display: "grid",
-    gridTemplateColumns: "220px 1fr",
-    gap: "60px",
+    gridTemplateColumns: "clamp(240px, 22vw, 290px) 1fr",
+    gap: "clamp(20px, 2.5vw, 36px)",
   },
   labelCol: {
-    borderLeft: "2px solid rgba(225, 29, 72, 0.8)",
-    paddingLeft: "24px",
+    borderLeft: "3px solid #E11D48",
+    paddingLeft: "20px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-start",
   },
   label: {
     fontFamily: '"DM Sans", "Inter", sans-serif',
-    fontSize: "13px",
-    fontWeight: 700,
-    letterSpacing: "0.1em",
+    fontSize: "clamp(1.5rem, 2.2vw, 2.1rem)",
+    fontWeight: 800,
+    letterSpacing: "-0.01em",
     textTransform: "uppercase",
     color: "#FFFFFF",
-    lineHeight: 1.5,
+    lineHeight: 1.15,
   },
   textCol: {
     borderLeft: "1px solid rgba(255, 255, 255, 0.12)",
-    paddingLeft: "44px",
+    paddingLeft: "clamp(20px, 2.5vw, 32px)",
   },
   paragraph: {
     fontFamily: '"Inter", "DM Sans", system-ui, sans-serif',
@@ -109,13 +109,13 @@ function RevealText({ children }) {
 
 const content = [
   { text: "Devopstrio is a globally active,", type: "normal" },
-  { text: "enterprise AI & DevOps engineering partner", type: "strong" },
+  { text: "enterprise AI & DevOps engineering partner.", type: "strong" },
   {
-    text: ". Originating in mission-critical infrastructure, cloud security, and compliance engineering, we build and deploy production-grade AI systems across global enterprises.",
+    text: "Originating in mission-critical infrastructure, cloud security, and compliance engineering, we build and deploy production-grade AI systems across global enterprises.",
     type: "normal",
   },
-  { text: "By unifying sovereign LLMs, autonomous agentic workflows, and real-time MLOps pipelines", type: "normal" },
-  { text: ", our mission is to deliver", type: "normal" },
+  { text: "By unifying sovereign LLMs, autonomous agentic workflows, and real-time MLOps pipelines,", type: "normal" },
+  { text: "our mission is to deliver", type: "normal" },
   { text: "measurable operational breakthroughs and compounding ROI through enterprise AI.", type: "accent" },
 ];
 
