@@ -49,6 +49,56 @@ export const INTEGRATIONS_OVERVIEW_FAQS = [
   }
 ];
 
-export function getIntegrationFaqs(integrationId) {
-  return INTEGRATIONS_OVERVIEW_FAQS;
+export function getIntegrationFaqs(integrationId, integrationName) {
+  const name = integrationName || "Enterprise Integration";
+  return [
+    {
+      q: `How does Devopstrio connect ${name} securely to our existing enterprise infrastructure?`,
+      a: `Connectors for ${name} deploy as containerized stateless microservices within your private VPC perimeter or hybrid cloud network. Using mutual TLS (mTLS 1.3), OAuth 2.0 / SAML token exchanges, and private network peering (AWS PrivateLink / Azure Private Link), data flows directly without public exposure.`,
+      proof: `Connector Architecture: Private VPC & mTLS 1.3 Enforced Peering for ${name}`,
+      tags: ["Security", "mTLS", "PrivateLink", "VPC", "Enterprise Connectors"]
+    },
+    {
+      q: `Does customer data get cached or persisted in the ${name} middleware layer?`,
+      a: `No. The ${name} integration layer operates strictly in-memory. Payloads are processed on-the-fly, normalized, and streamed directly between source and target systems without any intermediate disk persistence or unencrypted staging.`,
+      proof: "Zero-Persistence: Ephemeral In-Memory Streaming with Zero Disk Staging",
+      tags: ["Stateless", "Data Privacy", "In-Memory", "Zero Staging"]
+    },
+    {
+      q: `How does ${name} handle high-throughput real-time event streaming and spikes?`,
+      a: `We utilize distributed event backbones powered by Apache Kafka, Redis Streams, or native cloud pub/sub queues. Built-in token-bucket rate limiters, backpressure controls, and exponential backoff retry algorithms prevent third-party API rate-limiting errors.`,
+      proof: "Throughput Guarantee: Kafka-Backed Event Streaming with Automated Backpressure",
+      tags: ["Kafka", "Throughput", "Rate Limiting", "Fault Tolerance"]
+    },
+    {
+      q: `What authentication and zero-trust policies are enforced for ${name}?`,
+      a: `We enforce least-privilege scoping, automated secret rotation via HashiCorp Vault or AWS Secrets Manager, fine-grained Role-Based Access Control (RBAC), and cryptographic audit signatures for every transaction.`,
+      proof: "Zero-Trust: Automated Secrets Rotation & Cryptographic Audit Signatures",
+      tags: ["Zero-Trust", "Secrets Manager", "RBAC", "Access Control"]
+    },
+    {
+      q: `Can ${name} connectors operate in air-gapped or on-premise legacy environments?`,
+      a: `Yes. Lightweight Devopstrio gateway agents can be installed directly in air-gapped on-premise data centers, enabling legacy mainframe or relational database workloads to communicate securely with modern AI pipelines via hardware-isolated reverse proxies.`,
+      proof: "Hybrid Deployments: On-Premise Gateway Agents for Air-Gapped Environments",
+      tags: ["Hybrid Cloud", "On-Premise", "Air-Gapped", "Legacy Systems"]
+    },
+    {
+      q: `What monitoring, telemetry, and error alerting are included with ${name}?`,
+      a: `Pre-configured Prometheus, Grafana, and Datadog telemetry dashboards provide real-time visibility into request throughput, latency percentiles (p50/p95/p99), status distributions, and automated PagerDuty alert triggers for connector anomalies.`,
+      proof: "Observability: Prometheus & Grafana Metrics with Automated PagerDuty Alerts",
+      tags: ["Observability", "Prometheus", "Telemetry", "Alerting"]
+    },
+    {
+      q: `What is the typical deployment timeline for enterprise-grade ${name} connectors?`,
+      a: `Pre-built cloud and enterprise SaaS connectors validate and deploy within 24 to 48 hours. Bespoke integrations with proprietary internal APIs or custom schemas are delivered in production-ready condition within 1 to 2 weeks.`,
+      proof: "Deployment Velocity: 24-48 Hour Turnaround for Pre-Built Connectors",
+      tags: ["Timeline", "Deployment", "Agile Integration", "ROI"]
+    },
+    {
+      q: `How do we request custom connector extensions or schema modifications for ${name}?`,
+      a: `Our solutions engineering team provides continuous connector maintenance and custom schema mapping as part of our integration services. You can request architectural scoping and new endpoint connectors directly through our engineering review team.`,
+      proof: "Engineering Support: Continuous Connector Maintenance & Schema Customization",
+      tags: ["Custom Extensions", "Schema Mapping", "Support", "Maintenance"]
+    }
+  ];
 }

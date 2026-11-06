@@ -49,6 +49,56 @@ export const INNOVATION_OVERVIEW_FAQS = [
   }
 ];
 
-export function getInnovationFaqs(innovationId) {
-  return INNOVATION_OVERVIEW_FAQS;
+export function getInnovationFaqs(innovationId, innovationName) {
+  const name = innovationName || "Innovation Lab Initiative";
+  return [
+    {
+      q: `What is the primary technical focus of ${name}?`,
+      a: `Within Devopstrio's Innovation Lab, ${name} focuses on translating emerging frontier deep learning research—such as custom CUDA/Triton kernels, formal verification, mechanistic interpretability, and sovereign air-gapped runtimes—into hardened, production-ready enterprise capabilities.`,
+      proof: `Research Mission: Applied Frontier Engineering for ${name}`,
+      tags: ["Innovation", "R&D", "Emerging Tech", "Architecture"]
+    },
+    {
+      q: `How can enterprise engineering teams collaborate with our research scientists on ${name}?`,
+      a: `We organize dedicated joint R&D co-creation sprints. Enterprise client teams work directly alongside our research fellows to validate hypotheses, run accelerated benchmark tests, and develop proprietary prototypes under strict non-disclosure terms.`,
+      proof: "Joint R&D: Co-Development Sprints with 100% Client IP Assignment",
+      tags: ["Collaboration", "Co-Creation", "R&D Sprints", "Client Teams"]
+    },
+    {
+      q: `What compute infrastructure and hardware accelerators power ${name}?`,
+      a: `Initiatives under ${name} leverage dedicated multi-node NVIDIA Hopper (H100) and Blackwell GPU clusters equipped with NVLink interconnects, high-throughput RDMA networking, and optimized FP8/FP4 mixed-precision inference runtimes.`,
+      proof: "Compute Fabric: Dedicated High-Throughput GPU Cluster Infrastructure",
+      tags: ["GPU Compute", "H100", "Hardware Acceleration", "Inference"]
+    },
+    {
+      q: `How is intellectual property (IP) governed for proprietary work in ${name}?`,
+      a: `All custom code, fine-tuned model checkpoints, custom algorithmic architectures, and proprietary dataset integrations created during client-sponsored engagements are 100% assigned to your enterprise. Devopstrio retains zero claim over your proprietary IP.`,
+      proof: "Commercial Terms: 100% Client Intellectual Property Ownership",
+      tags: ["IP Protection", "Client Governance", "Commercial Terms", "Exclusivity"]
+    },
+    {
+      q: `How does ${name} ensure rigorous data sovereignty and air-gapped privacy?`,
+      a: `For defense, banking, and public sector research, experiments execute in completely air-gapped, zero-egress hardware enclaves. Customer data is processed strictly in local non-volatile memory and never shared with public model APIs or third-party providers.`,
+      proof: "Data Sovereignty: Zero-Egress Air-Gapped Hardware Isolation",
+      tags: ["Data Sovereignty", "Air-Gapped", "Zero-Egress", "Privacy"]
+    },
+    {
+      q: `How are models and prototypes evaluated for accuracy and benchmark reproducibility?`,
+      a: `We execute standardized automated evaluation suites measuring reasoning consistency, instruction-following fidelity, hallucination frequency, and token economics across thousands of domain-specific enterprise prompts and formal verification benchmarks.`,
+      proof: "Evaluation Standards: Automated Multi-Metric Benchmark Reproducibility",
+      tags: ["Benchmarking", "Evaluation", "Formal Proofs", "Reliability"]
+    },
+    {
+      q: `What is the transition path from a ${name} prototype to live enterprise production?`,
+      a: `Once a prototype achieves target validation metrics in our sandboxed testbeds, our platform engineering team packages the solution into containerized Helm charts, automated CI/CD deployment pipelines, and observability dashboards for immediate enterprise integration.`,
+      proof: "Production Ramp: Sandboxed Validation to Containerized Enterprise Rollout",
+      tags: ["Production Rollout", "Containerization", "CI/CD", "Scalability"]
+    },
+    {
+      q: `How can enterprise leadership schedule a confidential briefing on ${name}?`,
+      a: `Technical and executive leaders can request a private Innovation Briefing with our Chief AI Architect to inspect live interactive demos, examine architectural benchmarks, and evaluate integration fit for their enterprise roadmap.`,
+      proof: "Executive Briefings: Private Architecture Reviews & Interactive Demos",
+      tags: ["Executive Briefings", "Strategy", "Architecture Review", "Advisory"]
+    }
+  ];
 }

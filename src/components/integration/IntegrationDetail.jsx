@@ -1080,6 +1080,16 @@ export default function IntegrationDetail() {
       )}
 
       {/* ═══════════════════════════════════════════════════════════════
+          7.5 INTEGRATION TECHNICAL FAQ
+      ═══════════════════════════════════════════════════════════════ */}
+      <FAQ
+        faqs={getIntegrationFaqs(data?.id || integrationSlug, data?.name)}
+        badge="INTEGRATION TECHNICAL FAQ"
+        title={`${data?.name || "Integration"}:`}
+        highlight="Technical Clarifications"
+      />
+
+      {/* ═══════════════════════════════════════════════════════════════
           8. UNIVERSAL REPRESENTATIVE CTA
       ═══════════════════════════════════════════════════════════════ */}
       <RepresentativeCTA

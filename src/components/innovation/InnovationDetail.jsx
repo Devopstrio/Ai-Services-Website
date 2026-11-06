@@ -1575,6 +1575,16 @@ export default function InnovationDetail() {
       ) : null}
 
       {/* ─────────────────────────────────────────────────────────────
+          7.5 TECHNICAL FAQ SECTION
+      ───────────────────────────────────────────────────────────── */}
+      <FAQ
+        faqs={getInnovationFaqs(data?.id || innovationSlug, data?.name)}
+        badge="INNOVATION TECHNICAL FAQ"
+        title={`${data?.name || "Innovation Lab"}:`}
+        highlight="Technical Clarifications"
+      />
+
+      {/* ─────────────────────────────────────────────────────────────
           8. UNIVERSAL REPRESENTATIVE CTA
       ───────────────────────────────────────────────────────────── */}
       <RepresentativeCTA
