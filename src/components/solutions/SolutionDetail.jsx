@@ -4,6 +4,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ENTERPRISE_SOLUTIONS_DATA } from "../../data/solutions";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { getSolutionFaqs } from "../../data/faqs";
 
 /**
  * ============================================================================
@@ -791,6 +793,14 @@ export default function SolutionDetail() {
           `}</style>
         </div>
       </section>
+
+      {/* 7.5 FAQ SECTION */}
+      <FAQ
+        faqs={getSolutionFaqs(solutionId)}
+        badge="SOLUTION TECHNICAL FAQ"
+        title="Technical Architecture:"
+        highlight="Frequently Asked Questions"
+      />
 
       {/* 8. UNIVERSAL REPRESENTATIVE CTA */}
       <RepresentativeCTA

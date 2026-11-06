@@ -6,6 +6,8 @@ import AgentsWork from "./AgentsWork";
 import AgentsCards from "./AgentsCards";
 import AgentsManaged from "./AgentsManaged";
 import AgentsInsights from "./AgentsInsights";
+import FAQ from "../ui/FAQ";
+import { AGENTS_OVERVIEW_FAQS } from "../../data/faqs";
 
 const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
@@ -291,6 +293,12 @@ export default function AgentsOverview() {
       <AgentsCards />
       <AgentsManaged />
       <AgentsInsights />
+      <FAQ
+        faqs={AGENTS_OVERVIEW_FAQS}
+        badge="AI AGENTS FAQ"
+        title="Autonomous Systems:"
+        highlight="Frequently Asked Questions"
+      />
     </>
   );
 }

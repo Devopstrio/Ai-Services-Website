@@ -34,6 +34,8 @@ import SolutionDetail from "./components/solutions/SolutionDetail";
 import ProductsOverview from "./components/products/ProductsOverview";
 import ProductDetail from "./components/products/ProductDetail";
 import RepresentativeCTA from "./components/ui/RepresentativeCTA";
+import FAQ from "./components/ui/FAQ";
+import { HOME_FAQS } from "./data/faqs";
 import Footer from "./components/layout/Footer";
 
 function App() {
@@ -55,6 +57,12 @@ function App() {
                 <EnterpriseOverview />
                 <Capabilities />
                 <SuccessStory />
+                <FAQ
+                  faqs={HOME_FAQS}
+                  badge="AI PLATFORM FAQ"
+                  title="Enterprise AI Solutions:"
+                  highlight="Answers to Core Questions"
+                />
                 <RepresentativeCTA
                   title="Ready to Shape the Next Era of"
                   highlightText="Enterprise AI & Innovation?"

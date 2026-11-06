@@ -3,6 +3,8 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { CAPABILITY_SERVICES_DATA } from "../../data/capabilities";
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { getCapabilityFaqs } from "../../data/faqs";
 import { getCapabilityUseCaseIcon } from "../../data/capabilities/useCaseIcons";
 import { getCapabilityInsights } from "../../data/capabilities/capabilityInsightsMap";
 import enterpriseItOpsIcon from "../../assets/capabilities/enterprise-it-ops.svg";
@@ -777,6 +779,14 @@ export default function CapabilityDetail() {
           </div>
         </div>
       </section>
+
+      {/* 7.5 FAQ SECTION */}
+      <FAQ
+        faqs={getCapabilityFaqs(serviceId)}
+        badge="CAPABILITY TECHNICAL FAQ"
+        title={`${data?.hero?.titleLight || "Capability"} ${data?.hero?.titleBold || "Architecture"}:`}
+        highlight="Key Technical Clarifications"
+      />
 
       {/* 8. UNIVERSAL REPRESENTATIVE CTA */}
       <RepresentativeCTA

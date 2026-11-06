@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { getAgentFaqs } from "../../data/faqs";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { getAgentData } from "../../data/agents";
 import {
@@ -630,6 +632,14 @@ export default function AgentDetail() {
           </FadeUp>
         </section>
       )}
+
+      {/* FAQ SECTION */}
+      <FAQ
+        faqs={getAgentFaqs(data?.id, data?.name)}
+        badge="AGENT TECHNICAL FAQ"
+        title={`${data?.name || "Agent"}:`}
+        highlight="Key Engineering Clarifications"
+      />
 
       {/* UNIVERSAL REPRESENTATIVE CTA */}
       <RepresentativeCTA

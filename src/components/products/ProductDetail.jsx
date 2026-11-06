@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { getProductFaqs } from "../../data/faqs";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { getProductData } from "../../data/products";
 import {
@@ -1438,6 +1440,14 @@ export default function ProductDetail() {
           </div>
         </section>
       )}
+
+      {/* 8.5 FAQ SECTION */}
+      <FAQ
+        faqs={getProductFaqs(data?.id, data?.name)}
+        badge="PRODUCT TECHNICAL FAQ"
+        title={`${data?.name || "Product"}:`}
+        highlight="Key Technical Clarifications"
+      />
 
       {/* ==================================================================== */}
       {/* 9. UNIVERSAL REPRESENTATIVE CTA                                      */}

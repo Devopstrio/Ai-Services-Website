@@ -6,6 +6,8 @@ import InnovationWork from "./InnovationWork";
 import InnovationCards from "./InnovationCards";
 import InnovationManaged from "./InnovationManaged";
 import InnovationInsights from "./InnovationInsights";
+import FAQ from "../ui/FAQ";
+import { INNOVATION_OVERVIEW_FAQS } from "../../data/faqs";
 
 const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
@@ -281,6 +283,12 @@ export default function InnovationOverview() {
       <InnovationCards />
       <InnovationManaged />
       <InnovationInsights />
+      <FAQ
+        faqs={INNOVATION_OVERVIEW_FAQS}
+        badge="INNOVATION LAB FAQ"
+        title="Frontier AI Research:"
+        highlight="Frequently Asked Questions"
+      />
     </>
   );
 }

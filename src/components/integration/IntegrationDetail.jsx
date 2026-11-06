@@ -1,4 +1,6 @@
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { getIntegrationFaqs } from "../../data/faqs";
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";

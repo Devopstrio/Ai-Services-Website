@@ -1,4 +1,6 @@
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { CAPABILITIES_OVERVIEW_FAQS } from "../../data/faqs";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -296,6 +298,12 @@ export default function CapabilitiesOverview() {
       <CapabilitiesCards />
       <CapabilitiesManaged />
             <CapabilitiesInsights />
+      <FAQ
+        faqs={CAPABILITIES_OVERVIEW_FAQS}
+        badge="CAPABILITIES FAQ"
+        title="Core Engineering:"
+        highlight="Technical Clarifications"
+      />
       <RepresentativeCTA
         title="Ready to Unlock Next-Gen"
         highlightText="Enterprise AI Capabilities?"

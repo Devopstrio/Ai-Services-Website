@@ -6,6 +6,8 @@ import SolutionsArchitecture from "./SolutionsArchitecture";
 import SolutionsOutcomes from "./SolutionsOutcomes";
 import SolutionsInsights from "./SolutionsInsights";
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { SOLUTIONS_OVERVIEW_FAQS } from "../../data/faqs";
 
 import digitalGlobeImg from "../../assets/enterprise-references/overview/card-core-solution.webp";
 import teamCoworkersImg from "../../assets/enterprise-references/overview/card-automation.webp";
@@ -703,6 +705,12 @@ export default function SolutionsOverview() {
       <SolutionsArchitecture />
       <SolutionsOutcomes />
       <SolutionsInsights />
+      <FAQ
+        faqs={SOLUTIONS_OVERVIEW_FAQS}
+        badge="SOLUTIONS FAQ"
+        title="Enterprise Solutions:"
+        highlight="Architecture & Deployment"
+      />
       <RepresentativeCTA
         title="Ready to Build Your Enterprise AI"
         highlightText="Solution Architecture?"

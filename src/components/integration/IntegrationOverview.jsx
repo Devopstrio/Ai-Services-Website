@@ -6,6 +6,8 @@ import IntegrationWork from "./IntegrationWork";
 import IntegrationCards from "./IntegrationCards";
 import IntegrationManaged from "./IntegrationManaged";
 import IntegrationInsights from "./IntegrationInsights";
+import FAQ from "../ui/FAQ";
+import { INTEGRATIONS_OVERVIEW_FAQS } from "../../data/faqs";
 
 const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
@@ -291,6 +293,12 @@ export default function IntegrationOverview() {
       <IntegrationCards />
       <IntegrationManaged />
       <IntegrationInsights />
+      <FAQ
+        faqs={INTEGRATIONS_OVERVIEW_FAQS}
+        badge="INTEGRATIONS FAQ"
+        title="Enterprise Ecosystem:"
+        highlight="Frequently Asked Questions"
+      />
     </>
   );
 }

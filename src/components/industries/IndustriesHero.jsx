@@ -409,6 +409,12 @@ export default function IndustriesHero() {
         <IndustriesCards />
         <IndustriesManaged />
         <IndustriesInsights />
+        <FAQ
+          faqs={INDUSTRIES_OVERVIEW_FAQS}
+          badge="INDUSTRIES FAQ"
+          title="Industry Solutions:"
+          highlight="Domain Architecture Clarifications"
+        />
       </>
     );
   }
@@ -497,6 +503,12 @@ export default function IndustriesHero() {
         <HowYouBenefit />
         <WhatsHappening />
         <HowToReinvent />
+        <FAQ
+          faqs={getIndustryFaqs(industry)}
+          badge="INDUSTRY TECHNICAL FAQ"
+          title="Domain Architecture:"
+          highlight="Frequently Asked Questions"
+        />
       </>
     );
   }

@@ -11,6 +11,8 @@ import {
   Award
 } from "lucide-react";
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { getInnovationFaqs } from "../../data/faqs";
 import { insightsApi } from "../../lib/insightsApi";
 import CategoryPopup from "../common/CategoryPopup";
 

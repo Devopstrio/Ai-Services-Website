@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { PRODUCTS_OVERVIEW_FAQS } from "../../data/faqs";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { 
@@ -451,6 +453,14 @@ export default function ProductsOverview() {
       </section>
 
       {/* ==================================================================== */}
+      {/* 6.5 FAQ SECTION */}
+      <FAQ
+        faqs={PRODUCTS_OVERVIEW_FAQS}
+        badge="AI PRODUCTS FAQ"
+        title="Enterprise AI Suite:"
+        highlight="Frequently Asked Questions"
+      />
+
       {/* 7. UNIVERSAL REPRESENTATIVE CTA */}
       <RepresentativeCTA
         title="Ready to Explore The Right"

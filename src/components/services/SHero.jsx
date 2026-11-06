@@ -6,6 +6,8 @@ import Cards from "./Cards";
 import Business from "./Business";
 import ManagedService from "./ManagedService";
 import RepresentativeCTA from "../ui/RepresentativeCTA";
+import FAQ from "../ui/FAQ";
+import { SERVICES_FAQS } from "../../data/faqs";
 
 /**
  * ServicesHero.jsx — DevOpsTRIO
@@ -204,6 +206,12 @@ export default function ServicesHero() {
 <Cards />
 <ManagedService />
 <Business />
+<FAQ
+  faqs={SERVICES_FAQS}
+  badge="MANAGED SERVICES FAQ"
+  title="Strategic Advisory:"
+  highlight="Clear Technical Answers"
+/>
 <RepresentativeCTA
   title="Ready to Accelerate Your Enterprise with"
   highlightText="Managed AI Services?"
