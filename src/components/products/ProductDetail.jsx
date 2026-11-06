@@ -740,7 +740,7 @@ export default function ProductDetail() {
     return name;
   };
 
-  const displayProductName = cleanProductName(data.name, productId);
+  const displayProductName = cleanProductName(data.name, productSlug);
 
   // Shorten hero description to 1 clean concise line
   const rawDesc = data.hero?.description || data.description || "";

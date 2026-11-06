@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useParams, useLocation, Link } from "react-router-dom";
+import { useParams, useLocation, useNavigate, Link } from "react-router-dom";
 import RepresentativeCTA from "../ui/RepresentativeCTA";
 import FAQ from "../ui/FAQ";
 import { getAgentFaqs } from "../../data/faqs";
@@ -53,17 +53,15 @@ const SectionHeading = ({ tag, title, accent, subtitle }) => (
   </div>
 );
 
-// Crisp 1-2 line description helper
+// Crisp 1-line description helper
 const formatHeroDescription = (desc) => {
   if (!desc) return "";
   const sentences = desc.split(/(?<=[.!?])\s+/);
-  if (sentences.length > 1 && sentences[0].length >= 40) {
-    return sentences[0];
-  }
-  return desc;
+  return sentences[0] || desc;
 };
 
 export default function AgentDetail() {
+  const navigate = useNavigate();
   const params = useParams();
   const location = useLocation();
 
@@ -120,7 +118,7 @@ export default function AgentDetail() {
         {/* Ambient Top Glow */}
         <div style={{ position: "absolute", top: "10%", left: "50%", transform: "translateX(-50%)", width: "600px", height: "400px", background: "radial-gradient(circle, rgba(225,29,72,0.15) 0%, transparent 70%)", pointerEvents: "none", zIndex: 0 }} />
 
-        {/* Clean Centered Content */}
+        {/* Clean Left-Aligned Content */}
         <motion.div
           style={{
             position: "relative",
@@ -131,32 +129,61 @@ export default function AgentDetail() {
             padding: "0 24px",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-            textAlign: "center",
+            alignItems: "flex-start",
+            textAlign: "left",
             opacity: opacityText
           }}
         >
-          {/* Badge row without raw icons */}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "22px", flexWrap: "wrap", justifyContent: "center" }}>
-            <span style={{ display: "inline-flex", alignItems: "center", padding: "6px 16px", backgroundColor: "rgba(225,29,72,0.12)", border: "1px solid rgba(225,29,72,0.35)", borderRadius: "999px", color: "#E11D48", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase" }}>
-              {data.hero.badge}
+          {/* Plain Minimal Breadcrumb */}
+          <div style={{ display: "flex", gap: "8px", alignItems: "center", color: "rgba(255,255,255,0.5)", fontSize: "12px", letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 600, marginBottom: "24px" }}>
+            <span
+              style={{ cursor: "pointer", transition: "color 0.2s ease" }}
+              className="hover:text-white"
+              onClick={() => navigate("/agents/overview")}
+            >
+              AI Agents
             </span>
-            <span style={{ padding: "6px 14px", backgroundColor: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "999px", color: "rgba(255,255,255,0.85)", fontSize: "0.8rem", fontWeight: 600 }}>
-              {data.hero.autonomyLevel}
+            <span>/</span>
+            <span style={{ color: "#E11D48" }}>
+              {data.name}
             </span>
           </div>
 
-          <h1 style={{ fontSize: "clamp(2rem, 5vw, 4.5rem)", fontWeight: 700, lineHeight: 1.15, fontWeight: 600, margin: "0 0 18px 0", letterSpacing: "-0.03em", maxWidth: "900px" }}>
-            <span style={{ color: "rgba(255,255,255,0.65)", fontWeight: 400 }}>{data.hero.titleLight} </span>
-            <span style={{ color: "#FFFFFF" }}>{data.hero.titleBold}</span>
-          </h1>
+          {/* Clean Plain Authority H1 */}
+          <motion.h1
+            initial={{ opacity: 0, y: 26 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            style={{
+              fontSize: "clamp(2.5rem, 5vw, 4rem)",
+              lineHeight: 1.05,
+              fontWeight: 600,
+              margin: "0 0 24px 0",
+              letterSpacing: "-0.02em",
+              color: "#FFFFFF"
+            }}
+          >
+            {data.name}
+          </motion.h1>
 
-          {/* Crisp 1-2 line description */}
-          <p style={{ fontSize: "1.0625rem", color: "rgba(255,255,255,0.68)", lineHeight: 1.65, margin: "0 0 32px 0", maxWidth: "660px", fontWeight: 400 }}>
+          {/* Short 1-Line Hero Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            style={{
+              fontSize: "clamp(1.05rem, 1.25vw, 1.15rem)",
+              color: "rgba(255,255,255,0.70)",
+              lineHeight: 1.6,
+              margin: "0 0 34px 0",
+              maxWidth: "760px",
+              fontWeight: 400
+            }}
+          >
             {formatHeroDescription(data.hero.description)}
-          </p>
+          </motion.p>
 
-          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center", justifyContent: "center" }}>
+          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center", justifyContent: "flex-start" }}>
             <Link
               to="/agents/overview"
               className="agent-hero-btn"

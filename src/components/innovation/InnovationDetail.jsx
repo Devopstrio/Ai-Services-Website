@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useParams, useLocation, Link } from "react-router-dom";
+import { useParams, useLocation, useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { getInnovationData } from "../../data/innovation";
 import {
@@ -104,6 +104,7 @@ const SUB_SERVICES = [
 ];
 
 export default function InnovationDetail() {
+  const navigate = useNavigate();
   const params = useParams();
   const location = useLocation();
 
@@ -323,7 +324,7 @@ export default function InnovationDetail() {
           style={{
             position: "relative",
             zIndex: 1,
-            maxWidth: "1080px",
+            maxWidth: "1280px",
             margin: "0 auto",
             width: "100%",
             padding: "0 24px",
@@ -331,51 +332,55 @@ export default function InnovationDetail() {
           }}
         >
           <motion.div style={{ opacity: opacityText }}>
-            {/* Plain Uppercase Eyebrow Label (No Pill, No Glow, No Flask Icon) */}
-            <div
-              style={{
-                color: "#E11D48",
-                fontSize: "0.8rem",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                marginBottom: "20px"
-              }}
-            >
-              {data.hero.badge || "DEVOPS TRIO // RESEARCH LABS"}
+            {/* Plain Minimal Breadcrumb */}
+            <div style={{ display: "flex", gap: "8px", alignItems: "center", color: "rgba(255,255,255,0.5)", fontSize: "12px", letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 600, marginBottom: "24px" }}>
+              <span
+                style={{ cursor: "pointer", transition: "color 0.2s ease" }}
+                className="hover:text-white"
+                onClick={() => navigate("/innovation/overview")}
+              >
+                Innovation Lab
+              </span>
+              <span>/</span>
+              <span style={{ color: "#E11D48" }}>
+                {data.name}
+              </span>
             </div>
 
-            {/* H1 with Light (400) + Bold (600), No text-shadow */}
-            <h1
+            {/* Clean Plain Authority H1 */}
+            <motion.h1
+              initial={{ opacity: 0, y: 26 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
               style={{
-                fontSize: "clamp(2rem, 5vw, 4.5rem)", fontWeight: 700,
-                lineHeight: 1.15,
-                margin: "0 0 20px 0",
-                letterSpacing: "-0.025em",
-                maxWidth: "880px"
+                fontSize: "clamp(2.5rem, 5vw, 4rem)",
+                lineHeight: 1.05,
+                fontWeight: 600,
+                margin: "0 0 24px 0",
+                letterSpacing: "-0.02em",
+                color: "#FFFFFF",
+                maxWidth: "920px"
               }}
             >
-              <span style={{ color: "rgba(255,255,255,0.7)", fontWeight: 400 }}>
-                {data.hero.titleLight}{" "}
-              </span>
-              <span style={{ color: "#FFFFFF", fontWeight: 600 }}>
-                {data.hero.titleBold}
-              </span>
-            </h1>
+              {data.name}
+            </motion.h1>
 
-            {/* Body Copy (400 weight, 640px measure, claim-safe) */}
-            <p
+            {/* Short 1-Line Hero Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               style={{
-                fontSize: "1.0625rem",
-                color: "rgba(255,255,255,0.68)",
-                lineHeight: 1.65,
-                margin: "0 0 32px 0",
-                maxWidth: "640px",
+                fontSize: "clamp(1.05rem, 1.25vw, 1.15rem)",
+                color: "rgba(255,255,255,0.70)",
+                lineHeight: 1.6,
+                margin: "0 0 34px 0",
+                maxWidth: "760px",
                 fontWeight: 400
               }}
             >
-              {data.hero.description}
-            </p>
+              {(data.hero?.description || "").includes(". ") ? data.hero.description.split(". ")[0] + "." : data.hero?.description}
+            </motion.p>
 
             {/* CTA Group (Primary + Secondary Flat, No Glow) */}
             <div
@@ -451,7 +456,7 @@ export default function InnovationDetail() {
         >
           <div
             style={{
-              maxWidth: "1080px",
+              maxWidth: "1280px",
               margin: "0 auto",
               backgroundColor: "rgba(10,10,14,0.9)",
               border: "1px solid rgba(255,255,255,0.08)",
