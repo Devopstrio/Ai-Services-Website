@@ -13,6 +13,7 @@ import WhoWeWorkWith from "./WhoWeWorkWith";
 import HowYouBenefit from "./HowYouBenefit";
 import WhatsHappening from "./WhatsHappening";
 import FAQ from "../ui/FAQ";
+import RepresentativeCTA from "../ui/RepresentativeCTA";
 import { INDUSTRIES_OVERVIEW_FAQS, getIndustryFaqs } from "../../data/faqs";
 
 /**
@@ -427,6 +428,15 @@ export default function IndustriesHero() {
           title="Industry Solutions:"
           highlight="Domain Architecture Clarifications"
         />
+        <RepresentativeCTA
+          title="Transform Your Sector with"
+          highlightText="Autonomous Enterprise AI"
+          primaryBtnText="CONSULT AN INDUSTRY EXPERT"
+          primaryBtnHref="/contact#contact-form"
+          secondaryBtnText="EXPLORE ALL SECTORS"
+          secondaryBtnTo="/industries/overview"
+          theme="rose"
+        />
       </>
     );
   }
@@ -520,6 +530,15 @@ export default function IndustriesHero() {
           badge="INDUSTRY TECHNICAL FAQ"
           title="Domain Architecture:"
           highlight="Frequently Asked Questions"
+        />
+        <RepresentativeCTA
+          title="Build your secure"
+          highlightText={(currentIndustry?.label || "Industry") + " Architecture"}
+          primaryBtnText="CONSULT DOMAIN ARCHITECT"
+          primaryBtnHref="/contact#contact-form"
+          secondaryBtnText="BACK TO INDUSTRIES INDEX"
+          secondaryBtnTo="/industries/overview"
+          theme="rose"
         />
       </>
     );

@@ -7,6 +7,7 @@ import InnovationCards from "./InnovationCards";
 import InnovationManaged from "./InnovationManaged";
 import InnovationInsights from "./InnovationInsights";
 import FAQ from "../ui/FAQ";
+import RepresentativeCTA from "../ui/RepresentativeCTA";
 import { INNOVATION_OVERVIEW_FAQS } from "../../data/faqs";
 
 const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
@@ -288,6 +289,15 @@ export default function InnovationOverview() {
         badge="INNOVATION LAB FAQ"
         title="Frontier AI Research:"
         highlight="Frequently Asked Questions"
+      />
+      <RepresentativeCTA
+        title="Accelerate Frontier Research with"
+        highlightText="Devopstrio AI Innovation Lab"
+        primaryBtnText="INITIATE RESEARCH BRIEF"
+        primaryBtnHref="/contact#contact-form"
+        secondaryBtnText="EXPLORE RESEARCH PAPERS"
+        secondaryBtnTo="/innovation/overview"
+        theme="rose"
       />
     </>
   );
