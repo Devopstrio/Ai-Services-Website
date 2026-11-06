@@ -733,6 +733,19 @@ export default function ProductDetail() {
 
   const metricsList = data.metrics || data.stats || [];
 
+  const cleanProductName = (name, slug) => {
+    if (!name) return "AI Product";
+    if (name.toUpperCase() === "AIHIRE") return "AI Hire";
+    if (name.toLowerCase() === "esigniva" || slug === "safesign-ai") return "SafeSign AI";
+    return name;
+  };
+
+  const displayProductName = cleanProductName(data.name, productId);
+
+  // Shorten hero description to 1 clean concise line
+  const rawDesc = data.hero?.description || data.description || "";
+  const heroDescription = rawDesc.includes(". ") ? rawDesc.split(". ")[0] + "." : rawDesc;
+
   return (
     <div style={{ backgroundColor: "#000000", color: "#FFFFFF", fontFamily: FONT, overflowX: "hidden" }}>
       
@@ -784,73 +797,53 @@ export default function ProductDetail() {
             opacity: opacityText
           }}
         >
-          {/* Badge row */}
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "24px", flexWrap: "wrap" }}>
+          {/* Plain Minimal Breadcrumb */}
+          <div style={{ display: "flex", gap: "8px", alignItems: "center", color: "rgba(255,255,255,0.5)", fontSize: "12px", letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 600, marginBottom: "24px" }}>
             <span
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                padding: "6px 16px",
-                backgroundColor: "rgba(225,29,72,0.15)",
-                border: "1px solid rgba(225,29,72,0.35)",
-                borderRadius: "999px",
-                color: "#E11D48",
-                fontSize: "0.85rem",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase"
-              }}
+              style={{ cursor: "pointer", transition: "color 0.2s ease" }}
+              className="hover:text-white"
+              onClick={() => navigate("/products/overview")}
             >
-              {data.hero?.badge || `${data.name} LIVE`}
+              AI Products
             </span>
-            {data.hero?.liveBadge && (
-              <span
-                style={{
-                  padding: "6px 14px",
-                  backgroundColor: "rgba(255,255,255,0.06)",
-                  border: "1px solid rgba(255,255,255,0.12)",
-                  borderRadius: "999px",
-                  color: "rgba(255,255,255,0.75)",
-                  fontSize: "0.8rem",
-                  fontWeight: 600
-                }}
-              >
-                {data.hero.liveBadge}
-              </span>
-            )}
+            <span>/</span>
+            <span style={{ color: "#E11D48" }}>
+              {displayProductName}
+            </span>
           </div>
 
-          {/* Heading */}
-          <h1
+          {/* Clean Plain Authority H1 */}
+          <motion.h1
+            initial={{ opacity: 0, y: 26 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
             style={{
-              fontSize: "clamp(2rem, 5vw, 4.5rem)", fontWeight: 700,
-              lineHeight: 1.12,
+              fontSize: "clamp(2.5rem, 5vw, 4rem)",
+              lineHeight: 1.05,
               fontWeight: 600,
-              margin: "0 0 22px 0",
-              letterSpacing: "-0.03em"
+              margin: "0 0 24px 0",
+              letterSpacing: "-0.02em",
+              color: "#FFFFFF"
             }}
           >
-            {data.hero?.titleLight && (
-              <span style={{ color: "rgba(255,255,255,0.75)", fontWeight: 400 }}>{data.hero.titleLight} </span>
-            )}
-            <span style={{ color: "#FFFFFF", fontWeight: 600 }}>
-              {data.hero?.titleBold || data.name}
-            </span>
-          </h1>
+            {displayProductName}
+          </motion.h1>
 
-          {/* Hero description */}
-          <p
+          {/* Short 1-Line Hero Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             style={{
-              fontSize: "clamp(1.05rem, 1.35vw, 1.2rem)",
+              fontSize: "clamp(1.05rem, 1.25vw, 1.15rem)",
               color: "rgba(255,255,255,0.70)",
-              lineHeight: 1.7,
+              lineHeight: 1.6,
               margin: "0 0 34px 0",
-              maxWidth: "840px"
+              maxWidth: "800px"
             }}
           >
-            {data.hero?.description || data.description}
-          </p>
+            {heroDescription}
+          </motion.p>
 
           {/* CTAs */}
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
