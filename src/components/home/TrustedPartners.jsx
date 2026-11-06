@@ -59,7 +59,7 @@ const styles = {
   section: {
     position: "relative",
     width: "100%",
-    padding: "90px 5% 100px",
+    padding: "90px 24px 100px",
 background:
       "radial-gradient(circle, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 70%)",
           fontFamily: FONT,
@@ -203,7 +203,7 @@ export default function TechnologyAlliances() {
         Accelerate Digital Reinvention
       </motion.h2>
 
-      <div style={styles.grid}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[22px] max-w-[1280px] mx-auto">
         {ALLIANCES.map((alliance, i) => (
           <AllianceCard alliance={alliance} index={i} key={alliance.name} />
         ))}

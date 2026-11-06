@@ -2,7 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 import { FaLinkedin, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import navIndustriesImg from "../../assets/v1_covers/nav_industries.jpg";
 const navCapabilitiesImg = "/assets/capability-references/cta/capabilities.webp";
@@ -506,10 +506,15 @@ function SidebarItem({ section, active, onClick, index }) {
 
 function ColumnLink({ item, index }) {
   const [hover, setHover] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = (e) => {
     e.preventDefault();
-    window.location.href = item.route;
+    if (item.route && item.route.startsWith("http")) {
+      window.location.href = item.route;
+    } else {
+      navigate(item.route);
+    }
   };
 
   return (
@@ -628,7 +633,11 @@ function ImageBanner({ image }) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    window.location.href = image.route;
+    if (image.route && image.route.startsWith("http")) {
+      window.location.href = image.route;
+    } else {
+      navigate(image.route);
+    }
   };
 
   if (!image) return null;

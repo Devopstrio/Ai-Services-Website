@@ -1,4 +1,15 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 import Header from "./components/layout/Header";
 import Hero from "./components/home/Hero";
 import AIService from "./components/home/AIService";
@@ -28,6 +39,7 @@ import Footer from "./components/layout/Footer";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <main>
         <Routes>

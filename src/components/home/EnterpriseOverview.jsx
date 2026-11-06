@@ -67,6 +67,8 @@ const styles = {
   },
 
   grid: {
+    maxWidth: "1280px",
+    margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "minmax(0, 0.9fr) minmax(0, 1.1fr)",
     gap: "24px",

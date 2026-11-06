@@ -123,7 +123,7 @@ export default function WhatIsDevopstrio() {
   return (
     <section style={styles.section}>
       <motion.div
-        style={styles.grid}
+        className="grid grid-cols-1 md:grid-cols-[clamp(240px,22vw,290px)_1fr] gap-[clamp(20px,2.5vw,36px)] max-w-[1280px] mx-auto"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}

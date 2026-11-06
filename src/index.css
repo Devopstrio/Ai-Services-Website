@@ -1,5 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-zinc-550: #8c8c97;
+  --color-rose-neon: #e11d48;
+  --color-rose-light: #f43f5e;
+  --font-caveat: 'Caveat', cursive;
+  --font-marker: 'Permanent Marker', cursive;
+  --font-rock: 'Rock Salt', cursive;
+  --font-kaushan: 'Kaushan Script', cursive;
+  --font-sedgwick: 'Sedgwick Ave', cursive;
+  --font-alex: 'Alex Brush', cursive;
+  --font-vibes: 'Great Vibes', cursive;
+}
+
 :root {
   --color-bg-base: #030303;
   --color-bg-black: #000000;
