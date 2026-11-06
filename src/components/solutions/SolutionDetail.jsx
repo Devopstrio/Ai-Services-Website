@@ -46,6 +46,90 @@ const TYPO = {
       lineHeight: "28px",
       maxWidth: "720px",
       color: "#A1A1AA",
+    },
+    cta: {
+      fontSize: "0.875rem",      // 14px
+      fontWeight: 600,
+      lineHeight: 1.4,
+    }
+  },
+  metricsBanner: {
+    value: {
+      fontSize: "clamp(2.1rem, 3vw, 2.85rem)", // 44–48px desktop, 34–36px mobile
+      fontWeight: 600,
+      lineHeight: 1.05,
+      letterSpacing: "-0.03em",
+    },
+    label: {
+      fontSize: "0.875rem",      // 14px
+      fontWeight: 500,
+      lineHeight: 1.4,
+      letterSpacing: "0.02em",
+    }
+  },
+  overview: {
+    h2: {
+      fontSize: "clamp(1.85rem, 2.7vw, 2.5rem)", // 40–42px desktop, 28–30px mobile
+      fontWeight: 600,
+      lineHeight: 1.15,
+      letterSpacing: "-0.03em",
+    },
+    body: {
+      fontSize: "1.0625rem",     // 16–17px
+      fontWeight: 400,
+      lineHeight: 1.7,
+      maxWidth: "680px",
+    },
+    cta: {
+      fontSize: "0.875rem",      // 14px
+      fontWeight: 600,
+    }
+  },
+  bento: {
+    h2: {
+      fontSize: "clamp(1.85rem, 2.7vw, 2.5rem)", // 40–42px
+      fontWeight: 600,
+      lineHeight: 1.15,
+      letterSpacing: "-0.03em",
+    },
+    wideTitle: {
+      fontSize: "1.5rem",        // 24px wide cards
+      fontWeight: 600,
+      lineHeight: 1.25,
+      letterSpacing: "-0.02em",
+    },
+    narrowTitle: {
+      fontSize: "1.375rem",      // 21–22px narrow cards
+      fontWeight: 600,
+      lineHeight: 1.25,
+      letterSpacing: "-0.02em",
+    },
+    description: {
+      fontSize: "0.9375rem",     // 14–15px
+      fontWeight: 400,
+      lineHeight: 1.55,
+      color: "#D4D4D8",
+    }
+  },
+  features: {
+    tag: {
+      fontSize: "0.875rem",      // 14px desktop, 12–13px mobile
+      fontWeight: 600,
+      letterSpacing: "0.05em",
+      textTransform: "uppercase",
+      lineHeight: 1.4,
+    },
+    h3: {
+      fontSize: "clamp(1.6rem, 2.2vw, 2rem)", // 30–32px desktop, 24–26px mobile
+      fontWeight: 600,
+      lineHeight: 1.25,
+      letterSpacing: "-0.025em",
+    },
+    body: {
+      fontSize: "1.0625rem",     // 16–17px
+      fontWeight: 400,
+      lineHeight: 1.7,
+      maxWidth: "540px",
     }
   },
   approach: {
