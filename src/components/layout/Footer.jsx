@@ -118,7 +118,10 @@ export function Footer() {
 
           {/* Col 2: AI Capabilities */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
+            <h4
+              style={{ marginBottom: "38px" }}
+              className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
+            >
               Capabilities
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
@@ -134,7 +137,10 @@ export function Footer() {
 
           {/* Col 3: Industries */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
+            <h4
+              style={{ marginBottom: "38px" }}
+              className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
+            >
               Industries
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
@@ -150,7 +156,10 @@ export function Footer() {
 
           {/* Col 4: AI Products */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
+            <h4
+              style={{ marginBottom: "38px" }}
+              className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
+            >
               Products
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
@@ -166,7 +175,10 @@ export function Footer() {
 
           {/* Col 5: Enterprise Solutions */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
+            <h4
+              style={{ marginBottom: "38px" }}
+              className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
+            >
               Solutions
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
@@ -182,7 +194,10 @@ export function Footer() {
 
           {/* Col 6: Company */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
+            <h4
+              style={{ marginBottom: "38px" }}
+              className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
+            >
               Company
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
