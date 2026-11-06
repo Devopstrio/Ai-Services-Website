@@ -33,6 +33,7 @@ import SolutionsOverview from "./components/solutions/SolutionsOverview";
 import SolutionDetail from "./components/solutions/SolutionDetail";
 import ProductsOverview from "./components/products/ProductsOverview";
 import ProductDetail from "./components/products/ProductDetail";
+import SitemapPage from "./components/sitemap/SitemapPage";
 import RepresentativeCTA from "./components/ui/RepresentativeCTA";
 import FAQ from "./components/ui/FAQ";
 import { HOME_FAQS } from "./data/faqs";
@@ -124,6 +125,9 @@ function App() {
           
           {/* If you want to handle all sub-paths dynamically */}
           <Route path="/industries/*" element={<IndustriesHero />} />
+          
+          {/* Dedicated Sitemap Route */}
+          <Route path="/sitemap" element={<SitemapPage />} />
           
         </Routes>
       </main>

@@ -112,16 +112,13 @@ export function Footer() {
                 <span className="text-3xl font-semibold text-white tracking-tight leading-none">
                   Devopstrio
                 </span>
-                <span className="text-xs font-mono tracking-widest text-rose-500 uppercase mt-2">
-                  AI Architecture
-                </span>
               </div>
             </Link>
           </div>
 
           {/* Col 2: AI Capabilities */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
               Capabilities
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
@@ -132,32 +129,30 @@ export function Footer() {
               <li><Link to="/capabilities/nlp" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Natural Language</Link></li>
               <li><Link to="/capabilities/data-intelligence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Data Lakehouse</Link></li>
               <li><Link to="/capabilities/ai-infra" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">AI Infrastructure</Link></li>
-              <li><Link to="/capabilities/responsible-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Responsible AI</Link></li>
               <li><Link to="/capabilities/overview" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">All Capabilities →</Link></li>
             </ul>
           </div>
 
-          {/* Col 3: Enterprise Solutions */}
+          {/* Col 3: Industries */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
-              Solutions
+            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
+              Industries
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><Link to="/solutions/hr-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">HR AI</Link></li>
-              <li><Link to="/solutions/devops-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">DevOps AI</Link></li>
-              <li><Link to="/solutions/cybersecurity-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Cybersecurity AI</Link></li>
-              <li><Link to="/solutions/document-intelligence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Document Intelligence</Link></li>
-              <li><Link to="/solutions/banking-financial-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Banking & Finance AI</Link></li>
-              <li><Link to="/solutions/healthcare-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Healthcare AI</Link></li>
-              <li><Link to="/solutions/contact-center-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Contact Center AI</Link></li>
-              <li><Link to="/solutions/workflow-automation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Workflow Automation</Link></li>
-              <li><Link to="/solutions/overview" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">All Solutions →</Link></li>
+              <li><Link to="/industries/banking-financial-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Banking & Finance</Link></li>
+              <li><Link to="/industries/healthcare-life-sciences" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Healthcare & Life Sciences</Link></li>
+              <li><Link to="/industries/retail-ecommerce" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Retail & E-Commerce</Link></li>
+              <li><Link to="/industries/manufacturing" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Manufacturing</Link></li>
+              <li><Link to="/industries/logistics-supply-chain" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Logistics & Supply Chain</Link></li>
+              <li><Link to="/industries/telecommunications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Telecommunications</Link></li>
+              <li><Link to="/industries/energy-utilities" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Energy & Utilities</Link></li>
+              <li><Link to="/industries/overview" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">All Industries →</Link></li>
             </ul>
           </div>
 
           {/* Col 4: AI Products */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
               Products
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
@@ -172,35 +167,37 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Col 5: Autonomous AI Agents */}
+          {/* Col 5: Enterprise Solutions */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
-              AI Agents
+            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
+              Solutions
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><Link to="/agents/cloud-operations-agent" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Cloud Operations</Link></li>
-              <li><Link to="/agents/devops-agent" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">DevOps Agent</Link></li>
-              <li><Link to="/agents/security-operations-agent" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Security Agent</Link></li>
-              <li><Link to="/agents/executive-assistant" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Executive Assistant</Link></li>
-              <li><Link to="/agents/finance-agent" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Finance Agent</Link></li>
-              <li><Link to="/agents/procurement-agent" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Procurement Agent</Link></li>
-              <li><Link to="/agents/hr-agent" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">HR Agent</Link></li>
-              <li><Link to="/agents/overview" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">All Agents →</Link></li>
+              <li><Link to="/solutions/hr-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">HR AI</Link></li>
+              <li><Link to="/solutions/devops-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">DevOps AI</Link></li>
+              <li><Link to="/solutions/cybersecurity-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Cybersecurity AI</Link></li>
+              <li><Link to="/solutions/document-intelligence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Document Intelligence</Link></li>
+              <li><Link to="/solutions/banking-financial-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Banking & Finance AI</Link></li>
+              <li><Link to="/solutions/healthcare-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Healthcare AI</Link></li>
+              <li><Link to="/solutions/workflow-automation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Workflow Automation</Link></li>
+              <li><Link to="/solutions/overview" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">All Solutions →</Link></li>
             </ul>
           </div>
 
-          {/* Col 6: Platform & Ecosystem */}
+          {/* Col 6: Company */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans">
-              Ecosystem
+            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
+              Company
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
-              <li><Link to="/services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Managed AI Services</Link></li>
-              <li><Link to="/industries/overview" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Industry Verticals</Link></li>
-              <li><Link to="/innovation/overview" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Innovation Lab</Link></li>
-              <li><Link to="/integrations/overview" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Integrations</Link></li>
-              <li><a href="https://devopstrio.co.uk/contact#contact-form" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Architecture Review</a></li>
-              <li><a href="https://devopstrio.co.uk/contact#contact-form" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">Contact Engineers →</a></li>
+              <li><a href="https://devopstrio.co.uk/about/company-overview" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Company Overview</a></li>
+              <li><a href="https://devopstrio.co.uk/about/our-culture-people" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Culture & People</a></li>
+              <li><a href="https://devopstrio.co.uk/about/global-internship" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Internship</a></li>
+              <li><a href="https://devopstrio.co.uk/about/global-presence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Presence</a></li>
+              <li><a href="https://devopstrio.co.uk/about/partnerships-certifications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Partnerships & Certifications</a></li>
+              <li><a href="https://devopstrio.co.uk/about/awards-recognition" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Awards & Recognition</a></li>
+              <li><a href="https://devopstrio.co.uk/about/sustainability-csr" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Sustainability & CSR</a></li>
+              <li><a href="https://devopstrio.co.uk/contact#contact-form" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">Contact Us →</a></li>
             </ul>
           </div>
 
@@ -220,7 +217,7 @@ export function Footer() {
             <span className="text-zinc-800">•</span>
             <a href="https://devopstrio.co.uk/gdpr" className="hover:text-white transition-colors duration-300">GDPR Compliance</a>
             <span className="text-zinc-800">•</span>
-            <a href="#footer-sitemap" className="hover:text-white transition-colors duration-300">Sitemap</a>
+            <Link to="/sitemap" className="hover:text-white transition-colors duration-300">Sitemap</Link>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 items-center">
