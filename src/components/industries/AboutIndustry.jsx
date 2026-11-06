@@ -9,7 +9,7 @@ import { getIndustryImages } from "../../data/industries/industryImages";
  * Shows industry-specific stats, heading, and description
  */
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 // Industry-specific data configurations
 const INDUSTRY_DATA = {

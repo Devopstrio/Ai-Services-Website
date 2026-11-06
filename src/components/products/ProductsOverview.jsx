@@ -22,7 +22,7 @@ import ProductsGrid from "./ProductsGrid";
 import ProductsEcosystem from "./ProductsEcosystem";
 import oldHeroImg from "../../assets/fresh/augmented_reality_simulation.jpg";
 
-const FONT = '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 const BRAND_RED = "#E11D48";
 
 /**

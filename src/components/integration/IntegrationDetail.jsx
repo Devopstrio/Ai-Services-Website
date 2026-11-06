@@ -28,7 +28,7 @@ import {
   CheckCheck
 } from "lucide-react";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 /* ─── Concise Hero Titles & Single-Line Descriptions ─── */
 const INTEGRATION_HERO_COPY = {
@@ -123,7 +123,7 @@ const SectionHeading = ({ tag, title, accent, center = true }) => (
     )}
     <h2
       style={{
-        fontSize: "clamp(2rem, 3.2vw, 2.75rem)",
+        fontSize: "clamp(2rem, 3.8vw, 3.25rem)", fontWeight: 700,
         fontWeight: 700,
         color: "#FFFFFF",
         margin: 0,
@@ -328,7 +328,7 @@ export default function IntegrationDetail() {
             {/* Short Minimal Page-Specific Headline */}
             <h1
               style={{
-                fontSize: "clamp(2.4rem, 4vw, 3.75rem)",
+                fontSize: "clamp(2rem, 5vw, 4.5rem)", fontWeight: 700,
                 lineHeight: 1.1,
                 fontWeight: 700,
                 margin: "0 0 16px 0",

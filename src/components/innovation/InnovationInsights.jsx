@@ -8,7 +8,7 @@ import fallbackImg4 from "../../assets/fresh/agent_meeting_intelligence.jpg";
 import fallbackImg5 from "../../assets/fresh/agent_qa_testing.jpg";
 import fallbackImg6 from "../../assets/fresh/agent_secops_incident_responder.jpg";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 // Innovation keywords requested for priority matching & future overview articles
 const INNOVATION_KEYWORDS = [

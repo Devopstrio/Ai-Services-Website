@@ -53,7 +53,7 @@ import professionalServicesEnterprisesImg from "../../assets/industries/professi
  * Shows industry-specific groups with icons, titles, and descriptions
  */
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 // Industry-specific data configurations
 const INDUSTRY_DATA = {

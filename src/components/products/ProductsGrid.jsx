@@ -9,7 +9,7 @@ import knowledgeAiImg from "../../assets/fresh/products-overview-knowledge-ai.we
 import salesAiImg from "../../assets/fresh/products-overview-sales-ai.webp";
 import supportAiImg from "../../assets/fresh/products-overview-support-ai.webp";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const PRODUCTS = [
   {

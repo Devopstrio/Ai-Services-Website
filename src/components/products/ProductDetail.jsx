@@ -19,7 +19,7 @@ import {
   ArrowUpRight
 } from "lucide-react";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const TYPO = {
   fontFamily: FONT,
@@ -443,7 +443,7 @@ function DesignedAroundWorkflowSection({ slug, productName }) {
           <div style={{ color: TYPO.colors.brandAccent, fontSize: "13px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
             ENTERPRISE WORKFLOW
           </div>
-          <h2 style={{ fontSize: "clamp(2rem, 3.2vw, 2.625rem)", fontWeight: 600, color: "#FFFFFF", lineHeight: 1.15, letterSpacing: "-0.025em", margin: 0 }}>
+          <h2 style={{ fontSize: "clamp(2rem, 3.8vw, 3.25rem)", fontWeight: 700, fontWeight: 600, color: "#FFFFFF", lineHeight: 1.15, letterSpacing: "-0.025em", margin: 0 }}>
             Designed Around Your Workflow
           </h2>
         </div>
@@ -822,7 +822,7 @@ export default function ProductDetail() {
           {/* Heading */}
           <h1
             style={{
-              fontSize: "clamp(2.6rem, 5.2vw, 4.4rem)",
+              fontSize: "clamp(2rem, 5vw, 4.5rem)", fontWeight: 700,
               lineHeight: 1.12,
               fontWeight: 600,
               margin: "0 0 22px 0",

@@ -9,7 +9,7 @@ import strategyImg from "../../assets/fresh/integration-flow-automation.webp";
 import archImg from "../../assets/fresh/integration-zero-trust.webp";
 import deliveryImg from "../../assets/fresh/integration-streaming-etl.webp";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const CARDS = [
   {

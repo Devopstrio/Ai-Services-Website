@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
  * uploaded assets.
  */
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const ALLIANCES = [
   {

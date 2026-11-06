@@ -15,7 +15,7 @@ import trend6 from "../../assets/v1_trending/trending6.jpg";
  * Bounded inside standard max-w-7xl grid so it stays within page boundaries.
  */
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const ITEMS = [
   {

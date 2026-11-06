@@ -14,7 +14,7 @@ import datacenterFirewallImg from "../../assets/enterprise-references/overview/c
 import cyberShieldImg from "../../assets/enterprise-references/overview/card-security.webp";
 import analystTabletImg from "../../assets/enterprise-references/overview/card-business-operations.webp";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 function RibbonGraphic() {
   const bars = Array.from({ length: 60 }, (_, i) => i);

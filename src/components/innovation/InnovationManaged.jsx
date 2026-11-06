@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import serverHubImg from "../../assets/fresh/innovation_lab_scale_ai_server_hub.webp";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const styles = {
   section: {

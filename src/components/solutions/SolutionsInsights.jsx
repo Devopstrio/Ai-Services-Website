@@ -7,7 +7,7 @@ import insight2 from "../../assets/fresh/agent_finance_reconciliation.jpg";
 import insight3 from "../../assets/fresh/clinical_ai_diagnostics.jpg";
 import insight4 from "../../assets/fresh/cloud-security-hub-hero.jpg";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const RESOURCES = [
   {

@@ -7,7 +7,7 @@ import challenge2 from "../../assets/enterprise-references/overview/challenge-2.
 import challenge3 from "../../assets/enterprise-references/overview/challenge-3.webp";
 import challenge4 from "../../assets/enterprise-references/overview/challenge-4.webp";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const CHALLENGES = [
   {

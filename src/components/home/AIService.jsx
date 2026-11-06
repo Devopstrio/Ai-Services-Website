@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
  * Obsidian dark theme, #E11D48 accent, Inter typography.
  */
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const styles = {
   section: {
@@ -16,7 +16,7 @@ const styles = {
     padding: "100px 24px",
     backgroundColor: "#030303",
     background: "radial-gradient(circle at 50% 50%, rgba(225, 29, 72, 0.06) 0%, rgba(3, 3, 3, 1) 75%)",
-    fontFamily: '"Inter", "DM Sans", system-ui, -apple-system, sans-serif',
+    fontFamily: '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif',
     boxSizing: "border-box",
     textAlign: "left",
     marginTop: "-40px",
@@ -37,7 +37,7 @@ const styles = {
     justifyContent: "flex-start",
   },
   label: {
-    fontFamily: '"DM Sans", "Inter", sans-serif',
+    fontFamily: '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif',
     fontSize: "clamp(1.5rem, 2.2vw, 2.1rem)",
     fontWeight: 600,
     letterSpacing: "-0.01em",
@@ -50,7 +50,7 @@ const styles = {
     paddingLeft: "clamp(20px, 2.5vw, 32px)",
   },
   paragraph: {
-    fontFamily: '"Inter", "DM Sans", system-ui, sans-serif',
+    fontFamily: '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif',
     color: "rgba(212, 212, 216, 0.85)",
     fontSize: "clamp(1.35rem, 2.4vw, 1.95rem)",
     fontWeight: 400,

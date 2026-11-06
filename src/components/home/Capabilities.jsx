@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
  *   - Face 2 (Hover): Solid White Reveal Card + High-Level Rich Content (No Explore CTA)
  */
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const CAPABILITIES = [
   {

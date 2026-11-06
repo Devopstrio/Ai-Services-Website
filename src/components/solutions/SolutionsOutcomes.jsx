@@ -9,7 +9,7 @@ import outcome4 from "../../assets/enterprise-references/overview/outcome-4.webp
 import outcome5 from "../../assets/enterprise-references/overview/outcome-5.webp";
 import outcome6 from "../../assets/enterprise-references/overview/outcome-6.webp";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const OUTCOMES = [
   {

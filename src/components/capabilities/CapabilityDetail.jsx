@@ -11,7 +11,7 @@ import dataAnalyticsIcon from "../../assets/capabilities/data-analytics.svg";
 
 import { ArrowRight, ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const ArrowIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: "8px" }}>
@@ -741,7 +741,7 @@ export default function CapabilityDetail() {
       <section style={{ backgroundColor: "#0b0b0b", padding: "120px 24px", display: "flex", justifyContent: "center" }}>
         <div style={{ width: "100%", maxWidth: "1280px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "60px", borderBottom: "1px solid rgba(255,255,255,0.1)", paddingBottom: "24px" }}>
-            <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)", fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
+            <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} style={{ fontSize: "clamp(2rem, 3.8vw, 3.25rem)", fontWeight: 700, fontWeight: 300, color: "#ffffff", letterSpacing: "-0.02em", margin: 0 }}>
               <span style={{ fontWeight: 600 }}>{data.insights.titleLight}</span> <span style={{ color: "#E11D48" }}>{data.insights.titleRed}</span>
             </motion.h2>
             <div style={{ display: "flex", gap: "12px" }}>

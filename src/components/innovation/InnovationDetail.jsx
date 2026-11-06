@@ -14,7 +14,7 @@ import RepresentativeCTA from "../ui/RepresentativeCTA";
 import { insightsApi } from "../../lib/insightsApi";
 import CategoryPopup from "../common/CategoryPopup";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const INNOVATION_SUBSCRIPTION_TOPICS = [
   "Overview",
@@ -62,7 +62,7 @@ const SectionHeading = ({ tag, title, accent, subtitle }) => (
     )}
     <h2
       style={{
-        fontSize: "clamp(2rem, 3.2vw, 2.75rem)",
+        fontSize: "clamp(2rem, 3.8vw, 3.25rem)", fontWeight: 700,
         fontWeight: 600,
         color: "#FFFFFF",
         margin: 0,
@@ -346,7 +346,7 @@ export default function InnovationDetail() {
             {/* H1 with Light (400) + Bold (600), No text-shadow */}
             <h1
               style={{
-                fontSize: "clamp(2.4rem, 4.2vw, 3.8rem)",
+                fontSize: "clamp(2rem, 5vw, 4.5rem)", fontWeight: 700,
                 lineHeight: 1.15,
                 margin: "0 0 20px 0",
                 letterSpacing: "-0.025em",

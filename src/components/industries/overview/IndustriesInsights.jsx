@@ -8,7 +8,7 @@ import autoImg from "../../../assets/fresh/manufacturing_predictive_maintenance.
 import energyImg from "../../../assets/fresh/energy_smart_grid_monitoring.jpg";
 import telecomImg from "../../../assets/fresh/telecom_5g_network_tower.jpg";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const ITEMS = [
   {

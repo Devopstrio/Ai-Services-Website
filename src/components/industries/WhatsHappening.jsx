@@ -18,7 +18,7 @@ const COLORS = {
   accentDim: "rgba(225,29,72,0.35)",
 };
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 /* ---------------------------------------------------------------------- */
 /*  Industry Data                                                         */

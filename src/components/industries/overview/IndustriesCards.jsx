@@ -9,7 +9,7 @@ import mfgImg from "../../../assets/fresh/industry_smart_factory_vision_ai.webp"
 import energyImg from "../../../assets/fresh/industry_grid_optimization_telemetry.webp";
 import autoImg from "../../../assets/fresh/industry_connected_vehicle_fleets.webp";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const SECTORS = [
   {

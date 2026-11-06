@@ -16,7 +16,7 @@ import {
   ChevronLeft
 } from "lucide-react";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 /* ─── Fade-up animation wrapper ─── */
 const FadeUp = ({ children, delay = 0, style = {}, className = "" }) => (
@@ -40,7 +40,7 @@ const SectionHeading = ({ tag, title, accent, subtitle }) => (
         {tag}
       </div>
     )}
-    <h2 style={{ fontSize: "clamp(2rem, 3.4vw, 3rem)", fontWeight: 600, color: "#FFFFFF", margin: 0, letterSpacing: "-0.025em", lineHeight: 1.15 }}>
+    <h2 style={{ fontSize: "clamp(2rem, 3.8vw, 3.25rem)", fontWeight: 700, fontWeight: 600, color: "#FFFFFF", margin: 0, letterSpacing: "-0.025em", lineHeight: 1.15 }}>
       {title} {accent && <span style={{ color: "#E11D48" }}>{accent}</span>}
     </h2>
     {subtitle && (
@@ -144,7 +144,7 @@ export default function AgentDetail() {
             </span>
           </div>
 
-          <h1 style={{ fontSize: "clamp(2.5rem, 4.8vw, 4rem)", lineHeight: 1.15, fontWeight: 600, margin: "0 0 18px 0", letterSpacing: "-0.03em", maxWidth: "900px" }}>
+          <h1 style={{ fontSize: "clamp(2rem, 5vw, 4.5rem)", fontWeight: 700, lineHeight: 1.15, fontWeight: 600, margin: "0 0 18px 0", letterSpacing: "-0.03em", maxWidth: "900px" }}>
             <span style={{ color: "rgba(255,255,255,0.65)", fontWeight: 400 }}>{data.hero.titleLight} </span>
             <span style={{ color: "#FFFFFF" }}>{data.hero.titleBold}</span>
           </h1>

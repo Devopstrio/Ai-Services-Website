@@ -17,7 +17,7 @@ const COLORS = {
   border: "rgba(39, 39, 42, 0.8)",
 };
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const API_BASE_URL =
   import.meta.env.VITE_API_URL ||

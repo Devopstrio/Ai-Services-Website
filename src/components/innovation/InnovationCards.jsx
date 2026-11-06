@@ -9,7 +9,7 @@ import archImg from "../../assets/fresh/innovation_lab_emerging_architecture.web
 import strategyImg from "../../assets/fresh/innovation_lab_technology_roadmaps.webp";
 import deliveryImg from "../../assets/fresh/innovation_lab_open_source.webp";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const CARDS = [
   {

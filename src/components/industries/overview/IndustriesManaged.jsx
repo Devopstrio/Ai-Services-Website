@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import datacenterFirewallImg from "../../../assets/fresh/industry_managed_delivery.webp";
 
-const FONT = '"Inter", "DM Sans", system-ui, -apple-system, sans-serif';
+const FONT = '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif';
 
 const styles = {
   section: {

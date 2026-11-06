@@ -13,7 +13,7 @@ import RepresentativeCTA from "../ui/RepresentativeCTA";
  * Official Brand Red Accent: #E11D48 (RGB 225, 29, 72)
  */
 const TYPO = {
-  fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  fontFamily: '"Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "IBM Plex Sans", "Plus Jakarta Sans", sans-serif',
   colors: {
     headingPrimary: "#FFFFFF",
     bodyPrimary: "#D4D4D8",     // Zinc-300: High-contrast body copy
@@ -26,107 +26,24 @@ const TYPO = {
   hero: {
     eyebrow: {
       fontSize: "0.75rem",       // 12px
-      fontWeight: 600,
-      letterSpacing: "0.08em",
+      fontWeight: 700,
+      letterSpacing: "0.25em",
       textTransform: "uppercase",
-      lineHeight: 1.4,
+      lineHeight: 1,
     },
     h1: {
-      fontSize: "clamp(2.25rem, 4.2vw, 3.75rem)", // 56–64px desktop, 36–40px mobile
-      fontWeight: 600,
+      fontSize: "clamp(2rem, 5vw, 4.5rem)", // 32px – 72px desktop/mobile
+      fontWeight: 700,
       lineHeight: 1.08,
-      letterSpacing: "-0.04em",
+      letterSpacing: "-0.035em",
       maxWidth: "920px",
     },
     description: {
-      fontSize: "clamp(1.05rem, 1.25vw, 1.15rem)", // 17px
+      fontSize: "clamp(1rem, 1.25vw, 1.125rem)", // 16px – 18px
       fontWeight: 400,
-      lineHeight: 1.6,
-      maxWidth: "720px",        // Minimal 1–2 line width
-    },
-    cta: {
-      fontSize: "0.875rem",      // 14px
-      fontWeight: 600,
-      lineHeight: 1.4,
-    }
-  },
-  metricsBanner: {
-    value: {
-      fontSize: "clamp(2.1rem, 3vw, 2.85rem)", // 44–48px desktop, 34–36px mobile
-      fontWeight: 600,
-      lineHeight: 1.05,
-      letterSpacing: "-0.03em",
-    },
-    label: {
-      fontSize: "0.875rem",      // 14px
-      fontWeight: 500,
-      lineHeight: 1.4,
-      letterSpacing: "0.02em",
-    }
-  },
-  overview: {
-    h2: {
-      fontSize: "clamp(1.85rem, 2.7vw, 2.5rem)", // 40–42px desktop, 28–30px mobile
-      fontWeight: 600,
-      lineHeight: 1.15,
-      letterSpacing: "-0.03em",
-    },
-    body: {
-      fontSize: "1.0625rem",     // 16–17px
-      fontWeight: 400,
-      lineHeight: 1.7,
-      maxWidth: "680px",        // Optimal readable line width (65–70ch)
-    },
-    cta: {
-      fontSize: "0.875rem",      // 14px
-      fontWeight: 600,
-    }
-  },
-  bento: {
-    h2: {
-      fontSize: "clamp(1.85rem, 2.7vw, 2.5rem)", // 40–42px
-      fontWeight: 600,
-      lineHeight: 1.15,
-      letterSpacing: "-0.03em",
-    },
-    wideTitle: {
-      fontSize: "1.5rem",        // 24px wide cards
-      fontWeight: 600,
-      lineHeight: 1.25,
-      letterSpacing: "-0.02em",
-    },
-    narrowTitle: {
-      fontSize: "1.375rem",      // 21–22px narrow cards
-      fontWeight: 600,
-      lineHeight: 1.25,
-      letterSpacing: "-0.02em",
-    },
-    description: {
-      fontSize: "0.9375rem",     // 14–15px
-      fontWeight: 400,
-      lineHeight: 1.55,
-      color: "#D4D4D8",
-    }
-  },
-  features: {
-    tag: {
-      fontSize: "0.875rem",      // 14px desktop, 12–13px mobile
-      fontWeight: 600,
-      letterSpacing: "0.05em",
-      textTransform: "uppercase",
-      lineHeight: 1.4,
-    },
-    h3: {
-      fontSize: "clamp(1.6rem, 2.2vw, 2rem)", // 30–32px desktop, 24–26px mobile
-      fontWeight: 600,
-      lineHeight: 1.25,
-      letterSpacing: "-0.025em",
-    },
-    body: {
-      fontSize: "1.0625rem",     // 16–17px
-      fontWeight: 400,
-      lineHeight: 1.7,
-      maxWidth: "540px",
+      lineHeight: "28px",
+      maxWidth: "720px",
+      color: "#A1A1AA",
     }
   },
   approach: {
