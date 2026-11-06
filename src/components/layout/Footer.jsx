@@ -43,7 +43,7 @@ export function Footer() {
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-[radial-gradient(circle_at_center,rgba(225,29,72,0.015),transparent_70%)] pointer-events-none z-0 overflow-hidden" />
       <div className="absolute top-0 left-[20%] w-[350px] h-[350px] bg-[radial-gradient(circle_at_center,rgba(225,29,72,0.01),transparent_70%)] pointer-events-none z-0 overflow-hidden" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Newsletter Floating Box */}
         <div className="max-w-5xl mx-auto w-full bg-white rounded-2xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 -mt-20 sm:-mt-24 md:-mt-28 mb-12 sm:mb-16 shadow-[0_25px_50px_rgba(0,0,0,0.6)] relative z-20 border border-zinc-200/50">
@@ -104,12 +104,12 @@ export function Footer() {
                 <img
                   src={trademarkImg}
                   alt="Registered Trademark"
-                  className="absolute top-0 -right-4 w-4 h-4 object-contain brightness-0 invert opacity-95 group-hover:opacity-100 transition-opacity drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                  className="absolute -top-1 -right-2.5 w-4 h-4 object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
                   loading="lazy"
                 />
               </div>
               <div className="flex flex-col items-center text-center">
-                <span className="text-3xl font-semibold text-white tracking-tight leading-none">
+                <span className="text-3xl font-semibold text-white tracking-tight leading-none mb-4">
                   Devopstrio
                 </span>
               </div>
@@ -118,10 +118,10 @@ export function Footer() {
 
           {/* Col 2: AI Capabilities */}
           <div>
-            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
               Capabilities
             </h4>
-            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
+            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
               <li><Link to="/capabilities/generative-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Generative AI</Link></li>
               <li><Link to="/capabilities/ai-agents" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Autonomous Agents</Link></li>
               <li><Link to="/capabilities/machine-learning" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Machine Learning</Link></li>
@@ -134,10 +134,10 @@ export function Footer() {
 
           {/* Col 3: Industries */}
           <div>
-            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
               Industries
             </h4>
-            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
+            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
               <li><Link to="/industries/banking-financial-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Banking & Finance</Link></li>
               <li><Link to="/industries/healthcare-life-sciences" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Healthcare & Life Sciences</Link></li>
               <li><Link to="/industries/retail-ecommerce" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Retail & E-Commerce</Link></li>
@@ -150,10 +150,10 @@ export function Footer() {
 
           {/* Col 4: AI Products */}
           <div>
-            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
               Products
             </h4>
-            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
+            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
               <li><Link to="/products/document-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Document AI</Link></li>
               <li><Link to="/products/devops-copilot" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">DevOps Copilot</Link></li>
               <li><Link to="/products/safesign-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">SafeSign AI</Link></li>
@@ -166,10 +166,10 @@ export function Footer() {
 
           {/* Col 5: Enterprise Solutions */}
           <div>
-            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
               Solutions
             </h4>
-            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
+            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
               <li><Link to="/solutions/hr-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">HR AI</Link></li>
               <li><Link to="/solutions/devops-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">DevOps AI</Link></li>
               <li><Link to="/solutions/cybersecurity-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Cybersecurity AI</Link></li>
@@ -182,10 +182,10 @@ export function Footer() {
 
           {/* Col 6: Company */}
           <div>
-            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
               Company
             </h4>
-            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
+            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
               <li><a href="https://devopstrio.co.uk/about/company-overview" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Company Overview</a></li>
               <li><a href="https://devopstrio.co.uk/about/our-culture-people" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Culture & People</a></li>
               <li><a href="https://devopstrio.co.uk/about/global-internship" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Internship</a></li>
