@@ -742,9 +742,28 @@ export default function ProductDetail() {
 
   const displayProductName = cleanProductName(data.name, productSlug);
 
+  // Curated punchy 1-line descriptions for AI Products
+  const MINIMAL_PRODUCT_DESCRIPTIONS = {
+    "aihire": "Automate talent screening, AI-proctored interviews, and candidate evaluations on one unified platform.",
+    "safesign-ai": "AI-powered contract verification, instant risk scoring, and automated compliance auditing.",
+    "document-ai": "Extract structured data, parse tabular invoices, and automate document processing with zero-shot accuracy.",
+    "devops-copilot": "Autonomous CI/CD assistance, intelligent log troubleshooting, and real-time infrastructure automation.",
+    "humanex-ai": "Intelligent workforce orchestration, employee engagement intelligence, and talent retention analytics.",
+    "ai-studio": "Full-stack enterprise environment to compose, fine-tune, benchmark, and deploy custom foundation models.",
+    "assistant-ai": "Context-aware executive assistant automating cross-application tasks, meetings, and knowledge retrieval.",
+    "support-ai": "Autonomous tier-1 and tier-2 customer support resolution with sub-second API action execution.",
+    "sales-ai": "Predictive deal qualification, buyer intent signals, and hyper-personalized sales outreach workflows.",
+    "marketing-ai": "Autonomous content creation, SEO intelligence, and multi-channel marketing campaign orchestration.",
+    "finance-ai": "Automated financial reconciliation, continuous fraud detection, and regulatory ledger compliance.",
+    "workflow-ai": "Autonomous business workflow automation connecting legacy systems with modern cloud APIs.",
+    "knowledge-ai": "Enterprise semantic knowledge retrieval with grounded citations across all internal documentation.",
+    "brio-ai": "Enterprise AI intelligence platform for predictive decision support and executive analytics.",
+    "mailtab": "Intelligent email productivity copilot automating inbox triage, synthesis, and response drafting."
+  };
+
   // Shorten hero description to 1 clean concise line
   const rawDesc = data.hero?.description || data.description || "";
-  const heroDescription = rawDesc.includes(". ") ? rawDesc.split(". ")[0] + "." : rawDesc;
+  const heroDescription = MINIMAL_PRODUCT_DESCRIPTIONS[productSlug] || (rawDesc.includes(". ") ? rawDesc.split(". ")[0] + "." : rawDesc);
 
   return (
     <div style={{ backgroundColor: "#000000", color: "#FFFFFF", fontFamily: FONT, overflowX: "hidden" }}>

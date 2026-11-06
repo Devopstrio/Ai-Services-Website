@@ -53,11 +53,41 @@ const SectionHeading = ({ tag, title, accent, subtitle }) => (
   </div>
 );
 
+// Curated punchy 1-line descriptions for all AI Agents
+const MINIMAL_AGENT_DESCRIPTIONS = {
+  "hr-agent": "Automate employee onboarding, policy resolution, and talent workflows across your enterprise.",
+  "sales-agent": "Accelerate pipeline velocity with autonomous buyer research, lead qualification, and outreach.",
+  "marketing-agent": "Orchestrate multi-channel campaign drafting, SEO content production, and audience analytics.",
+  "customer-support-agent": "Resolve customer inquiries autonomously with sub-second API execution and 24/7 coverage.",
+  "finance-agent": "Automate ledger reconciliation, continuous fraud detection, and multi-entity financial reporting.",
+  "procurement-agent": "Streamline vendor selection, RFP analysis, and contract risk assessment with autonomous governance.",
+  "legal-agent": "Accelerate contract redlining, compliance verification, and regulatory risk auditing in real time.",
+  "executive-assistant": "Optimize executive schedules, synthesize meeting briefings, and automate task tracking.",
+  "devops-agent": "Automate CI/CD pipeline deployments, automated rollbacks, and infrastructure health monitoring.",
+  "software-engineering-agent": "Accelerate sprint velocity with autonomous code refactoring, test generation, and PR reviews.",
+  "qa-testing-agent": "Execute end-to-end synthetic testing, API verification, and regression test suites automatically.",
+  "cloud-operations-agent": "Optimize multi-cloud resource allocation, reduce compute costs, and enforce automated compliance.",
+  "security-operations-agent": "Detect anomalies, triage security alerts, and execute automated incident containment 24/7.",
+  "database-agent": "Optimize database queries, automate index tuning, and monitor real-time database performance.",
+  "knowledge-agent": "Connect enterprise data silos with citation-backed semantic search and instant knowledge retrieval.",
+  "research-agent": "Synthesize competitive intelligence, market research reports, and academic literature in minutes.",
+  "document-agent": "Extract structured intelligence from complex PDFs, financial disclosures, and multi-page documents.",
+  "meeting-agent": "Transcribe executive meetings, extract key action items, and sync deliverables across enterprise tools.",
+  "email-agent": "Triage high-volume inboxes, draft contextual replies, and route priority messages automatically.",
+  "workflow-agent": "Connect legacy platforms and modern APIs into autonomous, self-healing business workflows.",
+  "industry-agents": "Deploy domain-specialized autonomous agents tailored to regulated enterprise environments.",
+  "agent-platform": "The enterprise platform for building, deploying, and governing autonomous AI agent swarms.",
+  "platform": "The enterprise platform for building, deploying, and governing autonomous AI agent swarms."
+};
+
 // Crisp 1-line description helper
-const formatHeroDescription = (desc) => {
+const formatHeroDescription = (desc, slug) => {
+  if (slug && MINIMAL_AGENT_DESCRIPTIONS[slug]) {
+    return MINIMAL_AGENT_DESCRIPTIONS[slug];
+  }
   if (!desc) return "";
-  const sentences = desc.split(/(?<=[.!?])\s+/);
-  return sentences[0] || desc;
+  const firstSentence = desc.split(/(?<=[.!?])\s+|—/)[0] || desc;
+  return firstSentence.trim();
 };
 
 export default function AgentDetail() {
@@ -180,7 +210,7 @@ export default function AgentDetail() {
               fontWeight: 400
             }}
           >
-            {formatHeroDescription(data.hero.description)}
+            {formatHeroDescription(data.hero?.description, agentSlug)}
           </motion.p>
 
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center", justifyContent: "flex-start" }}>

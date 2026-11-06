@@ -31,6 +31,19 @@ const INNOVATION_SUBSCRIPTION_TOPICS = [
   "Publications"
 ];
 
+/* ─── Curated punchy 1-line descriptions for Innovation Lab ─── */
+const MINIMAL_INNOVATION_DESCRIPTIONS = {
+  "ai-research": "Pioneering neuro-symbolic reasoning, mechanistic interpretability, and physical world models.",
+  "experimental-projects": "Incubating high-risk, frontier AI architectures to explore next-generation capabilities.",
+  "ai-prototypes": "De-risking enterprise AI investment by building interactive, live-inference prototypes in under 14 days.",
+  "open-source": "Contributing open foundation models, evaluation benchmarks, and agent tooling to the global community.",
+  "technology-exploration": "Investigating emerging paradigms across quantum computing, neuromorphic hardware, and post-transformers.",
+  "innovation-programs": "Accelerating enterprise AI adoption through collaborative research residencies and innovation sprints.",
+  "product-roadmap": "Transparent visibility into upcoming frontier capabilities, agent frameworks, and platform milestones.",
+  "ai-demonstrations": "Experience live foundation models, emergent agent simulations, and real-time audio streaming in sandboxes.",
+  "publications": "Peer-reviewed research papers, technical reports, and benchmark evaluations authored by our research team."
+};
+
 /* ─── Fade-up animation wrapper ─── */
 const FadeUp = ({ children, delay = 0, style = {} }) => (
   <motion.div
@@ -379,7 +392,7 @@ export default function InnovationDetail() {
                 fontWeight: 400
               }}
             >
-              {(data.hero?.description || "").includes(". ") ? data.hero.description.split(". ")[0] + "." : data.hero?.description}
+              {MINIMAL_INNOVATION_DESCRIPTIONS[innovationSlug] || ((data.hero?.description || "").includes(". ") ? data.hero.description.split(". ")[0] + "." : data.hero?.description)}
             </motion.p>
 
             {/* CTA Group (Primary + Secondary Flat, No Glow) */}
