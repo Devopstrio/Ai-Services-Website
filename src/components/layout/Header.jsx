@@ -616,6 +616,7 @@ function ColumnsContent({ section }) {
 /* ---------------------------------------------------------------------- */
 
 function ImageBanner({ image }) {
+  const navigate = useNavigate();
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const [hover, setHover] = useState(false);
 
@@ -761,14 +762,35 @@ function ImageBanner({ image }) {
 /*  Full-screen nav overlay                                              */
 /* ---------------------------------------------------------------------- */
 
+function getActiveNavIdFromPath(pathname) {
+  if (!pathname) return NAV_SECTIONS[0].id;
+  const path = pathname.toLowerCase();
+  if (path.startsWith("/innovation")) return "innovation-lab";
+  if (path.startsWith("/capabilities")) return "ai-capabilities";
+  if (path.startsWith("/solutions")) return "enterprise-solutions";
+  if (path.startsWith("/products")) return "ai-products";
+  if (path.startsWith("/agents")) return "ai-agents";
+  if (path.startsWith("/industries")) return "industries";
+  if (path.startsWith("/integration")) return "integrations";
+  if (path.startsWith("/services")) return "ai-capabilities";
+  return NAV_SECTIONS[0].id;
+}
+
 function FullScreenNav({ open, onClose }) {
-  const [active, setActive] = useState(NAV_SECTIONS[0].id);
+  const location = useLocation();
+  const [active, setActive] = useState(() => getActiveNavIdFromPath(location.pathname));
   const [direction, setDirection] = useState(1);
   const activeSection = NAV_SECTIONS.find((s) => s.id === active) || NAV_SECTIONS[0];
 
   useEffect(() => {
-    if (open) setActive(NAV_SECTIONS[0].id);
-  }, [open]);
+    if (open) {
+      const initialId = getActiveNavIdFromPath(location.pathname);
+      const from = NAV_SECTIONS.findIndex((s) => s.id === active);
+      const to = NAV_SECTIONS.findIndex((s) => s.id === initialId);
+      setDirection(to >= from ? 1 : -1);
+      setActive(initialId);
+    }
+  }, [open, location.pathname]);
 
   useEffect(() => {
     const handleOpenResources = () => {
