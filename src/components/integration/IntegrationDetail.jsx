@@ -2,7 +2,7 @@ import RepresentativeCTA from "../ui/RepresentativeCTA";
 import FAQ from "../ui/FAQ";
 import { getIntegrationFaqs } from "../../data/faqs";
 import React, { useState, useEffect, useRef } from "react";
-import { useParams, useLocation, Link } from "react-router-dom";
+import { useParams, useLocation, useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { getIntegrationData } from "../../data/integrations";
 import {
@@ -158,6 +158,7 @@ const INTEGRATION_CATEGORIES = [
 export default function IntegrationDetail() {
   const params = useParams();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const pathSegments = location.pathname.split("/").filter(Boolean);
   const slugFromPath = pathSegments[pathSegments.length - 1] || "";
@@ -306,25 +307,31 @@ export default function IntegrationDetail() {
 
         <div style={{ position: "relative", zIndex: 1, maxWidth: "1280px", margin: "0 auto", width: "100%", padding: "0 24px", textAlign: "left" }}>
           <motion.div style={{ opacity: opacityText, maxWidth: "760px" }}>
-            {/* Small Category Label */}
+            {/* Plain Minimal Breadcrumb */}
             <div
               style={{
-                display: "inline-flex",
-                alignItems: "center",
+                display: "flex",
                 gap: "8px",
-                padding: "6px 14px",
-                backgroundColor: "rgba(225,29,72,0.12)",
-                border: "1px solid rgba(225,29,72,0.3)",
-                borderRadius: "999px",
-                color: "#E11D48",
-                fontSize: "0.76rem",
-                fontWeight: 700,
-                letterSpacing: "0.1em",
+                alignItems: "center",
+                color: "rgba(255,255,255,0.5)",
+                fontSize: "12px",
+                letterSpacing: "0.05em",
                 textTransform: "uppercase",
-                marginBottom: "20px"
+                fontWeight: 600,
+                marginBottom: "24px"
               }}
             >
-              <Share2 size={13} /> ENTERPRISE INTEGRATIONS / {data.name.toUpperCase()}
+              <span
+                style={{ cursor: "pointer", transition: "color 0.2s ease" }}
+                className="hover:text-white"
+                onClick={() => navigate("/integration/overview")}
+              >
+                Integrations
+              </span>
+              <span>/</span>
+              <span style={{ color: "#E11D48" }}>
+                {data.name}
+              </span>
             </div>
 
             {/* Short Minimal Page-Specific Headline */}
