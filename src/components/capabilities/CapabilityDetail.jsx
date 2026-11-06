@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { CAPABILITY_SERVICES_DATA } from "../../data/capabilities";
+import RepresentativeCTA from "../ui/RepresentativeCTA";
 import { getCapabilityUseCaseIcon } from "../../data/capabilities/useCaseIcons";
 import { getCapabilityInsights } from "../../data/capabilities/capabilityInsightsMap";
 import enterpriseItOpsIcon from "../../assets/capabilities/enterprise-it-ops.svg";
@@ -230,11 +231,172 @@ function InsightTwoFaceCard({ item, index }) {
   );
 }
 
+
+/**
+ * Tailored enterprise CTA configuration for every AI Capability / Service subpage.
+ */
+const CAPABILITY_CTA_CONFIG = {
+  "generative-ai": {
+    title: "Ready to Scale Generative Intelligence with",
+    highlightText: "Custom Foundational Models?",
+    description: "Deploy enterprise LLMs, multi-modal reasoning engines, and private VPC inference with strict compliance guardrails.",
+    primaryBtnText: "SCHEDULE GENAI CONSULTATION",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE AI CAPABILITIES",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "ai-agents": {
+    title: "Ready to Deploy Autonomous",
+    highlightText: "Enterprise AI Agent Swarms?",
+    description: "Automate complex reasoning, deterministic multi-agent collaboration, and human-in-the-loop workflows across your systems.",
+    primaryBtnText: "DEPLOY AGENT SWARM",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "VIEW AGENT ARCHITECTURE",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "enterprise-ai-development": {
+    title: "Ready to Build Bespoke",
+    highlightText: "Enterprise AI Platforms?",
+    description: "Architect custom neural architectures, low-latency microservices, and private AI infrastructure tailored to your business.",
+    primaryBtnText: "START AI ENGAGEMENT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE ARCHITECTURE",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "machine-learning": {
+    title: "Accelerate Predictive Accuracy with",
+    highlightText: "Production Machine Learning?",
+    description: "Build, train, and deploy high-throughput ML pipelines with continuous model evaluation, drift detection, and automated retraining.",
+    primaryBtnText: "REQUEST ML AUDIT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE ML PIPELINES",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "nlp": {
+    title: "Unlock Unstructured Data with",
+    highlightText: "Advanced Natural Language Processing?",
+    description: "Transform multilingual enterprise documents, conversational sentiment, and domain text into structured actionable intelligence.",
+    primaryBtnText: "REQUEST NLP DEMO",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE LANGUAGE MODELS",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "computer-vision": {
+    title: "Transform Visual Perception with",
+    highlightText: "Enterprise Computer Vision?",
+    description: "Deploy edge-accelerated object detection, visual quality inspection, and biometric authentication across your operations.",
+    primaryBtnText: "REQUEST VISION PILOT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE VISION MODELS",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "intelligent-document-processing": {
+    title: "Eliminate Manual Ingestion with",
+    highlightText: "Intelligent Document Processing?",
+    description: "Automate complex document extraction, tabular invoice parsing, and regulatory audit classification with zero-shot accuracy.",
+    primaryBtnText: "TEST IDP ENGINE",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE DOCUMENT PARSER",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "ai-search-knowledge-management": {
+    title: "Unify Enterprise Repositories with",
+    highlightText: "Neural Search & Knowledge AI?",
+    description: "Connect siloed corporate data stores with grounded hybrid search, semantic reranking, and citation-backed knowledge retrieval.",
+    primaryBtnText: "REQUEST SEARCH AUDIT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE ENTERPRISE RAG",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "intelligent-automation": {
+    title: "Automate End-to-End Workflows with",
+    highlightText: "Intelligent AI Automation?",
+    description: "Connect legacy ERPs, CRM workflows, and modern cloud APIs with self-healing cognitive automations that eliminate human bottlenecks.",
+    primaryBtnText: "START AUTOMATION PILOT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE AUTOMATION STACK",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "data-intelligence": {
+    title: "Transform Enterprise Telemetry with",
+    highlightText: "Predictive Data Intelligence?",
+    description: "Unify real-time streaming pipelines, automated feature stores, and automated data quality governance at scale.",
+    primaryBtnText: "REQUEST DATA ASSESSMENT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE DATA PLATFORM",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "predictive-analytics": {
+    title: "Forecast High-Stakes Outcomes with",
+    highlightText: "Enterprise Predictive Analytics?",
+    description: "Anticipate market fluctuations, customer churn, and operational risks with real-time probabilistic forecasting models.",
+    primaryBtnText: "SCHEDULE ANALYTICS DEMO",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "VIEW ANALYTICS METRICS",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "ai-integration": {
+    title: "Seamlessly Connect Systems with",
+    highlightText: "Enterprise AI Integration?",
+    description: "Deploy sub-second webhook meshes, event-driven streaming connectors, and enterprise API gateways across multi-cloud environments.",
+    primaryBtnText: "REQUEST INTEGRATION AUDIT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE CONNECTOR MESH",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "ai-infrastructure-mlops": {
+    title: "Scale Production AI with",
+    highlightText: "Enterprise MLOps & Infrastructure?",
+    description: "Orchestrate high-throughput GPU clusters, automated CI/CD for models, and sub-millisecond inference runtimes with 99.999% SLA.",
+    primaryBtnText: "SCHEDULE MLOPS AUDIT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE INFRASTRUCTURE",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "responsible-ai-governance": {
+    title: "Safeguard Enterprise AI with",
+    highlightText: "Responsible AI & Governance?",
+    description: "Enforce algorithmic fairness, automated bias audits, explainability dashboards, and regulatory compliance frameworks across models.",
+    primaryBtnText: "REQUEST GOVERNANCE AUDIT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE COMPLIANCE FRAMEWORK",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "ai-strategy-consulting": {
+    title: "Navigate Digital Transformation with",
+    highlightText: "AI Strategy & Consulting?",
+    description: "Align technology roadmaps, prioritize high-ROI AI initiatives, and build organizational AI readiness with our elite architects.",
+    primaryBtnText: "BOOK STRATEGY BRIEFING",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE ADVISORY SERVICES",
+    secondaryBtnTo: "/capabilities/overview"
+  },
+  "ai-innovation-lab": {
+    title: "Pioneer Future Breakthroughs with",
+    highlightText: "Our AI Innovation Lab?",
+    description: "Co-create bleeding-edge prototypes, explore novel foundation model architectures, and pilot experimental AI research.",
+    primaryBtnText: "START INNOVATION PROJECT",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE LAB PROTOTYPES",
+    secondaryBtnTo: "/capabilities/overview"
+  }
+};
+
 export default function CapabilityDetail() {
   const { serviceId } = useParams();
   const navigate = useNavigate();
   const data = CAPABILITY_SERVICES_DATA[serviceId];
   const trackRef = useRef(null);
+  const displayTitle = data ? `${data.hero?.titleLight || ""} ${data.hero?.titleBold || ""}`.trim() : "";
+  const ctaConfig = (data && CAPABILITY_CTA_CONFIG[serviceId]) || {
+    title: "Ready to Transform Your Enterprise with",
+    highlightText: `${displayTitle || "Enterprise AI"}?`,
+    description: data?.hero?.description || "Deploy state-of-the-art AI capabilities across your enterprise infrastructure with enterprise-grade SLA and dedicated support.",
+    primaryBtnText: "SCHEDULE CONSULTATION",
+    primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+    secondaryBtnText: "EXPLORE ALL CAPABILITIES",
+    secondaryBtnTo: "/capabilities/overview"
+  };
   const insightItems = data ? getCapabilityInsights(serviceId, data.insights) : [];
 
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -622,6 +784,17 @@ export default function CapabilityDetail() {
         </div>
       </section>
 
+      {/* 8. UNIVERSAL REPRESENTATIVE CTA */}
+      <RepresentativeCTA
+        title={ctaConfig.title}
+        highlightText={ctaConfig.highlightText}
+        description={ctaConfig.description}
+        primaryBtnText={ctaConfig.primaryBtnText}
+        primaryBtnHref={ctaConfig.primaryBtnHref}
+        secondaryBtnText={ctaConfig.secondaryBtnText}
+        secondaryBtnTo={ctaConfig.secondaryBtnTo}
+        theme="rose"
+      />
     </div>
   );
 }

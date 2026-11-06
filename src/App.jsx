@@ -22,6 +22,7 @@ import SolutionsOverview from "./components/solutions/SolutionsOverview";
 import SolutionDetail from "./components/solutions/SolutionDetail";
 import ProductsOverview from "./components/products/ProductsOverview";
 import ProductDetail from "./components/products/ProductDetail";
+import RepresentativeCTA from "./components/ui/RepresentativeCTA";
 import Footer from "./components/layout/Footer";
 
 function App() {
@@ -42,6 +43,16 @@ function App() {
                 <EnterpriseOverview />
                 <Capabilities />
                 <SuccessStory />
+                <RepresentativeCTA
+                  title="Ready to Shape the Next Era of"
+                  highlightText="Enterprise AI & Innovation?"
+                  description="Deploy resilient foundation models, autonomous agent networks, and self-healing cloud infrastructure engineered for mission-critical scale."
+                  primaryBtnText="GET STARTED"
+                  primaryBtnHref="https://devopstrio.co.uk/contact#contact-form"
+                  secondaryBtnText="EXPLORE PLATFORM"
+                  secondaryBtnTo="/solutions/overview"
+                  theme="rose"
+                />
               </>
             }
           />

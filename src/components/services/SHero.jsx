@@ -5,6 +5,7 @@ import AIwork from "./AIwork";
 import Cards from "./Cards";
 import Business from "./Business";
 import ManagedService from "./ManagedService";
+import RepresentativeCTA from "../ui/RepresentativeCTA";
 
 /**
  * ServicesHero.jsx — DevOpsTRIO
@@ -203,6 +204,16 @@ export default function ServicesHero() {
 <Cards />
 <ManagedService />
 <Business />
+<RepresentativeCTA
+  title="Ready to Accelerate Your Enterprise with"
+  highlightText="Managed AI Services?"
+  description="From full-lifecycle MLOps and autonomous workflows to continuous compliance and 24/7 infrastructure observability, our dedicated engineering teams scale your AI safely."
+  primaryBtnText="SCHEDULE SERVICES CONSULTATION"
+  primaryBtnHref="https://devopstrio.co.uk/contact#contact-form"
+  secondaryBtnText="EXPLORE ALL CAPABILITIES"
+  secondaryBtnTo="/capabilities/overview"
+  theme="rose"
+/>
 
 </>
   );

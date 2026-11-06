@@ -1,3 +1,4 @@
+import RepresentativeCTA from "../ui/RepresentativeCTA";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -294,7 +295,17 @@ export default function CapabilitiesOverview() {
       <CapabilitiesWork />
       <CapabilitiesCards />
       <CapabilitiesManaged />
-      <CapabilitiesInsights />
+            <CapabilitiesInsights />
+      <RepresentativeCTA
+        title="Ready to Unlock Next-Gen"
+        highlightText="Enterprise AI Capabilities?"
+        description="Deploy state-of-the-art NLP, computer vision, autonomous agents, and production MLOps pipelines with guaranteed enterprise SLA."
+        primaryBtnText="SCHEDULE ARCHITECTURE REVIEW"
+        primaryBtnHref="https://devopstrio.co.uk/contact#contact-form"
+        secondaryBtnText="TALK TO OUR EXPERTS"
+        secondaryBtnHref="/contact"
+        theme="rose"
+      />
     </>
   );
 }
