@@ -614,8 +614,6 @@ function SlideCard({ slide }) {
   return (
     <motion.a
       href={slide.href || "https://devopstrio.co.uk/insights"}
-      target="_blank"
-      rel="noopener noreferrer"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       layout

@@ -1440,8 +1440,6 @@ export default function InnovationDetail() {
                       >
                         <a
                           href={paper.downloadUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
                           style={{
                             color: "#E11D48",
                             textDecoration: "none",

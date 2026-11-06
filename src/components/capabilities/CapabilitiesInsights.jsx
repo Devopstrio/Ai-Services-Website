@@ -279,8 +279,6 @@ function Card({ item }) {
   return (
     <motion.a
       href={item.href}
-      target="_blank"
-      rel="noopener noreferrer"
       style={{
         ...styles.card,
         borderColor: isHovered
@@ -350,8 +348,6 @@ export default function CapabilitiesInsights() {
 
         <a
           href="https://devopstrio.co.uk/insights"
-          target="_blank"
-          rel="noopener noreferrer"
           style={styles.viewAll}
         >
           View All Insights

@@ -222,8 +222,6 @@ export function Footer() {
           <div className="flex flex-wrap justify-center gap-6 items-center">
             <a
               href="https://www.linkedin.com/company/devopstrioglobal/posts/?feedView=all"
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
               title="LinkedIn"
             >
@@ -233,8 +231,6 @@ export function Footer() {
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61579126233218"
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
               title="Facebook"
             >
@@ -244,8 +240,6 @@ export function Footer() {
             </a>
             <a
               href="https://www.instagram.com/devopstrio_offcl/"
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-all duration-200 hover:scale-110 flex items-center justify-center"
               title="Instagram"
             >

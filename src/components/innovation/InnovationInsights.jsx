@@ -311,8 +311,6 @@ function Card({ item, fallbackImg }) {
   return (
     <motion.a
       href={item.href}
-      target="_blank"
-      rel="noopener noreferrer"
       style={{
         ...styles.card,
         borderColor: isHovered ? "rgba(225,29,72,0.55)" : "rgba(255,255,255,0.08)",
@@ -468,8 +466,6 @@ export default function InnovationInsights() {
 
         <a
           href="https://devopstrio.co.uk/insights"
-          target="_blank"
-          rel="noopener noreferrer"
           style={styles.viewAll}
           className="insights-view-all-btn"
         >

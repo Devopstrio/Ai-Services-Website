@@ -60,8 +60,6 @@ function InsightTwoFaceCard({ item, index }) {
   return (
     <motion.a
       href={targetUrl}
-      target="_blank"
-      rel="noopener noreferrer"
       initial="rest"
       whileHover="hover"
       animate="rest"
@@ -584,8 +582,6 @@ export default function CapabilityDetail() {
 
                 <motion.a
                   href="https://devopstrio.co.uk/company/contact"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 16 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -751,8 +747,6 @@ export default function CapabilityDetail() {
             <div style={{ display: "flex", gap: "12px" }}>
                <a
                  href="https://devopstrio.co.uk/insights"
-                 target="_blank"
-                 rel="noopener noreferrer"
                  style={{
                    display: "inline-flex",
                    alignItems: "center",

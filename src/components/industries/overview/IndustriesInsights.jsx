@@ -287,8 +287,6 @@ function TrendCard({ item, index }) {
   return (
     <motion.a
       href="https://devopstrio.co.uk/insights"
-      target="_blank"
-      rel="noopener noreferrer"
       style={{ ...styles.card, textDecoration: "none" }}
       initial="rest"
       whileHover="hover"
@@ -360,8 +358,6 @@ export default function IndustriesInsights() {
         <a
           href="https://devopstrio.co.uk/insights"
           style={styles.viewAll}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           View All Insights
           <span style={styles.viewAllArrow}>

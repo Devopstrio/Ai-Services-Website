@@ -376,8 +376,6 @@ export default function IntegrationDetail() {
               </a>
               <a
                 href="https://devopstrio.co.uk/contact#contact-form"
-                target="_blank"
-                rel="noreferrer"
                 className="hero-btn-secondary"
                 style={{
                   display: "inline-flex",

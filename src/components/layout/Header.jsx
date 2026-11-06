@@ -935,8 +935,6 @@ function FullScreenNav({ open, onClose }) {
                   <motion.a
                     key={href}
                     href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     aria-label={label}
                     whileHover={{ y: -3, scale: 1.12, color: ACCENT }}
                     whileTap={{ scale: 0.9 }}

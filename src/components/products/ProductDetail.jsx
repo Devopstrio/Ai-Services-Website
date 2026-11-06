@@ -875,8 +875,6 @@ export default function ProductDetail() {
 
             <a
               href="https://devopstrio.co.uk/contact#contact-form"
-              target="_blank"
-              rel="noopener noreferrer"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -1012,8 +1010,6 @@ export default function ProductDetail() {
             {/* Restored Request Custom Walkthrough Button */}
             <a
               href="https://devopstrio.co.uk/contact#contact-form"
-              target="_blank"
-              rel="noopener noreferrer"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -1281,8 +1277,6 @@ export default function ProductDetail() {
                   </div>
                   <a
                     href="https://devopstrio.co.uk/contact#contact-form"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     style={{
                       padding: "9px 18px",
                       backgroundColor: "#E11D48",

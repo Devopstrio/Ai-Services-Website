@@ -35,8 +35,7 @@ function CtaButton({ text, href, to, onClick, isPrimary = true, isEmerald = fals
       <a
         href={target}
         className={className}
-        target={target.startsWith("http") ? "_blank" : undefined}
-        rel={target.startsWith("http") ? "noopener noreferrer" : undefined}
+        
       >
         {content}
       </a>

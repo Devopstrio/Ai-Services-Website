@@ -234,8 +234,6 @@ export default function SolutionsInsights() {
           <div style={styles.actionsRow}>
             <a 
               href="https://devopstrio.co.uk/contact#schedule"
-              target="_blank"
-              rel="noopener noreferrer"
               style={styles.cta}
               className="schedule-consultation-btn"
             >
@@ -283,7 +281,7 @@ export default function SolutionsInsights() {
                 onMouseLeave={() => setHoveredIndex(null)}
                 onClick={() => {
                   if (item.route.startsWith("http")) {
-                    window.open(item.route, "_blank", "noopener,noreferrer");
+                    window.location.href = item.route;
                   } else {
                     window.location.href = item.route;
                   }

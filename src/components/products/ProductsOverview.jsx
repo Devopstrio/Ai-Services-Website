@@ -220,8 +220,6 @@ export default function ProductsOverview() {
 
               <motion.a
                 href="https://devopstrio.co.uk/contact#contact-form"
-                target="_blank"
-                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02, backgroundColor: "rgba(255,255,255,0.08)" }}
                 whileTap={{ scale: 0.98 }}
                 style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 28px", backgroundColor: "rgba(255,255,255,0.04)", color: "#FFFFFF", borderRadius: "8px", fontSize: "14.5px", fontWeight: 600, textDecoration: "none", borderWidth: "1px", borderStyle: "solid", borderColor: "rgba(255,255,255,0.12)", cursor: "pointer", transition: "all 0.25s ease" }}
