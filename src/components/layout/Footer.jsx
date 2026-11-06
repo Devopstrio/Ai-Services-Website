@@ -119,7 +119,7 @@ export function Footer() {
           {/* Col 2: AI Capabilities */}
           <div>
             <h4
-              style={{ marginBottom: "38px" }}
+              style={{ marginBottom: "26px" }}
               className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
             >
               Capabilities
@@ -138,7 +138,7 @@ export function Footer() {
           {/* Col 3: Industries */}
           <div>
             <h4
-              style={{ marginBottom: "38px" }}
+              style={{ marginBottom: "26px" }}
               className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
             >
               Industries
@@ -157,7 +157,7 @@ export function Footer() {
           {/* Col 4: AI Products */}
           <div>
             <h4
-              style={{ marginBottom: "38px" }}
+              style={{ marginBottom: "26px" }}
               className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
             >
               Products
@@ -176,7 +176,7 @@ export function Footer() {
           {/* Col 5: Enterprise Solutions */}
           <div>
             <h4
-              style={{ marginBottom: "38px" }}
+              style={{ marginBottom: "26px" }}
               className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
             >
               Solutions
@@ -195,7 +195,7 @@ export function Footer() {
           {/* Col 6: Company */}
           <div>
             <h4
-              style={{ marginBottom: "38px" }}
+              style={{ marginBottom: "26px" }}
               className="text-base md:text-lg font-semibold text-white tracking-wider uppercase font-sans leading-tight"
             >
               Company
