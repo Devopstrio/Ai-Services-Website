@@ -90,7 +90,7 @@ const SITEMAP_SECTIONS = [
       { name: "Education & EdTech", path: "/industries/education", desc: "Adaptive learning pathways, automated assessment & student retention AI" },
       { name: "Real Estate & PropTech", path: "/industries/real-estate", desc: "Automated valuation models (AVM), spatial analytics & asset intelligence" },
       { name: "Automotive & Mobility", path: "/industries/automotive", desc: "Connected vehicle telemetry, ADAS validation & assembly line robotics" },
-      { name: "Hospitality & Travel", path: "/industries/hospitality", desc: "Revenue yield management, guest personalization & autonomous booking" }
+      { name: "Hospitality & Travel", path: "/industries/hospitality-travel", desc: "Revenue yield management, guest personalization & autonomous booking" }
     ]
   },
   {
@@ -101,8 +101,12 @@ const SITEMAP_SECTIONS = [
     overviewText: "Innovation Overview",
     links: [
       { name: "Innovation Lab Overview", path: "/innovation/overview", desc: "Cutting-edge exploratory AI research, prototype incubators & open patents" },
-      { name: "TrioKernel FP8 Attention Engine", path: "/innovation/triokernel", desc: "Proprietary GPU kernel speedups, reduced memory footprints & FlashInfer speed" },
+      { name: "AI Research & Frontier Models", path: "/innovation/ai-research", desc: "Proprietary GPU speedups, synthetic data pipelines & model evaluations" },
+      { name: "Open Source AI Initiatives", path: "/innovation/open-source", desc: "Community-driven model weights, fine-tuning scripts & evaluation suites" },
+      { name: "Experimental Projects", path: "/innovation/experimental-projects", desc: "Next-gen multi-modal reasoning prototypes & neuromorphic computing" },
       { name: "Integrations & Connectors Hub", path: "/integrations/overview", desc: "Zero-latency connectivity into AWS, Azure, GCP, Databricks & Snowflake" },
+      { name: "Multi-Cloud Platforms", path: "/integrations/cloud-platforms", desc: "Direct integrations across AWS, Azure, Google Cloud and private sovereign clouds" },
+      { name: "Enterprise ERP & Legacy Connectors", path: "/integrations/erp-systems", desc: "Secure edge proxies and bi-directional connectors for SAP, Oracle & Microsoft" },
       { name: "Managed AI Services", path: "/services", desc: "24/7 dedicated AI SRE teams, custom model maintenance & infrastructure support" }
     ]
   }

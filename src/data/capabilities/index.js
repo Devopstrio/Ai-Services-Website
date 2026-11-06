@@ -29,7 +29,10 @@ export const CAPABILITY_SERVICES_DATA = {
   "predictive-analytics": predictiveAnalytics,
   "ai-integration": aiIntegration,
   "ai-infrastructure-mlops": aiInfra,
+  "ai-infra": aiInfra,
+  "ai-infrastructure": aiInfra,
   "responsible-ai-governance": responsibleAi,
+  "responsible-ai": responsibleAi,
   "ai-strategy-consulting": aiStrategy,
   "ai-innovation-lab": aiInnovationLab
 };

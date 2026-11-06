@@ -118,10 +118,10 @@ export function Footer() {
 
           {/* Col 2: AI Capabilities */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
+            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
               Capabilities
             </h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
+            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
               <li><Link to="/capabilities/generative-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Generative AI</Link></li>
               <li><Link to="/capabilities/ai-agents" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Autonomous Agents</Link></li>
               <li><Link to="/capabilities/machine-learning" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Machine Learning</Link></li>
@@ -129,16 +129,15 @@ export function Footer() {
               <li><Link to="/capabilities/nlp" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Natural Language</Link></li>
               <li><Link to="/capabilities/data-intelligence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Data Lakehouse</Link></li>
               <li><Link to="/capabilities/ai-infra" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">AI Infrastructure</Link></li>
-              <li><Link to="/capabilities/overview" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">All Capabilities →</Link></li>
             </ul>
           </div>
 
           {/* Col 3: Industries */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
+            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
               Industries
             </h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
+            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
               <li><Link to="/industries/banking-financial-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Banking & Finance</Link></li>
               <li><Link to="/industries/healthcare-life-sciences" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Healthcare & Life Sciences</Link></li>
               <li><Link to="/industries/retail-ecommerce" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Retail & E-Commerce</Link></li>
@@ -146,16 +145,15 @@ export function Footer() {
               <li><Link to="/industries/logistics-supply-chain" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Logistics & Supply Chain</Link></li>
               <li><Link to="/industries/telecommunications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Telecommunications</Link></li>
               <li><Link to="/industries/energy-utilities" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Energy & Utilities</Link></li>
-              <li><Link to="/industries/overview" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">All Industries →</Link></li>
             </ul>
           </div>
 
           {/* Col 4: AI Products */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
+            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
               Products
             </h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
+            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
               <li><Link to="/products/document-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Document AI</Link></li>
               <li><Link to="/products/devops-copilot" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">DevOps Copilot</Link></li>
               <li><Link to="/products/safesign-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">SafeSign AI</Link></li>
@@ -163,16 +161,15 @@ export function Footer() {
               <li><Link to="/products/humanex-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">HumanEx AI</Link></li>
               <li><Link to="/products/ai-studio" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">AI Studio</Link></li>
               <li><Link to="/products/assistant-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Assistant AI</Link></li>
-              <li><Link to="/products/overview" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">All Products →</Link></li>
             </ul>
           </div>
 
           {/* Col 5: Enterprise Solutions */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
+            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
               Solutions
             </h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
+            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
               <li><Link to="/solutions/hr-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">HR AI</Link></li>
               <li><Link to="/solutions/devops-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">DevOps AI</Link></li>
               <li><Link to="/solutions/cybersecurity-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Cybersecurity AI</Link></li>
@@ -180,16 +177,15 @@ export function Footer() {
               <li><Link to="/solutions/banking-financial-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Banking & Finance AI</Link></li>
               <li><Link to="/solutions/healthcare-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Healthcare AI</Link></li>
               <li><Link to="/solutions/workflow-automation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Workflow Automation</Link></li>
-              <li><Link to="/solutions/overview" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">All Solutions →</Link></li>
             </ul>
           </div>
 
           {/* Col 6: Company */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-6 tracking-wider uppercase font-sans">
+            <h4 className="text-sm sm:text-base font-semibold text-white mb-7 tracking-wider uppercase font-sans pb-1">
               Company
             </h4>
-            <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide">
+            <ul className="flex flex-col gap-4 text-sm font-normal text-zinc-300 tracking-wide">
               <li><a href="https://devopstrio.co.uk/about/company-overview" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Company Overview</a></li>
               <li><a href="https://devopstrio.co.uk/about/our-culture-people" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Our Culture & People</a></li>
               <li><a href="https://devopstrio.co.uk/about/global-internship" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Global Internship</a></li>
@@ -197,7 +193,6 @@ export function Footer() {
               <li><a href="https://devopstrio.co.uk/about/partnerships-certifications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Partnerships & Certifications</a></li>
               <li><a href="https://devopstrio.co.uk/about/awards-recognition" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Awards & Recognition</a></li>
               <li><a href="https://devopstrio.co.uk/about/sustainability-csr" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Sustainability & CSR</a></li>
-              <li><a href="https://devopstrio.co.uk/contact#contact-form" className="text-rose-400 hover:text-white hover:translate-x-1 inline-block transition-all duration-300 font-medium">Contact Us →</a></li>
             </ul>
           </div>
 

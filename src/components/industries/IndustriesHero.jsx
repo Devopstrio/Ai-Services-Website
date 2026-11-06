@@ -12,6 +12,8 @@ import AboutIndustry from "./AboutIndustry";
 import WhoWeWorkWith from "./WhoWeWorkWith";
 import HowYouBenefit from "./HowYouBenefit";
 import WhatsHappening from "./WhatsHappening";
+import FAQ from "../ui/FAQ";
+import { INDUSTRIES_OVERVIEW_FAQS, getIndustryFaqs } from "../../data/faqs";
 
 /**
  * IndustriesHero.jsx — Dynamic Industries Page
@@ -289,7 +291,17 @@ function getIndustryByRoute(route) {
   const allItems = INDUSTRIES_DATA.columns.flatMap(column => 
     column.flatMap(group => group.items)
   );
-  return allItems.find(item => item.route === route);
+  const cleanRoute = (route || "").toLowerCase().replace(/\/+$/, "");
+  return allItems.find(item => {
+    const itemRoute = item.route.toLowerCase();
+    if (itemRoute === cleanRoute) return true;
+    const itemSlug = itemRoute.replace("/industries/", "");
+    const cleanSlug = cleanRoute.replace("/industries/", "");
+    if (itemSlug === cleanSlug) return true;
+    if (cleanSlug.includes("hospitality") && itemSlug.includes("hospitality")) return true;
+    if (cleanSlug.includes("banking") && itemSlug.includes("banking")) return true;
+    return false;
+  });
 }
 
 /* Helper to get all industries for overview page */
@@ -504,7 +516,7 @@ export default function IndustriesHero() {
         <WhatsHappening />
         <HowToReinvent />
         <FAQ
-          faqs={getIndustryFaqs(industry)}
+          faqs={getIndustryFaqs(currentIndustry?.route || currentIndustry?.label)}
           badge="INDUSTRY TECHNICAL FAQ"
           title="Domain Architecture:"
           highlight="Frequently Asked Questions"
