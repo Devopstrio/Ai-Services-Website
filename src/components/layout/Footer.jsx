@@ -118,7 +118,7 @@ export function Footer() {
 
           {/* Col 2: AI Capabilities */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
               Capabilities
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
@@ -129,17 +129,12 @@ export function Footer() {
               <li><Link to="/capabilities/nlp" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Natural Language</Link></li>
               <li><Link to="/capabilities/data-intelligence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Data Lakehouse</Link></li>
               <li><Link to="/capabilities/ai-infra" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">AI Infrastructure</Link></li>
-              <li className="pt-0.5">
-                <Link to="/capabilities/overview" className="text-rose-500 hover:text-rose-400 font-normal inline-flex items-center gap-1 transition-colors">
-                  All Capabilities &rarr;
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Col 3: Industries */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
               Industries
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
@@ -150,17 +145,12 @@ export function Footer() {
               <li><Link to="/industries/logistics-supply-chain" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Logistics & Supply Chain</Link></li>
               <li><Link to="/industries/telecommunications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Telecommunications</Link></li>
               <li><Link to="/industries/energy-utilities" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Energy & Utilities</Link></li>
-              <li className="pt-0.5">
-                <Link to="/industries/overview" className="text-rose-500 hover:text-rose-400 font-normal inline-flex items-center gap-1 transition-colors">
-                  All Industries &rarr;
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Col 4: AI Products */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
               Products
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
@@ -171,17 +161,12 @@ export function Footer() {
               <li><Link to="/products/humanex-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">HumanEx AI</Link></li>
               <li><Link to="/products/ai-studio" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">AI Studio</Link></li>
               <li><Link to="/products/assistant-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Assistant AI</Link></li>
-              <li className="pt-0.5">
-                <Link to="/products/overview" className="text-rose-500 hover:text-rose-400 font-normal inline-flex items-center gap-1 transition-colors">
-                  All Products &rarr;
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Col 5: Enterprise Solutions */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
               Solutions
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
@@ -192,17 +177,12 @@ export function Footer() {
               <li><Link to="/solutions/banking-financial-services" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Banking & Finance AI</Link></li>
               <li><Link to="/solutions/healthcare-ai" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Healthcare AI</Link></li>
               <li><Link to="/solutions/workflow-automation" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Workflow Automation</Link></li>
-              <li className="pt-0.5">
-                <Link to="/solutions/overview" className="text-rose-500 hover:text-rose-400 font-normal inline-flex items-center gap-1 transition-colors">
-                  All Solutions &rarr;
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Col 6: Company */}
           <div>
-            <h4 className="text-base md:text-lg font-semibold text-white mb-5 tracking-wider uppercase font-sans leading-tight">
+            <h4 className="text-base md:text-lg font-semibold text-white mb-8 md:mb-9 tracking-wider uppercase font-sans leading-tight">
               Company
             </h4>
             <ul className="flex flex-col gap-3.5 text-base text-zinc-300 font-normal tracking-wide leading-relaxed">
@@ -213,11 +193,6 @@ export function Footer() {
               <li><a href="https://devopstrio.co.uk/about/partnerships-certifications" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Partnerships & Certifications</a></li>
               <li><a href="https://devopstrio.co.uk/about/awards-recognition" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Awards & Recognition</a></li>
               <li><a href="https://devopstrio.co.uk/about/sustainability-csr" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Sustainability & CSR</a></li>
-              <li className="pt-0.5">
-                <a href="https://devopstrio.co.uk/contact" className="text-rose-500 hover:text-rose-400 font-normal inline-flex items-center gap-1 transition-colors">
-                  Contact Us &rarr;
-                </a>
-              </li>
             </ul>
           </div>
 
