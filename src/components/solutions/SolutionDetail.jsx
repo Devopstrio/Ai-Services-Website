@@ -547,22 +547,27 @@ export default function SolutionDetail() {
         </motion.div>
 
         <motion.div style={{ position: "relative", zIndex: 1, textAlign: "left", maxWidth: "1200px", width: "100%", padding: "0 24px", opacity: opacityText }}>
-          {/* Eyebrow Breadcrumb Pill with Devopstrio Brand Red */}
-          <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "6px 14px", backgroundColor: "rgba(225,29,72,0.12)", borderWidth: "1px", borderStyle: "solid", borderColor: "rgba(225,29,72,0.28)", borderRadius: "999px", color: TYPO.colors.brandAccent, ...TYPO.hero.eyebrow, marginBottom: "22px" }}>
-            <span style={{ cursor: "pointer", color: "rgba(255,255,255,0.6)" }} onClick={() => navigate("/solutions/overview")}>
-              {data.breadcrumbs[0] || "Enterprise Solutions"}
+          {/* Plain Minimal Breadcrumb */}
+          <div style={{ display: "flex", gap: "8px", alignItems: "center", color: "rgba(255,255,255,0.5)", fontSize: "12px", letterSpacing: "0.05em", textTransform: "uppercase", fontWeight: 600, marginBottom: "24px" }}>
+            <span style={{ cursor: "pointer", transition: "color 0.2s ease" }} className="hover:text-white" onClick={() => navigate("/solutions/overview")}>
+              {data.breadcrumbs[0] || "ENTERPRISE SOLUTIONS"}
             </span>
-            <span style={{ color: "rgba(255,255,255,0.3)" }}>/</span>
-            <span style={{ color: TYPO.colors.brandAccent }}>
-              {data.breadcrumbs[1] || displayTitle}
+            <span>/</span>
+            <span style={{ color: "#E11D48" }}>
+              {data.breadcrumbs[1] || `${data.hero.titleLight || ""} ${data.hero.titleBold || ""}`.trim()}
             </span>
           </div>
 
-          {/* Unified Authority H1 */}
-          <h1 style={{ ...TYPO.hero.h1, color: TYPO.colors.headingPrimary, margin: "0 0 20px 0" }}>
-            <span>AI for </span>
-            <span style={{ color: "rgba(255,255,255,0.95)" }}>{displayTitle}</span>
-          </h1>
+          {/* Clean Plain Authority H1 */}
+          <motion.h1
+            initial={{ opacity: 0, y: 26 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", lineHeight: 1.05, fontWeight: 300, margin: "0 0 24px 0", letterSpacing: "-0.02em", color: "#fff" }}
+          >
+            <span style={{ fontWeight: 600 }}>{data.hero.titleLight}</span>{" "}
+            <span style={{ color: "rgba(255,255,255,0.85)" }}>{data.hero.titleBold}</span>
+          </motion.h1>
 
           {/* Minimal 1–2 Line Focused Hero Description */}
           <p style={{ ...TYPO.hero.description, color: TYPO.colors.bodyPrimary, margin: "0 0 32px 0" }}>
@@ -782,12 +787,9 @@ export default function SolutionDetail() {
             <div style={{ ...TYPO.approach.eyebrow, color: TYPO.colors.brandAccent, marginBottom: "12px" }}>
               OUR APPROACH
             </div>
-            <h2 style={{ ...TYPO.approach.h2, color: TYPO.colors.headingPrimary, marginBottom: "14px" }}>
+            <h2 style={{ ...TYPO.approach.h2, color: TYPO.colors.headingPrimary, margin: 0 }}>
               How We Approach Your AI Transformation
             </h2>
-            <p style={{ ...TYPO.approach.subtitle, color: TYPO.colors.bodySecondary, maxWidth: "600px", margin: "0 auto" }}>
-              From business challenges to practical AI solutions.
-            </p>
           </div>
 
           <div className="approach-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "24px" }}>
