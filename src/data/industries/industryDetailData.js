@@ -157,7 +157,7 @@ export const INDUSTRY_DETAIL_DATA = {
   cta: {
     ctaTitle: "Build your secure",
     ctaHighlight: "Fintech ledger",
-    ctaDesc: React.createElement(React.Fragment, null, "Book a dedicated workspace mapping session with our principal "         , React.createElement(Link, { to: "/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "fintech solutions architect"  ), " to design transaction-safe databases."    ),
+    ctaDesc: React.createElement(React.Fragment, null, "Book a dedicated workspace mapping session with our principal "         , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "fintech solutions architect"  ), " to design transaction-safe databases."    ),
     ctaBtnText: "Consult Fintech Architect"
   },
   faqs: [
@@ -326,7 +326,7 @@ export const INDUSTRY_DETAIL_DATA = {
   cta: {
     ctaTitle: "Build your secure",
     ctaHighlight: "Learning platform",
-    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement(Link, { to: "/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "education tech architect"  ), " to design virtual classroom tools and student grade databases."         ),
+    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "education tech architect"  ), " to design virtual classroom tools and student grade databases."         ),
     ctaBtnText: "Consult EdTech Architect"
   },
   faqs: [
@@ -495,7 +495,7 @@ export const INDUSTRY_DETAIL_DATA = {
   cta: {
     ctaTitle: "Modernize your civic",
     ctaHighlight: "Cloud systems",
-    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement(Link, { to: "/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "gov-tech solutions architect"  ), " to evaluate your legacy databases and cloud security."        ),
+    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "gov-tech solutions architect"  ), " to evaluate your legacy databases and cloud security."        ),
     ctaBtnText: "Consult Gov-Tech Architect"
   },
   faqs: [
@@ -664,7 +664,7 @@ export const INDUSTRY_DETAIL_DATA = {
   cta: {
     ctaTitle: "Build your secure",
     ctaHighlight: "Healthcare portal",
-    ctaDesc: React.createElement(React.Fragment, null, "Book a developer demand session with our principal "        , React.createElement(Link, { to: "/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "healthcare systems engineer"  ), " to discuss compliance audits."    ),
+    ctaDesc: React.createElement(React.Fragment, null, "Book a developer demand session with our principal "        , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "healthcare systems engineer"  ), " to discuss compliance audits."    ),
     ctaBtnText: "Consult Healthcare Engineer"
   },
   faqs: [
@@ -833,7 +833,7 @@ export const INDUSTRY_DETAIL_DATA = {
   cta: {
     ctaTitle: "Upgrade your plant",
     ctaHighlight: "IoT infrastructure",
-    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement(Link, { to: "/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "industrial solutions architect"  ), " to review your machinery logs and supply chain data."         ),
+    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "industrial solutions architect"  ), " to review your machinery logs and supply chain data."         ),
     ctaBtnText: "Request Industrial Audit"
   },
   faqs: [
@@ -1002,7 +1002,7 @@ export const INDUSTRY_DETAIL_DATA = {
   cta: {
     ctaTitle: "Scale your video",
     ctaHighlight: "Streaming network",
-    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement(Link, { to: "/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "media solutions architect"  ), " to optimize your transcoding setups and CDN delivery paths."         ),
+    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "media solutions architect"  ), " to optimize your transcoding setups and CDN delivery paths."         ),
     ctaBtnText: "Consult Media Architect"
   },
   faqs: [
@@ -1171,7 +1171,7 @@ export const INDUSTRY_DETAIL_DATA = {
   cta: {
     ctaTitle: "Launch your scalable",
     ctaHighlight: "E-Commerce engine",
-    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement(Link, { to: "/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "e-commerce solution architect"  ), " to design a high-conversion checkout pipeline."      ),
+    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "e-commerce solution architect"  ), " to design a high-conversion checkout pipeline."      ),
     ctaBtnText: "Consult E-Commerce Architect"
   },
   faqs: [
@@ -1340,7 +1340,7 @@ export const INDUSTRY_DETAIL_DATA = {
   cta: {
     ctaTitle: "Modernize your cellular",
     ctaHighlight: "Network backend",
-    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement(Link, { to: "/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "telecom network architect"  ), " to optimize your billing databases and 5G telemetry logs."         ),
+    ctaDesc: React.createElement(React.Fragment, null, "Consult with our principal "    , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "telecom network architect"  ), " to optimize your billing databases and 5G telemetry logs."         ),
     ctaBtnText: "Consult Telecom Architect"
   },
   faqs: [
@@ -1509,7 +1509,7 @@ export const INDUSTRY_DETAIL_DATA = {
   cta: {
     ctaTitle: "Build your secure",
     ctaHighlight: "Fintech ledger",
-    ctaDesc: React.createElement(React.Fragment, null, "Book a dedicated workspace mapping session with our principal "         , React.createElement(Link, { to: "/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "fintech solutions architect"  ), " to design transaction-safe databases."    ),
+    ctaDesc: React.createElement(React.Fragment, null, "Book a dedicated workspace mapping session with our principal "         , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form", className: "text-[#E11D48] hover:underline" ,}, "fintech solutions architect"  ), " to design transaction-safe databases."    ),
     ctaBtnText: "Consult Fintech Architect"
   },
   faqs: [

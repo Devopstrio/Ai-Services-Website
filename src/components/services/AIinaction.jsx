@@ -206,7 +206,7 @@ export default function AIInAction() {
               </motion.p>
 
               <motion.a
-                href="https://devopstrio.co.uk/company/contact"
+                href="https://devopstrio.co.uk/contact"
                 style={styles.ctaBtn}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}

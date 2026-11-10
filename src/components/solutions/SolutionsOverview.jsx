@@ -647,7 +647,7 @@ export default function SolutionsOverview() {
                 style={styles.secondaryCta}
                 whileHover={{ backgroundColor: "rgba(255,255,255,0.08)", borderColor: "rgba(255,255,255,0.4)" }}
                 whileTap={{ scale: 0.97 }}
-                onClick={() => navigate("/contact")}
+                onClick={() => { window.location.href = "https://devopstrio.co.uk/contact"; }}
               >
                 Talk to an Expert
               </motion.button>
@@ -718,7 +718,7 @@ export default function SolutionsOverview() {
         primaryBtnText="SCHEDULE ARCHITECTURE REVIEW"
         primaryBtnHref="https://devopstrio.co.uk/contact#contact-form"
         secondaryBtnText="TALK TO AN AI EXPERT"
-        secondaryBtnHref="/contact"
+        secondaryBtnHref="https://devopstrio.co.uk/contact"
         theme="rose"
       />
     </>

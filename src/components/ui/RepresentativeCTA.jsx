@@ -43,7 +43,7 @@ function CtaButton({ text, href, to, onClick, isPrimary = true, isEmerald = fals
   }
 
   return (
-    <Link to={target || "/contact"} className={className}>
+    <Link to={target || "/solutions/overview"} className={className}>
       {content}
     </Link>
   );
@@ -54,7 +54,7 @@ export function RepresentativeCTA({
   highlightText = "AI & Digital Innovation?",
   description, // Intentionally omitted from rendering per design specification
   primaryBtnText = "GET STARTED",
-  primaryBtnHref = "/contact",
+  primaryBtnHref = "https://devopstrio.co.uk/contact#contact-form",
   primaryBtnTo,
   primaryBtnOnClick,
   secondaryBtnText = "EXPLORE PLATFORM",

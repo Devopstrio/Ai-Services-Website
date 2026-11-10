@@ -311,7 +311,7 @@ export default function CapabilitiesOverview() {
         primaryBtnText="SCHEDULE ARCHITECTURE REVIEW"
         primaryBtnHref="https://devopstrio.co.uk/contact#contact-form"
         secondaryBtnText="TALK TO OUR EXPERTS"
-        secondaryBtnHref="/contact"
+        secondaryBtnHref="https://devopstrio.co.uk/contact"
         theme="rose"
       />
     </>

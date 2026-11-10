@@ -148,8 +148,7 @@ export function IndustryFAQ({ faqs }) {
             , React.createElement('p', { className: "text-zinc-300 text-sm sm:text-base font-normal max-w-2xl"    ,}, "Still have technical questions? Don't sit with them. Reach out to our principal solutions architects — we respond to every query personally."
 
             )
-            , React.createElement(Link, { 
-              to: "/contact#contact-form",
+            , React.createElement('a', { href: "https://devopstrio.co.uk/contact#contact-form",
               className: "gap-2 inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-xs sm:text-sm font-semibold tracking-wider uppercase border border-rose-500/30 hover:border-rose-500/60 bg-rose-950/30 hover:bg-rose-900/50 text-rose-400 hover:text-white transition-all duration-300 whitespace-nowrap"                     ,}
 , "Consult Our Engineers "
                  , React.createElement(ArrowUpRight, { size: 14,} )

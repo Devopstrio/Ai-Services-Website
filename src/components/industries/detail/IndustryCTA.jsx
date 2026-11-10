@@ -1,13 +1,6 @@
 import React from "react";
 import { RepresentativeCTA } from "../../ui/RepresentativeCTA";
 
-
-
-
-
-
-
-
 export function IndustryCTA({
   ctaTitle,
   ctaHighlight,
@@ -20,9 +13,9 @@ export function IndustryCTA({
       highlightText: ctaHighlight,
       description: ctaDesc,
       primaryBtnText: ctaBtnText,
-      primaryBtnHref: "/contact#contact-form",
-      secondaryBtnText: "BACK TO INDUSTRIES INDEX"   ,
-      secondaryBtnHref: "/industries",}
-    )
+      primaryBtnHref: "https://devopstrio.co.uk/contact#contact-form",
+      secondaryBtnText: "BACK TO INDUSTRIES INDEX",
+      secondaryBtnHref: "/industries",
+    })
   );
 }

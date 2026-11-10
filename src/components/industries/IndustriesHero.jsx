@@ -432,7 +432,7 @@ export default function IndustriesHero() {
           title="Transform Your Sector with"
           highlightText="Autonomous Enterprise AI"
           primaryBtnText="CONSULT AN INDUSTRY EXPERT"
-          primaryBtnHref="/contact#contact-form"
+          primaryBtnHref="https://devopstrio.co.uk/contact#contact-form"
           secondaryBtnText="EXPLORE ALL SECTORS"
           secondaryBtnTo="/industries/overview"
           theme="rose"
@@ -535,7 +535,7 @@ export default function IndustriesHero() {
           title="Build your secure"
           highlightText={(currentIndustry?.label || "Industry") + " Architecture"}
           primaryBtnText="CONSULT DOMAIN ARCHITECT"
-          primaryBtnHref="/contact#contact-form"
+          primaryBtnHref="https://devopstrio.co.uk/contact#contact-form"
           secondaryBtnText="BACK TO INDUSTRIES INDEX"
           secondaryBtnTo="/industries/overview"
           theme="rose"

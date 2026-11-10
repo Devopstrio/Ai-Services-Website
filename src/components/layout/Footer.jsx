@@ -131,7 +131,7 @@ export function Footer() {
               <li><Link to="/capabilities/computer-vision" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Computer Vision</Link></li>
               <li><Link to="/capabilities/nlp" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Natural Language</Link></li>
               <li><Link to="/capabilities/data-intelligence" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">Data Lakehouse</Link></li>
-              <li><Link to="/capabilities/ai-infra" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">AI Infrastructure</Link></li>
+              <li><Link to="/capabilities/ai-infrastructure-mlops" className="hover:text-white hover:translate-x-1 inline-block transition-all duration-300">AI Infrastructure</Link></li>
             </ul>
           </div>
 

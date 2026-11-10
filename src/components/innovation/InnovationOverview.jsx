@@ -294,7 +294,7 @@ export default function InnovationOverview() {
         title="Accelerate Frontier Research with"
         highlightText="Devopstrio AI Innovation Lab"
         primaryBtnText="INITIATE RESEARCH BRIEF"
-        primaryBtnHref="/contact#contact-form"
+        primaryBtnHref="https://devopstrio.co.uk/contact#contact-form"
         secondaryBtnText="EXPLORE RESEARCH PAPERS"
         secondaryBtnTo="/innovation/overview"
         theme="rose"

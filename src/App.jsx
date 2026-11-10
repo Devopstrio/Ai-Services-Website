@@ -10,6 +10,14 @@ function ScrollToTop() {
 
   return null;
 }
+
+function ExternalRedirect({ to }) {
+  useEffect(() => {
+    window.location.href = to;
+  }, [to]);
+
+  return null;
+}
 import Header from "./components/layout/Header";
 import Hero from "./components/home/Hero";
 import AIService from "./components/home/AIService";
@@ -128,6 +136,10 @@ function App() {
           
           {/* Dedicated Sitemap Route */}
           <Route path="/sitemap" element={<SitemapPage />} />
+
+          {/* Safe External Redirects for Contact & Careers (opens in same tab) */}
+          <Route path="/contact" element={<ExternalRedirect to="https://devopstrio.co.uk/contact#contact-form" />} />
+          <Route path="/careers" element={<ExternalRedirect to="https://devopstrio.co.uk/careers" />} />
           
         </Routes>
       </main>
