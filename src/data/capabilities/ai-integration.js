@@ -4,12 +4,12 @@ const aiIntegration = {
   hero: {
     titleLight: "AI Integration",
     titleBold: "Services",
-    description: "Don't rip and replace. We seamlessly integrate cutting-edge AI models into your existing legacy systems, SaaS applications, and enterprise architecture.",
+    description: "Our AI integration services in the UK seamlessly connect advanced AI models with your existing legacy systems and SaaS applications without replacing your current technology infrastructure.",
   },
   inAction: {
     headingLight: "Connecting",
     headingRed: "Intelligence",
-    paragraph: "The hardest part of AI isn't training the model; it's getting it to work inside your existing software stack. Devopstrio specializes in complex enterprise AI integrations. We build the secure APIs, middleware, and microservices necessary to embed Large Language Models and predictive algorithms directly into your CRM, ERP, and bespoke internal applications—without disrupting daily operations.",
+    paragraph: "Integrating AI into existing software systems requires more than model training. DevOpsTrio delivers enterprise AI integration services, developing secure APIs, middleware and microservices to connect Large Language Models and predictive algorithms with your CRM, ERP and custom applications while maintaining business continuity.",
     buttonText: "Discuss Integration",
     imageSrc: "/assets/capability-references/ai-integration/in-action.webp",
   },
@@ -23,18 +23,18 @@ const aiIntegration = {
     titleLight: "Integration",
     titleRed: "Use Cases",
     items: [
-      { title: "Salesforce & CRMs", desc: "Embed Generative AI directly into Salesforce to auto-draft emails and summarize call notes.", icon: "users" },
-      { title: "SAP & ERPs", desc: "Connect predictive models to your ERP to automatically flag anomalous invoices or supply chain delays.", icon: "database" },
-      { title: "Custom Legacy Apps", desc: "Modernize 20-year-old internal tools by wrapping them in APIs and adding an AI conversational interface.", icon: "cpu" }
+      { title: "Salesforce & CRMs", desc: "Integrate Generative AI into Salesforce to automate email drafting and summarise customer interactions and call notes.", icon: "users" },
+      { title: "SAP & ERPs", desc: "Connect predictive AI models to ERP systems to identify unusual invoices and potential supply chain delays automatically.", icon: "database" },
+      { title: "Legacy Modernisation", desc: "Modernise existing internal applications using APIs and integrate AI-powered conversational interfaces without replacing established systems.", icon: "cpu" }
     ]
   },
   benefits: {
     titleLight: "Why Choose Our",
     titleRed: "Integration?",
     items: [
-      { title: "Maximize Existing ROI", desc: "Extend the life of your legacy systems. Add modern AI capabilities without the risk and cost of a full rewrite.", image: "/assets/capability-references/ai-integration/benefit-0.webp" },
-      { title: "User Adoption", desc: "Employees don't want to learn another tool. We put the AI directly inside the software they already use every day.", image: "/assets/capability-references/ai-integration/benefit-1.webp" },
-      { title: "Enterprise Security", desc: "We build secure middleware that ensures data passed between your systems and the AI models is encrypted and compliant.", image: "/assets/capability-references/ai-integration/benefit-2.webp" }
+      { title: "Maximize Existing ROI", desc: "Extend your legacy systems' lifespan. Our AI integration services UK add modern AI capabilities without the risk and cost of a full rewrite.", image: "/assets/capability-references/ai-integration/benefit-0.webp" },
+      { title: "User Adoption", desc: "Employees don't want another tool. We integrate AI directly into familiar software, helping teams continue their everyday workflows without disruption.", image: "/assets/capability-references/ai-integration/benefit-1.webp" },
+      { title: "Enterprise Security", desc: "We build secure middleware to protect data exchanged between your systems and AI models through encryption and compliance measures.", image: "/assets/capability-references/ai-integration/benefit-2.webp" }
     ]
   },
   cards: {

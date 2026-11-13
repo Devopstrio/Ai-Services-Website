@@ -442,12 +442,12 @@ export default function CapabilityDetail() {
             <motion.h1 initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }} style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", lineHeight: 1.05, fontWeight: 300, margin: "0 0 24px 0", letterSpacing: "-0.02em", color: "#fff" }}>
               <span style={{ fontWeight: 600 }}>{data.hero.titleLight}</span> <span style={{ color: "rgba(255,255,255,0.85)" }}>{data.hero.titleBold}</span>
             </motion.h1>
-            <motion.p initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }} style={{ fontSize: "clamp(1.05rem, 1.2vw, 1.15rem)", lineHeight: 1.6, color: "rgba(255,255,255,0.65)", margin: 0 }}>
+            <motion.div initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }} style={{ fontSize: "clamp(1.05rem, 1.2vw, 1.15rem)", lineHeight: 1.6, color: "rgba(255,255,255,0.65)", margin: 0, whiteSpace: "pre-line" }}>
               {data.hero.description}
-            </motion.p>
+            </motion.div>
             <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.35, ease: [0.16, 1, 0.3, 1] }} style={{ marginTop: "32px" }}>
               <Link to="/capabilities/overview" style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E11D48", color: "#fff", textDecoration: "none", fontSize: "0.95rem", fontWeight: 600, padding: "13px 26px", borderRadius: "8px", transition: "all 0.25s ease", boxShadow: "0 4px 20px rgba(225,29,72,0.3)" }} className="hero-view-btn">
-                <ArrowLeft size={16} /> View All Capabilities
+                <ArrowLeft size={16} /> {data?.hero?.viewBtnText || "View All Capabilities"}
               </Link>
               <style>{`
                 .hero-view-btn:hover { background-color: #BE123C !important; transform: translateY(-2px); box-shadow: 0 6px 25px rgba(225,29,72,0.5) !important; }
@@ -572,15 +572,15 @@ export default function CapabilityDetail() {
                   {data.inAction.headingLight} <span style={{ color: "#E11D48" }}>{data.inAction.headingRed}</span>
                 </motion.h2>
 
-                <motion.p
+                <motion.div
                   initial={{ opacity: 0, y: 18 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-                  style={{ fontFamily: FONT, color: "rgba(255,255,255,0.7)", fontSize: "15px", lineHeight: 1.75, margin: 0, marginBottom: "32px" }}
+                  style={{ fontFamily: FONT, color: "rgba(255,255,255,0.7)", fontSize: "15px", lineHeight: 1.75, margin: 0, marginBottom: "32px", whiteSpace: "pre-line" }}
                 >
                   {data.inAction.paragraph}
-                </motion.p>
+                </motion.div>
 
                 <motion.a
                   href="https://devopstrio.co.uk/contact"
@@ -786,6 +786,13 @@ export default function CapabilityDetail() {
         badge="CAPABILITY TECHNICAL FAQ"
         title={`${data?.hero?.titleLight || "Capability"} ${data?.hero?.titleBold || "Architecture"}:`}
         highlight="Key Technical Clarifications"
+        contactBtnText={
+          serviceId === "intelligent-automation" || serviceId === "predictive-analytics"
+            ? "Contact Our AI Engineering Team"
+            : serviceId === "data-intelligence"
+            ? "Contact Our Data Engineering Team"
+            : "Contact AI Engineers"
+        }
       />
 
       {/* 8. UNIVERSAL REPRESENTATIVE CTA */}

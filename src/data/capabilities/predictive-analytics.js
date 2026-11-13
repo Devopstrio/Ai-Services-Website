@@ -4,13 +4,13 @@ const predictiveAnalytics = {
   hero: {
     titleLight: "Predictive",
     titleBold: "Analytics",
-    description: "Don't just analyze the past; predict the future. We build advanced statistical models that forecast trends, anticipate risks, and optimize enterprise decision-making.",
+    description: "Understanding past performance is important, but knowing what may happen next can help your business plan with greater confidence. Devopstrio provides Predictive Analytics Services UK businesses can use to identify trends, assess potential risks and make informed decisions.\n\nWe combine historical data, statistical techniques and Machine Learning to develop predictive models that support business planning. From forecasting customer demand to identifying potential equipment failures, our solutions help organisations recognise patterns and prepare for changing conditions.\n\nWhether you want to improve sales forecasts, manage operational risks or understand customer behaviour, our predictive analytics solutions turn business data into practical insights.",
   },
   inAction: {
     headingLight: "Forecast with",
     headingRed: "Precision",
-    paragraph: "Looking in the rearview mirror is not enough. Devopstrio leverages historical data, external market signals, and machine learning to build predictive models that give you a view into the future. From forecasting supply chain disruptions months in advance to predicting exactly which customers are about to churn, we turn uncertainty into calculated, actionable strategy.",
-    buttonText: "See Forecasting Models",
+    paragraph: "Relying only on historical reports can make it difficult to prepare for future changes. Predictive analytics uses historical information, current data and relevant external factors to estimate possible outcomes.\n\nDevopstrio develops AI predictive analytics solutions that help businesses understand patterns, forecast demand and identify potential risks. We use statistical methods and Machine Learning techniques to build models suited to specific business requirements.\n\nFrom customer churn prediction to supply chain forecasting, our approach helps organisations move from reactive decisions towards more proactive planning.",
+    buttonText: "Explore Predictive Modelling",
     imageSrc: "/assets/capability-references/predictive-analytics/in-action.webp",
   },
   metricsCards: [
@@ -23,18 +23,18 @@ const predictiveAnalytics = {
     titleLight: "Predictive",
     titleRed: "Use Cases",
     items: [
-      { title: "Supply Chain", desc: "Forecast demand surges and reroute logistics automatically before stockouts occur.", icon: "database" },
-      { title: "Marketing & Sales", desc: "Score leads in real-time based on their likelihood to convert, focusing sales efforts on high-value targets.", icon: "users" },
-      { title: "Heavy Industry", desc: "Predict machinery failure weeks before it happens, scheduling maintenance during planned downtime.", icon: "cpu" }
+      { title: "Supply Chain and Logistics", desc: "Forecast product demand, identify potential supply disruptions and improve inventory planning. Predictive models can help businesses make timely decisions about stock levels, deliveries and resource allocation.", icon: "database" },
+      { title: "Marketing and Sales", desc: "Analyse customer behaviour, identify potential leads and estimate conversion likelihood. Help sales and marketing teams focus their efforts on relevant audiences and improve campaign planning.", icon: "users" },
+      { title: "Manufacturing and Heavy Industry", desc: "Analyse equipment performance and sensor data to identify patterns that may indicate machinery failure. Support maintenance planning and help reduce unexpected operational interruptions.", icon: "cpu" }
     ]
   },
   benefits: {
-    titleLight: "The Predictive",
-    titleRed: "Advantage",
+    titleLight: "The Advantage of",
+    titleRed: "Predictive Analytics",
     items: [
-      { title: "Proactive Strategy", desc: "Stop reacting to crises. Identify risks and opportunities weeks or months before your competitors do.", image: "/assets/capability-references/predictive-analytics/benefit-0.webp" },
-      { title: "Optimized Resources", desc: "Allocate budget, personnel, and inventory exactly where they will be needed, minimizing waste.", image: "/assets/capability-references/predictive-analytics/benefit-1.webp" },
-      { title: "Data-Backed Decisions", desc: "Remove gut-feel from executive planning. Use statistically rigorous models to justify major investments.", image: "/assets/capability-references/predictive-analytics/benefit-2.webp" }
+      { title: "Proactive Business Planning", desc: "Identify emerging patterns and possible future challenges through data analysis. Give teams more time to prepare for changes in customer demand, market conditions and business operations.", image: "/assets/capability-references/predictive-analytics/benefit-0.webp" },
+      { title: "Better Resource Allocation", desc: "Use forecasting insights to plan inventory, staffing, budgets and operational resources more effectively. Reduce unnecessary costs and improve planning decisions.", image: "/assets/capability-references/predictive-analytics/benefit-1.webp" },
+      { title: "Data-Driven Decisions", desc: "Support business strategies with statistical analysis and predictive model outputs. Help decision-makers understand potential outcomes instead of relying entirely on assumptions.", image: "/assets/capability-references/predictive-analytics/benefit-2.webp" }
     ]
   },
   cards: {

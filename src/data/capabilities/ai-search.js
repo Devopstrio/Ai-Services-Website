@@ -4,12 +4,12 @@ const aiSearch = {
   hero: {
     titleLight: "AI Search &",
     titleBold: "Knowledge Management",
-    description: "Stop searching, start finding. We build unified, conversational search engines that instantly retrieve exact answers from across your enterprise's siloed data.",
+    description: "Make business information easier to find with artificial intelligence. Devopstrio provides AI Search and Knowledge Management Solutions UK, helping businesses connect information from multiple platforms and access relevant answers quickly.\n\nOur enterprise AI search solutions use advanced AI technologies to understand search intent, organise business knowledge and retrieve information from different data sources. We help organisations reduce time spent searching and improve access to valuable business information.",
   },
   inAction: {
     headingLight: "Conversational",
     headingRed: "Discovery",
-    paragraph: "Traditional keyword search is broken. Employees waste hours looking for documents in SharePoint, Google Drive, and Confluence. Devopstrio builds Enterprise Neural Search systems using dense vector embeddings and Large Language Models. Instead of a list of blue links, your employees can ask natural language questions and receive instantly synthesized, cited answers drawn directly from your secure proprietary data.",
+    paragraph: "Businesses often store important information across different platforms, databases and document repositories. Finding the right information can become difficult when data is spread across multiple systems.\n\nDevopstrio develops Enterprise AI Search systems that use natural language processing, vector search and Large Language Models (LLMs) to understand questions and retrieve relevant information.\n\nOur AI knowledge management solutions connect enterprise data sources and provide conversational search experiences. With Retrieval-Augmented Generation (RAG), AI-generated answers can be supported by relevant internal documents and source references, helping employees find information more efficiently.",
     buttonText: "Try Enterprise Search",
     imageSrc: "/assets/capability-references/ai-search/in-action.webp",
   },
@@ -23,18 +23,18 @@ const aiSearch = {
     titleLight: "Search",
     titleRed: "Use Cases",
     items: [
-      { title: "Employee Onboarding", desc: "New hires can ask an internal bot 'How do I request PTO?' and get an instant cited answer.", icon: "users" },
-      { title: "R&D & Engineering", desc: "Engineers can instantly search across millions of past bug reports, PRs, and Slack threads.", icon: "cpu" },
-      { title: "Customer Success", desc: "Agents receive auto-generated answers to customer emails based on internal policy docs.", icon: "database" }
+      { title: "Employee Onboarding", desc: "Help new employees access company policies, training materials and internal procedures through AI-powered knowledge search. Provide quick answers to common workplace questions.", icon: "users" },
+      { title: "Research & Engineering", desc: "Enable engineering and research teams to search technical documents, previous project records, bug reports and internal knowledge repositories from one platform.", icon: "cpu" },
+      { title: "Customer Success", desc: "Help customer support teams retrieve product information, service guidelines and company policies to provide more consistent and informed responses.", icon: "database" }
     ]
   },
   benefits: {
     titleLight: "The Search",
     titleRed: "Advantage",
     items: [
-      { title: "Unified Knowledge", desc: "Connect Confluence, Jira, Google Drive, and internal databases into a single, omniscient search bar.", image: "/assets/capability-references/ai-search/benefit-0.webp" },
-      { title: "Strict Access Control", desc: "Search respects IAM permissions. The AI will never summarize a document the user doesn't have access to.", image: "/assets/capability-references/ai-search/benefit-1.webp" },
-      { title: "Conversational UI", desc: "Interact with your data via chat. Ask follow-up questions, summarize long PDFs, and request data comparisons.", image: "/assets/capability-references/ai-search/benefit-2.webp" }
+      { title: "Unified Knowledge Access", desc: "Connect information from platforms such as SharePoint, Google Drive, Confluence and internal databases. Bring business knowledge together through a unified search experience.", image: "/assets/capability-references/ai-search/benefit-0.webp" },
+      { title: "Strict Access Control", desc: "Maintain access permissions when retrieving enterprise information. Ensure users can access only the documents and data they are authorised to view.", image: "/assets/capability-references/ai-search/benefit-1.webp" },
+      { title: "Conversational UI", desc: "Allow employees to interact with business information using natural language. Ask questions, summarise documents and retrieve relevant information through an AI-powered interface.", image: "/assets/capability-references/ai-search/benefit-2.webp" }
     ]
   },
   cards: {

@@ -56,6 +56,7 @@ const capabilityIcons = {
     folder: "ai-search",
     items: {
       "Employee Onboarding": "Employee Onboarding.svg",
+      "Research & Engineering": "R&D & Engineering.svg",
       "R&D & Engineering": "R&D & Engineering.svg",
       "Customer Success": "Customer Success.svg",
     },
@@ -63,15 +64,22 @@ const capabilityIcons = {
   "intelligent-automation": {
     folder: "intelligent-automation",
     items: {
+      "HR and Employee Onboarding": "HR & Onboarding.svg",
+      "Supply Chain and Inventory Management": "Supply Chain.svg",
+      "IT Operations and Support": "IT Operations.svg",
       "HR & Onboarding": "HR & Onboarding.svg",
       "Supply Chain": "Supply Chain.svg",
       "IT Operations": "IT Operations.svg",
+      "IT & DevOps": "Supply Chain.svg",
+      "Customer Support": "HR & Onboarding.svg",
+      "Financial Operations": "IT Operations.svg",
     },
   },
   "data-intelligence": {
     folder: "data-intelligence",
     items: {
       "Financial Services": "Financial Services.svg",
+      "Retail and Consumer Goods": "Retail & CPG.svg",
       "Retail & CPG": "Retail & CPG.svg",
       Healthcare: "Healthcare.svg",
     },
@@ -79,8 +87,11 @@ const capabilityIcons = {
   "predictive-analytics": {
     folder: "predictive-analytics",
     items: {
+      "Supply Chain and Logistics": "Supply Chain.svg",
       "Supply Chain": "Supply Chain.svg",
+      "Marketing and Sales": "Marketing & Sales.svg",
       "Marketing & Sales": "Marketing & Sales.svg",
+      "Manufacturing and Heavy Industry": "Heavy Industry.svg",
       "Heavy Industry": "Heavy Industry.svg",
     },
   },
@@ -89,6 +100,7 @@ const capabilityIcons = {
     items: {
       "Salesforce & CRMs": "Salesforce & CRMs.svg",
       "SAP & ERPs": "SAP & ERPs.svg",
+      "Legacy Modernisation": "Custom Legacy Apps.svg",
       "Custom Legacy Apps": "Custom Legacy Apps.svg",
     },
   },

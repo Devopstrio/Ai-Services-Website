@@ -4,12 +4,12 @@ const generativeAi = {
     hero: {
       titleLight: "Generative",
       titleBold: "AI",
-      description: "Empower your enterprise with custom foundational models. Automate complex reasoning, content generation, and code synthesis securely at scale with Devopstrio's experts.",
+      description: "Transform business operations with Gen AI services from Devopstrio. We help enterprises adopt generative AI solutions to automate complex workflows, generate content, support advanced reasoning, and accelerate code development",
     },
     inAction: {
       headingLight: "Beyond Basic",
       headingRed: "Chatbots",
-      paragraph: "We engineer highly specialized LLMs and multi-modal models that deeply understand your proprietary data. By implementing strict guardrails and quantization, we reduce manual overhead by up to 60% while adhering to enterprise security constraints. From automated reporting to hyper-personalized assistants, this is GenAI that actually drives ROI.",
+      paragraph: "We develop specialised LLMs and multimodal models for enterprise generative AI solutions using your business data. Our secure Gen AI services streamline workflows, automate reporting and power intelligent assistants, delivering measurable business value.",
       buttonText: "Explore Use Cases",
       imageSrc: "/assets/capability-references/generative-ai/in-action.webp",
     },
@@ -41,17 +41,17 @@ const generativeAi = {
       items: [
         {
           title: "Enterprise IT & Ops",
-          desc: "Automate internal helpdesks, code generation, and complex legacy system migrations using specialized coding models.",
+          desc: "Automate internal helpdesks, code generation, and complex legacy system migrations using enterprise generative AI services and specialised coding models.",
           icon: "cpu" 
         },
         {
           title: "Customer Experience",
-          desc: "Deploy highly contextual, multi-lingual AI agents that resolve tier-1 and tier-2 support tickets autonomously.",
+          desc: "Deploy contextual, multilingual Gen AI agents that resolve tier-1 and tier-2 customer support tickets autonomously, improving service efficiency and customer experience.",
           icon: "users"
         },
         {
           title: "Data & Analytics",
-          desc: "Transform unstructured documents into queryable databases using advanced RAG and document intelligence pipelines.",
+          desc: "Transform unstructured documents into searchable databases using advanced retrieval-augmented generation (RAG) and intelligent document processing pipelines.",
           icon: "database"
         }
       ]
@@ -62,17 +62,17 @@ const generativeAi = {
       items: [
         {
           title: "Accelerated Workflows",
-          desc: "Reduce time spent on manual reporting, data entry, and content generation by empowering employees with AI copilots.",
+          desc: "Reduce time spent on manual reporting, data entry, and content creation using generative AI copilots that improve employee productivity.",
           image: "/assets/capability-references/generative-ai/benefit-0.webp"
         },
         {
           title: "Zero Data Leakage",
-          desc: "Unlike public APIs, our air-gapped deployments ensure your proprietary data never leaves your secure VPC environment.",
+          desc: "Protect business data with secure Gen AI deployments, private infrastructure and enterprise-grade controls that keep proprietary information within your environment.",
           image: "/assets/capability-references/generative-ai/benefit-1.webp" // Fixed image link
         },
         {
           title: "Predictable Scaling Costs",
-          desc: "Optimize cloud inference costs by utilizing quantized models and dynamic batching rather than paying per-token fees.",
+          desc: "Control generative AI infrastructure costs through quantized models and dynamic batching, optimising cloud inference and improving resource efficiency.",
           image: "/assets/capability-references/generative-ai/benefit-2.webp" // Replaced duplicate image
         }
       ]
@@ -84,7 +84,7 @@ const generativeAi = {
         {
           badge: "FINE-TUNING",
           title: "Custom LLM Tuning",
-          body: "We fine-tune open-source models (Llama 3, Mistral) on your private datasets to create domain-specific intelligence.",
+          body: "We fine-tune open-source models (Llama 3, Mistral) using private datasets to deliver domain-specific generative AI capabilities.",
           more: "By adapting foundational models to your specific vocabulary, industry compliance rules, and formatting, you get highly accurate responses without leaking intellectual property.",
           image: "/assets/capability-references/generative-ai/capability-0.webp",
           color1: "#F5F2EA", color2: "#E6DBC6"
@@ -92,7 +92,7 @@ const generativeAi = {
         {
           badge: "ARCHITECTURE",
           title: "RAG Pipelines",
-          body: "Eliminate hallucinations by grounding AI responses entirely in your enterprise documents and databases.",
+          body: "Reduce AI hallucinations by grounding generative AI responses in your enterprise documents, internal knowledge sources and databases.",
           more: "We build secure Retrieval-Augmented Generation architectures that fetch live data from your internal knowledge bases, ensuring every generated output is factual and verifiable.",
           image: "/assets/capability-references/generative-ai/capability-1.webp",
           color1: "#F5F2EA", color2: "#E6DBC6"
@@ -100,7 +100,7 @@ const generativeAi = {
         {
           badge: "DELIVERY",
           title: "Multi-Modal Generation",
-          body: "Process and generate text, image, audio, and code simultaneously for complex enterprise workflows.",
+          body: "From automated visual inspection reports in manufacturing to generating UI code from design screenshots, our multimodal AI services process diverse data types.",
           more: "From automated visual inspection reporting in manufacturing to generating UI code directly from design screenshots, we build pipelines that handle all data types.",
           image: "/assets/capability-references/generative-ai/capability-2.webp",
           color1: "#F5F2EA", color2: "#E6DBC6"

@@ -4,12 +4,12 @@ const machineLearning = {
   hero: {
     titleLight: "Machine",
     titleBold: "Learning",
-    description: "Transform raw data into predictive power. We engineer robust machine learning pipelines that automate complex decisions, forecast trends, and continuously learn from your enterprise data.",
+    description: "Turn business data into actionable insights. We develop scalable machine learning services that automate decisions, predict trends and continuously improve through your enterprise data.",
   },
   inAction: {
     headingLight: "Intelligence that",
     headingRed: "Evolves",
-    paragraph: "Static software can only follow instructions; machine learning adapts to reality. Devopstrio builds advanced predictive models—from classical regression and clustering to deep neural networks—that uncover hidden patterns in petabytes of data. Whether you need real-time fraud detection, dynamic pricing algorithms, or predictive maintenance, our ML systems drive measurable competitive advantage.",
+    paragraph: "Traditional software follows fixed instructions; machine learning adapts through data. Devopstrio develops advanced machine learning models, from regression and clustering to neural networks, to identify patterns in enterprise data. Whether you need real-time fraud detection, dynamic pricing, or predictive maintenance, our ML services improve decision-making and deliver measurable business value.",
     buttonText: "Explore ML Models",
     imageSrc: "/assets/capability-references/machine-learning/in-action.webp",
   },
@@ -62,17 +62,17 @@ const machineLearning = {
     items: [
       {
         title: "Uncover Hidden ROI",
-        desc: "Algorithms find non-obvious correlations in your historical data, identifying new revenue streams and cost-saving opportunities.",
+        desc: "Machine learning algorithms analyse historical data, reveal hidden patterns, identify new revenue opportunities and uncover potential cost-saving opportunities.",
         image: "/assets/capability-references/machine-learning/benefit-0.webp"
       },
       {
         title: "Automate Decisions",
-        desc: "Replace manual, intuition-based decision-making with statistically proven, automated models that operate 24/7.",
+        desc: "Replace manual, intuition-based decisions with data-driven machine learning models that support accurate, automated business decisions around the clock.",
         image: "/assets/capability-references/machine-learning/benefit-1.webp"
       },
       {
         title: "Continuous Improvement",
-        desc: "Unlike traditional software, ML models improve over time. Our feedback loops ensure your systems get smarter as they consume new data.",
+        desc: "Unlike traditional software, machine learning models evolve over time. Our feedback processes help your systems improve as they learn from new data.",
         image: "/assets/capability-references/machine-learning/benefit-2.webp"
       }
     ]

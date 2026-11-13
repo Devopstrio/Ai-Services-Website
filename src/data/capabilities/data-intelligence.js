@@ -4,13 +4,13 @@ const dataIntelligence = {
   hero: {
     titleLight: "Data",
     titleBold: "Intelligence",
-    description: "Your AI is only as good as your data. We engineer modern data platforms, data lakes, and streaming pipelines that feed high-quality, real-time data to your AI models.",
+    description: "Your business data is valuable only when it can be accessed, understood and used effectively. Devopstrio provides Data Intelligence Services UK businesses can use to improve data management, strengthen analytics and make informed decisions.\n\nWe design and build modern data platforms, scalable data lakes and reliable data pipelines that bring information from different sources into a unified environment. By combining data engineering, automation and governance, we help businesses prepare high-quality data for analytics, reporting and AI applications.\n\nWhether you are modernising existing data infrastructure or building a new data platform, our solutions help make your business data more accessible, consistent and useful.",
   },
   inAction: {
     headingLight: "The Foundation of",
     headingRed: "Enterprise AI",
-    paragraph: "Before you can run a Large Language Model or a Predictive algorithm, you need clean, accessible, and structured data. Devopstrio builds the central nervous system for your enterprise data. We migrate legacy data silos into modern Lakehouses (Databricks, Snowflake), build real-time streaming pipelines (Kafka), and implement rigorous data governance to ensure your AI models are trained on truth.",
-    buttonText: "Modernize Your Data",
+    paragraph: "Reliable AI starts with reliable data. Inconsistent information, disconnected systems and outdated data pipelines can affect the accuracy of analytics and machine learning models.\n\nDevopstrio builds modern data environments that help businesses collect, process, organise and manage information from multiple sources. We work with technologies such as Databricks, Snowflake, Apache Kafka and cloud data services to create scalable data platforms.\n\nFrom real-time data processing to data governance, our approach helps ensure that information is available in the right format for reporting, predictive analytics and AI-driven applications.",
+    buttonText: "Modernise Your Data Infrastructure",
     imageSrc: "/assets/capability-references/data-intelligence/in-action.webp",
   },
   metricsCards: [
@@ -23,18 +23,18 @@ const dataIntelligence = {
     titleLight: "Data",
     titleRed: "Use Cases",
     items: [
-      { title: "Financial Services", desc: "Build real-time streaming pipelines for millisecond fraud detection and algorithmic trading.", icon: "database" },
-      { title: "Retail & CPG", desc: "Consolidate global POS and e-commerce data into a single Snowflake instance for unified analytics.", icon: "users" },
-      { title: "Healthcare", desc: "Securely anonymize and aggregate patient EHRs into a central data lake for medical research.", icon: "cpu" }
+      { title: "Financial Services", desc: "Process financial transactions and operational data through real-time pipelines. Support fraud monitoring, risk analysis and faster access to financial information.", icon: "database" },
+      { title: "Retail and Consumer Goods", desc: "Bring together point-of-sale, e-commerce, inventory and customer data. Create a unified view of business performance to support reporting and demand planning.", icon: "users" },
+      { title: "Healthcare", desc: "Organise healthcare information from different systems within secure data environments. Support reporting, research and operational analysis while applying appropriate data privacy controls.", icon: "cpu" }
     ]
   },
   benefits: {
-    titleLight: "Modern Data",
-    titleRed: "Architecture",
+    titleLight: "The Advantage of",
+    titleRed: "Modern Data Architecture",
     items: [
-      { title: "Single Source of Truth", desc: "Eliminate conflicting reports. Everyone in your organization queries the exact same unified dataset.", image: "/assets/capability-references/data-intelligence/benefit-0.webp" },
-      { title: "AI-Ready Format", desc: "We structure and vectorize your data so it can be immediately consumed by Machine Learning and LLMs.", image: "/assets/capability-references/data-intelligence/benefit-1.webp" },
-      { title: "Real-Time Streaming", desc: "Stop relying on overnight batch jobs. Make decisions based on data that is milliseconds old.", image: "/assets/capability-references/data-intelligence/benefit-2.webp" }
+      { title: "A Unified View of Business Data", desc: "Bring information from different departments and applications into a connected data environment. Help teams work with consistent datasets and reduce conflicting reports.", image: "/assets/capability-references/data-intelligence/benefit-0.webp" },
+      { title: "AI-Ready Data", desc: "Prepare, clean and structure business information for machine learning, predictive analytics and large language model applications.", image: "/assets/capability-references/data-intelligence/benefit-1.webp" },
+      { title: "Real-Time Data Processing", desc: "Move beyond relying only on scheduled batch updates. Use streaming pipelines to process incoming information and make timely business decisions.", image: "/assets/capability-references/data-intelligence/benefit-2.webp" }
     ]
   },
   cards: {

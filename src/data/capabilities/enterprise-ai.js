@@ -4,12 +4,12 @@ const enterpriseAi = {
   hero: {
     titleLight: "Enterprise AI",
     titleBold: "Development",
-    description: "End-to-end custom AI engineering. We build resilient, scalable AI products integrated seamlessly into your existing enterprise software ecosystem.",
+    description: "End-to-end AI development service. We create secure, scalable AI applications that integrate seamlessly with your existing enterprise software and business systems.",
   },
   inAction: {
     headingLight: "Build AI That",
     headingRed: "Scales",
-    paragraph: "Off-the-shelf AI doesn't solve unique enterprise problems. We provide full-lifecycle AI development—from data engineering and model training to frontend integration and MLOps. Whether you are building an AI-powered SaaS product or modernizing internal legacy systems with machine learning, our engineering teams ensure your AI is secure, scalable, and built for production environments.",
+    paragraph: "Standard AI tools rarely address unique enterprise requirements. Our AI development services cover the full lifecycle, from data engineering and model training to frontend integration and MLOps. Whether developing AI-powered SaaS products or modernising legacy systems with machine learning, our engineering teams deliver secure, scalable AI solutions designed for reliable production environments.",
     buttonText: "Discuss Your Project",
     imageSrc: "/assets/capability-references/enterprise-ai/in-action.webp",
   },
@@ -41,17 +41,17 @@ const enterpriseAi = {
     items: [
       {
         title: "SaaS Platforms",
-        desc: "Integrate powerful predictive features and Generative AI directly into your B2B software products.",
+        desc: "Integrate predictive analytics and generative AI features into your B2B software products through custom AI development solutions.",
         icon: "cpu" 
       },
       {
         title: "Financial Institutions",
-        desc: "Build highly secure, low-latency models for fraud detection and algorithmic trading.",
+        desc: "Develop secure, low-latency AI models for fraud detection, risk analysis and automated trading applications.",
         icon: "database"
       },
       {
         title: "Healthcare Providers",
-        desc: "Develop HIPAA-compliant AI applications for patient diagnostics and EHR management.",
+        desc: "Create secure AI applications for patient diagnostics and electronic health record (EHR) management, supporting healthcare workflows.",
         icon: "users"
       }
     ]
@@ -62,17 +62,17 @@ const enterpriseAi = {
     items: [
       {
         title: "IP Ownership",
-        desc: "Stop renting intelligence. When we build your enterprise AI solutions, you own the models, the data pipelines, and the competitive advantage.",
+        desc: "Our AI development services give you ownership of models, data pipelines and intellectual property, protecting business AI assets and competitive advantage.",
         image: "/assets/capability-references/enterprise-ai/benefit-0.webp"
       },
       {
         title: "Seamless Integration",
-        desc: "We don't just build isolated models; we engineer the APIs and frontend interfaces to seamlessly blend AI into your users' daily workflows.",
+        desc: "We develop custom AI models, APIs and frontend interfaces that integrate AI solutions smoothly into your users' daily business workflows.",
         image: "/assets/capability-references/enterprise-ai/benefit-1.webp"
       },
       {
         title: "Future-Proof Architecture",
-        desc: "Built on modular, cloud-agnostic frameworks (Kubernetes, Ray) so you can easily swap foundational models as technology evolves.",
+        desc: "Modular, cloud-agnostic AI architectures using Kubernetes and Ray help teams replace foundational models easily as technology evolves.",
         image: "/assets/capability-references/enterprise-ai/benefit-2.webp"
       }
     ]

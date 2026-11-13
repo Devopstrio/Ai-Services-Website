@@ -4,13 +4,14 @@ const intelligentAutomation = {
   hero: {
     titleLight: "Intelligent",
     titleBold: "Automation",
-    description: "Move beyond rigid RPA bots. We build intelligent automation workflows that learn from exceptions, handle unstructured data, and dynamically adapt to changing enterprise processes.",
+    description: "Move beyond traditional rule-based automation. Devopstrio delivers Intelligent Automation Services UK businesses can use to simplify complex workflows, reduce repetitive tasks and improve operational efficiency.\n\nBy combining Artificial Intelligence, Machine Learning and Robotic Process Automation (RPA), we build intelligent systems that can process information, respond to changing situations and handle exceptions with less manual intervention.\n\nFrom everyday administrative tasks to complex enterprise operations, our AI automation services help businesses work more efficiently while keeping people involved where decisions require human judgement.",
+    viewBtnText: "Explore Our Automation Capabilities",
   },
   inAction: {
     headingLight: "Automate the",
     headingRed: "Unpredictable",
-    paragraph: "Traditional Robotic Process Automation (RPA) breaks the moment a UI changes or an exception occurs. Devopstrio engineers Cognitive Automation systems that combine RPA with Machine Learning and Generative AI. Our bots can read unstructured emails, make judgement calls based on historical data, and dynamically navigate complex GUI interfaces without brittle xpath selectors.",
-    buttonText: "Explore Automation",
+    paragraph: "Traditional RPA works well with predictable, rule-based processes but can struggle when information is incomplete or workflows change.\n\nDevopstrio combines RPA with AI and Machine Learning to create more adaptable automation systems. These solutions can read emails, understand documents, classify requests and respond to exceptions based on defined business rules and available information.\n\nWith intelligent workflow automation, businesses can connect different applications, coordinate tasks and reduce the time spent managing routine operations.",
+    buttonText: "Explore Intelligent Automation",
     imageSrc: "/assets/capability-references/intelligent-automation/in-action.webp",
   },
   metricsCards: [
@@ -23,18 +24,18 @@ const intelligentAutomation = {
     titleLight: "Automation",
     titleRed: "Use Cases",
     items: [
-      { title: "HR & Onboarding", desc: "Automate background checks, hardware provisioning, and payroll setup for new employees.", icon: "users" },
-      { title: "Supply Chain", desc: "Bots that automatically re-order stock when inventory drops, reading unstructured vendor quotes.", icon: "database" },
-      { title: "IT Operations", desc: "Automated L1 support that provisions virtual machines and resets passwords based on Jira tickets.", icon: "cpu" }
+      { title: "HR and Employee Onboarding", desc: "Simplify employee onboarding by automating document collection, background-check workflows, account creation and equipment requests. HR teams can spend less time on administration and more time supporting employees.", icon: "users" },
+      { title: "Supply Chain and Inventory Management", desc: "Improve supply chain operations by monitoring stock levels, processing supplier information and triggering replenishment workflows. Automation helps teams respond more quickly to changing inventory requirements.", icon: "database" },
+      { title: "IT Operations and Support", desc: "Automate routine IT tasks such as password resets, access requests, ticket classification and virtual machine provisioning. Connect automation with service management platforms to improve response times.", icon: "cpu" }
     ]
   },
   benefits: {
-    titleLight: "The Cognitive",
-    titleRed: "Advantage",
+    titleLight: "The Advantage of",
+    titleRed: "Intelligent Automation",
     items: [
-      { title: "Resilient Workflows", desc: "Our AI-powered bots use computer vision to navigate UIs. If a button moves, the bot still finds it.", image: "/assets/capability-references/intelligent-automation/benefit-0.webp" },
-      { title: "Unstructured Data", desc: "Process free-text emails, PDFs, and hand-written notes directly within the automation pipeline.", image: "/assets/capability-references/intelligent-automation/benefit-1.webp" },
-      { title: "Human in the Loop", desc: "Bots automatically pause and route edge cases to human managers for approval before continuing.", image: "/assets/capability-references/intelligent-automation/benefit-2.webp" }
+      { title: "Adaptable Workflows", desc: "Build automation processes that respond to changing business requirements. AI-powered systems can identify exceptions and follow alternative workflows based on predefined rules.", image: "/assets/capability-references/intelligent-automation/benefit-0.webp" },
+      { title: "Unstructured Data Processing", desc: "Extract and classify information from emails, PDFs, forms and other documents. Reduce the need for employees to manually review and transfer information between systems.", image: "/assets/capability-references/intelligent-automation/benefit-1.webp" },
+      { title: "Human-in-the-Loop Control", desc: "Keep important decisions under human supervision. Automation can route unusual cases, approvals and sensitive requests to the relevant team before continuing.", image: "/assets/capability-references/intelligent-automation/benefit-2.webp" }
     ]
   },
   cards: {

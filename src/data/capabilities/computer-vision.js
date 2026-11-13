@@ -4,12 +4,12 @@ const computerVision = {
   hero: {
     titleLight: "Computer",
     titleBold: "Vision",
-    description: "Give your software the power of sight. We build real-time visual AI models that analyze images and video feeds to automate inspection, enhance security, and extract spatial insights.",
+    description: "Give your business the power to see, understand and analyse visual information with AI. Devopstrio provides Computer Vision Services UK, developing intelligent systems that analyse images and video feeds to automate inspections, improve security and support better business decisions.\n\nOur computer vision solutions help organisations identify objects, detect defects, recognise patterns and extract valuable information from visual data in real time.",
   },
   inAction: {
     headingLight: "Seeing Beyond",
     headingRed: "Pixels",
-    paragraph: "Computer Vision is transforming the physical world. Devopstrio engineers deep learning vision models capable of real-time object detection, facial recognition, and defect analysis. We deploy lightweight, high-performance models directly to edge devices on the factory floor, or scale massive video-processing pipelines in the cloud for global surveillance networks.",
+    paragraph: "Computer vision enables businesses to understand and interpret images and videos through artificial intelligence. Devopstrio develops advanced AI image recognition and deep learning models to support real-time object detection, image analysis and automated visual inspection.\n\nOur computer vision solutions can be deployed on edge devices or cloud infrastructure, helping businesses process visual information efficiently while supporting their operational and security requirements.",
     buttonText: "See Vision AI Live",
     imageSrc: "/assets/capability-references/computer-vision/in-action.webp",
   },
@@ -23,18 +23,18 @@ const computerVision = {
     titleLight: "Vision",
     titleRed: "Applications",
     items: [
-      { title: "Manufacturing", desc: "Automate quality assurance by detecting microscopic defects on assembly lines in real-time.", icon: "cpu" },
-      { title: "Retail", desc: "Analyze customer foot traffic, heatmaps, and automate checkout processes using camera feeds.", icon: "users" },
-      { title: "Healthcare", desc: "Assist radiologists by automatically identifying anomalies in X-rays and MRI scans.", icon: "database" }
+      { title: "Manufacturing", desc: "Improve quality control with automated visual inspections. Detect product defects, identify irregularities and monitor production processes using AI-powered object detection.", icon: "cpu" },
+      { title: "Retail", desc: "Understand customer movement, analyse store traffic and generate visual insights through intelligent camera-based monitoring and image recognition.", icon: "users" },
+      { title: "Healthcare", desc: "Support medical imaging workflows by identifying patterns and potential anomalies in X-rays, MRI scans and other medical images.", icon: "database" }
     ]
   },
   benefits: {
     titleLight: "The Vision",
     titleRed: "Advantage",
     items: [
-      { title: "Tireless Inspection", desc: "Cameras don't get fatigued. Maintain perfect quality control 24/7 without human error.", image: "/assets/capability-references/computer-vision/benefit-0.webp" },
-      { title: "Edge Processing", desc: "Process video directly on local cameras to avoid massive bandwidth costs and ensure privacy.", image: "/assets/capability-references/computer-vision/benefit-1.webp" },
-      { title: "Spatial Analytics", desc: "Understand physical spaces dynamically. Track inventory levels or monitor safety compliance visually.", image: "/assets/capability-references/computer-vision/benefit-2.webp" }
+      { title: "Tireless Inspection", desc: "Use AI-powered image analysis to identify defects and inconsistencies, helping businesses improve inspection processes and maintain product quality.", image: "/assets/capability-references/computer-vision/benefit-0.webp" },
+      { title: "Edge Processing", desc: "Process images and video directly on edge devices to reduce latency, manage bandwidth requirements and support local data processing.", image: "/assets/capability-references/computer-vision/benefit-1.webp" },
+      { title: "Spatial Analytics", desc: "Turn images and video feeds into meaningful information. Track objects, analyse activities and gain insights into physical environments.", image: "/assets/capability-references/computer-vision/benefit-2.webp" }
     ]
   },
   cards: {

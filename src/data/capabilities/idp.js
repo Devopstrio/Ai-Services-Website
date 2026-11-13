@@ -4,12 +4,12 @@ const idp = {
   hero: {
     titleLight: "Intelligent",
     titleBold: "Document Processing",
-    description: "End manual data entry forever. We build advanced IDP systems that instantly extract, validate, and route data from chaotic PDFs, invoices, and handwritten forms.",
+    description: "Make document management faster and more efficient with AI. Devopstrio provides Intelligent Document Processing Services UK, helping businesses extract, validate and organise information from invoices, PDFs, forms and other business documents.\n\nOur AI document processing solutions reduce manual data entry, improve information accuracy and simplify document workflows. From automated document extraction to intelligent data validation, we help businesses manage large volumes of information more efficiently.",
   },
   inAction: {
     headingLight: "Automate the",
     headingRed: "Paper Trail",
-    paragraph: "Legacy OCR is brittle and breaks when a template changes. Devopstrio engineers Intelligent Document Processing (IDP) pipelines utilizing state-of-the-art vision-language models. Our systems read documents like a human—understanding context, tables, and layouts regardless of the format. We automate back-office operations, instantly turning messy paperwork into structured JSON data fed directly into your ERP.",
+    paragraph: "Traditional document processing often requires manual data entry and predefined templates. Intelligent Document Processing uses artificial intelligence, machine learning and advanced OCR technology to understand different document formats and extract relevant information.\n\nDevopstrio develops IDP solutions that identify document content, understand tables and layouts, validate extracted information and convert unstructured data into structured formats.\n\nOur AI document processing systems help businesses connect extracted information with existing business applications, databases and ERP platforms, improving document management and operational efficiency.",
     buttonText: "See IDP in Action",
     imageSrc: "/assets/capability-references/idp/in-action.webp",
   },
@@ -23,18 +23,18 @@ const idp = {
     titleLight: "IDP",
     titleRed: "Use Cases",
     items: [
-      { title: "Finance & Accounts", desc: "Automate accounts payable by instantly extracting line items from varied vendor invoices.", icon: "cpu" },
-      { title: "Insurance", desc: "Accelerate claims processing by digitizing and verifying complex medical and damage reports.", icon: "users" },
-      { title: "Logistics", desc: "Digitize bills of lading, customs declarations, and shipping manifests in real-time.", icon: "database" }
+      { title: "Finance & Accounts", desc: "Simplify accounts payable by extracting invoice numbers, payment details, tax information and line items automatically. Reduce manual processing and improve financial data management.", icon: "cpu" },
+      { title: "Insurance", desc: "Improve insurance document processing by extracting and organising information from claim forms, medical reports and supporting documents. Help teams manage claims more efficiently.", icon: "users" },
+      { title: "Logistics", desc: "Automate the processing of shipping documents, bills of lading, customs declarations and delivery records. Extract important information to support faster logistics operations.", icon: "database" }
     ]
   },
   benefits: {
     titleLight: "Why Upgrade",
     titleRed: "to IDP?",
     items: [
-      { title: "Template-Free", desc: "Our AI understands document semantics. If a vendor changes their invoice layout, the system still extracts the data perfectly.", image: "/assets/capability-references/idp/benefit-0.webp" },
-      { title: "Eliminate Human Error", desc: "Remove the typos and fatigue associated with manual data entry, ensuring perfect data integrity in your databases.", image: "/assets/capability-references/idp/benefit-1.webp" },
-      { title: "Rapid Scalability", desc: "Process 10 documents or 10,000 documents a day without needing to hire and train additional back-office staff.", image: "/assets/capability-references/idp/benefit-2.webp" }
+      { title: "Template-Free", desc: "Process invoices, forms, reports and other documents without depending entirely on fixed document templates. AI models can adapt to different layouts and formats.", image: "/assets/capability-references/idp/benefit-0.webp" },
+      { title: "Eliminate Human Error", desc: "Automate repetitive data entry and extraction tasks to reduce typing errors, improve data consistency and support more reliable business records.", image: "/assets/capability-references/idp/benefit-1.webp" },
+      { title: "Rapid Scalability", desc: "Process growing volumes of business documents using automated workflows. Support document operations without increasing manual processing requirements at the same rate.", image: "/assets/capability-references/idp/benefit-2.webp" }
     ]
   },
   cards: {

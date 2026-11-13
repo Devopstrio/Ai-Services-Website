@@ -8,7 +8,8 @@ export function FAQ({
   title = "Frequently Asked",
   highlight = "Questions",
   className = "",
-  contactHref = "https://devopstrio.co.uk/contact"
+  contactHref = "https://devopstrio.co.uk/contact",
+  contactBtnText = "Contact AI Engineers"
 }) {
   const [openIndex, setOpenIndex] = useState(0);
 
@@ -111,14 +112,14 @@ export function FAQ({
               href={contactHref}
               className="gap-2.5 inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-xs md:text-sm font-semibold tracking-wider uppercase border border-rose-600/30 bg-rose-600 hover:bg-rose-500 text-white shadow-lg shadow-rose-600/20 hover:shadow-rose-600/30 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap shrink-0 cursor-pointer"
             >
-              Contact AI Engineers <ArrowUpRight size={16} />
+              {contactBtnText} <ArrowUpRight size={16} />
             </a>
           ) : (
             <Link
               to={contactHref}
               className="gap-2.5 inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-xs md:text-sm font-semibold tracking-wider uppercase border border-rose-600/30 bg-rose-600 hover:bg-rose-500 text-white shadow-lg shadow-rose-600/20 hover:shadow-rose-600/30 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap shrink-0 cursor-pointer"
             >
-              Contact AI Engineers <ArrowUpRight size={16} />
+              {contactBtnText} <ArrowUpRight size={16} />
             </Link>
           )}
         </div>
